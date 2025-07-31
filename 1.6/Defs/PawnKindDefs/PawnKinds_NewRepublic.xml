@@ -35,7 +35,116 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
-	  </PawnKindDef>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWCP_FettCloneBase" ParentName="SWNewRepub_Base" Abstract="True">
+
+		<nameMaker>SWCP_NamerCloneTrooper</nameMaker>
+		<fixedGender>Male</fixedGender>
+		<skinColorOverride>(228, 158, 90)</skinColorOverride>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>CloneTrooperBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<forcedTraits>
+			<Nerves>2</Nerves>
+			<FastLearner>0</FastLearner>
+			<!-- <Tough>0</Tough> -->
+		</forcedTraits>
+		
+		<modExtensions>
+			
+			<li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_Melanin7</li>
+					<li>Hair_DarkBlack</li>
+					
+					<li>guy762_lifespan_half</li>
+					
+					<li>guy762_statgene_metabolismcheat</li>
+					<li>Turn_Gene_MotivationHigh</li>
+					<li>AptitudeStrong_Shooting</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			
+			<!-- appearance -->
+			
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Male</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+			
+			
+			<!-- <li Class="CloneVat.GrowthVatPawnKindDefExtension"> -->
+				<!-- <growthDurationDays>10</growthDurationDays> -->
+				<!-- <requiredMaterials> -->
+				   <!-- <HumanOvum>1</HumanOvum> -->
+				   <!-- <ComponentIndustrial>5</ComponentIndustrial> -->
+				<!-- </requiredMaterials> -->
+				<!-- <hediffChances> -->
+				   <!-- <li> -->
+					  <!-- <hediffDef>BadBack</hediffDef> -->
+					  <!-- <chance>0.05</chance> -->
+					  <!-- <bodyPart>Spine</bodyPart> -->
+					  <!-- <randomize>false</randomize> -->
+				   <!-- </li> -->
+				   <!-- <li> -->
+					  <!-- <hediffDef>Asthma</hediffDef> -->
+					  <!-- <chance>0.1</chance> -->
+					  <!-- <bodyPart>Lung</bodyPart> -->
+					  <!-- <randomize>false</randomize> -->
+				   <!-- </li> -->
+				<!-- </hediffChances> -->
+				<!-- <requiredResearch /> -->
+				<!-- <spawnWithEquipment>false</spawnWithEquipment> -->
+				<!-- <allowedBuildings> -->
+				   <!-- <li>SWCP_CloningTube</li> -->
+				<!-- </allowedBuildings> -->
+			<!-- </li> -->
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -70,6 +179,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWGCWSpecificApparelItem_RebelFleetTrooperHelmet</li>
+		  <li>SWGCWSpecificApparelItem_BigBeltNewRepublicOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_fleet</li>
@@ -127,6 +238,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWGCWSpecificApparelItem_LowRankNewRepublicOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<!-- <li>guy762_UniformCap_rebel</li> -->
@@ -199,6 +311,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWGCWSpecificApparelItem_LowRankNewRepublicOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NewRepUniform_lowrank</li>
@@ -278,6 +391,83 @@
 	
 	
 	
+	
+	
+	<PawnKindDef Name="SWNewRepub_CloneVeteran" ParentName="SWCP_FettCloneBase">
+		<defName>SWNewRepub_CloneVeteran</defName>
+		<label>veteran clone trooper</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>60</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+		  <li>KotOREquipment_basic</li>
+		  <li>NewRepublic_rebeltrooper</li>
+		  <li>SWWarlordsAccessory_scumtrooper_poncho</li>
+		  <li>SWGCWSpecificApparelItem_VeteranCloneTrooperArmor</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_CloneArmor_veteran</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>NewRepublic_rebeltrooper</requiredTag>
+			</li>
+			
+			<!-- khaki -->
+			<!-- <li> -->
+				<!-- <apparelLayer>Shell</apparelLayer> -->
+				<!-- <color>(130,125,105)</color> -->
+			<!-- </li> -->
+			
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(75,75,75)</color>         <!-- dark grey -->
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>1800~5000</weaponMoney>
+		<weaponTags>
+		  <li>SWRanged_DLT19repeater</li>
+		  <li>SWRanged_DLT20Asniper</li>
+		  <li>SWRanged_A280Crifle</li>
+		  <li>SWRanged_DC15xsniper</li>
+		</weaponTags>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
 	
 	
 	
@@ -396,6 +586,8 @@
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_trooper</li>
+		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NewRepublicArmor_light</li>
@@ -471,6 +663,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+			<li>SWGCWSpecificApparelItem_LowRankRebelXWingPilotHelmet</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebPilotHelmet</li>

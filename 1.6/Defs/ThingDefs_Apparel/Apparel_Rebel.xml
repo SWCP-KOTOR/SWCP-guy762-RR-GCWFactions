@@ -511,6 +511,18 @@
 				</li>
 				<li>
 					<weight>10</weight>
+					<only>(170,120,0)</only>  <!-- star corps yellow -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(170,70,0)</only>  <!-- 212th orange -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(20,85,35)</only>  <!-- 41st green -->
+				</li>
+				<li>
+					<weight>10</weight>
 					<only>(125,50,50)</only>  <!-- rebel red -->
 				</li>
 			</options>

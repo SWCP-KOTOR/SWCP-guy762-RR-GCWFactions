@@ -168,7 +168,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>2500</weaponMoney>
+		<weaponMoney>2300~3500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_DLT19repeater</li>
 			<li>SWRanged_DLT20Asniper</li>

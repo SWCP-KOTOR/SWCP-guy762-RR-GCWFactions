@@ -262,7 +262,7 @@
 		  
 		  <li>
               <MainHand>(-0.200, 0.100, -0.080)</MainHand>
-              <SecHand>(0.250, -0.100, -0.065)</SecHand>
+              <SecHand>(0.115, -0.100, -0.035)</SecHand>
               <ThingTargets>
                  <li>guy762_DLT19repeater</li> <!-- DLT-19 heavy repeating blaster -->
               </ThingTargets>

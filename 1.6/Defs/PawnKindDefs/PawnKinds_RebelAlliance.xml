@@ -14,6 +14,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotORUtility_engi_novisor</li>
+			<li>SWCPSpecificApparelItem_GenericUniformHat</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_rebel</li>
@@ -85,6 +87,9 @@
 			<li>KotORUtility_engi_novisor</li>
 			<li>NewRepublic_combatengineer</li>
 			<li>SWDetpackCase</li>
+			<li>SWCPSpecificApparelItem_RebelEngineerHat</li>
+			<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelEngiCap</li>
@@ -166,6 +171,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotORUtility_engi_novisor</li>
+			<li>SWCPSpecificApparelItem_GogglesFlakHat</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+			<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelFlakCap_goggles</li>
@@ -276,6 +285,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWGCWSpecificApparelItem_RebelFleetTrooperHelmet</li>
+		  <li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
+		  <li>SWCPSpecificApparelItem_ScoutVest</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_fleet</li>
@@ -346,6 +358,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWCPSpecificApparelItem_GenericUniformHat</li>
+		  <li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_rebel</li>
@@ -418,6 +432,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelUniform_lowrank</li>
@@ -501,6 +516,9 @@
 		  <li>KotOREquipment_officer</li>
 		  <li>NewRepublic_ArmyOfficer</li>
 		  <li>NewRepublic_endortrooperhelmet</li>
+		  <li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
+		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
@@ -602,6 +620,10 @@
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWDetpackCase</li>
 			<li>NewRepublic_RebelAgent_hats</li>
+			<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
+			<li>SWCPSpecificApparelItem_ScoutVest</li>
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKDetpackCase</li>
@@ -686,6 +708,8 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_rebeltrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
+		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelCombatSuit</li>
@@ -769,6 +793,8 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_sharpshooterhat</li>
 		  <li>SWWarlordsAccessory_onlyponcho</li>
+		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>SWCPSpecificApparelItem_ScoutVest</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Jacket_scout</li>
@@ -838,6 +864,9 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_rebelheavytrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
+		  <li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+		  <li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_vanguard</li>
@@ -934,6 +963,9 @@
 			<li>KotORUtility_StabilizerGauntlets</li>
 			<li>NewRepublic_rebelmedic</li>
 			<li>SWMedicBelt</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+			<li>SWGCWSpecificApparelItem_MedicRebelCombatSuit</li>
+			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_MedicBelt</li>
@@ -1007,6 +1039,9 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_rebeltrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
+		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
+		  <li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_vanguard</li>
@@ -1105,7 +1140,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWNewRepub_Rebelpilot" ParentName="SWNewRepub_Base">
+	<PawnKindDef Name="SWNewRepub_Rebelpilot" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_Rebelpilot</defName>
 		<label>Rebel pilot</label>
 		<combatPower>65</combatPower>
@@ -1117,6 +1152,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+			<li>SWGCWSpecificApparelItem_LowRankRebelXWingPilotHelmet</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebPilotHelmet</li>
@@ -1188,6 +1227,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+			<li>SWGCWSpecificApparelItem_LowRankRebelAWingPilotHelmet</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_AWingPilotHelmet</li>
