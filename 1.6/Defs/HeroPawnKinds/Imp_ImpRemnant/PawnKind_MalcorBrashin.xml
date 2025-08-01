@@ -88,13 +88,13 @@
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
-				<li>Male_AverageWide</li>
+				<li>Male_NarrowWide</li>
 			  </whitelist>
 			  <blacklist>
 				<!--leave blank to disable-->
 			  </blacklist>
 			  <priority>
-				<li>Male_AverageWide</li>
+				<li>Male_NarrowWide</li>
 			  </priority>
 			  <checkGender>False</checkGender>
 			</li>

@@ -207,6 +207,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpWorkerHelmet</li>
@@ -260,9 +262,11 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotORUtility_engi_novisor</li>
+			<li>SWGCWSpecificApparelItem_ImperialUniformHat</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_UniformCap_imperial</li>
+			<li>guy762_UniformCap_impConscript</li>
 			<li>guy762_Bodysuit_utility</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -330,6 +334,8 @@
 			<li>KotORUtility_engi_novisor</li>
 			<li>KotORAccessory_engi</li>
 			<li>RemnantEmpire_lgtcombatarmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpEngiHelmet</li>
@@ -412,6 +418,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -537,6 +545,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -607,10 +617,12 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
-			<li>guy762_ImpUniform_midrank</li>
+			<li>guy762_ImpUniform_highbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
@@ -698,6 +710,8 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -769,6 +783,7 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<!-- <li>guy762_UniformCap_imperial</li> -->
