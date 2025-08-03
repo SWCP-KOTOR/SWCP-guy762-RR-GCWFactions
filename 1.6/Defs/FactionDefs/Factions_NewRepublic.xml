@@ -33,7 +33,7 @@
 	<leaderTitle>general</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 	<fixedLeaderKinds>
-      <li>SWNewRepub_ArmyGeneral</li>
+      <li>SWRebel_ArmyGeneral</li>
     </fixedLeaderKinds>
 	
 	<!-- <royalTitleTags> -->
@@ -250,11 +250,11 @@
 	  <li>
 		<kindDef>Peaceful</kindDef>
 		<options>
-		  <SWNewRepub_RebelTrooper>50</SWNewRepub_RebelTrooper>
-          <SWNewRepub_RebelSniper>25</SWNewRepub_RebelSniper>
-          <SWNewRepub_RebelHeavy>25</SWNewRepub_RebelHeavy>
-		  <SWNewRepub_RebelMedic>100</SWNewRepub_RebelMedic>
-		  <SWNewRepub_RebelArmyLt>100</SWNewRepub_RebelArmyLt>
+		  <SWRebel_trooper>50</SWRebel_trooper>
+          <SWRebel_sniper>25</SWRebel_sniper>
+          <SWRebel_heavy>25</SWRebel_heavy>
+		  <SWRebel_medic>100</SWRebel_medic>
+		  <SWRebel_ArmyLt>100</SWRebel_ArmyLt>
 		</options>
 	  </li>
 		  
@@ -272,11 +272,11 @@
 			<li>ImmediateAttackBreachingSmart</li>
 		</disallowedStrategies>
         <options>
-          <SWNewRepub_RebelTrooper>50</SWNewRepub_RebelTrooper>
-          <SWNewRepub_RebelSniper>25</SWNewRepub_RebelSniper>
-          <SWNewRepub_RebelHeavy>25</SWNewRepub_RebelHeavy>
-		  <SWNewRepub_RebelMedic>100</SWNewRepub_RebelMedic>
-		  <SWNewRepub_RebelArmyLt>100</SWNewRepub_RebelArmyLt>
+          <SWRebel_trooper>50</SWRebel_trooper>
+          <SWRebel_sniper>25</SWRebel_sniper>
+          <SWRebel_heavy>25</SWRebel_heavy>
+		  <SWRebel_medic>100</SWRebel_medic>
+		  <SWRebel_ArmyLt>100</SWRebel_ArmyLt>
         </options>
       </li>
 	  
@@ -293,11 +293,11 @@
 			<li>ImmediateAttackBreachingSmart</li>
 		</disallowedStrategies>
         <options>
-		  <SWNewRepub_RebelTrooper>50</SWNewRepub_RebelTrooper>
-          <SWNewRepub_RebelSniper>25</SWNewRepub_RebelSniper>
-          <SWNewRepub_RebelHeavy>25</SWNewRepub_RebelHeavy>
-		  <SWNewRepub_RebelMedic>100</SWNewRepub_RebelMedic>
-		  <SWNewRepub_RebelArmyLt>100</SWNewRepub_RebelArmyLt>
+		  <SWRebel_trooper>50</SWRebel_trooper>
+          <SWRebel_sniper>25</SWRebel_sniper>
+          <SWRebel_heavy>25</SWRebel_heavy>
+		  <SWRebel_medic>100</SWRebel_medic>
+		  <SWRebel_ArmyLt>100</SWRebel_ArmyLt>
 		  
 		  <SWNewRepub_wookieeheavy>100</SWNewRepub_wookieeheavy>
         </options>
@@ -313,11 +313,11 @@
 			<li>ImmediateAttack</li>
 		</disallowedStrategies>
         <options>
-          <SWNewRepub_RebelTrooper>50</SWNewRepub_RebelTrooper>
-          <SWNewRepub_RebelSniper>25</SWNewRepub_RebelSniper>
-          <SWNewRepub_RebelHeavy>25</SWNewRepub_RebelHeavy>
-		  <SWNewRepub_RebelMedic>100</SWNewRepub_RebelMedic>
-		  <SWNewRepub_RebelArmyLt>100</SWNewRepub_RebelArmyLt>
+          <SWRebel_trooper>50</SWRebel_trooper>
+          <SWRebel_sniper>25</SWRebel_sniper>
+          <SWRebel_heavy>25</SWRebel_heavy>
+		  <SWRebel_medic>100</SWRebel_medic>
+		  <SWRebel_ArmyLt>100</SWRebel_ArmyLt>
 		  
           <SWNewRepub_wookieeheavy>100</SWNewRepub_wookieeheavy>
 		  
@@ -343,11 +343,11 @@
 			<li>ImmediateAttackBreaching</li>
 		</disallowedStrategies>
         <options>
-          <SWNewRepub_RebelTrooper>50</SWNewRepub_RebelTrooper>
-		  <SWNewRepub_RebelArmyLt>100</SWNewRepub_RebelArmyLt>
+          <SWRebel_trooper>50</SWRebel_trooper>
+		  <SWRebel_ArmyLt>100</SWRebel_ArmyLt>
 		  
 		  <!-- <KotORRepub_commando>100</KotORRepub_commando> -->
-		  <SWNewRepub_RebelAgent>100</SWNewRepub_RebelAgent>
+		  <SWRebel_agent>100</SWRebel_agent>
         </options>
       </li>
 	  
@@ -393,26 +393,26 @@
 			<kindDef>Settlement</kindDef> <!-- base -->
 			<commonality>1</commonality>
 			<options>
-				<SWNewRepub_Engineer>10</SWNewRepub_Engineer>
+				<SWRebel_Engineer>10</SWRebel_Engineer>
 				
-				<SWNewRepub_TankPilot>2</SWNewRepub_TankPilot>
-				<SWNewRepub_Rebelpilot>1</SWNewRepub_Rebelpilot>
-				<SWNewRepub_Rebelpilot_AWing>1</SWNewRepub_Rebelpilot_AWing>
+				<SWRebel_TankPilot>2</SWRebel_TankPilot>
+				<SWRebel_pilot>1</SWRebel_pilot>
+				<SWRebel_AWingPilot>1</SWRebel_AWingPilot>
 			  
 			  <!-- <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD> -->
 			  <!-- <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">1</KotORDroidGood_R8009> -->
 			  <!-- <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_3C> -->
 			  
-				<SWNewRepub_RebelTrooper>10</SWNewRepub_RebelTrooper>
-				<SWNewRepub_RebelSniper>5</SWNewRepub_RebelSniper>
-				<SWNewRepub_RebelHeavy>5</SWNewRepub_RebelHeavy>
-				<SWNewRepub_RebelMedic>10</SWNewRepub_RebelMedic>
-				<SWNewRepub_RebelArmyLt>5</SWNewRepub_RebelArmyLt>
+				<SWRebel_trooper>10</SWRebel_trooper>
+				<SWRebel_sniper>5</SWRebel_sniper>
+				<SWRebel_heavy>5</SWRebel_heavy>
+				<SWRebel_medic>10</SWRebel_medic>
+				<SWRebel_ArmyLt>5</SWRebel_ArmyLt>
 
 			  <!-- <KotORRepub_droid_SentWD MayRequire="guy762.KotORDroids">10</KotORRepub_droid_SentWD> -->
 			  <!-- <KotORRepub_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORRepub_droid_ADMkIV> -->
 			  
-				<SWNewRepub_ArmyGeneral>5</SWNewRepub_ArmyGeneral>
+				<SWRebel_ArmyGeneral>5</SWRebel_ArmyGeneral>
 			  
 			  <!-- <KotORRepub_jediguardian_PotF MayRequire="guy762.Lee.KotORPotF">1</KotORRepub_jediguardian_PotF> -->
 			  <!-- <KotORRepub_jedisentinel_PotF MayRequire="guy762.Lee.KotORPotF">1</KotORRepub_jedisentinel_PotF> -->

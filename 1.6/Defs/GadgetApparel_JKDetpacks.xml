@@ -35,8 +35,9 @@
                 <chargeNoun>mines</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
             </li>
-			<li Class="EBSGFramework.CompProperties_EquippableAbility">
-                <ability>guy762_Ability_DetonateDetpack</ability>
+			<!-- <li Class="EBSGFramework.CompProperties_EquippableAbility"> -->
+			<li Class="CompProperties_EquippableAbility">
+                <abilityDef>guy762_Ability_DetonateDetpack</abilityDef>
             </li>
         </comps>
         <verbs>

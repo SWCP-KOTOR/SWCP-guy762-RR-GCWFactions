@@ -651,8 +651,8 @@
 	
 	
 	  
-	  <PawnKindDef Name="SWNewRepub_NRpilot" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_NRpilot</defName>
+	  <PawnKindDef Name="SWNewRepub_pilot" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_pilot</defName>
 		<label>New Republic pilot</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>20</minGenerationAge>

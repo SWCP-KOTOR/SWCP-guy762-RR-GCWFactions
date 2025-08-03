@@ -290,6 +290,9 @@
 		<tradeTags>
 			<li>guy762TT_KotORLegendary</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

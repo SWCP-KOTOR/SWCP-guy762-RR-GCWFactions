@@ -2,8 +2,45 @@
 <Defs>
 
 	
-	<PawnKindDef Name="SWNewRepub_Engineer" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_Engineer</defName>
+	<PawnKindDef Name="SWRebel_Base" Abstract="True">
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<race>Human</race>
+		<nameMaker>guy762_PawnNamer_Bf2</nameMaker>
+		
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			  <li>ImperialFighter</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<!-- <chemicalAddictionChance>0.1</chemicalAddictionChance> -->
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invNutrition>2</invNutrition>
+		
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWRebel_Engineer" ParentName="SWRebel_Base">
+		<defName>SWRebel_Engineer</defName>
 		<label>engineer</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>16</minGenerationAge>
@@ -71,8 +108,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_EngiCombat" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_EngiCombat</defName>
+	<PawnKindDef Name="SWRebel_EngiCombat" ParentName="SWRebel_Base">
+		<defName>SWRebel_EngiCombat</defName>
 		<label>combat engineer</label>
 		<combatPower>100</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -159,8 +196,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_TankPilot" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_TankPilot</defName>
+	<PawnKindDef Name="SWRebel_TankPilot" ParentName="SWRebel_Base">
+		<defName>SWRebel_TankPilot</defName>
 		<label>armor pilot</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -266,8 +303,8 @@
 
 
 	
-	<PawnKindDef Name="SWNewRepub_alderaanguard" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_alderaanguard</defName>
+	<PawnKindDef Name="SWRebel_AlderaanGuard" ParentName="SWRebel_Base">
+		<defName>SWRebel_AlderaanGuard</defName>
 		<label>fleet trooper</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -344,8 +381,8 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWNewRepub_RebelNavyLt" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelNavyLt</defName>
+	  <PawnKindDef Name="SWRebel_NavyLt" ParentName="SWRebel_Base">
+		<defName>SWRebel_NavyLt</defName>
 		<label>navy lieutenant</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>22</minGenerationAge>
@@ -418,8 +455,8 @@
 	  </PawnKindDef>
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_RebelNavyCaptain" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelNavyCaptain</defName>
+	<PawnKindDef Name="SWRebel_NavyCaptain" ParentName="SWRebel_Base">
+		<defName>SWRebel_NavyCaptain</defName>
 		<label>navy captain</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>24</minGenerationAge>
@@ -500,8 +537,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_ArmyGeneral" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_ArmyGeneral</defName>
+	<PawnKindDef Name="SWRebel_ArmyGeneral" ParentName="SWRebel_Base">
+		<defName>SWRebel_ArmyGeneral</defName>
 		<label>army general</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>24</minGenerationAge>
@@ -598,8 +635,8 @@
 	  
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_RebelAgent" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelAgent</defName>
+	<PawnKindDef Name="SWRebel_agent" ParentName="SWRebel_Base">
+		<defName>SWRebel_agent</defName>
 		<label>agent</label>
 		<combatPower>100</combatPower>
 		<minGenerationAge>18</minGenerationAge>
@@ -694,8 +731,8 @@
 
 
 	
-	<PawnKindDef Name="SWNewRepub_RebelTrooper" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelTrooper</defName>
+	<PawnKindDef Name="SWRebel_trooper" ParentName="SWRebel_Base">
+		<defName>SWRebel_trooper</defName>
 		<label>rebel soldier</label>
 		<combatPower>55</combatPower>
 		<minGenerationAge>18</minGenerationAge>
@@ -779,8 +816,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_RebelSniper" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelSniper</defName>
+	<PawnKindDef Name="SWRebel_sniper" ParentName="SWRebel_Base">
+		<defName>SWRebel_sniper</defName>
 		<label>rebel sharpshooter</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>18</minGenerationAge>
@@ -848,8 +885,8 @@
 	  
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_RebelHeavy" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelHeavy</defName>
+	<PawnKindDef Name="SWRebel_heavy" ParentName="SWRebel_Base">
+		<defName>SWRebel_heavy</defName>
 		<label>rebel heavy trooper</label>
 		<combatPower>150</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -940,8 +977,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_RebelMedic" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelMedic</defName>
+	<PawnKindDef Name="SWRebel_medic" ParentName="SWRebel_Base">
+		<defName>SWRebel_medic</defName>
 		<label>rebel combat medic</label>
 		<combatPower>50</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -949,13 +986,6 @@
 		<itemQuality>Normal</itemQuality>
 		
 		<maxPerGroup>2</maxPerGroup>
-		
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
 
 		<apparelMoney>5500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -1023,8 +1053,8 @@
 
 
 
-	<PawnKindDef Name="SWNewRepub_RebelArmyLt" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_RebelArmyLt</defName>
+	<PawnKindDef Name="SWRebel_ArmyLt" ParentName="SWRebel_Base">
+		<defName>SWRebel_ArmyLt</defName>
 		<label>rebel lieutenant</label>
 		<combatPower>75</combatPower>
 		<minGenerationAge>22</minGenerationAge>
@@ -1140,8 +1170,8 @@
 	  
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_Rebelpilot" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_Rebelpilot</defName>
+	<PawnKindDef Name="SWRebel_pilot" ParentName="SWRebel_Base">
+		<defName>SWRebel_pilot</defName>
 		<label>Rebel pilot</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -1215,8 +1245,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWNewRepub_Rebelpilot_AWing" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_Rebelpilot_AWing</defName>
+	<PawnKindDef Name="SWRebel_AWingPilot" ParentName="SWRebel_Base">
+		<defName>SWRebel_AWingPilot</defName>
 		<label>Rebel pilot</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>20</minGenerationAge>

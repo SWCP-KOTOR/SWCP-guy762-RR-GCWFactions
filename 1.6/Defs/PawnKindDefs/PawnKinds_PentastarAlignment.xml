@@ -620,7 +620,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<color>(90,90,95)</color>        <!-- blued grey -->
+				<color>(120,120,125)</color>        <!-- lighter blued grey -->
 			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
@@ -639,7 +639,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<color>(90,90,95)</color>        <!-- blued grey -->
+				<color>(120,120,125)</color>        <!-- lighter blued grey -->
 			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
