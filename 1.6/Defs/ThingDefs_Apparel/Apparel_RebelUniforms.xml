@@ -9,7 +9,7 @@
 		<label>Rebel Alliance uniform, officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelOfficer/navylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/RebelOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(145,175,195)</colorTwo> <!-- sand blue -->
@@ -46,7 +46,7 @@
 			<li>RebelAlliance_lowrankofficer</li>
 			<li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -79,9 +79,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_RankStyleRebOfficer_navylt</defName>
 		<overrideLabel>Rebel Alliance uniform, navy lieutenant's</overrideLabel>
-		<wornGraphicPath>Apparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelOfficer/navylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/RebelOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -90,9 +90,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_RankStyleRebOfficer_navycap</defName>
 		<overrideLabel>Rebel Alliance uniform, navy captain's</overrideLabel>
-		<wornGraphicPath>Apparel/RebelOfficer/navycaptain/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelOfficer/navycaptain/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelOfficer/navycaptain/Apparel</texPath>
+		  <texPath>SWApparel/RebelOfficer/navycaptain/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -119,7 +119,7 @@
 		<label>rebel overcoat, officer's</label>
 		<description>This long overcoat is typically worn by ranking officers of the Rebel Alliance and New Republic.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelArmyDuster/general/Apparel</texPath>
+		  <texPath>SWApparel/RebelArmyDuster/general/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(175,120,55)</colorTwo> <!-- burnt orange -->
@@ -159,7 +159,7 @@
 				<li>NewRepublic_ArmyOfficer</li>
 				<li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		
@@ -203,9 +203,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyleRebOvercoat_armygen</defName>
 		<overrideLabel>rebel overcoat, general's</overrideLabel>
-		<wornGraphicPath>Apparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelArmyDuster/general/Apparel</texPath>
+		  <texPath>SWApparel/RebelArmyDuster/general/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>

@@ -6,7 +6,7 @@
 		<label>New Republic uniform, guard's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/NewRepublicOfficer/bigbelt/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublicOfficer/bigbelt/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(250,250,250)</colorTwo> <!-- white -->
@@ -48,7 +48,7 @@
 			<li>OnSkin</li>
 		  </layers>
 		  
-		  <wornGraphicPath>Apparel/NewRepublicOfficer/bigbelt/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/NewRepublicOfficer/bigbelt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -86,7 +86,7 @@
 		<label>New Republic uniform, officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(250,250,250)</colorTwo> <!-- white -->
@@ -128,7 +128,7 @@
 			<li>OnSkin</li>
 		  </layers>
 		  
-		  <wornGraphicPath>Apparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -161,9 +161,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_RankStyleNR_navylt</defName>
 		<overrideLabel>New Republic uniform, navy lieutenant's</overrideLabel>
-		<wornGraphicPath>Apparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -172,9 +172,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_RankStyleNR_navycap</defName>
 		<overrideLabel>New Republic uniform, navy captain's</overrideLabel>
-		<wornGraphicPath>Apparel/NewRepublicOfficer/navycaptain/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/NewRepublicOfficer/navycaptain/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -196,7 +196,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/NewRepublic/helmet</texPath>
+			<texPath>SWApparel/NewRepublic/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(70,90,125)</colorTwo>       <!--K1 blue-->
@@ -223,7 +223,7 @@
 				<li>NewRepublic_trooper</li>
 				<li>SWGCWSpecificApparelItem_NewRepublicMarineHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/NewRepublic/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/NewRepublic/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -254,7 +254,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/NewRepublic/helmet</texPath>
+			<texPath>SWApparel/NewRepublic/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(250,250,250)</colorTwo>       <!--white-->
@@ -282,7 +282,7 @@
 				<li>NewRepublic_resistancetrooper</li>
 				<li>SWGCWSpecificApparelItem_ResistanceNewRepublicMarineHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/NewRepublic/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/NewRepublic/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -325,7 +325,7 @@
 		<label>New Republic marine armor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/NewRepublic/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublic/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(70,90,125)</colorTwo>       <!--K1 blue-->
@@ -349,7 +349,7 @@
 			<li>NewRepublic_trooper</li>
 			<li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/NewRepublic/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/NewRepublic/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -390,7 +390,7 @@
 		<label>New Republic marine armor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/NewRepublic/Apparel</texPath>
+		  <texPath>SWApparel/NewRepublic/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(250,250,250)</colorTwo>       <!--white-->
@@ -415,7 +415,7 @@
 			<li>NewRepublic_combatengineer</li>
 			<li>SWGCWSpecificApparelItem_ResistanceNewRepublicMarineArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/NewRepublic/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/NewRepublic/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>

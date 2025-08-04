@@ -8,7 +8,7 @@
 	<label>TIE pilot flight armor</label>
 	<description>This combat-ready flight vest provides additional protection against vacuum for limited periods. Its many models appeal to a wide range of users, from military pilots and mercenaries to fringe explorers and space pirates. Built-in grav thrusters also assist with movement in open space.</description>
 	<graphicData>
-	  <texPath>Apparel/TIEPilot/Apparel</texPath>
+	  <texPath>SWApparel/TIEPilot/Apparel</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
@@ -37,7 +37,7 @@
 		<li>RemnantEmpire_TIEpilot</li>
 		<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
 	  </tags>
-	  <wornGraphicPath>Apparel/TIEPilot/Apparel</wornGraphicPath>
+	  <wornGraphicPath>SWApparel/TIEPilot/Apparel</wornGraphicPath>
 	  <useWornGraphicMask>true</useWornGraphicMask>
 	  <defaultOutfitTags Inherit="False">
 		<li>Worker</li>
@@ -79,7 +79,7 @@
 		<label>light combat armor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialNavyTrooper/Apparel</texPath>
+		  <texPath>SWApparel/ImperialNavyTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -103,7 +103,7 @@
 			<li>RemnantEmpire_lgtcombatarmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
 		  <layers Inherit="False">
 			<li>Middle</li>
 		  </layers>
@@ -131,7 +131,7 @@
 		<label>light combat armor, rusty</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialNavyTrooper/Apparel</texPath>
+		  <texPath>SWApparel/ImperialNavyTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(200,100,50)</colorTwo> <!-- rusty red -->
@@ -158,7 +158,7 @@
 			<li>NewRepublic_rebeltrooper</li>
 			<li>SWGCWSpecificApparelItem_RustyImperialLightCombatArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <layers Inherit="False">
 			<li>Middle</li>
@@ -196,7 +196,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialNavyTrooper/helmet</texPath>
+			<texPath>SWApparel/ImperialNavyTrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -219,7 +219,7 @@
 				<li>RemnantEmpire_navytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialNavyTrooper/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialNavyTrooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -270,7 +270,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImpNavyCommando/helmet</texPath>
+			<texPath>SWApparel/ImpNavyCommando/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -301,7 +301,7 @@
 				<li>GreaterMaldrood_navycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImpNavyCommando/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImpNavyCommando/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -344,7 +344,7 @@
 		<label>navy commando armor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/ImpNavyCommando/Apparel</texPath>
+		  <texPath>SWApparel/ImpNavyCommando/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(250,250,250)</colorTwo>
@@ -369,7 +369,7 @@
 			<li>GreaterMaldrood_navycommando</li>
 			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImpNavyCommando/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImpNavyCommando/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <layers Inherit="False">
 			<li>Middle</li>
@@ -459,7 +459,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/TIEPilot/helmet</texPath>
+			<texPath>SWApparel/TIEPilot/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(250,250,250)</colorTwo> <!-- white -->
@@ -490,7 +490,7 @@
 				<li>RemnantEmpire_TIEpilot</li>
 				<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/TIEPilot/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/TIEPilot/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -529,7 +529,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/TIEPilot/PentastarHelmet/helmet</texPath>
+			<texPath>SWApparel/TIEPilot/PentastarHelmet/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(65,70,190)</colorTwo> <!-- pentastar blue -->
@@ -560,7 +560,7 @@
 				<li>PentastarAlignment_TIEpilot</li>
 				<li>SWGCWSpecificApparelItem_PentastarTIEPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/TIEPilot/PentastarHelmet/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/TIEPilot/PentastarHelmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -593,7 +593,7 @@
 		<label>bodysuit, pilot's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialCrew/Apparel</texPath>
+		  <texPath>SWApparel/ImperialCrew/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -623,7 +623,7 @@
 			<li>RemnantEmpire_TIEpilot</li>
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialCrew/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialCrew/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -675,7 +675,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/TIEPilot/AceHelmet/helmet</texPath>
+			<texPath>SWApparel/TIEPilot/AceHelmet/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(140,0,0)</colorTwo> <!-- dark red -->
@@ -724,7 +724,7 @@
 				<li>RemnantEmpire_TIEpilotAce</li>
 				<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/TIEPilot/AceHelmet/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/TIEPilot/AceHelmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -752,9 +752,9 @@
 	<ThingStyleDef>
 		<defName>guy762_TIEAceHelmetStyle_ace</defName>
 		<overrideLabel>TIE pilot Helmet (ace)</overrideLabel>
-		<wornGraphicPath>Apparel/TIEPilot/AceHelmet/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/TIEPilot/AceHelmet/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/TIEPilot/AceHelmet/helmet</texPath>
+		  <texPath>SWApparel/TIEPilot/AceHelmet/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -763,9 +763,9 @@
 	<ThingStyleDef>
 		<defName>guy762_TIEAceHelmetStyle_veteran</defName>
 		<overrideLabel>TIE pilot Helmet (veteran)</overrideLabel>
-		<wornGraphicPath>Apparel/TIEPilot/VeteranHelmet/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/TIEPilot/VeteranHelmet/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/TIEPilot/VeteranHelmet/helmet</texPath>
+		  <texPath>SWApparel/TIEPilot/VeteranHelmet/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -798,7 +798,7 @@
 		<label>bodysuit, ace pilot's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialEngineer/Apparel</texPath>
+		  <texPath>SWApparel/ImperialEngineer/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(140,0,0)</colorTwo> <!-- dark red -->
@@ -841,7 +841,7 @@
 			<li>RemnantEmpire_TIEpilotAce</li>
 			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotBodysuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialEngineer/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialEngineer/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -865,9 +865,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_TIEAceUniformStyle_yellowstripe</defName>
 		<overrideLabel>bodysuit, ace pilot's</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialEngineer/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialEngineer/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialEngineer/Apparel</texPath>
+		  <texPath>SWApparel/ImperialEngineer/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(220,190,0)</colorTwo> <!-- mid yellow -->

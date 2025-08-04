@@ -11,7 +11,7 @@
 		<label>combat armor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialTankTrooper/Apparel</texPath>
+		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		  <colorTwo>(75,75,75)</colorTwo> <!-- dark grey  -->
@@ -36,7 +36,7 @@
 			<li>RemnantEmpire_armycommando</li>
 			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialTankTrooper/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
 		  <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
 		  <layers Inherit="False">
 			<li>Middle</li>
@@ -112,9 +112,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_ImpCombatArmorStyle_blank</defName>
 		<overrideLabel>combat armor</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialTankTrooper/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialTankTrooper/Apparel</texPath>
+		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	  </ThingStyleDef>
@@ -122,9 +122,9 @@
 	  <ThingStyleDef>
 		<defName>guy762_ImpCombatArmorStyle_commando</defName>
 		<overrideLabel>army commando armor</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialTankTrooper/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialTankTrooper/Apparel</texPath>
+		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -151,7 +151,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -178,7 +178,7 @@
 				<li>RemnantEmpire_armylieutenant</li>
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -229,9 +229,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_armylt</defName>
 		<overrideLabel>light battle armor, army lieutenant's</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -250,7 +250,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -277,7 +277,7 @@
 				<li>RemnantEmpire_armymajor</li>
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -336,9 +336,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_armymajor</defName>
 		<overrideLabel>light battle armor, army major's</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -347,9 +347,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</defName>
 		<overrideLabel>light battle armor, task squadron C.O.'s</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/tasksquadCO/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/tasksquadCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/tasksquadCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/tasksquadCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -367,7 +367,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -394,7 +394,7 @@
 				<li>RemnantEmpire_armygeneral</li>
 				<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -453,9 +453,9 @@
 	<!-- <ThingStyleDef> -->
 		<!-- <defName>guy762_RankStyle_armygen</defName> -->
 		<!-- <overrideLabel>light battle armor, army general's</overrideLabel> -->
-		<!-- <wornGraphicPath>Apparel/ImperialArmyTrooper/armygeneral/Apparel</wornGraphicPath> -->
+		<!-- <wornGraphicPath>SWApparel/ImperialArmyTrooper/armygeneral/Apparel</wornGraphicPath> -->
 		<!-- <graphicData> -->
-		  <!-- <texPath>Apparel/ImperialArmyTrooper/armygeneral/Apparel</texPath> -->
+		  <!-- <texPath>SWApparel/ImperialArmyTrooper/armygeneral/Apparel</texPath> -->
 		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		<!-- </graphicData> -->
@@ -464,9 +464,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_taskforceCO</defName>
 		<overrideLabel>light battle armor, task force C.O.'s</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -489,7 +489,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -516,7 +516,7 @@
 				<li>RemnantEmpire_grandgeneral</li>
 				<li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -567,9 +567,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_grandgeneral</defName>
 		<overrideLabel>light battle armor, grand general's</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -601,7 +601,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -625,7 +625,7 @@
 				<li>RemnantEmpire_armyconscript</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -675,7 +675,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(200,100,50)</colorTwo> <!-- rusty red -->
@@ -700,7 +700,7 @@
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RustyImperialArmyArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -768,7 +768,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialArmyTrooper/helmet</texPath>
+			<texPath>SWApparel/ImperialArmyTrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -806,7 +806,7 @@
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialArmyTrooper/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -833,9 +833,9 @@
 	<ThingStyleDef>
 		<defName>guy762_ArmyTrooperHelmetStyle_visordown</defName>
 		<overrideLabel>army trooper helmet</overrideLabel>
-		<wornGraphicPath>Apparel/ImperialArmyTrooper/helmet_visordown/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/helmet_visordown/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/helmet_visordown/helmet</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/helmet_visordown/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -847,7 +847,7 @@
 		<label>breath mask</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialArmyTrooper/mask</texPath>
+		  <texPath>SWApparel/ImperialArmyTrooper/mask</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -879,7 +879,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/ImperialArmyTrooper/mask</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialArmyTrooper/mask</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <renderSkipFlags>
 			<li>Beard</li>
@@ -948,7 +948,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</texPath>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(130,125,105)</colorTwo>         <!-- khaki -->
@@ -981,7 +981,7 @@
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -1008,9 +1008,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RemnantArmyHelmetStyle_visordown</defName>
 		<overrideLabel>army trooper helmet, masked</overrideLabel>
-		<wornGraphicPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</texPath>
+		  <texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -1035,7 +1035,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet</texPath>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(200,100,50)</colorTwo> <!-- rusty red -->
@@ -1068,7 +1068,7 @@
 				<li>IndependentWarlord_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RustyImperialArmyHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -1095,9 +1095,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RustyArmyHelmetStyle_visordown</defName>
 		<overrideLabel>army trooper helmet, rusty</overrideLabel>
-		<wornGraphicPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_visordown/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_visordown/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/ArmyTrooper_RemnantKitbashes/helmet_visordown/helmet</texPath>
+		  <texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_visordown/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -1133,7 +1133,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialTankTrooper/helmet</texPath>
+			<texPath>SWApparel/ImperialTankTrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -1164,7 +1164,7 @@
 				<li>RemnantEmpire_armycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialTankTrooper/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialTankTrooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>

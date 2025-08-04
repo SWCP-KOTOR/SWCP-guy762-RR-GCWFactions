@@ -11,7 +11,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Rebel/helmet</texPath>
+			<texPath>SWApparel/Rebel/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -37,7 +37,7 @@
 				<li>NewRepublicApparel_RebelHelmet</li>
 				<li>SWGCWSpecificApparelItem_RebelFleetTrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Rebel/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Rebel/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -69,7 +69,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Rebel/endorhelmet</texPath>
+			<texPath>SWApparel/Rebel/endorhelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(175,150,120)</colorTwo> <!-- bespin beige -->
@@ -95,7 +95,7 @@
 				<li>NewRepublic_sharpshooterhat</li>
 				<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Rebel/endorhelmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Rebel/endorhelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -136,7 +136,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelPilot/helmetAWing_trooper/helmet</texPath>
+			<texPath>SWApparel/RebelPilot/helmetAWing_trooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(190,155,120)</colorTwo> <!-- beige -->
@@ -162,7 +162,7 @@
 				<li>ScumAndVillainy_pilot</li>
 				<li>SWGCWSpecificApparelItem_RebelAWingTrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelPilot/helmetAWing_trooper/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelPilot/helmetAWing_trooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -194,7 +194,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelCloneArmor/helmet</texPath>
+			<texPath>SWApparel/RebelCloneArmor/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -217,7 +217,7 @@
 				<li>NewRepublic_rebelheavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelCloneArmor/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelCloneArmor/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -270,7 +270,7 @@
 		<label>rebel combat suit</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/Apparel</texPath>
+		  <texPath>SWApparel/Rebel/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(230,185,45)</colorTwo>       <!-- republic yellow -->
@@ -293,7 +293,7 @@
 			<li>NewRepublic_rebeltrooper</li>
 			<li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Rebel/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -333,7 +333,7 @@
 		<label>rebel combat suit, medic's</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/medic/Apparel</texPath>
+		  <texPath>SWApparel/Rebel/medic/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(250,250,250)</colorTwo>       <!-- republic yellow -->
@@ -358,7 +358,7 @@
 			<li>NewRepublic_rebelmedic</li>
 			<li>SWGCWSpecificApparelItem_MedicRebelCombatSuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Rebel/medic/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/medic/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -397,7 +397,7 @@
 		<label>rebel combat suit, officer's</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/armylt/Apparel</texPath>
+		  <texPath>SWApparel/Rebel/armylt/Apparel</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>500</MarketValue>
@@ -407,7 +407,7 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Rebel/armylt/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/armylt/Apparel</wornGraphicPath>
 		  <tags Inherit="False">
 			<li>NewRepublic_rebeltrooper</li>
 			<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
@@ -429,9 +429,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_RebOfficerArmor_armylt</defName>
 		<overrideLabel>rebel combat suit, army lieutenant's</overrideLabel>
-		<wornGraphicPath>Apparel/Rebel/armylt/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/Rebel/armylt/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/Rebel/armylt/Apparel</texPath>
+		  <texPath>SWApparel/Rebel/armylt/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -462,7 +462,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelCloneArmor/Apparel</texPath>
+			<texPath>SWApparel/RebelCloneArmor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(125,50,50)</colorTwo>       <!-- rebel red -->
@@ -487,7 +487,7 @@
 				<li>NewRepublic_rebelheavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelCloneArmor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelCloneArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -544,7 +544,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelPilot/helmet_blank/helmet</texPath>
+			<texPath>SWApparel/RebelPilot/helmet_blank/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(100,100,100)</colorTwo> <!-- dark grey -->
@@ -576,7 +576,7 @@
 				<li>ScumAndVillainy_pilot</li>
 				<li>SWGCWSpecificApparelItem_ScumXWingPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelPilot/helmet_blank/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelPilot/helmet_blank/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -616,7 +616,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelPilot/helmet</texPath>
+			<texPath>SWApparel/RebelPilot/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -663,7 +663,7 @@
 				<li>NewRepublic_rookiepilot</li>
 				<li>SWGCWSpecificApparelItem_LowRankRebelXWingPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelPilot/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelPilot/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -698,9 +698,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RebelPilotHelmetStyle_rookiestripe</defName>
 		<overrideLabel>K-22995 flight helmet</overrideLabel>
-		<wornGraphicPath>Apparel/RebelPilot/helmet_rookiestripe/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelPilot/helmet_rookiestripe/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelPilot/helmet_rookiestripe/helmet</texPath>
+		  <texPath>SWApparel/RebelPilot/helmet_rookiestripe/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -709,9 +709,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RebelPilotHelmetStyle_novice</defName>
 		<overrideLabel>K-22995 flight helmet</overrideLabel>
-		<wornGraphicPath>Apparel/RebelPilot/helmet_novice/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelPilot/helmet_novice/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelPilot/helmet_novice/helmet</texPath>
+		  <texPath>SWApparel/RebelPilot/helmet_novice/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -720,9 +720,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RebelPilotHelmetStyle_novicestripe</defName>
 		<overrideLabel>K-22995 flight helmet</overrideLabel>
-		<wornGraphicPath>Apparel/RebelPilot/helmet_novicestripe/helmet</wornGraphicPath>
+		<wornGraphicPath>SWApparel/RebelPilot/helmet_novicestripe/helmet</wornGraphicPath>
 		<graphicData>
-		  <texPath>Apparel/RebelPilot/helmet_novicestripe/helmet</texPath>
+		  <texPath>SWApparel/RebelPilot/helmet_novicestripe/helmet</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -756,7 +756,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RebelPilot/helmetAWing_default/helmet</texPath>
+			<texPath>SWApparel/RebelPilot/helmetAWing_default/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -799,7 +799,7 @@
 				<li>NewRepublic_AWingpilot</li>
 				<li>SWGCWSpecificApparelItem_LowRankRebelAWingPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RebelPilot/helmetAWing_default/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelPilot/helmetAWing_default/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>

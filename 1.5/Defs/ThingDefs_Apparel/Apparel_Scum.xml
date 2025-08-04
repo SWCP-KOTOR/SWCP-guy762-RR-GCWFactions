@@ -8,7 +8,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>This light helmet is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Helmets of this design have been in active use for well over ten thousand years.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/CombatHelmet</texPath>
+			<texPath>SWApparel/Helmets/CombatHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(140,80,40)</colorTwo>
@@ -43,7 +43,7 @@
 				<li>HuttKajidics_tantelarmor</li>
 				<li>SWGCWSpecificApparelItem_TantelHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Helmets/CombatHelmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Helmets/CombatHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -87,7 +87,7 @@
 		<label>Tantel Armor</label>
 		<description>This light armor is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Suits of this design have been in active use for well over ten thousand years.</description>
 		<graphicData>
-		  <texPath>Apparel/TantelArmor/Apparel</texPath>
+		  <texPath>SWApparel/TantelArmor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(160,115,80)</colorTwo>   <!-- darker khaki -->
@@ -135,7 +135,7 @@
 				<li>HuttKajidics_tantelarmor</li>
 				<li>SWGCWSpecificApparelItem_TantelArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/TantelArmor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/TantelArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -190,7 +190,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/JAWeequay/Apparel</texPath>
+			<texPath>SWApparel/JAWeequay/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(220,175,80)</colorTwo> <!-- bronzium -->
@@ -214,7 +214,7 @@
 				<li>SaV_outfit_weakmerc</li>
 				<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
 			</tags>
-			<wornGraphicPath>Apparel/JAWeequay/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/JAWeequay/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -271,7 +271,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>Providing solid protection for a minimal cost, this armor is excellent for entrenched troops or guards. A force on the move, however, may find it somewhat constricting.</description>
 		<graphicData>
-			<texPath>Apparel/JAMerc/helmet</texPath>
+			<texPath>SWApparel/JAMerc/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(160,80,80)</colorTwo> <!-- dark red -->
@@ -320,7 +320,7 @@
 				<li>SaV_outfit_merc</li>
 				<li>SWGCWSpecificApparelItem_JKJAMercHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/JAMerc/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/JAMerc/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>EyeCover</li>
@@ -355,7 +355,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/JAMerc/Apparel</texPath>
+			<texPath>SWApparel/JAMerc/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(255,210,0)</colorTwo> -->
@@ -385,7 +385,7 @@
 				<li>SaV_outfit_JKmerc</li>
 				<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/JAMerc/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/JAMerc/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -440,7 +440,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/BlackSun/Apparel</texPath>
+			<texPath>SWApparel/BlackSun/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(220,175,80)</colorTwo> <!-- bronzium -->
@@ -465,7 +465,7 @@
 				<li>BlackSun_FalleenSoldier</li>
 				<li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/BlackSun/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/BlackSun/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -513,7 +513,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/BlackSun/helmet</texPath>
+			<texPath>SWApparel/BlackSun/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(220,175,80)</colorTwo> <!-- bronzium -->
@@ -540,7 +540,7 @@
 				<li>BlackSun_FalleenSoldier</li>
 				<li>SWGCWSpecificApparelItem_BlackSunSoldierHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/BlackSun/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/BlackSun/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -589,7 +589,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ZannMerc/helmet</texPath>
+			<texPath>SWApparel/ZannMerc/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -612,7 +612,7 @@
 				<li>ZannConsortium_DisruptorMerc</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumMercHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ZannMerc/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ZannMerc/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -644,7 +644,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ZannMerc/Apparel</texPath>
+			<texPath>SWApparel/ZannMerc/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(75,75,75)</colorTwo> <!-- dark grey -->
@@ -669,7 +669,7 @@
 				<li>ZannConsortium_DisruptorMerc</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumMercArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ZannMerc/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ZannMerc/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -724,7 +724,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ZannDefiler/helmet</texPath>
+			<texPath>SWApparel/ZannDefiler/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -756,7 +756,7 @@
 				<li>ZannConsortium_defiler</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ZannDefiler/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ZannDefiler/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -789,7 +789,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ZannDefiler/Apparel</texPath>
+			<texPath>SWApparel/ZannDefiler/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -823,7 +823,7 @@
 				<li>ZannConsortium_defiler</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ZannDefiler/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ZannDefiler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>

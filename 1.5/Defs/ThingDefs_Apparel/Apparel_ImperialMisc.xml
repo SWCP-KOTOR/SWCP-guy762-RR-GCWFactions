@@ -19,7 +19,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/PAGuardianProtector/Apparel</texPath>
+			<texPath>SWApparel/PAGuardianProtector/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(65,70,190)</colorTwo> <!-- pentastar blue -->
@@ -45,7 +45,7 @@
 				<li>PentastarAlignment_GuardianProtector</li>
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/PAGuardianProtector/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/PAGuardianProtector/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -128,7 +128,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/PAGuardianProtector/helmet</texPath>
+			<texPath>SWApparel/PAGuardianProtector/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(65,70,190)</colorTwo> <!-- pentastar blue -->
@@ -158,7 +158,7 @@
 				<li>PentastarAlignment_GuardianProtector</li>
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/PAGuardianProtector/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/PAGuardianProtector/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -260,7 +260,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/raptor/Apparel</texPath>
+			<texPath>SWApparel/Stormtrooper/raptor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(225,220,75)</colorTwo> <!-- banana yellow -->
@@ -284,7 +284,7 @@
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/raptor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/raptor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -365,7 +365,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/raptor/raptorhelmet</texPath>
+			<texPath>SWApparel/Stormtrooper/raptor/raptorhelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(225,220,75)</colorTwo> <!-- banana yellow -->
@@ -397,7 +397,7 @@
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/raptor/raptorhelmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/raptor/raptorhelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -442,7 +442,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/TIEPilot/raptorpilot</texPath>
+			<texPath>SWApparel/TIEPilot/raptorpilot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(225,220,75)</colorTwo> <!-- banana yellow -->
@@ -476,7 +476,7 @@
 				<li>ZsinjEmpire_raptorpilot</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorPilotHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/TIEPilot/raptorpilot</wornGraphicPath>
+			<wornGraphicPath>SWApparel/TIEPilot/raptorpilot</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -517,8 +517,8 @@
 		<label>bodysuit, Raptor pilot's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialEngineer/Apparel</texPath>
-		  <!-- <texPath>Apparel/ImperialEngineer/Apparel_item</texPath> -->
+		  <texPath>SWApparel/ImperialEngineer/Apparel</texPath>
+		  <!-- <texPath>SWApparel/ImperialEngineer/Apparel_item</texPath> -->
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(225,220,75)</colorTwo>
@@ -550,7 +550,7 @@
 			<li>ZsinjEmpire_raptorpilot</li>
 			<li>SWGCWSpecificApparelItem_ZsinjRaptorPilotBodysuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialEngineer/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialEngineer/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -581,8 +581,8 @@
 		<label>bodysuit, engineer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/ImperialEngineer/Apparel</texPath>
-		  <!-- <texPath>Apparel/ImperialEngineer/Apparel_item</texPath> -->
+		  <texPath>SWApparel/ImperialEngineer/Apparel</texPath>
+		  <!-- <texPath>SWApparel/ImperialEngineer/Apparel_item</texPath> -->
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(50,50,50)</colorTwo> <!-- black -->
@@ -614,7 +614,7 @@
 			<li>RemnantEmpire_engineer</li>
 			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/ImperialEngineer/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/ImperialEngineer/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -642,7 +642,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialEngineer/helmet</texPath>
+			<texPath>SWApparel/ImperialEngineer/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow -->
@@ -675,7 +675,7 @@
 				<li>RemnantEmpire_impengi</li>
 				<li>SWGCWSpecificApparelItem_ImperialEngineerHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialEngineer/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialEngineer/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -766,7 +766,7 @@
 		<label>Inquisitor armor</label>
 		<description>Designed for those who relish personal combat, and know that power comes to those who take it, this armor offers good protection with no hindrance to movement.</description>
 		<graphicData>
-		  <texPath>Apparel/Inquisitor/Armor/Apparel</texPath>
+		  <texPath>SWApparel/Inquisitor/Armor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -790,7 +790,7 @@
 			<li>PentastarAlignment_InQuestor</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Inquisitor/Armor/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Inquisitor/Armor/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -837,7 +837,7 @@
 		<label>Inquisitor tunic</label>
 		<description>Designed for those who relish personal combat, and know that power comes to those who take it, these robes offer good protection with no hindrance to movement.</description>
 		<graphicData>
-		  <texPath>Apparel/Inquisitor/Apparel</texPath>
+		  <texPath>SWApparel/Inquisitor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(160,35,50)</colorTwo> <!-- inquisitor red -->
@@ -887,7 +887,7 @@
 				<li>PentastarAlignment_InQuestor</li>
 				<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 			</tags>
-			<wornGraphicPath>Apparel/Inquisitor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Inquisitor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<!-- <tradeTags> -->
@@ -957,7 +957,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RoyalGuard/helmet</texPath>
+			<texPath>SWApparel/RoyalGuard/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(200,45,65)</colorTwo> <!-- royal guard red -->
@@ -984,7 +984,7 @@
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/RoyalGuard/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RoyalGuard/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -1035,7 +1035,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/RoyalGuard/Apparel</texPath>
+			<texPath>SWApparel/RoyalGuard/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(40,40,40)</colorTwo> <!-- darker black -->
@@ -1065,7 +1065,7 @@
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/RoyalGuard/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RoyalGuard/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -1121,7 +1121,7 @@
 		<label>cloak, full</label>
 		<description>This cloak covers the wearer's entire body.</description>
 		<graphicData>
-		  <texPath>Apparel/RoyalGuard/cloak/Apparel</texPath>
+		  <texPath>SWApparel/RoyalGuard/cloak/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1161,7 +1161,7 @@
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardCloak</li>
 			</tags>
-			<wornGraphicPath>Apparel/RoyalGuard/cloak/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RoyalGuard/cloak/Apparel</wornGraphicPath>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>

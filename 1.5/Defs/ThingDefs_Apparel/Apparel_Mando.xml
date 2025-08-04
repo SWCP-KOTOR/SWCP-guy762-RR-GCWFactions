@@ -12,7 +12,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Mandalorian/helmet_norangefinder/helmet_item</texPath>
+			<texPath>SWApparel/Mandalorian/helmet_norangefinder/helmet_item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutMultiMask</shaderType>
 			<!-- <shaderType>CutoutComplex</shaderType> -->
@@ -61,7 +61,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Mandalorian/helmet_norangefinder/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Mandalorian/helmet_norangefinder/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -140,7 +140,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Mandalorian/helmet/helmet_item</texPath>
+			<texPath>SWApparel/Mandalorian/helmet/helmet_item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutMultiMask</shaderType>
 			<!-- <shaderType>CutoutComplex</shaderType> -->
@@ -191,7 +191,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Mandalorian/helmet/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Mandalorian/helmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -284,7 +284,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Mandalorian/Apparel_item</texPath>
+			<texPath>SWApparel/Mandalorian/Apparel_item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutMultiMask</shaderType>
 			<!-- <shaderType>CutoutComplex</shaderType> -->
@@ -331,7 +331,7 @@
 				<li>SWGCWSpecificApparelItem_MandoArmor</li>
 				<!-- <li>KotORRoyaltyTag_AnyMandoArmor</li> -->
 			</tags>
-			<wornGraphicPath>Apparel/Mandalorian/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Mandalorian/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -413,7 +413,7 @@
 		<label>jetpack, Z-6</label>
 		<description>This jetpack comes equipped with a missile launcher that can be loaded with a variety of different missiles.</description>
 		<graphicData>
-		  <texPath>Apparel/Mandalorian/Z6jetpack/Z6jetpack_item</texPath>
+		  <texPath>SWApparel/Mandalorian/Z6jetpack/Z6jetpack_item</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutMultiMask</shaderType>
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
@@ -459,7 +459,7 @@
 		  <tags>
 			<li>SWGCWSpecificGadgetItem_Z6Jetpack</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Mandalorian/Z6jetpack/Z6jetpack</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  
 		  <wornGraphicData Inherit="False">

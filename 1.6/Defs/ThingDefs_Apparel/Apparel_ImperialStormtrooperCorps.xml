@@ -32,7 +32,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/Apparel</texPath>
+			<texPath>SWApparel/Stormtrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -54,7 +54,7 @@
 				<li>RemnantEmpire_stormiearmor</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -136,7 +136,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/helmet</texPath>
+			<texPath>SWApparel/Stormtrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(95,135,190)</colorTwo> <!-- medium blue -->
@@ -168,7 +168,7 @@
 				<li>RemnantEmpire_stormiearmor</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -214,7 +214,7 @@
 		<label>trooper pauldron</label>
 		<description>A durable armorweave pauldron for denoting rank among various trooper corps within the Empire.</description>
 		<graphicData>
-		  <texPath>Apparel/pauldron/Apparel</texPath>
+		  <texPath>SWApparel/pauldron/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -244,7 +244,7 @@
 				<li>RemnantEmpire_stormieofficer</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
 			</tags>
-			<wornGraphicPath>Apparel/pauldron/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/pauldron/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>
@@ -291,7 +291,7 @@
 		<label>7th Fleet pauldron</label>
 		<description>A durable armorweave pauldron for denoting rank among various trooper corps within the Empire. This pauldron is emblazoned with the logo of Grand Admiral Thrawn's dreaded 7th Fleet.</description>
 		<graphicData>
-		  <texPath>Apparel/pauldron/7thFleet/Apparel</texPath>
+		  <texPath>SWApparel/pauldron/7thFleet/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -321,7 +321,7 @@
 				<li>ThrawnEmpire_stormieofficer</li>
 				<li>SWGCWSpecificApparelItem_ThrawnImperialStormtrooperPauldron</li>
 			</tags>
-			<wornGraphicPath>Apparel/pauldron/7thFleet/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/pauldron/7thFleet/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>
@@ -386,7 +386,7 @@
 			<HediffDef>guy762_StealthField_sixty</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/shadowstormie/Apparel</texPath>
+			<texPath>SWApparel/Stormtrooper/shadowstormie/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -411,7 +411,7 @@
 				<li>RemnantEmpire_shadowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/shadowstormie/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/shadowstormie/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -497,7 +497,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Stormtrooper/shadowstormie/helmet</texPath>
+			<texPath>SWApparel/Stormtrooper/shadowstormie/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(95,135,190)</colorTwo> <!-- medium blue -->
@@ -531,7 +531,7 @@
 				<li>RemnantEmpire_shadowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Stormtrooper/shadowstormie/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Stormtrooper/shadowstormie/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -690,7 +690,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ScoutTrooper/Apparel</texPath>
+			<texPath>SWApparel/ScoutTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(250,250,250)</colorTwo>
@@ -719,7 +719,7 @@
 				<li>RemnantEmpire_scouttrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialScoutTrooperArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ScoutTrooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ScoutTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -916,7 +916,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ScoutTrooper/Apparel</texPath>
+			<texPath>SWApparel/ScoutTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(200,45,65)</colorTwo> <!-- royal guard red -->
@@ -947,7 +947,7 @@
 				<li>RemnantEmpire_stormcommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
 			</tags>
-			<wornGraphicPath>Apparel/ScoutTrooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ScoutTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>

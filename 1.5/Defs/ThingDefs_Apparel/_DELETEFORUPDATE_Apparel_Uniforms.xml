@@ -6,7 +6,7 @@
 		<label>uniform cap</label>
 		<description>A formal cap for military personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/GenericMilitaryFatigues/hat</texPath>
+		  <texPath>SWApparel/GenericMilitaryFatigues/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -35,7 +35,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/GenericMilitaryFatigues/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/hat</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
@@ -70,7 +70,7 @@
 		<label>uniform, fatigues</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/GenericMilitaryFatigues/Apparel</texPath>
+		  <texPath>SWApparel/GenericMilitaryFatigues/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -102,7 +102,7 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_armytrooper</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -138,7 +138,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialWorker/helmet</texPath>
+			<texPath>SWApparel/ImperialWorker/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -167,7 +167,7 @@
 			<tags>
 				<li>RemnantEmpire_impworker</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialWorker/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialWorker/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -215,7 +215,7 @@
 		<label>flak hat</label>
 		<description>A durable, padded armorweave head cover.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/PaoHat/PaoHat</texPath>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -244,7 +244,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Rebel/PaoHat/PaoHat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
@@ -281,7 +281,7 @@
 		<label>flak hat, goggles</label>
 		<description>A durable, padded armorweave head cover.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
@@ -313,7 +313,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Rebel/PaoHat/PaoHat_Goggles</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
@@ -372,7 +372,7 @@
 		<label>engineer's cap</label>
 		<description>A rugged cap with a scarf for engineering personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelEngineer/hat</texPath>
+		  <texPath>SWApparel/RebelEngineer/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
@@ -405,7 +405,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/RebelEngineer/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/RebelEngineer/hat</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
@@ -453,7 +453,7 @@
 		<label>clothing, plain</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/rebel/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/rebel/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(175,175,175)</colorTwo>
@@ -480,7 +480,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_alderaanguard</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/rebel/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/rebel/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -517,7 +517,7 @@
 		<label>flight suit compressor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelPilot/Apparel</texPath>
+		  <texPath>SWApparel/RebelPilot/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -540,7 +540,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_pilot</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/RebelPilot/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/RebelPilot/Apparel</wornGraphicPath>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
