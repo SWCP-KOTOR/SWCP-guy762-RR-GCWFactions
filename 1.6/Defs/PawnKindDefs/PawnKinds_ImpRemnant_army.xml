@@ -241,9 +241,10 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.25</biocodeWeaponChance>
-		<weaponMoney>2500</weaponMoney>
+		<weaponMoney>2500~7500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
 		
 		<skills>

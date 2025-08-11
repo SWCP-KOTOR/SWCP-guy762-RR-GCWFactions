@@ -301,9 +301,10 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>3200</weaponMoney>
+		<weaponMoney>3200~10000</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_TL50conc</li>
+			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
 		
 		<skills>

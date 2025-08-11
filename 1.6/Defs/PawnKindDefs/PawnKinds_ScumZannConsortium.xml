@@ -219,9 +219,10 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<weaponMoney>3500</weaponMoney>
+		<weaponMoney>3500~8400</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_EE3carbine</li>
+			<li>SWRanged_DXR6DisruptorSniper</li>
 		</weaponTags>
 		
 		<techHediffsChance>20</techHediffsChance>

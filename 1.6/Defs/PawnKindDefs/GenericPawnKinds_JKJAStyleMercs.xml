@@ -301,62 +301,63 @@
   
   
   
-  <!-- <PawnKindDef Name="SWScum_JKSniperRodian" ParentName="SWMercBase"> -->
-    <!-- <defName>SWScum_JKSniperRodian</defName> -->
-	<!-- <label>underworld sniper</label> -->
-    <!-- <combatPower>75</combatPower> -->
+  <PawnKindDef Name="SWScum_JKSniperRodian" ParentName="SWMercBase">
+    <defName>SWScum_JKSniperRodian</defName>
+	<label>underworld sniper</label>
+    <combatPower>75</combatPower>
 	
-	<!-- <useFactionXenotypes>false</useFactionXenotypes> -->
-	<!-- <xenotypeSet> -->
-      <!-- <xenotypeChances> -->
-		<!-- <guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">999</guy762_xenotype_rodian> -->
-      <!-- </xenotypeChances> -->
-    <!-- </xenotypeSet> -->
+	<useFactionXenotypes>false</useFactionXenotypes>
+	<xenotypeSet>
+      <xenotypeChances>
+		<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">999</guy762_xenotype_rodian>
+      </xenotypeChances>
+    </xenotypeSet>
 
-    <!-- <itemQuality>Good</itemQuality> -->
-    <!-- <apparelMoney>1000~3500</apparelMoney> -->
-    <!-- <apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance> -->
-    <!-- <apparelTags> -->
-	  <!-- <li>KotORShield_adv</li> -->
-	  <!-- <li>KotORStealthBelt_basic</li> -->
-    <!-- </apparelTags> -->
-	<!-- <apparelRequired> -->
-	   <!-- <li>guy762_Bodysuit_striped</li> -->
-	   <!-- <li>guy762_Jacket_scout</li> -->
-	<!-- </apparelRequired> -->
-	<!-- <specificApparelRequirements> -->
-		<!-- <li> -->
-			<!-- <apparelLayer>OnSkin</apparelLayer> -->
-			<!-- <color>(195,240,250)</color> -->
-		<!-- </li> -->
-		<!-- <li> -->
-			<!-- <apparelLayer>Middle</apparelLayer> -->
-			<!-- <color>(175,120,55)</color> -->
-		<!-- </li> -->
-	<!-- </specificApparelRequirements> -->
+    <itemQuality>Good</itemQuality>
+    <apparelMoney>1000~3500</apparelMoney>
+    <apparelAllowHeadgearChance>0.45</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>KotORStealthBelt_basic</li>
+	  <li>SWCPSpecificApparelItem_StripedFatigues</li>
+	  <li>SWCPSpecificApparelItem_ScoutVest</li>
+    </apparelTags>
+	<apparelRequired>
+	   <li>guy762_Bodysuit_striped</li>
+	   <li>guy762_Jacket_scout</li>
+	</apparelRequired>
+	<specificApparelRequirements>
+		<li>
+			<apparelLayer>OnSkin</apparelLayer>
+			<color>(195,240,250)</color>
+		</li>
+		<li>
+			<apparelLayer>Middle</apparelLayer>
+			<color>(175,120,55)</color>
+		</li>
+	</specificApparelRequirements>
 	
-    <!-- <weaponMoney>1000~5000</weaponMoney> -->
-    <!-- <weaponTags> -->
-	  <!-- <li>SaV_JKrodiansniper</li> -->
-    <!-- </weaponTags> -->
-	<!-- <biocodeWeaponChance>0.45</biocodeWeaponChance> -->
+    <weaponMoney>6200</weaponMoney>
+    <weaponTags>
+	  <li>SWRanged_DXR6DisruptorSniper</li>
+    </weaponTags>
+	<biocodeWeaponChance>0.45</biocodeWeaponChance>
 	
-	<!-- <techHediffsRequired> -->
-	  <!-- <li>guy762_ImplantDock_I</li> -->
-	<!-- </techHediffsRequired> -->
+	<techHediffsRequired>
+	  <li>guy762_ImplantDock_I</li>
+	</techHediffsRequired>
 	
-	<!-- <skills> -->
-		<!-- <li> -->
-			<!-- <skill>Shooting</skill> -->
-			<!-- <range>7~14</range> -->
-		<!-- </li> -->
-	<!-- </skills> -->
+	<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>7~14</range>
+		</li>
+	</skills>
 	
-    <!-- <initialWillRange>0.2~1.6</initialWillRange> -->
-    <!-- <initialResistanceRange>3~7</initialResistanceRange> -->
-	<!-- <isFighter>true</isFighter> -->
-	<!-- <apparelIgnoreSeasons>true</apparelIgnoreSeasons> -->
-  <!-- </PawnKindDef> -->
+    <initialWillRange>0.2~1.6</initialWillRange>
+    <initialResistanceRange>3~7</initialResistanceRange>
+	<isFighter>true</isFighter>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+  </PawnKindDef>
   
   
   

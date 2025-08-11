@@ -254,6 +254,13 @@
                  <li>guy762_DXR4DisruptorRifle</li> <!-- DXR-4 Disruptor Rifle -->
               </ThingTargets>
           </li>
+		  <li>
+              <MainHand>(-0.400, 0.100, -0.165)</MainHand>
+              <SecHand>(-0.070, -0.100, -0.125)</SecHand>
+              <ThingTargets>
+                 <li>guy762_DXR6DisruptorSniper</li> <!-- DXR-6 Disruptor Sniper -->
+              </ThingTargets>
+          </li>
 		  
 		  
 		  
@@ -309,6 +316,13 @@
                  <li>guy762_HH15MissieLauncher</li> <!-- HH-15 missile launcher -->
               </ThingTargets>
           </li>
+		  <li>
+              <MainHand>(-0.150, 0.100, -0.075)</MainHand>
+              <SecHand>(0.100, -0.100, -0.085)</SecHand>
+              <ThingTargets>
+                 <li>guy762_T7IonDisruptor</li> <!-- T-7 Ion Disruptor -->
+              </ThingTargets>
+          </li>
 		  
 		  
 		  
@@ -336,7 +350,7 @@
               </ThingTargets>
           </li>
 		  <li>
-              <MainHand>(-0.200, 0.100, -0.125)</MainHand>
+              <MainHand>(-0.200, 0.100, -0.175)</MainHand>
               <SecHand>(0.125, -0.100, 0.125)</SecHand>
               <ThingTargets>
                  <li>guy762_VibroAxeGCW</li> <!-- Vibroaxe -->

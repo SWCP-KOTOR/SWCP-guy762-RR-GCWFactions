@@ -60,6 +60,10 @@
 			  <countRange>1</countRange>
 			</li>
 			<li>
+			  <thingDef>guy762_DXR6DisruptorSniper</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
 			  <thingDef>guy762_PLX4LRocketRifle</thingDef>
 			  <countRange>1</countRange>
 			</li>
