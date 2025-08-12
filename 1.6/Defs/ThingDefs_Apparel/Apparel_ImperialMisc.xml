@@ -106,17 +106,10 @@
 				<ammoCountToRefill>2</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
+            <li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	  
 	  
@@ -184,17 +177,11 @@
 		</colorGenerator>
 		
 		
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_overlay</li> -->
-			  <!-- <li>guy762_slot_underlay_hat</li> -->
-			  <!-- <li>guy762_slot_helmettech</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
+		<comps>
+            <li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
 	</ThingDef> 
 	  
 	  

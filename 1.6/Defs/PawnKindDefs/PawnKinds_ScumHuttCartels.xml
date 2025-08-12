@@ -20,6 +20,10 @@
 		  <li>Hauling</li>
 		</requiredWorkTags>
 		
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		
 		<inventoryOptions>
 		  <subOptionsChooseOne>
 			<li>
@@ -62,7 +66,9 @@
 			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
 		  </xenotypeChances>
 		</xenotypeSet-->
-	  </PawnKindDef>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
 	  
 	  
 	  

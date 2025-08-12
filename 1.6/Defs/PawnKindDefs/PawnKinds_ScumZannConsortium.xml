@@ -39,6 +39,7 @@
 		  </subOptionsTakeAll>
 		</inventoryOptions>
 		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 	
 	

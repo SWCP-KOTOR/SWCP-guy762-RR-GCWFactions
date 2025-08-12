@@ -2,7 +2,90 @@
 <Defs>
 
 	
-	<!--troopers-->
+	<PawnKindDef Name="SWMercBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
+		
+		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<biocodeWeaponChance>0.95</biocodeWeaponChance>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>2~3</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.20</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.09</guy762_xenotype_duros>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> <!--1.00 total-->
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nikto>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.14</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 	  

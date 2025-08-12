@@ -36,6 +36,7 @@
 
 		<disallowedTraits>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	

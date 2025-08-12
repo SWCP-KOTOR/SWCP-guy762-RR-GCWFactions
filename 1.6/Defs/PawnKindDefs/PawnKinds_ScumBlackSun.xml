@@ -42,6 +42,8 @@
 		
 		<useFactionXenotypes>true</useFactionXenotypes>
 		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		
 	</PawnKindDef>
 	
 	

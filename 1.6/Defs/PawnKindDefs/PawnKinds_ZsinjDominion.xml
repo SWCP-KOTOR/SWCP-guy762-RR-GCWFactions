@@ -38,6 +38,7 @@
 
 		<disallowedTraits>
 			<li>BodyPurist</li>
+			<li>Nudist</li>
 		</disallowedTraits>
 
 		<isFighter>true</isFighter>
@@ -45,6 +46,8 @@
 			<li>Violent</li>
 			<li>Hauling</li>
 		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 
 	<PawnKindDef Name="SWZsinj_TrooperBase" ParentName="SWZsinj_Base" Abstract="True">
@@ -103,6 +106,7 @@
 
 		<disallowedTraits>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	

@@ -38,6 +38,7 @@
 
 		<disallowedTraits>
 			<li>BodyPurist</li>
+			<li>Nudist</li>
 		</disallowedTraits>
 
 		<isFighter>true</isFighter>
@@ -45,6 +46,8 @@
 			<li>Violent</li>
 			<li>Hauling</li>
 		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 
 	<PawnKindDef Name="SWImpRemnant_TrooperBase" ParentName="SWImpRemnant_Base" Abstract="True">
@@ -481,6 +484,9 @@
 	<PawnKindDef Name="SWImpRemnant_INTLt" ParentName="SWImpRemnant_ISBLt">
 		<defName>SWImpRemnant_INTLt</defName>
 		<label>intelligence lieutenant</label>
+		<weaponTags Inherit="False">
+			<li>SWRanged_A180pistol</li>
+		</weaponTags>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>

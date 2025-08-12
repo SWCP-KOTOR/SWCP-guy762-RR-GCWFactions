@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="KotORRangedModdable_OffHand">
+		<defName>guy762_A180pistol</defName>
+		<label>A-180 blaster pistol</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Weapons/A180</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>kotorsound_select_pistol</soundInteract>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<RangedWeapon_DamageMultiplier>0.9</RangedWeapon_DamageMultiplier>
+		</statBases>
+		
+		<weaponTags>
+			<li>SWRanged_A180pistol</li>
+			<li>SWRanged_AnyRarePistol</li>
+			<li>SWRanged_RebelAgentPistolMix</li>
+			<li>SWKotORWeaponCategoryTag_pistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>20</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>kotorsound_silencedblaster</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+			<!-- <li> disabled in the event I do the modularity variants -->
+				<!-- <label>adv. sniper shot</label> -->
+				<!-- <commandIcon>UI/Improved_Sniper_Shot</commandIcon> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_sniper</defaultProjectile> -->
+				<!-- <warmupTime>3.5</warmupTime> -->
+				<!-- <defaultCooldownTime>4</defaultCooldownTime> -->
+				<!-- <range>35</range> -->
+				<!-- <accuracyMedium>1.00</accuracyMedium> -->
+				<!-- <accuracyLong>0.95</accuracyLong> -->
+				<!-- <ticksBetweenBurstShots>20</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <soundCast>kotorsound_DLT18rifle</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+				<!-- <ai_IsWeapon>true</ai_IsWeapon> -->
+				<!-- <bodypartTagTarget>ConsciousnessSource</bodypartTagTarget> -->
+			<!-- </li> -->
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!--comps>
+			<li Class="ModularWeapons.CompProperties_ModularParts">
+				<compClass>ModularWeapons.CompModularParts</compClass>
+				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
+				<partKinds>
+					<li>guy762_slot_trigger_lgtrep</li>
+				</partKinds>
+			</li>
+		</comps-->
+	</ThingDef>
+	
+	
+	
+	
+
+</Defs>
