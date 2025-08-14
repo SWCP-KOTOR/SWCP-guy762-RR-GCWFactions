@@ -1149,6 +1149,7 @@
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardCloak</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RoyalGuard/cloak/Apparel</wornGraphicPath>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>

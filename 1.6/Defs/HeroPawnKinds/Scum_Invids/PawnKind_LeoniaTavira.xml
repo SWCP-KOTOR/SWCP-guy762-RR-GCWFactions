@@ -6,8 +6,8 @@
 		<nameMaker>guy762_HeroNamer_LeoniaTavira</nameMaker>
 		<label>Moff</label>
 		<combatPower>500</combatPower>
-		<minGenerationAge>16</minGenerationAge>
-		<maxGenerationAge>17</maxGenerationAge>
+		<minGenerationAge>17</minGenerationAge>
+		<maxGenerationAge>18</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
 		<forcedHair>Cleopatra</forcedHair>
 		<forcedHairColor>(50,50,50)</forcedHairColor>

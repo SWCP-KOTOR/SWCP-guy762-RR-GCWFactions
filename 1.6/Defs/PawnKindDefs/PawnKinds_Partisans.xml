@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWPartisanBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
+		
+		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+		  <li>Nudist</li>
+		  <li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+		</disallowedTraits>
+
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.15</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_aqualish>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+			<guy762_xenotype_defel MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_defel>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_devaronian>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
+			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_feeorin>
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_iridonian>
+			<guy762_xenotype_kaleesh MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kaleesh>
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
+			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_lasat>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mimbanese>
+			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+
+
+
+
+
+
+
+
+
+
+
+	
+	<PawnKindDef Name="SWPartisan_soldier" ParentName="SWPartisanBase">
+		<defName>SWPartisan_soldier</defName>
+		<label>partisan soldier</label>
+		<combatPower>55</combatPower>
+		<minGenerationAge>17</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<itemQuality>Poor</itemQuality>
+
+		<apparelMoney>2000~5500</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORHeadband_bandana</li>
+			<li>PartisanAlliance_trooperheadwear</li>
+			<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ScumMercArmor</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>  <!-- khaki -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+				  <options>
+					<li>
+						<weight>10</weight>
+						<only>(90,85,65)</only> <!-- grease green -->
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>(75,80,80)</only> <!-- stone teal -->
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>(70,65,60)</only> <!-- basalt -->
+					</li>
+				  </options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>300~1600</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DL18pistol</li>
+			<li>SWRanged_SE14pistol</li>
+			<li>SWRanged_Model57pistol</li>
+			<li>SWRanged_E5rifle</li>
+			<li>SWRanged_E10rifle</li>
+			<li>SWRanged_E11carbine</li>
+			<li>SWRanged_DLT18rifle</li>
+		</weaponTags>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~6</range>
+			</li>
+		</skills>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+	
+
+</Defs>

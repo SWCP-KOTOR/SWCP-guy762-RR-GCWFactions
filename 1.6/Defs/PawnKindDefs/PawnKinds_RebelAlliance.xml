@@ -1110,10 +1110,10 @@
 		</specificApparelRequirements>
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>500~3000</weaponMoney>
+		<weaponMoney>1500~3000</weaponMoney>
 		<weaponTags>
 		  <li>SWRanged_E11carbine</li>
-		  <li>SWRanged_A280Crifle</li> <!-- replace with RT-97c -->
+		  <li>SWRanged_RT97Crepeater</li>
 		</weaponTags>
 		
 		<skills>

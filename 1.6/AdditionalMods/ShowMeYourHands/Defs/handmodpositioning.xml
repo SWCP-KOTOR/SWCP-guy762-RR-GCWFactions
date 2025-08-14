@@ -274,6 +274,13 @@
 		  
 		  
 		  <li>
+              <MainHand>(-0.250, 0.100, -0.075)</MainHand>
+              <SecHand>(0.175, -0.100, -0.025)</SecHand>
+              <ThingTargets>
+                 <li>guy762_RT97Crepeater</li> <!-- RT-97C Repeating Blaster -->
+              </ThingTargets>
+          </li>
+		  <li>
               <MainHand>(-0.200, 0.100, -0.080)</MainHand>
               <SecHand>(0.115, -0.100, -0.035)</SecHand>
               <ThingTargets>
