@@ -745,6 +745,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>NewRepublic_RebelBackpackMix</li>
 		  <li>NewRepublic_rebeltrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
 		  <li>NewRepublic_RebelTrooperOnSkin</li>
@@ -767,18 +768,6 @@
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<requiredTag>NewRepublic_RebelTrooperOnSkin</requiredTag>
-				<colorGenerator Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>(175,150,120)</only>       <!-- bespin beige -->
-						</li>
-						<li>
-							<weight>10</weight>
-							<only>(95,100,70)</only> <!-- forest green -->
-						</li>
-					</options>
-				</colorGenerator>
 			</li>
 		</specificApparelRequirements>
 		
@@ -833,7 +822,7 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_sharpshooterhat</li>
 		  <li>SWWarlordsAccessory_onlyponcho</li>
-		  <li>NewRepublic_RebelTrooperOnSkin</li>
+		  <li>NewRepublic_RebelSniperOnSkin</li>
 		  <!-- <li>SWCPSpecificApparelItem_GenericUniform</li> -->
 		  <li>SWCPSpecificApparelItem_ScoutVest</li>
 		</apparelTags>
@@ -854,7 +843,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<requiredTag>NewRepublic_RebelTrooperOnSkin</requiredTag>
+				<requiredTag>NewRepublic_RebelSniperOnSkin</requiredTag>
 				<color>(75,75,75)</color>       <!-- dark grey -->
 			</li>
 		</specificApparelRequirements>
@@ -1071,17 +1060,18 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
-		  <li>NewRepublic_rebeltrooper</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>SWCPSpecificApparelItem_GenericUniform</li>
-		  <li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
-		  <li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+			<li>KotOREquipment_basic</li>
+			<li>NewRepublic_rebeltrooper</li>
+			<li>NewRepublic_RebelBackpackMix</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+			<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
+			<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_vanguard</li>
 			<li>guy762_RebelCombatSuit_lowrank</li>
-			<li>guy762_GenericUniform_fatigues</li>
+			<li>guy762_Clothing_RebelCamoII</li>
 		</apparelRequired>
 		
 		<specificApparelRequirements>
@@ -1099,14 +1089,29 @@
 				<apparelLayer>OnSkin</apparelLayer>
 				<colorGenerator Class="ColorGenerator_Options">
 					<options>
+						<!-- dull brown -->
 						<li>
 							<weight>10</weight>
-							<only>(120,125,110)</only>  <!-- slate green -->
+							<only>(105,80,65)</only>
 						</li>
+						<!-- urban grey -->
 						<li>
 							<weight>10</weight>
-							<only>(105,80,65)</only> <!-- dull brown -->
+							<only>(100,100,100)</only>
 						</li>
+						<!-- rust -->
+						<li>
+							<weight>10</weight>
+							<only>(160,100,60)</only>
+						</li>
+						
+						
+						
+						<!-- slate green -->
+						<!-- <li> -->
+							<!-- <weight>10</weight> -->
+							<!-- <only>(120,125,110)</only> -->
+						<!-- </li> -->
 					</options>
 				</colorGenerator>
 			</li>
