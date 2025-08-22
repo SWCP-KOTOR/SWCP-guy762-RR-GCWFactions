@@ -265,7 +265,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelCombatSuit" ParentName="KotORArmorModdable_hard">
+	<ThingDef Name="guy762_RebelCombatSuit" ParentName="KotORArmorModdable_soft">
 		<defName>guy762_RebelCombatSuit</defName>
 		<label>rebel combat suit</label>
 		<description>.</description>
@@ -328,7 +328,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelCombatSuit_medic" ParentName="KotORArmorModdable_hard">
+	<ThingDef Name="guy762_RebelCombatSuit_medic" ParentName="KotORArmorModdable_soft">
 		<defName>guy762_RebelCombatSuit_medic</defName>
 		<label>rebel combat suit, medic's</label>
 		<description>.</description>

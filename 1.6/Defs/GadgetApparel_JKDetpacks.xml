@@ -36,9 +36,9 @@
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
             </li>
 			<!-- <li Class="EBSGFramework.CompProperties_EquippableAbility"> -->
-			<li Class="CompProperties_EquippableAbility">
-                <abilityDef>guy762_Ability_DetonateDetpack</abilityDef>
-            </li>
+			<!-- <li Class="CompProperties_EquippableAbility"> -->
+                <!-- <abilityDef>guy762_Ability_DetonateDetpack</abilityDef> -->
+            <!-- </li> -->
         </comps>
         <verbs>
             <li>
@@ -104,6 +104,10 @@
 				<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
             </tags>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			
+			<abilities>
+				<li>guy762_Ability_DetonateDetpack</li>
+			</abilities>
         </apparel>
 
     </ThingDef>

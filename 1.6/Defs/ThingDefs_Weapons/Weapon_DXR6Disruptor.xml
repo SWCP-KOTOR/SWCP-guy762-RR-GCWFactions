@@ -228,7 +228,7 @@
 				<label>sniper shot</label>
 				<!-- <description>Fire a single bolt with increased range and armor penetration.</description> -->
 				<!-- <iconPath>UI/Sniper_Shot</iconPath> -->
-				<commandIcon>UI/Sniper_Shot</commandIcon>
+				<commandIcon>UI/Disruptor_Sniper_Shot</commandIcon>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORDisruptorBolt_sniper</defaultProjectile>

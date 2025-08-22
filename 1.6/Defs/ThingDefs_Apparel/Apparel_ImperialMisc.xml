@@ -517,10 +517,11 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			
 			<Insulation_Cold>25</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 			
+			<EquipDelay>3</EquipDelay>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
@@ -581,10 +582,11 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
-			<Insulation_Cold>25</Insulation_Cold>
-			<Insulation_Heat>25</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 			
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
@@ -836,10 +838,11 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>15</Insulation_Heat>
-			<EquipDelay>6</EquipDelay>
 			
+			<EquipDelay>6</EquipDelay>
 			<WorkToMake>10000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
@@ -1034,8 +1037,10 @@
       		<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			
 			<Insulation_Cold>10</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
+			
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -1118,10 +1123,11 @@
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat>
-			<Insulation_Cold>25</Insulation_Cold>
-			<Insulation_Heat>25</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 			
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
 			<WorkToMake>9500</WorkToMake>
 		</statBases>
 		<!--equippedStatOffsets>

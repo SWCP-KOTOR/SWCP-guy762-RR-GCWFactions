@@ -65,7 +65,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -81,7 +81,7 @@
 
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_NewRepUniform_lowrank</defName>
 		<label>New Republic uniform, officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
@@ -156,9 +156,9 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
-	  <ThingStyleDef>
+	<ThingStyleDef>
 		<defName>guy762_RankStyleNR_navylt</defName>
 		<overrideLabel>New Republic uniform, navy lieutenant's</overrideLabel>
 		<wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
@@ -167,9 +167,9 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	  
-	  <ThingStyleDef>
+	<ThingStyleDef>
 		<defName>guy762_RankStyleNR_navycap</defName>
 		<overrideLabel>New Republic uniform, navy captain's</overrideLabel>
 		<wornGraphicPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</wornGraphicPath>
@@ -178,7 +178,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	  
 	  
 	  
@@ -190,7 +190,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_NewRepublicHelmet</defName>
 		<label>New Republic marine helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -378,14 +378,14 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_NewRepublicArmor_resistance</defName>
 		<label>New Republic marine armor</label>
 		<description>.</description>
@@ -452,7 +452,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 
 

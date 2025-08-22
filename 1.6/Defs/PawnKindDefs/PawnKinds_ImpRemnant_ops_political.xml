@@ -777,6 +777,7 @@
 		<itemQuality>Excellent</itemQuality>
 		
 		<maxPerGroup>1</maxPerGroup>
+		<factionLeader>true</factionLeader>
 		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>

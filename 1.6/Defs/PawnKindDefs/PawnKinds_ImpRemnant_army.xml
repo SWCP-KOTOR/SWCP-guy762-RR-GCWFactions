@@ -70,6 +70,8 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Awful</itemQuality>
 		
+		<fixedGender>Male</fixedGender>
+		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
@@ -143,6 +145,8 @@
 		<maxGenerationAge>45</maxGenerationAge>
 		<itemQuality>Poor</itemQuality>
 		
+		<fixedGender>Male</fixedGender>
+		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
@@ -204,6 +208,8 @@
 		<minGenerationAge>19</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Poor</itemQuality>
+		
+		<fixedGender>Male</fixedGender>
 		
 		<maxPerGroup>2</maxPerGroup>
 		
@@ -655,6 +661,8 @@
 		<maxGenerationAge>75</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>
 		
+		<fixedGender>Male</fixedGender>
+		
 		<maxPerGroup>1</maxPerGroup>
 		
 		<xenotypeSet Inherit="False">
@@ -739,6 +747,8 @@
 		<minGenerationAge>35</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>
+		
+		<fixedGender>Male</fixedGender>
 		
 		<maxPerGroup>1</maxPerGroup>
 		

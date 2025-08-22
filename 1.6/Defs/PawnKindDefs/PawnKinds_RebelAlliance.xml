@@ -301,7 +301,7 @@
 	
 	
 	
-	<!--troopers-->
+	<!-- navy -->
 
 
 	
@@ -376,14 +376,14 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	 
 	  
 	  
 	  
-	  <PawnKindDef Name="SWRebel_NavyLt" ParentName="SWRebel_Base">
+	<PawnKindDef Name="SWRebel_NavyLt" ParentName="SWRebel_Base">
 		<defName>SWRebel_NavyLt</defName>
 		<label>navy lieutenant</label>
 		<combatPower>40</combatPower>
@@ -454,7 +454,7 @@
 			<!-- <li>ProductionCommand</li> -->
 			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	<PawnKindDef Name="SWRebel_NavyCaptain" ParentName="SWRebel_Base">
@@ -747,12 +747,12 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_rebeltrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>NewRepublic_RebelTrooperOnSkin</li>
 		  <li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelCombatSuit</li>
-			<li>guy762_GenericUniform_fatigues</li>
+			<!-- <li>guy762_GenericUniform_fatigues</li> -->
 		</apparelRequired>
 		
 		<specificApparelRequirements>
@@ -766,6 +766,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>NewRepublic_RebelTrooperOnSkin</requiredTag>
 				<colorGenerator Class="ColorGenerator_Options">
 					<options>
 						<li>
@@ -832,12 +833,13 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_sharpshooterhat</li>
 		  <li>SWWarlordsAccessory_onlyponcho</li>
-		  <li>SWCPSpecificApparelItem_GenericUniform</li>
+		  <li>NewRepublic_RebelTrooperOnSkin</li>
+		  <!-- <li>SWCPSpecificApparelItem_GenericUniform</li> -->
 		  <li>SWCPSpecificApparelItem_ScoutVest</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Jacket_scout</li>
-			<li>guy762_GenericUniform_fatigues</li>
+			<!-- <li>guy762_GenericUniform_fatigues</li> -->
 		</apparelRequired>
 		
 		<specificApparelRequirements>
@@ -852,6 +854,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>NewRepublic_RebelTrooperOnSkin</requiredTag>
 				<color>(75,75,75)</color>       <!-- dark grey -->
 			</li>
 		</specificApparelRequirements>

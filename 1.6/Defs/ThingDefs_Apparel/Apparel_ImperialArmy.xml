@@ -145,7 +145,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyOfficerArmor</defName>
 		<label>light battle armor, officer's</label>
 		<techLevel>Spacer</techLevel>
@@ -214,16 +214,6 @@
 			</options>
 		</colorGenerator>
 
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>	 
 	
 	<ThingStyleDef>
@@ -321,16 +311,6 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>	 
 	
 	<ThingStyleDef>
@@ -438,16 +418,6 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>	 
 	
 	<!-- <ThingStyleDef> -->
@@ -552,16 +522,6 @@
                 <rarity>Unique</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>	 
 	
 	<ThingStyleDef>
@@ -652,18 +612,8 @@
 				</li>
 			</options>
 		</colorGenerator>
-
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
-	</ThingDef>	 
+		
+	</ThingDef>
 	
 	
 	
@@ -728,17 +678,7 @@
 			</options>
 		</colorGenerator>
 
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
-	</ThingDef>	 
+	</ThingDef>
 	
 
 	  
@@ -762,7 +702,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperHelmet</defName>
 		<label>army trooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -858,9 +798,10 @@
 		  <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
 		  <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
 		  <ArmorRating_Heat>0.02</ArmorRating_Heat>
-		  <Insulation_Cold>2</Insulation_Cold>
-		  <EquipDelay>0.5</EquipDelay>
 		  
+		  <Insulation_Cold>2</Insulation_Cold>
+		  
+		  <EquipDelay>0.5</EquipDelay>
 		  <WorkToMake>1500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
@@ -1101,7 +1042,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	  
 	  
 	  

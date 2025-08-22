@@ -91,7 +91,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWScum_pilot" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_pilot" ParentName="SWMercBase">
 		<defName>SWScum_pilot</defName>
 		<label>fringe pilot</label>
 		<combatPower>65</combatPower>

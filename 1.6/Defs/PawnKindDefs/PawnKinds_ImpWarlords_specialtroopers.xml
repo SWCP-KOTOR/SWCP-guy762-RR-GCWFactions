@@ -196,6 +196,7 @@
 			<li>KotOREquipment_adv</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
 			<li>KotORUtility_utilitygrenade</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyGasmask</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
@@ -364,6 +365,7 @@
 			<li>KotOREquipment_adv</li>
 			<li>KotORUtility_utilitygrenade</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyGasmask</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>

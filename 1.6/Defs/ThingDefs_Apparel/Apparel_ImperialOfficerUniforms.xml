@@ -218,7 +218,7 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
 		
 		<recipeMaker>

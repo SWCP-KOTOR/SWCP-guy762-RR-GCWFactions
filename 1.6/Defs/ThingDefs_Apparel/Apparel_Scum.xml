@@ -283,12 +283,10 @@
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>15</Insulation_Cold>
-			<!-- <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor> -->
-			<!-- <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold> -->
-			<!-- <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat> -->
-			<EquipDelay>10</EquipDelay>
 			
+			<Insulation_Cold>10</Insulation_Cold>
+			
+			<EquipDelay>10</EquipDelay>
 			<!-- <WorkToMake>15000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
@@ -367,7 +365,9 @@
       		<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>35</Insulation_Cold>
+			
+			<Insulation_Cold>20</Insulation_Cold>
+			
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -383,6 +383,8 @@
 			<tags>
 				<li>SaV_outfit_merc</li>
 				<li>SaV_outfit_JKmerc</li>
+				<li>PartisanAlliance_trooperOnSkin</li>
+				<li>PartisanAlliance_trooperarmor</li>
 				<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/JAMerc/Apparel</wornGraphicPath>
@@ -732,13 +734,14 @@
 		  <li>ArmorHeadgear</li>
 		</thingCategories>
 		<statBases>
-			<Mass>8</Mass>
+			<Mass>6</Mass>
 			<MarketValue>2550</MarketValue>
 			
-			<MaxHitPoints>235</MaxHitPoints>
-      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<!-- LBA stats-->
+			<MaxHitPoints>175</MaxHitPoints>
+      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -799,13 +802,14 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
-			<Mass>12</Mass>
+			<Mass>10</Mass>
 			<MarketValue>4550</MarketValue>
 			
-			<MaxHitPoints>475</MaxHitPoints>
-      		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<!-- LBA stats-->
+			<MaxHitPoints>350</MaxHitPoints>
+      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
 			
 			<Insulation_Cold>25</Insulation_Cold>
 			<Insulation_Heat>25</Insulation_Heat>

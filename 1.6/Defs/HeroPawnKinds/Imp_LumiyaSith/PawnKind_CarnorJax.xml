@@ -185,6 +185,7 @@
 		</requiredWorkTags>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<workDisables>Artistic, PlantWork, Cooking, Mining, Caring</workDisables>
 		<nameMaker>guy762_HeroNamer_CarnorJax</nameMaker>
 		<spawnCategories>
 			<li>guy762BSC_carnorjax</li>

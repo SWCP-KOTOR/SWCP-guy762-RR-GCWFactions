@@ -20,8 +20,10 @@
 		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		
 		<Insulation_Cold>100</Insulation_Cold>
-		<Insulation_Heat>100</Insulation_Heat>
+		<!-- <Insulation_Heat>100</Insulation_Heat> -->
+		
 		<EquipDelay>5</EquipDelay>
 	</statBases>
 	<equippedStatOffsets>
@@ -590,7 +592,7 @@
 	
 	<ThingDef ParentName="guy762_FullBodyClothingBase">
 		<defName>guy762_Bodysuit_TIEpilot</defName>
-		<label>bodysuit, pilot's</label>
+		<label>bodysuit, insulated</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/ImperialCrew/Apparel</texPath>
@@ -604,10 +606,11 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			
 			<Insulation_Cold>25</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 			
+			<EquipDelay>3</EquipDelay>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
@@ -810,10 +813,11 @@
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			
 			<Insulation_Cold>25</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 			
+			<EquipDelay>3</EquipDelay>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>

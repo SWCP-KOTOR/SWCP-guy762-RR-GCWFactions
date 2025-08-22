@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_Dengar"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_Dengar</defName>
+		<nameMaker>guy762_HeroNamer_Dengar</nameMaker>
+		<label>Bounty Hunter</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>51</minGenerationAge>
+		<maxGenerationAge>52</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Bald</forcedHair>
+		<forcedHairColor>(90, 58, 32)</forcedHairColor>
+		<skinColorOverride>(249, 219, 165)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_canderous</li>
+		  <li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
+		  <li>SWCPSpecificApparelItem_OpenHeadwrap</li>
+		  <li>SWGCWSpecificApparelItem_DengarArmor</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_JKDetpackCase</li>
+			<li>guy762_Headwrap_open</li>
+			<li>guy762_DengarHeavyBattleArmor</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_Headwrap_open</apparelDef>
+				<quality>Legendary</quality>
+				<color>(250,250,250)</color> <!-- white -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_Bodysuit_Dyeable</apparelDef>
+				<quality>Legendary</quality>
+				<color>(250,250,250)</color> <!-- white -->
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SWRanged_DLT19repeater</li>
+		</weaponTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		  <li>BionicArm</li>
+		  <li>BionicLeg</li>
+		  <li>BionicSpine</li>
+		</techHediffsRequired>
+		<disallowedTraits><li>BodyPurist</li></disallowedTraits>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_DL21pistol</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_advcombat</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_bavakar</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_numbness</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>14~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~8</range>
+			</li>
+			<li>
+				<skill>Construction</skill>
+				<range>4~6</range>
+			</li>
+			<li>
+				<skill>Cooking</skill>
+				<range>4~6</range>
+			</li>
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+			<Psychopath>0</Psychopath>
+			<Transhumanist>0</Transhumanist>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_dengar</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<abilities>
+			<!-- ACE TIER 1 -->
+		</abilities>
+		
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_DarkBrown</li>
+					<li>Skin_Melanin5</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Dengar</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[dengar] '[dengar]' [roth]</li>
+				<li>dengar->Dengar</li>
+				<li>roth->Roth</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Dengar</defName>
+		<title>Swoop Racer</title>
+		<titleShort>Swoop Racer</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>5</Construction>
+			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Dengar</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_dengar</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Dengar</defName>
+		<title>Ruthless Bounty Hunter</title>
+		<titleShort>Bounty Hunter</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+			<Psychopath>0</Psychopath>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Dengar</nameMaker>
+		<workDisables>Artistic, PlantWork, Mining, Caring</workDisables>
+		<spawnCategories>
+			<li>guy762BSC_dengar</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>
