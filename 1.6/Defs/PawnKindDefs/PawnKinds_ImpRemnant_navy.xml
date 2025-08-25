@@ -25,6 +25,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NavyTrooperHelmet</li>
@@ -80,6 +82,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NavyTrooperHelmet</li>
@@ -150,6 +155,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_TIEpilotHelmet</li>
@@ -226,6 +234,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_TIEpilotAceHelmet</li>
@@ -309,6 +320,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
@@ -404,6 +419,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -479,6 +496,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -559,6 +578,8 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>

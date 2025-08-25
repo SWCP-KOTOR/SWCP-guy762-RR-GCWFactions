@@ -22,18 +22,27 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 		  <li>KotORHeroAccessories_canderous</li>
+		  <li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
 		  <li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
 		  <li>SWCPSpecificApparelItem_OpenHeadwrap</li>
 		  <li>SWGCWSpecificApparelItem_DengarArmor</li>
 		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_Backpack_GCWRebelHeavy</li>
 			<li>guy762_JKDetpackCase</li>
 			<li>guy762_Headwrap_open</li>
 			<li>guy762_DengarHeavyBattleArmor</li>
 			<li>guy762_Bodysuit_Dyeable</li>
 		</apparelRequired>
 		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<apparelDef>guy762_Headwrap_open</apparelDef>
+				<quality>Legendary</quality>
+				<color>(90,70,50)</color>       <!-- cinnagar brown -->
+			</li>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_Headwrap_open</apparelDef>

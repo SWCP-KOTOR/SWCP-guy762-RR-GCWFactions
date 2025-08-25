@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- combat suit stat level -->
 	
-  <ThingDef ParentName="KotORArmorModdable_hard">
-	<defName>guy762_TIEpilotArmor</defName>
-	<label>TIE pilot flight armor</label>
-	<description>This combat-ready flight vest provides additional protection against vacuum for limited periods. Its many models appeal to a wide range of users, from military pilots and mercenaries to fringe explorers and space pirates. Built-in grav thrusters also assist with movement in open space.</description>
-	<graphicData>
-	  <texPath>SWApparel/TIEPilot/Apparel</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-	</graphicData>
-	<statBases>
-		<Mass>3</Mass>
-		<MarketValue>500</MarketValue>
-		
-		<MaxHitPoints>225</MaxHitPoints>
-		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.55</ArmorRating_Heat>
-		
-		<Insulation_Cold>100</Insulation_Cold>
-		<!-- <Insulation_Heat>100</Insulation_Heat> -->
-		
-		<EquipDelay>5</EquipDelay>
-	</statBases>
-	<equippedStatOffsets>
-		<IncomingDamageFactor>-0.05</IncomingDamageFactor>
-		<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
-		<DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
-		
-		<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
-	</equippedStatOffsets>
-	
-	<apparel>
-	  <tags Inherit="False">
-		<li>RemnantEmpire_TIEpilot</li>
-		<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
-	  </tags>
-	  <wornGraphicPath>SWApparel/TIEPilot/Apparel</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-	  <defaultOutfitTags Inherit="False">
-		<li>Worker</li>
-	  </defaultOutfitTags>
-	  <layers Inherit="False">
-		<li>Middle</li>
-	  </layers>
-	  <bodyPartGroups Inherit="False">
-		<li>Torso</li>
-	  </bodyPartGroups>
-	</apparel>
-	<tradeTags>
-		<li>guy762TT_KotORArmor</li>
-		<li>guy762TT_KotORArmor_space</li>
-		<li>guy762TT_KotORArmor_powered</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>15</weight>
-				<only>(40,40,40)</only>
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
 	  
 	  
 	
@@ -76,7 +13,7 @@
 	
   
   
-  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ImpLightCombatArmor</defName>
 		<label>light combat armor</label>
 		<description>.</description>
@@ -124,11 +61,11 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_RemnantLightArmor</defName>
 		<label>light combat armor, rusty</label>
 		<description>.</description>
@@ -180,7 +117,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -444,7 +381,116 @@
 	  
 	  
 	  
-	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- combat suit stat level -->
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_TIEpilotArmor</defName>
+		<label>TIE pilot flight armor</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/TIEPilot/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>500</MarketValue>
+			
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			
+			<Insulation_Cold>100</Insulation_Cold>
+			<!-- <Insulation_Heat>100</Insulation_Heat> -->
+			
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
+		</equippedStatOffsets>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>RemnantEmpire_TIEpilot</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/TIEPilot/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <layers Inherit="False">
+			<li>Middle</li>
+		  </layers>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+		  </bodyPartGroups>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_KotORArmor_powered</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(40,40,40)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>	
 	  
 	  
 	  
@@ -455,7 +501,7 @@
 	
 	
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_TIEpilotHelmet</defName>
 		<label>TIE pilot Helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -614,7 +660,8 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -644,7 +691,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -796,7 +843,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_FullBodyClothingBase">
+	<ThingDef ParentName="guy762_FullBodyClothingBase">
 		<defName>guy762_Bodysuit_TIEace</defName>
 		<label>bodysuit, ace pilot's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
@@ -821,9 +868,11 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
-		  <VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
-		  <SocialImpact>0.5</SocialImpact>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+
+			<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+			<SocialImpact>0.5</SocialImpact>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -863,10 +912,10 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
-	  <ThingStyleDef>
+	<ThingStyleDef>
 		<defName>guy762_TIEAceUniformStyle_yellowstripe</defName>
 		<overrideLabel>bodysuit, ace pilot's</overrideLabel>
 		<wornGraphicPath>SWApparel/ImperialEngineer/Apparel</wornGraphicPath>
@@ -876,7 +925,7 @@
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(220,190,0)</colorTwo> <!-- mid yellow -->
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	
 	
 	

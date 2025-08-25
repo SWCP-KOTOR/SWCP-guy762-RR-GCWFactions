@@ -16,8 +16,8 @@
     </colorSpectrum>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
-	<listOrderPriority>1767</listOrderPriority>
-	<configurationListOrderPriority>1767</configurationListOrderPriority>
+	<listOrderPriority>1769</listOrderPriority>
+	<configurationListOrderPriority>1769</configurationListOrderPriority>
     <mustStartOneEnemy>false</mustStartOneEnemy>
     <maxCountAtGameStart>1</maxCountAtGameStart>
     <techLevel>Spacer</techLevel>
@@ -50,7 +50,7 @@
 			<guy762_SWWarlordsFaction_ZsinjDominion>25~50</guy762_SWWarlordsFaction_ZsinjDominion>
 			<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
 			
-			<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
+			<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
 			<guy762_SWWarlordsFaction_BlackSun>-50</guy762_SWWarlordsFaction_BlackSun>
 			<!-- . -->
 			<!-- <guy762_KotORFaction_HuttCartel>-100~-25</guy762_KotORFaction_HuttCartel> -->
@@ -84,10 +84,10 @@
 	
 	<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
 	<leaderTitle>crime lord</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
 		<!-- <li>KotORExchg_vigo</li> -->
-	</fixedLeaderKinds>
+	<!-- </fixedLeaderKinds> -->
 	
     <allowedCultures>
 		<li>guy762_culture_exchange</li>

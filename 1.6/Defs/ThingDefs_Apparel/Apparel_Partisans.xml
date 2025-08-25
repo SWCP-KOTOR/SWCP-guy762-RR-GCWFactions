@@ -291,7 +291,8 @@
 			<options>
 				<li>
 					<weight>10</weight>
-					<only>(125,75,40)</only> <!-- partisan rust brown -->
+					<only>(155,70,35)</only> <!-- partisan rust -->
+					<!-- <only>(125,75,40)</only> -->
 				</li>
 				<li>
 					<weight>10</weight>
@@ -320,8 +321,8 @@
 		  <texPath>SWApparel/Rebel/noshoulder/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		  <!-- partisan rust brown -->
-		  <colorTwo>(125,75,40)</colorTwo>
+		  <!-- partisan rust -->
+		  <colorTwo>(155,70,35)</colorTwo>
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -398,8 +399,8 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <!-- <shaderType>CutoutMultiMask</shaderType> -->
 		  <shaderType>CutoutComplex</shaderType>
-		  <!-- partisan rust brown -->
-		  <colorTwo>(125,75,40)</colorTwo>
+		  <!-- partisan rust -->
+		  <colorTwo>(155,70,35)</colorTwo>
 		</graphicData>
 		<statBases>
 			<Mass>7</Mass>

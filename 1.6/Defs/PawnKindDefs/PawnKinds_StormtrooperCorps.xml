@@ -45,7 +45,7 @@
 	
 	
 	
-	<!--troopers-->
+	<!-- stormtrooper squad -->
 
 
 	<PawnKindDef Name="SWImpRemnant_stormtrooper" ParentName="SWImpRemnant_StormtrooperCorpsBase">
@@ -63,11 +63,14 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
@@ -144,11 +147,15 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_stormiepauldron</li>
@@ -236,11 +243,16 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
@@ -345,11 +357,15 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
@@ -440,6 +456,244 @@
 	
 	
 	
+	
+	
+	
+	
+	<!-- snowtrooper squad -->
+	
+	
+	
+	<PawnKindDef Name="SWImpRemnant_snowtrooper" ParentName="SWImpRemnant_stormtrooper">
+		<defName>SWImpRemnant_snowtrooper</defName>
+		<label>snowtrooper</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ImpSnowtrooperHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(215,205,190)</color>	<!-- light tan -->
+			</li>
+		</specificApparelRequirements>
+
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWImpRemnant_snowtrooperrifle" ParentName="SWImpRemnant_stormierifle">
+		<defName>SWImpRemnant_snowtrooperrifle</defName>
+		<label>snowtrooper rifleman</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_ImpSnowtrooperHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(215,205,190)</color>	<!-- light tan -->
+			</li>
+		</specificApparelRequirements>
+
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWImpRemnant_snowtrooperhvy" ParentName="SWImpRemnant_stormiehvy">
+		<defName>SWImpRemnant_snowtrooperhvy</defName>
+		<label>snowtrooper specialist</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_suspendersA</li>
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_ImpSnowtrooperHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(40,40,40)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(215,205,190)</color>	<!-- light tan -->
+			</li>
+		</specificApparelRequirements>
+
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWImpRemnant_snowtrooperofficer" ParentName="SWImpRemnant_stormieofficer">
+		<defName>SWImpRemnant_snowtrooperofficer</defName>
+		<label>snowtrooper field officer</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_ImpSnowtrooperHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(190,105,0)</color>         <!-- pumpkin orange (officer) -->
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(215,205,190)</color>	<!-- light tan -->
+			</li>
+		</specificApparelRequirements>
+
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- scout troopers -->
+	
+	
+	
+	
 	<PawnKindDef Name="SWImpRemnant_meleescouttrooper" ParentName="SWImpRemnant_StormtrooperCorpsBase">
 		<defName>SWImpRemnant_meleescouttrooper</defName>
 		<label>scout trooper skirmisher</label>
@@ -455,10 +709,14 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialScoutTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialScoutTrooperArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_suspendersA</li>
@@ -538,10 +796,13 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>1500~5500</apparelMoney>
+		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialScoutTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialScoutTrooperArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ScoutTrooperHelmet</li>
@@ -606,7 +867,7 @@
 	
 	
 	
-	
+	<!-- storm commandos -->
 	
 	
 	<PawnKindDef Name="SWImpRemnant_stormcommando" ParentName="SWImpRemnant_StormtrooperCorpsBase">
@@ -628,6 +889,10 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormCommandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>

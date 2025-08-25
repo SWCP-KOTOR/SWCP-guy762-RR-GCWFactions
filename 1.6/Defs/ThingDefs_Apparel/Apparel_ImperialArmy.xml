@@ -107,9 +107,9 @@
             </li>
 			<li Class="CompProperties_Styleable"></li>
         </comps>
-	  </ThingDef>
+	</ThingDef>
 	  
-	  <ThingStyleDef>
+	<ThingStyleDef>
 		<defName>guy762_ImpCombatArmorStyle_blank</defName>
 		<overrideLabel>combat armor</overrideLabel>
 		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
@@ -117,9 +117,9 @@
 		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	  
-	  <ThingStyleDef>
+	<ThingStyleDef>
 		<defName>guy762_ImpCombatArmorStyle_commando</defName>
 		<overrideLabel>army commando armor</overrideLabel>
 		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
@@ -129,7 +129,7 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<useWornGraphicMask>true</useWornGraphicMask>
-	  </ThingStyleDef>  
+	</ThingStyleDef>  
 	  
 	  
 	  
@@ -197,9 +197,12 @@
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
-		  </li>
+			<li>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+			</li>
+			<li>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_detachmentCO</styleDef>
+			</li>
 		</randomStyle>
 		
 		<tradeTags>
@@ -222,6 +225,17 @@
 		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
 		<graphicData>
 		  <texPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficerArmor_detachmentCO</defName>
+		<overrideLabel>light battle armor, detachment C.O.'s</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/detachmentCO/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialArmyTrooper/detachmentCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -500,9 +514,12 @@
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef>
-		  </li>
+			<li>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef>
+			</li>
+			<li>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef>
+			</li>
 		</randomStyle>
 		
 		<tradeTags>
@@ -530,6 +547,17 @@
 		<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
 		<graphicData>
 		  <texPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</defName>
+		<overrideLabel>light battle armor, field marshal's</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/fieldmarshal/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialArmyTrooper/fieldmarshal/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -883,7 +911,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperHelmet_mask</defName>
 		<label>army trooper helmet, masked</label>
 		<techLevel>Spacer</techLevel>
@@ -955,7 +983,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-	  </ThingStyleDef>
+	</ThingStyleDef>
 	  
 	  
 	  
@@ -970,7 +998,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperHelmet_rusty</defName>
 		<label>army trooper helmet, rusty</label>
 		<techLevel>Spacer</techLevel>
@@ -1068,7 +1096,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ImpTankTrooperHelmet</defName>
 		<label>army commando helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1127,16 +1155,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	

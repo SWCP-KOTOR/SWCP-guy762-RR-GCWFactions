@@ -169,7 +169,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWNewRepub_fleettrooper" ParentName="SWNewRepub_Base">
+	<PawnKindDef Name="SWNewRepub_fleettrooper" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_fleettrooper</defName>
 		<label>fleet trooper</label>
 		<combatPower>40</combatPower>
@@ -222,11 +222,11 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="SWNewRepub_NavyLt" ParentName="SWNewRepub_Base">
+	<PawnKindDef Name="SWNewRepub_NavyLt" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_NavyLt</defName>
 		<label>navy lieutenant</label>
 		<combatPower>40</combatPower>
@@ -296,7 +296,7 @@
 			<!-- <li>ProductionCommand</li> -->
 			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	<PawnKindDef Name="SWNewRepub_NavyCaptain" ParentName="SWNewRepub_Base">
@@ -440,11 +440,14 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>1800~5000</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_RT97Crepeater</li>
-		  <li>SWRanged_DLT19repeater</li>
-		  <li>SWRanged_DLT20Asniper</li>
-		  <li>SWRanged_A280Crifle</li>
-		  <li>SWRanged_DC15xsniper</li>
+			<li>SWRanged_DC15sCarbine</li>
+			<li>SWRanged_DC15aRifle</li>
+			<li>SWRanged_DC15xsniper</li>
+			
+			<li>SWRanged_RT97Crepeater</li>
+			<li>SWRanged_DLT19repeater</li>
+			<li>SWRanged_DLT20Asniper</li>
+			<li>SWRanged_A280Crifle</li>
 		</weaponTags>
 		
 		<skills>
@@ -500,6 +503,7 @@
 		  <li>KotORUtility_utilitygrenade</li>
 		  <li>KotORUtility_stronggrenade</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
+		  <li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<weaponMoney>2250~9999</weaponMoney>
@@ -590,15 +594,22 @@
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
 		  <li>NewRepublic_trooper</li>
+		  <li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
 		  <li>SWCPSpecificApparelItem_GenericUniform</li>
 		  <li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
 		</apparelTags>
 		<apparelRequired>
+			<!-- <li>guy762_Backpack_GCWRebel</li> -->
 			<li>guy762_NewRepublicArmor_light</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		
 		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>       <!-- white -->
+			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<color>(70,90,125)</color>       <!--K1 blue-->
@@ -655,7 +666,7 @@
 	
 	
 	  
-	  <PawnKindDef Name="SWNewRepub_pilot" ParentName="SWNewRepub_Base">
+	<PawnKindDef Name="SWNewRepub_pilot" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_pilot</defName>
 		<label>New Republic pilot</label>
 		<combatPower>65</combatPower>

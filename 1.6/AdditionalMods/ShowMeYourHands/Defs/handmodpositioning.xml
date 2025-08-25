@@ -105,8 +105,20 @@
 		  
 		  
 		  
-		  
-		  
+		  <li>
+			  <MainHand>(-0.100, 0.100, -0.125)</MainHand>
+              <SecHand>(0.325, -0.100, -0.075)</SecHand>
+              <ThingTargets>
+                 <li>guy762_DC15sCarbine</li> <!-- DC-15S blaster carbine -->
+              </ThingTargets>
+          </li>
+		  <li>
+			  <MainHand>(-0.250, 0.100, -0.100)</MainHand>
+              <SecHand>(0.1, -0.100, -0.100)</SecHand>
+              <ThingTargets>
+                 <li>guy762_DC15aRifle</li> <!-- DC-15A blaster rifle -->
+              </ThingTargets>
+          </li>
 		  <li>
 			  <MainHand>(-0.200, 0.100, -0.100)</MainHand>
               <SecHand>(0.150, -0.100, -0.075)</SecHand>
@@ -133,6 +145,13 @@
               <SecHand>(0.050, -0.100, -0.100)</SecHand>
               <ThingTargets>
                  <li>guy762_DLT20ASniper</li> <!-- DLT-20A Sniper Rifle -->
+              </ThingTargets>
+          </li>
+		  <li>
+			  <MainHand>(-0.375, 0.100, -0.050)</MainHand>
+              <SecHand>(-0.045, -0.100, -0.050)</SecHand>
+              <ThingTargets>
+                 <li>guy762_62Aug2CyclerRifle</li> <!-- 6-2Aug2 hunting rifle -->
               </ThingTargets>
           </li>
 		  

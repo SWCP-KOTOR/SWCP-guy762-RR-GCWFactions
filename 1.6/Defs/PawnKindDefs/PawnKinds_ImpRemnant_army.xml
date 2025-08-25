@@ -32,6 +32,8 @@
 		<apparelTags>
 			<li>RemnantEmpire_armyconscript</li>
 			<!-- <li>RemnantEmpire_armytrooper</li> -->
+			<li>SWGCWSpecificApparelItem_ImperialUniformHat</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<!-- <li>guy762_ArmyTrooperHelmet</li> -->
@@ -86,6 +88,9 @@
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
@@ -158,6 +163,10 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_poncho</li>
@@ -224,6 +233,10 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_suspendersA</li>
@@ -336,6 +349,8 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
@@ -395,6 +410,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpTankTrooperHelmet</li>
@@ -497,6 +515,9 @@
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
 			<li>RemnantEmpire_armylieutenant</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
@@ -586,6 +607,9 @@
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
 			<li>RemnantEmpire_armymajor</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_BlankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>
@@ -677,6 +701,10 @@
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
 			<li>RemnantEmpire_armygeneral</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_BlankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
@@ -763,6 +791,8 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap_imperial</li>

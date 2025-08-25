@@ -25,6 +25,9 @@
 			<li>KotORUtility_StabilizerGauntlets</li>
 			<!-- <li>RemnantEmpire_armyveterantrooper</li> -->
 			<li>SWMedicBelt</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_MedicBelt</li>
@@ -126,6 +129,9 @@
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
 			<li>GreaterMaldrood_navycommando</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpNavyCommandoHelmet</li>
@@ -196,7 +202,11 @@
 			<li>KotOREquipment_adv</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
 			<li>KotORUtility_utilitygrenade</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
 			<li>SWGCWSpecificApparelItem_ImperialArmyGasmask</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
@@ -283,6 +293,9 @@
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
 			<li>SWDetpackCase</li> <!-- replace with/add proxy mines -->
+			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpTankTrooperHelmet</li>
@@ -365,11 +378,17 @@
 			<li>KotOREquipment_adv</li>
 			<li>KotORUtility_utilitygrenade</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
 			<li>SWGCWSpecificApparelItem_ImperialArmyGasmask</li>
+			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
 			<li>guy762_ArmyTrooperGasMask</li>
+			<li>guy762_Backpack_GCWRebel</li>
 			<li>guy762_Accessory_suspendersA</li>
 			<li>guy762_ImpMidCombatArmor</li>
 			<li>guy762_GenericUniform_fatigues</li>
@@ -385,6 +404,11 @@
 				<!-- <apparelLayer>Overhead</apparelLayer> -->
 				<apparelLayer>EyeCover</apparelLayer>
 				<apparelDef>guy762_ArmyTrooperGasMask</apparelDef> 		<!-- not working for some reason -->
+				<color>(40,40,40)</color>        <!-- darker black -->
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
 				<color>(40,40,40)</color>        <!-- darker black -->
 			</li>
 			<li>
@@ -498,6 +522,11 @@
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_adv</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ThrawnImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
@@ -593,6 +622,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_sith</li>
+			<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet_shadow</li>
@@ -710,6 +742,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_TIEpilotAceHelmet</li>
@@ -729,7 +764,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<color>160,25,45)</color>
+				<color>(160,25,45)</color>
 			</li>
 		</specificApparelRequirements>
 
@@ -812,6 +847,11 @@
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_rare</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
@@ -920,6 +960,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_rare</li>
+			<li>SWGCWSpecificApparelItem_ImperialRoyalGuardHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialRoyalGuardCloak</li>
+			<li>SWGCWSpecificApparelItem_ImperialRoyalGuardArmor</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpRoyalGuardHelmet</li>

@@ -334,16 +334,6 @@
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>	
 	
 	<ThingDef ParentName="KotORArmorModdable_hard">
@@ -406,16 +396,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -485,16 +465,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -525,8 +495,9 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
-		  <VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+			<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -816,7 +787,7 @@
 				<!-- </li> -->
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -901,16 +872,7 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay_robe</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
-	  </ThingDef>
+	</ThingDef>
 
 
 
@@ -1003,16 +965,6 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -1091,16 +1043,6 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay</li> -->
-			  <!-- <li>guy762_slot_overlay</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
 	</ThingDef>
 	
 	

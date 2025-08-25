@@ -4,7 +4,7 @@
 	
 	<PawnKindDef Name="SWPartisanBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_PartisanCell</defaultFactionType>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
 		
@@ -51,33 +51,6 @@
 			</li>
 		  </subOptionsTakeAll>
 		</inventoryOptions>
-		
-		<xenotypeSet>
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.15</Baseliner>
-			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_aqualish>
-			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
-			<guy762_xenotype_defel MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_defel>
-			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_devaronian>
-			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
-			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_feeorin>
-			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_iridonian>
-			<guy762_xenotype_kaleesh MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kaleesh>
-			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
-			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_lasat>
-			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mimbanese>
-			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
-			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
-			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
-			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
-			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
-			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
-			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
-			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
-			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
 		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
@@ -224,6 +197,7 @@
 			<li>SWRanged_DLT18rifle</li>
 			<li>SWRanged_A280Crifle</li>
 			<li>SWRanged_RT97Crepeater</li>
+			<li>SWRanged_62Aug2CyclerRifle</li>
 		</weaponTags>
 		
 		<skills>
@@ -399,7 +373,7 @@
 		<itemQuality>Excellent</itemQuality>
 		
 		<maxPerGroup>1</maxPerGroup>
-		<factionLeader>true</factionLeader>
+		<!-- <factionLeader>true</factionLeader> -->
 		
 		<apparelMoney>3500~7500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -430,6 +404,7 @@
 			<li>SWRanged_FC1flechette</li>
 			<li>SWRanged_T7IonDisruptor</li>
 			<li>SWRanged_RT97Crepeater</li>
+			<li>SWRanged_62Aug2CyclerRifle</li>
 			<li>SWRanged_PLX4LRocketRifle</li>
 		</weaponTags>
 		

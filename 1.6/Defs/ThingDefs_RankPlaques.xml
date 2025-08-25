@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_ImpRankPlaque_lowrank</defName>
+		<label>Imperial rank plaque, low rank</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>Items/ImpRankPlaque_lowrank</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.75</drawSize>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <!-- <li>Artifact</li> -->
+		</tradeTags>
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_ImpRankPlaque_midrank</defName>
+		<label>Imperial rank plaque, middling rank</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>Items/ImpRankPlaque_midrank</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.75</drawSize>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>5000</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <!-- <li>Artifact</li> -->
+		</tradeTags>
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_ImpRankPlaque_highrank</defName>
+		<label>Imperial rank plaque, high rank</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>Items/ImpRankPlaque_highrank</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.75</drawSize>
+		</graphicData>
+		<!-- <stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay> -->
+		<statBases>
+		  <MarketValue>25000</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <!-- <li>Artifact</li> -->
+		</tradeTags>
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_NoCraft_upgradebase">
+		<defName>guy762_ImpRankPlaque_topbrass</defName>
+		<label>Imperial rank plaque, top brass</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>Items/ImpRankPlaque_topbrass</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.75</drawSize>
+		</graphicData>
+		<!-- <stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay> -->
+		<statBases>
+		  <MarketValue>50000</MarketValue>
+		  <Mass>0.1</Mass>
+		</statBases>
+		
+		<tradeTags>
+		  <!-- <li>Artifact</li> -->
+		</tradeTags>
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

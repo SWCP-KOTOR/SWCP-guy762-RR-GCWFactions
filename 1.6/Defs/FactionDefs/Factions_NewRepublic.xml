@@ -64,6 +64,10 @@
 			<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
 			<guy762_SWWarlordsFaction_Pentastar>-50</guy762_SWWarlordsFaction_Pentastar>
 			
+			<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
+			<!-- <guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell> -->
+			<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
+			
 			<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
 			<guy762_SWWarlordsFaction_BlackSun>-75~-25</guy762_SWWarlordsFaction_BlackSun>
 			<!-- . -->
@@ -88,6 +92,10 @@
 	  <!-- </li> -->
 			<!-- <territoryBorderColor>(100,60,10,128)</territoryBorderColor> -->
 			<!-- <factionLabelColor>(100,60,10,255)</factionLabelColor> -->
+			
+			
+			
+		
     </modExtensions>
 	
     <allowedCultures>
@@ -106,9 +114,7 @@
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_CityBuilders</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Healthcare</li>
-		<!--<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li> corrupt SF?-->
-		<!--<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li> corrupt SF-->
-		<!--<li>guy762_MemeDef_corruptrepublic</li> corrupt SF-->
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 	</allowedMemes>
 	<disallowedPrecepts>

@@ -430,8 +430,8 @@
 		</colorGenerator>
 		
 		<verbs>
-            <li> <!-- switch to incendiary grenade at some point -->
-                <label>throw stun grenade</label>
+            <li>
+                <label>throw plasma grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>15</range>
@@ -442,9 +442,9 @@
                 <soundCast>kotorsound_grenadethrow</soundCast>
                 <onlyManualCast>true</onlyManualCast>
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-                <defaultProjectile>guy762_ThrownGrenade_stormtrooper</defaultProjectile>
+                <defaultProjectile>guy762_ThrownGrenade_stormcommando</defaultProjectile>
                 <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
-				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<ai_IsWeapon>true</ai_IsWeapon>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -466,17 +466,7 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_underlay</li>
-			  <li>guy762_slot_overlay</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
+		
 	</ThingDef>	
 	
 	
@@ -567,16 +557,6 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -660,16 +640,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -774,16 +744,6 @@
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay</li> -->
-			  <!-- <li>guy762_slot_overlay</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
 	</ThingDef>
 	
 	
