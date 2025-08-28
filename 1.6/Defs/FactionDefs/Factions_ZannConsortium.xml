@@ -9,11 +9,16 @@
     <categoryTag>Pirate</categoryTag>
     <description>.</description>
     <factionIconPath>World/ZannConsortium</factionIconPath>
-    <fixedName>Zann Consortium</fixedName> <!-- !!!IDEA!!!: faction names are local 'front' corporations?  -->
-    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
     <colorSpectrum>
-      <li>(230,170,45)</li>
+      <li>(230,170,45)</li> <!-- consortium yellow -->
     </colorSpectrum>
+	
+	<fixedName>Zann Consortium</fixedName> <!-- !!!IDEA!!!: faction names are local 'front' corporations?  -->
+	
+	<!-- replaces a faction in the default vanilla setup list -->
+	<replacesFaction>PirateYttakin</replacesFaction>
+	
+	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 	<listOrderPriority>1768</listOrderPriority>
@@ -22,13 +27,34 @@
     <maxCountAtGameStart>1</maxCountAtGameStart>
     <techLevel>Spacer</techLevel>
 	
-	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-	<canMakeRandomly>true</canMakeRandomly>
-    <canSiege>false</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-    <hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 	
+	<canMakeRandomly>true</canMakeRandomly>
+	<canSiege>true</canSiege>
+	<canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+	<canRequestTraders>false</canRequestTraders>
+	<canRequestMilitaryAid>false</canRequestMilitaryAid>
+	<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+	<canGenerateQuestSites>true</canGenerateQuestSites>
+	
+	
+	
+	<!-- <layerWhitelist> -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+    <!-- </layerWhitelist> -->
+	<!-- <arrivalLayerWhitelist> -->
+		<!-- <li>Surface</li> -->
+		<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+    <!-- </arrivalLayerWhitelist> -->
+    <!-- <neutralArrivalLayerBlacklist> -->
+		<!-- <li>Surface</li> -->
+    <!-- </neutralArrivalLayerBlacklist> -->
+	
+	
+    <hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
+	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+	<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	<settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
 	<naturalEnemy>true</naturalEnemy>
 	
 	<settlementGenerationWeight>1</settlementGenerationWeight>
@@ -44,11 +70,13 @@
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
 		<startingGoodwillByFactionDefs>
-			<guy762_SWWarlordsFaction_NewRepublic>-75~-25</guy762_SWWarlordsFaction_NewRepublic>
-			
 			<guy762_SWWarlordsFaction_ImpRemnant>-25~25</guy762_SWWarlordsFaction_ImpRemnant>
 			<guy762_SWWarlordsFaction_ZsinjDominion>25~50</guy762_SWWarlordsFaction_ZsinjDominion>
 			<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+			
+			<guy762_SWWarlordsFaction_NewRepublic>-75~-25</guy762_SWWarlordsFaction_NewRepublic>
+			<guy762_SWWarlordsFaction_RebelCell>-75</guy762_SWWarlordsFaction_RebelCell>
+			<guy762_SWWarlordsFaction_PartisanCell>-50~0</guy762_SWWarlordsFaction_PartisanCell>
 			
 			<guy762_SWWarlordsFaction_ZannConsortium>100</guy762_SWWarlordsFaction_ZannConsortium>
 			<guy762_SWWarlordsFaction_BlackSun>-75</guy762_SWWarlordsFaction_BlackSun>
@@ -60,7 +88,7 @@
 			<!-- <guy762_KotORFaction_MandoClan>0~100</guy762_KotORFaction_MandoClan> -->
 			<!-- <guy762_KotORFaction_SavageMandos>-25~0</guy762_KotORFaction_SavageMandos> -->
 			
-			<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
+			<guy762_KotORFaction_Civilians>-75</guy762_KotORFaction_Civilians>
 		</startingGoodwillByFactionDefs>
 		<excludeFromCommConsole>true</excludeFromCommConsole>
 		<hasCities>true</hasCities>
@@ -79,6 +107,9 @@
     <allowedCultures>
 		<li>guy762_culture_exchange</li>
 	</allowedCultures>
+	<styles>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+	</styles>
 	
 	<requiredMemes>
 		<li>guy762_MemeDef_exchange</li>
@@ -166,7 +197,48 @@
 		<commonality>0.5</commonality>
       </li>
     </backstoryFilters>
-    <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+	
+	
+	
+	
+	
+	
+	
+	<!-- <caravanTraderKinds> -->
+      <!-- <li>Caravan_Outlander_BulkGoods</li> -->
+      <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
+      <!-- <li>Caravan_Outlander_Exotic</li> -->
+      <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
+    <!-- </caravanTraderKinds> -->
+    <!-- <visitorTraderKinds> -->
+      <!-- <li>Visitor_Outlander_Standard</li> -->
+    <!-- </visitorTraderKinds> -->
+    <!-- <baseTraderKinds> -->
+      <!-- <li>Base_Outlander_Standard</li> -->
+    <!-- </baseTraderKinds> -->
+	<!-- <orbitalTraderKinds> -->
+      <!-- <li>Orbital_BulkGoods</li> -->
+      <!-- <li>Orbital_CombatSupplier</li> -->
+      <!-- <li>Orbital_Exotic</li> -->
+      <!-- <li>Orbital_PirateMerchant</li> -->
+    <!-- </orbitalTraderKinds> -->
+	
+	
+	
+	
+	
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>KOTOR_FabricArmorweave</li>
+		<li>Plasteel</li>
+		<li>KOTOR_AlloyDurasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	
+	
+	
+	
 	
 	<maxPawnCostPerTotalPointsCurve>
       <points>
@@ -178,6 +250,7 @@
       </points>
     </maxPawnCostPerTotalPointsCurve>
 	
+	<earliestRaidDays>20</earliestRaidDays>
 	
 	<pawnGroupMakers>
 		<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->

@@ -291,8 +291,7 @@
 			<options>
 				<li>
 					<weight>10</weight>
-					<only>(155,70,35)</only> <!-- partisan rust -->
-					<!-- <only>(125,75,40)</only> -->
+					<only>(125,75,40)</only> <!-- partisan rust brown -->
 				</li>
 				<li>
 					<weight>10</weight>
@@ -318,11 +317,11 @@
 		<label>militia combat suit</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>SWApparel/Rebel/noshoulder/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <!-- partisan rust -->
-		  <colorTwo>(155,70,35)</colorTwo>
+			<texPath>SWApparel/Rebel/noshoulder/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- partisan rust brown -->
+			<colorTwo>(125,75,40)</colorTwo>
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -395,12 +394,12 @@
 		<label>partisan ranger overcoat</label>
 		<description>These intimidating armored overcoats are typically worn by the elite ranger agents of Garm Bel Iblis' Partisan Alliance.</description>
 		<graphicData>
-		  <texPath>SWApparel/RebelArmyDuster/ranger/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <!-- <shaderType>CutoutMultiMask</shaderType> -->
-		  <shaderType>CutoutComplex</shaderType>
-		  <!-- partisan rust -->
-		  <colorTwo>(155,70,35)</colorTwo>
+			<texPath>SWApparel/RebelArmyDuster/ranger/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
+			<!-- partisan rust brown -->
+			<colorTwo>(125,75,40)</colorTwo>
 		</graphicData>
 		<statBases>
 			<Mass>7</Mass>

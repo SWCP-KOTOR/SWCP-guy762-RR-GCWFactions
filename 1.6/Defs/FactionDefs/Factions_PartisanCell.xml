@@ -8,28 +8,43 @@
 		<pawnSingular>partisan</pawnSingular>
 		<pawnsPlural>partisans</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
+		<factionIconPath>World/PartisanAlliance</factionIconPath>
 		<colorSpectrum>
 		  <li>RGB(155,70,35)</li> <!-- partisan rust -->
 		</colorSpectrum>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		
+		<!-- replaces a faction in the default vanilla setup list -->
+		<replacesFaction>TribeRoughNeanderthal</replacesFaction>
+		<!-- <replacesFaction>TribeRough</replacesFaction> -->
+		
+		<techLevel>Spacer</techLevel>
 		<listOrderPriority>1767</listOrderPriority>
 		<configurationListOrderPriority>1767</configurationListOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<canRequestTraders>false</canRequestTraders>
+		<canRequestMilitaryAid>true</canRequestMilitaryAid>
+		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+		<canGenerateQuestSites>true</canGenerateQuestSites>
+		
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
-		<factionIconPath>World/PartisanAlliance</factionIconPath>
-		<techLevel>Spacer</techLevel>
-		
 		<leaderTitle>warlord</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
 		  <li>SWPartisan_Warlord</li>
 		</fixedLeaderKinds>
 		
+		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+		<!--<naturalEnemy>true</naturalEnemy>-->
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<modExtensions Inherit="False">
@@ -49,7 +64,7 @@
 					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
 					
 					<guy762_SWWarlordsFaction_NewRepublic>0</guy762_SWWarlordsFaction_NewRepublic>
-					<!-- <guy762_SWWarlordsFaction_RebelCell>0</guy762_SWWarlordsFaction_RebelCell> -->
+					<guy762_SWWarlordsFaction_RebelCell>0</guy762_SWWarlordsFaction_RebelCell>
 					<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 					
 					<guy762_SWWarlordsFaction_ZannConsortium>-50~0</guy762_SWWarlordsFaction_ZannConsortium>
@@ -155,11 +170,19 @@
 			<commonality>0.5</commonality>
 		  </li>
 		</backstoryFilters>
-		<settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+		
+		
+		
+		
+		
+		
 		
 		<allowedCultures>
 			<li>guy762_culture_outerrim</li>
 		</allowedCultures>
+		<styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+		</styles>
 		
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
@@ -169,6 +192,7 @@
 		<allowedMemes>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 		</allowedMemes>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
@@ -200,6 +224,30 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
 		</disallowedPrecepts>
 		
+
+
+
+		<caravanTraderKinds>
+		  <li>Caravan_Outlander_BulkGoods</li>
+		  <li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+		  <li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+		  <!-- <li>guy762_BaseTraderKind_gunrunner</li> -->
+		</baseTraderKinds>
+		<!-- <orbitalTraderKinds> -->
+		  <!-- <li>Orbital_BulkGoods</li> -->
+		  <!-- <li>Orbital_CombatSupplier</li> -->
+		  <!-- <li>Orbital_Exotic</li> -->
+		  <!-- <li>Orbital_PirateMerchant</li> -->
+		<!-- </orbitalTraderKinds> -->
+		
+		
+		
+		
+		
 		<apparelStuffFilter>
 		  <thingDefs>
 			<li>Synthread</li>
@@ -212,16 +260,10 @@
 		  </thingDefs>
 		</apparelStuffFilter>
 		
-		<caravanTraderKinds>
-		  <li>Caravan_Outlander_BulkGoods</li>
-		  <li>Caravan_Outlander_PirateMerchant</li>
-		</caravanTraderKinds>
-		<visitorTraderKinds>
-		  <li>Visitor_Outlander_Standard</li>
-		</visitorTraderKinds>
-		<baseTraderKinds>
-		  <!-- <li>guy762_BaseTraderKind_gunrunner</li> -->
-		</baseTraderKinds>
+		
+		
+		
+		
 		
 		<maxPawnCostPerTotalPointsCurve>
 		  <points>
@@ -232,6 +274,8 @@
 			<li>(2001, 10000)</li>
 		  </points>
 		</maxPawnCostPerTotalPointsCurve>
+		
+		<!-- <earliestRaidDays>20</earliestRaidDays> -->
 		
 		<pawnGroupMakers Inherit="False">
 		  <li>

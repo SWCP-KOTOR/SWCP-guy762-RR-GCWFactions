@@ -3,7 +3,7 @@
 
 	
 	<PawnKindDef Name="SWRebel_Base" Abstract="True">
-		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_RebelCell</defaultFactionType>
 		<race>Human</race>
 		<nameMaker>guy762_PawnNamer_Bf2</nameMaker>
 		

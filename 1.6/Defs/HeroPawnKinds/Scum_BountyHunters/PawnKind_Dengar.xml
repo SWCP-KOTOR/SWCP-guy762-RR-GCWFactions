@@ -39,7 +39,7 @@
 			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<apparelLayer>Belt</apparelLayer>
-				<apparelDef>guy762_Headwrap_open</apparelDef>
+				<apparelDef>guy762_Backpack_GCWRebelHeavy</apparelDef>
 				<quality>Legendary</quality>
 				<color>(90,70,50)</color>       <!-- cinnagar brown -->
 			</li>

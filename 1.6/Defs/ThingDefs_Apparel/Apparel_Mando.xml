@@ -12,9 +12,11 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/helmet_norangefinder/helmet_item</texPath>
+			<texPath>SWApparel/Mandalorian/helmet_norangefinder/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutMultiMask</shaderType>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
 			<!-- <shaderType>CutoutComplex</shaderType> -->
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow -->
 		</graphicData>
@@ -75,6 +77,40 @@
 				<li>guy762_KotORFaction_Mando</li>
 			</ideoDesireAllowedFactionCategoryTags-->
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>68</baseLayer>
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/helmet_norangefinder/helmet</li></texturePaths>
+					  <!-- TCW Death Watch helmet -->
+					  <colorA>
+						<color>70,100,165</color>
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>225,225,225</color>
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>100,100,100</color>
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_MNCArmor</li>
@@ -108,28 +144,18 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay_hat</li> -->
-			  <!-- <li>guy762_slot_overlay_hvy</li> -->
-			  <!-- <li>guy762_slot_helmettech</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
 		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
-				<defaultPalette> <!-- TCW Death Watch -->
-					<colorOne>(70,100,165)</colorOne>
-					<colorTwo>(225,225,225)</colorTwo>
-					<colorThree>(100,100,100)</colorThree>
-				</defaultPalette>
-			</li>
-		</modExtensions>
+				<!-- TCW Death Watch -->
+				<!-- <defaultPalette> -->
+					<!-- <colorOne>(70,100,165)</colorOne> -->
+					<!-- <colorTwo>(225,225,225)</colorTwo> -->
+					<!-- <colorThree>(100,100,100)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 	
 	
@@ -140,9 +166,11 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/helmet/helmet_item</texPath>
+			<texPath>SWApparel/Mandalorian/helmet/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutMultiMask</shaderType>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
 			<!-- <shaderType>CutoutComplex</shaderType> -->
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow  -->
 		</graphicData>
@@ -205,6 +233,40 @@
 				<li>guy762_KotORFaction_Mando</li>
 			</ideoDesireAllowedFactionCategoryTags-->
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>68</baseLayer>
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/helmet/helmet</li></texturePaths>
+					  <!-- TCW Death Watch helmet -->
+					  <colorA>
+						<color>70,100,165</color>
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>225,225,225</color>
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>100,100,100</color>
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_MNCArmor</li>
@@ -238,28 +300,18 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay_hat</li> -->
-			  <!-- <li>guy762_slot_overlay_hvy</li> -->
-			  <!-- <li>guy762_slot_helmettech</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
 		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
-				<defaultPalette> <!-- TCW Death Watch -->
-					<colorOne>(70,100,165)</colorOne>
-					<colorTwo>(225,225,225)</colorTwo>
-					<colorThree>(100,100,100)</colorThree>
-				</defaultPalette>
-			</li>
-		</modExtensions>
+				<!-- TCW Death Watch -->
+				<!-- <defaultPalette> -->
+					<!-- <colorOne>(70,100,165)</colorOne> -->
+					<!-- <colorTwo>(225,225,225)</colorTwo> -->
+					<!-- <colorThree>(100,100,100)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 	
 	
@@ -284,9 +336,11 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/Apparel_item</texPath>
+			<texPath>SWApparel/Mandalorian/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutMultiMask</shaderType>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
 			<!-- <shaderType>CutoutComplex</shaderType> -->
 			<!-- <colorTwo>(160,110,35)</colorTwo> supercommando auburn -->
 		</graphicData>
@@ -346,6 +400,40 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/Apparel</li></texturePaths>
+					  <!-- TCW Death Watch armor -->
+					  <colorA>
+						<color>100,100,100</color>
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>70,100,165</color>
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>50,45,75</color>
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_MNCArmor</li>
@@ -380,27 +468,17 @@
 			</options>
 		</colorGenerator>
 		
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay_hvy</li> -->
-			  <!-- <li>guy762_slot_overlay_hvy</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
-		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
-				<defaultPalette> <!-- TCW Death Watch -->
-					<colorOne>(100,100,100)</colorOne>
-					<colorTwo>(70,100,165)</colorTwo>
-					<colorThree>(50,45,75)</colorThree>
-				</defaultPalette>
-			</li>
-		</modExtensions>
+				<!-- TCW Death Watch -->
+				<!-- <defaultPalette> -->
+					<!-- <colorOne>(100,100,100)</colorOne> -->
+					<!-- <colorTwo>(70,100,165)</colorTwo> -->
+					<!-- <colorThree>(50,45,75)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 	  
 	
@@ -413,9 +491,11 @@
 		<label>jetpack, Z-6</label>
 		<description>This jetpack comes equipped with a missile launcher that can be loaded with a variety of different missiles.</description>
 		<graphicData>
-		  <texPath>SWApparel/Mandalorian/Z6jetpack/Z6jetpack_item</texPath>
+		  <texPath>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutMultiMask</shaderType>
+		  
+		  <!-- <shaderType>CutoutMultiMask</shaderType> -->
+		  
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		  <!-- <colorTwo>(230,185,45)</colorTwo> republic yellow -->
 		</graphicData>
@@ -483,6 +563,42 @@
 			<!-- <fat>   <scale>(0.9,0.9)</scale></fat> -->
 		  </wornGraphicData>
 		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>24</baseLayer>
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
+					  <colorA>
+						<color>70,90,125</color>	<!-- K1 blue -->
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>230,185,45</color>      <!-- republic yellow --> 
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>125,50,50</color>	<!-- rebel red -->
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> 
+						<dataSouth> <layer>20</layer> </dataSouth> 
+						<dataNorth> <layer>99</layer> </dataNorth> 
+					</drawData>
+				</li>
+			</renderNodeProperties>
+		  
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -549,13 +665,6 @@
 			
 		</verbs>
 		<comps>
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_missile</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
 		  <li Class="CompProperties_ApparelReloadable">
 			<maxCharges>1</maxCharges>
 			<soundReload>Standard_Reload</soundReload>
@@ -572,16 +681,20 @@
 			</li>
 		</comps>
 		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
-				<defaultPalette>
-					<colorOne>(70,90,125)</colorOne>       <!-- K1 blue -->
-					<colorTwo>(230,185,45)</colorTwo>      <!-- republic yellow --> 
-					<colorThree>(125,50,50)</colorThree>   <!-- rebel red -->
-				</defaultPalette>
-			</li>
-		</modExtensions>
+				<!-- <defaultPalette> -->
+					<!-- K1 blue -->
+					<!-- <colorOne>(70,90,125)</colorOne> -->
+					<!-- republic yellow -->
+					<!-- <colorTwo>(230,185,45)</colorTwo> -->
+					<!-- rebel red -->
+					<!-- <colorThree>(125,50,50)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+		
 	  </ThingDef>
 
 </Defs>

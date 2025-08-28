@@ -8,28 +8,35 @@
     <pawnSingular>imperial</pawnSingular>
     <pawnsPlural>imperials</pawnsPlural>
     <categoryTag>Empire</categoryTag>
+	<factionIconPath>World/ImperialRemnant</factionIconPath>
+	<colorSpectrum>
+      <li>RGB(25,110,30)</li> <!-- greenpire -->
+    </colorSpectrum>
+	
+	<!-- replaces a faction in the default vanilla setup list -->
+	<replacesFaction>OutlanderRoughPig</replacesFaction>
+	<!-- <replacesFaction>OutlanderRough</replacesFaction> -->
+	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 	<listOrderPriority>1762</listOrderPriority>
 	<configurationListOrderPriority>1762</configurationListOrderPriority>
     <maxCountAtGameStart>1</maxCountAtGameStart>
 	<techLevel>Spacer</techLevel>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-    <factionIconPath>World/ImperialRemnant</factionIconPath>
-	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
-    <colorSpectrum>
-      <li>RGB(25,110,30)</li>
-    </colorSpectrum>
-    <!--permanentEnemy>true</permanentEnemy>
-	<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+    
+	<canMakeRandomly>true</canMakeRandomly>
+	<canSiege>true</canSiege>
+	<canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+	<canRequestTraders>false</canRequestTraders>
+	<canRequestMilitaryAid>true</canRequestMilitaryAid>
+	<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+	<canGenerateQuestSites>true</canGenerateQuestSites>
+
+	
 	
     <factionNameMaker>guy762_NamerFaction_ImpRemnantStarfleet</factionNameMaker>
 	<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-	
 	<leaderTitle>governor</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 	<fixedLeaderKinds>
@@ -41,8 +48,31 @@
       <!-- <li>SWImpRemnant_ArmyGeneral</li> political officers only, Zsinj/Maldrood/Eriadu could use military officers instead -->
     </fixedLeaderKinds>
 	
-	<!-- <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer> -->
+	
+	
+	
+	
+	
+	<layerWhitelist>
+		<!-- creates two separate factions split between the surface and orbit -->
+		<li>Surface</li>
+		<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+    </layerWhitelist>
+	<arrivalLayerWhitelist>
+		<li>Surface</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
+    <neutralArrivalLayerBlacklist>
+		<li>Surface</li>
+    </neutralArrivalLayerBlacklist>
+	
+	
+	
 	<naturalEnemy>true</naturalEnemy>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
+    <!--permanentEnemy>true</permanentEnemy>
+	<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 	
 	<!-- <settlementGenerationWeight>2</settlementGenerationWeight> -->
 	<settlementGenerationWeight>5</settlementGenerationWeight>
@@ -63,7 +93,7 @@
 			<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
 			
 			<guy762_SWWarlordsFaction_NewRepublic>-100</guy762_SWWarlordsFaction_NewRepublic>
-			<!-- <guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell> -->
+			<guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell>
 			<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 			
 			<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
@@ -81,7 +111,7 @@
 		<excludeFromCommConsole>false</excludeFromCommConsole>
 		<hasCities>true</hasCities>
 		<neverConnectToRoads>false</neverConnectToRoads>
-		<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> -->
+		<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
       </li>
 	  <li Class="SWCP.Core.ModExtension_FactionTerritory">
 			<territoryColor>(25,110,30,32)</territoryColor>
@@ -132,11 +162,21 @@
     <allowedCultures>
 		<li>guy762_culture_coreworlds</li>
 	</allowedCultures>
+	<styles>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+
+		<li>guy762_RankStyleCategory_ImperialArmy</li>
+		<li>guy762_RankStyleCategory_ImperialNavy</li>
+		<!-- <li>guy762_RankStyleCategory_ImperialTaskforce</li> player factions and EA only -->
+		<li>guy762_RankStyleCategory_ImperialPolitiburo</li>
+		<!-- <li>guy762_RankStyleCategory_ImpISB</li> maldrood only -->
+		<li>guy762_RankStyleCategory_ImpINT</li>
+		<!-- <li>guy762_RankStyleCategory_ImperialOps</li> PA only -->
+    </styles>
 	
 	<requiredMemes>
 		<li>guy762_MemeDef_empire</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 	</requiredMemes>
 	<allowedMemes>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_CityBuilders</li>
@@ -170,16 +210,14 @@
 		<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Required</li>-->
 	</disallowedPrecepts>
 	
-	<!--structureMemeWeights>
-	  <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
-	  <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.75</Structure_TheistAbstract>
-	  <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
-	  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
-	  <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
-	  <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
-	  <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
-	  <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
-	</structureMemeWeights-->
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<xenotypeSet>
 	  <xenotypeChances>
@@ -210,18 +248,37 @@
     </backstoryFilters>
 	
 	
-	<!--caravanTraderKinds>
-      <li>Caravan_Outlander_BulkGoods</li>
-      <li>Caravan_Outlander_CombatSupplier</li>
-      <li>Caravan_Outlander_Exotic</li>
-      <li>Caravan_Outlander_PirateMerchant</li>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-      <li>Visitor_Outlander_Standard</li>
-    </visitorTraderKinds>
-    <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
-    </baseTraderKinds-->
+	<!-- <caravanTraderKinds> -->
+      <!-- <li>Caravan_Outlander_BulkGoods</li> -->
+      <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
+      <!-- <li>Caravan_Outlander_Exotic</li> -->
+      <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
+    <!-- </caravanTraderKinds> -->
+    <!-- <visitorTraderKinds> -->
+      <!-- <li>Visitor_Outlander_Standard</li> -->
+    <!-- </visitorTraderKinds> -->
+    <!-- <baseTraderKinds> -->
+      <!-- <li>Base_Outlander_Standard</li> -->
+    <!-- </baseTraderKinds> -->
+	<!-- <orbitalTraderKinds> -->
+      <!-- <li>Orbital_BulkGoods</li> -->
+      <!-- <li>Orbital_CombatSupplier</li> -->
+      <!-- <li>Orbital_Exotic</li> -->
+      <!-- <li>Orbital_PirateMerchant</li> -->
+    <!-- </orbitalTraderKinds> -->
+	
+	
+	
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>KOTOR_FabricArmorweave</li>
+		<li>Plasteel</li>
+		<li>KOTOR_AlloyDurasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	
+	
 	
 	
     <maxPawnCostPerTotalPointsCurve>
@@ -234,15 +291,7 @@
       </points>
     </maxPawnCostPerTotalPointsCurve>
 	
-	<apparelStuffFilter>
-      <thingDefs>
-        <li>Leather_Patch</li>
-        <li>KOTOR_FabricArmorweave</li>
-		<li>Plasteel</li>
-		<li>KOTOR_AlloyDurasteel</li>
-      </thingDefs>
-    </apparelStuffFilter>
-	
+	<!-- <earliestRaidDays>20</earliestRaidDays> -->
 	
 	
     <pawnGroupMakers>

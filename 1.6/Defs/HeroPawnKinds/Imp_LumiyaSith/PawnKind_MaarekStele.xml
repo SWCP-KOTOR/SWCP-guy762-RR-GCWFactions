@@ -68,7 +68,8 @@
 			</li>
 		</skills>
 		<forcedTraits>
-			<PsychicSensitivity>1</PsychicSensitivity>
+			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
 			<FastLearner>0</FastLearner>
 			<Recluse>1</Recluse>
 		</forcedTraits>
@@ -83,6 +84,9 @@
 		
 		<abilities>
 			<!-- ACE TIER 2 -->
+			
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceIonize</li>
 		</abilities>
 		
 		<modExtensions>
@@ -190,7 +194,7 @@
 			<Intellectual>15</Intellectual>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>1</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 		</forcedTraits>
 		<requiredWorkTags>
 		  <li>Violent</li>
@@ -204,6 +208,53 @@
 		</spawnCategories>
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_MaarekStele_TFS"  ParentName="SWWarlordsHeroBase_MaarekStele">
+		<defName>SWWEPlayableVillain_MaarekStele_TFS</defName>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>2</min>
+					<max>2</max>
+				</forceLevelRange>
+				<!-- <darkSideRange>25 ~ 45</darkSideRange> -->
+				<grantRandomAbilities>false</grantRandomAbilities>
+				
+				<!-- <minRandomAbilities>3</minRandomAbilities> -->
+				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
+				<!-- <abilityCategories> -->
+					<!-- <li>Force_Darkside</li> -->
+					<!-- <li>Force_Neutral</li> -->
+				<!-- </abilityCategories> -->
+			</li>      
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

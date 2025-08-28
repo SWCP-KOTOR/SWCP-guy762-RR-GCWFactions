@@ -84,6 +84,8 @@
 		</skills>
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity>
 			<Brawler>0</Brawler>
 			<Beauty>1</Beauty>
 			<Psychopath>0</Psychopath>
@@ -95,6 +97,23 @@
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
+		
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+			<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+		</abilities>
+		
+		
+		
 		<modExtensions>
 		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
 		  <geneSets>
@@ -221,6 +240,46 @@
 	</BackstoryDef>
 	
 	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_LanuPasiq_TFS"  ParentName="SWWarlordsHeroBase_LanuPasiq">
+		<defName>SWWEPlayableVillain_LanuPasiq_TFS</defName>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>10</min>
+					<max>10</max>
+				</forceLevelRange>
+				<darkSideRange>35 ~ 55</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+				
+				<!-- <minRandomAbilities>3</minRandomAbilities> -->
+				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
+				<!-- <abilityCategories> -->
+					<!-- <li>Force_Darkside</li> -->
+					<!-- <li>Force_Neutral</li> -->
+				<!-- </abilityCategories> -->
+			</li>      
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -241,6 +300,16 @@
             </unlockedPaths>
          </li>
       </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWZsinj_LanuPasiq_TFS"  ParentName="SWWEPlayableVillain_LanuPasiq_TFS">
+		<defName>SWZsinj_LanuPasiq_TFS</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 	</PawnKindDef>
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWZsinj_LanuPasiq_VPE"  ParentName="SWWEPlayableVillain_LanuPasiq_VPE">

@@ -94,7 +94,8 @@
 			</li>
 		</skills>
 		<forcedTraits>
-			<PsychicSensitivity>2</PsychicSensitivity>
+			<!-- <PsychicSensitivity>2</PsychicSensitivity> -->
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
 			<Nerves>2</Nerves>
 			<Nimble>0</Nimble>
 		</forcedTraits>
@@ -108,6 +109,14 @@
 		
 		<abilities>
 			<!-- ACE TIER 4 -->
+			
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightningB</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
 		</abilities>
 		
 		<modExtensions>
@@ -185,7 +194,7 @@
 			<Intellectual>10</Intellectual>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <Nimble>0</Nimble>
 		</forcedTraits>
 		<requiredWorkTags>
@@ -224,6 +233,41 @@
 		</spawnCategories>
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_MaraJade_TFS"  ParentName="SWWarlordsHeroBase_MaraJade">
+		<defName>SWWEPlayableHero_MaraJade_TFS</defName>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>6</min>
+					<max>6</max>
+				</forceLevelRange>
+				<darkSideRange>0 ~ 15</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+				
+				<!-- <minRandomAbilities>3</minRandomAbilities> -->
+				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
+				<!-- <abilityCategories> -->
+					<!-- <li>Force_Darkside</li> -->
+					<!-- <li>Force_Neutral</li> -->
+				<!-- </abilityCategories> -->
+			</li>      
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

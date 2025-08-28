@@ -180,16 +180,6 @@
 				</li>
 			</options>
 		</colorGenerator> <!-- 200,45,65 royal guard red -->
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -270,13 +260,13 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_UtilityItemBase">
+	<ThingDef ParentName="guy762_UtilityItemBase">
 		<defName>guy762_Accessory_stormie7thpauldron</defName>
 		<label>7th Fleet pauldron</label>
 		<description>A durable armorweave pauldron for denoting rank among various trooper corps within the Empire. This pauldron is emblazoned with the logo of Grand Admiral Thrawn's dreaded 7th Fleet.</description>
@@ -347,7 +337,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	
 	
 	

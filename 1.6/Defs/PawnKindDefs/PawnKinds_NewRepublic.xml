@@ -440,7 +440,7 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>1800~5000</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_DC15sCarbine</li>
+			<li>SWRanged_DC15cCarbine</li>
 			<li>SWRanged_DC15aRifle</li>
 			<li>SWRanged_DC15xsniper</li>
 			

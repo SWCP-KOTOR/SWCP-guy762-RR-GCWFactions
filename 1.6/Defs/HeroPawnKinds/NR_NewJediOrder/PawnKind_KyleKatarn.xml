@@ -93,7 +93,8 @@
 			</li>
 		</skills>
 		<forcedTraits>
-			<PsychicSensitivity>1</PsychicSensitivity>
+			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
 			<Tough>0</Tough>
 			<ShootingAccuracy>-1</ShootingAccuracy>
 		</forcedTraits>
@@ -107,6 +108,15 @@
 		
 		<abilities>
 			<!-- ACE TIER 4 -->
+			
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_LightningB</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
 		</abilities>
 		
 		<modExtensions>
@@ -209,7 +219,7 @@
 			<Melee>10</Melee>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>1</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 		</forcedTraits>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -219,6 +229,55 @@
 		</spawnCategories>
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_KyleKatarn_TFS"  ParentName="SWWarlordsHeroBase_KyleKatarn">
+		<defName>SWWEPlayableHero_KyleKatarn_TFS</defName>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>6</min>
+					<max>6</max>
+				</forceLevelRange>
+				<!-- <darkSideRange>0 ~ 15</darkSideRange> -->
+				<grantRandomAbilities>false</grantRandomAbilities>
+				
+				<!-- <minRandomAbilities>3</minRandomAbilities> -->
+				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
+				<!-- <abilityCategories> -->
+					<!-- <li>Force_Darkside</li> -->
+					<!-- <li>Force_Neutral</li> -->
+				<!-- </abilityCategories> -->
+			</li>      
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

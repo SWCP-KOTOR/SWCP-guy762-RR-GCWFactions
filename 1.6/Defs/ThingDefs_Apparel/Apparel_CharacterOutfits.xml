@@ -324,10 +324,12 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/jodokast/Apparel_item</texPath>
+			<texPath>SWApparel/Mandalorian/jodokast/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
 			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<shaderType>CutoutMultiMask</shaderType>
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow--> 
 		</graphicData>
 		<statBases>
@@ -389,6 +391,39 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/jodokast/Apparel</li></texturePaths>
+					  <colorA>
+						<color>90,120,85</color>	<!-- protector green -->
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>230,185,45</color>	<!--republic yellow-->
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>45,100,185</color>	<!-- blue squadron -->
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -409,16 +444,16 @@
 			</options>
 		</colorGenerator>
 		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
-				<maskCount>1</maskCount>
-				<defaultPalette>
-					<colorOne>(90,120,85)</colorOne> <!-- protector green -->
-					<colorTwo>(230,185,45)</colorTwo> <!--republic yellow--> 
-					<colorThree>(45,100,185)</colorThree>       <!-- blue squadron -->
-				</defaultPalette>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
+				<!-- <maskCount>1</maskCount> -->
+				<!-- <defaultPalette> -->
+					<!-- <colorOne>(90,120,85)</colorOne> -->
+					<!-- <colorTwo>(230,185,45)</colorTwo> -->
+					<!-- <colorThree>(45,100,185)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 	
 	
@@ -428,9 +463,11 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/jodokast/helmet/helmet_item</texPath>
+			<texPath>SWApparel/Mandalorian/jodokast/helmet/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutMultiMask</shaderType>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
 			<!-- <shaderType>CutoutComplex</shaderType> -->
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow--> 
 		</graphicData>
@@ -491,6 +528,39 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>68</baseLayer>
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Mandalorian/jodokast/helmet/helmet</li></texturePaths>
+					  <colorA>
+						<color>90,120,85</color>	<!-- protector green -->
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>230,185,45</color>	<!--republic yellow-->
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>45,100,185</color>	<!-- blue squadron -->
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -504,28 +574,16 @@
 			</options>
 		</colorGenerator>
 		
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay_hat</li> -->
-			  <!-- <li>guy762_slot_overlay_hvy</li> -->
-			  <!-- <li>guy762_slot_helmettech</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
-		
-		<modExtensions>
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension">
-				<maskCount>1</maskCount>
-				<defaultPalette>
-					<colorOne>(90,120,85)</colorOne> <!-- protector green -->
-					<colorTwo>(230,185,45)</colorTwo> <!--republic yellow--> 
-					<colorThree>(45,100,185)</colorThree>       <!-- blue squadron -->
-				</defaultPalette>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
+				<!-- <maskCount>1</maskCount> -->
+				<!-- <defaultPalette> -->
+					<!-- <colorOne>(90,120,85)</colorOne> -->
+					<!-- <colorTwo>(230,185,45)</colorTwo> -->
+					<!-- <colorThree>(45,100,185)</colorThree> -->
+				<!-- </defaultPalette> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 	</ThingDef>
 	
 	

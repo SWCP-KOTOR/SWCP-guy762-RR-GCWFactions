@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
-		<defName>guy762_DC15sCarbine</defName>
-		<label>DC-15S blaster carbine</label>
+	<ThingDef ParentName="KotORRangedModdable_OffHand">
+		<defName>guy762_DC17sPistol</defName>
+		<label>DC-17S blaster pistol</label>
 		<description>.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
-			<texPath>Weapons_RR/DC15s</texPath>
+			<texPath>Weapons_RR/DC17s</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.375</drawSize>
+		</graphicData>
+		<soundInteract>kotorsound_select_pistol</soundInteract>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+		</statBases>
+		
+		<weaponTags>
+			<li>SWRanged_DC17sPistol</li>
+			<li>SWRanged_AnyRepeaterPistol</li>
+			<li>SWKotORWeaponCategoryTag_pistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>KotORIonBolt_default</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<defaultCooldownTime>1</defaultCooldownTime>
+				<range>20</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>kotorsound_DC15cCarbine</soundCast>
+				<!-- <soundCast>kotorsound_DC17sPistol</soundCast> -->
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+		<defName>guy762_DC15cCarbine</defName>
+		<label>DC-15C blaster carbine</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Weapons_RR/DC15c</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.125</drawSize>
 		</graphicData>
@@ -25,7 +96,7 @@
 		</statBases>
 		
 		<weaponTags>
-			<li>SWRanged_DC15sCarbine</li>
+			<li>SWRanged_DC15cCarbine</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 		</weaponTags>
 		<tradeTags>
@@ -43,6 +114,7 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>kotorsound_DC17sPistol</soundCast>
+				<!-- <soundCast>kotorsound_DC15cCarbine</soundCast> -->
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

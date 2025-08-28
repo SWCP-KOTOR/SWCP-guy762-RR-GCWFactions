@@ -14,6 +14,18 @@
     
 	
 	
+	<SWCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
+        <defName>SWZsinjDominionCharacter_LanuPasiqTFS</defName>
+        <pawnKind>SWZsinj_LanuPasiq_TFS</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>25</seniority> <!-- veteran inquisitor that can assume control if everyone else is killed -->
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
 	<SWCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
         <defName>SWZsinjDominionCharacter_LanuPasiqVPE</defName>
         <pawnKind>SWZsinj_LanuPasiq_VPE</pawnKind>

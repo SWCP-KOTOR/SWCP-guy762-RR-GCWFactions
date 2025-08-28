@@ -7,26 +7,32 @@
     <description>.</description>
     <pawnSingular>rebel</pawnSingular>
     <pawnsPlural>rebels</pawnsPlural>
-    <categoryTag>Empire</categoryTag>
+    <categoryTag>Outlander</categoryTag>
+	<factionIconPath>World/NewRepublic</factionIconPath>
+	<colorSpectrum>
+      <li>RGB(205,125,20)</li> <!-- new republic orange -->
+    </colorSpectrum>
+	
+	<!-- replaces a faction in the default vanilla setup list -->
+	<replacesFaction>Empire</replacesFaction>
+	<!-- <replacesFaction>OutlanderCivil</replacesFaction> -->
+	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 	<listOrderPriority>1765</listOrderPriority>
 	<configurationListOrderPriority>1765</configurationListOrderPriority>
     <maxCountAtGameStart>1</maxCountAtGameStart>
 	<techLevel>Spacer</techLevel>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-	<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
-    <factionIconPath>World/NewRepublic</factionIconPath>
-	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
-    <colorSpectrum>
-      <li>RGB(205,125,20)</li>
-    </colorSpectrum>
 	
-    <permanentEnemy>false</permanentEnemy>
-	<!--permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+    <canMakeRandomly>true</canMakeRandomly>
+	<canSiege>true</canSiege>
+	<canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+	<canRequestTraders>false</canRequestTraders>
+	<canRequestMilitaryAid>true</canRequestMilitaryAid>
+	<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+	<canGenerateQuestSites>true</canGenerateQuestSites>
+	
 	
     <factionNameMaker>guy762_NamerFaction_NRStarfleet</factionNameMaker>
 	<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
@@ -47,6 +53,30 @@
     <!-- <royalTitleInheritanceRelations> -->
     <!-- </royalTitleInheritanceRelations> -->
 	
+	
+	
+	
+	
+	
+	
+	<layerWhitelist>
+		<!-- creates two separate factions split between the surface and orbit -->
+		<!-- <li>Surface</li> -->
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerWhitelist>
+	<arrivalLayerWhitelist>
+		<li>Surface</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
+    <neutralArrivalLayerBlacklist>
+		<li>Surface</li>
+    </neutralArrivalLayerBlacklist>
+	
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
+    <permanentEnemy>false</permanentEnemy>
+	<!--permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+	
 	<settlementGenerationWeight>4</settlementGenerationWeight>
 	<modExtensions Inherit="False">
       <li Class="SWCP.Currencies.CurrencyReplacement">
@@ -65,11 +95,11 @@
 			<guy762_SWWarlordsFaction_Pentastar>-50</guy762_SWWarlordsFaction_Pentastar>
 			
 			<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
-			<!-- <guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell> -->
+			<guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell>
 			<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
 			
 			<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
-			<guy762_SWWarlordsFaction_BlackSun>-75~-25</guy762_SWWarlordsFaction_BlackSun>
+			<guy762_SWWarlordsFaction_BlackSun>-50~0</guy762_SWWarlordsFaction_BlackSun>
 			<!-- . -->
 			<!-- <guy762_KotORFaction_HuttCartel>-25~25</guy762_KotORFaction_HuttCartel> -->
 			<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
@@ -77,11 +107,11 @@
 			<!-- <guy762_KotORFaction_MandoClan>0~25</guy762_KotORFaction_MandoClan> -->
 			<!-- <guy762_KotORFaction_SavageMandos>-50</guy762_KotORFaction_SavageMandos> -->
 
-			<guy762_KotORFaction_Civilians>0~100</guy762_KotORFaction_Civilians>
+			<guy762_KotORFaction_Civilians>0~75</guy762_KotORFaction_Civilians>
 		</startingGoodwillByFactionDefs>
 		<excludeFromCommConsole>false</excludeFromCommConsole>
 		<hasCities>true</hasCities>
-		<minDistanceToOtherSettlements>40</minDistanceToOtherSettlements>
+		<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
       </li>
 	  <!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
 			<!-- <territoryColor>(205,125,20,32)</territoryColor> -->
@@ -102,6 +132,9 @@
 		<li>guy762_culture_coreworlds</li>
 		<li>guy762_culture_outerrim</li>
 	</allowedCultures>
+	<styles>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+    </styles>
 	
 	<requiredMemes>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
@@ -114,8 +147,8 @@
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_CityBuilders</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Healthcare</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		
+		<!-- <li MayRequire="Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Odyssey">Shipborn</li> -->
 	</allowedMemes>
 	<disallowedPrecepts>
 		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
@@ -216,16 +249,13 @@
     <baseTraderKinds>
       <li>Base_Outlander_Standard</li>
     </baseTraderKinds>
+	<!-- <orbitalTraderKinds> -->
+      <!-- <li>Orbital_BulkGoods</li> -->
+      <!-- <li>Orbital_CombatSupplier</li> -->
+      <!-- <li>Orbital_Exotic</li> -->
+      <!-- <li>Orbital_PirateMerchant</li> -->
+    <!-- </orbitalTraderKinds> -->
 	
-	
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(100,75)</li> <!-- cost of soldier/lieutenant/medic/patroldroid -->
-        <li>(500, 150)</li> <!-- cost of heavies/sentinels -->
-        <li>(2000, 300)</li> <!-- cost of commandos/jedi -->
-        <li>(2001, 10000)</li> <!-- includes assault droid mk4 -->
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
 	
 	<apparelStuffFilter>
       <thingDefs>
@@ -237,6 +267,20 @@
     </apparelStuffFilter>
 	
 	
+	
+	
+	
+	
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,75)</li> <!-- cost of soldier/lieutenant/medic/patroldroid -->
+        <li>(500, 150)</li> <!-- cost of heavies/sentinels -->
+        <li>(2000, 300)</li> <!-- cost of commandos/jedi -->
+        <li>(2001, 10000)</li> <!-- includes assault droid mk4 -->
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<!-- <earliestRaidDays>20</earliestRaidDays> -->
 	
     <pawnGroupMakers>
 		<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->

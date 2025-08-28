@@ -122,13 +122,30 @@
 			  </geneSets>
 			</li>
 			
-			<li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.AvailablePalettes_ModExtension">
-                <pawnIdAsSeed>true</pawnIdAsSeed>
-                <apparelLayer>Belt</apparelLayer>
-				<palettes>
-                    <li>(90,120,85), (230,185,45), (45,100,185)</li>
-                </palettes>
-            </li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+			  <itemGraphics>
+				<li>
+				  <graphic>
+					<colorA>(90,120,85)</colorA>
+					<colorB>(230,185,45)</colorB>
+					<colorC>(45,100,185)</colorC>
+				  </graphic>
+				  <thingCategories><li>ApparelUtility</li></thingCategories>
+				  <apparelLayer>
+					<li>Belt</li>
+				  </apparelLayer>
+				</li>
+			  </itemGraphics>
+			</li>
+			
+			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.AvailablePalettes_ModExtension"> -->
+                <!-- <pawnIdAsSeed>true</pawnIdAsSeed> -->
+                <!-- <apparelLayer>Belt</apparelLayer> -->
+				<!-- <palettes> -->
+                    <!-- <li>(90,120,85), (230,185,45), (45,100,185)</li> -->
+                <!-- </palettes> -->
+            <!-- </li> -->
 		</modExtensions>
 	  </PawnKindDef>
 	  
