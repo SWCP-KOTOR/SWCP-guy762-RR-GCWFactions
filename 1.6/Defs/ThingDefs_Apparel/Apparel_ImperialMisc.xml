@@ -40,7 +40,7 @@
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>PentastarAlignment_GuardianProtector</li>
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorArmor</li>
@@ -145,7 +145,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<!--li>EVA</li-->
 				<li>PentastarAlignment_GuardianProtector</li>
@@ -369,7 +369,7 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
@@ -438,7 +438,7 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>ZsinjEmpire_raptorpilot</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorPilotHelmet</li>
@@ -630,7 +630,7 @@
 			<MortarMissRadiusFactor>-0.6</MortarMissRadiusFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_impengi</li>
 				<li>SWGCWSpecificApparelItem_ImperialEngineerHelmet</li>
@@ -931,7 +931,7 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardArmor</li>
@@ -1004,7 +1004,7 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardHelmet</li>

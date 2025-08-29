@@ -153,7 +153,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_navytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
@@ -235,7 +235,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>GreaterMaldrood_navycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoHelmet</li>
@@ -533,7 +533,7 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_TIEpilot</li>
 				<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>

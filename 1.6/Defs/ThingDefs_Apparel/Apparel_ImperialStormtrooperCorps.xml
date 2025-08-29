@@ -49,7 +49,7 @@
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_stormiearmor</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
@@ -153,7 +153,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_stormiearmor</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
@@ -386,7 +386,7 @@
 			
 			<HuntingStealth>0.6</HuntingStealth>
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_shadowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperArmor</li>
@@ -496,7 +496,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_shadowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperHelmet</li>
@@ -603,7 +603,7 @@
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_scouttrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialScoutTrooperHelmet</li>
@@ -667,7 +667,7 @@
 		<thingSetMakerTags>
 		  <li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_scouttrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialScoutTrooperArmor</li>
@@ -780,7 +780,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_stormcommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormCommandoHelmet</li>
@@ -888,7 +888,7 @@
 		<thingSetMakerTags>
 		  <li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_stormcommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
@@ -1013,7 +1013,7 @@
 			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_snowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialSnowtrooperHelmet</li>
@@ -1081,7 +1081,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_snowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>

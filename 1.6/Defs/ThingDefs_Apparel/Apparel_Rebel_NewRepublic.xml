@@ -218,7 +218,7 @@
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_trooper</li>
 				<li>SWGCWSpecificApparelItem_NewRepublicMarineHelmet</li>
@@ -277,7 +277,7 @@
 			<AimingDelayFactor>-0.1</AimingDelayFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_resistancetrooper</li>
 				<li>SWGCWSpecificApparelItem_ResistanceNewRepublicMarineHelmet</li>

@@ -38,7 +38,7 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>PentastarAlignment_TIEpilot</li>
 				<li>SWGCWSpecificApparelItem_PentastarTIEPilotHelmet</li>
@@ -279,7 +279,7 @@
             </li>
         </comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_TIEpilotAce</li>
 				<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>

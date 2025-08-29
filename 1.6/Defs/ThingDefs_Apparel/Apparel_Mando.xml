@@ -380,7 +380,7 @@
 		  <li>RewardStandardMidFreq</li>
 		  <li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_MandoArmor</li>
 				<!-- <li>KotORRoyaltyTag_AnyMandoArmor</li> -->

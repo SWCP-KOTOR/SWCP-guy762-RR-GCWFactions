@@ -195,7 +195,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>PartisanAlliance_trooperheadwear</li>
 				<li>SWGCWSpecificApparelItem_PartisanFleetTrooperHelmet</li>
@@ -264,7 +264,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>PartisanAlliance_trooperheadwear</li>
 				<li>SWGCWSpecificApparelItem_PartisanEndorTrooperHelmet</li>
@@ -515,7 +515,7 @@
 			<SocialImpact>0.7</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_PartisanWarlordArmor</li>
 			</tags>

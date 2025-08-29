@@ -173,7 +173,7 @@
 			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_armylieutenant</li>
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
@@ -276,7 +276,7 @@
 			<SocialImpact>0.5</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_armymajor</li>
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
@@ -383,7 +383,7 @@
 			<SocialImpact>0.7</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_armygeneral</li>
 				<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
@@ -495,7 +495,7 @@
 			<SocialImpact>1</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_grandgeneral</li>
 				<li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
@@ -607,7 +607,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_armytrooper</li>
 				<li>RemnantEmpire_armyconscript</li>
@@ -673,7 +673,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RustyImperialArmyArmor</li>
@@ -763,7 +763,7 @@
 			<li Class="CompProperties_Styleable"></li>
 		</comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<drawData>
 				<defaultData>
 					<layer>84</layer>
@@ -945,7 +945,7 @@
 			<li Class="CompProperties_Styleable"></li>
 		</comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
@@ -1032,7 +1032,7 @@
 			<li Class="CompProperties_Styleable"></li>
 		</comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>IndependentWarlord_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RustyImperialArmyHelmet</li>
@@ -1128,7 +1128,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_armycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>

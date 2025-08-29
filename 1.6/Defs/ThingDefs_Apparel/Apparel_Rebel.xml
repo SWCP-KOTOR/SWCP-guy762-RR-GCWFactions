@@ -29,7 +29,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_alderaanguard</li>
 				<!-- <li>NewRepublic_trooper</li> -->
@@ -88,7 +88,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_rebeltrooper</li>
 				<li>NewRepublic_endortrooperhelmet</li>
@@ -155,7 +155,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_trooper</li>
 				<!-- <li>NewRepublic_rebeltrooper</li> -->
@@ -212,7 +212,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_rebelheavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
@@ -479,7 +479,7 @@
 			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_cloneveteran</li>
 				<li>SWGCWSpecificApparelItem_VeteranCloneTrooperArmor</li>
@@ -573,7 +573,7 @@
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_rebelheavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
@@ -657,7 +657,7 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<drawData>
 				<defaultData>
 					<layer>84</layer>
@@ -744,7 +744,7 @@
 			<li Class="CompProperties_Styleable"></li>
 		</comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<drawData>
 				<defaultData>
 					<layer>84</layer>
@@ -884,7 +884,7 @@
 			<!-- <li Class="CompProperties_Styleable"></li> -->
 		<!-- </comps> -->
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_rookiepilot</li>
 				<li>NewRepublic_AWingpilot</li>

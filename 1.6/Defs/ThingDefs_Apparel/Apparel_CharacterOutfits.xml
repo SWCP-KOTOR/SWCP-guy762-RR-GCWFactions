@@ -266,7 +266,7 @@
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_DengarArmor</li>
 			</tags>
@@ -368,7 +368,7 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SaV_JodoKast</li>
 				<li>SWGCWSpecificApparelItem_JodoKastMandoArmor</li>
@@ -1024,7 +1024,7 @@
             </li>
 		</comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<drawData>
 				<defaultData>
 					<layer>84</layer>
@@ -1159,7 +1159,7 @@
 			<!-- <li Class="CompProperties_Styleable"></li> -->
         </comps>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>NewRepublic_keo</li>
 				<li>SWGCWSpecificApparelItem_CharacterAWingPilotHelmet</li>
