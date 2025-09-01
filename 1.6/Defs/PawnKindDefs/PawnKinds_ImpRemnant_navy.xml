@@ -294,19 +294,11 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
-			<li Class="BigAndSmall.HasCustomizableGraphics">
-				<tag><guy762AltTag_TIEPilotVeteran/></tag>
-				<colorA>true</colorA>
-				<colorB>true</colorB>
-				<colorC>true</colorC>
-			</li>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <guy762AltTag_TIEPilotVeteran/></flags>
+      </li>
 		</modExtensions>
 	</PawnKindDef>
-
-	
-	
-	
-	
 	
 	<PawnKindDef Name="SWImpRemnant_TIEace" ParentName="SWImpRemnant_TrooperBase">
 		<defName>SWImpRemnant_TIEace</defName>
@@ -393,6 +385,12 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+    <modExtensions>
+      <li Class="BigAndSmall.Flagger">
+        <flags> <guy762AltTag_TIEPilotAce_ryad/></flags>
+      </li>
+		</modExtensions>
+    
 	</PawnKindDef>
 	
 	
