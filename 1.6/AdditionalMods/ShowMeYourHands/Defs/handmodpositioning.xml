@@ -2,7 +2,7 @@
 <Defs>
 
 	<WHands.ClutterHandsTDef>
-     <defName>ClutterHandsSettings_-96925639_All</defName>
+     <defName>ClutterHandsSettings_StarWarsWarlordEmpire</defName>
       <label>Weapon hand settings</label>
       <thingClass>Thing</thingClass>
       <WeaponCompLoader>

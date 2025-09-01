@@ -243,13 +243,13 @@
 			<li>guy762_TIEpilotArmor</li>
 			<li>guy762_Bodysuit_TIEpilot</li>
 		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef>
-			</li>
-		</specificApparelRequirements>
+		<!-- <specificApparelRequirements> -->
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
+				<!-- <styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef> -->
+			<!-- </li> -->
+		<!-- </specificApparelRequirements> -->
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>825</weaponMoney>
@@ -292,6 +292,15 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<tag><guy762AltTag_TIEPilotVeteran/></tag>
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	
@@ -331,13 +340,13 @@
 			<li>guy762_TIEpilotArmor</li>
 			<li>guy762_Bodysuit_TIEace</li>
 		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_ace</styleDef>
-			</li>
-		</specificApparelRequirements>
+		<!-- <specificApparelRequirements> -->
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
+				<!-- <styleDef>guy762_TIEAceHelmetStyle_ace</styleDef> -->
+			<!-- </li> -->
+		<!-- </specificApparelRequirements> -->
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>1500</weaponMoney>

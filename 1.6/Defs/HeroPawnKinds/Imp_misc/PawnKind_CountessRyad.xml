@@ -31,12 +31,12 @@
 		   <li>guy762_Bodysuit_TIEace</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
 				<!-- <styleDef>guy762_TIEAceHelmetStyle_ace</styleDef> -->
 				<!-- <styleDef>guy762_TIEAceHelmetStyle_ryad</styleDef> -->
-			</li>
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Shell</apparelLayer>
 				<apparelDef>Apparel_Cape</apparelDef>
@@ -115,14 +115,15 @@
 			  </geneSets>
 			</li>
 			
-			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.AvailablePalettes_ModExtension"> -->
-                <!-- <pawnIdAsSeed>true</pawnIdAsSeed> true means all apparel pawn will have the same color set from "palettes", false means random for each apparel (optional, by default true) -->
-                <!-- <palettes> -->
-                    <!-- <li>(40,40,40), (220,190,0) (175,175,175)</li> -->
-                    <!-- <li>(75,75,75), (220,190,0) (255,255,255)</li> -->
-                <!-- </palettes> -->
-            <!-- </li> -->
+
 			
+			
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<tag><guy762AltTag_TIEPilotAce_ryad/></tag>
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 			  <itemGraphics>
 
@@ -132,7 +133,6 @@
 					<colorB>220,190,0</colorB>	<!-- mid yellow -->
 					<colorC>250,250,250</colorC>
 				  </graphic>
-				  <!-- <thingCategories><li>ArmorHeadgear</li></thingCategories> -->
 				  <apparelLayer>
 					<li>Overhead</li>
 				  </apparelLayer>
@@ -143,7 +143,6 @@
 					<colorA>75,75,75</colorA>
 					<colorB>220,190,0</colorB>	<!-- mid yellow -->
 				  </graphic>
-				  <!-- <thingCategories><li>ApparelArmor</li></thingCategories> -->
 				  <apparelLayer>
 					<li>OnSkin</li>
 				  </apparelLayer>

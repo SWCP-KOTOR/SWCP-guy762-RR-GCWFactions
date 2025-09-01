@@ -752,12 +752,12 @@
 			<li>guy762_ImpUniform_bigbelt</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef>
-				<color>(200,45,65)</color>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
+				<!-- <styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef> -->
+				<!-- <color>(200,45,65)</color> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<color>(200,45,65)</color>
@@ -824,6 +824,31 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		
+		<modExtensions>
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<tag><guy762AltTag_TIEPilotVeteran/></tag>
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+			<li Class="BigAndSmall.PawnKindExtension">
+			  <itemGraphics>
+
+				<li>
+				  <graphic>
+					<colorA>200,45,65</colorA>
+					<colorB>250,250,250</colorB>
+					<colorC>250,250,250</colorC>
+				  </graphic>
+				  <apparelLayer>
+					<li>Overhead</li>
+				  </apparelLayer>
+				</li>
+			  </itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -1031,13 +1056,15 @@
 			</li>
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
 				</whitelist>
 				<blacklist>
-					<li>Thin</li>
-					<li>Hulk</li>
-					<li>Fat</li>
-					<li>Baby</li>
-					<li>Child</li>
+					<!-- <li>Thin</li> -->
+					<!-- <li>Hulk</li> -->
+					<!-- <li>Fat</li> -->
+					<!-- <li>Baby</li> -->
+					<!-- <li>Child</li> -->
 				</blacklist>
 				<priority>
 					<!--When violates the black/whitelist, selected from these-->

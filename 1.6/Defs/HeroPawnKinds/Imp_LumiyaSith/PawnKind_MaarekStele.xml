@@ -30,11 +30,6 @@
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_ace</styleDef>
-			</li>
-			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_Bodysuit_TIEace</apparelDef>
 				<color>(70,65,80)</color> <!-- dark side purple -->
@@ -136,6 +131,24 @@
 				<!-- <preferredHiltParts> -->
 				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
 				<!-- </preferredHiltParts> -->
+			</li>
+			
+			
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+			  <itemGraphics>
+				
+				<li>
+				  <graphic>
+					<colorA>70,65,80</colorA> <!-- dark side purple -->
+					<colorB>140,0,0</colorB>	<!-- dark red -->
+				  </graphic>
+				  <apparelLayer>
+					<li>OnSkin</li>
+				  </apparelLayer>
+				</li>
+				
+			  </itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

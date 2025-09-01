@@ -31,11 +31,6 @@
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_ace</styleDef>
-			</li>
-			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_FlightVest</apparelDef>
 				<color>(200,200,200)</color> <!-- light grey -->
@@ -113,6 +108,24 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+			  <itemGraphics>
+				
+				<li>
+				  <graphic>
+					<colorA>95,125,155</colorA> <!-- 181st blue -->
+					<colorB>140,0,0</colorB>	<!-- dark red -->
+				  </graphic>
+				  <apparelLayer>
+					<li>OnSkin</li>
+				  </apparelLayer>
+				</li>
+				
+			  </itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

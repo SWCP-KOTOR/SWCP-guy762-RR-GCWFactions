@@ -26,17 +26,17 @@
 		<apparelRequired>
 		   <li>guy762_TIEpilotAceHelmet</li>
 		   <li>guy762_TIEpilotArmor</li>
-		   <li>guy762_Bodysuit_utility</li>
+		   <li>guy762_Bodysuit_TIEace</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
-				<styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
+				<!-- <styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_Bodysuit_utility</apparelDef>
+				<apparelDef>guy762_Bodysuit_TIEace</apparelDef>
 				<color>(75,75,90)</color> <!-- obsidian purple -->
 				<quality>Legendary</quality>
 			</li>
@@ -106,6 +106,30 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			
+			
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<tag><guy762AltTag_TIEPilotVeteran/></tag>
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+			<li Class="BigAndSmall.PawnKindExtension">
+			  <itemGraphics>
+				
+				<li>
+				  <graphic>
+					<colorA>75,75,90</colorA> <!-- obsidian purple -->
+					<colorB>40,40,40</colorB>	<!-- dark black -->
+				  </graphic>
+				  <apparelLayer>
+					<li>OnSkin</li>
+				  </apparelLayer>
+				</li>
+				
+			  </itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

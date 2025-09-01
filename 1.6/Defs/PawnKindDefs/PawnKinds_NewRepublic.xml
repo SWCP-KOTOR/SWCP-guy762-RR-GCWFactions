@@ -444,10 +444,10 @@
 			<li>SWRanged_DC15aRifle</li>
 			<li>SWRanged_DC15xsniper</li>
 			
-			<li>SWRanged_RT97Crepeater</li>
-			<li>SWRanged_DLT19repeater</li>
-			<li>SWRanged_DLT20Asniper</li>
-			<li>SWRanged_A280Crifle</li>
+			<!-- <li>SWRanged_RT97Crepeater</li> -->
+			<!-- <li>SWRanged_DLT19repeater</li> -->
+			<!-- <li>SWRanged_DLT20Asniper</li> -->
+			<!-- <li>SWRanged_A280Crifle</li> -->
 		</weaponTags>
 		
 		<skills>
