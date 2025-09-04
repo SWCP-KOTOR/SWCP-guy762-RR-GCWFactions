@@ -689,9 +689,12 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_TIEpilotHelmet_PA</li>
+			<li>guy762_TIEpilotHelmet</li>
 			<li>guy762_TIEpilotArmor</li>
 			<li>guy762_Bodysuit_TIEpilot</li>
 		</apparelRequired>
@@ -751,6 +754,12 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_TIEPilotPentastar/></flags>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	

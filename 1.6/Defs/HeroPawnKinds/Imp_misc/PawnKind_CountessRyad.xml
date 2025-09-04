@@ -118,25 +118,23 @@
 
 			
 			
-			<li Class="BigAndSmall.HasCustomizableGraphics">
-				<tag><guy762AltTag_TIEPilotAce_ryad/></tag>
-				<colorA>true</colorA>
-				<colorB>true</colorB>
-				<colorC>true</colorC>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_TIEPilotAce_ryad/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 			  <itemGraphics>
 
-				<li>
-				  <graphic>
-					<colorA>40,40,40</colorA>
-					<colorB>220,190,0</colorB>	<!-- mid yellow -->
-					<colorC>250,250,250</colorC>
-				  </graphic>
-				  <apparelLayer>
-					<li>Overhead</li>
-				  </apparelLayer>
-				</li>
+				<!-- <li> -->
+				  <!-- <graphic> -->
+					<!-- <colorA>40,40,40</colorA> -->
+					<!-- mid yellow -->
+					<!-- <colorB>220,190,0</colorB> -->
+					<!-- <colorC>250,250,250</colorC> -->
+				  <!-- </graphic> -->
+				  <!-- <apparelLayer> -->
+					<!-- <li>Overhead</li> -->
+				  <!-- </apparelLayer> -->
+				<!-- </li> -->
 				
 				<li>
 				  <graphic>

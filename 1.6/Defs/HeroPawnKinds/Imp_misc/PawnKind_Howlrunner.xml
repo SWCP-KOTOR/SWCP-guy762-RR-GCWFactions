@@ -110,11 +110,8 @@
 			
 			
 			
-			<li Class="BigAndSmall.HasCustomizableGraphics">
-				<tag><guy762AltTag_TIEPilotVeteran/></tag>
-				<colorA>true</colorA>
-				<colorB>true</colorB>
-				<colorC>true</colorC>
+			<li Class="BigAndSmall.Flagger">
+				<flags><guy762AltTag_TIEPilotVeteran/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 			  <itemGraphics>

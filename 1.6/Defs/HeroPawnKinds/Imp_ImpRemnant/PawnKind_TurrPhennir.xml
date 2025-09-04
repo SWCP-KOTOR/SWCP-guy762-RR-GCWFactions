@@ -115,7 +115,9 @@
 			
 			
 			
-			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_TIEPilotBaron/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 			  <itemGraphics>
 				

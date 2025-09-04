@@ -91,21 +91,15 @@
 					  <!-- TCW Death Watch helmet -->
 					  <colorA>
 						<color>70,100,165</color>
-						<alts>
-							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
 						<color>225,225,225</color>
-						<alts>
-							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
 						<color>100,100,100</color>
-						<alts>
-							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
@@ -145,7 +139,7 @@
 			</options>
 		</colorGenerator>
 		
-		<!-- <modExtensions> -->
+		<modExtensions>
 			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
 				<!-- TCW Death Watch -->
@@ -155,7 +149,13 @@
 					<!-- <colorThree>(100,100,100)</colorThree> -->
 				<!-- </defaultPalette> -->
 			<!-- </li> -->
-		<!-- </modExtensions> -->
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -247,21 +247,15 @@
 					  <!-- TCW Death Watch helmet -->
 					  <colorA>
 						<color>70,100,165</color>
-						<alts>
-							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
 						<color>225,225,225</color>
-						<alts>
-							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
 						<color>100,100,100</color>
-						<alts>
-							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
@@ -301,7 +295,7 @@
 			</options>
 		</colorGenerator>
 		
-		<!-- <modExtensions> -->
+		<modExtensions>
 			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
 				<!-- TCW Death Watch -->
@@ -311,7 +305,13 @@
 					<!-- <colorThree>(100,100,100)</colorThree> -->
 				<!-- </defaultPalette> -->
 			<!-- </li> -->
-		<!-- </modExtensions> -->
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -414,21 +414,15 @@
 					  <!-- TCW Death Watch armor -->
 					  <colorA>
 						<color>100,100,100</color>
-						<alts>
-							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
 						<color>70,100,165</color>
-						<alts>
-							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
 						<color>50,45,75</color>
-						<alts>
-							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
@@ -468,7 +462,7 @@
 			</options>
 		</colorGenerator>
 		
-		<!-- <modExtensions> -->
+		<modExtensions>
 			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
 				<!-- TCW Death Watch -->
@@ -478,7 +472,13 @@
 					<!-- <colorThree>(50,45,75)</colorThree> -->
 				<!-- </defaultPalette> -->
 			<!-- </li> -->
-		<!-- </modExtensions> -->
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	  
 	
@@ -575,21 +575,15 @@
 					  <texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
 					  <colorA>
 						<color>70,90,125</color>	<!-- K1 blue -->
-						<alts>
-							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
 						<color>230,185,45</color>      <!-- republic yellow --> 
-						<alts>
-							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
 						<color>125,50,50</color>	<!-- rebel red -->
-						<alts>
-							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
-						</alts>
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
 					</conditionalGraphics>
 					<drawData> 
@@ -681,7 +675,7 @@
 			</li>
 		</comps>
 		
-		<!-- <modExtensions> -->
+		<modExtensions>
 			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.PaintableExtension"> -->
 				<!-- <maskCount>1</maskCount> -->
 				<!-- <defaultPalette> -->
@@ -693,8 +687,14 @@
 					<!-- <colorThree>(125,50,50)</colorThree> -->
 				<!-- </defaultPalette> -->
 			<!-- </li> -->
-		<!-- </modExtensions> -->
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 		
-	  </ThingDef>
+	</ThingDef>
 
 </Defs>

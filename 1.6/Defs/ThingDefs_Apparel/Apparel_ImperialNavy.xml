@@ -501,66 +501,7 @@
 	
 	
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
-		<defName>guy762_TIEpilotHelmet</defName>
-		<label>TIE pilot Helmet</label>
-		<techLevel>Spacer</techLevel>
-		<description>.</description>
-		<graphicData>
-			<texPath>SWApparel/TIEPilot/helmet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(250,250,250)</colorTwo> <!-- white -->
-		</graphicData>
-		<thingCategories>
-		  <li>ArmorHeadgear</li>
-		</thingCategories>
-		<statBases>
-			<Mass>4</Mass>
-			<MarketValue>300</MarketValue>
-			<MaxHitPoints>115</MaxHitPoints>
-      		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.45</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-			
-			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
-		</equippedStatOffsets>
-		
-		<apparel>
-			<tags>
-				<li>RemnantEmpire_TIEpilot</li>
-				<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>
-			</tags>
-			<wornGraphicPath>SWApparel/TIEPilot/helmet</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-				<li>EyeCover</li>
-			</layers>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<useDeflectMetalEffect>false</useDeflectMetalEffect>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>15</weight>
-					<only>(40,40,40)</only> <!-- darker black -->
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
+	<!-- HELMET MOVED TO ACES DOC SO IT CAN HAVE PAINTJOBS -->
 
 	
 	

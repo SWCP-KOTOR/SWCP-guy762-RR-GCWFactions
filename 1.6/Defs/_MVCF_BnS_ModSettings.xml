@@ -12,4 +12,12 @@
 	</ActivateFeatures>
   </MVCF.ModDef>
   
+  
+  <BigAndSmall.GlobalSettings>
+    <defName>guy762_BnSSettings</defName>
+    <enabledFeatures>
+       <li>RecolorButton</li>
+    </enabledFeatures>
+  </BigAndSmall.GlobalSettings>
+  
 </Defs>

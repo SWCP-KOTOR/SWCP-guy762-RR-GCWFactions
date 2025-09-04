@@ -292,15 +292,6 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-		
-		<modExtensions>
-			<li Class="BigAndSmall.HasCustomizableGraphics">
-				<tag><guy762AltTag_TIEPilotVeteran/></tag>
-				<colorA>true</colorA>
-				<colorB>true</colorB>
-				<colorC>true</colorC>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 	
@@ -393,6 +384,12 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_TIEPilotBaron/></flags>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
