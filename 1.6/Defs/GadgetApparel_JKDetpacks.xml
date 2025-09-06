@@ -102,6 +102,7 @@
             <tags>
                 <li>SWDetpackCase</li>
 				<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
             </tags>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			
