@@ -304,7 +304,7 @@
 		  <li>SWGCWSpecificApparelItem_TantelArmor</li>
 		  <li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
 		<apparelRequired>
 		   <li>guy762_HuttTantelArmor</li>
 		   <li>guy762_Clothing_scum</li>
