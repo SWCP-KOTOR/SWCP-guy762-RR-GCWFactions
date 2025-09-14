@@ -128,6 +128,29 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
 			</li>
+			
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
       </modExtensions>
 	</PawnKindDef>
 	  

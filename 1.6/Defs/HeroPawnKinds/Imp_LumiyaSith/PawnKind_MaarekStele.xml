@@ -40,28 +40,28 @@
 		<weaponTags>
 		  <li>SWRanged_Power5pistol</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>19~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>19~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
@@ -133,25 +133,45 @@
 				<!-- </preferredHiltParts> -->
 			</li>
 			
-			
 			<li Class="BigAndSmall.Flagger">
 				<flags> <guy762AltTag_TIEPilotBaron/></flags>
 			</li>
+			
+			
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
-				
-				<li>
-				  <graphic>
-					<colorA>70,65,80</colorA> <!-- dark side purple -->
-					<colorB>140,0,0</colorB>	<!-- dark red -->
-				  </graphic>
-				  <apparelLayer>
-					<li>OnSkin</li>
-				  </apparelLayer>
-				</li>
-				
-			  </itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			  
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>70,65,80</colorA> <!-- dark side purple -->
+						<colorB>140,0,0</colorB>	<!-- dark red -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
+			
 		</modExtensions>
 	  </PawnKindDef>
 	  
