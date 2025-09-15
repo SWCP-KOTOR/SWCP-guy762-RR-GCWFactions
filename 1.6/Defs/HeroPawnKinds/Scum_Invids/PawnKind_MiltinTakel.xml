@@ -57,24 +57,24 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>15~17</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>15~17</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<DrugDesire>2</DrugDesire>
 			<PsychicSensitivity>1</PsychicSensitivity>
@@ -122,6 +122,28 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>15~17</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

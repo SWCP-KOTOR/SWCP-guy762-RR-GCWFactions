@@ -40,32 +40,32 @@
 		<weaponTags>
 			<li>SWRanged_DC17sPistol</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>19~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>19~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<!-- <inventoryOptions> -->
 			<!-- <skipChance>0</skipChance> -->
 			<!-- <subOptionsChooseOne> -->
@@ -124,6 +124,36 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>19~20</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

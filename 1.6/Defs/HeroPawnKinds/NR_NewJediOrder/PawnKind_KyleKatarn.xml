@@ -70,28 +70,28 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
@@ -147,6 +147,33 @@
 		<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
 		  <forcedBeard>Circle</forcedBeard>
 		</li>
+		
+		<li Class="BigAndSmall.PawnKindExtension">
+			<skillRange>
+				<li>
+					<skill>Shooting</skill>
+					<range>14~16</range>
+				</li>
+				<li>
+					<skill>Melee</skill>
+					<range>14~16</range>
+				</li>
+				<li>
+					<skill>Construction</skill>
+					<range>4~6</range>
+				</li>
+				<li>
+					<skill>Crafting</skill>
+					<range>4~6</range>
+				</li>
+				<li>
+					<skill>Intellectual</skill>
+					<range>10~12</range>
+				</li>
+			</skillRange>
+			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+		</li>
+		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
             <bladeColors>
                <li>(0, 64, 255, 255)</li> <!-- KotOR blue -->

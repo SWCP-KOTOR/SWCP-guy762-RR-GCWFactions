@@ -124,19 +124,43 @@
 			
 			
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
-				<li>
-				  <graphic>
-					<colorA>(90,120,85)</colorA>
-					<colorB>(230,185,45)</colorB>
-					<colorC>(45,100,185)</colorC>
-				  </graphic>
-				  <thingCategories><li>ApparelUtility</li></thingCategories>
-				  <apparelLayer>
-					<li>Belt</li>
-				  </apparelLayer>
-				</li>
-			  </itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>(90,120,85)</colorA>
+						<colorB>(230,185,45)</colorB>
+						<colorC>(45,100,185)</colorC>
+					  </graphic>
+					  <thingCategories><li>ApparelUtility</li></thingCategories>
+					  <apparelLayer>
+						<li>Belt</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
 			
 			<!-- <li MayRequire="telefonmast.itempainter" Class="RWPaintingTool.AvailablePalettes_ModExtension"> -->

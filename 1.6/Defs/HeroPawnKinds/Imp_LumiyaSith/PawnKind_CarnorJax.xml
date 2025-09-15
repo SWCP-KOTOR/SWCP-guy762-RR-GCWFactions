@@ -41,7 +41,7 @@
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_ImpRoyalGuardHelmet</apparelDef>
 				<quality>Legendary</quality>
-				<color>(40,40,40)</color>
+				<!-- <color>(40,40,40)</color> -->
 			</li>
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
@@ -49,24 +49,24 @@
 		  <li>SWMelee_VibroDoubleBlade</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
 			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
@@ -150,6 +150,18 @@
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>40,40,40</colorA> <!-- darker black -->
+						<colorB>200,45,65</colorB>	<!-- royal guard red -->
+					  </graphic>
+					  <apparelLayer>
+						<li>Overhead</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
       </modExtensions>
 	</PawnKindDef>

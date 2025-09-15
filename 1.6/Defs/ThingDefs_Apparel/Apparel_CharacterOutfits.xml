@@ -183,8 +183,8 @@
 		<graphicData>
 			<texPath>SWApparel/RoyalGuard/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(200,45,65)</colorTwo> <!-- royal guard red -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(200,45,65)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<!-- <MarketValue>7500</MarketValue> -->
@@ -200,6 +200,29 @@
 				<li>RemnantEmpire_CarnorJax</li>
 				<li>SWGCWSpecificApparelItem_CarnorJaxRoyalGuardArmor</li>
 			</tags>
+			
+			<renderNodeProperties Inherit="False">
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RoyalGuard/Apparel</li></texturePaths>
+					  <colorA>
+						<color>40,40,40</color>	<!-- darker black -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>200,45,65</color> <!-- royal guard red -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 
 		<tradeTags>
@@ -225,6 +248,7 @@
 				</li>
 			</options>
 		</colorGenerator>
+		
 	</ThingDef>
 	  
 	  
@@ -398,7 +422,7 @@
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
 					<parentTagDef>ApparelBody</parentTagDef>
 					<shader>BS_CutoutThreeColor</shader>
-					<baseLayer>22</baseLayer>
+					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Mandalorian/jodokast/Apparel</li></texturePaths>
@@ -421,7 +445,7 @@
 						</alts>
 					  </colorC>
 					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
 		</apparel>
@@ -535,7 +559,7 @@
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
 					<parentTagDef>ApparelHead</parentTagDef>
 					<shader>BS_CutoutThreeColor</shader>
-					<baseLayer>68</baseLayer>
+					<baseLayer>68</baseLayer>	<!-- OVERHEAD -->
 					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Mandalorian/jodokast/helmet/helmet</li></texturePaths>
@@ -558,7 +582,7 @@
 						</alts>
 					  </colorC>
 					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
+					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
 		</apparel>
@@ -615,8 +639,8 @@
 		<graphicData>
 		  <texPath>SWApparel/CharacterOutfits/KyleKatarn/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(140,110,80)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(140,110,80)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -666,6 +690,29 @@
 		  </defaultOutfitTags>
 		  
 		  <gender>Male</gender>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/CharacterOutfits/KyleKatarn/Apparel</li></texturePaths>
+					  <colorA>
+						<color>255,245,235</color> <!-- off-white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>140,110,80</color>	<!-- brown --> 
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -689,6 +736,15 @@
 				</li>
 			</options>
 		</colorGenerator>
+		
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	  </ThingDef>
 	  
 	
@@ -799,8 +855,8 @@
 		<graphicData>
 		  <texPath>SWApparel/CharacterOutfits/HeraSyndulla/Hat_Hera</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(160,115,35)</colorTwo> <!-- dark gold --> 
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(160,115,35)</colorTwo> -->
 		</graphicData>
 		<statBases>
 		  <MarketValue>250</MarketValue>
@@ -855,28 +911,32 @@
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		  <wearPerDay>0</wearPerDay>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/CharacterOutfits/HeraSyndulla/Hat_Hera</li></texturePaths>
+					  <colorA>
+						<color>200,200,200</color> <!-- light grey -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>160,115,35</color> <!-- dark gold -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
 		</tradeTags>
-		
-		<!-- <comps> -->
-		  <!-- <li Class="AthenaFramework.CompProperties_GeneLockedEquippable"> -->
-			<!-- <requiredGenes> -->
-				<!-- <li>guy762_Headbone_twilek</li> -->
-			<!-- </requiredGenes> -->
-			<!-- <cantReason>Incompatible head structure!</cantReason> -->
-			<!-- <dropWithoutRequirements>true</dropWithoutRequirements> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
-		<modExtensions>
-		  <li Class="EBSGFramework.EquipRestrictExtension">
-			<requireOneOfGenesToEquip>
-				<li>guy762_Headbone_twilek</li>
-			</requireOneOfGenesToEquip>
-		  </li>
-		</modExtensions>
-		
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
 				<li>
@@ -885,6 +945,19 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="EBSGFramework.EquipRestrictExtension">
+			<requireOneOfGenesToEquip>
+				<li>guy762_Headbone_twilek</li>
+			</requireOneOfGenesToEquip>
+		  </li>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	  
@@ -896,8 +969,8 @@
 		<graphicData>
 		  <texPath>SWApparel/CharacterOutfits/HeraSyndulla/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(90,75,60)</colorTwo> <!-- patchleather --> 
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(90,75,60)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>5</Mass>
@@ -941,6 +1014,29 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			
 			<gender>Female</gender>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/CharacterOutfits/HeraSyndulla/Apparel</li></texturePaths>
+					  <colorA>
+						<color>190,110,0</color> <!-- rebel pilot orange -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>90,75,60</color>	<!-- patchleather --> 
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -958,6 +1054,14 @@
                 <rarity>Unique</rarity>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	  </ThingDef>
 	  
 	  

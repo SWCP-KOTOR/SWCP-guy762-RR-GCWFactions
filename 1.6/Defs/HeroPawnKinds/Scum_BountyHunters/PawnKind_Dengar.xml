@@ -93,32 +93,28 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Cooking</skill>
-				<range>4~6</range>
-			</li>
+		<!-- <skills> -->
 			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
 				<!-- <range>4~6</range> -->
 			<!-- </li> -->
-			<li>
-				<skill>Intellectual</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+			<!-- <li> -->
+				<!-- <skill>Cooking</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<Abrasive>0</Abrasive>
 			<Psychopath>0</Psychopath>
@@ -165,6 +161,32 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Cooking</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

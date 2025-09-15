@@ -74,6 +74,7 @@
 
 		<disallowedTraits>
 			<li>Wimp</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li> -->
 		</disallowedTraits>
 	</PawnKindDef>
 	
@@ -85,6 +86,7 @@
 		<disallowedTraits Inherit="False">
 			<li>BodyPurist</li>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 		<disallowedTraitsWithDegree Inherit="False">
 			<PsychicSensitivity>-1</PsychicSensitivity>

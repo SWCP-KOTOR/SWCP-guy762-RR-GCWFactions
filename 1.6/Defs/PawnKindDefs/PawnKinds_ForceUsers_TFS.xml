@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWPentastar_InQuestor_TFS" ParentName="SWPentastar_BASEInQuestor">
+		  <defName>SWPentastar_InQuestor_TFS</defName>
+		  <modExtensions>
+			 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+				   <min>10</min>
+				   <max>12</max>
+				</forceLevelRange>
+				<darkSideRange>25 ~ 55</darkSideRange>
+				<grantRandomAbilities>true</grantRandomAbilities>
+				<minRandomAbilities>6</minRandomAbilities>
+				<maxRandomAbilities>8</maxRandomAbilities>
+				<abilityCategories>
+				   <li>Force_Neutral</li>
+				   <li>Force_Darkside</li>
+				   <li>Force_Telekinesis</li>
+				   <li>Force_LightsaberCombat</li>
+				</abilityCategories>
+			 </li>
+		  </modExtensions>
+	   </PawnKindDef>	
+		
+		
+
+</Defs>

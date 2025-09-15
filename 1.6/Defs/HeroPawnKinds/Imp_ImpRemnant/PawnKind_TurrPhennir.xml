@@ -47,24 +47,24 @@
 		<weaponTags>
 		  <li>SWRanged_E11tac</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<Bloodlust>0</Bloodlust>
 			<ShootingAccuracy>-1</ShootingAccuracy>
@@ -119,19 +119,37 @@
 				<flags> <guy762AltTag_TIEPilotBaron/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<li>
-				  <graphic>
-					<colorA>95,125,155</colorA> <!-- 181st blue -->
-					<colorB>140,0,0</colorB>	<!-- dark red -->
-				  </graphic>
-				  <apparelLayer>
-					<li>OnSkin</li>
-				  </apparelLayer>
-				</li>
-				
-			  </itemGraphics>
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>95,125,155</colorA> <!-- 181st blue -->
+						<colorB>140,0,0</colorB>	<!-- dark red -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

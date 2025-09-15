@@ -17,6 +17,7 @@
     <defName>guy762_BnSSettings</defName>
     <enabledFeatures>
        <li>RecolorButton</li>
+       <li>AutoCombat</li>
     </enabledFeatures>
   </BigAndSmall.GlobalSettings>
   

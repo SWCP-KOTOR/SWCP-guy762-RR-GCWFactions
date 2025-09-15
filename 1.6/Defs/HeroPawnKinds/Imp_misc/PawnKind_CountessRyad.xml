@@ -122,31 +122,44 @@
 				<flags> <guy762AltTag_TIEPilotAce_ryad/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
-
-				<!-- <li> -->
-				  <!-- <graphic> -->
-					<!-- <colorA>40,40,40</colorA> -->
-					<!-- mid yellow -->
-					<!-- <colorB>220,190,0</colorB> -->
-					<!-- <colorC>250,250,250</colorC> -->
-				  <!-- </graphic> -->
-				  <!-- <apparelLayer> -->
-					<!-- <li>Overhead</li> -->
-				  <!-- </apparelLayer> -->
-				<!-- </li> -->
-				
-				<li>
-				  <graphic>
-					<colorA>75,75,75</colorA>
-					<colorB>220,190,0</colorB>	<!-- mid yellow -->
-				  </graphic>
-				  <apparelLayer>
-					<li>OnSkin</li>
-				  </apparelLayer>
-				</li>
-				
-			  </itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			  
+				<itemGraphics>
+					<!-- <li> -->
+					  <!-- <graphic> -->
+						<!-- <colorA>40,40,40</colorA> -->
+						<!-- mid yellow -->
+						<!-- <colorB>220,190,0</colorB> -->
+						<!-- <colorC>250,250,250</colorC> -->
+					  <!-- </graphic> -->
+					  <!-- <apparelLayer> -->
+						<!-- <li>Overhead</li> -->
+					  <!-- </apparelLayer> -->
+					<!-- </li> -->
+					<li>
+					  <graphic>
+						<colorA>75,75,75</colorA>
+						<colorB>220,190,0</colorB>	<!-- mid yellow -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

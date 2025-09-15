@@ -114,19 +114,33 @@
 				<flags><guy762AltTag_TIEPilotVeteran/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>16~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<li>
-				  <graphic>
-					<colorA>75,75,90</colorA> <!-- obsidian purple -->
-					<colorB>40,40,40</colorB>	<!-- dark black -->
-				  </graphic>
-				  <apparelLayer>
-					<li>OnSkin</li>
-				  </apparelLayer>
-				</li>
-				
-			  </itemGraphics>
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>75,75,90</colorA> <!-- obsidian purple -->
+						<colorB>40,40,40</colorB>	<!-- dark black -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>
