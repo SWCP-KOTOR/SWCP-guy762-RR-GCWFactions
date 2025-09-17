@@ -20,13 +20,14 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
-		  <li>SWMedicBelt</li>
-		  <li>NewRepublic_herasyndulla</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWMedicBelt</li>
+			<li>SWGCWSpecificApparelItem_HeraSyndullaTwilekHat</li>
+			<li>SWGCWSpecificApparelItem_HeraSyndullaBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_HeraSyndullaHat</li>
-		   <li>guy762_HeraSyndullaJumpsuit</li>
+			<li>guy762_HeraSyndullaHat</li>
+			<li>guy762_HeraSyndullaJumpsuit</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

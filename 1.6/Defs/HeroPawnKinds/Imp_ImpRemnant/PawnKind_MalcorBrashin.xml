@@ -24,6 +24,7 @@
 		  <li>KotOREquipment_officer</li>
 		  <li>RemnantEmpire_grandgeneral</li>
 		  <li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
+		  <li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_ArmyOfficerArmor_topbrass</li>

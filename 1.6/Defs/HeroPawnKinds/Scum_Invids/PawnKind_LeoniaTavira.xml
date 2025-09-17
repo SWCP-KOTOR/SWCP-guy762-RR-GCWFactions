@@ -21,11 +21,13 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_Headband_bandana</li>
-		   <li>guy762_ImpUniform_highbrass</li>
+			<li>guy762_Headband_bandana</li>
+			<li>guy762_ImpUniform_highbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

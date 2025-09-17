@@ -22,7 +22,9 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>29999</apparelMoney>
 		<apparelTags>
-		  <li>KotORHeroAccessories_visas</li>
+			<li>KotORHeroAccessories_visas</li>
+			<li>SWGCWSpecificApparelItem_LumiyaHeaddress</li>
+			<li>SWGCWSpecificApparelItem_LumiyaArmor</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_LumiyaHeaddress</li>
@@ -188,7 +190,7 @@
                <!-- White Core -->
                <li>(1.0, 1.0, 1.0, 1.0)</li>
             </coreColors>
-            <defaultBladeLength1>1.1</defaultBladeLength1>
+            <defaultBladeLength1>0.95</defaultBladeLength1>
             <hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
             <hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
             <preferredHilts>

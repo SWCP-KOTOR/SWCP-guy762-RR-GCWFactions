@@ -262,16 +262,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
-		  </li>
-		</comps-->
 	</ThingDef>
 	
 	
@@ -285,8 +275,8 @@
 		<graphicData>
 		  <texPath>SWApparel/ImpNavyCommando/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(250,250,250)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -304,24 +294,47 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>GreaterMaldrood_navycommando</li>
-			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImpNavyCommando/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Shoulders</li>
-			<li>Neck</li>
-			<li>Arms</li>
-			<!-- <li>Hands</li> -->
-			<!-- <li>Legs</li> -->
-			<li>Feet</li>
-		  </bodyPartGroups>
-		  <useDeflectMetalEffect>false</useDeflectMetalEffect>
+			<tags Inherit="False">
+				<li>GreaterMaldrood_navycommando</li>
+				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImpNavyCommando/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<!-- <li>Hands</li> -->
+				<!-- <li>Legs</li> -->
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/ImpNavyCommando/Apparel</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
@@ -368,8 +381,15 @@
 				<ammoCountToRefill>2</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
-			<li Class="CompProperties_Styleable"></li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	  </ThingDef>
 	
 	

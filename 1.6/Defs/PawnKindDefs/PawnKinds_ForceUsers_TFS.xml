@@ -3,9 +3,13 @@
 
 	
 	<PawnKindDef Name="SWPentastar_InQuestor_TFS" ParentName="SWPentastar_BASEInQuestor">
-		  <defName>SWPentastar_InQuestor_TFS</defName>
-		  <modExtensions>
-			 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+		<defName>SWPentastar_InQuestor_TFS</defName>
+		  
+		<forcedTraits>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
+		</forcedTraits>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
 				   <min>10</min>
 				   <max>12</max>
@@ -21,8 +25,8 @@
 				   <li>Force_LightsaberCombat</li>
 				</abilityCategories>
 			 </li>
-		  </modExtensions>
-	   </PawnKindDef>	
+		</modExtensions>
+	</PawnKindDef>	
 		
 		
 

@@ -128,8 +128,8 @@
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(95,135,190)</colorTwo> <!-- medium blue -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(95,135,190)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -168,6 +168,28 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Stormtrooper/helmet</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>95,135,190</color> <!-- medium blue -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>
@@ -180,6 +202,14 @@
 				</li>
 			</options>
 		</colorGenerator> <!-- 200,45,65 royal guard red -->
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -469,8 +499,8 @@
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/shadowstormie/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(95,135,190)</colorTwo> <!-- medium blue -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(95,135,190)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -511,6 +541,28 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Stormtrooper/shadowstormie/helmet</li></texturePaths>
+					  <colorA>
+						<color>40,40,40</color> <!-- darker black -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>95,135,190</color> <!-- medium blue -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>
@@ -547,6 +599,14 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -642,8 +702,8 @@
 		<graphicData>
 			<texPath>SWApparel/ScoutTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(250,250,250)</colorTwo>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -687,6 +747,29 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/ScoutTrooper/Apparel</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
@@ -734,6 +817,14 @@
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -755,8 +846,8 @@
 		<graphicData>
 			<texPath>Apparel_Zaahir/ScoutTrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(250,0,0)</colorTwo> <!-- pure red -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(250,0,0)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -795,6 +886,28 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>Apparel_Zaahir/ScoutTrooper/helmet</li></texturePaths>
+					  <colorA>
+						<color>40,45,50</color> <!-- storm commando black -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>250,0,0</color> <!-- pure red -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>
@@ -813,16 +926,14 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
-		<!--comps>
-		  <li Class="ModularWeapons.CompProperties_ModularParts">
-			<compClass>ModularWeapons.CompModularParts</compClass>
-			<partKinds>
-			  <li>guy762_slot_overlay</li>
-			  <li>guy762_slot_underlay_hat</li>
-			</partKinds>
-			<randomizeParts>true</randomizeParts>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
 		  </li>
-		</comps-->
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -861,8 +972,8 @@
 		<graphicData>
 			<texPath>SWApparel/ScoutTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(200,45,65)</colorTwo> <!-- royal guard red -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(200,45,65)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -908,6 +1019,29 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/ScoutTrooper/Apparel</li></texturePaths>
+					  <colorA>
+						<color>40,45,50</color> <!-- storm commando black -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>200,45,65</color> <!-- royal guard red -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
@@ -958,6 +1092,14 @@
                 <rarity>Rare</rarity>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -987,8 +1129,8 @@
 		<graphicData>
 			<texPath>SWApparel/Snowtrooper/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(225,225,225)</colorTwo> <!-- lesser white -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(225,225,225)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -1028,6 +1170,28 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Snowtrooper/helmet</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>225,225,225</color> <!-- lesser white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>
@@ -1043,7 +1207,15 @@
 					<only>(120,55,75)</only>  <!-- galactic marine burgundy -->
 				</li>
 			</options>
-		</colorGenerator> <!-- 200,45,65 royal guard red -->
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -1060,8 +1232,8 @@
 		<graphicData>
 			<texPath>SWApparel/Snowtrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(225,225,225)</colorTwo> <!-- lesser white -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(225,225,225)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>10</Mass>
@@ -1101,6 +1273,29 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Snowtrooper/Apparel</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>225,225,225</color> <!-- lesser white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_WarlordArmor</li>
@@ -1152,6 +1347,14 @@
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	

@@ -21,11 +21,13 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWCPSpecificApparelItem_TravelerBag</li>
+			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_Accessory_travelerbag</li>
-		   <li>guy762_ImpUniform_topbrass</li>
+			<li>guy762_Accessory_travelerbag</li>
+			<li>guy762_ImpUniform_topbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

@@ -22,11 +22,13 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotORHeroAccessories_visas</li>
+			<li>KotORHeroAccessories_visas</li>
+			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_InquisitorArmor</li>
-		   <li>guy762_InquisitorTunic_default</li>
+			<li>guy762_InquisitorArmor</li>
+			<li>guy762_InquisitorTunic_default</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
@@ -180,7 +182,7 @@
                <!-- White Core -->
                <li>(1.0, 1.0, 1.0, 1.0)</li>
             </coreColors>
-            <defaultBladeLength1>1.1</defaultBladeLength1>
+            <defaultBladeLength1>0.95</defaultBladeLength1>
             <hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
             <hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
             <preferredHilts>

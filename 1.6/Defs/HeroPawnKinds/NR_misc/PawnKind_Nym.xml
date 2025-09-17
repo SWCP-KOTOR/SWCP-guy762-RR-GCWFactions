@@ -21,14 +21,15 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
-		  <li>NewRepublic_nym</li>
-		  <li>SWDetpackCase</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_NymBodysuit</li>
+			<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+			<li>SWDetpackCase</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_JKDetpackCase</li>
-		   <li>guy762_Accessory_suspendersB</li>
-		   <li>guy762_NymOutfit</li>
+			<li>guy762_JKDetpackCase</li>
+			<li>guy762_Accessory_suspendersB</li>
+			<li>guy762_NymOutfit</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

@@ -21,7 +21,9 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_UniformCap_imperial</li>

@@ -23,6 +23,11 @@
 		<apparelTags>
 		  <li>KotORHeroAccessories_canderous</li>
 		  <li>SWDetpackCase</li>
+		  <li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+		  <li>SWCPSpecificApparelItem_DoubleBandolier</li>
+		  <li>SWGCWSpecificApparelItem_ImperialStormCommandoHelmet</li>
+		  <li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
+		  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield_big</li>

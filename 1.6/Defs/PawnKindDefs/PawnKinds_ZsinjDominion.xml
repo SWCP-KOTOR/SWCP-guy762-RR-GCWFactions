@@ -119,6 +119,25 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- army personnel -->
 
 
@@ -142,6 +161,8 @@
 		<apparelTags>
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperArmor</li>
@@ -151,7 +172,7 @@
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<requiredTag>ZsinjEmpire_armytrooper</requiredTag>
-				<color>(80,90,75)</color>       <!-- dark jungle green -->
+				<!-- <color>(80,90,75)</color> moved to modextension bc of BnS colorTwo -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -181,16 +202,16 @@
 			<li>SWRanged_DLT18rifle</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -203,6 +224,34 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>80,90,75</colorA> <!-- dark jungle green -->
+						<!-- <colorB>225,220,75</colorB> -->
+					  </graphic>
+					  <apparelLayer>
+						<li>Overhead</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -360,11 +409,37 @@
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(80,90,75)</color>       <!-- dark jungle green -->
 			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(120,120,120)</color>       <!-- mid grey -->
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <color>(120,120,120)</color> -->
+			<!-- </li> -->
 		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>120,120,120</colorA> <!-- mid grey -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWZsinj_TankHvyDriver" ParentName="SWImpRemnant_TankHvyDriver">
@@ -379,11 +454,37 @@
 				<apparelLayer>Middle</apparelLayer>
 				<color>(80,90,75)</color>       <!-- dark jungle green -->
 			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(120,120,120)</color>       <!-- mid grey -->
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <color>(120,120,120)</color> -->
+			<!-- </li> -->
 		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~10</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>120,120,120</colorA> <!-- mid grey -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -422,22 +523,26 @@
 		<apparelTags>
 			<li>ZsinjEmpire_raptorarmor</li>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			<li>guy762PatchedTag_Cape</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RaptorHelmet</li>
 			<li>guy762_RaptorArmor</li>
 			<li>guy762_Bodysuit</li>
-			<!-- <li>Apparel_Cape</li> -->
+			<li>Apparel_Cape</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<color>(90,90,90)</color>
 			</li>
-			<!-- <li> -->
-				<!-- <apparelLayer>Shell</apparelLayer> -->
-				<!-- <stuff>KOTOR_FabricArmorweave</stuff> -->
-			<!-- </li> -->
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+			</li>
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
@@ -452,16 +557,16 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -481,6 +586,22 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -509,6 +630,11 @@
 			<li>ZsinjEmpire_raptorarmor</li>
 			<li>KotOREquipment_basic</li>
 			<li>SWDetpackCase</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_stormiepauldron</li>
@@ -548,16 +674,16 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -591,6 +717,20 @@
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>False</checkGender>
 			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	
@@ -620,6 +760,12 @@
 		<apparelTags>
 			<li>ZsinjEmpire_raptorarmor</li>
 			<li>KotOREquipment_adv</li>
+			
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_stormiepauldron</li>
@@ -658,24 +804,24 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -695,6 +841,30 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -736,11 +906,15 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RaptorHelmet_pilot</li>
 			<li>guy762_TIEpilotArmor</li>
-			<li>guy762_Bodysuit_RaptorPilot</li>
+			<li>guy762_Bodysuit_utility</li>
+			<!-- <li>guy762_Bodysuit_RaptorPilot</li> -->
 		</apparelRequired>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
@@ -755,24 +929,24 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -788,9 +962,42 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>90,90,90</colorA> <!-- dark grey -->
+						<colorB>225,220,75</colorB>	<!-- banana yellow -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
-	
 	
 	
 	

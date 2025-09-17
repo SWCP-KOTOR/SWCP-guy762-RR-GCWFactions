@@ -20,13 +20,17 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_CharacterAWingPilotHelmet</li>
+			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_AWingPilotHelmet_keo</li>
-		   <li>guy762_RebelPilot_suitbox</li>
-		   <li>guy762_FlightVest</li>
-		   <li>guy762_Bodysuit_Dyeable</li>
+			<li>guy762_AWingPilotHelmet_keo</li>
+			<li>guy762_RebelPilot_suitbox</li>
+			<li>guy762_FlightVest</li>
+			<li>guy762_Bodysuit_Dyeable</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

@@ -21,7 +21,12 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotBodysuit</li>
+			<li>guy762PatchedTag_Cape</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_JKenergyshield</li>

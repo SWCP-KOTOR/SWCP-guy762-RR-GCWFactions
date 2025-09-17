@@ -148,12 +148,12 @@
 			<li>SWRanged_E10rifle</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -169,6 +169,18 @@
 		<!-- </disallowedTraits> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWPentastar_EnforcerTrooper_48x" ParentName="SWPentastar_EnforcerTrooper">
@@ -231,12 +243,14 @@
 			<li>SWRanged_PLX4LRocketRifle</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
+		
+		
 		<!-- <inventoryOptions> -->
 			<!-- <skipChance>0.25</skipChance> -->
 			<!-- <subOptionsChooseOne> -->
@@ -266,6 +280,16 @@
 				</priority>
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>False</checkGender>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -325,16 +349,16 @@
 			<li>SWRanged_E11tac</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -373,6 +397,19 @@
 				</priority>
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
+			</li>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 		
@@ -446,16 +483,16 @@
 			<li>SWRanged_E22rifle</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -468,6 +505,22 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWPentastar_ArmyTrooper_40x" ParentName="SWPentastar_ArmyTrooper">
@@ -628,11 +681,37 @@
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(120,120,125)</color>        <!-- lighter blued grey -->
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <color>(120,120,125)</color> -->
+			<!-- </li> -->
 		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>120,120,125</colorA> <!-- lighter blued grey -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWPentastar_TankHvyDriver" ParentName="SWImpRemnant_TankHvyDriver">
@@ -647,11 +726,37 @@
 				<apparelLayer>Middle</apparelLayer>
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(120,120,125)</color>        <!-- lighter blued grey -->
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <color>(120,120,125)</color> -->
+			<!-- </li> -->
 		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~10</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>120,120,125</colorA> <!-- lighter blued grey -->
+					  </graphic>
+					  <apparelLayer>
+						<li>OnSkin</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -721,24 +826,24 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>6~10</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>6~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -758,6 +863,28 @@
 		<modExtensions>
 			<li Class="BigAndSmall.Flagger">
 				<flags> <guy762AltTag_TIEPilotPentastar/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -970,6 +1097,8 @@
 		<apparelTags>
 			<li>KotOREquipment_sith</li>
 			<li>Cape</li>
+			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_InquisitorArmor</li>
@@ -991,12 +1120,15 @@
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 		<techHediffsMoney>4000~6000</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>12~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
@@ -1012,8 +1144,8 @@
 				   <li>(1.0, 1.0, 1.0, 1.0)</li>
 				   <li>(1.0, 1.0, 1.0, 1.0)</li>
 				</coreColors>
-				<defaultBladeLength1>1.1</defaultBladeLength1>
-				<defaultBladeLength2>1.1</defaultBladeLength2>
+				<defaultBladeLength1>1</defaultBladeLength1>
+				<defaultBladeLength2>1</defaultBladeLength2>
 				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
 				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
 				<!-- <preferredHilts> -->
@@ -1024,7 +1156,17 @@
 				<!-- <preferredHiltParts> -->
 				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
 				<!-- </preferredHiltParts> -->
-			 </li>
+			</li>
+			 
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	

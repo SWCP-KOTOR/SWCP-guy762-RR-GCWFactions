@@ -14,7 +14,7 @@
 		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
-		  <colorTwo>(75,75,75)</colorTwo> <!-- dark grey  -->
+		  <!-- <colorTwo>(75,75,75)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -32,24 +32,47 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_armycommando</li>
-			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
-		  <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Shoulders</li>
-			<li>Neck</li>
-			<li>Arms</li>
-			<li>Hands</li>
-			<!-- <li>Legs</li> -->
-			<li>Feet</li>
-		  </bodyPartGroups>
-		  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<tags Inherit="False">
+				<li>RemnantEmpire_armycommando</li>
+				<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
+			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<!-- <li>Legs</li> -->
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/ImperialTankTrooper/Apparel</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>75,75,75</color>	<!-- dark grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
@@ -63,15 +86,15 @@
 			</options>
 		</colorGenerator>
 		
-		<randomStyleChance>0.5</randomStyleChance>
-		<randomStyle>
-		  <li>
-			<styleDef>guy762_ImpCombatArmorStyle_blank</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_ImpCombatArmorStyle_commando</styleDef>
-		  </li>
-		</randomStyle>
+		<!-- <randomStyleChance>0.5</randomStyleChance> -->
+		<!-- <randomStyle> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_ImpCombatArmorStyle_blank</styleDef> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_ImpCombatArmorStyle_commando</styleDef> -->
+		  <!-- </li> -->
+		<!-- </randomStyle> -->
 		<verbs>
             <li>
                 <label>throw stun grenade</label>
@@ -107,29 +130,37 @@
             </li>
 			<li Class="CompProperties_Styleable"></li>
         </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
+	
+	<!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_ImpCombatArmorStyle_blank</defName> -->
+		<!-- <overrideLabel>combat armor</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+	<!-- </ThingStyleDef> -->
 	  
-	<ThingStyleDef>
-		<defName>guy762_ImpCombatArmorStyle_blank</defName>
-		<overrideLabel>combat armor</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-	  
-	<ThingStyleDef>
-		<defName>guy762_ImpCombatArmorStyle_commando</defName>
-		<overrideLabel>army commando armor</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<useWornGraphicMask>true</useWornGraphicMask>
-	</ThingStyleDef>  
+	<!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_ImpCombatArmorStyle_commando</defName> -->
+		<!-- <overrideLabel>army commando armor</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/ImperialTankTrooper/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+		<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+	<!-- </ThingStyleDef> -->
 	  
 	  
 	  
@@ -705,7 +736,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-
+		
 	</ThingDef>
 	
 
@@ -919,8 +950,8 @@
 		<graphicData>
 			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(130,125,105)</colorTwo>         <!-- khaki -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(130,125,105)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -935,15 +966,15 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<randomStyleChance>0.5</randomStyleChance>
-		<randomStyle>
-		  <li>
-			<styleDef>guy762_RemnantArmyHelmetStyle_visordown</styleDef>
-		  </li>
-		</randomStyle>
-		<comps>
-			<li Class="CompProperties_Styleable"></li>
-		</comps>
+		<!-- <randomStyleChance>0.5</randomStyleChance> -->
+		<!-- <randomStyle> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RemnantArmyHelmetStyle_visordown</styleDef> -->
+		  <!-- </li> -->
+		<!-- </randomStyle> -->
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_Styleable"></li> -->
+		<!-- </comps> -->
 		
 		<apparel>
 			<tags>
@@ -960,6 +991,31 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</li>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</li>
+					</texturePaths>
+					  <colorA>
+						<color>110,120,115</color> <!-- army slate green -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>130,125,105</color> <!-- khaki -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_ImpArmyArmor</li>
@@ -972,32 +1028,29 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
-	<ThingStyleDef>
-		<defName>guy762_RemnantArmyHelmetStyle_visordown</defName>
-		<overrideLabel>army trooper helmet, masked</overrideLabel>
-		<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	</ThingStyleDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperHelmet_rusty</defName>
 		<label>army trooper helmet, rusty</label>

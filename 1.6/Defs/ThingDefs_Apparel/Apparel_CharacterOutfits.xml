@@ -70,7 +70,6 @@
 			<li>Overhead</li>
 		  </layers>
 		  <tags>
-			<li>RemnantEmpire_Lumiya</li>
 			<li>SWGCWSpecificApparelItem_LumiyaHeaddress</li>
 		  </tags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -143,7 +142,6 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<tags Inherit="False">
-				<li>RemnantEmpire_Lumiya</li>
 				<li>SWGCWSpecificApparelItem_LumiyaArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Lumiya/Apparel</wornGraphicPath>
@@ -197,7 +195,6 @@
 		</equippedStatOffsets>
 		<apparel>
 			<tags Inherit="False">
-				<li>RemnantEmpire_CarnorJax</li>
 				<li>SWGCWSpecificApparelItem_CarnorJaxRoyalGuardArmor</li>
 			</tags>
 			
@@ -1136,7 +1133,7 @@
 			</drawData>
 			<tags>
 				<li>NewRepublic_roguesquadron</li>
-				<li>SWGCWSpecificApparelItem_CharacterXWingPilotHelmet</li>
+				<li>SWGCWSpecificApparelItem_RogueSquadronXWingPilotHelmet</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelPilot/helmet_wedge/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

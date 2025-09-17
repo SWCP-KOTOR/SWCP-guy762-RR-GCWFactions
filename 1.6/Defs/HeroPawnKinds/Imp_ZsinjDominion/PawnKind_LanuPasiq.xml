@@ -22,8 +22,10 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotORHeroAccessories_visas</li>
-		  <li>SWCPSpecificGadgetItem_CortosisArmband</li>
+			<li>KotORHeroAccessories_visas</li>
+			<li>SWCPSpecificGadgetItem_CortosisArmband</li>
+			<li>guy762PatchedTag_Cape</li>
+			<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>Apparel_Cape</li>
@@ -36,7 +38,7 @@
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_InquisitorTunic_default</apparelDef>
 				<quality>Legendary</quality>
-				<color>(165,165,165)</color> <!-- lighter grey -->
+				<!-- <color>(165,165,165)</color> -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -159,6 +161,15 @@
 				</li>
 			</skillRange>
 			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			
+			<itemGraphics>
+				<li>
+				  <graphic>
+					<colorA>165,165,165</colorA> <!-- lightish grey -->
+				  </graphic>
+				  <apparelLayer><li>OnSkin</li></apparelLayer>
+				</li>
+			</itemGraphics>
 		</li>
 		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
@@ -172,8 +183,8 @@
                <li>(1.0, 1.0, 1.0, 1.0)</li>
                <li>(1.0, 1.0, 1.0, 1.0)</li>
             </coreColors>
-            <defaultBladeLength1>1.1</defaultBladeLength1>
-            <defaultBladeLength2>1.1</defaultBladeLength2>
+            <defaultBladeLength1>1</defaultBladeLength1>
+            <defaultBladeLength2>1</defaultBladeLength2>
             <hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
             <hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
             <!-- <preferredHilts> -->

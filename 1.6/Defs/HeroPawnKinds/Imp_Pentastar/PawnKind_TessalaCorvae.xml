@@ -21,12 +21,15 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_ImpTankTrooperHelmet</li>
-		   <li>guy762_ArmyOfficerArmor_midrank</li>
-		   <li>guy762_GenericUniform_fatigues</li>
+			<li>guy762_ImpTankTrooperHelmet</li>
+			<li>guy762_ArmyOfficerArmor_midrank</li>
+			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>

@@ -63,16 +63,16 @@
 			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -89,6 +89,22 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -151,16 +167,16 @@
 			<li>SWRanged_E11tac</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -174,6 +190,22 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -239,16 +271,16 @@
 			<li>SWRanged_DLT20Asniper</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -265,6 +297,22 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -306,7 +354,7 @@
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ImpMidCombatArmor</apparelDef>
-				<styleDef>guy762_ImpCombatArmorStyle_commando</styleDef>
+				<!-- <styleDef>guy762_ImpCombatArmorStyle_commando</styleDef> -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -321,16 +369,16 @@
 			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -347,6 +395,22 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -419,8 +483,8 @@
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ImpMidCombatArmor</apparelDef>
-				<styleDef>guy762_ImpCombatArmorStyle_blank</styleDef>
-				<color>(40,40,40)</color>        <!-- black -->
+				<!-- <styleDef>guy762_ImpCombatArmorStyle_blank</styleDef> -->
+				<!-- <color>(40,40,40)</color> -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -442,16 +506,16 @@
 			<max>4800</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -468,6 +532,34 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>40,40,40</colorA> <!-- black -->
+						<colorB>40,40,40</colorB> <!-- black -->
+					  </graphic>
+					  <apparelLayer>
+						<li>Middle</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -567,16 +659,16 @@
 			<max>4800</max>
 		</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>8~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -596,6 +688,22 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -654,16 +762,16 @@
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~16</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>8~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -687,6 +795,22 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -783,24 +907,24 @@
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -831,19 +955,38 @@
 				<flags> <guy762AltTag_TIEPilotVeteran/></flags>
 			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
-			  <itemGraphics>
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 
-				<li>
-				  <graphic>
-					<colorA>200,45,65</colorA>
-					<colorB>250,250,250</colorB>
-					<colorC>250,250,250</colorC>
-				  </graphic>
-				  <apparelLayer>
-					<li>Overhead</li>
-				  </apparelLayer>
-				</li>
-			  </itemGraphics>
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>200,45,65</colorA> <!-- royal guard red -->
+						<colorB>250,250,250</colorB>
+						<colorC>250,250,250</colorC>
+					  </graphic>
+					  <apparelLayer>
+						<li>Overhead</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -893,10 +1036,10 @@
 				<apparelLayer>Shell</apparelLayer>
 				<color>(90,90,90)</color>
 			</li>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<color>(200,45,65)</color>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <color>(200,45,65)</color> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<color>(200,45,65)</color>
@@ -926,16 +1069,16 @@
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>14~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -959,6 +1102,33 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>14~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				
+				<itemGraphics>
+					<li>
+					  <graphic>
+						<colorA>200,45,65</colorA> <!-- royal guard red -->
+					  </graphic>
+					  <apparelLayer>
+						<li>Overhead</li>
+					  </apparelLayer>
+					</li>
+				</itemGraphics>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -1007,16 +1177,16 @@
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -1068,6 +1238,20 @@
 				</priority>
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

@@ -23,7 +23,10 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>29999</apparelMoney>
 		<apparelTags>
-		  <li>KotORHeroAccessories_sion</li>
+			<li>KotORHeroAccessories_sion</li>
+			<li>SWGCWSpecificApparelItem_ImperialRoyalGuardHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialRoyalGuardCloak</li>
+			<li>SWGCWSpecificApparelItem_CarnorJaxRoyalGuardArmor</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_ImpRoyalGuardHelmet</li>
