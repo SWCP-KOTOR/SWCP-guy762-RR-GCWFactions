@@ -622,6 +622,88 @@
 	
 	
 	
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_ZuckussArmor</defName>
+		<label>Zuckuss' Armor Rig</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/CharacterOutfits/Zuckuss/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<!-- <WorkToMake>5500</WorkToMake> -->
+		</statBases>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		
+		<!-- <costList> -->
+			<!-- <KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave> -->
+		<!-- </costList> -->
+		<!-- <recipeMaker> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>4</Crafting> -->
+			<!-- </skillRequirements> -->
+			<!-- <recipeUsers Inherit="False"> -->
+				<!-- <li>HandTailoringBench</li> -->
+				<!-- <li>ElectricTailoringBench</li> -->
+				<!-- <li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li> -->
+			<!-- </recipeUsers> -->
+		<!-- </recipeMaker> -->
+		
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<!--li>Neck</li>
+				<li>Shoulders</li-->
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>SWCPSpecificApparelItem_ZuckussArmor</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
+			<wornGraphicPath>SWApparel/CharacterOutfits/Zuckuss/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORCharacterItem</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(175,120,55)</only>  <!--faint orange-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

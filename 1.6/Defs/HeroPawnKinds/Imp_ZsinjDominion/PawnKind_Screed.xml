@@ -105,7 +105,7 @@
 			<!-- </li> -->
 		<!-- </skills> -->
 		<forcedTraits>
-			<Transhumanist>0</Transhumanist>
+			<!-- <Transhumanist>0</Transhumanist> -->
 			<Tough>0</Tough>
 			<Recluse>0</Recluse>
 			<Nerves>-1</Nerves>
@@ -205,7 +205,7 @@
 			<Intellectual>10</Intellectual>
 		</skillGains>
 		<forcedTraits>
-			<Transhumanist>0</Transhumanist>
+			<!-- <Transhumanist>0</Transhumanist> -->
 			<Tough>0</Tough>
 		</forcedTraits>
 		<requiredWorkTags>

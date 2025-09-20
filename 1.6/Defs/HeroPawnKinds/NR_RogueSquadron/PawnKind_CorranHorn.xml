@@ -181,7 +181,7 @@
 				   <!-- White Core -->
 				   <li>(1.0, 1.0, 1.0, 1.0)</li>
 				</coreColors>
-				<defaultBladeLength1>0.95</defaultBladeLength1>
+				<defaultBladeLength1>1</defaultBladeLength1>
 				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
 				<hiltColorTwo>(55, 80, 75, 255)</hiltColorTwo>
 				<preferredHilts>

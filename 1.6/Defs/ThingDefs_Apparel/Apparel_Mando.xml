@@ -586,9 +586,9 @@
 						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
 					</conditionalGraphics>
-					<drawData> 
-						<dataSouth> <layer>20</layer> </dataSouth> 
-						<dataNorth> <layer>99</layer> </dataNorth> 
+					<drawData>
+						<dataSouth> <layer>-1</layer> </dataSouth>
+						<dataNorth> <layer>99</layer> </dataNorth>
 					</drawData>
 				</li>
 			</renderNodeProperties>

@@ -40,8 +40,8 @@
 				<warmupTime>0.5</warmupTime>
 				<defaultCooldownTime>1</defaultCooldownTime>
 				<range>20</range>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>kotorsound_DC15cCarbine</soundCast>
 				<!-- <soundCast>kotorsound_DC17sPistol</soundCast> -->
 				<soundCastTail>GunTail_Medium</soundCastTail>
