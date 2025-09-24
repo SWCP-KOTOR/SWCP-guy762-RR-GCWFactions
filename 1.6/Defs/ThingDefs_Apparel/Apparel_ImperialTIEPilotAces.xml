@@ -209,7 +209,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/TIEPilot/bodysuit_ace/Apparel</li></texturePaths>
 					  <colorA>
-						<color>75,75,75</color> <!-- dark grey -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts>
 							<!-- <li><triggers><li>IsRecolored</li></triggers><apparelColorA>true</apparelColorA></li> -->
 							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
@@ -238,7 +238,7 @@
 			<options>
 				<li>
 					<weight>15</weight>
-					<only>(75,75,75)</only>
+					<only>(75,75,75)</only> <!-- dark grey -->
 				</li>
 			</options>
 		</colorGenerator>

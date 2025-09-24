@@ -35,6 +35,11 @@
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
+				<color>(40,40,40)</color> <!-- darker black -->
+			</li>
+			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_FlightVest</apparelDef>
 				<color>(200,200,200)</color> <!-- light grey -->
@@ -139,17 +144,15 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			  
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>40,40,40</colorA> <!-- darker black -->
 						<colorB>140,0,0</colorB> <!-- dark red -->
 					  </graphic>
 					  <apparelLayer><li>Overhead</li></apparelLayer>
 					</li>
 					<li>
 					  <graphic>
-						<colorA>95,125,155</colorA> <!-- 181st blue -->
 						<colorB>140,0,0</colorB>	<!-- dark red -->
 					  </graphic>
 					  <apparelLayer><li>OnSkin</li></apparelLayer>

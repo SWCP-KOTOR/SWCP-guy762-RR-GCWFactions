@@ -18,6 +18,8 @@
     <enabledFeatures>
        <li>RecolorButton</li>
        <li>AutoCombat</li>
+	   <li>RaceButton</li>
+	   <li>SapientMechanoids</li>
     </enabledFeatures>
   </BigAndSmall.GlobalSettings>
   

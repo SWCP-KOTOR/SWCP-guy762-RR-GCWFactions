@@ -209,7 +209,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/RoyalGuard/Apparel</li></texturePaths>
 					  <colorA>
-						<color>40,40,40</color>	<!-- darker black -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -424,7 +424,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Mandalorian/jodokast/Apparel</li></texturePaths>
 					  <colorA>
-						<color>90,120,85</color>	<!-- protector green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts>
 							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
 						</alts>
@@ -561,7 +561,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Mandalorian/jodokast/helmet/helmet</li></texturePaths>
 					  <colorA>
-						<color>90,120,85</color>	<!-- protector green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts>
 							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
 						</alts>
@@ -667,8 +667,7 @@
 			</layers>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<!--li>Neck</li>
-				<li>Shoulders</li-->
+				<li>Legs</li>
 			</bodyPartGroups>
 			<tags Inherit="False">
 				<li>SWCPSpecificApparelItem_ZuckussArmor</li>
@@ -781,7 +780,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/CharacterOutfits/KyleKatarn/Apparel</li></texturePaths>
 					  <colorA>
-						<color>255,245,235</color> <!-- off-white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1001,7 +1000,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/CharacterOutfits/HeraSyndulla/Hat_Hera</li></texturePaths>
 					  <colorA>
-						<color>200,200,200</color> <!-- light grey -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1105,7 +1104,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/CharacterOutfits/HeraSyndulla/Apparel</li></texturePaths>
 					  <colorA>
-						<color>190,110,0</color> <!-- rebel pilot orange -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>

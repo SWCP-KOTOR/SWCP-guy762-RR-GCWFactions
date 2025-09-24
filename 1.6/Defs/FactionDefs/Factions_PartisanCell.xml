@@ -134,12 +134,13 @@
 			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
 			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_feeorin>
 			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_iridonian>
+			<Lee_xenotype_kage MayRequire="guy762.StarWarsXenotypes">0.02</Lee_xenotype_kage>
 			<guy762_xenotype_kaleesh MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kaleesh>
 			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
 			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_lasat>
 			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mimbanese>
 			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
-			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_pantoran>
 			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
 			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
 			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>

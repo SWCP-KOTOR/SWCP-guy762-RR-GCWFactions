@@ -484,7 +484,7 @@
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ImpMidCombatArmor</apparelDef>
 				<!-- <styleDef>guy762_ImpCombatArmorStyle_blank</styleDef> -->
-				<!-- <color>(40,40,40)</color> -->
+				<color>(40,40,40)</color>
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -547,10 +547,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>40,40,40</colorA> <!-- black -->
 						<colorB>40,40,40</colorB> <!-- black -->
 					  </graphic>
 					  <apparelLayer>
@@ -876,12 +875,12 @@
 			<li>guy762_ImpUniform_bigbelt</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<!-- <li> -->
-				<!-- <apparelLayer>Overhead</apparelLayer> -->
-				<!-- <apparelDef>guy762_TIEpilotAceHelmet</apparelDef> -->
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_TIEpilotAceHelmet</apparelDef>
 				<!-- <styleDef>guy762_TIEAceHelmetStyle_veteran</styleDef> -->
-				<!-- <color>(200,45,65)</color> -->
-			<!-- </li> -->
+				<color>(200,45,65)</color> <!-- royal guard red -->
+			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<color>(200,45,65)</color>
@@ -975,10 +974,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>200,45,65</colorA> <!-- royal guard red -->
 						<colorB>250,250,250</colorB>
 						<colorC>250,250,250</colorC>
 					  </graphic>
@@ -1036,10 +1034,10 @@
 				<apparelLayer>Shell</apparelLayer>
 				<color>(90,90,90)</color>
 			</li>
-			<!-- <li> -->
-				<!-- <apparelLayer>Overhead</apparelLayer> -->
-				<!-- <color>(200,45,65)</color> -->
-			<!-- </li> -->
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(200,45,65)</color> <!-- royal guard red -->
+			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<color>(200,45,65)</color>
@@ -1116,17 +1114,6 @@
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-				
-				<itemGraphics>
-					<li>
-					  <graphic>
-						<colorA>200,45,65</colorA> <!-- royal guard red -->
-					  </graphic>
-					  <apparelLayer>
-						<li>Overhead</li>
-					  </apparelLayer>
-					</li>
-				</itemGraphics>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

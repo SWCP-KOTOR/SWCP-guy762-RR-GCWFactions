@@ -133,10 +133,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>75,75,90</colorA> <!-- obsidian purple -->
 						<colorB>40,40,40</colorB>	<!-- dark black -->
 					  </graphic>
 					  <apparelLayer>

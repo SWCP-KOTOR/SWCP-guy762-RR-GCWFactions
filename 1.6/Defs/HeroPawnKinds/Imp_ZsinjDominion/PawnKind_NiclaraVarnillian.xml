@@ -53,6 +53,12 @@
 				<apparelDef>guy762_ImpLightCombatArmor</apparelDef>
 				<color>(40,40,40)</color>       <!-- darker black -->
 			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_Bodysuit_utility</apparelDef>
+				<color>(90,90,90)</color> <!-- dark grey -->
+				<quality>Legendary</quality>
+			</li>
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
@@ -154,10 +160,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>90,90,90</colorA> <!-- dark grey -->
 						<colorB>225,220,75</colorB>	<!-- banana yellow -->
 					  </graphic>
 					  <apparelLayer>

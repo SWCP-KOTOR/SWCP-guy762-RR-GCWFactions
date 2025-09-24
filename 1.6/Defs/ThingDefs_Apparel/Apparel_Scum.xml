@@ -64,7 +64,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/TantelArmor/helmet</li></texturePaths>
 					  <colorA>
-						<color>105,105,100</color> <!-- greenish steel -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -170,7 +170,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/TantelArmor/Apparel</li></texturePaths>
 					  <colorA>
-						<color>105,105,100</color> <!-- greenish steel -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -280,7 +280,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/JAWeequay/Apparel</li></texturePaths>
 					  <colorA>
-						<color>90,75,60</color> <!-- patchleather -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -403,7 +403,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/JAMerc/helmet</li></texturePaths>
 					  <colorA>
-						<color>160,130,115</color> <!-- brown -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -577,7 +577,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/BlackSun/Apparel</li></texturePaths>
 					  <colorA>
-						<color>75,65,90</color> <!-- black sun dark purple -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -666,7 +666,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/BlackSun/helmet</li></texturePaths>
 					  <colorA>
-						<color>75,70,75</color> <!-- purple-tinted mid black -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -831,7 +831,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/ZannMerc/Apparel</li></texturePaths>
 					  <colorA>
-						<color>200,180,85</color> <!-- zann consortium yellow -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>

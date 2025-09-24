@@ -38,7 +38,7 @@
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_InquisitorTunic_default</apparelDef>
 				<quality>Legendary</quality>
-				<!-- <color>(165,165,165)</color> -->
+				<color>(165,165,165)</color> <!-- lightish grey -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -162,14 +162,15 @@
 			</skillRange>
 			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			
-			<itemGraphics>
-				<li>
-				  <graphic>
-					<colorA>165,165,165</colorA> <!-- lightish grey -->
-				  </graphic>
-				  <apparelLayer><li>OnSkin</li></apparelLayer>
-				</li>
-			</itemGraphics>
+			<!-- do not use colorA, stick to specificApparelRequirements -->
+			<!-- <itemGraphics> -->
+				<!-- <li> -->
+				  <!-- <graphic> -->
+					<!-- <colorB>165,165,165</colorB> -->
+				  <!-- </graphic> -->
+				  <!-- <apparelLayer><li>OnSkin</li></apparelLayer> -->
+				<!-- </li> -->
+			<!-- </itemGraphics> -->
 		</li>
 		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">

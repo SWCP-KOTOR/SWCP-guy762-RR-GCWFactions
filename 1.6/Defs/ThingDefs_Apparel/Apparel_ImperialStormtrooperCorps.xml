@@ -179,7 +179,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Stormtrooper/helmet</li></texturePaths>
 					  <colorA>
-						<color>250,250,250</color> <!-- white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -552,7 +552,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Stormtrooper/shadowstormie/helmet</li></texturePaths>
 					  <colorA>
-						<color>40,40,40</color> <!-- darker black -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -759,7 +759,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/ScoutTrooper/Apparel</li></texturePaths>
 					  <colorA>
-						<color>250,250,250</color> <!-- white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -897,7 +897,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>Apparel_Zaahir/ScoutTrooper/helmet</li></texturePaths>
 					  <colorA>
-						<color>40,45,50</color> <!-- storm commando black -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1031,7 +1031,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/ScoutTrooper/Apparel</li></texturePaths>
 					  <colorA>
-						<color>40,45,50</color> <!-- storm commando black -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1181,7 +1181,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Snowtrooper/helmet</li></texturePaths>
 					  <colorA>
-						<color>250,250,250</color> <!-- white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1285,7 +1285,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Snowtrooper/Apparel</li></texturePaths>
 					  <colorA>
-						<color>250,250,250</color> <!-- white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>

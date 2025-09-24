@@ -681,37 +681,11 @@
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 			</li>
-			<!-- <li> -->
-				<!-- <apparelLayer>OnSkin</apparelLayer> -->
-				<!-- <color>(120,120,125)</color> -->
-			<!-- </li> -->
-		</specificApparelRequirements>
-		<modExtensions Inherit="False">
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>4~8</range>
-					</li>
-					<li>
-						<skill>Construction</skill>
-						<range>4~8</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-				
-				<itemGraphics>
-					<li>
-					  <graphic>
-						<colorA>120,120,125</colorA> <!-- lighter blued grey -->
-					  </graphic>
-					  <apparelLayer>
-						<li>OnSkin</li>
-					  </apparelLayer>
-					</li>
-				</itemGraphics>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(120,120,125)</color> <!-- lighter blued grey -->
 			</li>
-		</modExtensions>
+		</specificApparelRequirements>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWPentastar_TankHvyDriver" ParentName="SWImpRemnant_TankHvyDriver">
@@ -726,37 +700,11 @@
 				<apparelLayer>Middle</apparelLayer>
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 			</li>
-			<!-- <li> -->
-				<!-- <apparelLayer>OnSkin</apparelLayer> -->
-				<!-- <color>(120,120,125)</color> -->
-			<!-- </li> -->
-		</specificApparelRequirements>
-		<modExtensions Inherit="False">
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>6~10</range>
-					</li>
-					<li>
-						<skill>Construction</skill>
-						<range>6~10</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-				
-				<itemGraphics>
-					<li>
-					  <graphic>
-						<colorA>120,120,125</colorA> <!-- lighter blued grey -->
-					  </graphic>
-					  <apparelLayer>
-						<li>OnSkin</li>
-					  </apparelLayer>
-					</li>
-				</itemGraphics>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(120,120,125)</color> <!-- lighter blued grey -->
 			</li>
-		</modExtensions>
+		</specificApparelRequirements>
 	</PawnKindDef>
 	
 	

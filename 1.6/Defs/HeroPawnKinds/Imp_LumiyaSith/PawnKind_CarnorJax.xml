@@ -44,7 +44,7 @@
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_ImpRoyalGuardHelmet</apparelDef>
 				<quality>Legendary</quality>
-				<!-- <color>(40,40,40)</color> -->
+				<color>(40,40,40)</color> <!-- darker black -->
 			</li>
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
@@ -154,10 +154,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>40,40,40</colorA> <!-- darker black -->
 						<colorB>200,45,65</colorB>	<!-- royal guard red -->
 					  </graphic>
 					  <apparelLayer>

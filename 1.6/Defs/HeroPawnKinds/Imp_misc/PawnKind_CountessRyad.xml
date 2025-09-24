@@ -52,6 +52,7 @@
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_Bodysuit_TIEace</apparelDef>
 				<quality>Legendary</quality>
+				<color>(75,75,75)</color> <!-- dark grey -->
 			</li>
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
@@ -143,7 +144,7 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			  
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<!-- <li> -->
 					  <!-- <graphic> -->
 						<!-- <colorA>40,40,40</colorA> -->
@@ -157,7 +158,6 @@
 					<!-- </li> -->
 					<li>
 					  <graphic>
-						<colorA>75,75,75</colorA>
 						<colorB>220,190,0</colorB>	<!-- mid yellow -->
 					  </graphic>
 					  <apparelLayer>

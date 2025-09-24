@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWarlordsHeroBase_Zuckuss"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>SWWarlordsHeroBase_Zuckuss</defName>
+		<nameMaker>guy762_HeroNamer_Zuckuss</nameMaker>
+		<label>Bounty Hunter</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>31</minGenerationAge>
+		<maxGenerationAge>32</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_gand>999</guy762_xenotype_gand>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotORHeroAccessories_mission</li>
+			<li>SWCPSpecificApparelItem_ZuckussArmor</li>
+			<li>SWCPSpecificApparelItem_ZuckussRobes</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ZuckussArmor</li>
+			<li>guy762_Robes_zuckuss</li>
+		</apparelRequired>
+		
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_E5Crifle</li> <!-- GRS-1 Snare Rifle goes here -->
+		</weaponTags>
+		<!-- <techHediffsRequired> -->
+			<!-- <li>guy762_ImplantDock_I</li> -->
+		<!-- </techHediffsRequired> -->
+		<!-- <disallowedTraits><li>BodyPurist</li></disallowedTraits> -->
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_BH4DoubleBlaster</thingDef> <!-- replace with conc rifle or some kind of staff weapon -->
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		  <!-- <subOptionsChooseOne> -->
+			<!-- <li> -->
+			  <!-- <thingDef>guy762_ImplantItemPkg_health</thingDef> -->
+			  <!-- <countRange>1</countRange> -->
+			<!-- </li> -->
+			<!-- <li> -->
+			  <!-- <thingDef>guy762_ImplantItemImp_durability</thingDef> -->
+			  <!-- <countRange>1</countRange> -->
+			<!-- </li> -->
+			<!-- <li> -->
+			  <!-- <thingDef>guy762_ImplantItemImp_alacrity</thingDef> -->
+			  <!-- <countRange>1</countRange> -->
+			<!-- </li> -->
+		  <!-- </subOptionsChooseOne> -->
+		</inventoryOptions>
+		
+		<forcedTraits>
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			<TorturedArtist>0</TorturedArtist>
+			<ShootingAccuracy>1</ShootingAccuracy>
+			<DrugDesire>1</DrugDesire>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_zuckuss</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<abilities>
+			<!-- ACE TIER 4 -->
+			
+			<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+		</abilities>
+		
+		<modExtensions>
+			<!-- <li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind"> -->
+			  <!-- <whitelist> -->
+				<!-- <li>Male_AverageWide</li> -->
+			  <!-- </whitelist> -->
+			  <!-- <blacklist> -->
+				<!-- leave blank to disable -->
+			  <!-- </blacklist> -->
+			  <!-- <priority> -->
+				<!-- <li>Male_AverageWide</li> -->
+			  <!-- </priority> -->
+			  <!-- <checkGender>False</checkGender> -->
+			<!-- </li> -->
+			<!-- <li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem"> -->
+			  <!-- <forcedBeard>NoBeard</forcedBeard> -->
+			<!-- </li> -->
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>true</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_PaleYellow</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- KotOR viridian -->
+					<li>(160, 255, 128, 255)</li>
+					<li>(160, 255, 128, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>1.05</defaultBladeLength1>
+				<defaultBladeLength2>1.05</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_Vindicator</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_Zuckuss/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Plants</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Animals</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Zuckuss</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[zuckuss] '[zuckuss]' [uncanny]</li>
+				<li>zuckuss->Zuckuss</li>
+				<li>uncanny->the Uncanny</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Zuckuss</defName>
+		<title>Legendary Gand Findsman</title>
+		<titleShort>Findsman</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Plants>10</Plants>
+			<Animals>15</Animals>
+		</skillGains>
+		<forcedTraits>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Zuckuss</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_zuckuss</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Zuckuss</defName>
+		<title>New Republic Bounty Hunter</title>
+		<titleShort>Bounty Hunter</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Medicine>5</Medicine>
+		</skillGains>
+
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Zuckuss</nameMaker>
+		<!-- <workDisables>Artistic, PlantWork, Mining, Caring</workDisables> -->
+		<spawnCategories>
+			<li>guy762BSC_zuckuss</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_Zuckuss_TFS"  ParentName="SWWarlordsHeroBase_Zuckuss">
+		<defName>SWWEPlayableHero_Zuckuss_TFS</defName>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>4</min>
+					<max>4</max>
+				</forceLevelRange>
+				<!-- <darkSideRange>25 ~ 45</darkSideRange> -->
+				<grantRandomAbilities>false</grantRandomAbilities>
+				
+				<!-- <minRandomAbilities>3</minRandomAbilities> -->
+				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
+				<!-- <abilityCategories> -->
+					<!-- <li>Force_Darkside</li> -->
+					<!-- <li>Force_Neutral</li> -->
+				<!-- </abilityCategories> -->
+			</li>      
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+
+</Defs>

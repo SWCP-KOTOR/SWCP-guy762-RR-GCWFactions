@@ -148,10 +148,9 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 				
-				<itemGraphics>
+				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
 					<li>
 					  <graphic>
-						<colorA>(90,120,85)</colorA>
 						<colorB>(230,185,45)</colorB>
 						<colorC>(45,100,185)</colorC>
 					  </graphic>

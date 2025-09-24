@@ -62,7 +62,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/ImperialTankTrooper/Apparel</li></texturePaths>
 					  <colorA>
-						<color>250,250,250</color> <!-- white -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -1005,7 +1005,7 @@
 						<li>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</li>
 					</texturePaths>
 					  <colorA>
-						<color>110,120,115</color> <!-- army slate green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
