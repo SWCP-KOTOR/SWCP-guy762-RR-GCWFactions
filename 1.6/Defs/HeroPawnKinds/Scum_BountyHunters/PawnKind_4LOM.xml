@@ -33,6 +33,7 @@
 		<weaponTags>
 			<li>guy762_DLT19Xsniper</li>
 		</weaponTags>
+		
 		<!-- <techHediffsRequired> -->
 			<!-- <li>guy762_ImplantDock_I</li> -->
 		<!-- </techHediffsRequired> -->
@@ -52,12 +53,12 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<forcedTraits>
+		<!-- <forcedTraits> -->
 			<!-- <Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity> -->
 			<!-- <TorturedArtist>0</TorturedArtist> -->
 			<!-- <ShootingAccuracy>1</ShootingAccuracy> -->
 			<!-- <DrugDesire>1</DrugDesire> -->
-		</forcedTraits>
+		<!-- </forcedTraits> -->
 		
 		<backstoryFiltersOverride>
 		  <li>
@@ -121,9 +122,11 @@
 		<titleShort>Protocol Droid</titleShort>
 		<description>.</description>
 		<slot>Childhood</slot>
-		<skillGains>
-		</skillGains>
+		<!-- <skillGains> -->
+		<!-- </skillGains> -->
 		<forcedTraits>
+			<Asexual>0</Asexual>
+			<Immunity>-1</Immunity>
 		</forcedTraits>
 		<requiredWorkTags>
 		  <li>Violent</li>
