@@ -38,7 +38,7 @@
 		<!-- </techHediffsRequired> -->
 		<!-- <disallowedTraits><li>BodyPurist</li></disallowedTraits> -->
 		
-		<inventoryOptions>
+		<inventoryOptions Inherit="False">
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
 			<li>
