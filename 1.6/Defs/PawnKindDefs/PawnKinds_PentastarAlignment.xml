@@ -731,6 +731,8 @@
 		<maxGenerationAge>40</maxGenerationAge>
 		<itemQuality>Good</itemQuality>
 		
+		<nameMaker>guy762_NamerPawnKind_TIEPilotID</nameMaker>
+		
 		<!-- <xenotypeSet Inherit="False"> -->
 		  <!-- <xenotypeChances> -->
 			<!-- <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner> -->
@@ -1032,6 +1034,10 @@
 		<minGenerationAge>25</minGenerationAge>
 		<maxGenerationAge>55</maxGenerationAge>
 		<itemQuality>Good</itemQuality>
+		
+		<nameMaker>guy762_NamerPawnKind_MaleInquisitor</nameMaker>
+		<nameMakerFemale>guy762_NamerPawnKind_FemaleInquisitor</nameMakerFemale>
+		
 		<!--backstoryFiltersOverride Inherit="False">
 		  <li>
 			<categories>

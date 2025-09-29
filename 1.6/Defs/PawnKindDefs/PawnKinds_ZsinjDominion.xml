@@ -104,7 +104,7 @@
 			</li>
 		</modExtensions>
 		
-		<!-- <nameMaker>guy762_NamerPawnKind_StormtrooperID</nameMaker> -->
+		<nameMaker>guy762_NamerPawnKind_RaptorID</nameMaker>
 
 		<forcedTraits>
 			<Bloodlust>0</Bloodlust>
@@ -872,6 +872,8 @@
 		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>50</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
+		
+		<nameMaker>guy762_NamerPawnKind_RaptorPilotID</nameMaker>
 		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
