@@ -73,13 +73,13 @@
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
-				<li>Male_AveragePointy</li>
+				<li>Male_NarrowPointy</li>
 			  </whitelist>
 			  <blacklist>
 				<!--leave blank to disable-->
 			  </blacklist>
 			  <priority>
-				<li>Male_AveragePointy</li>
+				<li>Male_NarrowPointy</li>
 			  </priority>
 			  <checkGender>False</checkGender>
 			</li>
@@ -150,8 +150,8 @@
 		<requiredWorkTags>
 		  <li>Violent</li>
 		</requiredWorkTags>
-		<bodyTypeMale>Hulk</bodyTypeMale>
-		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<nameMaker>guy762_HeroNamer_AndalSait</nameMaker>
 		<spawnCategories>
 			<li>guy762BSC_andalsait</li>

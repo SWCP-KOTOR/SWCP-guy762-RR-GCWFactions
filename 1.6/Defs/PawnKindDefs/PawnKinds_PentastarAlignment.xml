@@ -1037,6 +1037,7 @@
 		
 		<nameMaker>guy762_NamerPawnKind_MaleInquisitor</nameMaker>
 		<nameMakerFemale>guy762_NamerPawnKind_FemaleInquisitor</nameMakerFemale>
+		<maxPerGroup>1</maxPerGroup>
 		
 		<!--backstoryFiltersOverride Inherit="False">
 		  <li>

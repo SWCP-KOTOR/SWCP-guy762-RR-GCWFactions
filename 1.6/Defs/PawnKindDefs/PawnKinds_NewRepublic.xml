@@ -195,20 +195,20 @@
 		  <li>SWRanged_DH17pistol</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
@@ -222,6 +222,26 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	  
 	  
@@ -247,14 +267,14 @@
 			<li>guy762_NewRepUniform_lowrank</li>
 		</apparelRequired>
 		
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_NewRepUniform_lowrank</apparelDef>
-				<styleDef>guy762_RankStyleNR_navylt</styleDef>
-				<quality>Good</quality>
-			</li>
-		</specificApparelRequirements>
+		<!-- <specificApparelRequirements> -->
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <apparelDef>guy762_NewRepUniform_lowrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyleNR_navylt</styleDef> -->
+				<!-- <quality>Good</quality> -->
+			<!-- </li> -->
+		<!-- </specificApparelRequirements> -->
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>550~1050</weaponMoney>
@@ -263,20 +283,20 @@
 		  <li>SWRanged_Power5pistol</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
@@ -296,9 +316,33 @@
 			<!-- <li>ProductionCommand</li> -->
 			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_NewRepublicNavyLieutenant/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	  
-	  
+	
+	
 	<PawnKindDef Name="SWNewRepub_NavyCaptain" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_NavyCaptain</defName>
 		<label>navy captain</label>
@@ -319,14 +363,14 @@
 			<li>guy762_NewRepUniform_lowrank</li>
 		</apparelRequired>
 		
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_NewRepUniform_lowrank</apparelDef>
-				<styleDef>guy762_RankStyleNR_navycap</styleDef>
-				<quality>Good</quality>
-			</li>
-		</specificApparelRequirements>
+		<!-- <specificApparelRequirements> -->
+			<!-- <li> -->
+				<!-- <apparelLayer>OnSkin</apparelLayer> -->
+				<!-- <apparelDef>guy762_NewRepUniform_lowrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyleNR_navycap</styleDef> -->
+				<!-- <quality>Good</quality> -->
+			<!-- </li> -->
+		<!-- </specificApparelRequirements> -->
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>550~1050</weaponMoney>
@@ -335,20 +379,20 @@
 		  <li>SWRanged_Power5pistol</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
@@ -368,6 +412,30 @@
 			<!-- <li>ProductionCommand</li> -->
 			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_NewRepublicNavyCaptain/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -382,9 +450,6 @@
 	
 	
 	
-	  
-	  
-	  
 	
 	
 	
@@ -450,16 +515,16 @@
 			<!-- <li>SWRanged_A280Crifle</li> -->
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.5</skipChance>
@@ -473,6 +538,22 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -533,12 +614,12 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~15</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~15</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
@@ -547,6 +628,18 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~15</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	  
 	  
@@ -624,16 +717,16 @@
 		  <li>SWRanged_A280Crifle</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
@@ -647,6 +740,22 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	  
 	  
@@ -711,20 +820,20 @@
 			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>5~10</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>5~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -740,6 +849,26 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>5~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 </Defs>

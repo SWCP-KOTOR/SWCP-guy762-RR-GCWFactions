@@ -104,16 +104,16 @@
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -158,7 +158,22 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
 			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
+			
 	</PawnKindDef>
 	
 	
@@ -190,13 +205,14 @@
 		
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.95</Baseliner>
-				<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_iridonian>
-				<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
-				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
-				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
-				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zabrak>
-				<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron><!-- total 0.96 -->
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.90</Baseliner>
+				<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+				<Lee_xenotype_kage MayRequire="guy762.StarWarsXenotypes">0.02</Lee_xenotype_kage>
+				<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_mirialan>
+				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_pantoran>
+				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_umbaran>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zabrak>
+				<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zeltron><!-- total 0.99 -->
 			</xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
@@ -240,28 +256,28 @@
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -309,6 +325,32 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

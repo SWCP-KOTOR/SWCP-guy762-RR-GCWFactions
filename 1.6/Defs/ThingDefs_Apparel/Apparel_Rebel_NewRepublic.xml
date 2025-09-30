@@ -8,8 +8,8 @@
 		<graphicData>
 		  <texPath>SWApparel/NewRepublicOfficer/bigbelt/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(250,250,250)</colorTwo> <!-- white -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -53,9 +53,32 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/NewRepublicOfficer/bigbelt/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_NewRepublicArmor</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -65,6 +88,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	  
@@ -83,13 +114,13 @@
 	  
 	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_NewRepUniform_lowrank</defName>
-		<label>New Republic uniform, officer's</label>
+		<label>New Republic uniform, junior officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(250,250,250)</colorTwo> <!-- white -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -133,20 +164,45 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					  
+					  <altDefs><li>guy762_NewRepublicUniformRankCustomization_navylt</li><li>guy762_NewRepublicUniformRankCustomization_navycap</li></altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyleNR_navylt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyleNR_navycap</styleDef>
-		  </li>
-		</randomStyle>
+		<!-- <randomStyleChance>1</randomStyleChance> -->
+		<!-- <randomStyle> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RankStyleNR_navylt</styleDef> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RankStyleNR_navycap</styleDef> -->
+		  <!-- </li> -->
+		<!-- </randomStyle> -->
 		
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_NewRepublicArmor</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -156,29 +212,72 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_NewRepublicUniformRankCustomization_navylt</defName>
+		<conditionalGraphics>
+		  <triggerFlags><whitelist><guy762AltTag_NewRepublicNavyLieutenant/></whitelist></triggerFlags>
+		  <texturePaths><li>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</li></texturePaths>
+		  <colorA>
+			<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+			<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+		  </colorA>
+		  <colorB>
+			<color>250,250,250</color> <!-- white -->
+			<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+		  </colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_NewRepublicUniformRankCustomization_navycap</defName>
+		<conditionalGraphics>
+		  <triggerFlags><whitelist><guy762AltTag_NewRepublicNavyCaptain/></whitelist></triggerFlags>
+		  <texturePaths><li>SWApparel/NewRepublicOfficer/navycaptain/Apparel</li></texturePaths>
+		  <colorA>
+			<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+			<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+		  </colorA>
+		  <colorB>
+			<color>250,250,250</color> <!-- white -->
+			<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+		  </colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+
+
 	  
-	<ThingStyleDef>
-		<defName>guy762_RankStyleNR_navylt</defName>
-		<overrideLabel>New Republic uniform, navy lieutenant's</overrideLabel>
-		<wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	</ThingStyleDef>
+	<!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_RankStyleNR_navylt</defName> -->
+		<!-- <overrideLabel>New Republic uniform, navy lieutenant's</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+	<!-- </ThingStyleDef> -->
 	  
-	<ThingStyleDef>
-		<defName>guy762_RankStyleNR_navycap</defName>
-		<overrideLabel>New Republic uniform, navy captain's</overrideLabel>
-		<wornGraphicPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	</ThingStyleDef>
+	<!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_RankStyleNR_navycap</defName> -->
+		<!-- <overrideLabel>New Republic uniform, navy captain's</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/NewRepublicOfficer/navycaptain/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+	<!-- </ThingStyleDef> -->
 	  
 	  
 	  
@@ -198,8 +297,8 @@
 		<graphicData>
 			<texPath>SWApparel/NewRepublic/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(70,90,125)</colorTwo>       <!--K1 blue-->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(70,90,125)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -233,6 +332,28 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/NewRepublic/helmet</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>70,90,125</color> <!--K1 blue-->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_NewRepublicArmor</li>
@@ -243,76 +364,36 @@
 					<weight>10</weight>
 					<only>(250,250,250)</only>  <!-- white -->
 				</li>
+				
+				 <!-- echani light armor olive -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(140,140,80)</only> -->
+				<!-- </li> -->
+				 <!-- rust -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(160,100,60)</only> -->
+				<!-- </li> -->
+				 <!-- dark beige -->
+				<!-- <li> -->
+					<!-- <weight>5</weight> -->
+					<!-- <only>(185,160,125)</only> -->
+				<!-- </li> -->
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
-		<defName>guy762_NewRepublicHelmet_resistance</defName>
-		<label>New Republic marine helmet</label>
-		<techLevel>Spacer</techLevel>
-		<description>.</description>
-		<graphicData>
-			<texPath>SWApparel/NewRepublic/helmet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(250,250,250)</colorTwo>       <!--white-->
-		</graphicData>
-		<thingCategories>
-		  <li>ArmorHeadgear</li>
-		</thingCategories>
-		<statBases>
-			<Mass>3.5</Mass>
-			<MarketValue>300</MarketValue>
-			<MaxHitPoints>115</MaxHitPoints>
-      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
-		
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-			<AimingDelayFactor>-0.1</AimingDelayFactor>
-		</equippedStatOffsets>
-		
-		<apparel>
-			<tags>
-				<li>NewRepublic_resistancetrooper</li>
-				<li>SWGCWSpecificApparelItem_ResistanceNewRepublicMarineHelmet</li>
-			</tags>
-			<wornGraphicPath>SWApparel/NewRepublic/helmet</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-				<li>EyeCover</li>
-			</layers>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_NewRepublicArmor</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(140,140,80)</only> <!-- echani light armor olive -->
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(160,100,60)</only> <!-- rust -->
-				</li>
-				<li>
-					<weight>5</weight>
-					<only>(185,160,125)</only> <!-- dark beige -->
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
+	
 	
 	
 	
@@ -327,8 +408,8 @@
 		<graphicData>
 		  <texPath>SWApparel/NewRepublic/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(70,90,125)</colorTwo>       <!--K1 blue-->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(70,90,125)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4.5</Mass>
@@ -366,6 +447,29 @@
 			<!-- <li>Legs</li> -->
 			<!-- <li>Feet</li> -->
 		  </bodyPartGroups>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/NewRepublic/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>70,90,125</color> <!--K1 blue-->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_NewRepublicArmor</li>
@@ -376,86 +480,32 @@
 					<weight>10</weight>
 					<only>(250,250,250)</only>  <!-- white -->
 				</li>
+				
+				 <!-- echani light armor olive -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(140,140,80)</only> -->
+				<!-- </li> -->
+				 <!-- rust -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(160,100,60)</only> -->
+				<!-- </li> -->
+				 <!-- dark beige -->
+				<!-- <li> -->
+					<!-- <weight>5</weight> -->
+					<!-- <only>(185,160,125)</only> -->
+				<!-- </li> -->
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
-		<defName>guy762_NewRepublicArmor_resistance</defName>
-		<label>New Republic marine armor</label>
-		<description>.</description>
-		<graphicData>
-		  <texPath>SWApparel/NewRepublic/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(250,250,250)</colorTwo>       <!--white-->
-		</graphicData>
-		<statBases>
-			<Mass>4.5</Mass>
-			<MarketValue>500</MarketValue>
-			
-			<MaxHitPoints>350</MaxHitPoints> <!-- mil suit stats -->
-			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<EquipDelay>8</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<!-- +2 agility - no debuff -->
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
-		</equippedStatOffsets>
-		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_resistancetrooper</li>
-			<li>NewRepublic_combatengineer</li>
-			<li>SWGCWSpecificApparelItem_ResistanceNewRepublicMarineArmor</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/NewRepublic/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Torso</li>
-			<li>Neck</li>
-			<li>Shoulders</li>
-			<!-- <li>Arms</li> -->
-			<!-- <li>Hands</li> -->
-			<!-- <li>Legs</li> -->
-			<!-- <li>Feet</li> -->
-		  </bodyPartGroups>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_NewRepublicArmor</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(140,140,80)</only> <!-- echani light armor olive -->
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(160,100,60)</only> <!-- rust -->
-				</li>
-				<li>
-					<weight>5</weight>
-					<only>(185,160,125)</only> <!-- dark beige -->
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-	  
-
-
-
-
+	
 </Defs>
