@@ -68,7 +68,7 @@
 			<BS_BatteryCharging>0.2</BS_BatteryCharging>
 			<MaxNutrition>1.35</MaxNutrition>			
 			
-            <!-- <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0.8</StaggerDurationFactor> -->
+            <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0.25</StaggerDurationFactor>
             <!-- <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</EMPResistance> -->
 			
 			<Mass>500</Mass>
@@ -312,13 +312,14 @@
 						<allowlist>
 							<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 							
-							<li>SWCPDroidApparelRestrictionTag_ShieldSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyShieldSlot</li>
 							
 							<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 							<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 							
-							<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+							<!-- <li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li> -->
 							<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+							<li><li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li></li>
 						</allowlist>
 					</tags>
 				</apparelRestrictions>
@@ -392,8 +393,10 @@
 							<li>(105,110,100)</li>
 							<!-- maldrood army grey -->
 							<li>(110,105,100)</li>
+							<!-- medium grey -->
+							<li>(150,150,150)</li>
 							<!-- Cinnagar Iron -->
-							<li>(90,70,50)</li>
+							<!-- <li>(90,70,50)</li> -->
 						</colorOptions>
 						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					</colorA>
