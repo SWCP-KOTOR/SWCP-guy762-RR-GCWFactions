@@ -4,15 +4,15 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_RebelUniform_lowrank</defName>
 		<label>Rebel Alliance uniform, officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/RebelOfficer/navylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(145,175,195)</colorTwo> <!-- sand blue -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(145,175,195)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -51,17 +51,42 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelOfficer/navylieutenant/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(145,175,195)</color> <!-- sand blue -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					  
+					  <altDefs><li>guy762_RebelUniformRankCustomization_navylt</li><li>guy762_RebelUniformRankCustomization_navycap</li></altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyleRebOfficer_navylt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyleRebOfficer_navycap</styleDef>
-		  </li>
-		</randomStyle>
+		<!-- <randomStyleChance>1</randomStyleChance> -->
+		<!-- <randomStyle> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RankStyleRebOfficer_navylt</styleDef> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RankStyleRebOfficer_navycap</styleDef> -->
+		  <!-- </li> -->
+		<!-- </randomStyle> -->
 		
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
@@ -74,30 +99,69 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	  
-	  <ThingStyleDef>
-		<defName>guy762_RankStyleRebOfficer_navylt</defName>
-		<overrideLabel>Rebel Alliance uniform, navy lieutenant's</overrideLabel>
-		<wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/RebelOfficer/navylieutenant/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	  </ThingStyleDef>
+	  <!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_RankStyleRebOfficer_navylt</defName> -->
+		<!-- <overrideLabel>Rebel Alliance uniform, navy lieutenant's</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/RebelOfficer/navylieutenant/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+	  <!-- </ThingStyleDef> -->
 	  
-	  <ThingStyleDef>
-		<defName>guy762_RankStyleRebOfficer_navycap</defName>
-		<overrideLabel>Rebel Alliance uniform, navy captain's</overrideLabel>
-		<wornGraphicPath>SWApparel/RebelOfficer/navycaptain/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/RebelOfficer/navycaptain/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	  </ThingStyleDef>
+	  <!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_RankStyleRebOfficer_navycap</defName> -->
+		<!-- <overrideLabel>Rebel Alliance uniform, navy captain's</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/RebelOfficer/navycaptain/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/RebelOfficer/navycaptain/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+	  <!-- </ThingStyleDef> -->
 	  
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelUniformRankCustomization_navylt</defName>
+		<conditionalGraphics>
+		  <triggerFlags><whitelist><guy762AltTag_RebelNavyLieutenant/></whitelist></triggerFlags>
+		  <texturePaths><li>SWApparel/RebelOfficer/navylieutenant/Apparel</li></texturePaths>
+		  <colorA>
+			<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+			<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+		  </colorA>
+		  <colorB>
+			<color>(145,175,195)</color> <!-- sand blue -->
+			<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+		  </colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelUniformRankCustomization_navycap</defName>
+		<conditionalGraphics>
+		  <triggerFlags><whitelist><guy762AltTag_RebelNavyCaptain/></whitelist></triggerFlags>
+		  <texturePaths><li>SWApparel/RebelOfficer/navycaptain/Apparel</li></texturePaths>
+		  <colorA>
+			<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+			<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+		  </colorA>
+		  <colorB>
+			<color>(145,175,195)</color> <!-- sand blue -->
+			<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+		  </colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	  
 	  
 	  

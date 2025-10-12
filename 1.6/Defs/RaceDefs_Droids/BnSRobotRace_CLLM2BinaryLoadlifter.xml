@@ -319,7 +319,7 @@
 							
 							<!-- <li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li> -->
 							<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
-							<li><li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li></li>
+							<li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li>
 						</allowlist>
 					</tags>
 				</apparelRestrictions>
