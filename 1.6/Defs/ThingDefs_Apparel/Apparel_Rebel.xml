@@ -997,7 +997,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_RebPilotHelmet</defName>
 		<label>K-22995 flight helmet</label>
 		<techLevel>Spacer</techLevel>

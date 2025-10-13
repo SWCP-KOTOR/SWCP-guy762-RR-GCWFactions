@@ -448,7 +448,6 @@
 			<texPath>SWApparel/JAMerc/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<!-- <colorTwo>(255,210,0)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>

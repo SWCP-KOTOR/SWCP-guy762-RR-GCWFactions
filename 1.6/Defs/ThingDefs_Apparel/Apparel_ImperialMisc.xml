@@ -308,8 +308,8 @@
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/raptor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(225,220,75)</colorTwo> <!-- banana yellow -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(225,220,75)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -434,8 +434,8 @@
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/raptor/raptorhelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<colorTwo>(225,220,75)</colorTwo> <!-- banana yellow -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(225,220,75)</colorTwo> -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
@@ -788,7 +788,6 @@
 			<texPath>SWApparel/ImperialEngineer/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow -->
 		</graphicData>
 		<thingCategories>
 		  <li>ArmorHeadgear</li>
