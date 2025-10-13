@@ -127,7 +127,7 @@
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_RebelOfficerDuster</apparelDef>
-				<styleDef>guy762_RankStyleRebOvercoat_armygen</styleDef>
+				<!-- <styleDef>guy762_RankStyleRebOvercoat_armygen</styleDef> -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -177,6 +177,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_RebelArmyGeneral/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

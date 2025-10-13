@@ -180,13 +180,13 @@
 	  
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_RebelOfficerDuster</defName>
-		<label>rebel overcoat, officer's</label>
+		<label>rebel overcoat, top brass</label>
 		<description>This long overcoat is typically worn by ranking officers of the Rebel Alliance and New Republic.</description>
 		<graphicData>
 		  <texPath>SWApparel/RebelArmyDuster/general/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(175,120,55)</colorTwo> <!-- burnt orange -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(175,120,55)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
@@ -227,14 +227,39 @@
 			</tags>
 			<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>23</baseLayer>	<!-- SHELL? -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelArmyDuster/general/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(175,120,55)</color> <!-- burnt orange -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					  
+					  <altDefs><li>guy762_RebelOvercoatRankCustomization_armygen</li></altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>66</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyleRebOvercoat_armygen</styleDef>
-		  </li>
-		</randomStyle>
+		<!-- <randomStyleChance>1</randomStyleChance> -->
+		<!-- <randomStyle> -->
+		  <!-- <li> -->
+			<!-- <styleDef>guy762_RankStyleRebOvercoat_armygen</styleDef> -->
+		  <!-- </li> -->
+		<!-- </randomStyle> -->
 		
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -254,28 +279,43 @@
 				</li>
 			</options>
 		</colorGenerator>
-		
-		<!-- <comps> -->
-		  <!-- <li Class="ModularWeapons.CompProperties_ModularParts"> -->
-			<!-- <compClass>ModularWeapons.CompModularParts</compClass> -->
-			<!-- <partKinds> -->
-			  <!-- <li>guy762_slot_underlay</li> -->
-			<!-- </partKinds> -->
-			<!-- <randomizeParts>true</randomizeParts> -->
-		  <!-- </li> -->
-		<!-- </comps> -->
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
-	<ThingStyleDef>
-		<defName>guy762_RankStyleRebOvercoat_armygen</defName>
-		<overrideLabel>rebel overcoat, general's</overrideLabel>
-		<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
-		<graphicData>
-		  <texPath>SWApparel/RebelArmyDuster/general/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-	  </ThingStyleDef>
+	<!-- <ThingStyleDef> -->
+		<!-- <defName>guy762_RankStyleRebOvercoat_armygen</defName> -->
+		<!-- <overrideLabel>rebel overcoat, general's</overrideLabel> -->
+		<!-- <wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath> -->
+		<!-- <graphicData> -->
+		  <!-- <texPath>SWApparel/RebelArmyDuster/general/Apparel</texPath> -->
+		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		<!-- </graphicData> -->
+	<!-- </ThingStyleDef> -->
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelOvercoatRankCustomization_armygen</defName>
+		<conditionalGraphics>
+		  <triggerFlags><whitelist><guy762AltTag_RebelArmyGeneral/></whitelist></triggerFlags>
+		  <texturePaths><li>SWApparel/RebelArmyDuster/general/Apparel</li></texturePaths>
+		  <colorA>
+			<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+			<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+		  </colorA>
+		  <colorB>
+			<color>(175,120,55)</color> <!-- burnt orange -->
+			<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+		  </colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	  
 	  
 	  
