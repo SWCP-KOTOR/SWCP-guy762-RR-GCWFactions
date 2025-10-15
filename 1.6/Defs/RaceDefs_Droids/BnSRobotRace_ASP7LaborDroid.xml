@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_ASP7LaborDroid</defName>
+		<title>ASP-7 series labor droid</title>
+		<titleShort>labor droid</titleShort>
+		<description>This is a simple utility droid, capable of basic tasks.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_ASP7LaborDroid</li>
+			<li>guy762BSC_Droid_all</li>
+		</spawnCategories>
+		<!-- <workDisables> -->
+			<!-- <li>Animals</li> -->
+			<!-- <li>Hunting</li> -->
+            <!-- <li>Caring</li> -->
+            <!-- <li>Artistic</li> -->
+            <!-- <li>Cooking</li> -->
+			<!-- <li>PlantWork</li> -->
+			<!-- <li>Mining</li> -->
+			<!-- <li>Social</li> -->
+			<!-- <li>Intellectual</li> -->
+		<!-- </workDisables> -->
+		<!-- <requiredWorkTags> -->
+			<!-- <li>Violent</li> -->
+			<!-- <li>Hauling</li> -->
+			<!-- <li>Constructing</li> -->
+			<!-- <li>Firefighting</li> -->
+			<!-- <li>Cleaning</li> -->
+		<!-- </requiredWorkTags> -->
+		<forcedTraits>
+		  <Asexual>0</Asexual>
+		</forcedTraits>
+	</BackstoryDef>
+	
+
+	
+	
+	
+	<ThingDef Name="SWCP_BnSDroidRace_ASP7LaborDroid" ParentName="SWCP_BnSDroidRace_BASE">
+		<defName>SWCP_BnSDroidRace_ASP7LaborDroid</defName>
+		<label>ASP-7 series labor droid</label>
+		<description>.\n\nBy default, this droid is capable of the following work types:\n-Hauling\n-Firefighting</description>
+
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<RoyalFavorValue>1</RoyalFavorValue>
+			
+			<MoveSpeed>3</MoveSpeed>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">1</VacuumSpeedMultiplier>
+			<ComfyTemperatureMin>-125</ComfyTemperatureMin>
+			<ComfyTemperatureMax>125</ComfyTemperatureMax>
+			
+			<CarryingCapacity>250</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">250</VEF_MassCarryCapacity>
+			<!-- <GlobalLearningFactor>0.5</GlobalLearningFactor> -->
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<SM_FlirtChance>0</SM_FlirtChance>
+			
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <InjuryHealingFactor>1</InjuryHealingFactor>
+            <IncomingDamageFactor>0.75</IncomingDamageFactor>
+			
+			<BS_BatteryCharging>0.2</BS_BatteryCharging>
+			<MaxNutrition>1.35</MaxNutrition>			
+			
+            <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0.25</StaggerDurationFactor>
+            <!-- <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</EMPResistance> -->
+			
+			<Mass>500</Mass>
+		</statBases>
+		
+		
+		
+		<race>
+			<body>SWCP_BnSDroidBody_CyclopsThreeDigitedBiped_ASP7LaborDroid</body>
+
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<lifeStageAges Inherit="False">
+				<!-- We're not using custom defs because some Rimworld stuff is hardcoded to look for certain defs.
+				 Better from a compatibility standpoint to simply make the stages exist but not be active. -->
+				<li>
+				  <def>HumanlikeBaby</def>
+				  <minAge>0</minAge>
+				  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+				<li>
+				  <def>HumanlikeChild</def>
+				  <minAge>3</minAge>
+				  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+				  <def>HumanlikePreTeenager</def>
+				  <minAge>9</minAge>
+				  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+				<li>
+				  <def>HumanlikeTeenager</def>
+				  <minAge>13</minAge>
+				  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+				<li>
+				  <def>HumanlikeAdult</def>
+				  <minAge>18</minAge>
+				  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				  
+				  <!-- <soundAmbience>kotorsound_TsUD_ambient</soundAmbience> -->
+				  <!-- <soundAngry>kotorsound_TsUD_angry</soundAngry> -->
+				</li>
+			</lifeStageAges>
+
+		</race>
+
+		<modExtensions>
+		  <li Class="BigAndSmall.RaceExtension">
+			<raceHediff>SWCP_DroidHediff_ASP7LaborDroid</raceHediff>
+		  </li>
+		</modExtensions>
+		
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>left arm</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<!-- <power>8.2</power> -->
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>28</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			  <li>
+				<label>right arm</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<!-- <power>8.2</power> -->
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>28</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		
+		<butcherProducts>
+            <KOTOR_AlloyDurasteel>20</KOTOR_AlloyDurasteel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+		</butcherProducts>
+		<tradeTags>
+            <li>SWCPTT_AnyEraDroids_utilitycommon</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- <HediffDef ParentName="SWCP_DroidHediff_BASE"> -->
+	<HediffDef>
+		<defName>SWCP_DroidHediff_ASP7LaborDroid</defName>
+		<label>ASP-7 series labor droid</label>
+		<description>.</description>
+		
+		<hediffClass>BigAndSmall.RaceTracker</hediffClass>
+		
+		<abilities></abilities>
+		
+		<comps Inherit="False">
+		  <li Class="BigAndSmall.CompProperties_Race">
+			<!-- Cosmetic -->
+			<bodyDefOverride>Female</bodyDefOverride>
+			<bodyDefOverride_Female>Female</bodyDefOverride_Female>
+			<disableHair>true</disableHair>
+			<disableBeards>true</disableBeards>
+			<canSwapAwayFrom>false</canSwapAwayFrom>
+		  </li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<SM_Cosmetic_BodySizeOffset>0.25</SM_Cosmetic_BodySizeOffset>
+				</statOffsets>
+				<statFactors>
+					<SM_FlirtChance>0</SM_FlirtChance>
+				</statFactors>
+			</li>
+		</stages>
+
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100001</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_NoPassion</li></exclusionTags>
+				<canHavePassions>false</canHavePassions>
+			</li>
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CleaningDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Cleaning</li></disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ConstructionDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Construction</li></disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_MiningDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Mining</li>
+					<li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li>
+				</disabledWorkTypes>
+			</li>
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<frequentUpdate>false</frequentUpdate>
+				<romanceTags/> <!-- No tags at all by default. -->
+				<noFamilyRelations>true</noFamilyRelations>
+				
+				<clampedSkills>
+					<li><skill>Shooting</skill><range>0</range></li>
+					<li><skill>Melee</skill><range>5</range></li>
+					<li><skill>Construction</skill><range>0</range></li>
+					<li><skill>Mining</skill><range>0</range></li>
+					<li><skill>Cooking</skill><range>0</range></li>
+					<li><skill>Plants</skill><range>0</range></li>
+					<li><skill>Animals</skill><range>0</range></li>
+					<li><skill>Crafting</skill><range>0</range></li>
+					<li><skill>Artistic</skill><range>0</range></li>
+					<li><skill>Medicine</skill><range>0</range></li>
+					<li><skill>Social</skill><range>0</range></li>
+					<li><skill>Intellectual</skill><range>0</range></li>
+				</clampedSkills>
+				
+				<!-- will force anything on this list and replace them immediately if something tries to remove them - good for things that should be perma-disabled -->
+				<forcedHediffs>
+					<li>SWCP_DroidHediff_NonSapientDroid</li>
+					
+					<li>SWCPWorkTypeDisablerHediff_Hunting</li>
+					<li>SWCPWorkTypeDisablerHediff_Cooking</li>
+					<li>SWCPWorkTypeDisablerHediff_PlantWork</li>
+					<li>SWCPWorkTypeDisablerHediff_Animals</li>
+					<li>SWCPWorkTypeDisablerHediff_Crafting</li>
+					<li>SWCPWorkTypeDisablerHediff_Artistic</li>
+					<li>SWCPWorkTypeDisablerHediff_Caring</li>
+					<li>SWCPWorkTypeDisablerHediff_Social</li>
+					<li>SWCPWorkTypeDisablerHediff_Intellectual</li>
+				</forcedHediffs>
+				
+				<traitFilters>
+					<whitelist>
+						<li>Asexual</li>
+					</whitelist>
+				</traitFilters>
+				
+				<babyStartAge>20</babyStartAge>
+				<pawnDiet>SWCP_DroidDiet</pawnDiet>
+				
+				<apparelRestrictions>
+					<absolutelyNothing>True</absolutelyNothing>
+					<tags>
+						<allowlist>
+							<li>SWCPDroidApparelRestrictionTag_MediumArmor</li>
+							<li>SWCPDroidApparelRestrictionTag_ShieldSlot</li>
+							
+							<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+							
+							<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+						</allowlist>
+					</tags>
+				</apparelRestrictions>
+				<unarmedOnly>true</unarmedOnly>
+				<forceUnarmed>true</forceUnarmed>
+				<canWieldThings>false</canWieldThings>
+				
+				<forcedEndogenes>
+					<li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">guy762_DebugHead_nullForDroids</li>
+				</forcedEndogenes>
+				
+				
+				
+				
+				
+				<forceFemaleBody>true</forceFemaleBody>
+				<!-- this block prevents the base human textures from being used -->
+				<bodyPaths>
+				  <Female>512blank</Female>
+				  <Male>512blank</Male>
+				</bodyPaths>
+				<bodyMaterial>
+					<shader>BS_CutoutThreeColor</shader>
+					<overrideDesiccated>true</overrideDesiccated>
+					<colorA><altDefs><li>BS_CustomGlobalA</li></altDefs></colorA>
+					<colorB><altDefs><li>BS_CustomGlobalB</li></altDefs></colorB>
+					<colorC><altDefs><li>BS_CustomGlobalC</li></altDefs></colorC>
+				</bodyMaterial>
+				<headPaths>
+					<Female>512blank</Female>
+					<Male>512blank</Male>
+				</headPaths>
+				<headMaterial>
+					<shader>BS_CutoutThreeColor</shader>
+					<overrideDesiccated>true</overrideDesiccated>
+					<colorA><altDefs><li>BS_CustomGlobalA</li></altDefs></colorA>
+					<colorB><altDefs><li>BS_CustomGlobalB</li></altDefs></colorB>
+					<colorC><altDefs><li>BS_CustomGlobalC</li></altDefs></colorC>
+				</headMaterial>
+				<!-- this block prevents the base human textures from being used -->
+			</li>
+		</modExtensions>
+		
+		<renderNodeProperties>
+			<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+				<nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+				<workerClass>BigAndSmall.UltimateRenderNodeWorker</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<shader>BS_CutoutThreeColor</shader>
+				<baseLayer>70</baseLayer>
+				<conditionalGraphics>
+					<texturePaths><li>Droid/ASP7LaborDroid/ASP7LaborDroid_head</li></texturePaths>
+					<colorA>
+						<color>(210,205,200)</color> <!-- off-silver -->
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
+					</colorA>
+					<colorB>
+						<color>(210,205,200)</color> <!-- off-silver -->
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
+					</colorB>
+					<colorC>
+						<color>(0,255,180)</color> <!-- bright mint green -->
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
+					</colorC>
+					<!-- <altDefs><li>guy762_LOMProtocolDroidCustomization_defaultHead</li><li>guy762_LOMProtocolDroidCustomization_4LOMHead</li></altDefs> -->
+				</conditionalGraphics>
+			</li>
+			<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+				<nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+				<workerClass>BigAndSmall.UltimateRenderNodeWorker</workerClass>
+				<parentTagDef>Body</parentTagDef>
+				<shader>BS_CutoutThreeColor</shader>
+				<baseLayer>20</baseLayer>
+				<conditionalGraphics>
+					<texturePaths><li>Droid/ASP7LaborDroid/ASP7LaborDroid_body</li></texturePaths>
+					<colorA>
+						<color>(210,205,200)</color> <!-- off-silver -->
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
+					</colorA>
+					<colorB>
+						<color>(210,205,200)</color> <!-- off-silver -->
+						<altDefs><li>BS_CustomGlobalB</li></altDefs>
+					</colorB>
+					<colorC>
+						<color>(0,255,180)</color> <!-- bright mint green -->
+						<altDefs><li>BS_CustomGlobalC</li></altDefs>
+					</colorC>
+					<!-- <altDefs><li>guy762_LOMProtocolDroidCustomization_defaultBody</li><li>guy762_LOMProtocolDroidCustomization_4LOMBody</li></altDefs> -->
+				</conditionalGraphics>
+			</li>
+		</renderNodeProperties>
+		
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	<GeneDef ParentName="SWCPDroidBodyGene_chassisBASE">
+		<defName>SWCPDroidBodyGene_ASP7LaborDroid</defName>
+		<label>ASP-7 series labor droid</label>
+		
+		<skinColorOverride>(210,205,200)</skinColorOverride>
+		
+		<iconPath>UI/DroidIcons/Icon_ASP7LaborDroid</iconPath>
+
+	</GeneDef>
+	
+	<XenotypeDef>
+		<defName>SWCPDroidXenotype_ASP7LaborDroid</defName>
+		<label>ASP-7 series labor droid</label>
+		<description>.</description>
+		<iconPath>UI/DroidIcons/Icon_ASP7LaborDroid</iconPath>
+		<!-- <combatPowerFactor>1</combatPowerFactor> -->
+		<inheritable>true</inheritable>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<genes>
+		  <li>SWCPDroidBodyGene_ASP7LaborDroid</li>
+		  <li>Beard_NoBeardOnly</li>
+		  <li>Hair_BaldOnly</li>
+		  <li>guy762_DebugHead_nullForDroids</li>
+		  <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+		</genes>
+		<modExtensions>
+		  <li Class="BigAndSmall.XenotypeExtension">
+			<setRace>SWCP_BnSDroidRace_ASP7LaborDroid</setRace>
+			<forceRace>true</forceRace>
+		  </li>
+		</modExtensions>
+	</XenotypeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPDroidColonistBnS_ASP7LaborDroid" ParentName="guy762_BnSDroidPawnKindBase">
+		<defName>SWCPDroidColonistBnS_ASP7LaborDroid</defName>
+		<label>labor droid</label>
+		<nameMaker>SWCP_DroidNamer_ASP7LaborDroid</nameMaker>
+		
+		<race>SWCP_BnSDroidRace_ASP7LaborDroid</race>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<SWCPDroidXenotype_ASP7LaborDroid MayRequire="Ludeon.Rimworld.Biotech">999</SWCPDroidXenotype_ASP7LaborDroid>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+        <combatPower>50</combatPower>
+		
+		<forcedTraits>
+			<Asexual>0</Asexual>
+			<!-- <TooSmart>0</TooSmart> -->
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_ASP7LaborDroid</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+
+</Defs>

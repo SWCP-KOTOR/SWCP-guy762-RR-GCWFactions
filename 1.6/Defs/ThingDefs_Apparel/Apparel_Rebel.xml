@@ -962,7 +962,7 @@
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>84</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+					<drawData> <dataNorth> <layer>85</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
 		</apparel>
