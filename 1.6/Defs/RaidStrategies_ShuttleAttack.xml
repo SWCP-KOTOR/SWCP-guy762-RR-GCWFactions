@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Raid Stratagies __________-->
+
+    <!--_____ Vertibird Raids _____-->
+
+    <!-- Vertibird RaidStrategyDef -->
+
+    <RaidStrategyDef>
+        <defName>guy762_RaidStrategy_ShuttleAttack</defName>
+        <workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+        <selectionWeightPerPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </selectionWeightPerPointsCurve>
+        <selectionWeightCurvesPerFaction>
+			<li>
+				<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_Pentastar</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_RebelCell</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_PartisanCell</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+        <pointsFactorCurve>
+            <points>
+                <li>0, 1</li>
+            </points>
+        </pointsFactorCurve>
+        <arriveModes>
+            <li>guy762_PawnArrivalMode_ShuttleAttack</li>
+        </arriveModes>
+        <letterLabelEnemy>Raid</letterLabelEnemy>
+        <arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+        <letterLabelFriendly>Friendlies</letterLabelFriendly>
+        <arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+    </RaidStrategyDef>
+
+    <!-- Vertibird PawnsArrivalModeDef -->
+
+    <PawnsArrivalModeDef>
+        <defName>guy762_PawnArrivalMode_ShuttleAttack</defName>
+        <workerClass>SWCP_Shuttles.PawnsArrivalModeWorker_VertibirdAttack</workerClass>
+        <selectionWeightCurve>
+            <points>
+                <li>(100, 0)</li>
+                <li>(300, 0.2)</li>
+                <li>(700, 0.5)</li>
+            </points>
+        </selectionWeightCurve>
+        <pointsFactorCurve>
+            <points>
+                <li>0, 0.9</li>
+            </points>
+        </pointsFactorCurve>
+        <minTechLevel>Industrial</minTechLevel>
+        <textEnemy>Several separate groups of {0} from {1} have arrived in landing craft nearby.</textEnemy>
+        <textFriendly>Several separate groups of friendly {0} from {1} have arrived in landing craft nearby.</textFriendly>
+        <textWillArrive>Several separate groups of {0_pawnsPluralDef} will arrive in landing craft.</textWillArrive>
+    </PawnsArrivalModeDef>
+
+</Defs>

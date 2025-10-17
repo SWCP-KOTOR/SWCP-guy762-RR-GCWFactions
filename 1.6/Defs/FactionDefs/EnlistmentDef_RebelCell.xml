@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Enlistments with Factions __________-->
+
+    <!--_____ NCR _____-->
+
+    <SWCP.Enlist.FactionEnlistOptionsDef>
+        <defName>guy762_SWFactionEnlistment_RebelCell</defName>
+        <minGoodwillRequrementToEnlist>10</minGoodwillRequrementToEnlist>
+        <enlistGoodwillGain>5</enlistGoodwillGain>
+
+        <!-- Enlistment Options -->
+
+        <enlistLetterTitleKey>SWCP_Enlist_Letter_Title</enlistLetterTitleKey>
+        <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
+        <enlistButtonLabelKey>SWCP_Enlist_Button_Label</enlistButtonLabelKey>
+        <enlistButtonDescKey>SWCP_Enlist_Button_Desc</enlistButtonDescKey>
+        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied</enlistRequrementsNotSatisfiedKey>
+        <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
+        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_Rebellion</enlistButtonIconTexPath>
+        <enlistedSoundDef>kotorsound_levelup</enlistedSoundDef>
+        <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
+
+        <!-- Mission Options -->
+
+        <missionsAreEnabled>true</missionsAreEnabled>
+        <missionsLabelKey>SWCP_Missions_Label</missionsLabelKey>
+        <missionsDescKey>SWCP_Missions_Desc</missionsDescKey>
+        <missionsButtonIconTexPath>UI/Icons/Datapad</missionsButtonIconTexPath>
+        <missionsBackgroundMenuTexPath>Things/UI/Enlisted/SWCP_Missions</missionsBackgroundMenuTexPath>
+		
+        <missionsMenuAmbientSoundDef>SWCPSound_RogueSquadronN64_hangar</missionsMenuAmbientSoundDef>
+		
+        <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc</missionsMenuDescriptionKey>
+        <missionsMenuSelectQuestKey>SWCP_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
+        <missionsMenuStartQuestKey>SWCP_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
+        <missionsQuestCost>50</missionsQuestCost>
+        <missionsMenuStartQuestNoEnoughMoneyKey>SWCP_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
+
+        <!-- Salary Options -->
+
+        <salaryIsEnabled>true</salaryIsEnabled>
+        <salaryDef>guy762_KotORcredits</salaryDef>
+        <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
+        <salaryDescKey>SWCP_Salary_Desc</salaryDescKey>
+        <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
+        <salaryRange>1200~2500</salaryRange>
+        <salaryPeriodDays>14</salaryPeriodDays>
+
+        <!-- Provision Options -->
+
+        <provisionOptions>
+            <li>
+                <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
+                <provisionsDescKey>SWCP_Provisions_Desc</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
+                <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
+                <provisions>
+                    <li>
+                        <thing>guy762_KotORLootBox_FoodMeds</thing>
+                        <amountRange>6</amountRange>
+                    </li>
+                </provisions>
+                <provisionsRestockInDays>10</provisionsRestockInDays>
+            </li>
+            <!-- <li> -->
+                <!-- <provisionsLabelKey>SWCP_Provisions_Label_Standard_Issue</provisionsLabelKey> -->
+                <!-- <provisionsDescKey>SWCP_Provisions_Desc_Standard_Issue</provisionsDescKey> -->
+                <!-- <provisionsButtonIconTexPath>Things/UI/Enlisted/SWCP_Standard_Issue</provisionsButtonIconTexPath> -->
+                <!-- <provisions> -->
+                    <!-- <li> -->
+                        <!-- <thing>FCP_Item_NCR_Standard_Weapon_Crate</thing> -->
+                        <!-- <amountRange>2</amountRange> -->
+                    <!-- </li> -->
+                    <!-- <li> -->
+                        <!-- <thing>FCP_Item_NCR_Standard_Uniform_Crate</thing> -->
+                        <!-- <amountRange>2</amountRange> -->
+                    <!-- </li> -->
+                <!-- </provisions> -->
+                <!-- <provisionsRestockInDays>30</provisionsRestockInDays> -->
+            <!-- </li> -->
+        </provisionOptions>
+
+        <!-- Storage Options -->
+
+        <storageIsEnabled>true</storageIsEnabled>
+        <storageLabelKey>SWCP_Storage_Label</storageLabelKey>
+        <storageDescKey>SWCP_Storage_Desc</storageDescKey>
+        <storageButtonIconTexPath>UI/Icons/storage</storageButtonIconTexPath>
+
+        <!-- Work Options -->
+
+        <recreationGainPerTick>0.0001</recreationGainPerTick>
+        <workOptions>
+            <li>
+                <workLabelKey>SWCP_Part_Time_Job_Label</workLabelKey>
+                <workDescKey>SWCP_Part_Time_Job_Desc</workDescKey>
+                <workButtonIconTexPath>Items/Credits/credits_b</workButtonIconTexPath>
+                <additionalRestFall>0.25</additionalRestFall>
+                <silverGainPerHour>20</silverGainPerHour>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Hospital_Label</workLabelKey>
+                <workDescKey>SWCP_Hospital_Desc</workDescKey>
+                <workButtonIconTexPath>Items/Medkits/medkit_a</workButtonIconTexPath>
+                <additionalRestFall>0.25</additionalRestFall>
+                <tendCaravanMembersEveryTicks>600</tendCaravanMembersEveryTicks>
+                <medicinesToTend>
+                    <li>KOTOR_SpacerMedKit</li>
+                </medicinesToTend>
+                <immunityGainSpeedMultiplier>2</immunityGainSpeedMultiplier>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Medical_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Medical_Training_Desc</workDescKey>
+                <!-- <workButtonIconTexPath>UI/Icons/medicsigil</workButtonIconTexPath> -->
+                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Treat_Injury</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Medicine>500</Medicine>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.25</additionalRestFall>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Shooting_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Shooting_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Blaster_Pistol</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Shooting>500</Shooting>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.3</additionalRestFall>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Survival_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Survival_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Animals>450</Animals>
+                    <Construction>350</Construction>
+                    <Cooking>350</Cooking>
+                    <Crafting>500</Crafting>
+                    <Plants>450</Plants>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.5</additionalRestFall>
+            </li>
+        </workOptions>
+
+        <!-- Bounty Options -->
+
+        <turnInIsEnabled>true</turnInIsEnabled>
+        <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
+        <turnInDescKey>SWCP_Turn_In_Desc</turnInDescKey>
+        <turnInButtonIconTexPath>UI/Icons/stormtrooper</turnInButtonIconTexPath>
+		
+        <turnInTraderKind>guy762_TraderKind_PrisonerExchange_rebel</turnInTraderKind>
+		
+        <turnInThought>SWCP_Thought_PrisonerTurnedIn_rebels</turnInThought>
+        <turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
+        <turnInTraderNameKey>SWCP_Turn_In_Trader_Name</turnInTraderNameKey>
+
+        <!-- Drop Pod Options -->
+
+        <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
+
+        <!-- Resign Options -->
+
+        <resignGoodwillGain>-25</resignGoodwillGain>
+        <resignMenuTextKey>SWCP_Resign_Menu_Text</resignMenuTextKey>
+        <resignLetterTitleKey>SWCP_Resign_Letter_Title</resignLetterTitleKey>
+        <resignLetterLabelKey>SWCP_Resign_Letter_Label</resignLetterLabelKey>
+        <resignButtonLabelKey>SWCP_Resign_Button_Label</resignButtonLabelKey>
+        <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
+        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_Rebellion</resignButtonIconTexPath>
+
+        <!-- Kicked Out Options -->
+
+        <kickOutLetterTitleKey>SWCP_Kick_Out_Letter_Title</kickOutLetterTitleKey>
+        <kickOutLetterLabelKey>SWCP_Kick_Out_Label_Title</kickOutLetterLabelKey>
+
+        <!-- Reinforcements Options -->
+
+        <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
+        <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
+        <reinforcementsButtonDescKey>SWCP_Reinforcements_Button_Desc</reinforcementsButtonDescKey>
+        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_RebelCell</reinforcementsButtonIconTexPath>
+        <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost>
+        <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks>
+        <reinforcementOptions>
+            <li>
+                <relationsRange>75~100</relationsRange>
+                <pointsRange>800~1800</pointsRange>
+            </li>
+            <li>
+                <relationsRange>50~74</relationsRange>
+                <pointsRange>600~850</pointsRange>
+            </li>
+            <li>
+                <relationsRange>26~49</relationsRange>
+                <pointsRange>400~600</pointsRange>
+            </li>
+            <li>
+                <relationsRange>-100~25</relationsRange>
+                <pointsRange>100~200</pointsRange>
+            </li>
+        </reinforcementOptions>
+
+    </SWCP.Enlist.FactionEnlistOptionsDef>
+	
+	
+	<TraderKindDef>
+        <defName>guy762_TraderKind_PrisonerExchange_rebel</defName>
+        <label>Rebel Prisoner Exchange</label>
+        <category>Slaver</category>
+        <stockGenerators>
+
+            <!--__ Slaves __-->
+
+            <li Class="SWCP.Core.StockGenerator_PawnsWithXenotype">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>2~5</countRange>
+                <slaveKindDef>SWCPCivilian_slavelaborer</slaveKindDef>
+            </li>
+
+            <!--__ Currency __-->
+
+            <!-- NCR Dollars -->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>guy762_KotORcredits</thingDef>
+                <countRange>750~1200</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+	
+	<ThoughtDef>
+        <defName>SWCP_Thought_PrisonerTurnedIn_rebels</defName>
+        <durationDays>3</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>turned in an outlaw</label>
+                <description>We apprehended a suspect and they're now being taken to the NCRCF.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

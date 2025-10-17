@@ -60,53 +60,61 @@
 	
 	<settlementGenerationWeight>6</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li Class="SWCP.Currencies.CurrencyReplacement">
-		<currency>guy762_KotORcredits</currency>
-	  </li>
-	  <li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
-		<arrivalModes>
-			<li>CenterDrop</li>
-			<li>RandomDrop</li>
-		</arrivalModes>
-	  </li>
-	  <li Class="VEF.Factions.FactionDefExtension">
-		<startingGoodwillByFactionDefs>
-			<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
-			<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
-			<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
-			
-			<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
-			<guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell>
-			<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
-			
-			<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
-			<guy762_SWWarlordsFaction_BlackSun>-75~-25</guy762_SWWarlordsFaction_BlackSun>
-			<!-- . -->
-			<!-- <guy762_KotORFaction_HuttCartel>-25~25</guy762_KotORFaction_HuttCartel> -->
-			<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
-			
-			<!-- <guy762_KotORFaction_MandoClan>0~25</guy762_KotORFaction_MandoClan> -->
-			<!-- <guy762_KotORFaction_SavageMandos>-50</guy762_KotORFaction_SavageMandos> -->
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+		<li Class="SWCP.Enlist.FactionEnlistOptions">
+			<enlistOptionsDefs>
+				<li>guy762_SWFactionEnlistment_RebelCell</li>
+			</enlistOptionsDefs>
+			<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+		</li>
+		<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<arrivalModes>
+				<li>CenterDrop</li>
+				<li>RandomDrop</li>
+				<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
+			</arrivalModes>
+		</li>
+		<li Class="SWCP_Shuttles.FactionModExtension">
+			<transportShipDef>guy762_SWShuttleTransportShip_uwing</transportShipDef>
+			<minDistanceBetweenShuttles>10</minDistanceBetweenShuttles>
+			<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
+		</li>
+		<li Class="VEF.Factions.FactionDefExtension">
+			<startingGoodwillByFactionDefs>
+				<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
+				<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
+				<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+				
+				<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
+				<guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell>
+				<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
+				
+				<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
+				<guy762_SWWarlordsFaction_BlackSun>-75~-25</guy762_SWWarlordsFaction_BlackSun>
+				<!-- . -->
+				<!-- <guy762_KotORFaction_HuttCartel>-25~25</guy762_KotORFaction_HuttCartel> -->
+				<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
+				
+				<!-- <guy762_KotORFaction_MandoClan>0~25</guy762_KotORFaction_MandoClan> -->
+				<!-- <guy762_KotORFaction_SavageMandos>-50</guy762_KotORFaction_SavageMandos> -->
 
-			<guy762_KotORFaction_Civilians>25~100</guy762_KotORFaction_Civilians>
-		</startingGoodwillByFactionDefs>
-		<excludeFromCommConsole>false</excludeFromCommConsole>
-		<hasCities>true</hasCities>
-		<minDistanceToOtherSettlements>15</minDistanceToOtherSettlements>
-      </li>
-	  <!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
-			<!-- <territoryColor>(205,125,20,32)</territoryColor> -->
-			<!-- <territoryBorderColor>(205,125,20,128)</territoryBorderColor> -->
-			<!-- <factionLabelColor>(205,125,20,255)</factionLabelColor> -->
-			<!-- <initialTerritoryRadius>10</initialTerritoryRadius> -->
-			<!-- <renderTerritoryOverWater>false</renderTerritoryOverWater> -->
-	  <!-- </li> -->
-			<!-- <territoryBorderColor>(100,60,10,128)</territoryBorderColor> -->
-			<!-- <factionLabelColor>(100,60,10,255)</factionLabelColor> -->
-			
-			
-			
-		
+				<guy762_KotORFaction_Civilians>25~100</guy762_KotORFaction_Civilians>
+			</startingGoodwillByFactionDefs>
+			<excludeFromCommConsole>false</excludeFromCommConsole>
+			<hasCities>true</hasCities>
+			<minDistanceToOtherSettlements>15</minDistanceToOtherSettlements>
+		</li>
+		<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+				<!-- <territoryColor>(205,125,20,32)</territoryColor> -->
+				<!-- <territoryBorderColor>(205,125,20,128)</territoryBorderColor> -->
+				<!-- <factionLabelColor>(205,125,20,255)</factionLabelColor> -->
+				<!-- <initialTerritoryRadius>10</initialTerritoryRadius> -->
+				<!-- <renderTerritoryOverWater>false</renderTerritoryOverWater> -->
+		<!-- </li> -->
+				<!-- <territoryBorderColor>(100,60,10,128)</territoryBorderColor> -->
+				<!-- <factionLabelColor>(100,60,10,255)</factionLabelColor> -->
     </modExtensions>
 	
     <allowedCultures>

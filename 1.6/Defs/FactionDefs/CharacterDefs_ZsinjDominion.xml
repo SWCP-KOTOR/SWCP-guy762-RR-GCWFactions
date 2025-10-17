@@ -150,7 +150,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_SecondGeneral</defName>
-        <pawnKind>SWZsinj_NavyAdmiral</pawnKind>
+        <pawnKind>SWZsinj_ArmyGeneral</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>

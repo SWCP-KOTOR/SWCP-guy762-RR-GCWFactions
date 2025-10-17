@@ -54,6 +54,7 @@
 		<arrivalModes>
 			<li>CenterDrop</li>
 			<li>RandomDrop</li>
+			<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 		</arrivalModes>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">

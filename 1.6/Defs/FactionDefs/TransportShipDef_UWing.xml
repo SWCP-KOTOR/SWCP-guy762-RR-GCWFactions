@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Vertibirds __________-->
+
+    <!--_____ Transport ship defs _____-->
+
+    <!-- NCR Standard Vertibird -->
+
+    <TransportShipDef>
+        <defName>guy762_SWShuttleTransportShip_uwing</defName>
+        <label>UT-60D U-wing troop transport</label>
+        <shipThing>guy762_SWShuttleThing_uwing</shipThing>
+        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_uwingIncoming</arrivingSkyfaller>
+        <leavingSkyfaller>guy762_SWShuttleSkyfaller_uwingLeaving</leavingSkyfaller>
+        <worldObject>guy762_SWShuttleWorldObject_uwing</worldObject>
+        <maxLaunchDistance>70</maxLaunchDistance>
+    </TransportShipDef>
+	
+	<!-- redundant defs for individual factions, don't ask me why this works -->
+	<TransportShipDef>
+        <defName>guy762_SWShuttleTransportShip_uwing_NR</defName>
+        <label>UT-60D U-wing troop transport</label>
+        <shipThing>guy762_SWShuttleThing_uwing</shipThing>
+        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_uwingIncoming</arrivingSkyfaller>
+        <leavingSkyfaller>guy762_SWShuttleSkyfaller_uwingLeaving</leavingSkyfaller>
+        <worldObject>guy762_SWShuttleWorldObject_uwing</worldObject>
+        <maxLaunchDistance>70</maxLaunchDistance>
+    </TransportShipDef>
+	
+	<TransportShipDef>
+        <defName>guy762_SWShuttleTransportShip_uwing_partisans</defName>
+        <label>UT-60D U-wing troop transport</label>
+        <shipThing>guy762_SWShuttleThing_uwing</shipThing>
+        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_uwingIncoming</arrivingSkyfaller>
+        <leavingSkyfaller>guy762_SWShuttleSkyfaller_uwingLeaving</leavingSkyfaller>
+        <worldObject>guy762_SWShuttleWorldObject_uwing</worldObject>
+        <maxLaunchDistance>70</maxLaunchDistance>
+    </TransportShipDef>
+
+    <!--_____ Building ThingDefs _____-->
+
+    <!-- NCR Standard Vertibird -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>guy762_SWShuttleThing_uwing</defName>
+        <label>UT-60D U-wing troop transport</label>
+        <description>.</description>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <passability>Impassable</passability>
+        <fillPercent>1.0</fillPercent>
+		<!--
+		24 - full length of craft
+		12 - length of cabin only
+		15 - length of cabin + engines
+		-->
+        <!-- <size>(9,24)</size> -->
+        <size>(15,9)</size>
+        
+		<drawHighlight>true</drawHighlight>
+        <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
+        <graphicData>
+            <texPath>Shuttles_MajesticMadman/uwing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(26,26)</drawSize>
+            <shadowData>
+                <volume>(4.1, 1.0, 1.8)</volume>
+                <offset>(0, 0, -0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>8000</MaxHitPoints> <!-- XWMG stats: 5 hull 3 shield -->
+            <Flammability>1</Flammability>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <canOverlapZones>true</canOverlapZones>
+        <killedLeavings>
+            <Plasteel>50</Plasteel>
+            <Uranium>50</Uranium>
+            <ChunkSlagSteel>4</ChunkSlagSteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </killedLeavings>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+        <drawerType>RealtimeOnly</drawerType>
+        <repairEffect>ConstructMetal</repairEffect>
+        <forceDebugSpawnable>true</forceDebugSpawnable>
+        <uiIconScale>1.4</uiIconScale>
+        <building>
+            <claimable>false</claimable>
+            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <inspectorTabs>
+            <li>ITab_ContentsTransporter</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Shuttle" />
+            <li Class="CompProperties_Transporter">
+                <massCapacity>2000</massCapacity>
+                <max1PerGroup>true</max1PerGroup>
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <showOverallStats>false</showOverallStats>
+                <pawnLoadedSound>kotorsound_select_shipgun</pawnLoadedSound>
+                <pawnExitSound>kotorsound_select_shipgun</pawnExitSound>
+            </li>
+           
+          <li Class="CompProperties_AmbientSound">
+            <sound>ShuttleIdle_Ambience</sound>
+          </li>
+        </comps>
+    </ThingDef>
+
+    <!--_____ WorldObjectDefs _____-->
+
+    <!-- NCR Standard Vertibird -->
+
+    <WorldObjectDef>
+        <defName>guy762_SWShuttleWorldObject_uwing</defName>
+        <label>UT-60D U-wing troop transport</label>
+        <description>.</description>
+        <worldObjectClass>TravellingTransporters</worldObjectClass>
+        <texture>World/WorldObjects/Caravan</texture>
+        <useDynamicDrawer>true</useDynamicDrawer>
+        <expandingIcon>true</expandingIcon>
+        <expandingIconTexture>Shuttles_MajesticMadman/uwing</expandingIconTexture>
+        <expandingIconPriority>60</expandingIconPriority>
+        <expandMore>true</expandMore>
+        <expandingIconDrawSize>1.6</expandingIconDrawSize>
+        <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+        <rotateGraphicWhenTraveling>true</rotateGraphicWhenTraveling>
+    </WorldObjectDef>
+
+    <!--_____ Skyfaller Defs _____-->
+
+    <!--___ Skyfaller Def Base ___-->
+
+    <!-- NCR Standard Vertibird -->
+
+    <ThingDef Name="guy762_SWShuttleSkyfaller_uwingBASE" ParentName="SkyfallerBase" Abstract="True">
+        <!-- <size>(9,24)</size> -->
+        <size>(15,9)</size>
+        <graphicData>
+            <texPath>Shuttles_MajesticMadman/uwing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutFlying</shaderType>
+            <drawSize>(26,26)</drawSize>
+        </graphicData>
+        <skyfaller>
+            <movementType>Decelerate</movementType>
+            <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+            <shadowSize>(5.5,3.5)</shadowSize>
+            <motesPerCell>1</motesPerCell>
+        </skyfaller>
+        <comps>
+        </comps>
+    </ThingDef>
+
+    <!--___ Skyfaller Def ___-->
+
+    <!--__ NCR Standard Vertibird __-->
+
+    <!-- NCR Standard Vertibird Incoming -->
+
+    <ThingDef ParentName="guy762_SWShuttleSkyfaller_uwingBASE">
+        <defName>guy762_SWShuttleSkyfaller_uwingIncoming</defName>
+        <label>UT-60D U-wing troop transport (incoming)</label>
+        <thingClass>ShuttleIncoming</thingClass>
+        <skyfaller>
+            <anticipationSound>Shuttle_Landing</anticipationSound>
+            <anticipationSoundTicks>250</anticipationSoundTicks>
+            <ticksToImpactRange>200~250</ticksToImpactRange>
+            <angleCurve>
+                <points>
+                    <li>(0,-60)</li>
+                    <li>(1,-90)</li>
+                </points>
+            </angleCurve>
+            <rotationCurve>
+                <points>
+                    <li>(0,30)</li>
+                    <li>(0.5,5)</li>
+                    <li>(0.9,-5)</li>
+                    <li>(0.95,0)</li>
+                </points>
+            </rotationCurve>
+            <zPositionCurve>
+                <points>
+                    <li>(0.95,2.5)</li>
+                    <li>(1,0)</li>
+                </points>
+            </zPositionCurve>
+            <speedCurve>
+                <points>
+                    <li>(0.6,0.6)</li>
+                    <li>(0.95,0.1)</li>
+                </points>
+            </speedCurve>
+        </skyfaller>
+    </ThingDef>
+
+    <!--__ NCR Standard Vertibird __-->
+
+    <!-- NCR Standard Vertibird Leaving -->
+
+    <ThingDef ParentName="guy762_SWShuttleSkyfaller_uwingBASE">
+        <defName>guy762_SWShuttleSkyfaller_uwingLeaving</defName>
+        <label>UT-60D U-wing troop transport (leaving)</label>
+        <thingClass>FlyShipLeaving</thingClass>
+        <skyfaller>
+            <reversed>true</reversed>
+            <anticipationSound>Shuttle_Leaving</anticipationSound>
+            <anticipationSoundTicks>-10</anticipationSoundTicks>
+            <ticksToImpactRange>-40~-15</ticksToImpactRange>
+            <moteSpawnTime>0.05</moteSpawnTime>
+            <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+            <shadowSize>(5.5,3.5)</shadowSize>
+            <motesPerCell>1</motesPerCell>
+            <angleCurve>
+                <points>
+                    <li>(0,90)</li>
+                    <li>(1,70)</li>
+                </points>
+            </angleCurve>
+            <rotationCurve>
+                <points>
+                    <li>(0,0)</li>
+                    <li>(0.15,10)</li>
+                    <li>(0.5,-5)</li>
+                </points>
+            </rotationCurve>
+            <zPositionCurve>
+                <points>
+                    <li>(0,0)</li>
+                    <li>(0.08,2)</li>
+                </points>
+            </zPositionCurve>
+            <speedCurve>
+                <points>
+                    <li>(0,0.2)</li>
+                    <li>(0.4,0.7)</li>
+                </points>
+            </speedCurve>
+        </skyfaller>
+    </ThingDef>
+
+</Defs>
