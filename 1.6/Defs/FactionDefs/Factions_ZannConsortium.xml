@@ -93,6 +93,9 @@
 		<excludeFromCommConsole>true</excludeFromCommConsole>
 		<hasCities>true</hasCities>
 		<minDistanceToOtherSettlements>20</minDistanceToOtherSettlements>
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
+		</allowedBiomes>
       </li>
     </modExtensions>
 	

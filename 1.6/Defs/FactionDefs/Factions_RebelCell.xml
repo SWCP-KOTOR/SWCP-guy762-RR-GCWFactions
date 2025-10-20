@@ -33,7 +33,7 @@
 	
     
 	
-    <factionNameMaker>guy762_NamerFaction_NRStarfleet</factionNameMaker>
+    <factionNameMaker>guy762_NamerFaction_RebelCell</factionNameMaker>
 	<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
 	<leaderTitle>general</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -464,6 +464,35 @@
 	
 	<raidLootMaker>guy762_RaidLootMaker_RebelCell</raidLootMaker>
   </FactionDef>
+  
+  
+  
+	<RulePackDef>
+		<defName>guy762_NamerFaction_RebelCell</defName>
+		<include>
+		  <li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=5)->[nearnameinitial] [liberationarmy]</li>
+			<li>r_name(p=4)->[nearnameinitial] [liberationfront]</li>
+			<li>r_name(p=3)->[nearnameinitial] [cell]</li>
+			<li>r_name(p=2)->-[nearnameinitial]-[nearnameinitial] [liberationarmy]</li>
+			<li>r_name(p=1)->[nearnameinitial]-[nearnameinitial] [liberationfront]</li>
+			
+			<li>cell->Cell</li>
+			<li>liberationarmy->Liberation Army</li>
+			<li>liberationfront->Liberation Front</li>
+			<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  
+  
+  
+  
+  
+  
   
   <ThingSetMakerDef>
     <defName>guy762_RaidLootMaker_RebelCell</defName>

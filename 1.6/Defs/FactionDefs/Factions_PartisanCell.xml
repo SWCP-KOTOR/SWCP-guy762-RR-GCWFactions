@@ -33,7 +33,7 @@
 		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<factionNameMaker>guy762_NamerFaction_PartisanCell</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<leaderTitle>warlord</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -530,6 +530,37 @@
 		
 	  <raidLootMaker>guy762_RaidLootMaker_PartisanCell</raidLootMaker>
   </FactionDef>
+  
+  
+  
+  
+  <RulePackDef>
+		<defName>guy762_NamerFaction_PartisanCell</defName>
+		<include>
+		  <li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=3)->[political_prefix] of [nearnameinitial]</li>
+			<!-- <li>r_name(p=3)->[nearnameinitial] [political_suffix]</li> -->
+			<li>r_name->[nearnameinitial]-[nearnameinitial] [political_suffix]</li>
+			<li>r_name->[political_prefix] of [nearnameinitial] and [nearnameinitial]</li>
+			
+			<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+			<li>prefix->[political_prefix]</li>
+			<li>suffix->[political_suffix]</li>
+		  </rulesStrings>
+		  <rulesFiles>
+			<li>political_prefix->Names/PoliticalUnions_prefix</li>
+			<li>political_suffix->Names/PoliticalUnions_suffix</li>
+		  </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	
+	
   
   
   
