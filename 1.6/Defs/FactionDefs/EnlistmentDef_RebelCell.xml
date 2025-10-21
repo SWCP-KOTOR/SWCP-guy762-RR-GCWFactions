@@ -10,7 +10,7 @@
         <minGoodwillRequrementToEnlist>10</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
 
-        <!-- Enlistment Options -->
+    <!-- Enlistment Options -->
 
         <enlistLetterTitleKey>SWCP_Enlist_Letter_Title</enlistLetterTitleKey>
         <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
@@ -22,7 +22,7 @@
         <enlistedSoundDef>kotorsound_levelup</enlistedSoundDef>
         <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
 
-        <!-- Mission Options -->
+    <!-- Mission Options -->
 
         <missionsAreEnabled>true</missionsAreEnabled>
         <missionsLabelKey>SWCP_Missions_Label</missionsLabelKey>
@@ -38,7 +38,7 @@
         <missionsQuestCost>50</missionsQuestCost>
         <missionsMenuStartQuestNoEnoughMoneyKey>SWCP_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
 
-        <!-- Salary Options -->
+    <!-- Salary Options -->
 
         <salaryIsEnabled>true</salaryIsEnabled>
         <salaryDef>guy762_KotORcredits</salaryDef>
@@ -48,7 +48,7 @@
         <salaryRange>1200~2500</salaryRange>
         <salaryPeriodDays>14</salaryPeriodDays>
 
-        <!-- Provision Options -->
+    <!-- Provision Options -->
 
         <provisionOptions>
             <li>
@@ -82,14 +82,14 @@
             <!-- </li> -->
         </provisionOptions>
 
-        <!-- Storage Options -->
+    <!-- Storage Options -->
 
         <storageIsEnabled>true</storageIsEnabled>
         <storageLabelKey>SWCP_Storage_Label</storageLabelKey>
         <storageDescKey>SWCP_Storage_Desc</storageDescKey>
         <storageButtonIconTexPath>UI/Icons/storage</storageButtonIconTexPath>
 
-        <!-- Work Options -->
+    <!-- Work Options -->
 
         <recreationGainPerTick>0.0001</recreationGainPerTick>
         <workOptions>
@@ -145,7 +145,7 @@
             </li>
         </workOptions>
 
-        <!-- Bounty Options -->
+    <!-- Bounty Options -->
 
         <turnInIsEnabled>true</turnInIsEnabled>
         <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
@@ -158,11 +158,11 @@
         <turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
         <turnInTraderNameKey>SWCP_Turn_In_Trader_Name</turnInTraderNameKey>
 
-        <!-- Drop Pod Options -->
+    <!-- Drop Pod Options -->
 
         <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
 
-        <!-- Resign Options -->
+    <!-- Resign Options -->
 
         <resignGoodwillGain>-25</resignGoodwillGain>
         <resignMenuTextKey>SWCP_Resign_Menu_Text</resignMenuTextKey>
@@ -172,12 +172,12 @@
         <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
         <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_Rebellion</resignButtonIconTexPath>
 
-        <!-- Kicked Out Options -->
+    <!-- Kicked Out Options -->
 
         <kickOutLetterTitleKey>SWCP_Kick_Out_Letter_Title</kickOutLetterTitleKey>
         <kickOutLetterLabelKey>SWCP_Kick_Out_Label_Title</kickOutLetterLabelKey>
 
-        <!-- Reinforcements Options -->
+    <!-- Reinforcements Options -->
 
         <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
         <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
@@ -240,7 +240,7 @@
         <stages>
             <li>
                 <label>turned in an outlaw</label>
-                <description>We apprehended a suspect and they're now being taken to the NCRCF.</description>
+                <description>We apprehended an Imperial and they're now being debriefed by Rebel Intelligence.</description>
                 <baseMoodEffect>2</baseMoodEffect>
             </li>
         </stages>

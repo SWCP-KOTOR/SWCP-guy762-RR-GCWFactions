@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="SWPrisoner_Rebel_agent" ParentName="SWRebel_agent">
+		<defName>SWPrisoner_Rebel_agent</defName>
+		<combatPower>30</combatPower>
+		<apparelTags Inherit="False">
+			<li>NewRepublic_RebelAgent_hats</li>
+			<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
+			<li>SWCPSpecificApparelItem_ScoutVest</li>
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_poncho</li>
+			<li>guy762_Jacket_scout</li>
+			<li>guy762_Clothing_rebel</li>
+		</apparelRequired>
+		
+		<weaponMoney>0</weaponMoney>
+		<weaponTags Inherit="False" />
+		<inventoryOptions Inherit="False" />
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWPrisoner_Rebel_ArmyLt" ParentName="SWRebel_ArmyLt">
+		<defName>SWPrisoner_Rebel_ArmyLt</defName>
+		<combatPower>30</combatPower>
+		<apparelTags Inherit="False">
+			<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
+			<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_RebelCombatSuit_lowrank</li>
+			<li>guy762_Clothing_RebelCamoII</li>
+		</apparelRequired>
+		<weaponMoney>0</weaponMoney>
+		<weaponTags Inherit="False" />
+		<inventoryOptions Inherit="False" />
+	</PawnKindDef>
+	  
+	  
+	  
+	
+
+</Defs>

@@ -210,6 +210,14 @@
 			</li>
 			<li Class="BigAndSmall.PawnExtension">
 				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_PlantWorkDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+				</disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
 				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CraftingDisabled</li></exclusionTags>
 				<disabledWorkTypes><li>Crafting</li></disabledWorkTypes>
 			</li>
@@ -246,7 +254,6 @@
 					
 					<li>SWCPWorkTypeDisablerHediff_Hunting</li>
 					<li>SWCPWorkTypeDisablerHediff_Cooking</li>
-					<li>SWCPWorkTypeDisablerHediff_PlantWork</li>
 					<li>SWCPWorkTypeDisablerHediff_Animals</li>
 					<li>SWCPWorkTypeDisablerHediff_Artistic</li>
 					<li>SWCPWorkTypeDisablerHediff_Caring</li>

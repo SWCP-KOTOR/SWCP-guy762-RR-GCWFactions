@@ -43,7 +43,8 @@
 		
 		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-		<settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+		<!-- <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath> -->
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<!--<naturalEnemy>true</naturalEnemy>-->
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
@@ -53,8 +54,11 @@
 			</li>
 			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
 				<arrivalModes>
+					<li>EdgeDrop</li>
+					<li>EdgeDropGroups</li>
 					<li>CenterDrop</li>
 					<li>RandomDrop</li>
+					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
 			<li Class="SWCP_Shuttles.FactionModExtension">

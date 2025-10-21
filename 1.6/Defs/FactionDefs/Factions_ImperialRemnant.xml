@@ -120,11 +120,11 @@
 			<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 		</li>
 		<li Class="SWCP.Core.ModExtension_FactionTerritory">
-				<territoryColor>(25,110,30,32)</territoryColor>
-				<territoryBorderColor>(25,110,30,128)</territoryBorderColor>
-				<factionLabelColor>(25,110,30,255)</factionLabelColor>
-				<initialTerritoryRadius>10</initialTerritoryRadius>
-				<renderTerritoryOverWater>false</renderTerritoryOverWater>
+			<territoryColor>(25,110,30,32)</territoryColor>
+			<territoryBorderColor>(25,110,30,128)</territoryBorderColor>
+			<factionLabelColor>(25,110,30,255)</factionLabelColor>
+			<initialTerritoryRadius>10</initialTerritoryRadius>
+			<renderTerritoryOverWater>false</renderTerritoryOverWater>
 		</li>
 			<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
 			<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->

@@ -259,6 +259,14 @@
 					<li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li>
 				</disabledWorkTypes>
 			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_PlantWorkDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+				</disabledWorkTypes>
+			</li>
 			
 			
 			
@@ -288,7 +296,6 @@
 					
 					<li>SWCPWorkTypeDisablerHediff_Hunting</li>
 					<li>SWCPWorkTypeDisablerHediff_Cooking</li>
-					<li>SWCPWorkTypeDisablerHediff_PlantWork</li>
 					<li>SWCPWorkTypeDisablerHediff_Animals</li>
 					<li>SWCPWorkTypeDisablerHediff_Crafting</li>
 					<li>SWCPWorkTypeDisablerHediff_Artistic</li>
@@ -310,6 +317,9 @@
 					<absolutelyNothing>True</absolutelyNothing>
 					<tags>
 						<allowlist>
+							<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+							<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+							
 							<li>SWCPDroidApparelRestrictionTag_MediumArmor</li>
 							<li>SWCPDroidApparelRestrictionTag_ShieldSlot</li>
 							

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Site Defs __________-->
+
+    <!-- Site Facility -->
+
+    <SitePartDef>
+        <defName>SWCP_Site_Facility</defName>
+        <label>facility</label>
+        <description>A facility.</description>
+        <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+        <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+        <showFactionInInspectString>true</showFactionInInspectString>
+        <requiresFaction>true</requiresFaction>
+        <approachOrderString>Approach {0}</approachOrderString>
+        <approachingReportString>Approaching {0}</approachingReportString>
+        <arrivedLetter>Arrived to the settlement.</arrivedLetter>
+        <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <minThreatPoints>0</minThreatPoints>
+        <considerEnteringAsAttack>False</considerEnteringAsAttack>
+        <tags Inherit="False">
+            <li>SWCP_Site_Facility</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>SWCP_Site_Facility</defName>
+        <linkWithSite>SWCP_Site_Facility</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost">
+            <generateLoot>false</generateLoot>
+            <pawnGroupKindDef>Combat</pawnGroupKindDef>
+        </genStep>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>SWCP_FacilityPower</defName>
+        <linkWithSite>SWCP_Site_Facility</linkWithSite>
+        <order>451</order>
+        <genStep Class="GenStep_Power"/>
+    </GenStepDef>
+
+    <!-- <GenStepDef> -->
+        <!-- <defName>SWCP_FacilityBuilding</defName> -->
+        <!-- <linkWithSite>SWCP_Site_Facility</linkWithSite> -->
+        <!-- <order>452</order> -->
+        <!-- <genStep Class="SWCP.RadiantQuests.GenStep_SpawnBuildingInRoom"> -->
+            <!-- <buildingDef>SWCP_Power_Armor_VR_Pod</buildingDef> -->
+        <!-- </genStep> -->
+    <!-- </GenStepDef> -->
+
+</Defs>

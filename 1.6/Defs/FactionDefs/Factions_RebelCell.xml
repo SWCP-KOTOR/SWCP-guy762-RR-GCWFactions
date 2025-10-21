@@ -71,8 +71,10 @@
 		</li>
 		<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
 			<arrivalModes>
-				<li>CenterDrop</li>
-				<li>RandomDrop</li>
+				<li>EdgeDrop</li>
+                <li>EdgeDropGroups</li>
+                <li>CenterDrop</li>
+                <li>RandomDrop</li>
 				<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 			</arrivalModes>
 		</li>
