@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="SWEriadu_Base" Abstract="True">
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<race>Human</race>
+
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<!-- <backstoryFiltersOverride> -->
+			<!-- <li> -->
+				<!-- <categories> -->
+					<!-- <li>Pirate</li> -->
+					<!-- <li>Offworld</li> -->
+					<!-- <li>Outlander</li> -->
+					<!-- <li>ImperialFighter</li> -->
+					<!-- <li>Madman</li> -->
+				<!-- </categories> -->
+			<!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
+
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+
+		<disallowedTraits>
+			<li>BodyPurist</li>
+			<li>Nudist</li>
+		</disallowedTraits>
+
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+
+	<PawnKindDef Name="SWEriadu_TrooperBase" ParentName="SWEriadu_Base" Abstract="True">
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Hulk</li>
+					<li>Thin</li>
+				</whitelist>
+				<blacklist>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+
+		<disallowedTraits>
+			<li>Wimp</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- army personnel -->
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyConscript" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>SWEriadu_ArmyConscript</defName>
+		<label>army conscript</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<itemQuality>Poor</itemQuality>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color> <!-- dark grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyTrooper" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>SWEriadu_ArmyTrooper</defName>
+		<label>army trooper</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<itemQuality>Normal</itemQuality>
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>KotORUtility_weakgrenade</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>RemnantEmpire_armyveterantrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>EyeCover</apparelLayer>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<!-- <apparelDef>guy762_ArmyTrooperGasMask</apparelDef> -->
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(80,80,90)</color> <!-- blueish dark grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyHeavy" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>SWEriadu_ArmyHeavy</defName>
+		<label>army heavy trooper</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		
+		<itemQuality>Normal</itemQuality>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(80,80,90)</color> <!-- blueish dark grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyLieutenant" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>SWEriadu_ArmyLieutenant</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<quality>Normal</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+
+	<PawnKindDef Name="SWEriadu_ArmyMajor" ParentName="SWImpRemnant_ArmyMajor">
+		<defName>SWEriadu_ArmyMajor</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		
+		<weaponMoney>400~1450</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_SE14pistol</li>
+			<li>SWRanged_Power5pistol</li>
+		</weaponTags>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<quality>Good</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+		<abilities Inherit="False">
+			<li>guy762_Ability_CommandTierIV</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
+		<defName>SWEriadu_ArmyGeneral_field</defName>
+		<label>army general</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		
+		<weaponMoney>400~1450</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_SE14pistol</li>
+			<li>SWRanged_Power5pistol</li>
+		</weaponTags>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<quality>Excellent</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+		<abilities Inherit="False">
+			<li>guy762_Ability_CommandTierIII</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_TankDriver" ParentName="SWImpRemnant_TankDriver">
+		<defName>SWEriadu_TankDriver</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWEriadu_TankHvyDriver" ParentName="SWImpRemnant_TankHvyDriver">
+		<defName>SWEriadu_TankHvyDriver</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~10</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- officers -->
+	
+	<PawnKindDef Name="SWEriadu_NavyLt" ParentName="SWImpRemnant_NavyLt">
+		<defName>SWEriadu_NavyLt</defName>
+		<label>navy lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWEriadu_NavyCaptain" ParentName="SWImpRemnant_NavyCaptain">
+		<defName>SWEriadu_NavyCaptain</defName>
+		<label>navy captain</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWEriadu_NavyAdmiral" ParentName="SWImpRemnant_NavyAdmiral">
+		<defName>SWEriadu_NavyAdmiral</defName>
+		<label>navy admiral</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Excellent</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyGeneral" ParentName="SWImpRemnant_ArmyGeneral">
+		<defName>SWEriadu_ArmyGeneral</defName>
+		<label>army general</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Excellent</quality>
+			</li>
+		</specificApparelRequirements>
+		<abilities Inherit="False">
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<li>guy762_Ability_CommandTierIV</li>
+		</abilities>
+	</PawnKindDef>
+	
+
+
+
+</Defs>

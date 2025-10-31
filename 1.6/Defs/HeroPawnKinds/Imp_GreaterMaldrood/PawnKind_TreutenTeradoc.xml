@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_TreutenTeradoc"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_TreutenTeradoc</defName>
+		<nameMaker>guy762_HeroNamer_TreutenTeradoc</nameMaker>
+		<label>High Admiral</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>51</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>BraidedKnot</forcedHair>
+		<forcedHairColor>(0.65, 0.65, 0.65)</forcedHairColor>
+		<skinColorOverride>(255, 239, 189)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ImpUniform_topbrass</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_treutenteradoc</styleDef>
+				<color>(170,160,150)</color> <!-- stone grey -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWMelee_Vibrosword</li>
+		</weaponTags>
+		<!-- <skills> -->
+		<!-- </skills> -->
+		<forcedTraits>
+			<Jealous>0</Jealous>
+			<Nerves>2</Nerves>
+			<Psychopath>0</Psychopath>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_TreutenTeradoc</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>Moustache</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_Gray</li>
+					<li>Skin_Melanin4</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	  
+	  
+	<PawnKindDef Name="SWCharPawnGM_TreutenTeradoc"  ParentName="SWWEPlayableVillain_TreutenTeradoc">
+		<defName>SWCharPawnGM_TreutenTeradoc</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+	</PawnKindDef>
+	  
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_TreutenTeradoc</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[treuten] '[treuten]' [teradoc]</li>
+				<li>treuten->Treuten</li>
+				<li>teradoc->Teradoc</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_TreutenTeradoc</defName>
+		<title>Underclass Cadet</title>
+		<titleShort>Cadet</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<!-- <workDisables>ManualDumb, Constructing, Crafting, Cooking, Mining, Caring</workDisables> -->
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TreutenTeradoc</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TreutenTeradoc</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_TreutenTeradoc</defName>
+		<title>High Admiral</title>
+		<titleShort>High Admiral</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>15</Social>
+			<Intellectual>15</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>ManualDumb, Constructing, Crafting, PlantWork, Cooking, Mining, Caring</workDisables>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TreutenTeradoc</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TreutenTeradoc</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

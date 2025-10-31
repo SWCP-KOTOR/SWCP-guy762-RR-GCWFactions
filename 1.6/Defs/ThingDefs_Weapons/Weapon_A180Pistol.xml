@@ -20,8 +20,8 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.70</AccuracyMedium>
 			<AccuracyLong>0.60</AccuracyLong>
-			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
-			<RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<RangedWeapon_DamageMultiplier>0.9</RangedWeapon_DamageMultiplier>
 		</statBases>
 		
 		<weaponTags>
@@ -34,11 +34,23 @@
 			<li>guy762TT_KotORRanged</li>
 		</tradeTags>
 		<verbs>
+			<!-- <li> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_default</defaultProjectile> -->
+				<!-- <warmupTime>0.5</warmupTime> -->
+				<!-- <range>20</range> -->
+				<!-- <ticksBetweenBurstShots>12</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <soundCast>kotorsound_silencedblaster</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+			<!-- </li> -->
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
+				<warmupTime>0.75</warmupTime>
 				<range>20</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>

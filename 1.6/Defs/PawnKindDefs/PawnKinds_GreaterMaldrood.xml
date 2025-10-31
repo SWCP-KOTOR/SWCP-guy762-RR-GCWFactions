@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="SWMaldrood_Base" Abstract="True">
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<race>Human</race>
+
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<!-- <backstoryFiltersOverride> -->
+			<!-- <li> -->
+				<!-- <categories> -->
+					<!-- <li>Pirate</li> -->
+					<!-- <li>Offworld</li> -->
+					<!-- <li>Outlander</li> -->
+					<!-- <li>ImperialFighter</li> -->
+					<!-- <li>Madman</li> -->
+				<!-- </categories> -->
+			<!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
+
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+
+		<disallowedTraits>
+			<li>BodyPurist</li>
+			<li>Nudist</li>
+		</disallowedTraits>
+
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+
+	<PawnKindDef Name="SWMaldrood_TrooperBase" ParentName="SWMaldrood_Base" Abstract="True">
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Hulk</li>
+					<li>Thin</li>
+				</whitelist>
+				<blacklist>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+
+		<disallowedTraits>
+			<li>Wimp</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- army personnel -->
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyConscript" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>SWMaldrood_ArmyConscript</defName>
+		<label>army conscript</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,85,65)</color>  <!-- grease -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyTrooper" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>SWMaldrood_ArmyTrooper</defName>
+		<label>army trooper</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>EyeCover</apparelLayer>
+				<bodyPartGroup>Mouth</bodyPartGroup>
+				<!-- <apparelDef>guy762_ArmyTrooperGasMask</apparelDef> -->
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,85,65)</color>  <!-- grease -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyHeavy" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>SWMaldrood_ArmyHeavy</defName>
+		<label>army heavy trooper</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<itemQuality>Poor</itemQuality>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,85,65)</color>  <!-- grease -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyLieutenant" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>SWMaldrood_ArmyLieutenant</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+				<quality>Normal</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+
+	<PawnKindDef Name="SWMaldrood_ArmyMajor" ParentName="SWImpRemnant_ArmyMajor">
+		<defName>SWMaldrood_ArmyMajor</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<weaponMoney>400~1450</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_SE14pistol</li>
+			<li>SWRanged_Power5pistol</li>
+		</weaponTags>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+				<quality>Good</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
+		<defName>SWMaldrood_ArmyGeneral_field</defName>
+		<label>army general</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<weaponMoney>400~1450</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_SE14pistol</li>
+			<li>SWRanged_Power5pistol</li>
+		</weaponTags>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+				<quality>Excellent</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_TankDriver" ParentName="SWImpRemnant_TankDriver">
+		<defName>SWMaldrood_TankDriver</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(55,50,50)</color>        <!-- red-tint black -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWMaldrood_TankHvyDriver" ParentName="SWImpRemnant_TankHvyDriver">
+		<defName>SWMaldrood_TankHvyDriver</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(55,50,50)</color>        <!-- red-tint black -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(55,50,50)</color>        <!-- red-tint black -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~10</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- officers -->
+	
+	<PawnKindDef Name="SWMaldrood_NavyLt" ParentName="SWImpRemnant_NavyLt">
+		<defName>SWMaldrood_NavyLt</defName>
+		<label>navy lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWMaldrood_NavyCaptain" ParentName="SWImpRemnant_NavyCaptain">
+		<defName>SWMaldrood_NavyCaptain</defName>
+		<label>navy captain</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWMaldrood_NavyAdmiral" ParentName="SWImpRemnant_NavyAdmiral">
+		<defName>SWMaldrood_NavyAdmiral</defName>
+		<label>navy admiral</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Excellent</quality>
+			</li>
+		</specificApparelRequirements>
+		<abilities Inherit="False">
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<li>guy762_Ability_CommandTierIV</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyGeneral" ParentName="SWImpRemnant_ArmyGeneral">
+		<defName>SWMaldrood_ArmyGeneral</defName>
+		<label>army general</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Excellent</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+
+
+
+</Defs>

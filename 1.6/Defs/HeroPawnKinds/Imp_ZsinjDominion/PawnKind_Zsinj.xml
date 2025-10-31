@@ -38,7 +38,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_RK3pistol</li>
+			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->
@@ -136,14 +136,14 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="SWZsinj_WarlordZsinj"  ParentName="SWWEPlayableVillain_Zsinj">
-		<defName>SWZsinj_WarlordZsinj</defName>
+	<PawnKindDef Name="SWCharPawnZJ_WarlordZsinj"  ParentName="SWWEPlayableVillain_Zsinj">
+		<defName>SWCharPawnZJ_WarlordZsinj</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_Zsinj</defName>
         <rulePack>
             <rulesStrings> <!-- the namemaker will not function without a first and last name -->

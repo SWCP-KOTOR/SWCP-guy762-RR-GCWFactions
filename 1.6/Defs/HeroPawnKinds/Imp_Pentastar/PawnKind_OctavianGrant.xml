@@ -132,8 +132,8 @@
 	  </PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWPentastar_OctavianGrant"  ParentName="SWWEPlayableVillain_OctavianGrant">
-		<defName>SWPentastar_OctavianGrant</defName>
+	  <PawnKindDef Name="SWCharPawnPA_OctavianGrant"  ParentName="SWWEPlayableVillain_OctavianGrant">
+		<defName>SWCharPawnPA_OctavianGrant</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
 	  </PawnKindDef>
 	  

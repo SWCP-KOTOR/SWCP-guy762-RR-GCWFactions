@@ -13,7 +13,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_TessalaCorvae</defName>
-        <pawnKind>SWPentastar_TessalaCorvae</pawnKind>
+        <pawnKind>SWCharPawnPA_TessalaCorvae</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -33,7 +33,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_ArdusKaine</defName>
-        <pawnKind>SWPentastar_ArdusKaine</pawnKind>
+        <pawnKind>SWCharPawnPA_ArdusKaine</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -46,12 +46,25 @@
 
     <SWCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_OctavianGrant</defName>
-        <pawnKind>SWPentastar_OctavianGrant</pawnKind>
+        <pawnKind>SWCharPawnPA_OctavianGrant</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="SWCP.Core.CharacterRole_FactionLeader">
                 <seniority>200</seniority> <!-- de jure supreme commander of the faction's military -->
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWPentastarCharacter_EltaBesk</defName>
+        <pawnKind>SWCharPawnPA_EltaBesk</pawnKind>
+        <faction>guy762_SWWarlordsFaction_Pentastar</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>300</seniority>
             </li>
         </roles>
     </SWCP.Core.CharacterDef>

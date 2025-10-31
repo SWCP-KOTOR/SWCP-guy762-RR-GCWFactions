@@ -7,7 +7,7 @@
 
     <!-- NCR Standard Vertibird -->
 
-    <TransportShipDef>
+    <TransportShipDef Name="guy762_SWShuttleTransportShip_lambda">
         <defName>guy762_SWShuttleTransportShip_lambda</defName>
         <label>Lambda-class T-4a shuttle</label>
         <shipThing>guy762_SWShuttleThing_lambda</shipThing>
@@ -18,24 +18,20 @@
     </TransportShipDef>
 	
 	<!-- redundant defs for individual factions, don't ask me why this works -->
-	<TransportShipDef>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
         <defName>guy762_SWShuttleTransportShip_lambda_pentastar</defName>
-        <label>Lambda-class T-4a shuttle</label>
-        <shipThing>guy762_SWShuttleThing_lambda</shipThing>
-        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_lambdaIncoming</arrivingSkyfaller>
-        <leavingSkyfaller>guy762_SWShuttleSkyfaller_lambdaLeaving</leavingSkyfaller>
-        <worldObject>guy762_SWShuttleWorldObject_lambda</worldObject>
-        <maxLaunchDistance>70</maxLaunchDistance>
     </TransportShipDef>
 	
-	<TransportShipDef>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
         <defName>guy762_SWShuttleTransportShip_lambda_zsinj</defName>
-        <label>Lambda-class T-4a shuttle</label>
-        <shipThing>guy762_SWShuttleThing_lambda</shipThing>
-        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_lambdaIncoming</arrivingSkyfaller>
-        <leavingSkyfaller>guy762_SWShuttleSkyfaller_lambdaLeaving</leavingSkyfaller>
-        <worldObject>guy762_SWShuttleWorldObject_lambda</worldObject>
-        <maxLaunchDistance>70</maxLaunchDistance>
+    </TransportShipDef>
+	
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
+        <defName>guy762_SWShuttleTransportShip_lambda_maldrood</defName>
+    </TransportShipDef>
+	
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
+        <defName>guy762_SWShuttleTransportShip_lambda_eriadu</defName>
     </TransportShipDef>
 
     <!--_____ Building ThingDefs _____-->

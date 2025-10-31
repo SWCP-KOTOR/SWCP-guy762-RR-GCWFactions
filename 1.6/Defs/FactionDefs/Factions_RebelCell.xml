@@ -17,8 +17,8 @@
 	
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-	<listOrderPriority>1766</listOrderPriority>
-	<configurationListOrderPriority>1766</configurationListOrderPriority>
+	<listOrderPriority>1763</listOrderPriority>
+	<configurationListOrderPriority>1763</configurationListOrderPriority>
     <maxCountAtGameStart>1</maxCountAtGameStart>
 	<techLevel>Spacer</techLevel>
 	
@@ -85,13 +85,17 @@
 		</li>
 		<li Class="VEF.Factions.FactionDefExtension">
 			<startingGoodwillByFactionDefs>
+				<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
+				<guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell>
+				<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
+				
 				<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
 				<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
 				<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
 				
-				<guy762_SWWarlordsFaction_NewRepublic>100</guy762_SWWarlordsFaction_NewRepublic>
-				<guy762_SWWarlordsFaction_RebelCell>100</guy762_SWWarlordsFaction_RebelCell>
-				<guy762_SWWarlordsFaction_PartisanCell>0</guy762_SWWarlordsFaction_PartisanCell>
+				<guy762_SWWarlordsFaction_GreaterMaldrood>-100</guy762_SWWarlordsFaction_GreaterMaldrood>
+				<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
+				<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
 				
 				<guy762_SWWarlordsFaction_ZannConsortium>-75</guy762_SWWarlordsFaction_ZannConsortium>
 				<guy762_SWWarlordsFaction_BlackSun>-75~-25</guy762_SWWarlordsFaction_BlackSun>

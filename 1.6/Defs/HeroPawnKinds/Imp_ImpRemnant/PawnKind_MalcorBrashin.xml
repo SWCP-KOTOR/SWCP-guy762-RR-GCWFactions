@@ -82,7 +82,7 @@
 		  </li>
 		</backstoryFiltersOverride>
 		<abilities>
-			<li>guy762_Ability_CommandTierIII</li>
+			<li>guy762_Ability_CommandTierII</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
@@ -138,16 +138,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWImpRemnant_MalcorBrashin"  ParentName="SWWEPlayableVillain_MalcorBrashin">
-		<defName>SWImpRemnant_MalcorBrashin</defName>
+	<PawnKindDef Name="SWCharPawnIR_MalcorBrashin"  ParentName="SWWEPlayableVillain_MalcorBrashin">
+		<defName>SWCharPawnIR_MalcorBrashin</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_MalcorBrashin</defName>
         <rulePack>
             <rulesStrings>

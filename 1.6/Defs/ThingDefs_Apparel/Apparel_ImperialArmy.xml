@@ -444,6 +444,9 @@
 		  <li>
 			<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
 		  </li>
+		  <li>
+			<styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef>
+		  </li>
 		</randomStyle>
 		
 		<tradeTags>
@@ -475,6 +478,17 @@
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		<!-- </graphicData> -->
 	<!-- </ThingStyleDef> -->
+	
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficerArmor_armycolonel</defName>
+		<overrideLabel>light battle armor, army colonel's</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armycolonel/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialArmyTrooper/armycolonel/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
 	
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_taskforceCO</defName>

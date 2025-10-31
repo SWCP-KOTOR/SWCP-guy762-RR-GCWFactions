@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_EltaBesk"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_EltaBesk</defName>
+		<nameMaker>guy762_HeroNamer_EltaBesk</nameMaker>
+		<label>Intelligence Director</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>26</minGenerationAge>
+		<maxGenerationAge>27</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<forcedHair>Frozen</forcedHair>
+		<forcedHairColor>(0.31, 0.28, 0.26)</forcedHairColor>
+		<skinColorOverride>(255, 239, 201)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_officer</li>
+		  <li>SWGCWSpecificApparelItem_SkirtedImperialOfficerUniform</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_ImpUniform_skirted</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(55,55,60)</color> <!-- blue-tint black -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_Power5pistol</li>
+		</weaponTags>
+		<!-- <skills> -->
+		<!-- </skills> -->
+		<forcedTraits>
+			<Beauty>1</Beauty>
+			<Psychopath>0</Psychopath>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_EltaBesk</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Female_AverageNormal</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Female_AverageNormal</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_MidBlack</li>
+					<li>Skin_Melanin3</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	  
+	  
+	<PawnKindDef Name="SWCharPawnPA_EltaBesk"  ParentName="SWWEPlayableVillain_EltaBesk">
+		<defName>SWCharPawnPA_EltaBesk</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+	</PawnKindDef>
+	  
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_EltaBesk</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[elta] '[besk]' [besk]</li>
+				<li>elta->Elta</li>
+				<li>besk->Besk</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_EltaBesk</defName>
+		<title>Corporate Heiress</title>
+		<titleShort>Heiress</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Social>10</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>ManualDumb, Artistic, PlantWork, Cooking, Mining, Caring</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_EltaBesk</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_EltaBesk</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_EltaBesk</defName>
+		<title>Dynamic Automata Director</title>
+		<titleShort>Director</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>5</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_EltaBesk</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_EltaBesk</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

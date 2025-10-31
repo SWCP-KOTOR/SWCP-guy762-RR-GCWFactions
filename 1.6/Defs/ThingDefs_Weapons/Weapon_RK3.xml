@@ -33,11 +33,23 @@
 			<li>guy762TT_KotORRanged</li>
 		</tradeTags>
 		<verbs>
+			<!-- <li> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_default</defaultProjectile> -->
+				<!-- <warmupTime>0.75</warmupTime> -->
+				<!-- <range>20</range> -->
+				<!-- <ticksBetweenBurstShots>12</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <soundCast>kotorsound_empirepistol</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+			<!-- </li> -->
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
-				<warmupTime>0.75</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<range>20</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
@@ -65,15 +77,79 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--comps>
-			<li Class="ModularWeapons.CompProperties_ModularParts">
-				<compClass>ModularWeapons.CompModularParts</compClass>
-				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
-				<partKinds>
-					<li>guy762_slot_trigger_lgtrep</li>
-				</partKinds>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="KotORRangedModdable_OffHand">
+		<defName>guy762_RK3pistol_silenced</defName>
+		<label>RK-3 blaster pistol (silenced)</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Weapons/RK3_SD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>kotorsound_select_pistol</soundInteract>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<Mass>1.5</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+		</statBases>
+		
+		<weaponTags>
+			<li>SWRanged_RK3pistol_silenced</li>
+			<li>SWKotORWeaponCategoryTag_pistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>20</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>kotorsound_silencedblaster</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
-		</comps-->
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		
+		<equippedDistanceOffset >0.25</equippedDistanceOffset >
+		<comps>
+            <li Class="SWCP.Core.CompProperties_PositionAttributes">
+                <HeldDrawOffset>(0.125, -0.125)</HeldDrawOffset>
+            </li>
+        </comps>
 	</ThingDef>
 	
 	

@@ -556,7 +556,7 @@
 		<defName>SWImpRemnant_INTLt</defName>
 		<label>intelligence lieutenant</label>
 		<weaponTags Inherit="False">
-			<li>SWRanged_A180pistol</li>
+			<li>SWRanged_RK3pistol_silenced</li>
 		</weaponTags>
 		<specificApparelRequirements Inherit="False">
 			<li>

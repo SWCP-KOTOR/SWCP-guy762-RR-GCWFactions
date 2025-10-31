@@ -147,9 +147,14 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnIR_GeneralWeir"  ParentName="SWWEPlayableVillain_Weir">
+		<defName>SWCharPawnIR_GeneralWeir</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_GeneralWeir</defName>
         <rulePack>
             <rulesStrings>

@@ -20,7 +20,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_RufaanTigellinus</defName>
-        <pawnKind>SWImpRemnant_RufaanTigellinus</pawnKind>
+        <pawnKind>SWCharPawnIR_RufaanTigellinus</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -38,7 +38,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_YsanneIsard</defName>
-        <pawnKind>SWImpRemnant_YsanneIsard</pawnKind>
+        <pawnKind>SWCharPawnIR_YsanneIsard</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -55,7 +55,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_AfsheenMakati</defName>
-        <pawnKind>SWImpRemnant_AfsheenMakati</pawnKind>
+        <pawnKind>SWCharPawnIR_AfsheenMakati</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -67,7 +67,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_MalcorBrashin</defName>
-        <pawnKind>SWImpRemnant_MalcorBrashin</pawnKind>
+        <pawnKind>SWCharPawnIR_MalcorBrashin</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -106,7 +106,17 @@
         </definitions>
     </SWCP.Core.CharacterDef>
 	
-	<!-- 500: Admiral Rogriss -->
+	<SWCP.Core.CharacterDef>
+        <defName>SWImpRemnantCharacter_TerenRogriss</defName>
+        <pawnKind>SWCharPawnIR_TerenRogriss</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
 	
 	
 	

@@ -21,11 +21,11 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
-		  <li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_ImpUniform_topbrass</li>
+			<li>guy762_ImpUniform_topbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
@@ -38,7 +38,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_Power5pistol</li>
+			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->
@@ -75,13 +75,13 @@
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
-				<li>Male_NarrowNormal</li>
+				<li>Male_AveragePointy</li>
 			  </whitelist>
 			  <blacklist>
 				<!--leave blank to disable-->
 			  </blacklist>
 			  <priority>
-				<li>Male_NarrowNormal</li>
+				<li>Male_AveragePointy</li>
 			  </priority>
 			  <checkGender>False</checkGender>
 			</li>
@@ -119,16 +119,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWImpRemnant_AfsheenMakati"  ParentName="SWWEPlayableVillain_AfsheenMakati">
-		<defName>SWImpRemnant_AfsheenMakati</defName>
+	<PawnKindDef Name="SWCharPawnIR_AfsheenMakati"  ParentName="SWWEPlayableVillain_AfsheenMakati">
+		<defName>SWCharPawnIR_AfsheenMakati</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_AfsheenMakati</defName>
         <rulePack>
             <rulesStrings>

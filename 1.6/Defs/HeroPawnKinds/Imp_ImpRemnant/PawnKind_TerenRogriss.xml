@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_TerenRogriss"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_TerenRogriss</defName>
+		<nameMaker>guy762_HeroNamer_TerenRogriss</nameMaker>
+		<label>Admiral</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>47</minGenerationAge>
+		<maxGenerationAge>48</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Recruit</forcedHair>
+		<forcedHairColor>(0.65, 0.65, 0.65)</forcedHairColor>
+		<skinColorOverride>(255, 239, 213)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ImpUniform_highbrass</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<color>(125,125,110)</color>       <!-- imperial olive -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_RK3pistol</li>
+		</weaponTags>
+		<!-- <skills> -->
+		<!-- </skills> -->
+		<forcedTraits>
+			<Kind>0</Kind>
+			<TooSmart>0</TooSmart>
+			<NaturalMood>1</NaturalMood>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_TerenRogriss</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AveragePointy</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AveragePointy</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_Gray</li>
+					<li>Skin_Melanin2</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>16~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	  
+	  
+	<PawnKindDef Name="SWCharPawnIR_TerenRogriss"  ParentName="SWWEPlayableVillain_TerenRogriss">
+		<defName>SWCharPawnIR_TerenRogriss</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+	</PawnKindDef>
+	  
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_TerenRogriss</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[teren] '[rogriss]' [rogriss]</li>
+				<li>teren->Teren</li>
+				<li>rogriss->Rogriss</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_TerenRogriss</defName>
+		<title>Creative Ensign</title>
+		<titleShort>Ensign</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Social>5</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<!-- <workDisables>ManualDumb, Constructing, Crafting, Cooking, Mining, Caring</workDisables> -->
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TerenRogriss</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TerenRogriss</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_TerenRogriss</defName>
+		<title>Honorable Admiral</title>
+		<titleShort>Admiral</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Kind>0</Kind>
+			<NaturalMood>1</NaturalMood>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TerenRogriss</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TerenRogriss</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

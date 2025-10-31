@@ -10,7 +10,7 @@
 		<maxGenerationAge>56</maxGenerationAge>
 		<fixedGender>Male</fixedGender>
 		<forcedHair>Recruit</forcedHair>
-		<forcedHairColor>(0.65, 0.65, 0.65)</forcedHairColor>
+		<forcedHairColor>(200,200,200)</forcedHairColor>
 		<skinColorOverride>(249, 219, 165)</skinColorOverride>
 		<xenotypeSet>
 			<xenotypeChances>
@@ -46,7 +46,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_SE14pistol</li>
+			<li>SWRanged_SE14pistol</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->

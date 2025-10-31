@@ -54,7 +54,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_E11tac</li>
+			<li>SWRanged_E11tac</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->
@@ -164,9 +164,14 @@
 				</itemGraphics>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnIR_TurrPhennir"  ParentName="SWWEPlayableVillain_TurrPhennir">
+		<defName>SWCharPawnIR_TurrPhennir</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_TurrPhennir</defName>
         <rulePack>
             <rulesStrings>

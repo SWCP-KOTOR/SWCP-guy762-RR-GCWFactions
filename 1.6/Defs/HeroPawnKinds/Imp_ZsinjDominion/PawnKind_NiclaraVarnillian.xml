@@ -172,16 +172,16 @@
 				</itemGraphics>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWZsinj_NiclaraVarnillian"  ParentName="SWWEPlayableVillain_NiclaraVarnillian">
-		<defName>SWZsinj_NiclaraVarnillian</defName>
+	<PawnKindDef Name="SWCharPawnZJ_NiclaraVarnillian"  ParentName="SWWEPlayableVillain_NiclaraVarnillian">
+		<defName>SWCharPawnZJ_NiclaraVarnillian</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_NiclaraVarnillian</defName>
         <rulePack>
             <rulesStrings>

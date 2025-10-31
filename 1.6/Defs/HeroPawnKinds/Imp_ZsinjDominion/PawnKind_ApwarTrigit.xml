@@ -125,16 +125,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="SWZsinj_ApwarTrigit"  ParentName="SWWEPlayableVillain_ApwarTrigit">
-		<defName>SWZsinj_ApwarTrigit</defName>
+	<PawnKindDef Name="SWCharPawnZJ_ApwarTrigit"  ParentName="SWWEPlayableVillain_ApwarTrigit">
+		<defName>SWCharPawnZJ_ApwarTrigit</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_ApwarTrigit</defName>
         <rulePack>
             <rulesStrings>

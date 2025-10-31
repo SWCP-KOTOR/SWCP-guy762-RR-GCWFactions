@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_ZelJohans"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_ZelJohans</defName>
+		<nameMaker>guy762_HeroNamer_ZelJohans</nameMaker>
+		<label>Colonel</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>37</minGenerationAge>
+		<maxGenerationAge>38</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Junkie</forcedHair>
+		<forcedHairColor>(0.2, 0.2, 0.2)</forcedHairColor>
+		<skinColorOverride>(255, 239, 189)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotOREquipment_officer</li>
+			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_JKenergyshield_big</li>
+			<li>guy762_ArmyTrooperHelmet</li>
+			<li>guy762_ArmyOfficerArmor_highbrass</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(55,50,50)</color>        <!-- red-tint black -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_ArmyOfficerArmor_highbrass</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef>
+				<color>(55,50,50)</color>        <!-- red-tint black -->
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<!-- <skills> -->
+		<!-- </skills> -->
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+			<Nimble>0</Nimble>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+				  <li>guy762BSC_ZelJohans</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AveragePointy</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AveragePointy</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>SideWhiskers</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_DarkBlack</li>
+					<li>Skin_Melanin4</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	  
+	  
+	<PawnKindDef Name="SWCharPawnGM_ZelJohans"  ParentName="SWWEPlayableVillain_ZelJohans">
+		<defName>SWCharPawnGM_ZelJohans</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+	</PawnKindDef>
+	  
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_ZelJohans</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[zel] '[rancor]' [johans]</li>
+				<li>zel->Zel</li>
+				<li>rancor->The Rancor</li>
+				<li>johans->Johans</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_ZelJohans</defName>
+		<title>Hovertank Mechanic</title>
+		<titleShort>Mechanic</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>10</Construction>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<!-- <workDisables>ManualDumb, Constructing, Crafting, Cooking, Mining, Caring</workDisables> -->
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_ZelJohans</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_ZelJohans</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_ZelJohans</defName>
+		<title>Hell's Hammers Colonel</title>
+		<titleShort>Colonel</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Social>10</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>2</SpeedOffset>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_ZelJohans</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_ZelJohans</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

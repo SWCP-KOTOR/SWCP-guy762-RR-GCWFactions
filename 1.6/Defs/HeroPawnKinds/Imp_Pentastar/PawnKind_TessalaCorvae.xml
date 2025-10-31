@@ -52,7 +52,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_TL50blaster</li> <!-- needs a lightfoil -->
+			<li>SWRanged_TL50blaster</li> <!-- needs a lightfoil -->
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->
@@ -142,16 +142,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWPentastar_TessalaCorvae"  ParentName="SWWEPlayableVillain_TessalaCorvae">
-		<defName>SWPentastar_TessalaCorvae</defName>
+	<PawnKindDef Name="SWCharPawnPA_TessalaCorvae"  ParentName="SWWEPlayableVillain_TessalaCorvae">
+		<defName>SWCharPawnPA_TessalaCorvae</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_TessalaCorvae</defName>
         <rulePack>
             <rulesStrings>

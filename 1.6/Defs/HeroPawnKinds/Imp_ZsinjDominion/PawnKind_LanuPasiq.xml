@@ -202,7 +202,7 @@
 	
 	
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_LanuPasiq</defName>
         <rulePack>
             <rulesStrings>
@@ -333,17 +333,17 @@
 	
 	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWZsinj_LanuPasiq_TFS"  ParentName="SWWEPlayableVillain_LanuPasiq_TFS">
-		<defName>SWZsinj_LanuPasiq_TFS</defName>
+		<defName>SWCharPawnZJ_LanuPasiq_TFS</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 	</PawnKindDef>
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWZsinj_LanuPasiq_VPE"  ParentName="SWWEPlayableVillain_LanuPasiq_VPE">
-		<defName>SWZsinj_LanuPasiq_VPE</defName>
+		<defName>SWCharPawnZJ_LanuPasiq_VPE</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 	</PawnKindDef>
 	
 	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWZsinj_LanuPasiq_PotF"  ParentName="SWWEPlayableVillain_LanuPasiq_PotF">
-		<defName>SWZsinj_LanuPasiq_PotF</defName>
+		<defName>SWCharPawnZJ_LanuPasiq_PotF</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 	</PawnKindDef>
 

@@ -278,7 +278,64 @@
 	  
 	  
 	  
-	  
+	<ThingDef ParentName="guy762_glovelessclothingbase">
+		<defName>guy762_ImpUniform_skirted</defName>
+		<label>uniform, sashed</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/ImperialOfficer/blankskirt/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<!-- <Insulation_Heat>5</Insulation_Heat> -->
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.3</SocialImpact>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+		  <Synthread>85</Synthread>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>SWGCWSpecificApparelItem_SkirtedImperialOfficerUniform</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/ImperialOfficer/blankskirt/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>  
 	  
 	  
 	  
@@ -823,32 +880,21 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		</apparel>
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_grandmoff</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_director</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_zsinj</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_tigellinus</styleDef>
-		  </li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_grandmoff</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_director</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_zsinj</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_tigellinus</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_delvardus</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_treutenteradoc</styleDef></li>
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_KotORCharacterItem</li>
 		</tradeTags>
 		
 		<comps>
@@ -863,7 +909,9 @@
 					<weight>15</weight>
 					<only>(125,125,110)</only> <!-- imperial olive -->
 				</li>
-			</options> <!-- 195,55,45 isard's red -->
+				<!-- 195,55,45 isard's red -->
+				<!-- 65,100,95 delvardus' viridian -->
+			</options>
 		</colorGenerator>
 	</ThingDef>
 	  
@@ -918,6 +966,28 @@
 		<wornGraphicPath>SWApparel/ImperialOfficer/tigellinus/Apparel</wornGraphicPath>
 		<graphicData>
 		  <texPath>SWApparel/ImperialOfficer/tigellinus/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficer_delvardus</defName>
+		<overrideLabel>imperial uniform, Delvardus'</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/delvardus/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialOfficer/delvardus/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficer_treutenteradoc</defName>
+		<overrideLabel>imperial uniform, Treuten's</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/teradoc_treuten/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialOfficer/teradoc_treuten/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>

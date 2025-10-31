@@ -33,7 +33,7 @@
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_Headband_bandana</apparelDef>
-				<color>(155,30,25)</color>       <!-- zaalbar's red -->
+				<color>(205,15,40)</color>       <!-- maldrood crimson -->
 				<quality>Legendary</quality>
 			</li>
 			<li>
@@ -46,7 +46,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWMelee_Vibrosword</li>
+			<li>SWMelee_Vibrosword</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->
@@ -136,10 +136,10 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_LeoniaTavira</defName>
         <rulePack>
             <rulesStrings>

@@ -160,14 +160,14 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="SWZsinj_Melvar"  ParentName="SWWEPlayableVillain_Melvar">
-		<defName>SWZsinj_Melvar</defName>
+	<PawnKindDef Name="SWCharPawnZJ_Melvar"  ParentName="SWWEPlayableVillain_Melvar">
+		<defName>SWCharPawnZJ_Melvar</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_Melvar</defName>
         <rulePack>
             <rulesStrings>

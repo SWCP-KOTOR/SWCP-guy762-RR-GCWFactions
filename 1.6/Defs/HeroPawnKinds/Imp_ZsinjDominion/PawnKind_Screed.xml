@@ -171,16 +171,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="SWZsinj_Screed"  ParentName="SWWEPlayableVillain_Screed">
-		<defName>SWZsinj_Screed</defName>
+	<PawnKindDef Name="SWCharPawnZJ_Screed"  ParentName="SWWEPlayableVillain_Screed">
+		<defName>SWCharPawnZJ_Screed</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_Screed</defName>
         <rulePack>
             <rulesStrings>

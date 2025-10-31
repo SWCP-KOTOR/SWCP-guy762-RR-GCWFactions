@@ -59,7 +59,7 @@
 		<li Class="PatchOperationReplace">
 		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_Pellaeon"]/forcedHair</xpath>
 			<value>
-			  <forcedHair>VHE_Midlife</forcedHair>
+			  <forcedHair>VHE_Smith</forcedHair>
 			</value>
 		</li>
 		<li Class="PatchOperationReplace">
@@ -138,6 +138,30 @@
 		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_AndalSait"]/forcedHair</xpath>
 			<value>
 			  <forcedHair>VHE_Gangster</forcedHair>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_Veers"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_Dean</forcedHair>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_IvanCronus"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_Smuggler</forcedHair>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_TerenRogriss"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_Blinder</forcedHair>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_EltaBesk"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_SideBraid</forcedHair>
 			</value>
 		</li>
 	  </operations>

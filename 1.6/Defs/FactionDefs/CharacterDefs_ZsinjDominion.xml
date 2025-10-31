@@ -16,7 +16,7 @@
 	
 	<SWCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
         <defName>SWZsinjDominionCharacter_LanuPasiqTFS</defName>
-        <pawnKind>SWZsinj_LanuPasiq_TFS</pawnKind>
+        <pawnKind>SWCharPawnZJ_LanuPasiq_TFS</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -28,7 +28,7 @@
 	
 	<SWCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
         <defName>SWZsinjDominionCharacter_LanuPasiqVPE</defName>
-        <pawnKind>SWZsinj_LanuPasiq_VPE</pawnKind>
+        <pawnKind>SWCharPawnZJ_LanuPasiq_VPE</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -40,7 +40,7 @@
 	
 	<SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
         <defName>SWZsinjDominionCharacter_LanuPasiqPotF</defName>
-        <pawnKind>SWZsinj_LanuPasiq_PotF</pawnKind>
+        <pawnKind>SWCharPawnZJ_LanuPasiq_PotF</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -56,7 +56,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Screed</defName>
-        <pawnKind>SWZsinj_Screed</pawnKind>
+        <pawnKind>SWCharPawnZJ_Screed</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -74,7 +74,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_WarlordZsinj</defName>
-        <pawnKind>SWZsinj_WarlordZsinj</pawnKind>
+        <pawnKind>SWCharPawnZJ_WarlordZsinj</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -86,7 +86,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Melvar</defName>
-        <pawnKind>SWZsinj_Melvar</pawnKind>
+        <pawnKind>SWCharPawnZJ_Melvar</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -101,7 +101,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Trigit</defName>
-        <pawnKind>SWZsinj_ApwarTrigit</pawnKind>
+        <pawnKind>SWCharPawnZJ_ApwarTrigit</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
@@ -118,7 +118,7 @@
 	
 	<SWCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Varnillian</defName>
-        <pawnKind>SWZsinj_NiclaraVarnillian</pawnKind>
+        <pawnKind>SWCharPawnZJ_NiclaraVarnillian</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
