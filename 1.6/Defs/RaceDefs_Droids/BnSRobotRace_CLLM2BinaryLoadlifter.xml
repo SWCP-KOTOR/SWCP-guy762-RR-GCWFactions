@@ -241,11 +241,11 @@
 			
 			
 			
-			<li Class="BigAndSmall.PawnExtension">
-				<priority>-100000</priority>
-				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CleaningDisabled</li></exclusionTags>
-				<disabledWorkTypes><li>Cleaning</li></disabledWorkTypes>
-			</li>
+			<!-- <li Class="BigAndSmall.PawnExtension"> -->
+				<!-- <priority>-100000</priority> -->
+				<!-- <exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CleaningDisabled</li></exclusionTags> -->
+				<!-- <disabledWorkTypes><li>Cleaning</li></disabledWorkTypes> -->
+			<!-- </li> -->
 			<li Class="BigAndSmall.PawnExtension">
 				<priority>-100000</priority>
 				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ConstructionDisabled</li></exclusionTags>
@@ -286,6 +286,7 @@
 				<forcedHediffs>
 					<li>SWCP_DroidHediff_NonSapientDroid</li>
 					
+					<li>SWCPWorkTypeDisablerHediff_Cleaning</li>
 					<li>SWCPWorkTypeDisablerHediff_Hunting</li>
 					<li>SWCPWorkTypeDisablerHediff_Cooking</li>
 					<li>SWCPWorkTypeDisablerHediff_PlantWork</li>

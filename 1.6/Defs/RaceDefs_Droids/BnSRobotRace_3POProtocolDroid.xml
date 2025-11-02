@@ -238,11 +238,11 @@
 				<disabledWorkTypes><li>Firefighter</li></disabledWorkTypes>
 			</li>
 			
-			<li Class="BigAndSmall.PawnExtension">
-				<priority>-100000</priority>
-				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ConstructionDisabled</li></exclusionTags>
-				<disabledWorkTypes><li>Construction</li></disabledWorkTypes>
-			</li>
+			<!-- <li Class="BigAndSmall.PawnExtension"> -->
+				<!-- <priority>-100000</priority> -->
+				<!-- <exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ConstructionDisabled</li></exclusionTags> -->
+				<!-- <disabledWorkTypes><li>Construction</li></disabledWorkTypes> -->
+			<!-- </li> -->
 			
 			
 			<li Class="BigAndSmall.PawnExtension">
@@ -302,6 +302,7 @@
 				<forcedHediffs> <!-- will force anything on this list and replace them immediately if something tries to remove them -->
 					<li>SWCP_DroidHediff_NonSapientDroid</li>
 					
+					<li>SWCPWorkTypeDisablerHediff_Constructing</li>
 					<li>SWCPWorkTypeDisablerHediff_Mining</li>
 					<li>SWCPWorkTypeDisablerHediff_PlantWork</li>
 					<li>SWCPWorkTypeDisablerHediff_Animals</li>

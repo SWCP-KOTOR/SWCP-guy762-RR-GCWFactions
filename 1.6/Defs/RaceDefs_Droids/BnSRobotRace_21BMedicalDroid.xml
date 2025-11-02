@@ -229,11 +229,11 @@
 				<disabledWorkTypes><li>Cleaning</li></disabledWorkTypes>
 			</li>
 			
-			<li Class="BigAndSmall.PawnExtension">
-				<priority>-100000</priority>
-				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_HaulingDisabled</li></exclusionTags>
-				<disabledWorkTypes><li>Hauling</li></disabledWorkTypes>
-			</li>
+			<!-- <li Class="BigAndSmall.PawnExtension"> -->
+				<!-- <priority>-100000</priority> -->
+				<!-- <exclusionTags><li>SWCPDroidRaceHediffExclusionTag_HaulingDisabled</li></exclusionTags> -->
+				<!-- <disabledWorkTypes><li>Hauling</li></disabledWorkTypes> -->
+			<!-- </li> -->
 			
 			<li Class="BigAndSmall.PawnExtension">
 				<priority>-100000</priority>
