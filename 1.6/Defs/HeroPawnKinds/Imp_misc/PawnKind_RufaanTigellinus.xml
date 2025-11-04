@@ -133,8 +133,8 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWImpRemnant_RufaanTigellinus"  ParentName="SWWEPlayableVillain_RufaanTigellinus">
-		<defName>SWImpRemnant_RufaanTigellinus</defName>
+	  <PawnKindDef Name="SWCharPawnIR_RufaanTigellinus"  ParentName="SWWEPlayableVillain_RufaanTigellinus">
+		<defName>SWCharPawnIR_RufaanTigellinus</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
 	  </PawnKindDef>
 	  
