@@ -346,15 +346,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--comps>
-			<li Class="ModularWeapons.CompProperties_ModularParts">
-				<compClass>ModularWeapons.CompModularParts</compClass>
-				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
-				<partKinds>
-					<li>guy762_slot_trigger_lgtrep</li>
-				</partKinds>
-			</li>
-		</comps-->
+		<comps>
+            <li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
 	</ThingDef>
 	
 	

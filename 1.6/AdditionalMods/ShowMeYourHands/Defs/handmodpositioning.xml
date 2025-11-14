@@ -190,6 +190,12 @@
               </ThingTargets>
           </li>
 		  <li>
+              <MainHand>(-0.185, 0.100, -0.150)</MainHand>
+              <ThingTargets>
+                 <li>guy762_RK3pistol_isard</li> <!-- RK-3 blaster pistol ("Ambition") -->
+              </ThingTargets>
+          </li>
+		  <li>
               <MainHand>(-0.075, 0.100, -0.150)</MainHand>
               <ThingTargets>
                  <li>guy762_DL18pistol</li> <!-- DL-18 blaster pistol -->

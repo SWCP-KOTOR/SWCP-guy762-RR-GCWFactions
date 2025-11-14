@@ -43,7 +43,8 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <!-- <li>SE_bandon</li> -->
-		  <li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_LightsaberSingle</li>
+		  <!-- <li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_LightsaberSingle</li> -->
+		  <li>SWRanged_RK3pistol_silenced</li>
 		</weaponTags>
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_I</li>
@@ -53,7 +54,8 @@
 		  <skipChance>0</skipChance>
 		  <subOptionsTakeAll>
 			<li>
-			  <thingDef>guy762_DL18pistol</thingDef>
+			  <!-- <thingDef>guy762_DL18pistol</thingDef> -->
+			  <thingDef>Force_Lightsaber_Custom</thingDef>
 			  <countRange>1</countRange>
 			</li>
 		  </subOptionsTakeAll>

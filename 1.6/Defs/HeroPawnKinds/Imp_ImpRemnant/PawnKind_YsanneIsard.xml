@@ -38,7 +38,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RK3pistol_silenced</li>
+			<li>SWRanged_RK3pistol_isard</li>
 			<!-- <li>SWRanged_A180pistol</li> give to Daala instead -->
 		</weaponTags>
 		<!-- <skills> -->
@@ -112,11 +112,11 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>10~12</range>
+						<range>14~16</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>10~12</range>
+						<range>14~16</range>
 					</li>
 					<li>
 						<skill>Social</skill>
@@ -136,6 +136,7 @@
 	<PawnKindDef Name="SWCharPawnIR_YsanneIsard"  ParentName="SWWEPlayableVillain_YsanneIsard">
 		<defName>SWCharPawnIR_YsanneIsard</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
 	</PawnKindDef>
 	  
 	  

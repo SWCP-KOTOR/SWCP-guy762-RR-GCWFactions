@@ -82,25 +82,28 @@
 			<soundHitPawn>kotorsound_lightwhip_hit</soundHitPawn>
 			<soundHitBuilding>kotorsound_lightwhip_hit</soundHitBuilding>
 		  </li-->
-		  <li Class="CompDeflector.CompProperties_Deflector">
-			<baseDeflectChance>0.1</baseDeflectChance>
-			<useManipulationInCalc>true</useManipulationInCalc>
-			<useSkillInCalc>true</useSkillInCalc>
-			<deflectSound>kotorsound_lightsaber_deflect</deflectSound>
-			<deflectSkill>Melee</deflectSkill>
-			<deflectRatePerSkillPoint>0.02</deflectRatePerSkillPoint>
-			<canReflect>true</canReflect>
-			<reflectSkill>Melee</reflectSkill>
-			<reflectRatePerSkillPoint>0.01</reflectRatePerSkillPoint>
-			<DeflectVerb Class="VerbProperties">
-			  <verbClass>Verb_Shoot</verbClass>
-			  <hasStandardCommand>true</hasStandardCommand>
-			  <defaultProjectile>BulletDeflected</defaultProjectile>
-			  <warmupTime>0</warmupTime>
-			  <range>24</range>
-			  <muzzleFlashScale>9</muzzleFlashScale>
-			</DeflectVerb>
-		  </li>
+			<li Class="CompDeflector.CompProperties_Deflector">
+				<baseDeflectChance>0.1</baseDeflectChance>
+				<useManipulationInCalc>true</useManipulationInCalc>
+				<useSkillInCalc>true</useSkillInCalc>
+				<deflectSound>kotorsound_lightsaber_deflect</deflectSound>
+				<deflectSkill>Melee</deflectSkill>
+				<deflectRatePerSkillPoint>0.02</deflectRatePerSkillPoint>
+				<canReflect>true</canReflect>
+				<reflectSkill>Melee</reflectSkill>
+				<reflectRatePerSkillPoint>0.01</reflectRatePerSkillPoint>
+				<DeflectVerb Class="VerbProperties">
+				  <verbClass>Verb_Shoot</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>BulletDeflected</defaultProjectile>
+				  <warmupTime>0</warmupTime>
+				  <range>24</range>
+				  <muzzleFlashScale>9</muzzleFlashScale>
+				</DeflectVerb>
+			</li>
+            <li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
 		</comps>
 	
 	
