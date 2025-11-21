@@ -41,6 +41,21 @@
 		  <li>SWPartisan_Warlord</li>
 		</fixedLeaderKinds>
 		
+		<layerWhitelist>
+			<li>Surface</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+		</layerWhitelist>
+		<arrivalLayerWhitelist>
+			<li>Surface</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		</arrivalLayerWhitelist>
+		<neutralArrivalLayerBlacklist>
+			<li>Surface</li>
+		</neutralArrivalLayerBlacklist>
+		
 		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<!-- <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath> -->
@@ -82,9 +97,10 @@
 					
 					<guy762_SWWarlordsFaction_ZannConsortium>-50~0</guy762_SWWarlordsFaction_ZannConsortium>
 					<guy762_SWWarlordsFaction_BlackSun>0~50</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>0~25</guy762_SWWarlordsFaction_HuttCartel>
+					
 					<!-- . -->
-					<!-- <guy762_KotORFaction_HuttCartel>0~25</guy762_KotORFaction_HuttCartel> -->
-					<!-- <guy762_KotORFaction_ViciousHutts>-50</guy762_KotORFaction_ViciousHutts> -->
+					<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
 					
 					<!-- <guy762_KotORFaction_MandoClan>0~50</guy762_KotORFaction_MandoClan> -->
 					<!-- <guy762_KotORFaction_SavageMandos>0</guy762_KotORFaction_SavageMandos> -->
@@ -94,7 +110,7 @@
 				<excludeFromCommConsole>true</excludeFromCommConsole>
 				<hasCities>false</hasCities>
 				<neverConnectToRoads>true</neverConnectToRoads>
-				<minDistanceToOtherSettlements>40</minDistanceToOtherSettlements>
+				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
 			
 			

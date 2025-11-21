@@ -52,19 +52,25 @@
 		
 		
 		
-		
-		<layerWhitelist>
-			<!-- creates two separate factions split between the surface and orbit -->
-			<li>Surface</li>
+		<!-- <arrivalLayerWhitelist> -->
+			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
-		</layerWhitelist>
-		<arrivalLayerWhitelist>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">SWCPPlanetLayer_TatooineOrbit</li> -->
+		<!-- </arrivalLayerWhitelist> -->
+		
+		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<li>Surface</li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-		</arrivalLayerWhitelist>
-		<neutralArrivalLayerBlacklist>
-			<li>Surface</li>
-		</neutralArrivalLayerBlacklist>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li>
+		</layerWhitelist>
+		
+		<!-- <neutralArrivalLayerBlacklist> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+		<!-- </neutralArrivalLayerBlacklist> -->
 		
 		
 		
@@ -74,7 +80,6 @@
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<!-- <settlementGenerationWeight>2</settlementGenerationWeight> -->
 		<settlementGenerationWeight>5</settlementGenerationWeight>
 		<modExtensions Inherit="False">
 			<li Class="SWCP.Currencies.CurrencyReplacement">
@@ -110,8 +115,9 @@
 					
 					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
 					<guy762_SWWarlordsFaction_BlackSun>-25~25</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>0</guy762_SWWarlordsFaction_HuttCartel>
+					
 					<!-- . -->
-					<!-- <guy762_KotORFaction_HuttCartel>0</guy762_KotORFaction_HuttCartel> -->
 					<!-- <guy762_KotORFaction_ViciousHutts>0</guy762_KotORFaction_ViciousHutts> -->
 					
 					<!-- <guy762_KotORFaction_MandoClan>-25</guy762_KotORFaction_MandoClan> -->

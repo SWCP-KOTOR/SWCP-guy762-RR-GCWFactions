@@ -46,18 +46,13 @@
 		
 		
 		
-		<layerWhitelist>
-			<!-- creates two separate factions split between the surface and orbit -->
-			<li>Surface</li>
-			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
-		</layerWhitelist>
-		<arrivalLayerWhitelist>
+		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<li>Surface</li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-		</arrivalLayerWhitelist>
-		<neutralArrivalLayerBlacklist>
-			<li>Surface</li>
-		</neutralArrivalLayerBlacklist>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+		</layerWhitelist>
 		
 
 		<naturalEnemy>true</naturalEnemy>
@@ -99,8 +94,9 @@
 					
 					<guy762_SWWarlordsFaction_ZannConsortium>100</guy762_SWWarlordsFaction_ZannConsortium>
 					<guy762_SWWarlordsFaction_BlackSun>25~50</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>0~50</guy762_SWWarlordsFaction_HuttCartel>
+					
 					<!-- . -->
-					<!-- <guy762_KotORFaction_HuttCartel>0~50</guy762_KotORFaction_HuttCartel> -->
 					<!-- <guy762_KotORFaction_ViciousHutts>0~50</guy762_KotORFaction_ViciousHutts> -->
 					
 					<!-- <guy762_KotORFaction_MandoClan>0~50</guy762_KotORFaction_MandoClan> -->
