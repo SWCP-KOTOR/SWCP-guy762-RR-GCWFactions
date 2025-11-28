@@ -80,7 +80,7 @@
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>5</settlementGenerationWeight>
+		<settlementGenerationWeight>4</settlementGenerationWeight>
 		<modExtensions Inherit="False">
 			<li Class="SWCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
@@ -116,15 +116,18 @@
 					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
 					<guy762_SWWarlordsFaction_BlackSun>-25~25</guy762_SWWarlordsFaction_BlackSun>
 					<guy762_SWWarlordsFaction_HuttCartel>0</guy762_SWWarlordsFaction_HuttCartel>
+					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
 					
 					<!-- . -->
-					<!-- <guy762_KotORFaction_ViciousHutts>0</guy762_KotORFaction_ViciousHutts> -->
-					
-					<!-- <guy762_KotORFaction_MandoClan>-25</guy762_KotORFaction_MandoClan> -->
-					<!-- <guy762_KotORFaction_SavageMandos>0~50</guy762_KotORFaction_SavageMandos> -->
 
-					<guy762_KotORFaction_Civilians>-50</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWWarlordsFaction_MandoClan>-50</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_PDF>0</guy762_SWWarlordsFaction_PDF>
+					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
+					<!-- <guy762_SWWarlordsFaction_CSA>0~50</guy762_SWWarlordsFaction_CSA> -->
 
+					<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
+					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_JawaMerchants> -->
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>
@@ -140,6 +143,11 @@
 			</li>
 				<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
 				<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->
+				
+				
+				
+			
+				
 				
 				
 				

@@ -3,8 +3,7 @@
 
 	<PawnKindDef Name="SWHutts_Base" Abstract="True">
 		<race>Human</race>
-		<!-- <defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType> -->
-		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		<chemicalAddictionChance>0.35</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<invNutrition>0.75</invNutrition>
@@ -1042,6 +1041,14 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWViciousHutts_HuttLord" ParentName="SWHutts_HuttLord">
+		<defName>SWViciousHutts_HuttLord</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ViciousHutts</defaultFactionType>
 	</PawnKindDef>
 	
 	

@@ -37,6 +37,7 @@
 			<li>SWRanged_AnyHeavyRifle</li>
 			<li>SWRanged_AnyAntiVehicleRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>
@@ -161,6 +162,7 @@
 			<li>SWRanged_AnyHeavyRifle</li>
 			<li>SWRanged_AnyAntiVehicleRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>

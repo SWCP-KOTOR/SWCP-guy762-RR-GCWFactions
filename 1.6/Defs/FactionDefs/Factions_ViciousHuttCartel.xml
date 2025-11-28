@@ -2,25 +2,22 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>guy762_SWWarlordsFaction_HuttCartel</defName>
-		<label>cunning Hutt cartel</label>
-		<description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile Hutt Kajidics often find themselves in fierce economic conflict with the Republic and many Republic-backed organizations like Czerka, many cunning Hutts are open to doing business with outsiders and strive to maintain cordial relations with their planet's populace.</description>
+		<defName>guy762_SWWarlordsFaction_ViciousHutts</defName>
+		<label>vicious Hutt cartel</label>
+		<description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile some Hutt Kajidics maintain cordial relations with outside groups, others believe it is the Hutt's divine right to rule the galaxy and strike out openly at the lesser non-Hutt groups, raiding and pillaging as they see fit.</description>
 		<pawnSingular>scum</pawnSingular>
 		<pawnsPlural>scum</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
-		<factionIconPath>World/HuttClans</factionIconPath>
+		<factionIconPath>World/ViciousHutts</factionIconPath>
 		<colorSpectrum>
-		  <li>RGB(155,190,35)</li> <!-- EaWX Hutt lime -->
+		  <li>RGB(225,225,125)</li> <!-- EaWX sun yellow -->
 		</colorSpectrum>
-		
-		<!-- replaces a faction in the default vanilla setup list -->
-		<replacesFaction>TradersGuild</replacesFaction>
 		
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<maxCountAtGameStart>8</maxCountAtGameStart>
-		<listOrderPriority>1773</listOrderPriority>
-		<configurationListOrderPriority>1773</configurationListOrderPriority>
+		<listOrderPriority>1774</listOrderPriority>
+		<configurationListOrderPriority>1774</configurationListOrderPriority>
 		<techLevel>Spacer</techLevel>
 		
 		<canMakeRandomly>true</canMakeRandomly>
@@ -37,15 +34,15 @@
 		<leaderTitle>kajidii</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
-			<li>SWHutts_HuttLord</li>
+			<li>SWViciousHutts_HuttLord</li>
 		</fixedLeaderKinds>
 		
 		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<permanentEnemy>false</permanentEnemy>
+		<naturalEnemy>true</naturalEnemy>
 		
 		<layerWhitelist>
-			<li>Surface</li>
+			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li>
@@ -59,32 +56,31 @@
 			</li>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<guy762_SWWarlordsFaction_NewRepublic>-25~25</guy762_SWWarlordsFaction_NewRepublic>
-					<guy762_SWWarlordsFaction_RebelCell>-25~25</guy762_SWWarlordsFaction_RebelCell>
-					<guy762_SWWarlordsFaction_PartisanCell>0~25</guy762_SWWarlordsFaction_PartisanCell>
+					<guy762_SWWarlordsFaction_NewRepublic>-100</guy762_SWWarlordsFaction_NewRepublic>
+					<guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell>
+					<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 					
-					<guy762_SWWarlordsFaction_ImpRemnant>0</guy762_SWWarlordsFaction_ImpRemnant>
-					<guy762_SWWarlordsFaction_ZsinjDominion>0~50</guy762_SWWarlordsFaction_ZsinjDominion>
+					<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
+					<guy762_SWWarlordsFaction_ZsinjDominion>0</guy762_SWWarlordsFaction_ZsinjDominion>
 					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
 					
 					<guy762_SWWarlordsFaction_GreaterMaldrood>-100</guy762_SWWarlordsFaction_GreaterMaldrood>
-					<guy762_SWWarlordsFaction_EriaduAuthority>0</guy762_SWWarlordsFaction_EriaduAuthority>
+					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
 					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
 					
-					<guy762_SWWarlordsFaction_ZannConsortium>-100~0</guy762_SWWarlordsFaction_ZannConsortium>
-					<guy762_SWWarlordsFaction_BlackSun>-100~-25</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
+					<guy762_SWWarlordsFaction_BlackSun>-100</guy762_SWWarlordsFaction_BlackSun>
 					<guy762_SWWarlordsFaction_HuttCartel>-100</guy762_SWWarlordsFaction_HuttCartel>
 					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
-					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan> -->
-					<guy762_SWWarlordsFaction_PDF>-50</guy762_SWWarlordsFaction_PDF>
-					<guy762_SWWarlordsFaction_LocalWarlord>0~50</guy762_SWWarlordsFaction_LocalWarlord>
+					<!-- <guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
+					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
 		
-					<guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians>
-					<!-- <guy762_SWCPFaction_JawaMerchants>25~75</guy762_SWCPFaction_JawaMerchants> -->
+					<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
 					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_JawaMerchants> -->
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
@@ -114,8 +110,8 @@
 			<!-- </li> -->
 			
 			<li Class="SWCP.Core.ModExtension_FixedIdeo">
-				<ideoIconDef>guy762_IdeoIcon_huttsA</ideoIconDef>
-				<ideoColorDef>guy762_IdeoFactionColor_HuttOlive</ideoColorDef>
+				<ideoIconDef>guy762_IdeoIcon_huttsB</ideoIconDef>
+				<ideoColorDef>guy762_IdeoFactionColor_SunYellow</ideoColorDef>
 				<!--memberName>Citizen</memberName>
 				<adjective>NCR Republican</adjective-->
 				<roleOverrides>
@@ -172,7 +168,7 @@
 		
 		
 		<allowedCultures>
-			<li>guy762_culture_outerrim</li>
+			<li>Kriminul</li>
 		</allowedCultures>
 		<!--styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
@@ -185,13 +181,14 @@
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_hutt</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<allowedMemes>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_CultOfPersonality</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
 		</allowedMemes>
 		<disallowedPrecepts>
@@ -295,22 +292,6 @@
 			<!-- <li>Leather_Plain</li> -->
 		  </thingDefs>
 		</apparelStuffFilter>
-		
-		<caravanTraderKinds>
-		  <!-- <li>Caravan_Outlander_BulkGoods</li> -->
-		  <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
-		  <!-- <li>Caravan_Outlander_Exotic</li> -->
-		  <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
-		  <li>guy762_TraderKind_JawaScavs</li>
-		</caravanTraderKinds>
-		<visitorTraderKinds>
-		  <li>guy762_TraderKind_JawaScavs</li>
-		</visitorTraderKinds>
-		<baseTraderKinds>
-		  <li>guy762_BaseTraderKind_HuttGalleon</li>
-		  <li>guy762_BaseTraderKind_spicerunner</li>
-		  <!-- <li>guy762_BaseTraderKind_gunrunner</li> -->
-		</baseTraderKinds>
 		
 		
 		<maxPawnCostPerTotalPointsCurve>
@@ -676,155 +657,5 @@
 
 		<raidLootMaker>guy762_RaidLootMaker_GCWHutts</raidLootMaker>
 	</FactionDef>
-  
-  
-  
-  <ThingSetMakerDef>
-    <defName>guy762_RaidLootMaker_GCWHutts</defName>
-	<root Class="ThingSetMaker_Sum">
-      <options>
-        <li>
-          <thingSetMaker Class="ThingSetMaker_MarketValue">
-            <fixedParams>
-				<filter>
-				  <thingDefs>
-					<li>Gold</li>
-					<li>Silver</li>
-					
-					<li>KOTOR_Spice</li>
-					<li>Pemmican</li>
-					
-					<li>KOTOR_SpacerMedKit</li>
-					<li>KOTOR_PlasmaCartridge</li>
-				  </thingDefs>
-				</filter>
-			</fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <thingSetMaker  Class="ThingSetMaker_RandomOption">
-            <options>
-              <li>
-                <weight>5</weight>
-                <thingSetMaker Class="ThingSetMaker_MarketValue">
-                  <fixedParams>
-                    <filter>
-                      <tradeTagsToAllow>
-						<li>guy762TT_weaponmod_basic</li>
-						<li>guy762TT_armormod_basic</li>
-						<li>guy762TT_KotORHyperStims</li>
-					  </tradeTagsToAllow>
-                    </filter>
-                  </fixedParams>
-                </thingSetMaker>
-              </li>
-              <li>
-                <weight>1</weight>
-                <thingSetMaker Class="ThingSetMaker_MarketValue">
-                  <fixedParams>
-                    <filter>
-                      <tradeTagsToAllow>
-						<li>guy762TT_weaponmod_adv</li>
-						<li>guy762TT_armormod_adv</li>
-						<li>guy762TT_implants_basic</li>
-					  </tradeTagsToAllow>
-                    </filter>
-                  </fixedParams>
-                </thingSetMaker>
-              </li>
-              <li>
-                <weight>0.5</weight>
-                <thingSetMaker Class="ThingSetMaker_MarketValue">
-                  <fixedParams>
-                    <filter>
-                      <tradeTagsToAllow>
-						<li>guy762TT_weaponmod_rare</li>
-						<li>guy762TT_sabermod_basic</li>
-						<li>guy762TT_implants_adv</li>
-						
-						<!-- THE TRADETAG PALETTE:
-						<li>guy762TT_weaponmod_basic</li>
-						<li>guy762TT_weaponmod_adv</li>
-						<li>guy762TT_weaponmod_rare</li>
-						
-						<li>guy762TT_sabermod_basic</li>
-						<li>guy762TT_sabermod_adv</li>
-						<li>guy762TT_sabermod_rare</li>
-						
-						<li>guy762TT_armormod_basic</li>
-						<li>guy762TT_armormod_adv</li>
-						
-						<li>guy762TT_DroidWeapons_light</li>
-						<li>guy762TT_DroidWeapons_heavy</li>
-						
-						<li>guy762TT_DroidShields</li>
-						
-						<li>guy762TT_DroidUpgrades</li>
-						<li>guy762TT_DroidUpgrades_rare</li>
-						
-						<li>guy762TT_implants_basic</li>
-						<li>guy762TT_implants_adv</li>
-						<li>guy762TT_implants_rare</li>
-						<li>guy762TT_implants_DPkg</li>
-						
-						<li>guy762TT_KotORStims</li>
-						<li>guy762TT_KotORHyperStims</li>
-						-->
-					  </tradeTagsToAllow>
-                    </filter>
-                  </fixedParams>
-                </thingSetMaker>
-              </li>
-            </options>
-          </thingSetMaker>
-        </li>
-      </options>
-    </root>
-  </ThingSetMakerDef>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <RulePackDef>
-    <defName>guy762_NamerFaction_HuttCartel</defName>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name->[hsyl1][hsyl2] [kajidic]</li>
 
-
-        <li>kajidic->Kajidic</li>
-
-        <li>hsyl1->bor</li>
-        <li>hsyl1->ar</li>
-        <li>hsyl1->tir</li>
-        <li>hsyl1->zel</li>
-        <li>hsyl1->an</li>
-        <li>hsyl1->des</li>
-        <li>hsyl1->ner</li>
-        <li>hsyl1->bes</li>
-        <li>hsyl1->gar</li>
-        <li>hsyl1->ven</li>
-		
-        <li>hsyl2->dojii</li>
-        <li>hsyl2->galii</li>
-        <li>hsyl2->tilic</li>
-        <li>hsyl2->iliac</li>
-        <li>hsyl2->jania</li>
-        <li>hsyl2->adii</li>
-        <li>hsyl2->dulla</li>
-        <li>hsyl2->ilijic</li>
-
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
 </Defs>

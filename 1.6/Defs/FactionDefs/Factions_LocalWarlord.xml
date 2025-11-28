@@ -2,49 +2,48 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>guy762_SWWarlordsFaction_EriaduAuthority</defName>
-		<label>Eriadu Authority fleet</label>
+		<defName>guy762_SWWarlordsFaction_LocalWarlord</defName>
+		<label>local warlord fiefdom</label>
 		<description>.</description>
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
-		<factionIconPath>World/EriaduAuthority</factionIconPath>
+		<factionIconPath>World/ImperialRemnant</factionIconPath>
 		<colorSpectrum>
-			<li>RGB(135,240,190)</li> <!-- eriadu mint -->
+		  <li>RGB(250,250,250)</li>
 		</colorSpectrum>
-		
-		<!-- replaces a faction in the default vanilla setup list -->
-		<!-- <replacesFaction>PirateWaster</replacesFaction> -->
-		<!-- <replacesFaction>Pirate</replacesFaction> -->
 		
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<listOrderPriority>1767</listOrderPriority>
-		<configurationListOrderPriority>1767</configurationListOrderPriority>
+		<listOrderPriority>1776</listOrderPriority>
+		<configurationListOrderPriority>1776</configurationListOrderPriority>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<techLevel>Spacer</techLevel>
 		
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
 		<canRequestTraders>false</canRequestTraders>
 		<canRequestMilitaryAid>true</canRequestMilitaryAid>
 		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
 		<canGenerateQuestSites>true</canGenerateQuestSites>
+
 		
 		
-		<factionNameMaker>guy762_NamerFaction_EriaduStarfleet</factionNameMaker>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker>
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
 		<leaderTitle>governor</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
-		  <li>SWEriadu_ArmyGeneral</li>
+		  <!-- <li>SWImpRemnant_Viceroy</li> too low ranking -->
+		  <li>SWImpRemnant_Moff</li>
+		  <!-- <li>SWImpRemnant_GrandMoff</li> should be story quest-only -->
+		  
+		  <!-- <li>SWImpRemnant_NavyAdmiral</li> -->
+		  <!-- <li>SWImpRemnant_ArmyGeneral</li> political officers only, Zsinj/Maldrood/Eriadu could use military officers instead -->
 		</fixedLeaderKinds>
-		
-		
-		
-		
+
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<li>Surface</li>
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
@@ -52,7 +51,6 @@
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
 		</layerWhitelist>
-		
 
 		<naturalEnemy>true</naturalEnemy>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -60,7 +58,7 @@
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>4</settlementGenerationWeight>
+		<settlementGenerationWeight>6</settlementGenerationWeight>
 		<modExtensions Inherit="False">
 			<li Class="SWCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
@@ -72,38 +70,40 @@
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension">
-				<transportShipDef>guy762_SWShuttleTransportShip_lambda_eriadu</transportShipDef>
-				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
-				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
-			</li>
+			<!-- <li Class="SWCP_Shuttles.FactionModExtension"> -->
+				<!-- <transportShipDef>guy762_SWShuttleTransportShip_lambda</transportShipDef> -->
+				<!-- <minDistanceBetweenShuttles>20</minDistanceBetweenShuttles> -->
+				<!-- <maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle> -->
+			<!-- </li> -->
+			<!-- <li Class = "Vehicles.VehicleRaiderDefModExtension"/> -->
+			
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<guy762_SWWarlordsFaction_NewRepublic>-100</guy762_SWWarlordsFaction_NewRepublic>
+					<guy762_SWWarlordsFaction_NewRepublic>-50~0</guy762_SWWarlordsFaction_NewRepublic>
 					<guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell>
 					<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 					
 					<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
 					<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
-					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+					<guy762_SWWarlordsFaction_Pentastar>0~25</guy762_SWWarlordsFaction_Pentastar>
 					
-					<guy762_SWWarlordsFaction_GreaterMaldrood>100</guy762_SWWarlordsFaction_GreaterMaldrood>
-					<guy762_SWWarlordsFaction_EriaduAuthority>100</guy762_SWWarlordsFaction_EriaduAuthority>
+					<guy762_SWWarlordsFaction_GreaterMaldrood>-100</guy762_SWWarlordsFaction_GreaterMaldrood>
+					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
 					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
 					
-					<guy762_SWWarlordsFaction_ZannConsortium>0</guy762_SWWarlordsFaction_ZannConsortium>
-					<guy762_SWWarlordsFaction_BlackSun>0</guy762_SWWarlordsFaction_BlackSun>
-					<guy762_SWWarlordsFaction_HuttCartel>0</guy762_SWWarlordsFaction_HuttCartel>
+					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
+					<guy762_SWWarlordsFaction_BlackSun>0~50</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>0~50</guy762_SWWarlordsFaction_HuttCartel>
 					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
 					
 					<!-- . -->
-					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan> -->
-					<guy762_SWWarlordsFaction_PDF>-50~0</guy762_SWWarlordsFaction_PDF>
-					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
-					<!-- <guy762_SWWarlordsFaction_CSA>0</guy762_SWWarlordsFaction_CSA> -->
 
-					<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWWarlordsFaction_MandoClan>-50</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
+					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
+					<!-- <guy762_SWWarlordsFaction_CSA>0~50</guy762_SWWarlordsFaction_CSA> -->
+
+					<guy762_KotORFaction_Civilians>-50</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_JawaMerchants> -->
 				</startingGoodwillByFactionDefs>
@@ -112,39 +112,40 @@
 				<neverConnectToRoads>false</neverConnectToRoads>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
-					<!-- <territoryColor>(165,155,80,32)</territoryColor> -->
-					<!-- <territoryBorderColor>(165,155,80,128)</territoryBorderColor> -->
-					<!-- <factionLabelColor>(165,155,80,255)</factionLabelColor> -->
-					<!-- <initialTerritoryRadius>10</initialTerritoryRadius> -->
-					<!-- <renderTerritoryOverWater>false</renderTerritoryOverWater> -->
-			<!-- </li> -->
-					<!-- <territoryBorderColor>(80,75,40,128)</territoryBorderColor> -->
-					<!-- <factionLabelColor>(80,75,40,255)</factionLabelColor> -->
-					
-					
-					
+			<li Class="SWCP.Core.ModExtension_FactionTerritory">
+				<territoryColor>(25,110,30,32)</territoryColor>
+				<territoryBorderColor>(25,110,30,128)</territoryBorderColor>
+				<factionLabelColor>(25,110,30,255)</factionLabelColor>
+				<initialTerritoryRadius>10</initialTerritoryRadius>
+				<renderTerritoryOverWater>false</renderTerritoryOverWater>
+			</li>
+				<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
+				<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->
+				
+				
+				
 			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
-				<!-- <ideoIconDef>guy762_IdeoIcon_zsinj</ideoIconDef> -->
-				<!-- <ideoColorDef>guy762_IdeoFactionColor_ZsinjYellow</ideoColorDef> -->
+				<!-- <ideoIconDef>guy762_IdeoIcon_empire</ideoIconDef> -->
+				<!-- <ideoColorDef>guy762_IdeoFactionColor_Greenpire</ideoColorDef> -->
 				<!-- <memberName>Imperial</memberName> -->
 				<!-- <adjective>Imperial</adjective> -->
 				<!-- <roleOverrides> -->
 					<!-- <li> -->
 						<!-- <preceptDef>IdeoRole_Leader</preceptDef> -->
-						<!-- <newName>Warlord</newName> -->
+						<!-- <newName>Governor</newName> -->
 						<!-- <disableApparelRequirements>true</disableApparelRequirements> -->
 					<!-- </li> -->
 					<!-- <li MayRequire="VanillaExpanded.VMemesE"> -->
 						<!-- <preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef> -->
-						<!-- <newName>Loyalty Officer</newName> -->
+						<!-- <newName>COMPNOR Loyalty Officer</newName> -->
 						<!-- <disableApparelRequirements>true</disableApparelRequirements> -->
 						<!-- <apparelRequirementsOverride></apparelRequirementsOverride> -->
 					<!-- </li> -->
 				<!-- </roleOverrides> -->
 			<!-- </li> -->
-			
-			
+		  
+		  
+		  
 		</modExtensions>
 		<!--permanentEnemyToEveryoneExcept>
 		  <li>OutlanderCivil</li>
@@ -158,24 +159,24 @@
 		
 		
 		<allowedCultures>
-			<li>guy762_culture_outerrim</li>
+			<li>guy762_culture_coreworlds</li>
 		</allowedCultures>
 		<styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
 
 			<li>guy762_RankStyleCategory_ImperialArmy</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialNavy</li> -->
-			<li>guy762_RankStyleCategory_ImperialTaskforce</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialPolitiburo</li> -->
+			<li>guy762_RankStyleCategory_ImperialNavy</li>
+			<!-- <li>guy762_RankStyleCategory_ImperialTaskforce</li> player factions and EA only -->
+			<li>guy762_RankStyleCategory_ImperialPolitiburo</li>
 			<!-- <li>guy762_RankStyleCategory_ImpISB</li> maldrood only -->
 			<!-- <li>guy762_RankStyleCategory_ImpINT</li> -->
-			<!-- <li>guy762_RankStyleCategory_ImperialOps</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialOps</li> PA only -->
 		</styles>
 		
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-			<li>guy762_MemeDef_empire</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
 		</requiredMemes>
 		<allowedMemes>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
@@ -212,6 +213,8 @@
 		
 		
 		
+		
+		
 		<xenotypeSet>
 		  <xenotypeChances>
 			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.95</Baseliner>
@@ -230,11 +233,23 @@
 			<categories>
 			  <li>ImperialCommon</li>
 			</categories>
-			<commonality>0.75</commonality>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+			<commonality>0.25</commonality>
 		  </li>
 		  <li>
 			<categories>
 			  <li>Offworld</li>
+			</categories>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Pirate</li>
 			</categories>
 			<commonality>0.25</commonality>
 		  </li>
@@ -288,27 +303,17 @@
 		
 		
 		<pawnGroupMakers>
-			<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
-					<!-- <kindDef>Combat</kindDef> -->
-					<!-- <commonality>10000</commonality> -->
-					<!-- <minPoints>2000</minPoints> -->
-					<!-- <minAircraftCount>4</minAircraftCount> -->
-					<!-- <maxAircraftCount>8</maxAircraftCount> -->
-					<!-- <options> -->
-						<!-- <guy762_SWVehicle_Z95Zsinj_bot_PawnKind>4</guy762_SWVehicle_Z95Zsinj_bot_PawnKind> -->
-						<!-- <guy762_SWVehicle_TIEBomber_bot_PawnKind>2</guy762_SWVehicle_TIEBomber_bot_PawnKind> -->
-					<!-- </options> -->
-			<!-- </li> -->
-			  
-			  
+		  
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-				  <SWEriadu_ArmyConscript>100</SWEriadu_ArmyConscript>
-				  <SWEriadu_ArmyLieutenant>50</SWEriadu_ArmyLieutenant>
+				  <SWImpRemnant_ArmyTrooper>50</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmyLieutenant>25</SWImpRemnant_ArmyLieutenant>
+				  <SWImpRemnant_ArmyMajor>100</SWImpRemnant_ArmyMajor>
+				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
 				</options>
 			</li>
-			  
+
 			<li>
 				<!-- army skirmish -->
 				<kindDef>Combat</kindDef>
@@ -322,14 +327,15 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-					<SWEriadu_ArmyConscript>100</SWEriadu_ArmyConscript>
-					<SWEriadu_ArmyTrooper>10</SWEriadu_ArmyTrooper>
-					<SWEriadu_ArmyHeavy>25</SWEriadu_ArmyHeavy>
-
-					<SWEriadu_ArmyLieutenant>25</SWEriadu_ArmyLieutenant>
+				  <SWImpRemnant_ArmyConscript>100</SWImpRemnant_ArmyConscript>
+				  <SWImpRemnant_ArmyTrooper>25</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmySniper>25</SWImpRemnant_ArmySniper>
+				  <SWImpRemnant_ArmyHeavy>15</SWImpRemnant_ArmyHeavy>
+				  
+				  <SWImpRemnant_ArmyLieutenant>25</SWImpRemnant_ArmyLieutenant>
 				</options>
 			</li>
-			  
+
 			<li>
 				<!-- territory intrusion -->
 				<kindDef>Combat</kindDef>
@@ -343,35 +349,17 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-					<SWEriadu_ArmyConscript>100</SWEriadu_ArmyConscript>
-					<SWEriadu_ArmyTrooper>25</SWEriadu_ArmyTrooper>
-					<SWEriadu_ArmyHeavy>50</SWEriadu_ArmyHeavy>
+				  <SWImpRemnant_ArmyConscript>50</SWImpRemnant_ArmyConscript>
+				  <SWImpRemnant_ArmyTrooper>75</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmySniper>15</SWImpRemnant_ArmySniper>
+				  <SWImpRemnant_ArmyHeavy>25</SWImpRemnant_ArmyHeavy>
+				  
+				  <SWImpRemnant_ArmyLieutenant>25</SWImpRemnant_ArmyLieutenant>
+				  
+				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
+				</options>
+			</li>
 
-					<SWEriadu_ArmyLieutenant>100</SWEriadu_ArmyLieutenant>
-				</options>
-			</li>
-			  
-			  
-			<li>
-				<!-- army specops/commando raid -->
-				<kindDef>Combat</kindDef>
-				<commonality>50</commonality>
-				<disallowedStrategies>
-					<li>Siege</li>
-					<li>EmergeFromWater</li>
-					<li>StageThenAttack</li>
-					<li>ImmediateAttack</li>
-					<li>ImmediateAttackSappers</li>
-					<li>ImmediateAttackBreaching</li>
-					<li>ImmediateAttackBreachingSmart</li>
-				</disallowedStrategies>
-				<options>
-					<SWWarlords_ArmyCommando>50</SWWarlords_ArmyCommando>
-					<SWWarlords_ArmySpecOps>100</SWWarlords_ArmySpecOps>
-					<SWEriadu_ArmyLieutenant>100</SWEriadu_ArmyLieutenant>
-				</options>
-			</li>
-			  
 			<li>
 				<!-- assault -->
 				<kindDef>Combat</kindDef>
@@ -382,46 +370,87 @@
 					<li>ImmediateAttack</li>
 				</disallowedStrategies>
 				<options>
-					<SWEriadu_ArmyConscript>100</SWEriadu_ArmyConscript>
-					<SWEriadu_ArmyTrooper>10</SWEriadu_ArmyTrooper>
-					<SWEriadu_ArmyHeavy>50</SWEriadu_ArmyHeavy>
-
-					<SWEriadu_ArmyLieutenant>100</SWEriadu_ArmyLieutenant>
-					<SWEriadu_ArmyMajor>100</SWEriadu_ArmyMajor>
-
-					<SWWarlords_ArmySpecOps>50</SWWarlords_ArmySpecOps>
-					<!-- <SWWarlords_NavyCmdoHvy>50</SWWarlords_NavyCmdoHvy> -->
-					<!-- <SWWarlords_NavyCmdoOfficer>100</SWWarlords_NavyCmdoOfficer> -->
+				  <SWImpRemnant_ArmyConscript>75</SWImpRemnant_ArmyConscript>
+				  <SWImpRemnant_ArmyTrooper>75</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmySniper>10</SWImpRemnant_ArmySniper>
+				  <SWImpRemnant_ArmyHeavy>35</SWImpRemnant_ArmyHeavy>
+				  
+				  <SWImpRemnant_ArmyLieutenant>25</SWImpRemnant_ArmyLieutenant>
+				  <SWImpRemnant_ArmyMajor>100</SWImpRemnant_ArmyMajor>
+				  
+				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
 				</options>
 			</li>
 
-			  
-			  
-			  
-			  
-			  
+			<li>
+				<!-- combined mega assault -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+				  <SWImpRemnant_ArmyConscript>75</SWImpRemnant_ArmyConscript>
+				  <SWImpRemnant_ArmyTrooper>100</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmySniper>15</SWImpRemnant_ArmySniper>
+				  <SWImpRemnant_ArmyHeavy>50</SWImpRemnant_ArmyHeavy>
+				  
+				  <SWImpRemnant_ArmyLieutenant>25</SWImpRemnant_ArmyLieutenant>
+				  <SWImpRemnant_ArmyGeneral_field>100</SWImpRemnant_ArmyGeneral_field>
+				  
+				  <SWWarlords_ArmyMedic>100</SWWarlords_ArmyMedic>
+				</options>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			<li>
 				<kindDef>Settlement</kindDef> <!-- base -->
 				<commonality>1</commonality>
 				<options>
-					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-					<SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
-					<SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
-
-					<SWEriadu_TankDriver>10</SWEriadu_TankDriver>
-					<SWEriadu_TankHvyDriver>10</SWEriadu_TankHvyDriver>
-
-					<SWEriadu_ArmyConscript>25</SWEriadu_ArmyConscript>
-
-					<SWEriadu_ArmyLieutenant>5</SWEriadu_ArmyLieutenant>
-					<SWEriadu_ArmyMajor>5</SWEriadu_ArmyMajor>
-					<SWEriadu_ArmyGeneral_field>2</SWEriadu_ArmyGeneral_field>
-					<SWEriadu_ArmyGeneral>1</SWEriadu_ArmyGeneral>
-
-					<SWWarlords_ArmySpecOps>10</SWWarlords_ArmySpecOps>
-					<SWWarlords_ArmyCommando>10</SWWarlords_ArmyCommando>
-					
+				  <SWImpRemnant_Worker>10</SWImpRemnant_Worker>
+				  <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
+				  <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
+				  
+				  <!-- <KotORCzrka_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORCzrka_droid_GE3PD> -->
+				  <!-- <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_R8009> -->
+				  <!-- <KotORDroidGood_3C MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_3C> -->
+				  
+				  <SWImpRemnant_NavyGuard>10</SWImpRemnant_NavyGuard>
+				  <SWImpRemnant_NavyTrooper>5</SWImpRemnant_NavyTrooper>
+				  <SWImpRemnant_NavyLt>1</SWImpRemnant_NavyLt>
+				  <SWImpRemnant_TIEpilot>5</SWImpRemnant_TIEpilot>
+				  <SWImpRemnant_TIEace>5</SWImpRemnant_TIEace>
+				  
+				  <!-- <KotORCzrka_droid_SentWD MayRequire="guy762.KotORDroids">10</KotORCzrka_droid_SentWD> -->
+				  <!-- <KotORCzrka_droid_ADMkI MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkI> -->
+				  <!-- <KotORCzrka_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkIV> -->
+				  
+				  <SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper>
+				  <SWImpRemnant_ArmyLieutenant>10</SWImpRemnant_ArmyLieutenant>
+				  <SWImpRemnant_ArmyMajor>1</SWImpRemnant_ArmyMajor>
+				  <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral>
+				  
+				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
+				  
+				  <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt>
+				  <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral>
+				  
+				  <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy>
+				  <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff>
 				</options>
 			</li>
 
@@ -429,147 +458,11 @@
 		  
 		</pawnGroupMakers>
 		
-		<raidLootMaker>guy762_RaidLootMaker_EriaduAuthority</raidLootMaker>
+		<raidLootMaker>guy762_RaidLootMaker_ImpRemnant</raidLootMaker>
 	</FactionDef>
   
   
   
   
-	<ThingSetMakerDef>
-		<defName>guy762_RaidLootMaker_EriaduAuthority</defName>
-		<root Class="ThingSetMaker_Sum">
-		  <options>
-			<li>
-			  <thingSetMaker Class="ThingSetMaker_MarketValue">
-				<fixedParams>
-					<filter>
-					  <thingDefs>
-						<li>guy762_KotORcredits</li>
-						
-						<li>MealSurvivalPack</li>
-						
-						<li>KOTOR_SpacerMedKit</li>
-						<li>KOTOR_PlasmaCartridge</li>
-						<li>KOTOR_FabricArmorweave</li>
-					  </thingDefs>
-					</filter>
-				</fixedParams>
-			  </thingSetMaker>
-			</li>
-			<li>
-			  <thingSetMaker  Class="ThingSetMaker_RandomOption">
-				<options>
-				  <li>
-					<weight>5</weight>
-					<thingSetMaker Class="ThingSetMaker_MarketValue">
-					  <fixedParams>
-						<filter>
-						  <tradeTagsToAllow>
-							<li>guy762TT_weaponmod_basic</li>
-							<li>guy762TT_armormod_basic</li>
-							<li>guy762TT_implants_basic</li>
-							<li>guy762TT_KotORStims</li>
-							<li>guy762TT_DroidWeapons_light</li>
-							<li>guy762TT_DroidShields</li>
-						  </tradeTagsToAllow>
-						</filter>
-					  </fixedParams>
-					</thingSetMaker>
-				  </li>
-				  <li>
-					<weight>1</weight>
-					<thingSetMaker Class="ThingSetMaker_MarketValue">
-					  <fixedParams>
-						<filter>
-						  <tradeTagsToAllow>
-							<li>guy762TT_weaponmod_adv</li>
-							<li>guy762TT_armormod_adv</li>
-							<li>guy762TT_sabermod_basic</li>
-							<li>guy762TT_implants_adv</li>
-							<li>guy762TT_KotORHyperStims</li>
-							<li>guy762TT_DroidUpgrades</li>
-							<li>guy762TT_DroidWeapons_heavy</li>
-						  </tradeTagsToAllow>
-						</filter>
-					  </fixedParams>
-					</thingSetMaker>
-				  </li>
-				  <li>
-					<weight>0.5</weight>
-					<thingSetMaker Class="ThingSetMaker_MarketValue">
-					  <fixedParams>
-						<filter>
-						  <tradeTagsToAllow>
-							<li>guy762TT_weaponmod_rare</li>
-							<li>guy762TT_sabermod_adv</li>
-							<li>guy762TT_implants_rare</li>
-							<li>guy762TT_DroidUpgrades_rare</li>
-							
-							<!-- THE TRADETAG PALETTE:
-							<li>guy762TT_weaponmod_basic</li>
-							<li>guy762TT_weaponmod_adv</li>
-							<li>guy762TT_weaponmod_rare</li>
-							
-							<li>guy762TT_sabermod_basic</li>
-							<li>guy762TT_sabermod_adv</li>
-							<li>guy762TT_sabermod_rare</li>
-							
-							<li>guy762TT_armormod_basic</li>
-							<li>guy762TT_armormod_adv</li>
-							
-							<li>guy762TT_DroidWeapons_light</li>
-							<li>guy762TT_DroidWeapons_heavy</li>
-							
-							<li>guy762TT_DroidShields</li>
-							
-							<li>guy762TT_DroidUpgrades</li>
-							<li>guy762TT_DroidUpgrades_rare</li>
-							
-							<li>guy762TT_implants_basic</li>
-							<li>guy762TT_implants_adv</li>
-							<li>guy762TT_implants_rare</li>
-							<li>guy762TT_implants_DPkg</li>
-							
-							<li>guy762TT_KotORStims</li>
-							<li>guy762TT_KotORHyperStims</li>
-							-->
-						  </tradeTagsToAllow>
-						</filter>
-					  </fixedParams>
-					</thingSetMaker>
-				  </li>
-				</options>
-			  </thingSetMaker>
-			</li>
-		  </options>
-		</root>
-	</ThingSetMakerDef>
-
-  
-  
-  
-  <RulePackDef>
-    <defName>guy762_NamerFactionFiles_EriaduPlanets</defName>
-    <rulePack>
-      <rulesFiles>
-		<li>SWEAFN_AnyPlanet->Names/SWfactionnames_EriaduPlanets</li>
-	  </rulesFiles>
-    </rulePack>
-  </RulePackDef>
-  
-  <RulePackDef>
-    <defName>guy762_NamerFaction_EriaduStarfleet</defName>
-    <include>
-		<li>guy762_NamerFactionFiles_GenericFleetName</li>
-		<li>guy762_NamerFactionFiles_EriaduPlanets</li>
-	</include>
-	<rulePack>
-	  <rulesStrings>
-		<li>r_name(p=6)->[SWFN_SmallFleetNumber] [SWEAFN_AnyPlanet] [army]</li>
-		
-		<li>army->Army</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
   
 </Defs>

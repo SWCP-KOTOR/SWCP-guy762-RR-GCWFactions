@@ -30,6 +30,7 @@
 			<li>SWRanged_E10rifle</li>
 			<li>SWRanged_AnyCommonRifle</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_common</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>
@@ -109,6 +110,7 @@
 			<li>SWRanged_E11carbine</li>
 			<li>SWRanged_AnyCommonCarbine</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_common</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>
@@ -211,6 +213,7 @@
 			<li>SWRanged_E11tac</li>
 			<li>SWRanged_AnyRareCarbine</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>
@@ -295,6 +298,7 @@
 			<li>SWRanged_E22rifle</li>
 			<li>SWRanged_AnyRareRifle</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORRanged</li>

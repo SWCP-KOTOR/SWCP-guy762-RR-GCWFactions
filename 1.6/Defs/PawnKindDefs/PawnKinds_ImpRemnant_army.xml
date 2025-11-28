@@ -14,6 +14,9 @@
 	
 	<PawnKindDef Name="SWImpRemnant_ArmyConscript" ParentName="SWImpRemnant_Base">
 		<defName>SWImpRemnant_ArmyConscript</defName>
+		
+		<!-- <defaultFactionType Inherit="False" /> -->
+		
 		<label>army conscript</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>15</minGenerationAge>
