@@ -14,6 +14,14 @@
 		</colorSpectrum>
 		
 		<fixedName>Zann Consortium</fixedName> <!-- !!!IDEA!!!: faction names are local 'front' corporations?  -->
+		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
+		<leaderTitle>underboss</leaderTitle>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>KotORExchg_vigo</li> -->
+		<!-- </fixedLeaderKinds> -->
+		
+		
 		
 		<!-- replaces a faction in the default vanilla setup list -->
 		<replacesFaction>PirateYttakin</replacesFaction>
@@ -45,6 +53,13 @@
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantell</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 		
 		
@@ -97,7 +112,7 @@
 					
 					<guy762_KotORFaction_Civilians>-75</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_JawaMerchants> -->
+					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>true</excludeFromCommConsole>
 				<hasCities>true</hasCities>
@@ -113,12 +128,7 @@
 		</modExtensions>
 		
 		
-		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
-		<leaderTitle>underboss</leaderTitle>
-		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
-		<!-- <fixedLeaderKinds> -->
-			<!-- <li>KotORExchg_vigo</li> -->
-		<!-- </fixedLeaderKinds> -->
+		
 		
 		<allowedCultures>
 			<li>guy762_culture_exchange</li>

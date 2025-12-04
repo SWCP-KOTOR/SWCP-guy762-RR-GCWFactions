@@ -1,16 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
-		<defName>SWCPBiomeFeature_Urban</defName>
-		<workerClass>FeatureWorker_Biome</workerClass>
-		<order>409</order>
-		<minRootGroupSize>12</minRootGroupSize>
-		<rootBiomes>
-		  <li>SWCPBiome_Urban</li>
-		</rootBiomes>
-		<nameMaker>NamerScarlands</nameMaker>
-	</FeatureDef>
+	
 	
 	<BiomeDef>
 		<defName>SWCPBiome_Urban</defName>

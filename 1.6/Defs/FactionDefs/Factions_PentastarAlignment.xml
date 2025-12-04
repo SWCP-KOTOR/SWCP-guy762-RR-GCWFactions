@@ -48,6 +48,13 @@
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 
 
@@ -79,7 +86,7 @@
 					<guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell>
 					<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 					
-					<guy762_SWWarlordsFaction_ImpRemnant>-50~0</guy762_SWWarlordsFaction_ImpRemnant>
+					<guy762_SWWarlordsFaction_ImpRemnant>0</guy762_SWWarlordsFaction_ImpRemnant>
 					<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
 					<guy762_SWWarlordsFaction_Pentastar>100</guy762_SWWarlordsFaction_Pentastar>
 					
@@ -96,12 +103,12 @@
 					
 					<!-- <guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan> -->
 					<guy762_SWWarlordsFaction_PDF>25</guy762_SWWarlordsFaction_PDF>
-					<guy762_SWWarlordsFaction_LocalWarlord>0~25</guy762_SWWarlordsFaction_LocalWarlord>
+					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-25</guy762_SWWarlordsFaction_CSA> -->
 
 					<guy762_KotORFaction_Civilians>-50</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_JawaMerchants> -->
+					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>

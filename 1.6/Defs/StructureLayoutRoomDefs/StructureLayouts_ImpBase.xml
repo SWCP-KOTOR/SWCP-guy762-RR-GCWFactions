@@ -150,9 +150,10 @@
 			</li>
 		  </scatteredPrefabs>
 		  <perimeterWallDef>AncientRazorWire</perimeterWallDef>
-		  <perimeterExpandBy>5</perimeterExpandBy>
+		  <perimeterExpandBy>10</perimeterExpandBy>
 		  <perimeterWallChance>0.9</perimeterWallChance>
-		  <perimeterTerrainDef>AncientConcrete</perimeterTerrainDef>
+		  <!-- <perimeterTerrainDef>AncientConcrete</perimeterTerrainDef> -->
+		  <perimeterTerrainDef>Concrete</perimeterTerrainDef>
 
 		  <perimeterScatteredThings>
 			<AncientMortar>3</AncientMortar>
@@ -228,7 +229,7 @@
 		<wallDef>guy762_PoweredWall_ImpBaseA</wallDef>
 		<doorDef>guy762_Autodoor1x1_DoomgiverA</doorDef>
 		<terrainDef>guy762_FloorTiles_ImpBaseTile</terrainDef>
-		<surroundingTerrainDef>AncientConcrete</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		<surroundingTerrainDef>Concrete</surroundingTerrainDef> <!-- will morphology outline all buildings -->
 		
 		<ensureOneDoorUnlocked>true</ensureOneDoorUnlocked>
 		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
@@ -341,6 +342,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpShelfRoom</defName>
+		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
 		<minSingleRectWidth>6</minSingleRectWidth>
@@ -376,6 +378,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpOrbitalUplink</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>8</minSingleRectWidth>
 		<minSingleRectHeight>8</minSingleRectHeight>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
@@ -409,6 +412,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpComputerRoom</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>8</minSingleRectWidth>
 		<minSingleRectHeight>8</minSingleRectHeight>
 		<prefabs>
@@ -464,6 +468,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpGarrisonBarracks</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
 		<prefabs>
@@ -492,6 +497,7 @@
 
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpCanteen</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
 		<prefabs>
@@ -526,6 +532,7 @@
 
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpWorkshop</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
 		<prefabs>
@@ -569,6 +576,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle</defName>
+		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
 		<prefabs>
@@ -599,6 +607,7 @@
 
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpGarrisonShellStorageRoom</defName>
+		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
 		<minSingleRectWidth>6</minSingleRectWidth>
@@ -634,6 +643,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpLockerRoom</defName>
+		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<prefabs>
 		  <AncientLockers_Row>
@@ -680,6 +690,7 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpWeaponsStorage</defName>
+		<spawnJunk>false</spawnJunk>
 		<parts>
 		  <SWCPRoomPart_ImpWeaponsStorage />
 		  <!-- <CornerArmoredTurret /> -->
