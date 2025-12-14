@@ -86,7 +86,7 @@
 		</extraGenSteps>
 		<categories Inherit="False" /> <!-- Remove the AncientStructure category so this isn't chosen for ancient mercenaries quest -->
 		<biomeWhitelist Inherit="False">
-			<li>SWCPBiome_TatooineHighland</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineHighland</li>
 		</biomeWhitelist>
 		
 		<structureGenParms>
