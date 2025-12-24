@@ -30,7 +30,7 @@
 			<li>SWKotORWeaponCategoryTag_pistol</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -133,7 +133,7 @@
 			<li>SWKotORWeaponCategoryTag_pistol</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 		</tradeTags>
 		<verbs>
 			<li>

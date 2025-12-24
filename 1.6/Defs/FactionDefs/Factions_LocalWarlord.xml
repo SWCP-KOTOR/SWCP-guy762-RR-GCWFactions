@@ -332,6 +332,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>75</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttackSmart</li>
@@ -354,6 +356,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>50</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -378,6 +382,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>25</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>
@@ -400,6 +406,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>

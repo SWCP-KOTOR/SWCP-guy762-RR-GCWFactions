@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    
+	 <PawnGroupKindDef>
+        <defName>SWCPPawnGroupKind_TaxCollector</defName>
+        <workerClass>PawnGroupKindWorker_Trader</workerClass>
+    </PawnGroupKindDef>
+
+    <IncidentDef Name="SWCPIncident_TaxCollectorBASE" Abstract="True">
+        <label>tax collector caravan arrival</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>SWCP.Core.IncidentWorker_CaravanArrivalTaxCollector</workerClass>
+        <category>FactionArrival</category>
+        <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
+        <requireColonistsPresent>True</requireColonistsPresent>
+    </IncidentDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Rebel Cell -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_RebelCell</defName>
+        <label>Rebel logistics caravan arrival</label>
+        <letterLabel>Rebel logistics officers</letterLabel>
+        <letterText>Logistics officers from a local Rebel cell are approaching.\n\nThey are seeking any unused equipment, supplies, and resources your colony would be willing to donate. They will also accept monetary donations. The one who gives over the donations will receive Commendations for contributing their resources to the cause.\n\nLogistics officers will visit roughly twice per year as long as you are not enemies with the local Rebel cell.</letterText>
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+                <factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_RebelCell</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef>
+        <defName>SWCPTrader_TaxCollector_RebelCell</defName>
+        <label>Rebel logistics officer</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_RebelCell</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>guy762_KotORcredits</thingDef>
+            </li>
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>Silver</thingDef>
+            </li>
+			<li Class="StockGenerator_BuySingleDef">
+                <thingDef>Gold</thingDef>
+            </li>
+			
+			<!-- put a bunch of "buy" trade tags here, they'll take anything and everything useful -->
+			
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="SWCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Imperial Remnant -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_ImpRemnant</defName>
+        <label>Imperial tax collector caravan arrival</label>
+        <letterLabel>Imperial Tax Collectors</letterLabel>
+        <letterText>A tax collector from the Imperial Remnant is approaching.\n\nThey will accept tax in credits or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to the Empire.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with the Imperial Remnant.</letterText>
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+                <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_ImpRemnant</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef>
+        <defName>SWCPTrader_TaxCollector_ImpRemnant</defName>
+        <label>Imperial tax collector</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+			
+			<li Class="StockGenerator_BuySlaves" />
+			
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>guy762_KotORcredits</thingDef>
+            </li>
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>Silver</thingDef>
+            </li>
+			<li Class="StockGenerator_BuySingleDef">
+                <thingDef>Gold</thingDef>
+            </li>
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="SWCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Pentastar Alignment -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_PentastarAlignment</defName>
+        <label>Pentastar tax collector caravan arrival</label>
+        <letterLabel>Pentastar Tax Collectors</letterLabel>
+        <letterText>A tax collector from the Pentastar Alignment is approaching.\n\nThey will accept tax in credits or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to the Alignment.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with the Pentastar Alignment.</letterText>
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+                <factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_PentastarAlignment</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef>
+        <defName>SWCPTrader_TaxCollector_PentastarAlignment</defName>
+        <label>Pentastar tax collector</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_Pentastar</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+			
+			<li Class="StockGenerator_BuySlaves" />
+			
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>guy762_KotORcredits</thingDef>
+            </li>
+            <li Class="StockGenerator_BuySingleDef">
+                <thingDef>Silver</thingDef>
+            </li>
+			<li Class="StockGenerator_BuySingleDef">
+                <thingDef>Gold</thingDef>
+            </li>
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="SWCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+
+</Defs>

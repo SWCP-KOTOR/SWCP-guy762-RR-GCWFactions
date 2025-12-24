@@ -40,7 +40,7 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -165,7 +165,7 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 		</tradeTags>
 		<verbs>
 			<li>

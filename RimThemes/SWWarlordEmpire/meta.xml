@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RimThemes>
+ <!-- The default fonts and size unsed if there is no custom font for particular language matching player's RimWorld current active language
+  You can set for example only Medium and Small one, then the unset Tiny font and size will be as the default Vanilla -->
+  
+ <!-- Note : RimThemes NX > RimThemes 20XX in the requirement notes [ XXX min] -->
+  
+  <customFontTinyDefault>SpaceRangercond</customFontTinyDefault>	<!-- [2019R3 min] Set the default font used for tiny text-->
+  <customFontSmallDefault>SpaceRangercond</customFontSmallDefault>	<!-- [2019R3 min] Set the default font used for small text-->
+  <customFontMediumDefault>SpaceRangercond</customFontMediumDefault><!-- [2019R3 min] Set the default font used for medium text-->
+  
+  <customFontSizeTinyDefault>12</customFontSizeTinyDefault>			<!-- [2019R3 min] Set the default font size of tiny text -->
+  <customFontSizeSmallDefault>14</customFontSizeSmallDefault>		<!-- [2019R3 min] Set the default font size of small text -->
+  <customFontSizeMediumDefault>18</customFontSizeMediumDefault>     <!-- [2019R3 min] Set the default font size of medium text -->
+  
+  <disableTransparentText>0</disableTransparentText>				<!-- [NX rev1 min] allow to force all text to be drawed with opacity fixed to 1.0f (100%), usefull for some light or transparent themes
+  
+  <windowsShadow>true</windowsShadow>								<!-- [NX rev0 min] allow to hide (false) or show (true) shadow under windows (usefull with transparent themes) -->
+  <loaderFPS>20</loaderFPS>											<!-- [NX rev0 min] add the ability to set a custom frame per seconds for loader APNG (20 by default) -->
+  <expansionsIcons>true</expansionsIcons>							<!-- [NX rev0 min] add the ability to show (true) or not (false) Rimworld vanilla's expansions icons in bottom left of the main menu -->
+  <translationsInfos>true</translationsInfos>							<!-- [NX rev10 min] add the ability to show (true) or not (false) Rimworld vanilla's translations infos (when the language is not english) in top left of the main menu -->
+  
+  <menuSpecialMode>0</menuSpecialMode>								<!-- [NX rev0 min] change the main menu shape to a predefined shape (others will be added with updates)
+																	     0 : normal rimworld vanilla shape
+																		 1 : Half-Life 2 shape kind (no buttons background, and no links)  -->
+																		 
+  <!-- ==================== Example of custom fonts and size couple tags definition for English and German ============================
+  (if player's RimWorld current active language is one of these, default fonts tag above are skipped and the tags related to their lang is applied)
+  The language suffix to replace the "Default" text is one of the following :
+  
+  "Arabic","ChineseSimplified","ChineseTraditional","Czech","Danish","Dutch","English","Estonian","Finnish","French","German",
+  "Hungarian","Italian","Japanese","Korean","Norwegian","Polish","Portuguese","PortugueseBrazilian","Romanian","Russian",
+  "Slovak","Spanish","SpanishLatin","Swedish","Turkish","Ukrainian"
+  
+  <customFontTinyEnglish>Gloria</customFontTinyEnglish>
+  <customFontSmallEnglish>Gloria</customFontSmallEnglish>
+  <customFontMediumEnglish>Fear</customFontMediumEnglish>
+  
+  <customFontSizeTinyEnglish>14</customFontSizeTinyEnglish>
+  <customFontSizeSmallEnglish>16</customFontSizeSmallEnglish>
+  <customFontSizeMediumEnglish>19</customFontSizeMediumEnglish>
+  
+  
+  
+  <customFontTinyGerman>Corleone</customFontTinyGerman>
+  <customFontSmallGerman>Corleone</customFontSmallGerman>
+  <customFontMediumGerman>Corleone</customFontMediumGerman>
+  
+  <customFontSizeTinyGerman>12</customFontSizeTinyGerman>
+  <customFontSizeSmallGerman>14</customFontSizeSmallGerman>
+  <customFontSizeMediumGerman>16</customFontSizeMediumGerman>  -->
+  
+  <!-- ========================= /!\ Deprecated tags (always work for backward compatibility, but should be avoided) ============================= -->
+  <!--<font>SpaceRangercond</font>                       			[Deprecated since 2019R3 use customFontX tags instead] The font used for your theme (Download the "Font Pack" to see what name to put here, you need to put here the filename without extension (ttf, otf) of desired font file )
+  <fontSizeTiny>12</fontSizeTiny>                    				[Deprecated since 2019R3 use customFontX tags instead] Size of the font for tiny characters
+  <fontSizeSmall>14</fontSizeSmall>                  				[Deprecated since 2019R3 use customFontX tags instead] Size of the font for small characters
+  <fontSizeMedium>18</fontSizeMedium>                				[Deprecated since 2019R3 use customFontX tags instead] Size of the font for medium characters -->
+  
+  
+  <tapestryScaleMode>ScaleToFit</tapestryScaleMode>				<!-- [2019R3 min] : Mode used to draw tapestry textures, can be (StretchToFill (by default),ScaleAndCrop,ScaleToFit) see https://docs.unity3d.com/ScriptReference/ScaleMode.ScaleToFit.html to have more information about each -->
+  
+  <description>Default theme for Star Wars: Warlord Empire</description>    				<!-- The description showed in the theme manager dialog -->
+  <particleMode>mono</particleMode>                  				<!-- How display on buttons the icon stored in Misc/Particle.png file (mono : one on the left, dual : two at left and right (by default if there is an icon), none : disable this feature) -->
+  <windowAnim>clip</windowAnim>                      				<!-- Window appear animation to use (clip, slideLeft, slideTop, slideRight, slideBottom, none)-->
+  <category>games</category>						 				<!-- Theme's category (can be one of the following values : "future", "medieval", "nature", "horror","wtf","games","historic","technology","other")-->
+  <dialogStacking>true</dialogStacking>								<!-- [2019R2 min] : If false disable the dialog stacking (usefull essentially for transparent themes), by default true -->
+  <disableMainRimthemesLogo>false</disableMainRimthemesLogo>		<!-- [2019R2 min] : If true hide the display of RimTheme logo in the main menu (bottom left), by default false -->
+  <disableMainThemeSelector>false</disableMainThemeSelector>    	<!-- [2019R2 min] : If true hide the theme selector in the main menu (bottom right), by default false -->
+  <menuAlignment>right</menuAlignment>								<!-- The alignment of RimWorld's main menu (can be left, middle, right), by default right) -->
+  <!--<buttonnotex>true</buttonnotex>                			     If true disable texture drawing on buttons -->
+  
+  <!--<buttonusecolor>true</buttonusecolor>          			     If buttonnotex == true then allow to draw background color based on following colors -->
+  <!--<buttonfillcolor>(31,0,61)</buttonfillcolor>   			     Color used to fill the button in normal state -->
+  <!--<buttonhovercolor>(31,0,61)</buttonhovercolor> 			     Color used to fill the button when mouse is over -->
+  <!--<buttonclickcolor>(31,0,61)</buttonclickcolor> 			     Color used to fill the button when user click on the button -->
+  
+  <GenUI.MouseoverColor>(101,50,136)</GenUI.MouseoverColor>                <!-- General mouseover color -->
+  <GenUI.SubtleMouseoverColor>(101,50,136)</GenUI.SubtleMouseoverColor>    <!-- Mouseover color for main ingame bottom buttons (architect, ...) -->
+  
+  <!-- [2019R3 min] Mass color substitutors for textures (for example changing white one, will make a 'filter' color on near all UI elements  ) -->
+  <!-- Note : Alpha level is skipped as it's the alpha level of original color to substitute which is retained -->
+  <textureColorWhite>(1.0, 1.0, 1.0)</textureColorWhite>
+  <textureColorYellow>(1.0, 0.921568632, 0.0156862754, 1.0)</textureColorYellow>
+  <textureColorRed>(1.0, 0.0, 0.0)</textureColorRed>
+  <textureColorGreen>(0.0, 1.0, 0.0)</textureColorGreen>
+  <textureColorBlue>(0.0, 0.0, 1.0)</textureColorBlue>
+  <textureColorCyan>(0.0, 1.0, 1.0)</textureColorCyan>
+  <textureColorGray>(0.5, 0.5, 0.5)</textureColorGray>
+  <textureColorMagenta>(1.0, 0.0, 1.0)</textureColorMagenta>
+  
+  <!-- [2020R1 min] Allow to substitute all matching colors (in this example : (1.0,0.3,0.35) to the color (0.0,0.89,0.0), dont forget the '=' between these two colors )-->
+  <!-- usefull to change custom colors not matched by mass color substitutors like the red color used for the "Confirm" button of Rimworld's messagebox windows -->
+  <!-- Multiple dynColor tags are obviously allowed for multiple custom color substitution -->
+  <dynColor>(1.0,0.3,0.35)=(0.0,0.89,0.0)</dynColor>
+  
+  <!-- Mass color substitutors (seems to apply to near 85% of RimWorld's text, for other color changing are possible with color class bellow) -->
+  <!-- [2019R3 change] Alpha level is skipped as it's the alpha level of original color to substitute which is retained -->
+  <textColorWhite>(1.0, 1.0, 1.0)</textColorWhite>
+  <textColorYellow>(1.0, 0.921568632, 0.0156862754)</textColorYellow>
+  <textColorRed>(1.0, 0.0, 0.0)</textColorRed>
+  <textColorGreen>(0.0, 1.0, 0.0)</textColorGreen>
+  <textColorBlue>(0.0, 0.0, 1.0)</textColorBlue>
+  <textColorCyan>(0.0, 1.0, 1.0)</textColorCyan>
+  <textColorGray>(0.5, 0.5, 0.5)</textColorGray>
+  <textColorMagenta>(1.0, 0.0, 1.0)</textColorMagenta>
+  
+  <!-- Color used to draw neutral factions relation text color (other text color (Hostile,Ally,...) are overridable with the textColorRed,... tags) -->
+  <textColorFactionNeutral>(0.0, 0.75, 1.0)</textColorFactionNeutral>
+  
+  <!-- Windows colors -->
+  <Widgets.WindowBGFillColor>(31,0,61)</Widgets.WindowBGFillColor>
+  <Widgets.WindowBGBorderColor>(201, 145, 226)</Widgets.WindowBGBorderColor>
+  
+  <!-- Tutor windows colors -->
+  <Widgets.TutorWindowBGFillColor>(0, 74, 127)</Widgets.TutorWindowBGFillColor>
+  <Widgets.TutorWindowBGBorderColor>(0, 148, 255)</Widgets.TutorWindowBGBorderColor>
+  
+  <!-- Menu inside windows colors -->
+  <Widgets.MenuSectionBGFillColor>(43, 19, 84)</Widgets.MenuSectionBGFillColor>
+  <Widgets.MenuSectionBGBorderColor>(201, 145, 226)</Widgets.MenuSectionBGBorderColor>
+  <Widgets.OptionUnselectedBGFillColor>(31,0,61)</Widgets.OptionUnselectedBGFillColor>
+  <Widgets.OptionSelectedBGFillColor>(91,0,121)</Widgets.OptionSelectedBGFillColor>
+  <Widgets.OptionTextActiveColor>(255,255,255)</Widgets.OptionTextActiveColor>
+  <Widgets.OptionUnselectedBGBorderColor>(0,0,0,175)</Widgets.OptionUnselectedBGBorderColor>
+  <Widgets.OptionSelectedBGBorderColor>(0,0,0,175)</Widgets.OptionSelectedBGBorderColor>
+  
+  <!-- Color used to draw text links on dialogs like "Chased refugee" or "Comms console" -->
+  <Widgets.NormalOptionColor>(0.8,0.85,1)</Widgets.NormalOptionColor>
+  
+  <!-- FloatMenu colors -->
+  <FloatMenuOption.ColorTextDisabled>(229,229,229)</FloatMenuOption.ColorTextDisabled>
+  <FloatMenuOption.ColorBGDisabled>(149,94,249)</FloatMenuOption.ColorBGDisabled>
+  <FloatMenuOption.ColorBGActiveMouseover>(91,0,121)</FloatMenuOption.ColorBGActiveMouseover>
+  <FloatMenuOption.ColorBGActive>(31,0,61)</FloatMenuOption.ColorBGActive>
+  
+  <!-- HealthCard colors -->
+  <HealthCardUtility.HighlightColor>(0.5, 0.5, 0.5, 1)</HealthCardUtility.HighlightColor>
+  <HealthCardUtility.StaticHighlightColor>(0.75, 0.75, 0.85, 1)</HealthCardUtility.StaticHighlightColor>
+  <HealthCardUtility.MediumPainColor>(0.9, 0.9, 0)</HealthCardUtility.MediumPainColor>
+  <HealthCardUtility.SeverePainColor>(0.9, 0.5, 0)</HealthCardUtility.SeverePainColor>
+  
+  <!-- [2019R2 min] Autosaver text color -->
+  <Dialog_SaveFileList.AutosaveTextColor>(255,255,255)</Dialog_SaveFileList.AutosaveTextColor>
+  
+  <!-- [2019R2 min] File text color in save/load dialog -->
+  <Dialog_FileList.DefaultFileTextColor>(255,255,255)</Dialog_FileList.DefaultFileTextColor>
+  
+  <!-- [2019R2 min] Text color used for pawn labels drawing-->
+  <PawnNameColorUtility.ColorBaseNeutral>(0.4, 0.85, 0.9)</PawnNameColorUtility.ColorBaseNeutral>
+  <PawnNameColorUtility.ColorBaseHostile>(0.9, 0.2, 0.2)</PawnNameColorUtility.ColorBaseHostile>
+  <PawnNameColorUtility.ColorBasePrisoner>(1, 0.85, 0.5)</PawnNameColorUtility.ColorBasePrisoner>
+  <PawnNameColorUtility.ColorColony>(0.9, 0.9, 0.9)</PawnNameColorUtility.ColorColony>
+  <PawnNameColorUtility.ColorWildMan>(1, 0.8, 1)</PawnNameColorUtility.ColorWildMan>
+  
+  <!-- [2019R2 min] Text color used to draw some in gear tab -->
+  <ITab_Pawn_Gear.ThingLabelColor>(0.9, 0.9, 0.9, 1)</ITab_Pawn_Gear.ThingLabelColor>
+  <ITab_Pawn_Gear.HighlightColor>(0.5, 0.5, 0.5, 1)</ITab_Pawn_Gear.HighlightColor>
+  
+  <!-- [2019R2 min] Text color used to draw every line in caravan and trader type dialogs -->
+  <TransferableOneWayWidget.ItemMassColor>(0.7, 0.7, 0.7)</TransferableOneWayWidget.ItemMassColor>
+
+</RimThemes>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Name="SWCP_FactionIntelDatapadBASE_basic" ParentName="guy762_NoCraft_upgradebase" Abstract="True">
+
+		<description>A datapad containing some sensitive information regarding a faction's ongoing military operations. This datapad only has mundane information such as temporary access codes, ledgers, orders for low-ranking personnel, and reports. While not terribly exciting on the surface, the loss of this datapad can prove very disruptive if it falls into the hands of an enemy faction.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>1</Mass>
+		</statBases>
+
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyfaction</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_ImpRemnant</defName>
+		<label>intel datapad, Imperial Remnant</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_ImpRemnant</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyImpRemnant</li>
+			<li>SWCPTT_FactionIntelDatapads_basicImpRemnant</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Zsinj</defName>
+		<label>intel datapad, Zsinj's Dominion</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Zsinj</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyZsinj</li>
+			<li>SWCPTT_FactionIntelDatapads_basicZsinj</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Pentastar</defName>
+		<label>intel datapad, Pentastar Alignment</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Pentastar</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyPentastar</li>
+			<li>SWCPTT_FactionIntelDatapads_basicPentastar</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Maldrood</defName>
+		<label>intel datapad, Greater Maldrood</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Maldrood</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyMaldrood</li>
+			<li>SWCPTT_FactionIntelDatapads_basicMaldrood</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Eriadu</defName>
+		<label>intel datapad, Eriadu Authority</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Eriadu</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyEriadu</li>
+			<li>SWCPTT_FactionIntelDatapads_basicEriadu</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Thrawn</defName>
+		<label>intel datapad, 7th Fleet Confederation</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Thrawn</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyThrawn</li>
+			<li>SWCPTT_FactionIntelDatapads_basicThrawn</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_NewRepublic</defName>
+		<label>intel datapad, New Republic</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_NewRepublic</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyNewRepublic</li>
+			<li>SWCPTT_FactionIntelDatapads_basicNewRepublic</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_RebelCell</defName>
+		<label>intel datapad, Rebel Cell</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_RebelCell</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyRebelCell</li>
+			<li>SWCPTT_FactionIntelDatapads_basicRebelCell</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Partisans</defName>
+		<label>intel datapad, Partisan Cell</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Partisans</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyPartisans</li>
+			<li>SWCPTT_FactionIntelDatapads_basicPartisans</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Zann</defName>
+		<label>intel datapad, Zann Consortium</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Zann</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyZann</li>
+			<li>SWCPTT_FactionIntelDatapads_basicZann</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCP_FactionIntelDatapadBASE_adv" ParentName="guy762_NoCraft_upgradebase" Abstract="True">
+
+		<description>A datapad containing critical information regarding a faction's ongoing military operations. This datapad could contain major battle plans, high-level memos, secret communiques, schematics for advanced technology, and more. The loss of this datapad is guaranteed to be a devastating blow to the faction it belongs to, and a major advantage to any faction that gets its hands on it.</description>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- <stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay> -->
+		<statBases>
+		  <MarketValue>10000</MarketValue>
+		  <Mass>1</Mass>
+		</statBases>
+
+		<thingSetMakerTags>
+		  <!-- <li>RewardStandardMidFreq</li> -->
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyfaction</li>
+			<li>SWCPTT_FactionIntelDatapads_critical</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_ImpRemnant</defName>
+		<label>critical intel datapad, Imperial Remnant</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_ImpRemnant</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyImpRemnant</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalImpRemnant</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Zsinj</defName>
+		<label>critical intel datapad, Zsinj's Dominion</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Zsinj</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyZsinj</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalZsinj</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Pentastar</defName>
+		<label>critical intel datapad, Pentastar Alignment</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Pentastar</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyPentastar</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalPentastar</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Maldrood</defName>
+		<label>critical intel datapad, Greater Maldrood</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Maldrood</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyMaldrood</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalMaldrood</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Eriadu</defName>
+		<label>critical intel datapad, Eriadu Authority</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Eriadu</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyEriadu</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalEriadu</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Thrawn</defName>
+		<label>critical intel datapad, 7th Fleet Confederation</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Thrawn</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyThrawn</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalThrawn</li>
+			<li>SWCPTT_FactionIntelDatapads_anyimps</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_NewRepublic</defName>
+		<label>critical intel datapad, New Republic</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_NewRepublic</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyNewRepublic</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalNewRepublic</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_RebelCell</defName>
+		<label>critical intel datapad, Rebel Cell</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_RebelCell</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyRebelCell</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalRebelCell</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Partisans</defName>
+		<label>critical intel datapad, Partisan Cell</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Partisans</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyPartisans</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalPartisans</li>
+			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Zann</defName>
+		<label>critical intel datapad, Zann Consortium</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Zann</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyZann</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalZann</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

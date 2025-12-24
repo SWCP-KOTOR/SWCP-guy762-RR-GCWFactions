@@ -454,6 +454,22 @@
 				<quality>Excellent</quality>
 			</li>
 		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+				  <thingDef>SWCP_FactionIntelDatapadAdv_Eriadu</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	
@@ -476,6 +492,23 @@
 				<quality>Excellent</quality>
 			</li>
 		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+				  <thingDef>SWCP_FactionIntelDatapadAdv_Eriadu</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		
 		<abilities Inherit="False">
 			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
 			<li>guy762_Ability_CommandTierIV</li>

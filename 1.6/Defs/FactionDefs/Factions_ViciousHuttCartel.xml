@@ -98,16 +98,16 @@
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>
-				<allowedBiomes>
-					<li>Desert</li>
-					<li>ExtremeDesert</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Luna</li> -->
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineHighland</li>
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineExtremeDesert</li>
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_OrdMantellUrban</li>
-				</allowedBiomes>
+				
+				<!-- <allowedBiomes> -->
+					<!-- <li>Desert</li> -->
+					<!-- <li>ExtremeDesert</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineHighland</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineExtremeDesert</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_OrdMantellUrban</li> -->
+				<!-- </allowedBiomes> -->
 			</li>
 			
 			<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->
@@ -322,6 +322,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>100</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>StageThenAttack</li>
@@ -341,6 +343,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>75</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttackSmart</li>
@@ -362,6 +366,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>10</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttackSmart</li>
@@ -385,6 +391,8 @@
 			<kindDef>Combat</kindDef> <!-- assault -->
 			<commonality>50</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>StageThenAttack</li>
@@ -412,6 +420,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>50</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->
@@ -428,6 +438,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>25</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->
@@ -446,6 +458,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>25</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>ImmediateAttack</li> -->
 				<!-- <li>ImmediateAttackSmart</li> -->
@@ -469,6 +483,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>25</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->

@@ -121,14 +121,16 @@
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>true</excludeFromCommConsole>
 				<hasCities>true</hasCities>
+				
 				<!-- <minDistanceToOtherSettlements>10</minDistanceToOtherSettlements> incompatible with orbit layer -->
-				<allowedBiomes>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
-					<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Luna</li>
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_OrdMantellUrban</li>
-					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_NevarroAshFlatsDesert</li>
-				</allowedBiomes>	
+				
+				<!-- <allowedBiomes> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Luna</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_OrdMantellUrban</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_NevarroAshFlatsDesert</li> -->
+				<!-- </allowedBiomes>	 -->
 			</li>
 		</modExtensions>
 		
@@ -303,19 +305,29 @@
 		<!-- <earliestRaidDays>20</earliestRaidDays> -->
 		
 		<pawnGroupMakers>
-			<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
-				<!-- <kindDef>Combat</kindDef> -->
-				<!-- <commonality>10000</commonality> -->
-				<!-- <minPoints>2000</minPoints> -->
-				<!-- <minAircraftCount>4</minAircraftCount> -->
-				<!-- <maxAircraftCount>10</maxAircraftCount> -->
-				<!-- <options> -->
-					<!-- <guy762_SWVehicle_Z95BlackSun_bot_PawnKind>5</guy762_SWVehicle_Z95BlackSun_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_Z95BlackSunAce_bot_PawnKind>1</guy762_SWVehicle_Z95BlackSunAce_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_ScykBlackSun_bot_PawnKind>1</guy762_SWVehicle_ScykBlackSun_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_StarViperBlackSun_bot_PawnKind>3</guy762_SWVehicle_StarViperBlackSun_bot_PawnKind> -->
-				<!-- </options> -->
-			<!-- </li> -->
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies> <!-- entire vanilla list -->
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>10000</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>4</minAircraftCount>
+				<maxAircraftCount>10</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_Z95BlackSun_bot_PawnKind>5</guy762_SWVehicle_Z95BlackSun_bot_PawnKind>
+					<guy762_SWVehicle_Z95BlackSunAce_bot_PawnKind>1</guy762_SWVehicle_Z95BlackSunAce_bot_PawnKind>
+					<guy762_SWVehicle_ScykBlackSun_bot_PawnKind>1</guy762_SWVehicle_ScykBlackSun_bot_PawnKind>
+					<guy762_SWVehicle_StarViperBlackSun_bot_PawnKind>3</guy762_SWVehicle_StarViperBlackSun_bot_PawnKind>
+				</options>
+			</li>
 		  
 		  
 		  
@@ -335,6 +347,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>100</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->
@@ -354,6 +368,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>75</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>StageThenAttack</li>
@@ -375,6 +391,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>75</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttackSmart</li>
@@ -398,6 +416,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>50</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->
@@ -431,6 +451,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>25</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->
@@ -449,6 +471,8 @@
 			<!-- <kindDef>Combat</kindDef> -->
 			<!-- <commonality>10</commonality> -->
 			<!-- <disallowedStrategies> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
+				<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
 				<!-- <li>Siege</li> -->
 				<!-- <li>EmergeFromWater</li> -->
 				<!-- <li>StageThenAttack</li> -->

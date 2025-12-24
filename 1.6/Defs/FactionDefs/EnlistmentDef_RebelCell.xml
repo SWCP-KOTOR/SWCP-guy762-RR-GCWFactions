@@ -7,7 +7,7 @@
 
     <SWCP.Enlist.FactionEnlistOptionsDef>
         <defName>guy762_SWFactionEnlistment_RebelCell</defName>
-        <minGoodwillRequrementToEnlist>10</minGoodwillRequrementToEnlist>
+        <minGoodwillRequrementToEnlist>35</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
 
     <!-- Enlistment Options -->
@@ -16,7 +16,7 @@
         <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
         <enlistButtonLabelKey>SWCP_Enlist_Button_Label</enlistButtonLabelKey>
         <enlistButtonDescKey>SWCP_Enlist_Button_Desc</enlistButtonDescKey>
-        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied</enlistRequrementsNotSatisfiedKey>
+        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_harsh</enlistRequrementsNotSatisfiedKey>
         <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
         <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_Rebellion</enlistButtonIconTexPath>
         <enlistedSoundDef>kotorsound_levelup</enlistedSoundDef>
@@ -35,7 +35,7 @@
         <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc</missionsMenuDescriptionKey>
         <missionsMenuSelectQuestKey>SWCP_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
         <missionsMenuStartQuestKey>SWCP_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
-        <missionsQuestCost>50</missionsQuestCost>
+        <missionsQuestCost>0</missionsQuestCost>
         <missionsMenuStartQuestNoEnoughMoneyKey>SWCP_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
 
     <!-- Salary Options -->
@@ -45,7 +45,7 @@
         <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
         <salaryDescKey>SWCP_Salary_Desc</salaryDescKey>
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
-        <salaryRange>1200~2500</salaryRange>
+        <salaryRange>600~1250</salaryRange>
         <salaryPeriodDays>14</salaryPeriodDays>
 
     <!-- Provision Options -->
@@ -55,7 +55,7 @@
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
                 <provisionsDescKey>SWCP_Provisions_Desc</provisionsDescKey>
                 <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
-                <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
+                <!-- <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath> -->
                 <provisions>
                     <li>
                         <thing>guy762_KotORLootBox_FoodMeds</thing>
@@ -95,7 +95,7 @@
         <workOptions>
             <li>
                 <workLabelKey>SWCP_Part_Time_Job_Label</workLabelKey>
-                <workDescKey>SWCP_Part_Time_Job_Desc</workDescKey>
+                <workDescKey>SWCP_Part_Time_Job_Desc_rebel</workDescKey>
                 <workButtonIconTexPath>Items/Credits/credits_b</workButtonIconTexPath>
                 <additionalRestFall>0.25</additionalRestFall>
                 <silverGainPerHour>20</silverGainPerHour>
@@ -136,9 +136,9 @@
                 <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath>
                 <experienceGainsPerHour>
                     <Animals>450</Animals>
-                    <Construction>350</Construction>
+                    <!-- <Construction>350</Construction> -->
                     <Cooking>350</Cooking>
-                    <Crafting>500</Crafting>
+                    <!-- <Crafting>500</Crafting> -->
                     <Plants>450</Plants>
                 </experienceGainsPerHour>
                 <additionalRestFall>0.5</additionalRestFall>
@@ -239,7 +239,7 @@
         <stackLimit>1</stackLimit>
         <stages>
             <li>
-                <label>turned in an outlaw</label>
+                <label>turned in an Imperial</label>
                 <description>We apprehended an Imperial and they're now being debriefed by Rebel Intelligence.</description>
                 <baseMoodEffect>2</baseMoodEffect>
             </li>

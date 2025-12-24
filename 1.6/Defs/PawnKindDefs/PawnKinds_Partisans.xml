@@ -447,6 +447,12 @@
 					<countRange>1~3</countRange>
 				</li>
 			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+				  <thingDef>SWCP_FactionIntelDatapadAdv_Partisans</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 		
 		<initialWillRange>0.5~2</initialWillRange>

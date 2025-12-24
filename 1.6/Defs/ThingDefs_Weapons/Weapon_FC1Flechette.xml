@@ -30,10 +30,10 @@
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
-		<!--tradeTags Inherit="False">
-			<li>guy762TT_KotORRanged</li>
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWRanged</li>
 			<li>guy762TT_KotORWeapon_illegal</li>
-		</tradeTags-->
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

@@ -303,17 +303,27 @@
 		<!-- <earliestRaidDays>20</earliestRaidDays> -->
 		
 		<pawnGroupMakers>
-			<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
-				<!-- <kindDef>Combat</kindDef> -->
-				<!-- <commonality>10000</commonality> -->
-				<!-- <minPoints>2000</minPoints> -->
-				<!-- <minAircraftCount>4</minAircraftCount> -->
-				<!-- <maxAircraftCount>10</maxAircraftCount> -->
-				<!-- <options> -->
-					<!-- <guy762_SWVehicle_AWingNR_bot_PawnKind>3</guy762_SWVehicle_AWingNR_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_XWingNR_bot_PawnKind>4</guy762_SWVehicle_XWingNR_bot_PawnKind> -->
-				<!-- </options> -->
-			<!-- </li> -->
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies> <!-- entire vanilla list -->
+					<li>EmergeFromWater</li>
+					<!-- <li>ImmediateAttack</li> -->
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>10000</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>4</minAircraftCount>
+				<maxAircraftCount>10</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_AWingNR_bot_PawnKind>3</guy762_SWVehicle_AWingNR_bot_PawnKind>
+					<guy762_SWVehicle_XWingNR_bot_PawnKind>4</guy762_SWVehicle_XWingNR_bot_PawnKind>
+				</options>
+			</li>
 			
 			
 			
@@ -322,6 +332,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>1000</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<!-- <li>Siege</li> -->
 					<!-- <li>StageThenAttack</li> -->
 					<!-- <li>ImmediateAttack</li> -->
@@ -354,6 +366,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>75</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttackSmart</li>
@@ -375,6 +389,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>50</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -398,6 +414,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>25</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>
@@ -427,6 +445,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>

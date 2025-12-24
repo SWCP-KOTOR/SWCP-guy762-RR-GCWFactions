@@ -119,6 +119,7 @@
 		<itemQuality>Good</itemQuality>
 		
 		<maxPerGroup>4</maxPerGroup>
+		<trader>true</trader> <!-- can appear as tax collector -->
 		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>

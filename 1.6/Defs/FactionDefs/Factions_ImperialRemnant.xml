@@ -50,6 +50,25 @@
 		
 		
 		
+		<!-- <royalTitleTags> -->
+		  <!-- <li>KotORTitleTag_OR_privateer</li> -->
+		  <!-- <li>KotORTitleTag_OR_enlisted</li> -->
+		<!-- </royalTitleTags> -->
+		<!-- <royalFavorLabel>commendations</royalFavorLabel> -->
+		<!-- <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath> -->
+		
+		<!-- <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass> -->
+		<!-- <royalTitleInheritanceRelations> -->
+		<!-- </royalTitleInheritanceRelations> -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		<!-- <arrivalLayerWhitelist> -->
@@ -62,7 +81,7 @@
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
-			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
 			
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
@@ -98,8 +117,16 @@
 			<li Class="SWCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
+			<li Class="SWCP.Enlist.FactionEnlistOptions">
+				<enlistOptionsDefs>
+					<li>guy762_SWFactionEnlistment_ImperialRemnant</li>
+				</enlistOptionsDefs>
+				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+			</li>
 			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
 				<arrivalModes>
+					<li>EdgeDrop</li>
+					<li>EdgeDropGroups</li>
 					<li>CenterDrop</li>
 					<li>RandomDrop</li>
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
@@ -147,13 +174,14 @@
 				<neverConnectToRoads>false</neverConnectToRoads>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionTerritory">
-				<territoryColor>(25,110,30,32)</territoryColor>
-				<territoryBorderColor>(25,110,30,128)</territoryBorderColor>
-				<factionLabelColor>(25,110,30,255)</factionLabelColor>
-				<initialTerritoryRadius>10</initialTerritoryRadius>
-				<renderTerritoryOverWater>false</renderTerritoryOverWater>
-			</li>
+			
+			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+				<!-- <territoryColor>(25,110,30,32)</territoryColor> -->
+				<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
+				<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->
+				<!-- <initialTerritoryRadius>10</initialTerritoryRadius> -->
+				<!-- <renderTerritoryOverWater>false</renderTerritoryOverWater> -->
+			<!-- </li> -->
 				<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
 				<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->
 				
@@ -334,23 +362,35 @@
 		
 		
 		<pawnGroupMakers>
-			<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
-				<!-- <kindDef>Combat</kindDef> -->
-				<!-- <commonality>10000</commonality> -->
-				<!-- <minPoints>2000</minPoints> -->
-				<!-- <minAircraftCount>5</minAircraftCount> -->
-				<!-- <maxAircraftCount>10</maxAircraftCount> -->
-				<!-- <options> -->
-					<!-- <guy762_SWVehicle_TIEFighter_bot_PawnKind>5</guy762_SWVehicle_TIEFighter_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_TIEInterceptor_bot_PawnKind>1</guy762_SWVehicle_TIEInterceptor_bot_PawnKind> -->
-					<!-- <guy762_SWVehicle_TIEBomber_bot_PawnKind>3</guy762_SWVehicle_TIEBomber_bot_PawnKind> -->
-				<!-- </options> -->
-			<!-- </li> -->
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies> <!-- entire vanilla list -->
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>10000</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>5</minAircraftCount>
+				<maxAircraftCount>10</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_TIEFighter_bot_PawnKind>5</guy762_SWVehicle_TIEFighter_bot_PawnKind>
+					<guy762_SWVehicle_TIEInterceptor_bot_PawnKind>1</guy762_SWVehicle_TIEInterceptor_bot_PawnKind>
+					<guy762_SWVehicle_TIEBomber_bot_PawnKind>3</guy762_SWVehicle_TIEBomber_bot_PawnKind>
+				</options>
+			</li>
 			<li>
 				<!-- vehicle assault -->
 				<kindDef>Combat</kindDef>
 				<commonality>1000</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<!-- <li>Siege</li> -->
 					<!-- <li>StageThenAttack</li> -->
 					<!-- <li>ImmediateAttack</li> -->
@@ -382,6 +422,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
 					<li>StageThenAttack</li>
@@ -399,6 +441,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>25</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
 					<li>StageThenAttack</li>
@@ -421,6 +465,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>75</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttackSmart</li>
@@ -448,6 +494,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>50</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -472,6 +520,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>25</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>
@@ -494,6 +544,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>
@@ -528,6 +580,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>10</commonality>
 				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>StageThenAttack</li>
 					<li>ImmediateAttack</li>
@@ -537,6 +591,26 @@
 				  <SWImpRemnant_stormcommando>50</SWImpRemnant_stormcommando>
 				</options>
 			</li>
+			
+			
+			<!-- <li Class="SWCP.Core.GroupMakerWithCustomChar"> -->
+                <!-- 1st Recon Alpha Squad - elite sniper unit -->
+                <!-- <kindDef>Combat</kindDef> -->
+                <!-- <disallowedStrategies> -->
+                    <!-- <li>EmergeFromWater</li> -->
+                <!-- </disallowedStrategies> -->
+                <!-- <options> -->
+                    <!-- <FCP_Pawnkind_NCR_Scout_Recon>3</FCP_Pawnkind_NCR_Scout_Recon> -->
+                <!-- </options> -->
+                <!-- <characterDefs> -->
+                    <!-- <li>FCP_Character_NCR_Gorobets</li> -->
+                    <!-- <li>FCP_Character_NCR_Bitter_Root</li> -->
+                    <!-- <li>FCP_Character_NCR_Betsy</li> -->
+                    <!-- <li>FCP_Character_NCR_Sterling</li> -->
+                    <!-- <li>FCP_Character_NCR_10_of_Spades</li> -->
+                <!-- </characterDefs> -->
+                <!-- <characterChance>0.55</characterChance> -->
+            <!-- </li> -->
 
 
 
@@ -582,6 +656,28 @@
 				  <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff>
 				</options>
 			</li>
+			
+			
+			
+			
+			<li>
+                <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
+                <kindDef>SWCPPawnGroupKind_TaxCollector</kindDef>
+                <traders>
+                    <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt>
+                    <SWImpRemnant_Viceroy>0.25</SWImpRemnant_Viceroy>
+                </traders>
+                <carriers>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+					<Muffalo>1</Muffalo>
+                </carriers>
+                <guards>
+					<SWImpRemnant_ArmyConscript>10</SWImpRemnant_ArmyConscript>
+					<SWImpRemnant_ArmyTrooper>3</SWImpRemnant_ArmyTrooper>
+					<SWImpRemnant_stormtrooper>3</SWImpRemnant_stormtrooper>
+					<SWImpRemnant_ArmyLieutenant>1</SWImpRemnant_ArmyLieutenant>
+                </guards>
+            </li>
 
 		  
 		  
@@ -640,6 +736,9 @@
                   <fixedParams>
                     <filter>
                       <tradeTagsToAllow>
+						
+						<li>SWCPTT_FactionIntelDatapads_basicImpRemnant</li>
+						
 						<li>guy762TT_weaponmod_adv</li>
 						<li>guy762TT_armormod_adv</li>
 						<li>guy762TT_sabermod_basic</li>

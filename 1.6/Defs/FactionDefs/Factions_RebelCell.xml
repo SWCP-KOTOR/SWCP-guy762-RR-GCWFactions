@@ -301,7 +301,7 @@
 		<!-- <earliestRaidDays>20</earliestRaidDays> -->
 		
 		<pawnGroupMakers>
-			<!-- <li Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
+			<!-- <li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
 				<!-- <kindDef>Combat</kindDef> -->
 				<!-- <commonality>10000</commonality> -->
 				<!-- <minPoints>2000</minPoints> -->
@@ -332,6 +332,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>75</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttackSmart</li>
@@ -353,6 +355,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>50</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttack</li>
 				<li>ImmediateAttackSmart</li>
@@ -376,6 +380,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>25</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>StageThenAttack</li>
 				<li>ImmediateAttack</li>
@@ -405,6 +411,8 @@
 			<kindDef>Combat</kindDef>
 			<commonality>10</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>StageThenAttack</li>
 				<li>ImmediateAttack</li>
@@ -491,6 +499,24 @@
 				  <!-- <KotORRepub_jediconsular_VPE MayRequire="lee.theforce.psycast">1</KotORRepub_jediconsular_VPE> -->
 				</options>
 			</li>
+			
+			
+			<li>
+                <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
+                <kindDef>SWCPPawnGroupKind_TaxCollector</kindDef>
+                <traders>
+                    <SWRebel_NavyLt>1</SWRebel_NavyLt>
+                </traders>
+                <carriers>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+					<Muffalo>1</Muffalo>
+                </carriers>
+                <guards>
+					<SWRebel_trooper>10</SWRebel_trooper>
+					<SWRebel_sniper>3</SWRebel_sniper>
+					<SWRebel_ArmyLt>1</SWRebel_ArmyLt>
+                </guards>
+            </li>
 		  
 		</pawnGroupMakers>
 		
@@ -587,6 +613,9 @@
                   <fixedParams>
                     <filter>
                       <tradeTagsToAllow>
+						
+						<li>SWCPTT_FactionIntelDatapads_basicRebelCell</li>
+						
 						<li>guy762TT_weaponmod_rare</li>
 						<li>guy762TT_sabermod_basic</li>
 						<li>guy762TT_implants_rare</li>

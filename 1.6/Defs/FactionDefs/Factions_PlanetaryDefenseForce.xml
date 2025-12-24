@@ -207,6 +207,8 @@
 			<kindDef>Combat</kindDef> <!-- patrol -->
 			<commonality>100</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>StageThenAttack</li>
@@ -226,6 +228,8 @@
 			<kindDef>Combat</kindDef> <!-- standard -->
 			<commonality>75</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>ImmediateAttackSmart</li>
@@ -245,6 +249,8 @@
 			<kindDef>Combat</kindDef> <!-- assault with mercs -->
 			<commonality>25</commonality>
 			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 				<li>Siege</li>
 				<li>EmergeFromWater</li>
 				<li>StageThenAttack</li>

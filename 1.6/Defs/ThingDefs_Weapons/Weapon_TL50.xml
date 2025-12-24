@@ -32,7 +32,7 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<!--tradeTags Inherit="False">
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 			<li>guy762TT_KotORWeapon_illegal</li>
 		</tradeTags-->
 		<verbs>
@@ -143,7 +143,7 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
 		</weaponTags>
 		<!--tradeTags Inherit="False">
-			<li>guy762TT_KotORRanged</li>
+			<li>guy762TT_GCWRanged</li>
 			<li>guy762TT_KotORWeapon_illegal</li>
 		</tradeTags-->
 		<verbs>

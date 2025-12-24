@@ -9,7 +9,8 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>RogueSquadronN64_hangar</clipPath>
+                        <!-- <clipPath>RogueSquadronN64_hangar</clipPath> -->
+                        <clipPath>SWCPmusic/SWWarlordEmpire/RogueSquadronN64_hangar</clipPath>
                     </li>
                 </grains>
                 <volumeRange>10</volumeRange>
