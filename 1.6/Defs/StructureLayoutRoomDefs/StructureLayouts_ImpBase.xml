@@ -227,7 +227,7 @@
 		
 		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
 		<wallDef>guy762_PoweredWall_ImpBaseA</wallDef>
-		<doorDef>guy762_Autodoor1x1_DoomgiverA</doorDef>
+		<doorDef>guy762_NPCAutodoor1x1_DoomgiverA</doorDef>
 		<terrainDef>guy762_FloorTiles_ImpBaseTile</terrainDef>
 		<surroundingTerrainDef>Concrete</surroundingTerrainDef> <!-- will morphology outline all buildings -->
 		
@@ -235,7 +235,7 @@
 		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
 		<corridorDef>AncientRuinsCorridor</corridorDef>
 		<areaPrunePercent>0.05</areaPrunePercent>
-		
+
 		<roomDefs>
 		  <SWCPRoomLayout_ImpWeaponsStorage>
 			<countRange>1</countRange>
@@ -273,6 +273,24 @@
 		<!-- </parts> -->
 		
 		<scatteredPrefabs>
+			<li>
+			  <countPer10kCellsRange>4~6</countPer10kCellsRange>
+			  <minSpacing>60</minSpacing>
+			  <maxDistFromStructure>250</maxDistFromStructure>
+			  <prefabs>
+				<SWCPTurretPrefab_BP4AntiVehicle>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_BP4AntiVehicle>
+				<SWCPTurretPrefab_FPC67AntiAir>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_FPC67AntiAir>
+			  </prefabs>
+			</li>
+			
 			<li>
 				<countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
 				<minSpacing>10</minSpacing>

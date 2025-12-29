@@ -67,6 +67,8 @@
 	
 	
 	
+	
+	
 	<PawnKindDef Name="SWImpRemnant_ArmyTrooper" ParentName="SWImpRemnant_TrooperBase">
 		<defName>SWImpRemnant_ArmyTrooper</defName>
 		<label>army trooper</label>
@@ -159,6 +161,8 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	
 	
 	
 	<PawnKindDef Name="SWImpRemnant_ArmySniper" ParentName="SWImpRemnant_TrooperBase">
@@ -349,12 +353,59 @@
 	
 	
 	
+	<!-- EaWX-style platoon -->
 	
 	
+	<PawnKindDef Name="xSWImpRemnant_ArmyConscript_48x" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>xSWImpRemnant_ArmyConscript_48x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>48</maxPerGroup>
+	</PawnKindDef>
 	
+	<PawnKindDef Name="xSWImpRemnant_ArmyTrooper_40x" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xSWImpRemnant_ArmyTrooper_40x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>40</maxPerGroup>
+	</PawnKindDef>
 	
+	<PawnKindDef Name="xSWImpRemnant_ArmyGrenadier_4x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyGrenadier_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+			<!-- <li>SWRanged_T7IonDisruptor</li> -->
+		</weaponTags>
+	</PawnKindDef>
 	
+	<PawnKindDef Name="xSWImpRemnant_ArmyIon_1x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyIon_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<!-- <li>SWRanged_HH4ProtonGrenadeLauncher</li> -->
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+	</PawnKindDef>
 	
+	<PawnKindDef Name="xSWImpRemnant_ArmyLieutenant_2x" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>xSWImpRemnant_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xSWImpRemnant_ArmyMedic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
 	
 	
 	

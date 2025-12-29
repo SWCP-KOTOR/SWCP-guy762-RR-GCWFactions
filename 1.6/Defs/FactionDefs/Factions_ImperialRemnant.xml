@@ -616,46 +616,67 @@
 
 
 
-
+			<!-- EaWX-style platoon defense -->
 			<li>
-				<kindDef>Settlement</kindDef> <!-- base -->
+				<kindDef>Settlement</kindDef>
 				<commonality>1</commonality>
 				<options>
-				  <SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-				  <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
-				  <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
-				  
-				  <!-- <KotORCzrka_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORCzrka_droid_GE3PD> -->
-				  <!-- <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_R8009> -->
-				  <!-- <KotORDroidGood_3C MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_3C> -->
-				  
-				  <SWImpRemnant_NavyGuard>10</SWImpRemnant_NavyGuard>
-				  <SWImpRemnant_NavyTrooper>5</SWImpRemnant_NavyTrooper>
-				  <SWImpRemnant_NavyLt>1</SWImpRemnant_NavyLt>
-				  <SWImpRemnant_TIEpilot>5</SWImpRemnant_TIEpilot>
-				  <SWImpRemnant_TIEace>5</SWImpRemnant_TIEace>
-				  
-				  <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper>
-				  <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer>
-				  
-				  <!-- <KotORCzrka_droid_SentWD MayRequire="guy762.KotORDroids">10</KotORCzrka_droid_SentWD> -->
-				  <!-- <KotORCzrka_droid_ADMkI MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkI> -->
-				  <!-- <KotORCzrka_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkIV> -->
-				  
-				  <SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper>
-				  <SWImpRemnant_ArmyLieutenant>10</SWImpRemnant_ArmyLieutenant>
-				  <SWImpRemnant_ArmyMajor>1</SWImpRemnant_ArmyMajor>
-				  <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral>
-				  
-				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
-				  
-				  <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt>
-				  <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral>
-				  
-				  <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy>
-				  <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff>
+					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
+					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
+					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
+					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> <!-- has a max of 2 -->
+					
+					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
+					<!-- <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer> -->
+					<!-- <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat> -->
+
+					<!-- <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper> -->
+					<!-- <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer> -->
+
+					<!-- <SWImpRemnant_ArmyMajor>100</SWImpRemnant_ArmyMajor> -->
+					<!-- <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral> -->
+
+					<!-- <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt> -->
+					<!-- <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral> -->
+
+					<!-- <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy> -->
+					<!-- <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff> -->
 				</options>
 			</li>
+			
+			<!-- base -->
+			<!-- <li> -->
+				<!-- <kindDef>Settlement</kindDef> -->
+				<!-- <commonality>1</commonality> -->
+				<!-- <options> -->
+				  <!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
+				  <!-- <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer> -->
+				  <!-- <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat> -->
+				  
+				  <!-- <SWImpRemnant_NavyGuard>10</SWImpRemnant_NavyGuard> -->
+				  <!-- <SWImpRemnant_NavyTrooper>5</SWImpRemnant_NavyTrooper> -->
+				  <!-- <SWImpRemnant_NavyLt>1</SWImpRemnant_NavyLt> -->
+				  <!-- <SWImpRemnant_TIEpilot>5</SWImpRemnant_TIEpilot> -->
+				  <!-- <SWImpRemnant_TIEace>5</SWImpRemnant_TIEace> -->
+				  
+				  <!-- <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper> -->
+				  <!-- <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer> -->
+				  
+				  <!-- <SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper> -->
+				  <!-- <SWImpRemnant_ArmyLieutenant>10</SWImpRemnant_ArmyLieutenant> -->
+				  <!-- <SWImpRemnant_ArmyMajor>1</SWImpRemnant_ArmyMajor> -->
+				  <!-- <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral> -->
+				  
+				  <!-- <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic> -->
+				  
+				  <!-- <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt> -->
+				  <!-- <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral> -->
+				  
+				  <!-- <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy> -->
+				  <!-- <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff> -->
+				<!-- </options> -->
+			<!-- </li> -->
 			
 			
 			

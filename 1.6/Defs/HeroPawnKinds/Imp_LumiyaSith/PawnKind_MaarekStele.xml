@@ -150,19 +150,23 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>6~8</range>
+						<range>12~14</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>18~20</range>
+						<range>6~8</range>
 					</li>
 					<li>
-						<skill>Social</skill>
-						<range>14~16</range>
+						<skill>Construction</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>12~14</range>
 					</li>
 					<li>
 						<skill>Intellectual</skill>
-						<range>10~12</range>
+						<range>19~20</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
