@@ -147,7 +147,7 @@
 				<range>30</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>kotorsound_RebelBlaster</soundCast>
+				<soundCast>kotorsound_BF2RebelBlaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -224,7 +224,7 @@
 				<range>30</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>kotorsound_RebelBlaster</soundCast>
+				<soundCast>kotorsound_BF2RebelBlaster</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
