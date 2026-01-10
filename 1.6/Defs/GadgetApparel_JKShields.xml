@@ -84,72 +84,125 @@
 		<blocksMeleeDamage>true</blocksMeleeDamage>
 		
         <blockedDamageDefs>
-          <li>guy762_RangedDamage_energy</li>
-		  <li>guy762_BeamDamage_energy</li>
-		  <li>guy762_MeleeDamage_energy</li>
-		  <li>guy762_MeleeDamage_ecut</li>
-		  <li>guy762_MeleeDamage_estab</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_LightsaberCut</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_SaberSlash</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_SaberStab</li>
-		  <li>guy762_ExplosiveDamage_energy</li>
-		  <li>guy762_GrenadeDamage_energy</li>
-		  <li>guy762_GrenadeDamage_thermaldet</li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">Beam</li>
-		  <li>guy762_RangedDamage_KOstun</li>
-		  
-		  <li>guy762_RangedDamage_AntiVehicleEnergy</li>
-		  <li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
-		  
-		  <li>guy762_RangedDamage_electrical</li>
-		  <li>guy762_MeleeDamage_electrical</li>
-		  <li>guy762_BeamDamage_electrical</li>
-		  
-		  <li>guy762_RangedDamage_sonic</li>
-		  <li>guy762_MeleeDamage_sonic</li>
-		  <li>guy762_GrenadeDamage_sonic</li>
-		  <li>Thump</li>
-		  
-		  <li>Flame</li>
-		  <li>Burn</li>
-		  <li>guy762_GrenadeDamage_plasma</li>
-		  <li>guy762_BeamDamage_radiation</li>
-		  
-		  <li>Frostbite</li>
-		  
-		  <li>Cut</li>
-		  <li>Crush</li>
-		  <li>Blunt</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_BluntLightsaber</li>
-		  <li>Poke</li>
-		  <li>Stab</li>
-		  <li>Scratch</li>
-		  <li>ScratchToxic</li>
-		  <li>Bite</li>
-		  <li>ToxicBite</li>
-		  <li>RangedStab</li>
-		  <li>Bullet</li>
-		  <li>Arrow</li>
-		  <li>ArrowHighVelocity</li>
-		  <li>TornadoScratch</li>
-		  
-		  <li>Bomb</li>
-		  <li>guy762_GrenadeDamage_frag</li>
-		  <li>guy762_GrenadeDamage_detpack</li>
-		  <li MayRequire="guy762.NA.MM.SWVehicles">guy762_ExplosiveDamage_conc</li>
+			
+		<!-- energy: ranged/explosive -->
+			<li>guy762_RangedDamage_energy</li>
+			<li>guy762_BeamDamage_energy</li>
+			<li>Beam</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">BeamBypassShields</li>
+			<li>guy762_ExplosiveDamage_energy</li>
+			<li>guy762_GrenadeDamage_energy</li>
+			<li MayRequire="lee.theforce.standalone">Force_EnergyBurn</li>
+		
+		<!-- anti-vehicle -->		
+			<li>guy762_RangedDamage_AntiVehicleEnergy</li>
+			<li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
+			<li>guy762_RangedDamage_AntiVehicleBullet</li>
+		
+		<!-- explosive -->	
+			<li>Bomb</li>
+			<li>guy762_GrenadeDamage_frag</li>
+			<li MayRequire="guy762.NA.MM.SWVehicles">guy762_ExplosiveDamage_conc</li>
+		
+		<!-- explosive: piercing -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey">MiningBomb</li>
+			<li>guy762_GrenadeDamage_detpack</li>
+			<li>guy762_GrenadeDamage_thermaldet</li>
+			<li>Vaporize</li>
+			<li>BombSuper</li>
+		
+		
+		
+		
+		<!-- electrical -->
+			<li>guy762_RangedDamage_electrical</li>
+			<li>guy762_MeleeDamage_electrical</li>
+			<li>guy762_BeamDamage_electrical</li>
+			<li MayRequire="lee.theforce.standalone">Force_Lightning</li>
+		
+		<!-- sonic -->
+			<li>guy762_RangedDamage_sonic</li>
+			<li>guy762_MeleeDamage_sonic</li>
+			<li>guy762_GrenadeDamage_sonic</li>
+			<li>Thump</li>
+			
+		<!-- disruption/acid -->
+			<li>AcidBurn</li>
+		
+		<!-- environmental -->
+			<li>Flame</li>
+			<li>Burn</li>
+			<li>guy762_GrenadeDamage_plasma</li>
+			<li>guy762_BeamDamage_radiation</li>
+			<li>Frostbite</li>
+		
+		<!-- environmental: atmospheric -->
+			<!-- <li>ToxGas</li> -->
+			<!-- <li>VacuumBurn</li> -->
+			<li>TornadoScratch</li>
+			
+			
+			
+			
+		<!-- physical: melee -->
+			<li>Cut</li>
+			<li>Crush</li>
+			<li>Blunt</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_BluntLightsaber</li>
+			<li>Poke</li>
+			<li>Stab</li>
+			<li>Scratch</li>
+			<li>ScratchToxic</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">PorcupineBite</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">PorcupineScratch</li>
+			<li>Bite</li>
+			<li>ToxicBite</li>
+			
+		<!-- physical:ranged -->
+			<li>RangedStab</li>
+			<li>Bullet</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BulletToxic</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Bullet_TraitTox</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Bullet_TraitIncendiary</li>
+			<li>Arrow</li>
+			<li>ArrowHighVelocity</li>
+			
+
+		<!-- stun -->
+			<!-- <li>Stun</li> -->
+			<li>guy762_RangedDamage_KOstun</li>
+			<!-- <li>guy762_GrenadeDamage_stun</li> -->
+		
+		<!-- poison/healing -->
+			<li>guy762_PoisonDamage_saber</li>
+			<!-- <li>guy762_RangedDamage_kolto</li> -->
+		
+		<!-- energy: lightsaber -->		
+			<li>guy762_MeleeDamage_energy</li>
+			<li>guy762_MeleeDamage_ecut</li>
+			<li>guy762_MeleeDamage_estab</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_LightsaberCut</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberSlash</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberStab</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_LightsaberCutMechanoid</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberSlashSharp</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberStabSharp</li>
         </blockedDamageDefs>
 		<ignoredDamageDefs>
-          <li>guy762_RangedDamage_disruptor</li>
-		  <li>guy762_BeamDamage_disruptor</li>
-		  <li>guy762_MeleeDamage_unstoppable</li>
+			<li>guy762_RangedDamage_disruptor</li>
+			<li>guy762_BeamDamage_disruptor</li>
+			<li>guy762_ExplosiveDamage_disruptor</li>
+			<li>guy762_MeleeDamage_unstoppable</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightBurn</li>
         </ignoredDamageDefs>
 		
 		<shatterOn>
-		  <li>EMP</li>
-		  <li>guy762_RangedDamage_ion</li>
-		  <li>guy762_ExplosiveDamage_ion</li>
-		  <li>guy762_MeleeDamage_ion</li>
-		  <li>guy762_GrenadeDamage_ion</li>
+			<li>EMP</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechBandShockwave</li>
+			<li>guy762_RangedDamage_ion</li>
+			<li>guy762_ExplosiveDamage_ion</li>
+			<li>guy762_MeleeDamage_ion</li>
+			<li>guy762_GrenadeDamage_ion</li>
 		</shatterOn>
 
         <absorbFleck>ExplosionFlash</absorbFleck>
@@ -303,72 +356,125 @@
 		<blocksMeleeDamage>true</blocksMeleeDamage>
 		
         <blockedDamageDefs>
-          <li>guy762_RangedDamage_energy</li>
-		  <li>guy762_BeamDamage_energy</li>
-		  <li>guy762_MeleeDamage_energy</li>
-		  <li>guy762_MeleeDamage_ecut</li>
-		  <li>guy762_MeleeDamage_estab</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_LightsaberCut</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_SaberSlash</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_SaberStab</li>
-		  <li>guy762_ExplosiveDamage_energy</li>
-		  <li>guy762_GrenadeDamage_energy</li>
-		  <li>guy762_GrenadeDamage_thermaldet</li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">Beam</li>
-		  <li>guy762_RangedDamage_KOstun</li>
-		  
-		  <li>guy762_RangedDamage_AntiVehicleEnergy</li>
-		  <li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
-		  
-		  <li>guy762_RangedDamage_electrical</li>
-		  <li>guy762_MeleeDamage_electrical</li>
-		  <li>guy762_BeamDamage_electrical</li>
-		  
-		  <li>guy762_RangedDamage_sonic</li>
-		  <li>guy762_MeleeDamage_sonic</li>
-		  <li>guy762_GrenadeDamage_sonic</li>
-		  <li>Thump</li>
-		  
-		  <li>Flame</li>
-		  <li>Burn</li>
-		  <li>guy762_GrenadeDamage_plasma</li>
-		  <li>guy762_BeamDamage_radiation</li>
-		  
-		  <li>Frostbite</li>
-		  
-		  <li>Cut</li>
-		  <li>Crush</li>
-		  <li>Blunt</li>
-		  <li MayRequire="lee.theforce.lightsaber">Force_BluntLightsaber</li>
-		  <li>Poke</li>
-		  <li>Stab</li>
-		  <li>Scratch</li>
-		  <li>ScratchToxic</li>
-		  <li>Bite</li>
-		  <li>ToxicBite</li>
-		  <li>RangedStab</li>
-		  <li>Bullet</li>
-		  <li>Arrow</li>
-		  <li>ArrowHighVelocity</li>
-		  <li>TornadoScratch</li>
-		  
-		  <li>Bomb</li>
-		  <li>guy762_GrenadeDamage_frag</li>
-		  <li>guy762_GrenadeDamage_detpack</li>
-		  <li MayRequire="guy762.NA.MM.SWVehicles">guy762_ExplosiveDamage_conc</li>
+			
+		<!-- energy: ranged/explosive -->
+			<li>guy762_RangedDamage_energy</li>
+			<li>guy762_BeamDamage_energy</li>
+			<li>Beam</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">BeamBypassShields</li>
+			<li>guy762_ExplosiveDamage_energy</li>
+			<li>guy762_GrenadeDamage_energy</li>
+			<li MayRequire="lee.theforce.standalone">Force_EnergyBurn</li>
+		
+		<!-- anti-vehicle -->		
+			<li>guy762_RangedDamage_AntiVehicleEnergy</li>
+			<li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
+			<li>guy762_RangedDamage_AntiVehicleBullet</li>
+		
+		<!-- explosive -->	
+			<li>Bomb</li>
+			<li>guy762_GrenadeDamage_frag</li>
+			<li MayRequire="guy762.NA.MM.SWVehicles">guy762_ExplosiveDamage_conc</li>
+		
+		<!-- explosive: piercing -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey">MiningBomb</li>
+			<li>guy762_GrenadeDamage_detpack</li>
+			<li>guy762_GrenadeDamage_thermaldet</li>
+			<li>Vaporize</li>
+			<li>BombSuper</li>
+		
+		
+		
+		
+		<!-- electrical -->
+			<li>guy762_RangedDamage_electrical</li>
+			<li>guy762_MeleeDamage_electrical</li>
+			<li>guy762_BeamDamage_electrical</li>
+			<li MayRequire="lee.theforce.standalone">Force_Lightning</li>
+		
+		<!-- sonic -->
+			<li>guy762_RangedDamage_sonic</li>
+			<li>guy762_MeleeDamage_sonic</li>
+			<li>guy762_GrenadeDamage_sonic</li>
+			<li>Thump</li>
+			
+		<!-- disruption/acid -->
+			<li>AcidBurn</li>
+		
+		<!-- environmental -->
+			<li>Flame</li>
+			<li>Burn</li>
+			<li>guy762_GrenadeDamage_plasma</li>
+			<li>guy762_BeamDamage_radiation</li>
+			<li>Frostbite</li>
+		
+		<!-- environmental: atmospheric -->
+			<!-- <li>ToxGas</li> -->
+			<!-- <li>VacuumBurn</li> -->
+			<li>TornadoScratch</li>
+			
+			
+			
+			
+		<!-- physical: melee -->
+			<li>Cut</li>
+			<li>Crush</li>
+			<li>Blunt</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_BluntLightsaber</li>
+			<li>Poke</li>
+			<li>Stab</li>
+			<li>Scratch</li>
+			<li>ScratchToxic</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">PorcupineBite</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">PorcupineScratch</li>
+			<li>Bite</li>
+			<li>ToxicBite</li>
+			
+		<!-- physical:ranged -->
+			<li>RangedStab</li>
+			<li>Bullet</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BulletToxic</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Bullet_TraitTox</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Bullet_TraitIncendiary</li>
+			<li>Arrow</li>
+			<li>ArrowHighVelocity</li>
+			
+
+		<!-- stun -->
+			<!-- <li>Stun</li> -->
+			<li>guy762_RangedDamage_KOstun</li>
+			<!-- <li>guy762_GrenadeDamage_stun</li> -->
+		
+		<!-- poison/healing -->
+			<li>guy762_PoisonDamage_saber</li>
+			<!-- <li>guy762_RangedDamage_kolto</li> -->
+		
+		<!-- energy: lightsaber -->		
+			<li>guy762_MeleeDamage_energy</li>
+			<li>guy762_MeleeDamage_ecut</li>
+			<li>guy762_MeleeDamage_estab</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_LightsaberCut</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberSlash</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberStab</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_LightsaberCutMechanoid</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberSlashSharp</li>
+			<li MayRequire="lee.theforce.lightsaber">Force_SaberStabSharp</li>
         </blockedDamageDefs>
 		<ignoredDamageDefs>
-          <li>guy762_RangedDamage_disruptor</li>
-		  <li>guy762_BeamDamage_disruptor</li>
-		  <li>guy762_MeleeDamage_unstoppable</li>
+			<li>guy762_RangedDamage_disruptor</li>
+			<li>guy762_BeamDamage_disruptor</li>
+			<li>guy762_ExplosiveDamage_disruptor</li>
+			<li>guy762_MeleeDamage_unstoppable</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightBurn</li>
         </ignoredDamageDefs>
 		
 		<shatterOn>
-		  <li>EMP</li>
-		  <li>guy762_RangedDamage_ion</li>
-		  <li>guy762_ExplosiveDamage_ion</li>
-		  <li>guy762_MeleeDamage_ion</li>
-		  <li>guy762_GrenadeDamage_ion</li>
+			<li>EMP</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">MechBandShockwave</li>
+			<li>guy762_RangedDamage_ion</li>
+			<li>guy762_ExplosiveDamage_ion</li>
+			<li>guy762_MeleeDamage_ion</li>
+			<li>guy762_GrenadeDamage_ion</li>
 		</shatterOn>
 
         <absorbFleck>ExplosionFlash</absorbFleck>

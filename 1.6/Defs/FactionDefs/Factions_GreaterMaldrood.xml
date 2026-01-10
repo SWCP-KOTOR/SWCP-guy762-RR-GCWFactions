@@ -251,6 +251,13 @@
 			</categories>
 			<commonality>0.25</commonality>
 		  </li>
+		  <!-- <li> -->
+			<!-- <categories> -->
+				<!-- <li>SWCPBackstories_NonFactionSpecificChildhoods</li> -->
+				<!-- <li>SWCPBackstories_ImpNavyCommando</li> -->
+			<!-- </categories> -->
+			<!-- <commonality>0.01</commonality> -->
+		  <!-- </li> -->
 		</backstoryFilters>
 		
 		

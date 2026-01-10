@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="SWCP_FettCloneBase" Abstract="True">
+		<race>Human</race>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invNutrition>2</invNutrition>
+		
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		
+		
+		
+		
+
+		<nameMaker>SWCP_NamerCloneTrooper</nameMaker>
+		<fixedGender>Male</fixedGender>
+		<skinColorOverride>(228, 158, 90)</skinColorOverride>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>SWCPBSC_CloneTrooper</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<forcedTraits>
+			<Nerves>2</Nerves>
+			<FastLearner>0</FastLearner>
+			<!-- <Tough>0</Tough> -->
+		</forcedTraits>
+		
+		<modExtensions>
+			
+			<li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_Melanin7</li>
+					<li>Hair_DarkBlack</li>
+					
+					<li>guy762_lifespan_half</li>
+					
+					<li>guy762_statgene_metabolismcheat</li>
+					<li>Turn_Gene_MotivationHigh</li>
+					<li>AptitudeStrong_Shooting</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			
+			<!-- appearance -->
+			
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			
+			
+			<!-- <li Class="CloneVat.GrowthVatPawnKindDefExtension"> -->
+				<!-- <growthDurationDays>10</growthDurationDays> -->
+				<!-- <requiredMaterials> -->
+				   <!-- <HumanOvum>1</HumanOvum> -->
+				   <!-- <ComponentIndustrial>5</ComponentIndustrial> -->
+				<!-- </requiredMaterials> -->
+				<!-- <hediffChances> -->
+				   <!-- <li> -->
+					  <!-- <hediffDef>BadBack</hediffDef> -->
+					  <!-- <chance>0.05</chance> -->
+					  <!-- <bodyPart>Spine</bodyPart> -->
+					  <!-- <randomize>false</randomize> -->
+				   <!-- </li> -->
+				   <!-- <li> -->
+					  <!-- <hediffDef>Asthma</hediffDef> -->
+					  <!-- <chance>0.1</chance> -->
+					  <!-- <bodyPart>Lung</bodyPart> -->
+					  <!-- <randomize>false</randomize> -->
+				   <!-- </li> -->
+				<!-- </hediffChances> -->
+				<!-- <requiredResearch /> -->
+				<!-- <spawnWithEquipment>false</spawnWithEquipment> -->
+				<!-- <allowedBuildings> -->
+				   <!-- <li>SWCP_CloningTube</li> -->
+				<!-- </allowedBuildings> -->
+			<!-- </li> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCP_FettCloneBase_MaleBodyForTroopers" ParentName="SWCP_FettCloneBase" Abstract="True">
+	
+		<modExtensions>
+
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Male</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+		
+		</modExtensions>
+	</PawnKindDef>	
+	
+	<PawnKindDef Name="SWCP_FettCloneBase_HulkBodyForCommandos" ParentName="SWCP_FettCloneBase" Abstract="True">
+	
+		<modExtensions>
+
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Hulk</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Hulk</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+		
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+</Defs>

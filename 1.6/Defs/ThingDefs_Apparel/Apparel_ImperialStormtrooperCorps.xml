@@ -26,7 +26,7 @@
   
   
   
-  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_StormieArmor</defName>
 		<label>Stormtrooper armor</label>
 		<techLevel>Spacer</techLevel>
@@ -478,7 +478,7 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>ComponentIndustrial</ammoDef>
+				<ammoDef>KOTOR_PlasmaCartridge</ammoDef>
 				<ammoCountToRefill>2</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>

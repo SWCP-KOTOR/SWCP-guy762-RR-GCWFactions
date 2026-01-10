@@ -5,7 +5,7 @@
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		<race>Human</race>
 
-		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<!-- <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality> -->
 		<!-- <backstoryFiltersOverride> -->
 			<!-- <li> -->
 				<!-- <categories> -->

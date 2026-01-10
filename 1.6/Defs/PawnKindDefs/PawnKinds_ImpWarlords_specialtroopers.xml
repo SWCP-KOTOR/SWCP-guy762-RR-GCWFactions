@@ -112,6 +112,127 @@
 	
 	
 	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Zsinj's Dominion -->	
+	
+	
+	<PawnKindDef Name="SWWarlords_phase0darktrooper" ParentName="SWCP_FettCloneBase_HulkBodyForCommandos">
+		<defName>SWWarlords_phase0darktrooper</defName>
+		<label>Dark Trooper Phase 0</label>
+		<combatPower>250</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		<itemQuality>Excellent</itemQuality>
+		
+		<minGenerationAge>60</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<forcedHair>Bald</forcedHair>
+		
+		<nameMaker>guy762_NamerPawnKind_DarkTrooperID</nameMaker>
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_Phase0DarkTrooper</li></categories></li>
+		</backstoryFiltersOverride>
+		
+		<apparelMoney>15000~25000</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_sith</li>
+			<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Helmet</li>
+			<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Armor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_DarkTrooperP0Helmet</li>
+			<li>guy762_DarkTrooperP0Armor</li>
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>1800~7000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_TL50blaster</li>
+			<li>SWRanged_PLX4LRocketRifle</li>
+		</weaponTags>
+
+		<techHediffsChance>5</techHediffsChance>
+		<techHediffsMoney>
+			<min>5000</min>
+			<max>10000</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_III</li>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+			<li>BionicArm</li> <!-- only one arm is bionic so that wrist weapons can still be worn since they won't equip to a bionic arm for some reason -->
+			<li>BionicLeg</li>
+			<li>BionicLeg</li>
+			<li>BionicSpine</li>
+			<li>BionicHeart</li>
+			<li>Painstopper</li>
+			<!-- <li>BionicStomach</li> -->
+			
+			<li MayRequire="Ludeon.RimWorld.Royalty">Immunoenhancer</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Coagulator</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">HealingEnhancer</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">DetoxifierStomach</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CircadianHalfCycler</li>
+		</techHediffsRequired>
+
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_hyperbattle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -122,10 +243,15 @@
 	
 	
 	
-	<!--troopers-->
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Greater Maldrood -->
 
 
-	<PawnKindDef Name="SWWarlords_NavyCommando" ParentName="SWImpRemnant_TrooperBase">
+	<PawnKindDef Name="SWWarlords_NavyCommando" ParentName="SWMaldrood_TrooperBase">
 		<defName>SWWarlords_NavyCommando</defName>
 		<label>navy commando</label>
 		<combatPower>100</combatPower>
@@ -141,6 +267,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpNavyCommando</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>3500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -193,6 +323,12 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+		
+		<forcedHair>Shaved</forcedHair>
+		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
@@ -206,6 +342,9 @@
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>NoBeard</forcedBeard>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -320,248 +459,7 @@
 	
 	
 	
-	
-	
-	
-	<PawnKindDef Name="SWWarlords_ArmyCommando" ParentName="SWImpRemnant_TrooperBase">
-		<defName>SWWarlords_ArmyCommando</defName>
-		<label>army commando</label>
-		<combatPower>100</combatPower>
-		<minGenerationAge>19</minGenerationAge>
-		<maxGenerationAge>40</maxGenerationAge>
-		<itemQuality>Good</itemQuality>
-		
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
 
-		<apparelMoney>3500~5500</apparelMoney>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelTags>
-			<li>KotOREquipment_adv</li>
-			<li>SWDetpackCase</li> <!-- replace with/add proxy mines -->
-			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
-			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
-			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
-		</apparelTags>
-		<apparelRequired>
-			<li>guy762_ImpTankTrooperHelmet</li>
-			<li>guy762_ImpMidCombatArmor</li>
-			<li>guy762_Bodysuit_Dyeable</li>
-		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ImpMidCombatArmor</apparelDef>
-				<!-- <styleDef>guy762_ImpCombatArmorStyle_commando</styleDef> -->
-			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(50,50,50)</color>
-			</li>
-		</specificApparelRequirements>
-
-		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>3200~10000</weaponMoney>
-		<weaponTags>
-			<li>SWRanged_TL50conc</li>
-			<li>SWRanged_T7IonDisruptor</li>
-		</weaponTags>
-		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
-		<inventoryOptions>
-			<skipChance>0.25</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>guy762_medpac_adv</thingDef>
-					<countRange>1~3</countRange>
-				</li>
-				<li>
-					<thingDef>guy762_stim_battle</thingDef>
-					<countRange>0~1</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
-		
-		<modExtensions>
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>10~12</range>
-					</li>
-					<li>
-						<skill>Melee</skill>
-						<range>4~6</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<PawnKindDef Name="SWWarlords_ArmySpecOps" ParentName="SWImpRemnant_TrooperBase">
-		<defName>SWWarlords_ArmySpecOps</defName>
-		<label>army special missions trooper</label>
-		<combatPower>100</combatPower>
-		<minGenerationAge>20</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
-		<itemQuality>Good</itemQuality>
-		
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
-
-		<apparelMoney>3500~7500</apparelMoney>
-		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
-		<apparelTags>
-			<li>KotOREquipment_adv</li>
-			<li>KotORUtility_utilitygrenade</li>
-			<li>RemnantEmpire_armyveterantrooper</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyGasmask</li>
-			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
-			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
-			<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
-			<li>SWCPSpecificApparelItem_GenericUniform</li>
-		</apparelTags>
-		<apparelRequired>
-			<li>guy762_ArmyTrooperHelmet</li>
-			<li>guy762_ArmyTrooperGasMask</li>
-			<li>guy762_Backpack_GCWRebel</li>
-			<li>guy762_Accessory_suspendersA</li>
-			<li>guy762_ImpMidCombatArmor</li>
-			<li>guy762_GenericUniform_fatigues</li>
-		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<bodyPartGroup>UpperHead</bodyPartGroup>
-				<apparelDef>guy762_ArmyTrooperHelmet</apparelDef>
-				<color>(40,40,40)</color>        <!-- darker black -->
-			</li>
-			<li>
-				<!-- <apparelLayer>Overhead</apparelLayer> -->
-				<apparelLayer>EyeCover</apparelLayer>
-				<apparelDef>guy762_ArmyTrooperGasMask</apparelDef> 		<!-- not working for some reason -->
-				<color>(40,40,40)</color>        <!-- darker black -->
-			</li>
-			<li>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<apparelLayer>Belt</apparelLayer>
-				<color>(40,40,40)</color>        <!-- darker black -->
-			</li>
-			<li>
-				<apparelLayer>Shell</apparelLayer>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<color>(90,90,90)</color>
-			</li>
-			<li>
-				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ImpMidCombatArmor</apparelDef>
-				<!-- <styleDef>guy762_ImpCombatArmorStyle_blank</styleDef> -->
-				<color>(40,40,40)</color>
-			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(50,50,50)</color>        <!-- black -->
-			</li>
-		</specificApparelRequirements>
-
-		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>1500~6500</weaponMoney>
-		<weaponTags>
-			<li>SWRanged_E22rifle</li>
-			<li>SWRanged_DLT19repeater</li>
-			<li>SWRanged_T21Bheavy</li>
-		</weaponTags>
-		
-		<techHediffsChance>2</techHediffsChance>
-		<techHediffsMoney>
-			<min>2400</min>
-			<max>4800</max>
-		</techHediffsMoney>
-		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
-		<inventoryOptions>
-			<skipChance>0</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>guy762_medpac_adv</thingDef>
-					<countRange>1~3</countRange>
-				</li>
-				<li>
-					<thingDef>guy762_stim_battle</thingDef>
-					<countRange>0~1</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
-		
-		<modExtensions>
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>10~12</range>
-					</li>
-					<li>
-						<skill>Melee</skill>
-						<range>6~8</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-				
-				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
-					<li>
-					  <graphic>
-						<colorB>40,40,40</colorB> <!-- black -->
-					  </graphic>
-					  <apparelLayer>
-						<li>Middle</li>
-					  </apparelLayer>
-					</li>
-				</itemGraphics>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
 	
 	
 	
@@ -591,6 +489,14 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ player factions -->	
 	
 	
 	
@@ -602,6 +508,10 @@
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Good</itemQuality>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_7thFleetStormtrooper</li></categories></li>
+		</backstoryFiltersOverride>
 		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
@@ -689,6 +599,10 @@
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -815,30 +729,11 @@
 	</PawnKindDef>
 	
 	
+	
+	
+	
+	
 
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -856,6 +751,7 @@
 		<maxGenerationAge>50</maxGenerationAge>
 		<itemQuality>Good</itemQuality>
 		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
@@ -1000,12 +896,17 @@
 		<maxGenerationAge>40</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>
 		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">9999</guy762_xenotype_echani>
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpRoyalGuardStormie</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -1094,6 +995,7 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
+			<Psychopath>0</Psychopath>
 			<Tough>0</Tough>
 		</forcedTraits>
 
@@ -1129,13 +1031,17 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>
 		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.5</Baseliner>
-			<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.5</guy762_xenotype_echani>
+			<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">9999</guy762_xenotype_echani>
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpRoyalGuard</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>10000~15000</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -1191,6 +1097,7 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
+			<Psychopath>0</Psychopath>
 			<Tough>0</Tough>
 			<Brawler>0</Brawler>
 		</forcedTraits>

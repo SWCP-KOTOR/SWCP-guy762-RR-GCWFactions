@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_Phase0DarkTrooper</defName>
+		<title>Phase 0 Dark Trooper</title>
+		<titleShort>Dark Trooper</titleShort>
+		<description>To facilitate their continued service in the face of their accelerated age, the majority of Republic Clone troopers within the Imperial military were discreetly transfered to the elusive "Dark Trooper" program. These troopers, deemed ineligible for further promotion, have had most of their natural body parts replaced with advanced cybernetics. Their combat capabilities have increased tenfold at the expense of much of their higher-order cognitive functioning. Imperial servicemen who have fought alongside these units have likened them to "living droids", devoid of any emotion and most of their worldly needs.\n\nAs the Dark Trooper program evolved from an advanced cybernetic commando project to a generalized 'Imperial battle droid' division, the original "Phase Zero" Dark Trooper units were largely discarded, fittingly being relegated to guard storehouses of old surplus hardware from the Clone Wars. With the death of the Emperor at Endor, the cunning Warlord Zsinj has seized and re-activated these assets, pressing these maligned Dark Troopers back into service as an advanced commando unit.\n\nPhase 0 Dark Troopers are armed to the teeth with heavy powered armor, combat-enhancing cybernetics, jump packs, and high-tech weaponry capable of ignoring most infantry armor.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_Phase0DarkTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_7thFleetStormtrooper</defName>
+		<title>7th Fleet Stormtrooper Veteran</title>
+		<titleShort>Stormtrooper</titleShort>
+		<description>As part of his own personal goal of rescuing the Empire's top talents from its incompetent leadership, Grand Admiral Thrawn has quietly cultivated a force of veteran Stormtroopers to serve as the marines of his 7th Fleet. Thrawn's considerable influence within the military was pushed to its limit, as each soldier in this battalion was rated as a top-performer hand-picked for transfer from throughout the entire Stormtrooper corps, earning the ire of many of his fellow officers to whom those troopers once served.\n\nThrawn's 7th Fleet Stormtroopers possess advanced training and are equipped with high-grade weaponry typically only seen on the most expensive mercenary forces, such as Disruptors.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_7thFleetStormtrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ArmySpecialMissionsTrooper</defName>
+		<title>Imperial Army Special Missions Trooper</title>
+		<titleShort>Army SpecOps</titleShort>
+		<description>Veteran soldiers within the Imperial Army are typically transferred to "Special Missions" units. These units are entrusted with many high-priority tactical operations that command deems unsuitable for the regular Army dregs to handle, such as breaking critical enemy formations, guarding high-value armored assets while deployed, and escorting prestigious officers into battle.\n\nIn addition to their greater skill compared to standard units, Army Special Missions troopers possess lighter but more agile armor and a higher concentration of anti-vehicle ordinance and anti-infantry repeaters.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ArmySpecialMissionsTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyCommando</defName>
+		<title>Imperial Army Commando</title>
+		<titleShort>Army Commando</titleShort>
+		<description>Despite most of the Imperial Army's offensive doctrine revolving around assaults with heavily-armored vehicle units, most experienced Generals still recognize the tactical need for a supporting infantry force to respond to small but potentially dangerous threats on the battlefield. The Imperial Army Commandos are employed to meet such a need. A versatile force of elite commando units, Army Commandos are tasked with securing advantageous positions and pursuing objectives located in dense, difficult-to-traverse environments not suited for heavy vehicles. Because of their close relationship with the Empire's armored assets, Army Commandos are trained to be equally proficient behind the control yoke of a walker or tank as they are on foot, and indeed many of their tactics involve their use of smaller armored vehicles to delve deep behind enemy lines to strike at vital targets. Furthermore, Army Commando units also employ combat-trained engineers to provide rapid repair services to their armored assets.\n\nArmy Commandos wear lighter but more agile armor than their regular Army counterparts and wield many kinds of niche weaponry to respond to a wide variety of threats, including repeating slugthrowers, ion disruptors, and sonic rifles.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyCommando</li>
+		</spawnCategories>
+		
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpNavyCommando</defName>
+		<title>Imperial Navy Commando</title>
+		<titleShort>Navy Commando</titleShort>
+		<description>As the influence of the Empire's Stormtrooper Corps continues to grow, many senior officers in other branches of Imperial service resent the loss of agency they have experienced as much of their armed personnel are replaced by the Emperor's shining white "bucketheads". In what many consider to be the first true act of Imperial inter-service rivalry that has contributed to the feudal warlord-ism of the current post-Endor period, several high-ranking Navy officers had conspired to form their own in-house elite infantry force they could deploy without needing to rely on Stormtroopers, whom operated with little regard for the political agendas of the Naval brass. This force became the Navy Commandos, who were trained and equipped for rapid, speedy ground strikes and naval boarding operations that could be executed with haste before the officers of the Stormtrooper Corps could catch wind and involve themselve in it.\n\nNavy Commandos are equipped with light, flexible armor that does not restrict movement, and are armed with short-range rapid-fire blasters and some armor-penetrating ordinance to deal with armored targets.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpNavyCommando</li>
+		</spawnCategories>
+		
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpRoyalGuard</defName>
+		<title>Imperial Sovereign Protector</title>
+		<titleShort>Royal Guard</titleShort>
+		<description>The Imperial Sovereign Protectors, more commonly known as the Royal Guard, are the late Emperor's red-clad elite bodyguard. Almost as mysterious as the Emperor himself, the Royal Guard are rumored to be trained in the ancient Echani martial arts in secret at an undisclosed black site. Some speculate they are connected to the equally-mysterious Thyrsian Sun Guard, thought to be a neo-Sith cult from the days of the High Republic. Regardless, their skills in melee combat are believed to rival even the finest Jedi Knights of the now-extinct Jedi Order, though only a select few within the Empire have ever even seen their skills employed against would-be assassins who threatened the Emperor.\n\nWhile he lived, it was believed the Sovereign Protectors answered to none - not even Lord Vader - but the Emperor himself. After his death, however, many of those who survived the destruction of the second Death Star have scattered and refuse to submit to any of the current Imperial Warlords. Lending credibility to the theorized Sith connection, they only seem willing to serve the Emperor's various Inquisitors and Emperor's Hand agents. Curiously, some recent rumors have claimed that Director Isard has discreetly issued an edict for all remaining Sovereign Protectors to serve a particular secret apprentice of Lord Vader's, though little else is known of this command.\n\nRoyal Guards are clad in a distinctive crimson-colored light armor, which is said to be surprisingly formidible for its class. They are also galaxy-renowned melee combatants, and are armed with powerful Force Pikes. The greatest among their ranks wield deadly Echani vibroblades, though these are rarely seen.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpRoyalGuard</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpRoyalGuardStormie</defName>
+		<title>Royal Guard Stormtrooper</title>
+		<titleShort>Royal Guard</titleShort>
+		<description>To supplement the Sovereign Protectors, who are traditionally few in number, the Emperor also employs a highly-skilled cadre of elite troopers to guard locations he frequently haunts, such as the Imperial Palace or his estate on Naboo. In previous times this force has been the Clone Shock Troopers, the battallion tasked with defending Coruscant during the Clone Wars and was later rebranded as the Imperial Shock Troopers at war's end. As the Fett clones began to age out of usefullnesss however, the Emperor disbanded this unit and replaced it with the Royal Guard Stormtroopers. Despite their name, it is believed the Emperor staffs this force with recruits from outside the Imperial military. As with the Sovereign Protectors, some suspect these troopers are sourced from the Thyrsian Sun Guard, an elusive mercenary army hailing from the Echani worlds. Some in the Imperial military hierarchy criticized the Emperor for entrusting his protection to outsiders rather than his own personnel, though such comments were often met with accusations of power-plays in which ambitious officers would want their own personnel close to the Emperor instead. In the wake of the Emperor's death, some rumors claim that the Royal Guard Stormtroopers have been reassigned by direct edict from Director Isard to serve the last secret apprentice of Lord Vader, though more on this move is unclear.\n\nRoyal Guard Stormtroopers are expeprtly trained and clad in distinctive crimson-colored Stormtrooper armor, and wield repeating blasters of both close and long range in addition to some heavier anti-vehicle ordinance.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpRoyalGuardStormie</li>
+		</spawnCategories>
+		
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+</Defs>

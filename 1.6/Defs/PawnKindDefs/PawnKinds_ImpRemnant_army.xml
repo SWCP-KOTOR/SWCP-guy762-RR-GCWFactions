@@ -353,7 +353,7 @@
 	
 	
 	
-	<!-- EaWX-style platoon -->
+	<!-- specific head-count platoons -->
 	
 	
 	<PawnKindDef Name="xSWImpRemnant_ArmyConscript_48x" ParentName="SWImpRemnant_ArmyConscript">

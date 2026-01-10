@@ -12,7 +12,204 @@
 	
 	<!-- heavy battle armor stat level -->	 	  
 	  
-	  
+	
+
+
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_DarkTrooperP0Armor</defName>
+		<label>Dark Trooper Phase 0 powered armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/DarkTrooperPhase0/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>15</Mass> <!-- durasteel battle armor stats -->
+			<MarketValue>15000</MarketValue>
+			<MaxHitPoints>475</MaxHitPoints>
+      		<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.15</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			
+			<MeleeDamageFactor>0.2</MeleeDamageFactor>              <!---->
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>RemnantEmpire_darktrooperP0armor</li>
+				<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Armor</li>
+			</tags>
+			<wornGraphicPath>SWApparel/DarkTrooperPhase0/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_WarlordArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90,105,110)</only>  <!-- dark trooper teal -->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<verbs>
+            <li>
+                <label>throw plasma grenade</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>15</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>1.75</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>kotorsound_grenadethrow</soundCast>
+                <onlyManualCast>true</onlyManualCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <defaultProjectile>guy762_ThrownGrenade_stormcommando</defaultProjectile>
+                <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsWeapon>true</ai_IsWeapon>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>grenades</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>KOTOR_PlasmaCartridge</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+            </li>
+			<li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+	</ThingDef>	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_DarkTrooperP0Helmet</defName>
+		<label>Dark Trooper Phase 0 powered helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/DarkTrooperPhase0/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>9</Mass>
+			<MarketValue>7000</MarketValue>
+			<MaxHitPoints>235</MaxHitPoints>
+      		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.2</AimingDelayFactor>
+			
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<tags>
+				<li>RemnantEmpire_darktrooperP0armor</li>
+				<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Helmet</li>
+			</tags>
+			<wornGraphicPath>SWApparel/DarkTrooperPhase0/helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<drawData>
+				<!-- <defaultData> -->
+					<!-- <layer>72</layer> -->
+				<!-- </defaultData> -->
+				<dataSouth>
+				  <layer>72</layer>
+				</dataSouth>
+			</drawData>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_WarlordArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90,105,110)</only>  <!-- dark trooper teal -->
+				</li>
+			</options>
+		</colorGenerator>
+
+		<comps>
+            <li Class="SWCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
+	
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_PAGuardianProtectorArmor</defName>
 		<label>Guardian Protector armor</label>
@@ -26,12 +223,12 @@
 		</graphicData>
 		
 		<statBases>
-			<Mass>14</Mass> <!-- durasteel battle armor stats -->
+			<Mass>14</Mass> <!-- durasteel battle armor stats +1 -->
 			<MarketValue>13000</MarketValue>
 			<MaxHitPoints>475</MaxHitPoints>
-      		<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-			<ArmorRating_Heat>1.15</ArmorRating_Heat>
+      		<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.25</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -159,11 +356,11 @@
 		</graphicData>
 		<statBases>
 			<Mass>8</Mass>
-			<MarketValue>6000</MarketValue> <!-- powered battle helmet stats -->
+			<MarketValue>6000</MarketValue> <!-- powered battle helmet stats +1 -->
 			<MaxHitPoints>235</MaxHitPoints>
-      		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+      		<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.05</ArmorRating_Heat>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

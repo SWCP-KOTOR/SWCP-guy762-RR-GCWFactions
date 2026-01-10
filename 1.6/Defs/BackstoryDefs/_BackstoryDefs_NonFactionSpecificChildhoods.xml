@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>SWCPBackstoryC_nulldebug</defName>
+		<title>Galactic Citizen</title>
+		<titleShort>Citizen</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_NonFactionSpecificChildhoods</li>
+			
+			<!-- <li>SWCPBackstories_7thFleetStormtrooper</li> -->
+			<!-- <li>SWCPBackstories_ArmySpecialMissionsTrooper</li> -->
+			<!-- <li>SWCPBackstories_ImpArmyCommando</li> -->
+			<!-- <li>SWCPBackstories_ImpNavyCommando</li> -->
+			<!-- <li>SWCPBackstories_ImpRoyalGuard</li> -->
+			<!-- <li>SWCPBackstories_ImpRoyalGuardStormie</li> -->
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

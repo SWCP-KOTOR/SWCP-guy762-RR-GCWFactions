@@ -2,14 +2,15 @@
 <Defs>
 
 	<BackstoryDef>
-		<defName>SWCP_CloneTroopChild</defName>
+		<defName>SWCPBackstoryC_CloneTroopChild</defName>
 		<title>Republic Clone</title>
 		<titleShort>Clone</titleShort>
 		<description>Engineered in the sterile halls of Kamino and trained from decanting, this soldier was designed for one purpose: war. Accelerated growth and relentless drills forged them into a disciplined warrior, proficient in firearms, tactics, and unit cohesion. However, their education was strictly martial—leaving little room for creativity or civilian skills.</description>
 		<slot>Childhood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<!-- <bodyTypeGlobal>Male</bodyTypeGlobal> -->
 		<spawnCategories>
-			<li>CloneTrooperBackstory</li>
+			<li>SWCPBSC_CloneTrooper</li>
+			<li>SWCPBSC_Phase0DarkTrooper</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>7</Shooting>
@@ -20,14 +21,14 @@
 	</BackstoryDef>
 
 	<BackstoryDef>
-		<defName>SWCP_CloneTroopAdult</defName>
+		<defName>SWCPBackstoryA_CloneTroopAdult</defName>
 		<title>Republic Trooper</title>
 		<titleShort>Trooper</titleShort>
 		<description>Deployed across the battlefields of the Clone Wars, this soldier has seen combat on a hundred worlds. Whether holding the line against droid armies or executing precision strikes under Jedi command, they are a hardened veteran of the Grand Army of the Republic. While unmatched in warfare, their life outside the military is almost nonexistent.</description>
 		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<!-- <bodyTypeGlobal>Male</bodyTypeGlobal> -->
 		<spawnCategories>
-			<li>CloneTrooperBackstory</li>
+			<li>SWCPBSC_CloneTrooper</li>
 		</spawnCategories>
 		<nameMaker>SWCP_NamerCloneTrooper</nameMaker>
 	</BackstoryDef>
