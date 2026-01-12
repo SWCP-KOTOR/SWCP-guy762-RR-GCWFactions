@@ -61,7 +61,7 @@
 				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_SAAVProtonMissile_light</defaultProjectile>
-				<warmupTime>6</warmupTime>
+				<warmupTime>3</warmupTime>
 				<defaultCooldownTime>10</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>

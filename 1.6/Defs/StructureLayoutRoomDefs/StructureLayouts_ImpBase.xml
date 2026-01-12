@@ -235,6 +235,12 @@
 		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
 		<corridorDef>AncientRuinsCorridor</corridorDef>
 		<areaPrunePercent>0.05</areaPrunePercent>
+		
+		<wallAttachments>
+		  <AncientEmergencyLight_Blue>
+			<countRange>1~2</countRange>
+		  </AncientEmergencyLight_Blue>
+		</wallAttachments>
 
 		<roomDefs>
 		  <SWCPRoomLayout_ImpWeaponsStorage>

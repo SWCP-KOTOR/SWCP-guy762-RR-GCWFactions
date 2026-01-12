@@ -38,6 +38,10 @@
 
 
 		<disallowedTraits>
+			<li MayRequire="lee.theforce.standalone">Force_NeutralSensitivity</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightAffinity</li>
+			<li MayRequire="lee.theforce.standalone">Force_DarkAffinity</li>
+			
 			<li>BodyPurist</li>
 			<li>Nudist</li>
 		</disallowedTraits>
@@ -83,7 +87,83 @@
 	
 	
 	
+	<!-- specific head-count platoons -->
 	
+	
+	
+	<PawnKindDef Name="xSWPentastar_ArmyTrooper_40x" ParentName="SWPentastar_ArmyTrooper">
+		<defName>xSWPentastar_ArmyTrooper_40x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>40</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyGrenadier_4x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xSWPentastar_ArmyGrenadier_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyIon_1x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xSWPentastar_ArmyIon_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyLieutenant_2x" ParentName="SWPentastar_ArmyLieutenant">
+		<defName>xSWPentastar_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xSWPentastar_ArmyMedic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="xSWPentastar_GuardianProtector_2x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianProtector_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyMajor_1x" ParentName="SWPentastar_ArmyMajor">
+		<defName>xSWPentastar_ArmyMajor_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWPentastar_EnforcerTrooper_48x" ParentName="SWPentastar_EnforcerTrooper">
+		<defName>xSWPentastar_EnforcerTrooper_48x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>48</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_EnforcerHeavy_6x" ParentName="SWPentastar_EnforcerHeavy">
+		<defName>xSWPentastar_EnforcerHeavy_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+	</PawnKindDef>
 	
 	
 	
@@ -183,10 +263,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="SWPentastar_EnforcerTrooper_48x" ParentName="SWPentastar_EnforcerTrooper">
-		<defName>SWPentastar_EnforcerTrooper_48x</defName>
-		<maxPerGroup>48</maxPerGroup>
-	</PawnKindDef>
+	
 	
 	
 	
@@ -197,9 +274,7 @@
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>40</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
-		
-		<maxPerGroup>6</maxPerGroup>
-		
+
 		<!-- <xenotypeSet Inherit="False"> -->
 		  <!-- <xenotypeChances> -->
 			<!-- <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner> -->

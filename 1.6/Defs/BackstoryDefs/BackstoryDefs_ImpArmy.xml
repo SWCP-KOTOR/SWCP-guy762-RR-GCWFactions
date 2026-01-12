@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<!-- this goes in the pawnkind -->
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyConscript</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
+		
+		
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyConscript</defName>
+		<title>Imperial Army Conscript</title>
+		<titleShort>Army Conscript</titleShort>
+		<description>As the Galactic Civil War escalates in the wake of the Emperor's death at Endor, so too grows the Empire's need for soldiers to throw en masse at its enemies. The once-maligned infantry of the Imperial Army now find themselves outnumbered and outgunned on the front lines. To quell increasing manpower shortages in this period of heightened conflict, top generals of the Imperial Army (as well as generals of many warlord fiefdoms) have begun forcibly conscripting the human populations of their member worlds to stave off their enemy's advance. Policies against the recruitment of women, the well-educated, the old, and the young have been done away with entirely. Entire civilian populations of planetary districts deemed "unimportant" have been round up and forced to fight the Empire's battles. Unfortunately for the Empire, mutinies among these forces have become commonplace, and those who are captured by the New Republic or the wealthier warlords like Zsinj are often quick to defect to the enemy.\n\nArmy Conscripts have little to no standardized training and are poorly-equipped, often barely having enough rifles and body armor for a full unit. If captured, these conscripts are very easy to recruit.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyConscript</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyTrooper</defName>
+		<title>Imperial Army Trooper</title>
+		<titleShort>Army Trooper</titleShort>
+		<description>The vanguard of the Imperial Army, Army Troopers are the primary infantry unit of the Empire and its various warlord factions. Formerly known as the Republic Judicial Forces during the pre-Clone Wars Republic, these armies were originally composed of units integrated from many local planetary defense forces that were raised as the Separatist Crisis had begun to escalate. When the Republic was reorganized into the Galactic Empire at the end of the Clone Wars, these forces became the Imperial Army and were tasked with seizing and occupying worlds controlled by Republic loyalists and Separatist holdouts. However, these units were only used for a brief transitional period as the Clone armies were gradually phased out of use to be replaced by the Emperor's new Stormtrooper Corps. It is believed that, while both forces were ostensibly loyal, the Emperor trusted neither the Clones (whose loyalty was designed by the Kaminoans, and thus may have been compromised) nor the Imperial Army (whose loyalty was still primarily towards their own home systems rather than the Emperor himself).\n\nWith the Emperor's death at Endor, the Imperial Army has fragmented, as many of its best officers have defected away from the Isard-controlled government on Coruscant towards the various warlord factions in the Outer Rim. As the Stormtrooper Corps has remained loyal to Isard, standard Imperial Army infantry doctrine has been re-activated by the warlords to form the backbone of their own invasion and defensive forces.\n\nImperial Army Troopers are used primarily to take and hold ground. Their objective is to be difficult for the enemy to dislodge, buying time for elite forces, mechanized units, and star commanders to arrive on the field. To achieve this, they are equipped with bulky, durable armor and an assortment of BlasTech rifles and carbines.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyLieutenant</defName>
+		<title>Imperial Army Lieutenant</title>
+		<titleShort>Army Lieutenant</titleShort>
+		<description>The lowest-ranking of the commissioned officers in the Imperial armies, Lieutenants lead platoons of infantry soldiers or squads of mechanized vehicle units into battle. As the higher-level intel and strategy is typically left to higher-ranking officers, Lieutenants are instead trusted with making small-scale, at-the-scene tactical decisions to guide the troops under their command to victory. Their tasks can include taking specific enemy positions, locating and eliminating specific targets, and leading forces to meet an enemy's advance in order to slow them down.\n\nImperial Army Lieutenants are given specialized 'officer' armor similar to that worn by standard Army Troopers. As part of Army squad tactics, they wield armor-piercing repeating slugthrowers that have built-in concussion blast launchers. They can also issue short-range tactical orders to direct the soldiers under their command.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyLieutenant</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyMajor</defName>
+		<title>Imperial Army Major</title>
+		<titleShort>Army Major</titleShort>
+		<description>Considered a "senior" officer in the Imperial Army, Majors command individual battalions of Army Infantry or divisions of vehicle units, and typically have several Lieutenants under their command. Majors are involved in much of the broad-scale strategy and logistics in a campaign, but are also kept out of the loop on highly-classified matters so that they can be trusted to take direct command of critical battles if necessary. Majors typically handle the day-to-day management of their battalions, distributing orders to platoons in accordance with the immediate broad-scale objectives of their army.\n\nImperial Army Majors are equipped with standard officer armor, and are sometimes granted a rare personal shield generator to protect themselves on the battlefield. While in battle, a Major's Command Tier ability provides bonuses to all soldiers under their command on the field.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyMajor</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_ImpArmyGeneral</defName>
+		<title>Imperial Army General</title>
+		<titleShort>Army General</titleShort>
+		<description>Counted among the most senior ranks in the Imperial Army, Generals are in charge of entire armies of infantry battalions or vehicle divisions, and have several Majors under their command. Generals are typically hand-picked by the highest-ranking brass in the Empire, whether it be the acting Director of the Imperial Army, a Grand General or Admiral, or even a Military Executor like Lord Vader. They are tasked with directing ground campaigns to take entire planets, systems, or even sectors from hostile forces. They have, at least previously, worked closely with other branches of the Imperial armed forces such as the Navy or Military Intelligence to obtain reliable intel and help clear hostile naval forces from planetary orbit.\n\nIn the wake of the Emperor's death and the emergence of the various warlord fiefdoms however, this once well-oiled engine of Imperial military conquest has been torn apart by factionalism and petty rivalries. More often than not, flag officers like Generals are often left berift of outside help and must take on further roles as spymasters and naval commanders to achieve the goals of the faction leaders they serve. Many Generals who find themselves in such positions soon realize they have better odds serving themselves rather than any feudal warlord, and in turn declare themselves a warlord ruling over the territory they currently control.\n\nWhile most Generals direct campaigns from a secure, far-away base, some truly bold Generals take the initiative to lead decisive battles themselves. In these cases, Generals are typically outfitted with standard Imperial Army officer armor and a personal shield generator. Their Command Tier ability provides strong bonuses to their forces present at the battle, and their presence is not to be taken lightly.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_ImpArmyGeneral</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	
+
+</Defs>

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	
+	<!-- this goes in the pawnkind -->
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_7thFleetStormtrooper</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
+	
+	
 	<BackstoryDef>
 		<defName>SWCPBackstoryA_Phase0DarkTrooper</defName>
 		<title>Phase 0 Dark Trooper</title>
@@ -45,8 +52,6 @@
 		<spawnCategories>
 			<li>SWCPBSC_ImpArmyCommando</li>
 		</spawnCategories>
-		
-		<shuffleable>True</shuffleable>
 	</BackstoryDef>
 	
 	
@@ -59,8 +64,6 @@
 		<spawnCategories>
 			<li>SWCPBSC_ImpNavyCommando</li>
 		</spawnCategories>
-		
-		<shuffleable>True</shuffleable>
 	</BackstoryDef>
 	
 	<BackstoryDef>
@@ -84,8 +87,6 @@
 		<spawnCategories>
 			<li>SWCPBSC_ImpRoyalGuardStormie</li>
 		</spawnCategories>
-		
-		<shuffleable>True</shuffleable>
 	</BackstoryDef>
 
 </Defs>

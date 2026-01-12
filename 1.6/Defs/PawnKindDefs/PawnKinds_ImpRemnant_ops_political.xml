@@ -37,6 +37,10 @@
 
 
 		<disallowedTraits>
+			<li MayRequire="lee.theforce.standalone">Force_NeutralSensitivity</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightAffinity</li>
+			<li MayRequire="lee.theforce.standalone">Force_DarkAffinity</li>
+			
 			<li>BodyPurist</li>
 			<li>Nudist</li>
 		</disallowedTraits>
@@ -85,6 +89,7 @@
 	<PawnKindDef Name="SWImpRemnant_ForceUserBase" ParentName="SWImpRemnant_Base" Abstract="True">
 		<disallowedTraits Inherit="False">
 			<li>BodyPurist</li>
+			<li>Nudist</li>
 			<li>Wimp</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>

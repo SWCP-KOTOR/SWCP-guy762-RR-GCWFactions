@@ -362,9 +362,8 @@
 		
 		
 		<pawnGroupMakers>
-			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
-				<kindDef>Combat</kindDef>
-				<disallowedStrategies> <!-- entire vanilla list -->
+				<!-- entire vanilla list --><!--
+				<disallowedStrategies>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -374,7 +373,22 @@
 					<li>StageThenAttack</li>
 					<li>Siege</li>
 				</disallowedStrategies>
-				<commonality>10000</commonality>
+				-->
+			
+			<!--
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>700</commonality>
 				<minPoints>2000</minPoints>
 				<minAircraftCount>5</minAircraftCount>
 				<maxAircraftCount>10</maxAircraftCount>
@@ -384,19 +398,15 @@
 					<guy762_SWVehicle_TIEBomber_bot_PawnKind>3</guy762_SWVehicle_TIEBomber_bot_PawnKind>
 				</options>
 			</li>
-			<li>
-				<!-- vehicle assault -->
+			<li MayRequire="SWCP.GCWVehicles" >
 				<kindDef>Combat</kindDef>
-				<commonality>1000</commonality>
+				<commonality>800</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-					<!-- <li>Siege</li> -->
-					<!-- <li>StageThenAttack</li> -->
-					<!-- <li>ImmediateAttack</li> -->
 				</disallowedStrategies>
 				<options>
-				  <!-- <SWImpRemnant_TankDriver>50</SWImpRemnant_TankDriver> -->
+				  <SWImpRemnant_TankDriver>50</SWImpRemnant_TankDriver>
 				  <SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper>
 				  <SWImpRemnant_ArmyLieutenant>5</SWImpRemnant_ArmyLieutenant>
 				  <SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat>
@@ -405,7 +415,7 @@
 				  <guy762_SWVehicle_ATPT_bot_PawnKind>50</guy762_SWVehicle_ATPT_bot_PawnKind>
 				</options>
 			</li>
-		  
+		  -->
 		  
 			<li>
 				<kindDef>Peaceful</kindDef>
@@ -416,7 +426,155 @@
 				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
 				</options>
 			</li>
-				  
+			
+			
+			
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			
+			<!-- conscript blitz -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>90</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_ArmyConscript_56x>100</xSWImpRemnant_ArmyConscript_56x>
+					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
+				</options>
+			</li>
+			
+			<!-- army skirmish -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>75</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
+					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
+					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
+					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x>
+				</options>
+			</li>
+			
+			<!-- territory intrusion -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
+					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
+					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x>
+
+					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
+					
+					
+					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
+					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			<!-- conscript/elite assault -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>25</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_ArmyConscript_56x>100</xSWImpRemnant_ArmyConscript_56x>
+					
+					<xSWImpRemnant_Stormtrooper_24x>100</xSWImpRemnant_Stormtrooper_24x>
+					<xSWImpRemnant_StormtrooperSniper_4x>100</xSWImpRemnant_StormtrooperSniper_4x>
+					<xSWImpRemnant_StormtrooperLightRepeater_6x>100</xSWImpRemnant_StormtrooperLightRepeater_6x>
+					<xSWImpRemnant_StormtrooperHeavyRepeater_2x>100</xSWImpRemnant_StormtrooperHeavyRepeater_2x>
+					<xSWImpRemnant_StormtrooperMissile_8x>100</xSWImpRemnant_StormtrooperMissile_8x>
+					<xSWImpRemnant_StormtrooperOfficer_2x>100</xSWImpRemnant_StormtrooperOfficer_2x>
+					
+					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
+					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			<!-- combined mega assault -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>910</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_ArmyConscript_56x>100</xSWImpRemnant_ArmyConscript_56x>
+					
+					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
+					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
+					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x>
+					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
+					
+					<xSWImpRemnant_Stormtrooper_24x>100</xSWImpRemnant_Stormtrooper_24x>
+					<xSWImpRemnant_StormtrooperSniper_4x>100</xSWImpRemnant_StormtrooperSniper_4x>
+					<xSWImpRemnant_StormtrooperLightRepeater_6x>100</xSWImpRemnant_StormtrooperLightRepeater_6x>
+					<xSWImpRemnant_StormtrooperHeavyRepeater_2x>100</xSWImpRemnant_StormtrooperHeavyRepeater_2x>
+					<xSWImpRemnant_StormtrooperMissile_8x>100</xSWImpRemnant_StormtrooperMissile_8x>
+					<xSWImpRemnant_StormtrooperOfficer_2x>100</xSWImpRemnant_StormtrooperOfficer_2x>
+					
+					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
+					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<li>
 				<!-- scout trooper skirmish -->
 				<kindDef>Combat</kindDef>
@@ -626,6 +784,10 @@
 					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
 					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
 					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> <!-- has a max of 2 -->
+					
+					<!-- commander and guards -->
+					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
+					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
 					
 					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
 					<!-- <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer> -->

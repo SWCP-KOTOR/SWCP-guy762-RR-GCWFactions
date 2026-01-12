@@ -523,6 +523,82 @@
 	
 	
 	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_Stormtrooper_24x" ParentName="SWImpRemnant_stormtrooper">
+		<defName>xSWImpRemnant_Stormtrooper_24x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>24</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperSniper_4x" ParentName="SWImpRemnant_stormierifle">
+		<defName>xSWImpRemnant_StormtrooperSniper_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT20Asniper</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperLightRepeater_6x" ParentName="SWImpRemnant_stormierifle">
+		<defName>xSWImpRemnant_StormtrooperLightRepeater_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19repeater</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperHeavyRepeater_2x" ParentName="SWImpRemnant_stormiehvy">
+		<defName>xSWImpRemnant_StormtrooperHeavyRepeater_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T21repeater</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperMissile_8x" ParentName="SWImpRemnant_stormiehvy">
+		<defName>xSWImpRemnant_StormtrooperMissile_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperOfficer_2x" ParentName="SWImpRemnant_stormieofficer">
+		<defName>xSWImpRemnant_StormtrooperOfficer_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -66,7 +66,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_SAAVProtonMissile_heavy</defaultProjectile>
 				<!-- <defaultProjectile>SWProj_SAAAProtonMissile_heavy</defaultProjectile> -->
-				<warmupTime>5</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<defaultCooldownTime>12</defaultCooldownTime>
 				<!-- <range>36</range> -->
 				<range>60</range>

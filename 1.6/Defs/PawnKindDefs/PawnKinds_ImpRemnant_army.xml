@@ -29,6 +29,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyConscript</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -85,6 +89,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -181,6 +189,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -263,6 +275,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -353,13 +369,13 @@
 	
 	
 	
-	<!-- specific head-count platoons -->
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->
 	
 	
-	<PawnKindDef Name="xSWImpRemnant_ArmyConscript_48x" ParentName="SWImpRemnant_ArmyConscript">
-		<defName>xSWImpRemnant_ArmyConscript_48x</defName>
+	<PawnKindDef Name="xSWImpRemnant_ArmyConscript_56x" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>xSWImpRemnant_ArmyConscript_56x</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>48</maxPerGroup>
+		<maxPerGroup>56</maxPerGroup>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWImpRemnant_ArmyTrooper_40x" ParentName="SWImpRemnant_ArmyTrooper">
@@ -403,8 +419,31 @@
 	<PawnKindDef Name="xSWImpRemnant_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
 		<defName>xSWImpRemnant_ArmyMedic_2x</defName>
 		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperRifle_4x" ParentName="SWImpRemnant_stormtrooper">
+		<defName>xSWImpRemnant_StormtrooperRifle_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	<PawnKindDef Name="xSWImpRemnant_ArmyMajor_1x" ParentName="SWImpRemnant_ArmyMajor">
+		<defName>xSWImpRemnant_ArmyMajor_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
 	</PawnKindDef>
 	
 	
@@ -633,6 +672,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyLieutenant</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -741,10 +784,16 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyMajor</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			
 			<li>KotOREquipment_officer</li>
 			<li>RemnantEmpire_armymajor</li>
 			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
@@ -855,6 +904,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyGeneral</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
@@ -966,6 +1019,10 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyGeneral</li></categories></li>
+		</backstoryFiltersOverride>
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>

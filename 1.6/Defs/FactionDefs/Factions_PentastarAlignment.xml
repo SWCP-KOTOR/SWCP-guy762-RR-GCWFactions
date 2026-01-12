@@ -309,9 +309,23 @@
 		
 		
 		<pawnGroupMakers>
+				<!-- entire vanilla list --><!--
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				-->
+			
+			<!--
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
-				<disallowedStrategies> <!-- entire vanilla list -->
+				<disallowedStrategies>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -331,23 +345,21 @@
 					<guy762_SWVehicle_TIEDefender_bot_PawnKind>1</guy762_SWVehicle_TIEDefender_bot_PawnKind>
 				</options>
 			</li>
+			-->
+			<!-- vehicle assault --><!--
 			<li>
-				<!-- vehicle assault -->
 				<kindDef>Combat</kindDef>
 				<commonality>1000</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-					<!-- <li>Siege</li> -->
-					<!-- <li>StageThenAttack</li> -->
-					<!-- <li>ImmediateAttack</li> -->
 				</disallowedStrategies>
 				<options>
-				  <SWPentastar_ArmyTrooper>25</SWPentastar_ArmyTrooper>
-				  <SWPentastar_ArmyMajor>10</SWPentastar_ArmyMajor>
-				  <SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat>
-				  <guy762_SWVehicle_ATDP_bot_PawnKind>25</guy762_SWVehicle_ATDP_bot_PawnKind>
-				  <guy762_SWVehicle_TIECrawler_bot_PawnKind>25</guy762_SWVehicle_TIECrawler_bot_PawnKind>
+					<SWPentastar_ArmyTrooper>25</SWPentastar_ArmyTrooper>
+					<SWPentastar_ArmyMajor>10</SWPentastar_ArmyMajor>
+					<SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat>
+					<guy762_SWVehicle_ATDP_bot_PawnKind>25</guy762_SWVehicle_ATDP_bot_PawnKind>
+					<guy762_SWVehicle_TIECrawler_bot_PawnKind>25</guy762_SWVehicle_TIECrawler_bot_PawnKind>
 				</options>
 			</li>
 		  
@@ -360,6 +372,101 @@
 				  <SWPentastar_ArmyLieutenant>50</SWPentastar_ArmyLieutenant>
 				</options>
 			</li>
+			-->
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			
+			<!-- enforcer blitz -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>990</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWPentastar_EnforcerTrooper_48x>100</xSWPentastar_EnforcerTrooper_48x>
+					<xSWPentastar_EnforcerHeavy_6x>100</xSWPentastar_EnforcerHeavy_6x>
+					<xSWPentastar_ArmyLieutenant_2x>100</xSWPentastar_ArmyLieutenant_2x>
+				</options>
+			</li>
+			<!-- army skirmish - rare because they're not supposed to have traditional imp units -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>510</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWPentastar_ArmyTrooper_40x>100</xSWPentastar_ArmyTrooper_40x>
+					<xSWPentastar_ArmyGrenadier_4x>100</xSWPentastar_ArmyGrenadier_4x>
+					<xSWPentastar_ArmyIon_1x>100</xSWPentastar_ArmyIon_1x>
+					<xSWPentastar_ArmyMedic_2x>100</xSWPentastar_ArmyMedic_2x>
+					<xSWPentastar_ArmyLieutenant_2x>100</xSWPentastar_ArmyLieutenant_2x>
+					
+					<xSWPentastar_GuardianProtector_2x>100</xSWPentastar_GuardianProtector_2x>
+					<xSWPentastar_ArmyMajor_1x>100</xSWPentastar_ArmyMajor_1x>
+				</options>
+			</li>
+			<!-- territory intrusion -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>950</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWPentastar_EnforcerTrooper_48x>100</xSWPentastar_EnforcerTrooper_48x>
+					<xSWPentastar_EnforcerHeavy_6x>100</xSWPentastar_EnforcerHeavy_6x>
+					<xSWPentastar_ArmyLieutenant_2x>100</xSWPentastar_ArmyLieutenant_2x>
+					
+					<xSWPentastar_GuardianProtector_2x>100</xSWPentastar_GuardianProtector_2x>
+					<xSWPentastar_ArmyMajor_1x>100</xSWPentastar_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			  
 			<li>
 				<!-- enforcer raid -->
@@ -376,7 +483,7 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-				  <SWPentastar_EnforcerTrooper_48x>100</SWPentastar_EnforcerTrooper_48x>
+				  <!-- <SWPentastar_EnforcerTrooper_48x>100</SWPentastar_EnforcerTrooper_48x> -->
 				  <SWPentastar_EnforcerHeavy>100</SWPentastar_EnforcerHeavy>
 				  <SWPentastar_ArmyLieutenant>100</SWPentastar_ArmyLieutenant>
 				  
@@ -457,9 +564,7 @@
 				  <SWPentastar_ArmyLieutenant>100</SWPentastar_ArmyLieutenant>
 				  
 				  <SWPentastar_ArmyMajor>100</SWPentastar_ArmyMajor>
-				  
-				  <SWWarlords_ArmyCommando>50</SWWarlords_ArmyCommando>
-				  
+
 				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF>
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">10</SWPentastar_InQuestor_VPE>
@@ -491,8 +596,6 @@
 				  <SWPentastar_GuardianProtector>25</SWPentastar_GuardianProtector>
 				  <SWPentastar_ArmyGeneral_field>100</SWPentastar_ArmyGeneral_field>
 				  
-				  <SWWarlords_ArmyCommando>50</SWWarlords_ArmyCommando>
-				  
 				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF>
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">10</SWPentastar_InQuestor_VPE>
@@ -514,7 +617,7 @@
 					<li>ImmediateAttackBreaching</li>
 				</disallowedStrategies>
 				<options>
-				  <SWWarlords_ArmyCommando>50</SWWarlords_ArmyCommando> <!-- replace with purge troopers -->
+				  <!-- purge troopers -->
 				  
 				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">100</SWPentastar_InQuestor_PotF>
 				  

@@ -338,7 +338,7 @@
 				  <SWEriadu_ArmyLieutenant>50</SWEriadu_ArmyLieutenant>
 				</options>
 			</li>
-			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->				  
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
 			<li>
 				<!-- army skirmish -->
 				<kindDef>Combat</kindDef>
@@ -359,6 +359,9 @@
 					<xSWEriadu_ArmyIon_1x>100</xSWEriadu_ArmyIon_1x>
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
 					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
+					
+					<xSWEriadu_ArmySpecOps_4x>100</xSWEriadu_ArmySpecOps_4x>
+					<xSWEriadu_ArmyMajor_1x>100</xSWEriadu_ArmyMajor_1x>
 				</options>
 			</li>
 			<li>
@@ -383,6 +386,10 @@
 					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
 
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
+					
+					
+					<xSWEriadu_ArmySpecOps_4x>100</xSWEriadu_ArmySpecOps_4x>
+					<xSWEriadu_ArmyMajor_1x>100</xSWEriadu_ArmyMajor_1x>
 				</options>
 			</li>
 			<li>
@@ -397,7 +404,7 @@
 					<li>ImmediateAttack</li>
 				</disallowedStrategies>
 				<options>
-					<xSWEriadu_ArmyConscript_48x>100</xSWEriadu_ArmyConscript_48x>
+					<xSWEriadu_ArmyConscript_56x>100</xSWEriadu_ArmyConscript_56x>
 					
 					<xSWEriadu_ArmySpecOps_25x>100</xSWEriadu_ArmySpecOps_25x>
 					<xSWEriadu_ArmySpecOpsLightRepeater_2x>100</xSWEriadu_ArmySpecOpsLightRepeater_2x>
@@ -406,6 +413,9 @@
 					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
 
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
+					
+					<xSWEriadu_ArmySpecOps_4x>100</xSWEriadu_ArmySpecOps_4x>
+					<xSWEriadu_ArmyMajor_1x>100</xSWEriadu_ArmyMajor_1x>
 				</options>
 			</li>
 			
@@ -491,8 +501,8 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-					<SWWarlords_ArmyCommando>50</SWWarlords_ArmyCommando>
-					<SWWarlords_ArmySpecOps>100</SWWarlords_ArmySpecOps>
+					<SWEriadu_ArmyCommando>50</SWEriadu_ArmyCommando>
+					<SWEriadu_ArmySpecOps>100</SWEriadu_ArmySpecOps>
 					<SWEriadu_ArmyLieutenant>100</SWEriadu_ArmyLieutenant>
 				</options>
 			</li>
@@ -516,7 +526,7 @@
 					<SWEriadu_ArmyLieutenant>100</SWEriadu_ArmyLieutenant>
 					<SWEriadu_ArmyMajor>100</SWEriadu_ArmyMajor>
 
-					<SWWarlords_ArmySpecOps>50</SWWarlords_ArmySpecOps>
+					<SWEriadu_ArmySpecOps>50</SWEriadu_ArmySpecOps>
 					<!-- <SWWarlords_NavyCmdoHvy>50</SWWarlords_NavyCmdoHvy> -->
 					<!-- <SWWarlords_NavyCmdoOfficer>100</SWWarlords_NavyCmdoOfficer> -->
 				</options>
@@ -546,8 +556,8 @@
 					<SWEriadu_ArmyGeneral_field>2</SWEriadu_ArmyGeneral_field>
 					<SWEriadu_ArmyGeneral>1</SWEriadu_ArmyGeneral>
 
-					<SWWarlords_ArmySpecOps>10</SWWarlords_ArmySpecOps>
-					<SWWarlords_ArmyCommando>10</SWWarlords_ArmyCommando>
+					<SWEriadu_ArmySpecOps>10</SWEriadu_ArmySpecOps>
+					<SWEriadu_ArmyCommando>10</SWEriadu_ArmyCommando>
 					
 				</options>
 			</li>

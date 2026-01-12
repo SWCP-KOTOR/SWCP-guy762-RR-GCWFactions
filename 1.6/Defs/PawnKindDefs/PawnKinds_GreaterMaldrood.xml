@@ -37,6 +37,10 @@
 
 
 		<disallowedTraits>
+			<li MayRequire="lee.theforce.standalone">Force_NeutralSensitivity</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightAffinity</li>
+			<li MayRequire="lee.theforce.standalone">Force_DarkAffinity</li>
+			
 			<li>BodyPurist</li>
 			<li>Nudist</li>
 		</disallowedTraits>
@@ -81,7 +85,92 @@
 
 	
 	
+	<!-- specific head-count platoons -->
 	
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyConscript_56x" ParentName="SWMaldrood_ArmyConscript">
+		<defName>xSWMaldrood_ArmyConscript_56x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>56</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyTrooper_40x" ParentName="SWMaldrood_ArmyTrooper">
+		<defName>xSWMaldrood_ArmyTrooper_40x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>40</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyGrenadier_4x" ParentName="SWMaldrood_ArmyHeavy">
+		<defName>xSWMaldrood_ArmyGrenadier_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+			<!-- <li>SWRanged_T7IonDisruptor</li> -->
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyIon_1x" ParentName="SWMaldrood_ArmyHeavy">
+		<defName>xSWMaldrood_ArmyIon_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<!-- <li>SWRanged_HH4ProtonGrenadeLauncher</li> -->
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyLieutenant_2x" ParentName="SWMaldrood_ArmyLieutenant">
+		<defName>xSWMaldrood_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xSWMaldrood_ArmyMedic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="xSWMaldrood_NavyCommando_4x" ParentName="SWMaldrood_NavyCommando">
+		<defName>xSWMaldrood_NavyCommando_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E11tac</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_ArmyMajor_1x" ParentName="SWMaldrood_ArmyMajor">
+		<defName>xSWMaldrood_ArmyMajor_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWMaldrood_NavyTrooper_48x" ParentName="SWImpRemnant_NavyTrooper">
+		<defName>xSWMaldrood_NavyTrooper_48x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>48</maxPerGroup>
+	</PawnKindDef>
 	
 	
 	
@@ -500,7 +589,189 @@
 		</inventoryOptions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FACTION SPECIFIC: Greater Maldrood -->
 
+
+	<PawnKindDef Name="SWMaldrood_NavyCommando" ParentName="SWMaldrood_TrooperBase">
+		<defName>SWMaldrood_NavyCommando</defName>
+		<label>navy commando</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>19</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		
+		<nameMaker>guy762_NamerPawnKind_TIEPilotID</nameMaker>
+		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpNavyCommando</li></categories></li>
+		</backstoryFiltersOverride>
+
+		<apparelMoney>3500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>GreaterMaldrood_navycommando</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ImpNavyCommandoHelmet</li>
+			<li>guy762_ImpNavyCommandoArmor</li>
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>625</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_E11tac</li>
+		</weaponTags>
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+
+				<li>
+					<thingDef>guy762_stim_dex</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+		
+		<forcedHair>Shaved</forcedHair>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>NoBeard</forcedBeard>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWMaldrood_NavyCommandoHvy" ParentName="SWMaldrood_NavyCommando">
+		<defName>SWMaldrood_NavyCommandoHvy</defName>
+		<label>heavy navy commando</label>
+		<combatPower>200</combatPower>
+	
+		<apparelTags>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_Accessory_suspendersA</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(40,40,40)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>8000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+	
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Hulk</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Hulk</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWMaldrood_NavyCommando_28x" ParentName="SWMaldrood_NavyCommando">
+		<defName>xSWMaldrood_NavyCommando_28x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>28</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E11tac</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWMaldrood_NavyCommandoMissile_4x" ParentName="SWMaldrood_NavyCommandoHvy">
+		<defName>xSWMaldrood_NavyCommandoMissile_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- needs 4x railgun guys as officers-->
 
 
 </Defs>

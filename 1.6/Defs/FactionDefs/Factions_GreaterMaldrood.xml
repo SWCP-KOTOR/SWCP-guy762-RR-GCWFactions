@@ -338,7 +338,89 @@
 				  <SWMaldrood_NavyLt>50</SWMaldrood_NavyLt>
 				</options>
 			</li>
-			  
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			<li>
+				<!-- conscript blitz -->
+				<kindDef>Combat</kindDef>
+				<commonality>900</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWMaldrood_ArmyConscript_56x>100</xSWMaldrood_ArmyConscript_56x>
+					<xSWMaldrood_ArmyLieutenant_2x>100</xSWMaldrood_ArmyLieutenant_2x>
+					
+					<xSWMaldrood_NavyCommando_4x>100</xSWMaldrood_NavyCommando_4x>
+					<xSWMaldrood_ArmyMajor_1x>100</xSWMaldrood_ArmyMajor_1x>
+				</options>
+			</li>
+			<li>
+				<!-- navy trooper skirmish -->
+				<kindDef>Combat</kindDef>
+				<commonality>975</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWMaldrood_NavyTrooper_48x>100</xSWMaldrood_NavyTrooper_48x>
+					<xSWMaldrood_ArmyMedic_2x>100</xSWMaldrood_ArmyMedic_2x>
+					<xSWMaldrood_ArmyLieutenant_2x>100</xSWMaldrood_ArmyLieutenant_2x>
+					
+					<xSWMaldrood_NavyCommando_4x>100</xSWMaldrood_NavyCommando_4x>
+					<xSWMaldrood_ArmyMajor_1x>100</xSWMaldrood_ArmyMajor_1x>
+				</options>
+			</li>
+			<li>
+				<!-- navy commando raid -->
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWMaldrood_NavyCommando_28x>100</xSWMaldrood_NavyCommando_28x>
+					<xSWMaldrood_NavyCommandoMissile_4x>100</xSWMaldrood_NavyCommandoMissile_4x>
+					<!-- <xSWMaldrood_NavyCommandoOfficer_4x>100</xSWMaldrood_NavyCommandoOfficer_4x> -->
+				</options>
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
 			<li>
 				<!-- army skirmish -->
 				<kindDef>Combat</kindDef>
@@ -424,7 +506,7 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-					<SWWarlords_NavyCommando>100</SWWarlords_NavyCommando>
+					<SWMaldrood_NavyCommando>100</SWMaldrood_NavyCommando>
 					<!-- <SWWarlords_NavyCmdoHvy>50</SWWarlords_NavyCmdoHvy> -->
 					<!-- <SWWarlords_NavyCmdoOfficer>100</SWWarlords_NavyCmdoOfficer> -->
 				</options>
@@ -449,7 +531,7 @@
 					<SWMaldrood_ArmyLieutenant>100</SWMaldrood_ArmyLieutenant>
 					<SWMaldrood_ArmyMajor>100</SWMaldrood_ArmyMajor>
 
-					<SWWarlords_NavyCommando>50</SWWarlords_NavyCommando>
+					<SWMaldrood_NavyCommando>50</SWMaldrood_NavyCommando>
 					<!-- <SWWarlords_NavyCmdoHvy>50</SWWarlords_NavyCmdoHvy> -->
 					<!-- <SWWarlords_NavyCmdoOfficer>100</SWWarlords_NavyCmdoOfficer> -->
 				</options>
@@ -497,7 +579,7 @@
 					<SWMaldrood_ArmyMajor>5</SWMaldrood_ArmyMajor>
 					<SWMaldrood_ArmyGeneral>1</SWMaldrood_ArmyGeneral>
 
-					<SWWarlords_NavyCommando>10</SWWarlords_NavyCommando>
+					<SWMaldrood_NavyCommando>10</SWMaldrood_NavyCommando>
 					<!-- <SWWarlords_NavyCmdoHvy>10</SWWarlords_NavyCmdoHvy> -->
 					<!-- <SWWarlords_NavyCmdoOfficer>10</SWWarlords_NavyCmdoOfficer> -->
 
