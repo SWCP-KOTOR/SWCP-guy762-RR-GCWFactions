@@ -41,6 +41,22 @@
 				</selectionWeightPerPointsCurve>
 			</li>
 			<li>
+				<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
 				<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
 				<selectionWeightPerPointsCurve>
 					<points>

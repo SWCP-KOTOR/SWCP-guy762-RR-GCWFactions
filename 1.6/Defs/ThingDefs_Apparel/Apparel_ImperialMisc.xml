@@ -203,6 +203,134 @@
 	
 	
 	
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Jetpack_DarkTrooperP0JumpPack</defName>
+		<label>jetpack, Dark Trooper Phase 0</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/DarkTrooperPhase0/jumppack</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>kotorsound_select_other</soundInteract>
+		<statBases>
+		  <Mass>10</Mass>
+		  <MarketValue>6000</MarketValue>
+		  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.2</ArmorRating_Heat>
+		  <JumpRange>30</JumpRange>
+		  
+		  <WorkToMake>30000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <researchPrerequisites>
+			<li>KOTOR_Research_plasmaApplications</li>
+			<li>guy762_ResearchKotOR_mando</li>
+		  </researchPrerequisites>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<KOTOR_PlasmaCartridge>10</KOTOR_PlasmaCartridge>
+			<ComponentSpacer>4</ComponentSpacer>
+			<KOTOR_AlloyDurasteel>60</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<descriptionHyperlinks>
+			<!-- <ThingDef>guy762_KotORWorkbench</ThingDef> -->
+		</descriptionHyperlinks>
+		<apparel>
+			<tags>
+				<li>SWGCWSpecificGadgetItem_DarkTrooperP0JumpPack</li>
+			</tags>
+			<wornGraphicPath>SWApparel/DarkTrooperPhase0/jumppack</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<east>
+					<offset>(-0.35,-0.05)</offset>
+					<thin><offset>(0.05,0)</offset></thin>
+					<hulk><offset>(-0.1,0)</offset></hulk>
+					<fat><offset>(-0.15,0)</offset></fat>
+				</east>
+				<west>
+					<offset>(0.35,-0.05)</offset>
+					<thin><offset>(-0.05,0)</offset></thin>
+					<hulk><offset>(0.1,0)</offset></hulk>
+					<fat><offset>(0.15,0)</offset></fat>
+				</west>
+				<male>  <scale>(0.85,0.85)</scale></male>
+				<female><scale>(0.85,0.85)</scale></female>
+				<thin>  <scale>(0.8,0.8)</scale></thin>
+				<!-- <hulk>  <scale>(0.9,0.9)</scale></hulk> -->
+				<!-- <fat>   <scale>(0.9,0.9)</scale></fat> -->
+			</wornGraphicData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>100</weight>
+				<only>(90,105,110)</only>  <!-- dark trooper teal -->
+			</li>
+		  </options>
+		</colorGenerator>
+		<tradeTags>
+			<li>guy762TT_WarlordArmor</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Jump</verbClass>
+				<label>jump</label>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>0.5</warmupTime>
+				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
+				<requireLineOfSight>true</requireLineOfSight>
+				<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+				<soundLanding>JumpPackLand</soundLanding>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>false</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+				</targetParams>
+
+			</li>
+		</verbs>
+		<comps>
+		  <li Class="CompProperties_ApparelReloadable">
+			<maxCharges>1</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>jump</chargeNoun>
+			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			<replenishAfterCooldown>true</replenishAfterCooldown>
+			<baseReloadTicks>1800</baseReloadTicks>
+		  </li>
+		  <li Class="CompProperties_Explosive">
+				<explosiveRadius>3</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

@@ -136,11 +136,13 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_sith</li>
+			<li>SWGCWSpecificGadgetItem_DarkTrooperP0JumpPack</li>
 			<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Helmet</li>
 			<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Armor</li>
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_Jetpack_DarkTrooperP0JumpPack</li>
 			<li>guy762_DarkTrooperP0Helmet</li>
 			<li>guy762_DarkTrooperP0Armor</li>
 			<li>guy762_Bodysuit</li>
