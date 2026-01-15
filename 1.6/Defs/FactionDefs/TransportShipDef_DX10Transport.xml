@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--__________ Vertibirds __________-->
+
+    <!--__________ Vertibirds __________-->
 
     <!--_____ Transport ship defs _____-->
 
     <!-- NCR Standard Vertibird -->
 
-    <TransportShipDef Name="guy762_SWShuttleTransportShip_lambda">
-        <defName>guy762_SWShuttleTransportShip_lambda</defName>
-        <label>Lambda-class T-4a shuttle</label>
-        <shipThing>guy762_SWShuttleThing_lambda</shipThing>
-        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_lambdaIncoming</arrivingSkyfaller>
-        <leavingSkyfaller>guy762_SWShuttleSkyfaller_lambdaLeaving</leavingSkyfaller>
-        <worldObject>guy762_SWShuttleWorldObject_lambda</worldObject>
+    <TransportShipDef Name="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport</defName>
+        <label>DX-10 troop transport</label>
+        <shipThing>guy762_SWShuttleThing_DX10Transport</shipThing>
+        <arrivingSkyfaller>guy762_SWShuttleSkyfaller_DX10TransportIncoming</arrivingSkyfaller>
+        <leavingSkyfaller>guy762_SWShuttleSkyfaller_DX10TransportLeaving</leavingSkyfaller>
+        <worldObject>guy762_SWShuttleWorldObject_DX10Transport</worldObject>
         <maxLaunchDistance>70</maxLaunchDistance>
     </TransportShipDef>
 	
 	<!-- redundant defs for individual factions, don't ask me why this works -->
-	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
-        <defName>guy762_SWShuttleTransportShip_lambda_pentastar</defName>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport_pentastar</defName>
     </TransportShipDef>
 	
-	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
-        <defName>guy762_SWShuttleTransportShip_lambda_zsinj</defName>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport_zsinj</defName>
     </TransportShipDef>
 	
-	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
-        <defName>guy762_SWShuttleTransportShip_lambda_maldrood</defName>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport_maldrood</defName>
     </TransportShipDef>
 	
-	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_lambda">
-        <defName>guy762_SWShuttleTransportShip_lambda_eriadu</defName>
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport_eriadu</defName>
+    </TransportShipDef>
+	
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_DX10Transport">
+        <defName>guy762_SWShuttleTransportShip_DX10Transport_localwarlord</defName>
     </TransportShipDef>
 
     <!--_____ Building ThingDefs _____-->
@@ -38,8 +43,8 @@
     <!-- NCR Standard Vertibird -->
 
     <ThingDef ParentName="BuildingBase">
-        <defName>guy762_SWShuttleThing_lambda</defName>
-        <label>Lambda-class T-4a shuttle</label>
+        <defName>guy762_SWShuttleThing_DX10Transport</defName>
+        <label>DX-10 troop transport</label>
         <description>.</description>
         <altitudeLayer>Building</altitudeLayer>
         <pathCost>50</pathCost>
@@ -47,13 +52,13 @@
         <passability>Impassable</passability>
         <fillPercent>1.0</fillPercent>
         <!-- <size>(10,20)</size> -->
-        <size>(20,10)</size>
+        <size>(14,7)</size>
         <drawHighlight>true</drawHighlight>
         <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
         <graphicData>
-            <texPath>Shuttles_MajesticMadman/Lambda</texPath>
+            <texPath>Shuttles_NelsonArts/DX10Transport</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(26,26)</drawSize>
+            <drawSize>(17,17)</drawSize>
             <shadowData>
                 <volume>(4.1, 1.0, 1.8)</volume>
                 <offset>(0, 0, -0.1)</offset>
@@ -109,14 +114,14 @@
     <!-- NCR Standard Vertibird -->
 
     <WorldObjectDef>
-        <defName>guy762_SWShuttleWorldObject_lambda</defName>
-        <label>Lambda-class T-4a shuttle</label>
+        <defName>guy762_SWShuttleWorldObject_DX10Transport</defName>
+        <label>DX-10 troop transport</label>
         <description>.</description>
         <worldObjectClass>TravellingTransporters</worldObjectClass>
         <texture>World/WorldObjects/Caravan</texture>
         <useDynamicDrawer>true</useDynamicDrawer>
         <expandingIcon>true</expandingIcon>
-        <expandingIconTexture>Shuttles_MajesticMadman/Lambda</expandingIconTexture>
+        <expandingIconTexture>Shuttles_NelsonArts/DX10Transport</expandingIconTexture>
         <expandingIconPriority>60</expandingIconPriority>
         <expandMore>true</expandMore>
         <expandingIconDrawSize>1.6</expandingIconDrawSize>
@@ -130,14 +135,14 @@
 
     <!-- NCR Standard Vertibird -->
 
-    <ThingDef Name="guy762_SWShuttleSkyfaller_lambdaBASE" ParentName="SkyfallerBase" Abstract="True">
+    <ThingDef Name="guy762_SWShuttleSkyfaller_DX10TransportBASE" ParentName="SkyfallerBase" Abstract="True">
         <!-- <size>(10,20)</size> -->
-        <size>(20,10)</size>
+        <size>(14,7)</size>
         <graphicData>
-            <texPath>Shuttles_MajesticMadman/Lambda</texPath>
+            <texPath>Shuttles_NelsonArts/DX10Transport</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutFlying</shaderType>
-            <drawSize>(26,26)</drawSize>
+            <drawSize>(17,17)</drawSize>
         </graphicData>
         <skyfaller>
             <movementType>Decelerate</movementType>
@@ -155,9 +160,9 @@
 
     <!-- NCR Standard Vertibird Incoming -->
 
-    <ThingDef ParentName="guy762_SWShuttleSkyfaller_lambdaBASE">
-        <defName>guy762_SWShuttleSkyfaller_lambdaIncoming</defName>
-        <label>Lambda-class T-4a shuttle (incoming)</label>
+    <ThingDef ParentName="guy762_SWShuttleSkyfaller_DX10TransportBASE">
+        <defName>guy762_SWShuttleSkyfaller_DX10TransportIncoming</defName>
+        <label>DX-10 troop transport (incoming)</label>
         <thingClass>ShuttleIncoming</thingClass>
         <skyfaller>
             <anticipationSound>Shuttle_Landing</anticipationSound>
@@ -196,9 +201,9 @@
 
     <!-- NCR Standard Vertibird Leaving -->
 
-    <ThingDef ParentName="guy762_SWShuttleSkyfaller_lambdaBASE">
-        <defName>guy762_SWShuttleSkyfaller_lambdaLeaving</defName>
-        <label>Lambda-class T-4a shuttle (leaving)</label>
+    <ThingDef ParentName="guy762_SWShuttleSkyfaller_DX10TransportBASE">
+        <defName>guy762_SWShuttleSkyfaller_DX10TransportLeaving</defName>
+        <label>DX-10 troop transport (leaving)</label>
         <thingClass>FlyShipLeaving</thingClass>
         <skyfaller>
             <reversed>true</reversed>
@@ -236,6 +241,5 @@
             </speedCurve>
         </skyfaller>
     </ThingDef>
-    
 
 </Defs>

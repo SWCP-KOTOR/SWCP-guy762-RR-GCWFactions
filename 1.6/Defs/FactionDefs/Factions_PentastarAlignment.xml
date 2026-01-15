@@ -87,7 +87,7 @@
 				</arrivalModes>
 			</li>
 			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
-				<transportShipDef>guy762_SWShuttleTransportShip_lambda_pentastar</transportShipDef>
+				<transportShipDef>guy762_SWShuttleTransportShip_DX10Transport_pentastar</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
 			</li>

@@ -96,6 +96,7 @@
 		
 		<!-- anti-vehicle -->		
 			<li>guy762_RangedDamage_AntiVehicleEnergy</li>
+			<li>guy762_BeamDamage_AntiVehicleEnergy</li>
 			<li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
 			<li>guy762_RangedDamage_AntiVehicleBullet</li>
 		
@@ -368,6 +369,7 @@
 		
 		<!-- anti-vehicle -->		
 			<li>guy762_RangedDamage_AntiVehicleEnergy</li>
+			<li>guy762_BeamDamage_AntiVehicleEnergy</li>
 			<li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
 			<li>guy762_RangedDamage_AntiVehicleBullet</li>
 		
