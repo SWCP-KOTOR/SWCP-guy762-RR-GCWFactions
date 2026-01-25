@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<!-- this goes in the pawnkind -->
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
+		
+		
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_RebelArmyTrooper</defName>
+		<title>Rebel Army Trooper</title>
+		<titleShort>Army Trooper</titleShort>
+		<description>As armored vehicle units are relatively difficult for isolated rebel cells to acquire, Rebel Army infantry troopers form the bulk of rebel ground combat forces. These units are composed of enlisted ordinary civilians and planetary defense force transferees who are outraged enough at the Empire's atrocities to take up arms against it openly. Rebel military command structures naturally pose no restrictions on who can enlist, meaning men and women, Humans and aliens alike fight side-by-side with one another. This gives the Rebel Army forces a key numbers advantage despite being worse-equipped in comparison to the Imperial Army, which has had strict ideologically-motivated enlistment restrictions\n\nRebel Army Troopers are outfitted with lightweight combat suits and helmets that do not restrict movement, as well as a random assortment of rifles and carbines. Seeing as this equipment is not enough to survive a slugging match against Imperial Army units, Rebel Army tactics instead focus on mobility and evasion, relentlessly pursuing tactical objectives and evading sustained combat as much as possible.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_RebelArmyTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_RebelVanguard</defName>
+		<title>Rebel Vanguard</title>
+		<titleShort>Vanguard</titleShort>
+		<description>While the commanding officers of rebel armies generally try to avoid it, sometimes a prolonged engagement is simply the only means of achieving victory. To this end, Rebel Army forces maintain special units of "Vanguard" infantry, capable of effectively holding out against sustained enemy onslaughts. The equipment these units possess (being primarily refurbished Clone Trooper armor and stolen ordinance) are rather difficult for most rebel cells to acquire on a regular basis, and as such these forces are assembled and sent into battle sparingly.\n\nRebel Vanguard soldiers are equipped with bulky, restrictive heavy armor and a variety of area-of-effect ordinance. They are best used to hold key positions and engage in area-denial suppressing fire against enemy infantry, as they will otherwise struggle to deal consistent damage to bigger targets.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_RebelVanguard</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_NewRepublicArmyTrooper</defName>
+		<title>New Republic Army Trooper</title>
+		<titleShort>Army Trooper</titleShort>
+		<description>After their decisive victory at Endor, the nascent New Republic has began to standardize the equipment and tactics of their standing forces. The disparate Rebel Army forces brought together from all over the galaxy to fight in the Endor campaign have been issued uniform equipment and weapons in order to make strategizing with these units easier for the New Republic Army Command. With a greater amount of armored vehicle units at the New Republic's disposal (compared to most rebel cells), the New Republic Army Troopers are primarily tasked with defensive, reconnaissance, and light strike roles, given that heavy combat scenarios can be better handled by tanks and starfighter wings.\n\nNew Republic Army Troopers are outfitted with lightweight combat suits and helmets that do not restrict movement, as well as rifles for harassing enemy infantry at longer range. New Republic Army Troopers focus on mobility and evasion, securing mission objectives while heavier units engage in direct combat.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_NewRepublicArmyTrooper</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>SWCPBackstoryA_NewRepublicMarine</defName>
+		<title>New Republic Marine</title>
+		<titleShort>Marine</titleShort>
+		<description>Now that much of the manufacturing worlds in the Galactic Core have been secured, New Republic Army Command has taken the initiative to assemble a new force of elite infantry that can stand up to the Remnant's Stormtroopers or Zsinj's Raptors. Having repurposed most of the Empire's military production facilities, the New Republic can now afford to design and produce their own unique infantry equipment that can better fit their tactics, rather than continue to let their tactics be dictated by what's available to them. Sourced from the veteran ranks of the New Republic and integrated rebel armies, the New Republic Marines are thus a flexible rapid-response front-line force, capable of moving swiftly to intercept enemy vehicle advances and dislodge heavy infantry. New ultra-lightweight armor, modeled after that of the famed Clone Troopers of the old Republic, presents the galaxy with the image that a great restoration of the Republic is at hand, spearheaded by a strong peacekeeping force that can solve the problems of the past and successfully adapt to those of the present.\n\nNew Republic Marines are outfitted with lightweight medium armor that does not restrict movement and are armed with a mixture of rifles and carbines. In addition, New Republic Marine platoons possess a much greater concentration of specialized anti-infantry and anti-vehicle ordinance than most other fighting forces, making them proficient at taking on most forms of ground targets while remaining as maneuverable as regular New Republic Army units.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>SWCPBSC_NewRepublicMarine</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	
+	
+
+</Defs>

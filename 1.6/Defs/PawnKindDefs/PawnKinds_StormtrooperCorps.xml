@@ -33,6 +33,9 @@
 		
 		<forcedHair>Shaved</forcedHair>
 		
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 		</forcedTraits>
@@ -489,8 +492,16 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_takecover</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		
 		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

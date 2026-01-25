@@ -319,7 +319,7 @@
 		
 		<apparel>
 			<tags>
-				<li>NewRepublic_trooper</li>
+				<li>NewRepublic_marine</li>
 				<li>SWGCWSpecificApparelItem_NewRepublicMarineHelmet</li>
 			</tags>
 			<wornGraphicPath>SWApparel/NewRepublic/helmet</wornGraphicPath>
@@ -427,7 +427,7 @@
 		</equippedStatOffsets>
 		<apparel>
 		  <tags Inherit="False">
-			<li>NewRepublic_trooper</li>
+			<li>NewRepublic_marine</li>
 			<li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/NewRepublic/Apparel</wornGraphicPath>

@@ -134,6 +134,7 @@
 				<iconPath>UI/Rapid_Shot</iconPath-->
 				<commandIcon>UI/Rapid_Shot</commandIcon>
 				<verbClass>Verb_Shoot</verbClass>
+				<!-- <verbClass>EBSGFramework.Verb_RandomShot</verbClass> -->
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
 				<warmupTime>2</warmupTime>
@@ -170,17 +171,14 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--comps>
-			<li Class="ModularWeapons.CompProperties_ModularParts">
-				<compClass>ModularWeapons.CompModularParts</compClass>
-				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
-				<partKinds>
-					<li>guy762_slot_trigger_lgtrep</li>
-				</partKinds>
-			</li>
-		</comps-->
 		<modExtensions>
-		  <li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<!-- <li Class="EBSGFramework.RandomShotExtension"> -->
+                <!-- <projectiles> -->
+                    <!-- <KotORBlasterBolt_default>0.67</KotORBlasterBolt_default> -->
+                    <!-- <SWProj_BlasterBolt_suppressive>0.33</SWProj_BlasterBolt_suppressive> -->
+                <!-- </projectiles> -->
+            <!-- </li> not an acceptable implementation -->
 		</modExtensions>
 	</ThingDef>
 	

@@ -75,6 +75,8 @@
 				<checkGender>True</checkGender>
 			</li>
 		</modExtensions>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -335,7 +337,7 @@
 			</li>
 		</specificApparelRequirements>
 		<abilities Inherit="False">
-			<li>guy762_Ability_CommandTierIV</li>
+			<li>guy762_Ability_CommandTierV</li>
 		</abilities>
 	</PawnKindDef>
 	
@@ -372,7 +374,7 @@
 			</li>
 		</specificApparelRequirements>
 		<abilities Inherit="False">
-			<li>guy762_Ability_CommandTierIII</li>
+			<li>guy762_Ability_CommandTierIV</li>
 		</abilities>
 	</PawnKindDef>
 	

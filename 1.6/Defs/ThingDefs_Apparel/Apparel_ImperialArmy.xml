@@ -100,7 +100,7 @@
                 <label>throw stun grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
                 <warmupTime>1.75</warmupTime>
                 <noiseRadius>4</noiseRadius>

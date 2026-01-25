@@ -33,8 +33,8 @@
 		  <li>Hauling</li>
 		</requiredWorkTags>
 		<disallowedTraits>
-		  <li>Nudist</li>
-		  <li>Wimp</li>
+			<li>Nudist</li>
+			<li>Wimp</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 
@@ -131,19 +131,35 @@
 			<li>SWRanged_DLT18rifle</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -200,12 +216,12 @@
 			<li>SWRanged_62Aug2CyclerRifle</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
@@ -230,6 +246,16 @@
 				</priority>
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
+			</li>
+
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -311,26 +337,46 @@
 			<li>SWRanged_Model57pistol</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -420,24 +466,24 @@
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>12~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0</skipChance>
@@ -460,7 +506,51 @@
 		
 		<abilities>
 			<li>guy762_Ability_CommandTierIV</li>
+			<li>SWPotF_TacticAbility_Ambush</li>
+			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_Sprint</li>
+			<li>SWPotF_TacticDelegationAbility_sprint</li>
+			<li>SWPotF_TacticAbility_ZealousRage</li>
+			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
 		</abilities>
+		<!-- <startingHediffs> -->
+			<!-- <li> -->
+				<!-- <def>SWPotF_DelegatedTacticHediff_sprint</def> -->
+				<!-- <durationTicksRange>60000</durationTicksRange> -->
+				<!-- <chance>1</chance> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <def>SWPotF_DelegatedTacticHediff_zealousrage</def> -->
+				<!-- <durationTicksRange>60000</durationTicksRange> -->
+				<!-- <chance>0.5</chance> -->
+			<!-- </li> -->
+		<!-- </startingHediffs> -->
+		
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>12~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	

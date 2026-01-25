@@ -332,6 +332,85 @@
 			</options>
 		  </li>
 		  
+		  
+		  
+		  <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			
+			<!-- army skirmish -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>950</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_ArmyTrooper_40x>100</xSWZsinj_ArmyTrooper_40x>
+					<xSWZsinj_ArmyGrenadier_4x>100</xSWZsinj_ArmyGrenadier_4x>
+					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
+					<xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x>
+					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
+					
+					<xSWZsinj_Raptor_4x>100</xSWZsinj_Raptor_4x>
+					<xSWZsinj_ArmyMajor_1x>100</xSWZsinj_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			<!-- combined mega assault -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>910</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_ArmyTrooper_40x>100</xSWZsinj_ArmyTrooper_40x>
+					<xSWZsinj_ArmyGrenadier_4x>100</xSWZsinj_ArmyGrenadier_4x>
+					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
+					<xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x>
+					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
+					
+					<xSWZsinj_Raptor_24x>100</xSWZsinj_Raptor_24x>
+					<xSWZsinj_RaptorRepeater_4x>100</xSWZsinj_RaptorRepeater_4x>
+					<!-- <xSWZsinj_RaptorFlamethrower_2x>100</xSWZsinj_RaptorFlamethrower_2x> -->
+					<xSWZsinj_RaptorMissile_8x>100</xSWZsinj_RaptorMissile_8x>
+					<xSWZsinj_RaptorOfficer_2x>100</xSWZsinj_RaptorOfficer_2x>
+					
+					<xSWZsinj_P0DarkTrooper_9x>100</xSWZsinj_P0DarkTrooper_9x>
+					<!-- <xSWZsinj_P0DarkTrooperArcCaster_6x>100</xSWZsinj_P0DarkTrooperArcCaster_6x> -->
+					<xSWZsinj_P0DarkTrooperRocket_3x>100</xSWZsinj_P0DarkTrooperRocket_3x>
+					
+					<xSWZsinj_Raptor_4x>100</xSWZsinj_Raptor_4x>
+					<xSWZsinj_ArmyMajor_1x>100</xSWZsinj_ArmyMajor_1x>
+				</options>
+			</li>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
 		  <li>
 			<!-- army skirmish -->
 			<kindDef>Combat</kindDef>
@@ -349,7 +428,7 @@
 			<options>
 			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
 			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWPentastar_ArmySniper>25</SWPentastar_ArmySniper> -->
+			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
 			  <SWZsinj_ArmyLieutenant>50</SWZsinj_ArmyLieutenant>
 			</options>
 		  </li>
@@ -371,7 +450,7 @@
 			<options>
 			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
 			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWPentastar_ArmySniper>25</SWPentastar_ArmySniper> -->
+			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
 			  
 			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
 			</options>
@@ -415,7 +494,7 @@
 			<options>
 			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
 			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWPentastar_ArmySniper>25</SWPentastar_ArmySniper> -->
+			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
 			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
 			  <SWZsinj_ArmyMajor>100</SWZsinj_ArmyMajor>
 			  
@@ -439,7 +518,7 @@
 			<options>
 			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
 			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWPentastar_ArmySniper>25</SWPentastar_ArmySniper> -->
+			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
 			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
 			  
 			  <SWZsinj_ArmyGeneral_field>100</SWZsinj_ArmyGeneral_field>
@@ -467,7 +546,7 @@
 
 			  <SWZsinj_ArmyTrooper>25</SWZsinj_ArmyTrooper>
 			  <SWZsinj_ArmyHeavy>5</SWZsinj_ArmyHeavy>
-			  <!-- <SWPentastar_ArmySniper>5</SWPentastar_ArmySniper> -->
+			  <!-- <SWZsinj_ArmySniper>5</SWZsinj_ArmySniper> -->
 			  
 			  <SWZsinj_ArmyLieutenant>10</SWZsinj_ArmyLieutenant>
 			  <SWZsinj_ArmyMajor>5</SWZsinj_ArmyMajor>

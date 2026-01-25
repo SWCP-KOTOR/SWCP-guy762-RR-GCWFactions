@@ -75,6 +75,8 @@
 				<checkGender>True</checkGender>
 			</li>
 		</modExtensions>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -750,6 +752,51 @@
 	</PawnKindDef>
 	
 	
+	<PawnKindDef Name="SWMaldrood_NavyCommandoOfficer" ParentName="SWMaldrood_NavyCommando">
+		<defName>SWMaldrood_NavyCommandoOfficer</defName>
+		<label>navy commando officer</label>
+		<combatPower>150</combatPower>
+	
+		<apparelTags>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Accessory_stormiepauldron</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(190,105,0)</color>         <!-- pumpkin orange (officer) -->
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>8000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_FC1flechette</li>
+		</weaponTags>
+		
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_sprint</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
+		
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<PawnKindDef Name="xSWMaldrood_NavyCommando_28x" ParentName="SWMaldrood_NavyCommando">
 		<defName>xSWMaldrood_NavyCommando_28x</defName>
@@ -771,7 +818,13 @@
 		</weaponTags>
 	</PawnKindDef>
 	
-	<!-- needs 4x railgun guys as officers-->
+	<!-- needs 4x railgun guys -->
+	
+	<PawnKindDef Name="xSWMaldrood_NavyCommandoOfficer_2x" ParentName="SWMaldrood_NavyCommandoOfficer">
+		<defName>xSWMaldrood_NavyCommandoOfficer_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
 
 
 </Defs>

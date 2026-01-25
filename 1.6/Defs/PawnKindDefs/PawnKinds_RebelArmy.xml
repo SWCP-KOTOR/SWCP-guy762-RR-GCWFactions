@@ -228,10 +228,14 @@
 	<PawnKindDef Name="SWRebel_trooper" ParentName="SWRebel_Base">
 		<defName>SWRebel_trooper</defName>
 		<label>rebel soldier</label>
-		<combatPower>55</combatPower>
+		<combatPower>50</combatPower>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
 		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -324,6 +328,10 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
 		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
+		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
@@ -407,22 +415,28 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
 		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
+		
 		<maxPerGroup>8</maxPerGroup>
 		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
-		  <li>NewRepublic_rebelheavytrooper</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
-		  <li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
-		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_HeavySuspenders</li>
+			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+			<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_JKDetpackCase</li>
+			<li>guy762_Accessory_suspendersC</li>
 			<li>guy762_RebelHelmet_vanguard</li>
-			<li>guy762_RebelCloneArmor</li>
-			<li>guy762_Bodysuit_Dyeable</li>
+			<li>guy762_PartisanCombatSuit</li>
+			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		
 		<specificApparelRequirements>
@@ -431,8 +445,12 @@
 				<color>(130,125,105)</color>         <!-- khaki -->
 			</li>
 			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(185,180,175)</color>       <!-- warm grey -->
+			</li>
+			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<color>(150,140,95)</color>         <!-- dijon -->
+				<color>(175,150,120)</color>	<!-- bespin beige -->
 			</li>
 		</specificApparelRequirements>
 		
@@ -512,6 +530,10 @@
 		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>55</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li>
+		</backstoryFiltersOverride>
 		
 		<maxPerGroup>2</maxPerGroup>
 
@@ -707,8 +729,16 @@
 			<!-- <li>ProductionCommand</li> -->
 			<li>MarksmanCommand</li>
 		</abilities>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_sprint</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		
 		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.Flagger">
 				<flags> <guy762AltTag_RebelArmyLieutenant/></flags>
 			</li>
@@ -733,7 +763,271 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_ArmyTrooper_30x" ParentName="SWRebel_trooper">
+		<defName>xSWRebel_ArmyTrooper_30x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>30</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmySniper_6x" ParentName="SWRebel_sniper">
+		<defName>xSWRebel_ArmySniper_6x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmyMissile_6x" ParentName="SWRebel_heavy">
+		<defName>xSWRebel_ArmyMissile_6x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmyLieutenant_2x" ParentName="SWRebel_ArmyLt">
+		<defName>xSWRebel_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_Medic_2x" ParentName="SWRebel_medic">
+		<defName>xSWRebel_Medic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_Vanguard_4x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_Vanguard_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+	</PawnKindDef>
+	
+	<!-- <PawnKindDef Name="xSWRebel_ArmyMajor_1x" ParentName="SWRebel_ArmyMajor"> -->
+		<!-- <defName>xSWRebel_ArmyMajor_1x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>1</maxPerGroup> -->
+	<!-- </PawnKindDef> needs officer jackets -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWRebel_vanguard" ParentName="SWRebel_Base">
+		<defName>SWRebel_vanguard</defName>
+		<label>rebel vanguard</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelVanguard</li></categories></li>
+		</backstoryFiltersOverride>
+		
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>NewRepublic_rebelheavytrooper</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_RebelBattleHelmet</li>
+			<li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_RebelBattleHelmet</li>
+			<li>guy762_RebelCloneArmor</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>SWWarlordsAccessory_scumtrooper</requiredTag>
+				<color>(130,125,105)</color>         <!-- khaki -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(150,140,95)</color>         <!-- dijon -->
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>1900~6400</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+		
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
+		
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Hulk</li>
+					<li>Fat</li>
+				</whitelist>
+				<blacklist>
+					<!-- <li>Thin</li> -->
+					<!-- <li>Baby</li> -->
+					<!-- <li>Child</li> -->
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+			
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_Vanguard_20x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_Vanguard_20x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>20</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardShotgun_4x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardShotgun_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_CR1BlastCannon</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardRepeater_6x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardRepeater_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardMissile_8x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardMissile_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_PLX4LRocketRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	
+	
 	
 
 </Defs>

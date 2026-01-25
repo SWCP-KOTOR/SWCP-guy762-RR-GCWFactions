@@ -435,7 +435,7 @@
 			<!-- conscript blitz -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>90</commonality>
+				<commonality>990</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
@@ -455,7 +455,7 @@
 			<!-- army skirmish -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>75</commonality>
+				<commonality>975</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
@@ -478,7 +478,7 @@
 			<!-- territory intrusion -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>50</commonality>
+				<commonality>950</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
@@ -506,7 +506,7 @@
 			<!-- conscript/elite assault -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>25</commonality>
+				<commonality>925</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>

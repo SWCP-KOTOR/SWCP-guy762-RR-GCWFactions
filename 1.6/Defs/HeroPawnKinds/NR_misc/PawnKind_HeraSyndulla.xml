@@ -94,6 +94,9 @@
 		
 		<abilities>
 			<li>guy762_Ability_CommandTierIII</li>
+			<li>SWPotF_TacticAbility_Sprint</li>
+			<li>SWPotF_TacticDelegationAbility_sprint</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
 			<!-- ACE TIER 1 -->

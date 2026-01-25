@@ -76,6 +76,8 @@
 				<checkGender>True</checkGender>
 			</li>
 		</modExtensions>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -489,6 +491,56 @@
 		</modExtensions>
 		
 	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	<PawnKindDef Name="xSWPentastar_GuardianProtector_3x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianProtector_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+	</PawnKindDef>
+	
+	<!-- <PawnKindDef Name="xSWPentastar_GuardianRepeater_2x" ParentName="SWPentastar_GuardianProtector"> -->
+		<!-- <defName>xSWPentastar_GuardianRepeater_2x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>2</maxPerGroup> -->
+		<!-- <weaponMoney>99999</weaponMoney> -->
+		<!-- <weaponTags Inherit="False"> -->
+			<!-- <li></li> -->
+		<!-- </weaponTags> -->
+	<!-- </PawnKindDef> needs BF2 chaingun -->
+	
+	<!-- <PawnKindDef Name="xSWPentastar_GuardianFlamethrower_1x" ParentName="SWPentastar_GuardianProtector"> -->
+		<!-- <defName>xSWPentastar_GuardianFlamethrower_1x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>1</maxPerGroup> -->
+		<!-- <weaponMoney>99999</weaponMoney> -->
+		<!-- <weaponTags Inherit="False"> -->
+			<!-- <li></li> -->
+		<!-- </weaponTags> -->
+	<!-- </PawnKindDef> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

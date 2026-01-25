@@ -102,6 +102,52 @@
 	
 	
 	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_FleetTrooper_16x" ParentName="SWRebel_AlderaanGuard">
+		<defName>xSWRebel_FleetTrooper_16x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>16</maxPerGroup>
+		<weaponMoney>550</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DH17pistol</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_FleetTrooperRifle_14x" ParentName="SWRebel_AlderaanGuard">
+		<defName>xSWRebel_FleetTrooperRifle_14x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DH17rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

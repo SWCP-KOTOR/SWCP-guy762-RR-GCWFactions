@@ -745,8 +745,16 @@
 			<!-- <li>ProductionCommand</li> -->
 			<li>MarksmanCommand</li>
 		</abilities>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_takecover</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		
 		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -854,7 +862,7 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li>guy762_Ability_CommandTierV</li>
+			<li>guy762_Ability_CommandTierVI</li>
 		</abilities>
 		
 		<modExtensions>

@@ -75,6 +75,8 @@
 				<checkGender>True</checkGender>
 			</li>
 		</modExtensions>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -87,6 +89,10 @@
 	
 	
 	<PawnKindDef Name="SWImpRemnant_ForceUserBase" ParentName="SWImpRemnant_Base" Abstract="True">
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		
 		<disallowedTraits Inherit="False">
 			<li>BodyPurist</li>
 			<li>Nudist</li>
