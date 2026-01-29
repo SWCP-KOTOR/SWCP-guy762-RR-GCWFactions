@@ -89,17 +89,80 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--comps>
-			<li Class="ModularWeapons.CompProperties_ModularParts">
-				<compClass>ModularWeapons.CompModularParts</compClass>
-				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
-				<partKinds>
-					<li>guy762_slot_trigger_lgtrep</li>
-				</partKinds>
-			</li>
-		</comps-->
 	</ThingDef>
 	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+		<defName>guy762_DH17carbine</defName>
+		<label>DH-15 blaster carbine</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Weapons/DH17Carbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<soundInteract>kotorsound_select_slug</soundInteract>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
+		</statBases>
+		
+		<weaponTags>
+			<li>SWRanged_DH17carbine</li>
+			<li>SWRanged_AnyCommonCarbine</li>
+			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_RebelWeapons_common</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_GCWRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<defaultCooldownTime>2</defaultCooldownTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>kotorsound_RebelBlaster_mix</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 	
 	
 	
@@ -109,8 +172,8 @@
 	
 	<ThingDef ParentName="KotORRangedModdable_TwoHand">
 		<defName>guy762_DH17rifle</defName>
-		<label>DH-17 blaster rifle</label>
-		<description>BlasTech's DH-17 rifle was designed, marketed, and sold alongside the DH-17 pistol primarily for use by planetary defense forces as lower-powered repeating blasters that Imperial weapons restrictions would be less likely to object to. While easily outclassed by other wartime designs, the DH-17 rifle remains a reliable, accurate, and lightweight infantry weapon.</description>
+		<label>DH-19 blaster rifle</label>
+		<description>BlasTech's DH-19 rifle was designed, marketed, and sold alongside the DH-17 pistol primarily for use by planetary defense forces as lower-powered repeating blasters that Imperial weapons restrictions would be less likely to object to. While easily outclassed by other wartime designs, the DH-19 rifle remains a reliable, accurate, and lightweight infantry weapon.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>

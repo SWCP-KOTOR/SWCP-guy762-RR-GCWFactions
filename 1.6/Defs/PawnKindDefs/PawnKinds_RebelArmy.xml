@@ -270,22 +270,11 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>300~3000</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_E10rifle</li>
-		  <li>SWRanged_E11carbine</li>
-		  <!-- <li>SWRanged_DH17rifle</li> -->
-		  <li>SWRanged_A280Crifle</li>
+			<li>SWRanged_E10rifle</li>
+			<li>SWRanged_E11carbine</li>
+			<li>SWRanged_DH17carbine</li>
+			<li>SWRanged_A280Crifle</li>
 		</weaponTags>
-		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.5</skipChance>
@@ -562,10 +551,9 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>500~600</weaponMoney>
+		<weaponMoney>600</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_E11carbine</li>
-			<li>SWRanged_DH17pistol</li>
+			<li>SWRanged_DH17carbine</li>
 		</weaponTags>
 		
 		<!-- <skills> -->
@@ -915,9 +903,9 @@
 		</specificApparelRequirements>
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>1900~6400</weaponMoney>
+		<weaponMoney>2000</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RT97Crepeater</li>
+			<li>SWRanged_BK43repeater</li>
 		</weaponTags>
 		
 		<!-- <skills> -->

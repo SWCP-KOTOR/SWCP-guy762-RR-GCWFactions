@@ -21,7 +21,7 @@
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
 			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
-			<RangedWeapon_DamageMultiplier>1.2</RangedWeapon_DamageMultiplier>
+			<RangedWeapon_DamageMultiplier>1.5</RangedWeapon_DamageMultiplier>
 			
 			<WorkToMake>35000</WorkToMake>
 		</statBases>
@@ -69,7 +69,8 @@
 				<accuracyLong>1.00</accuracyLong>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>kotorsound_GoldeneyeRifle</soundCast>
+				<!-- <soundCast>kotorsound_GoldeneyeRifle</soundCast> -->
+				<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<ai_IsWeapon>true</ai_IsWeapon>

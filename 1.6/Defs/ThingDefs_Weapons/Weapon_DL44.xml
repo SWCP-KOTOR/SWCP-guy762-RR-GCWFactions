@@ -264,7 +264,7 @@
 	
 	<ThingDef ParentName="KotORRangedModdable_OffHand">
 		<defName>guy762_DL44pistol_hasbroPotF</defName>
-		<label>DL-44 blaster ("Smuggler's End")</label>
+		<label>Smuggler's End</label>
 		<description>An expertly modified DL-44 heavy blaster pistol, this weapon can fire quick bursts like the popular Merr-Sonn Power-5 in addition to supercharging a blaster bolt to deliver massive amounts of armor-penetrating damage.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>

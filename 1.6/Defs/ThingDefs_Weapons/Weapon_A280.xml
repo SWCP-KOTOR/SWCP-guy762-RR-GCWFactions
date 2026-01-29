@@ -40,7 +40,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
-				<warmupTime>1</warmupTime>
+				<warmupTime>0.75</warmupTime>
 				<defaultCooldownTime>0.5</defaultCooldownTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>

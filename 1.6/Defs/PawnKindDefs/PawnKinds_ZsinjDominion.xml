@@ -1174,9 +1174,9 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>1800~7000</weaponMoney>
+		<weaponMoney>7000</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_TL50blaster</li> <!-- replace with pulse rifle -->
+			<li>SWRanged_EXpulsecarbine</li>
 			<!-- <li>SWRanged_PLX4LRocketRifle</li> -->
 		</weaponTags>
 

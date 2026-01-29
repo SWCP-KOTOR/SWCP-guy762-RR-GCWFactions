@@ -613,9 +613,9 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>1000~3000</weaponMoney>
 		<weaponTags>
-		  <!-- <li>SWRanged_E11carbine</li> -->
-		  <li>SWRanged_DH17rifle</li>
-		  <li>SWRanged_A280Crifle</li>
+			<li>SWRanged_DH17carbine</li>	
+			<li>SWRanged_DH17rifle</li>
+			<li>SWRanged_A280Crifle</li>
 		</weaponTags>
 		
 		<!-- <skills> -->
@@ -770,15 +770,15 @@
 	
 	
 	
-	<!-- <PawnKindDef Name="xSWNewRepub_ArmyTrooper_16x" ParentName="SWNewRepub_trooper"> -->
-		<!-- <defName>xSWRebel_ArmyTrooper_16x</defName> -->
-		<!-- <combatPower>1</combatPower> -->
-		<!-- <maxPerGroup>16</maxPerGroup> -->
-		<!-- <weaponMoney>99999</weaponMoney> -->
-		<!-- <weaponTags Inherit="False"> -->
-			<!-- <li>SWRanged_CR1BlastCannon</li> -->
-		<!-- </weaponTags> -->
-	<!-- </PawnKindDef> needs DH-17 carbine -->
+	<PawnKindDef Name="xSWNewRepub_ArmyTrooper_16x" ParentName="SWNewRepub_trooper">
+		<defName>xSWRebel_ArmyTrooper_16x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>16</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DH17carbine</li>
+		</weaponTags>
+	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWNewRepub_ArmyRifle_14x" ParentName="SWNewRepub_trooper">
 		<defName>xSWNewRepub_ArmyRifle_14x</defName>
@@ -936,11 +936,11 @@
 		</specificApparelRequirements>
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>500~3000</weaponMoney>
+		<weaponMoney>600~4000</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_E11carbine</li>
-		  <!-- <li>SWRanged_DH17rifle</li> -->
-		  <li>SWRanged_A280Crifle</li>
+			<li>SWRanged_DH17carbine</li>
+			<!-- <li>SWRanged_DH17rifle</li> -->
+			<li>SWRanged_A280Crifle</li>
 		</weaponTags>
 		
 		<!-- <skills> -->
