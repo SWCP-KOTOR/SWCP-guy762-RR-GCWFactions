@@ -64,7 +64,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWKotOR_lightwhipprojectile_green</defaultProjectile>
+				<defaultProjectile>SWProj_lightwhip_green</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
 				<range>7</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -138,7 +138,7 @@
 	
 	
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
-		<defName>SWKotOR_lightwhipprojectile_green</defName>
+		<defName>SWProj_lightwhip_green</defName>
 		<label>lightwhip</label>
 		<thingClass>VEF.Weapons.ExpandableProjectile</thingClass>
 		<graphicData>

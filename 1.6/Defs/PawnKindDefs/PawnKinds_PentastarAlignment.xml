@@ -516,15 +516,15 @@
 		<!-- </weaponTags> -->
 	<!-- </PawnKindDef> needs BF2 chaingun -->
 	
-	<!-- <PawnKindDef Name="xSWPentastar_GuardianFlamethrower_1x" ParentName="SWPentastar_GuardianProtector"> -->
-		<!-- <defName>xSWPentastar_GuardianFlamethrower_1x</defName> -->
-		<!-- <combatPower>1</combatPower> -->
-		<!-- <maxPerGroup>1</maxPerGroup> -->
-		<!-- <weaponMoney>99999</weaponMoney> -->
-		<!-- <weaponTags Inherit="False"> -->
-			<!-- <li></li> -->
-		<!-- </weaponTags> -->
-	<!-- </PawnKindDef> -->
+	<PawnKindDef Name="xSWPentastar_GuardianFlamethrower_1x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianFlamethrower_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+	</PawnKindDef>
 	
 	
 	

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="KotORRangedWeapon_TwoHand">
+		<defName>guy762_OppressorFlamethrower</defName>
+		<label>D-62x Oppressor flamethrower</label>
+		<description>.</description>
+		<techLevel>Spacer</techLevel>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Weapons/OppressorFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <drawSize>1.2</drawSize> -->
+		</graphicData>
+		<soundInteract>kotorsound_select_hvyrep</soundInteract>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<Mass>10</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>SWRanged_Oppressorflamethrower</li>
+			<li>SWRanged_AnyOrdinance</li>
+			<li>SWKotORWeaponCategoryTag_heavyranged</li>
+			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORWeapon_illegal</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<label>fireball</label>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SWProj_Fireball</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<defaultCooldownTime>8</defaultCooldownTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>kotorsound_BF2Flamethrower</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<ai_IsWeapon>true</ai_IsWeapon>
+				
+				<forcedMissRadius>2</forcedMissRadius>
+				<!-- <onlyManualCast>true</onlyManualCast> -->
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+			<li>
+				<label>sustained fire</label>
+				<commandIcon>UI/Fire</commandIcon>
+				<verbClass>Verb_SpewFire</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>4</warmupTime>
+				<defaultCooldownTime>6</defaultCooldownTime>
+				
+				<range>10</range>
+				<minRange>1.5</minRange>
+				
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				
+				<soundCast>kotorsound_EaWFlamethrower</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<ai_IsWeapon>true</ai_IsWeapon>
+				<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+
+	
+	
+
+</Defs>

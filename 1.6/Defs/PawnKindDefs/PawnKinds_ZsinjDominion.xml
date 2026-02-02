@@ -950,15 +950,15 @@
 		</weaponTags>
 	</PawnKindDef>
 	
-	<!-- <PawnKindDef Name="xSWZsinj_RaptorFlamethrower_2x" ParentName="SWZsinj_RaptorHvy"> -->
-		<!-- <defName>xSWZsinj_RaptorFlamethrower_2x</defName> -->
-		<!-- <combatPower>1</combatPower> -->
-		<!-- <maxPerGroup>2</maxPerGroup> -->
-		<!-- <weaponMoney>99999</weaponMoney> -->
-		<!-- <weaponTags Inherit="False"> -->
-			<!-- <li></li> -->
-		<!-- </weaponTags> -->
-	<!-- </PawnKindDef> -->
+	<PawnKindDef Name="xSWZsinj_RaptorFlamethrower_2x" ParentName="SWZsinj_RaptorHvy">
+		<defName>xSWZsinj_RaptorFlamethrower_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWZsinj_RaptorMissile_8x" ParentName="SWZsinj_RaptorHvy">
 		<defName>xSWZsinj_RaptorMissile_8x</defName>
@@ -1266,15 +1266,15 @@
 		<maxPerGroup>9</maxPerGroup>
 	</PawnKindDef>
 	
-	<!-- <PawnKindDef Name="xSWZsinj_P0DarkTrooperArcCaster_6x" ParentName="SWZsinj_phase0darktrooper"> -->
-		<!-- <defName>xSWZsinj_P0DarkTrooperArcCaster_6x</defName> -->
-		<!-- <combatPower>1</combatPower> -->
-		<!-- <maxPerGroup>6</maxPerGroup> -->
-		<!-- <weaponMoney>99999</weaponMoney> -->
-		<!-- <weaponTags Inherit="False"> -->
-			<!-- <li></li> -->
-		<!-- </weaponTags> -->
-	<!-- </PawnKindDef> -->
+	<PawnKindDef Name="xSWZsinj_P0DarkTrooperArcCaster_6x" ParentName="SWZsinj_phase0darktrooper">
+		<defName>xSWZsinj_P0DarkTrooperArcCaster_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_ArcCaster</li>
+		</weaponTags>
+	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWZsinj_P0DarkTrooperRocket_3x" ParentName="SWZsinj_phase0darktrooper">
 		<defName>xSWZsinj_P0DarkTrooperRocket_3x</defName>

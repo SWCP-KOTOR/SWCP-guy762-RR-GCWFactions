@@ -308,11 +308,12 @@
 				<defaultProjectile>SWProj_DoubleBlasterBolt</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<defaultCooldownTime>3.25</defaultCooldownTime>
-				<range>30</range>
+				<range>35</range>
 				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<soundCast>kotorsound_E11carbine</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
+				<ai_IsWeapon>true</ai_IsWeapon> <!-- so they use their longer range attack more -->
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 			<li>
@@ -325,14 +326,14 @@
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<defaultCooldownTime>4</defaultCooldownTime>
-				<range>25</range>
+				<range>30</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>12</burstShotCount>
 				<forcedMissRadius>2</forcedMissRadius>
 				<soundCast>kotorsound_E11alt</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<ai_IsWeapon>true</ai_IsWeapon>
+				<ai_IsWeapon>false</ai_IsWeapon> <!-- so they use their longer range attack more -->
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -422,7 +423,7 @@
 				<defaultCooldownTime>4</defaultCooldownTime>
 				<range>25</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>9</burstShotCount>
+				<burstShotCount>6</burstShotCount>
 				<soundCast>kotorsound_SotEpulse</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
