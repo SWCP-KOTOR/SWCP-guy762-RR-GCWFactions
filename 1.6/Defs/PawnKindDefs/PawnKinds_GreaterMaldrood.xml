@@ -319,12 +319,6 @@
 		<label>army major</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		
-		<weaponMoney>400~1450</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_Power5pistol</li>
-		</weaponTags>
-		
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -710,9 +704,11 @@
 	
 		<apparelTags>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_ImpStormtrooperBackpack</li>
 			<li>guy762_Accessory_stormiepauldron</li>
 			<li>guy762_Accessory_suspendersA</li>
 		</apparelRequired>
@@ -734,7 +730,24 @@
 			<li>SWRanged_MMPTLMissieLauncher</li>
 		</weaponTags>
 	
-		<modExtensions>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>NoBeard</forcedBeard>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 				<whitelist>
 					<li>Hulk</li>
@@ -767,7 +780,11 @@
 			<li>
 				<bodyPartGroup>Neck</bodyPartGroup>
 				<apparelLayer>Shell</apparelLayer>
-				<color>(190,105,0)</color>         <!-- pumpkin orange (officer) -->
+				
+				<!-- pumpkin orange (officer) -->
+				<!-- <color>(190,105,0)</color> -->
+				<!-- banana yellow -->
+				<color>(225,220,75)</color>
 			</li>
 		</specificApparelRequirements>
 		

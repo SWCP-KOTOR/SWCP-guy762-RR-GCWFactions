@@ -377,7 +377,7 @@
 					<xSWZsinj_ArmyTrooper_40x>100</xSWZsinj_ArmyTrooper_40x>
 					<xSWZsinj_ArmyGrenadier_4x>100</xSWZsinj_ArmyGrenadier_4x>
 					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
-					<xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x>
+					<!-- <xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x> -->
 					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
 					
 					<xSWZsinj_Raptor_24x>100</xSWZsinj_Raptor_24x>
@@ -392,6 +392,26 @@
 					
 					<xSWZsinj_Raptor_4x>100</xSWZsinj_Raptor_4x>
 					<xSWZsinj_ArmyMajor_1x>100</xSWZsinj_ArmyMajor_1x>
+				</options>
+			</li>
+			
+			
+			<!-- assassination team -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>910</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackBreaching</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_P0DarkTrooper_9x>100</xSWZsinj_P0DarkTrooper_9x>
+					<xSWZsinj_P0DarkTrooperArcCaster_6x>100</xSWZsinj_P0DarkTrooperArcCaster_6x>
+					<xSWZsinj_P0DarkTrooperRocket_3x>100</xSWZsinj_P0DarkTrooperRocket_3x>
 				</options>
 			</li>
 		  

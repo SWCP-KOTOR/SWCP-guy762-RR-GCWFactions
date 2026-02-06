@@ -313,12 +313,6 @@
 		<label>army major</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		
-		<weaponMoney>400~1450</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_Power5pistol</li>
-		</weaponTags>
-		
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -736,7 +730,24 @@
 			<li>SWRanged_T21Bheavy</li>
 		</weaponTags>
 		
-		<modExtensions>
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>NoBeard</forcedBeard>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 				<whitelist>
 					<li>Hulk</li>

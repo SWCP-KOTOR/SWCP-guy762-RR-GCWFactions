@@ -804,10 +804,14 @@
 	
 	
 	
-	<PawnKindDef Name="xSWRebel_Vanguard_4x" ParentName="SWRebel_vanguard">
-		<defName>xSWRebel_Vanguard_4x</defName>
+	<PawnKindDef Name="xSWRebel_VanguardBowcaster_4x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardBowcaster_4x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Bowcaster</li>
+		</weaponTags>
 	</PawnKindDef>
 	
 	<!-- <PawnKindDef Name="xSWRebel_ArmyMajor_1x" ParentName="SWRebel_ArmyMajor"> -->

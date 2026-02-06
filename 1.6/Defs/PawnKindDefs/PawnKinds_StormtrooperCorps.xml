@@ -286,6 +286,7 @@
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
 			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
@@ -294,6 +295,7 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_StormieHelmet</li>
+			<li>guy762_ImpStormtrooperBackpack</li>
 			<li>guy762_Accessory_stormiepauldron</li>
 			<li>guy762_Accessory_suspendersA</li>
 			<li>guy762_StormieArmor</li>
@@ -991,6 +993,7 @@
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
 		<weaponMoney>3000</weaponMoney>
 		<weaponTags>
+			<li>SWRanged_EC17pistol</li>
 			<li>SWRanged_DLT19Xsniper</li>
 			<!-- <li>SWMelee_electrobaton</li> -->
 		</weaponTags>
@@ -1051,6 +1054,18 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- storm commandos -->
 	
 	
@@ -1095,10 +1110,10 @@
 		<biocodeWeaponChance>0.9</biocodeWeaponChance>
 		<weaponMoney>1800~5000</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_TL50blaster</li>
+			<!-- <li>SWRanged_TL50blaster</li> -->
 			<li>SWRanged_EE3carbine</li>
-			<li>SWRanged_DLT19repeater</li>
-			<li>SWRanged_DLT20Asniper</li>
+			<!-- <li>SWRanged_DLT19repeater</li> -->
+			<!-- <li>SWRanged_DLT20Asniper</li> -->
 		</weaponTags>
 
 		<techHediffsChance>10</techHediffsChance>
@@ -1139,7 +1154,7 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
-			<Psychopath>0</Psychopath>
+			<Bloodlust>0</Bloodlust>
 		</forcedTraits>
 
 		<disallowedTraits>
@@ -1167,6 +1182,102 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWImpRemnant_stormcommandoofficer" ParentName="SWImpRemnant_stormcommando">
+		<defName>SWImpRemnant_stormcommandoofficer</defName>
+		<label>Storm Commando field officer</label>
+		<combatPower>175</combatPower>
+		
+		<maxPerGroup>2</maxPerGroup>
+
+		<apparelTags>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Accessory_stormiepauldron</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(140,35,50)</color>         <!-- dark cherry -->
+			</li>
+		</specificApparelRequirements>
+
+		<weaponMoney>4000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_FC1flechette</li>
+		</weaponTags>
+		
+		
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_sprint</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_ambush</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>0.5</chance>
+			</li>
+		</startingHediffs>
+		
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_StormCommando_6x" ParentName="SWImpRemnant_stormcommando">
+		<defName>xSWImpRemnant_StormCommando_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormCommandoSniper_3x" ParentName="SWImpRemnant_stormcommando">
+		<defName>xSWImpRemnant_StormCommandoSniper_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT20Asniper</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormCommandoLightRepeater_3x" ParentName="SWImpRemnant_stormcommando">
+		<defName>xSWImpRemnant_StormCommandoLightRepeater_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_TL50blaster</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormCommandoFlamethrower_3x" ParentName="SWImpRemnant_stormcommando">
+		<defName>xSWImpRemnant_StormCommandoFlamethrower_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormCommandoOfficer_3x" ParentName="SWImpRemnant_stormcommandoofficer">
+		<defName>xSWImpRemnant_StormCommandoOfficer_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
 	</PawnKindDef>
 	
 	

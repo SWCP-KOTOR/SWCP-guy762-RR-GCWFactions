@@ -562,7 +562,59 @@
 			</li>
 			
 			
+			<!-- assassination team -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>910</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackBreaching</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_StormCommando_6x>100</xSWImpRemnant_StormCommando_6x>
+					<xSWImpRemnant_StormCommandoSniper_3x>100</xSWImpRemnant_StormCommandoSniper_3x>
+					<xSWImpRemnant_StormCommandoLightRepeater_3x>100</xSWImpRemnant_StormCommandoLightRepeater_3x>
+					<xSWImpRemnant_StormCommandoFlamethrower_3x>100</xSWImpRemnant_StormCommandoFlamethrower_3x>
+					<xSWImpRemnant_StormCommandoOfficer_3x>100</xSWImpRemnant_StormCommandoOfficer_3x>
+				</options>
+			</li>
 			
+			
+			
+			<!-- diversionary raid -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>910</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackBreaching</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_Stormtrooper_24x>100</xSWImpRemnant_Stormtrooper_24x>
+					<xSWImpRemnant_StormtrooperSniper_4x>100</xSWImpRemnant_StormtrooperSniper_4x>
+					<xSWImpRemnant_StormtrooperLightRepeater_6x>100</xSWImpRemnant_StormtrooperLightRepeater_6x>
+					<xSWImpRemnant_StormtrooperHeavyRepeater_2x>100</xSWImpRemnant_StormtrooperHeavyRepeater_2x>
+					<xSWImpRemnant_StormtrooperMissile_8x>100</xSWImpRemnant_StormtrooperMissile_8x>
+					<xSWImpRemnant_StormtrooperOfficer_2x>100</xSWImpRemnant_StormtrooperOfficer_2x>
+					
+					<xSWImpRemnant_StormCommando_6x>100</xSWImpRemnant_StormCommando_6x>
+					<xSWImpRemnant_StormCommandoSniper_3x>100</xSWImpRemnant_StormCommandoSniper_3x>
+					<xSWImpRemnant_StormCommandoLightRepeater_3x>100</xSWImpRemnant_StormCommandoLightRepeater_3x>
+					<xSWImpRemnant_StormCommandoFlamethrower_3x>100</xSWImpRemnant_StormCommandoFlamethrower_3x>
+					<xSWImpRemnant_StormCommandoOfficer_3x>100</xSWImpRemnant_StormCommandoOfficer_3x>
+					
+					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
+					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
+				</options>
+			</li>
 			
 			
 			

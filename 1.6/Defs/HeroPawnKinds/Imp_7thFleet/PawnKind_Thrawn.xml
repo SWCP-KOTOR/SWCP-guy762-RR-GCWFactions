@@ -97,6 +97,8 @@
 			
 			<li>SWPotF_TacticAbility_Ambush</li>
 			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_Harass</li>
+			<li>SWPotF_TacticDelegationAbility_harass</li>
 			<li>SWPotF_TacticAbility_TakeCover</li>
 			<li>SWPotF_TacticDelegationAbility_takecover</li>
 			<li>SWPotF_TacticAbility_Sprint</li>

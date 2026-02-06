@@ -74,20 +74,25 @@
 	<!-- </TileMutatorDef> -->
 	
 	
+	
+	
+	
+	
 	<TileMutatorDef ParentName="AncientStructureMutBase">
 		<defName>SWCPTileMutator_ImpTestBase</defName>
 		<label>Imperial garrison</label>
-		<description>A long-abandoned military structure. It may still contain valuable items, as well as active security systems. Use caution while exploring these ruins.</description>
+		<description>warning: stormtrooper crossing</description>
 		<workerClass>TileMutatorWorker_AncientStructure</workerClass>
 		
 		<requiresFactionOfDef>guy762_SWWarlordsFaction_ImpRemnant</requiresFactionOfDef>
 		<extraGenSteps>
 			<li>SWCPMapGenStep_ImperialStructure_testbasePawns</li>
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant</li>
 		</extraGenSteps>
 		<categories Inherit="False" /> <!-- Remove the AncientStructure category so this isn't chosen for ancient mercenaries quest -->
-		<biomeWhitelist Inherit="False">
-			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineHighland</li>
-		</biomeWhitelist>
+		<!-- <biomeWhitelist Inherit="False"> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPBiome_TatooineHighland</li> -->
+		<!-- </biomeWhitelist> -->
 		
 		<structureGenParms>
 		  <structureLayoutDef>SWCPImperialStructure_testbase</structureLayoutDef>
@@ -185,6 +190,7 @@
 		  <li>RocksFromGrid</li>
 		  <li>SWCPMapGenStep_ImperialStructure_testbase</li>
 		  <li>SWCPMapGenStep_ImperialStructure_testbasePawns</li>
+		  <li>SWCPGenStep_FactionFortressGuards_ImpRemnant</li>
 		</genSteps>
 	</MapGeneratorDef>
 	
@@ -214,6 +220,22 @@
 		<order>700</order>
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
 		  <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+		</genStep>
+	</GenStepDef>
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>8~10</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>guy762_SWTurret_BP4AntiVehicle</li>
+				<li>guy762_SWTurret_FPC67AntiAir</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
+			</options>
 		</genStep>
 	</GenStepDef>
 	
@@ -280,7 +302,7 @@
 		
 		<scatteredPrefabs>
 			<li>
-			  <countPer10kCellsRange>4~6</countPer10kCellsRange>
+			  <countPer10kCellsRange>2~4</countPer10kCellsRange>
 			  <minSpacing>60</minSpacing>
 			  <maxDistFromStructure>250</maxDistFromStructure>
 			  <prefabs>

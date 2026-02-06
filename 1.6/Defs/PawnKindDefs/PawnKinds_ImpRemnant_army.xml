@@ -101,6 +101,7 @@
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
+			<!-- <li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
 			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
@@ -284,6 +285,7 @@
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
 			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
@@ -393,7 +395,6 @@
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
-			<!-- <li>SWRanged_T7IonDisruptor</li> -->
 		</weaponTags>
 	</PawnKindDef>
 	
@@ -404,7 +405,6 @@
 		<maxPerGroup>1</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags Inherit="False">
-			<!-- <li>SWRanged_HH4ProtonGrenadeLauncher</li> -->
 			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -828,10 +828,11 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.5</biocodeWeaponChance>
-		<weaponMoney>400~600</weaponMoney>
+		<weaponMoney>400~1000</weaponMoney>
 		<weaponTags>
+			<li>SWRanged_EC17pistol</li>
 			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_E11carbine</li>
+			<!-- <li>SWRanged_E11carbine</li> -->
 		</weaponTags>
 		
 		<!-- <skills> -->

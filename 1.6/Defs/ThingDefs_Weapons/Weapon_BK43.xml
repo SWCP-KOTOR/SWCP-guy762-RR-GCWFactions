@@ -45,7 +45,7 @@
 				<range>30</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>9</burstShotCount>
-				<soundCast>kotorsound_SevBlaster</soundCast>
+				<soundCast>kotorsound_SWGL_NN14alt</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -123,7 +123,7 @@
 				<range>30</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>16</burstShotCount>
-				<soundCast>kotorsound_SevBlaster</soundCast>
+				<soundCast>kotorsound_SWGL_NN14alt</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

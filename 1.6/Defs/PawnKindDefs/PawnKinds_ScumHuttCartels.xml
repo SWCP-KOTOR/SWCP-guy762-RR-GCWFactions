@@ -257,18 +257,30 @@
 		  <li>SWRanged_DLT18rifle</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>6~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>6~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.2~1.6</initialWillRange>
 		<initialResistanceRange>3~7</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 
 
 
@@ -315,17 +327,29 @@
 		  <li>SWMelee_Vibrosword</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Melee</skill>
-			<range>6~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>6~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>6~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -386,16 +410,16 @@
 		  <li>SWRanged_CR1BlastCannon</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>14~18</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>8~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>14~18</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>8~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
@@ -404,6 +428,31 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
+		
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_zealousrage</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
+		
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~18</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -481,26 +530,46 @@
 			<li>SWRanged_DL21pistol</li>
 		</weaponTags>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -605,7 +674,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWHutts_roguetrader" ParentName="SWHutts_Base">
+	<PawnKindDef Name="SWHutts_roguetrader" ParentName="SWHutts_Base">
 		<defName>SWHutts_roguetrader</defName>
 		<label>merchant-lord</label>
 		<nameMaker>guy762_PawnNamer_GlupShitto</nameMaker>
@@ -711,21 +780,33 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>12~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>12~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="SWHutts_HuttTrader" ParentName="SWHutts_Base">
+	<PawnKindDef Name="SWHutts_HuttTrader" ParentName="SWHutts_Base">
 		<defName>SWHutts_HuttTrader</defName>
 		<label>kajidic associate</label>
 		<!-- <nameMaker>KoTOR_NamerHutt_lowcaste</nameMaker> -->
@@ -792,12 +873,12 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>12~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<disallowedTraits>
 		  <li>Brawler</li>
@@ -810,6 +891,18 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -932,18 +1025,36 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>10~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>10~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
 	
 	<PawnKindDef Name="SWHutts_HuttLord" ParentName="SWHutts_Base">
 		<defName>SWHutts_HuttLord</defName>
@@ -1019,16 +1130,16 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>14~20</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>12~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>12~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<disallowedTraits>
 		  <li>Brawler</li>
@@ -1041,6 +1152,22 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>14~20</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	

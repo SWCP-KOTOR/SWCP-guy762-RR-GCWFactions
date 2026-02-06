@@ -230,6 +230,7 @@
 		<apparelTags>
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
+			<!-- <li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
@@ -399,13 +400,6 @@
 		<defName>SWZsinj_ArmyMajor</defName>
 		<label>army major</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-		
-		<weaponMoney>400~1450</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_Power5pistol</li>
-			<li>SWRanged_DL44pistol</li>
-		</weaponTags>
 		
 		<specificApparelRequirements Inherit="False">
 			<li>
@@ -677,6 +671,7 @@
 			<li>ZsinjEmpire_raptorarmor</li>
 			<li>KotOREquipment_basic</li>
 			<li>SWDetpackCase</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
 			<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
@@ -684,6 +679,7 @@
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_ImpStormtrooperBackpack</li>
 			<li>guy762_Accessory_stormiepauldron</li>
 			<li>guy762_Accessory_suspendersA</li>
 			<li>guy762_RaptorHelmet</li>
@@ -892,7 +888,7 @@
 			<li>
 				<def>SWPotF_DelegatedTacticHediff_takecover</def>
 				<durationTicksRange>60000</durationTicksRange>
-				<chance>0.5</chance>
+				<chance>1</chance>
 			</li>
 			<li>
 				<def>SWPotF_DelegatedTacticHediff_zealousrage</def>

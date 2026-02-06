@@ -358,7 +358,7 @@
 					<xSWEriadu_ArmyGrenadier_4x>100</xSWEriadu_ArmyGrenadier_4x>
 					<xSWEriadu_ArmyIon_1x>100</xSWEriadu_ArmyIon_1x>
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
-					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
+					<!-- <xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> -->
 					
 					<xSWEriadu_ArmySpecOps_4x>100</xSWEriadu_ArmySpecOps_4x>
 					<xSWEriadu_ArmyMajor_1x>100</xSWEriadu_ArmyMajor_1x>
@@ -383,7 +383,7 @@
 					<xSWEriadu_ArmySpecOpsLightRepeater_2x>100</xSWEriadu_ArmySpecOpsLightRepeater_2x>
 					<xSWEriadu_ArmySpecOpsHeavyRepeater_3x>100</xSWEriadu_ArmySpecOpsHeavyRepeater_3x>
 					<xSWEriadu_ArmySpecOpsMissile_6x>100</xSWEriadu_ArmySpecOpsMissile_6x>
-					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
+					<!-- <xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> -->
 
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
 					
@@ -410,7 +410,7 @@
 					<xSWEriadu_ArmySpecOpsLightRepeater_2x>100</xSWEriadu_ArmySpecOpsLightRepeater_2x>
 					<xSWEriadu_ArmySpecOpsHeavyRepeater_3x>100</xSWEriadu_ArmySpecOpsHeavyRepeater_3x>
 					<xSWEriadu_ArmySpecOpsMissile_6x>100</xSWEriadu_ArmySpecOpsMissile_6x>
-					<xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> <!-- has a max of 2 -->
+					<!-- <xSWEriadu_ArmyMedic_2x>100</xSWEriadu_ArmyMedic_2x> -->
 
 					<xSWEriadu_ArmyLieutenant_2x>100</xSWEriadu_ArmyLieutenant_2x>
 					

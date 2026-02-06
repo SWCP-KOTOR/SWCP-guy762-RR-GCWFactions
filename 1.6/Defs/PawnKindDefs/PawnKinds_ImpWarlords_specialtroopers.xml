@@ -309,6 +309,7 @@
 		<apparelTags>
 			<li>RemnantEmpire_stormiearmor</li>
 			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>SWGCWSpecificApparelItem_ThrawnImperialStormtrooperPauldron</li>
 			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
@@ -316,6 +317,7 @@
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_ImpStormtrooperBackpack</li>
 			<li>guy762_StormieHelmet</li>
 			<li>guy762_Accessory_stormie7thpauldron</li>
 			<li>guy762_Accessory_suspendersA</li>

@@ -94,13 +94,19 @@
 						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
-						<color>225,225,225</color>
+						<!-- <color>225,225,225</color> -->
 						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
-						<color>100,100,100</color>
+						<!-- <color>100,100,100</color> -->
 						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
+					  
+						<altDefs>
+							<li>guy762_MandoGCWHelmetCustomization_MandoGCWDefault</li>
+							<li>guy762_MandoGCWHelmetCustomization_TCWDeathWatch</li>
+							<li>guy762_MandoGCWHelmetCustomization_MandoProtector</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
 				</li>
@@ -136,6 +142,86 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWHelmetCustomization_MandoGCWDefault</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoGCWDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet_norangefinder/helmet</li></texturePaths>
+			<colorA>
+				<color>(90,90,80)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,225,225)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(135,105,55)</color><!-- scum mustard -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWHelmetCustomization_TCWDeathWatch</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoTCWDeathWatch/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet_norangefinder/helmet</li></texturePaths>
+			<colorA>
+				<color>(70,100,165)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,225,225)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(100,100,100)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWHelmetCustomization_MandoProtector</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoProtector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet_norangefinder/helmet</li></texturePaths>
+			<colorA>
+				<color>(200,180,85)</color> <!-- zann consortium yellow -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(105,115,105)</color> <!-- desaturated protector green -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(90,120,85)</color> <!-- protector green -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -229,13 +315,19 @@
 						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
-						<color>225,225,225</color>
+						<!-- <color>225,225,225</color> -->
 						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
-						<color>100,100,100</color>
+						<!-- <color>100,100,100</color> -->
 						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
+					  
+						<altDefs>
+							<li>guy762_MandoGCWRangefinderHelmetCustomization_MandoGCWDefault</li>
+							<li>guy762_MandoGCWRangefinderHelmetCustomization_TCWDeathWatch</li>
+							<li>guy762_MandoGCWRangefinderHelmetCustomization_MandoProtector</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>
 				</li>
@@ -274,7 +366,67 @@
 	
 	
 	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWRangefinderHelmetCustomization_MandoGCWDefault</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoGCWDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet/helmet</li></texturePaths>
+			<colorA>
+				<color>(90,90,80)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,225,225)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(135,105,55)</color><!-- scum mustard -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWRangefinderHelmetCustomization_TCWDeathWatch</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoTCWDeathWatch/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet/helmet</li></texturePaths>
+			<colorA>
+				<color>(70,100,165)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,225,225)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(100,100,100)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWRangefinderHelmetCustomization_MandoProtector</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoProtector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/helmet/helmet</li></texturePaths>
+			<colorA>
+				<color>(200,180,85)</color> <!-- zann consortium yellow -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(105,115,105)</color> <!-- desaturated protector green -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(90,120,85)</color> <!-- protector green -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
 	
 	
@@ -369,19 +521,24 @@
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Mandalorian/Apparel</li></texturePaths>
-					  <!-- TCW Death Watch armor -->
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
-						<color>70,100,165</color>
+						<!-- <color>70,100,165</color> -->
 						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
-						<color>50,45,75</color>
+						<!-- <color>50,45,75</color> -->
 						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
+					  
+						<altDefs>
+							<li>guy762_MandoGCWBattleArmorCustomization_MandoGCWDefault</li>
+							<li>guy762_MandoGCWBattleArmorCustomization_TCWDeathWatch</li>
+							<li>guy762_MandoGCWBattleArmorCustomization_MandoProtector</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
 				</li>
@@ -417,7 +574,82 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	  
+	
+	
+	
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWBattleArmorCustomization_MandoGCWDefault</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoGCWDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Apparel</li></texturePaths>
+			<colorA>
+				<color>(135,105,55)</color><!-- scum mustard -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(90,90,80)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(70,70,60)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWBattleArmorCustomization_TCWDeathWatch</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoTCWDeathWatch/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Apparel</li></texturePaths>
+			<colorA>
+				<color>(100,100,100)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(70,100,165)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(50,45,75)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_MandoGCWBattleArmorCustomization_MandoProtector</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoProtector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Apparel</li></texturePaths>
+			<colorA>
+				<color>(90,120,85)</color> <!-- protector green -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(245,190,105)</color> <!-- soft orange -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(175,175,175)</color> <!-- grey -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -515,13 +747,19 @@
 						<altDefs><li>BS_CustomGlobalA</li></altDefs>
 					  </colorA>
 					  <colorB>
-						<color>230,185,45</color>      <!-- republic yellow --> 
+						<!-- <color>230,185,45</color> -->
 						<altDefs><li>BS_CustomGlobalB</li></altDefs>
 					  </colorB>
 					  <colorC>
-						<color>125,50,50</color>	<!-- rebel red -->
+						<!-- <color>125,50,50</color> -->
 						<altDefs><li>BS_CustomGlobalC</li></altDefs>
 					  </colorC>
+					  
+						<altDefs>
+							<li>guy762_Z6JetpackCustomization_default</li>
+							<li>guy762_Z6JetpackCustomization_MandoGCWDefault</li>
+							<li>guy762_Z6JetpackCustomization_JodoKast</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData>
 						<dataSouth> <layer>-1</layer> </dataSouth>
@@ -633,5 +871,76 @@
 		</modExtensions>
 		
 	</ThingDef>
+	
+	
+	
+
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_Z6JetpackCustomization_default</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_defaultZ6Jetpack/><guy762AltTag_MandoTCWDeathWatch/><guy762AltTag_MandoProtector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
+			<colorA>
+				<color>(70,90,125)</color>	<!-- K1 blue -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(230,185,45)</color>	<!-- republic yellow -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(125,50,50)</color>	<!-- rebel red -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_Z6JetpackCustomization_MandoGCWDefault</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MandoGCWDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
+			<colorA>
+				<color>(90,90,80)</color>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(135,105,55)</color><!-- scum mustard -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(70,70,60)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_Z6JetpackCustomization_JodoKast</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_JodoKast/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
+			<colorA>
+				<color>(90,120,85)</color> <!-- protector green -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(230,185,45)</color>
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(45,100,185)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
 
 </Defs>

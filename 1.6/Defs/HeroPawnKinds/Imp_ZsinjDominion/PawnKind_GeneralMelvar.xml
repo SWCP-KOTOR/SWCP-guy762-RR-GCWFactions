@@ -106,6 +106,8 @@
 		</backstoryFiltersOverride>
 		<abilities>
 			<li>guy762_Ability_CommandTierV</li>
+			<li>SWPotF_TacticAbility_Harass</li>
+			<li>SWPotF_TacticDelegationAbility_harass</li>
 			<li>SWPotF_TacticAbility_ZealousRage</li>
 			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
 			<li>SWPotF_TacticAbility_Sprint</li>

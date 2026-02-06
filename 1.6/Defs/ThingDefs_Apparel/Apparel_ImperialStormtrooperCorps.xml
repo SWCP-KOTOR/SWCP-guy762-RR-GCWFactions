@@ -383,6 +383,104 @@
 	
 	
 	
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_ImpStormtrooperBackpack</defName>
+		<label>backpack, SD-48 survival pack</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/Stormtrooper/backpack</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <Mass>5</Mass>
+		  <MarketValue>1250</MarketValue>
+		  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.15</ArmorRating_Heat>
+		  
+		  <Insulation_Heat>25</Insulation_Heat>
+		  
+		  <WorkToMake>6500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
+			
+			<ForagedNutritionPerDay>2</ForagedNutritionPerDay>
+			<RestFallRateFactor>-0.25</RestFallRateFactor>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Stormtrooper/backpack</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		
+		<tradeTags>
+		  <li>guy762TT_WarlordArmor</li>
+		</tradeTags>
+		
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>100</weight>
+				<only>(250,250,250)</only>  <!-- white -->
+			</li>
+		  </options>
+		</colorGenerator>
+		
+		<comps>
+			<!-- <li> -->
+				<!-- <compClass>CompQuality</compClass> -->
+			<!-- </li> -->
+		</comps>
+	  </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
