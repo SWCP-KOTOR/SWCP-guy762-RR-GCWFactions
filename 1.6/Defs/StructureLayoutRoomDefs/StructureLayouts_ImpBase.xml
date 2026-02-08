@@ -204,24 +204,23 @@
 		</genStep>
 	</GenStepDef>
 	
-	<!-- <GenStepDef> -->
-		<!-- <defName>SWCPMapGenStep_ImperialStructure_testbasePawns</defName> -->
-		<!-- <order>700</order> -->
-		<!-- <genStep Class="GenStep_SitePawns"> -->
-			<!-- <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef> -->
-			<!-- <pawnGroupKindDef>Settlement</pawnGroupKindDef> -->
-			<!-- <letterLabel>Hostile salvagers</letterLabel>  -->
-			<!-- <letterDesc>The orbital wreck contains a number of scavengers. Be prepared for their assault!</letterDesc>  -->
-		<!-- </genStep> -->
-	<!-- </GenStepDef> -->
 	
-	<GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef><!-- this one is still needed to spawn in the base Settlement pawngroup, the other pawn GenSteps are supplemental	-->
 		<defName>SWCPMapGenStep_ImperialStructure_testbasePawns</defName>
 		<order>700</order>
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
 		  <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
 		</genStep>
 	</GenStepDef>
+	
 	<GenStepDef>
 		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant</defName>
 		<order>960</order>
@@ -238,6 +237,11 @@
 			</options>
 		</genStep>
 	</GenStepDef>
+	
+	
+	
+	
+	
 	
 	
 	<StructureLayoutDef>

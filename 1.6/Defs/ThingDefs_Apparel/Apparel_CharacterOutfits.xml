@@ -146,7 +146,7 @@
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Lumiya/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<gender>Female</gender>
 		</apparel>
 		<tradeTags>
@@ -220,6 +220,7 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 
 		<tradeTags>
@@ -306,7 +307,7 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-			
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<gender>Male</gender>
 		</apparel>
 		<tradeTags>
@@ -445,6 +446,7 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -534,6 +536,7 @@
 				</defaultData>
 			</drawData>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<!--immuneToToxGasExposure>true</immuneToToxGasExposure-->
 			<tags>
 				<li>SaV_JodoKast</li>
@@ -662,6 +665,7 @@
 		
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -766,7 +770,7 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
-		  
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <gender>Male</gender>
 		  
 			<renderNodeProperties>
@@ -884,7 +888,7 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
-		  
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <gender>Male</gender>
 		</apparel>
 		<tradeTags>
@@ -1090,7 +1094,7 @@
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/HeraSyndulla/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<gender>Female</gender>
 			
 			<renderNodeProperties>
@@ -1226,6 +1230,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -1355,6 +1360,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
