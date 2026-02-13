@@ -133,8 +133,8 @@
 				<!--description>Fire extra bolts with reduced accuracy.</description>
 				<iconPath>UI/Rapid_Shot</iconPath-->
 				<commandIcon>UI/Rapid_Shot</commandIcon>
-				<verbClass>Verb_Shoot</verbClass>
-				<!-- <verbClass>EBSGFramework.Verb_RandomShot</verbClass> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<verbClass>SWCP_Misc.Verb_SuppressingFire</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
 				<warmupTime>2</warmupTime>
@@ -173,12 +173,9 @@
 		</tools>
 		<modExtensions>
 			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
-			<!-- <li Class="EBSGFramework.RandomShotExtension"> -->
-                <!-- <projectiles> -->
-                    <!-- <KotORBlasterBolt_default>0.67</KotORBlasterBolt_default> -->
-                    <!-- <SWProj_BlasterBolt_suppressive>0.33</SWProj_BlasterBolt_suppressive> -->
-                <!-- </projectiles> -->
-            <!-- </li> not an acceptable implementation -->
+			<li Class="SWCP_Misc.VerbProperties_SuppressingFire" >
+				<hediffDef>SWPotF_TacticAbilityHediff_HarassDebuff</hediffDef>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	

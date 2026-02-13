@@ -70,6 +70,11 @@
 			<li Class="SWCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>
+			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_hutts</transportShipDef>
+				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
+				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
+			</li>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
 					<guy762_SWWarlordsFaction_NewRepublic>-25~25</guy762_SWWarlordsFaction_NewRepublic>

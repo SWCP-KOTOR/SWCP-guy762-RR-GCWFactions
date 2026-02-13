@@ -17,6 +17,31 @@
         </selectionWeightPerPointsCurve>
         <selectionWeightCurvesPerFaction>
 			<li>
+				<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_RebelCell</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_PartisanCell</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<!-- //////////////////////////////////////////////////////////////////////////////////// -->
+			<li>
 				<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
 				<selectionWeightPerPointsCurve>
 					<points>
@@ -56,8 +81,9 @@
 					</points>
 				</selectionWeightPerPointsCurve>
 			</li>
+			<!-- //////////////////////////////////////////////////////////////////////////////////// -->
 			<li>
-				<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+				<faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
 				<selectionWeightPerPointsCurve>
 					<points>
 						<li>(0, 1)</li>
@@ -65,7 +91,7 @@
 				</selectionWeightPerPointsCurve>
 			</li>
 			<li>
-				<faction>guy762_SWWarlordsFaction_RebelCell</faction>
+				<faction>guy762_SWWarlordsFaction_BlackSun</faction>
 				<selectionWeightPerPointsCurve>
 					<points>
 						<li>(0, 1)</li>
@@ -73,7 +99,15 @@
 				</selectionWeightPerPointsCurve>
 			</li>
 			<li>
-				<faction>guy762_SWWarlordsFaction_PartisanCell</faction>
+				<faction>guy762_SWWarlordsFaction_HuttCartel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_ViciousHutts</faction>
 				<selectionWeightPerPointsCurve>
 					<points>
 						<li>(0, 1)</li>

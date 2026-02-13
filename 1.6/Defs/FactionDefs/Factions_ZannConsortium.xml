@@ -90,6 +90,11 @@
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
+			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_zannconsortium</transportShipDef>
+				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
+				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
+			</li>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
 					<guy762_SWWarlordsFaction_NewRepublic>-75~-25</guy762_SWWarlordsFaction_NewRepublic>

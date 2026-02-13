@@ -9,6 +9,7 @@
         <defName>guy762_SWFactionEnlistment_RebelCell</defName>
         <minGoodwillRequrementToEnlist>35</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
+		<currencyDef>guy762_KotORcredits</currencyDef>
 
     <!-- Enlistment Options -->
 
@@ -161,6 +162,16 @@
     <!-- Drop Pod Options -->
 
         <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
+		
+	<!-- Shuttle Service Options (Vertibird) -->
+
+        <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled>
+		<shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/uwing</shuttleServiceButtonIconTexPath>
+        <shuttleServiceCost>500</shuttleServiceCost>
+		
+        <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey>
+        <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_500credits</shuttleServiceDescKey>
+        <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey>
 
     <!-- Resign Options -->
 
