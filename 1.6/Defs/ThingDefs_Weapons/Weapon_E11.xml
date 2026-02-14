@@ -175,6 +175,7 @@
 			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
 			<li Class="SWCP_Misc.VerbProperties_SuppressingFire" >
 				<hediffDef>SWPotF_TacticAbilityHediff_HarassDebuff</hediffDef>
+				<severityToAdd>1</severityToAdd>
 			</li>
 		</modExtensions>
 	</ThingDef>
