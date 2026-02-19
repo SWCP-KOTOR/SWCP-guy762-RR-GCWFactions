@@ -54,7 +54,8 @@
 				<!--description>Fire extra bolts with reduced accuracy.</description>
 				<iconPath>UI/Rapid_Shot</iconPath-->
 				<commandIcon>UI/Rapid_Shot</commandIcon>
-				<verbClass>Verb_Shoot</verbClass>
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<verbClass>SWCP_Misc.Verb_SuppressingFire</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
 				<warmupTime>3</warmupTime>
@@ -99,7 +100,11 @@
             </li>
         </comps>
 		<modExtensions>
-		  <li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="SWCP_Misc.VerbProperties_SuppressingFire" >
+				<hediffDef>SWCPHediff_Suppression</hediffDef>
+				<severityToAdd>1</severityToAdd>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	

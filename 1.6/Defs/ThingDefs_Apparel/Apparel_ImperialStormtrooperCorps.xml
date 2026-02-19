@@ -490,9 +490,6 @@
 		<label>Shadow Stormtrooper armor</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
-		<descriptionHyperlinks>
-			<HediffDef>guy762_StealthField_sixty</HediffDef>
-		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/shadowstormie/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -594,6 +591,9 @@
 		<label>Shadow Stormtrooper helmet</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SWCP_StealthMode</HediffDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>SWApparel/Stormtrooper/shadowstormie/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -678,7 +678,7 @@
 				<label>activate stealth field</label>
 				<commandIcon>UI/KotOR_Icon_Stealth</commandIcon>
 				<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
-				<hediffDef>guy762_StealthField_sixty</hediffDef>
+				<hediffDef>SWCP_StealthMode</hediffDef>
 				
 				<hasStandardCommand>true</hasStandardCommand>
 				<targetable>false</targetable>

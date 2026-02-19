@@ -90,10 +90,9 @@
         <!-- </comps> -->
 		<modExtensions>
 			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
-			
 			<li Class="SWCP_Misc.VerbProperties_SuppressingFire" >
-				<hediffDef>SWPotF_TacticAbilityHediff_HarassDebuff</hediffDef>
-				<severityToAdd>10</severityToAdd>
+				<hediffDef>SWCPHediff_Suppression</hediffDef>
+				<severityToAdd>2</severityToAdd>
 			</li>
 		</modExtensions>
 	</ThingDef>

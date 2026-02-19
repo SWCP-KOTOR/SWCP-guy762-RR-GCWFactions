@@ -209,7 +209,8 @@
 				<label>rapid shot</label>
 				<!-- <commandIcon>UI/IonCharge_Rapid_Shot</commandIcon> -->
 				<commandIcon>UI/Ion_Rapid_Shot</commandIcon>
-				<verbClass>Verb_Shoot</verbClass>
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<verbClass>SWCP_Misc.Verb_SuppressingFire</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<!-- <defaultProjectile>KotORBlasterBolt_ioncharger</defaultProjectile> -->
 				<defaultProjectile>KotORIonBolt_default</defaultProjectile>
@@ -255,7 +256,11 @@
             </li>
         </comps>
 		<modExtensions>
-		  <li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="IgnoreConfigErrors.Ignore_ForcedMissRadius" />
+			<li Class="SWCP_Misc.VerbProperties_SuppressingFire" >
+				<hediffDef>SWCPHediff_Suppression</hediffDef>
+				<severityToAdd>1</severityToAdd>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	

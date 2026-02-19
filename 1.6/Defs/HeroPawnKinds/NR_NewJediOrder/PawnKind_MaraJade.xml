@@ -23,10 +23,12 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 			<li>KotORHeroAccessories_visas</li>
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>SWCP_stealthbelt_default</li>
 			<li>guy762_InquisitorArmor</li>
 			<li>guy762_InquisitorTunic_default</li>
 		</apparelRequired>
