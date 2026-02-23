@@ -92,10 +92,10 @@
 			<li>SWMelee_forcepike</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
 		</weaponTags>
-		<!-- <tradeTags> -->
-			<!-- <li>guy762TT_KotORMelee</li> -->
-			<!-- <li>guy762TT_KotORWeapon_illegal</li> -->
-		<!-- </tradeTags> -->
+		<tradeTags>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticIllegal</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompExtraSounds.CompProperties_ExtraSounds">
 				<compClass>CompExtraSounds.CompExtraSounds</compClass>

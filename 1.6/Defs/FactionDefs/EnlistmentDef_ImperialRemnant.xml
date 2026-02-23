@@ -44,23 +44,23 @@
         <salaryIsEnabled>true</salaryIsEnabled>
         <salaryDef>guy762_KotORcredits</salaryDef>
         <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
-        <salaryDescKey>SWCP_Salary_Desc</salaryDescKey>
+        <salaryDescKey>SWCP_Salary_Desc_15days</salaryDescKey>
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
         <salaryRange>120~250</salaryRange>
-        <salaryPeriodDays>14</salaryPeriodDays>
+        <salaryPeriodDays>15</salaryPeriodDays>
 
     <!-- Provision Options -->
 
         <provisionOptions>
             <li>
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
-                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer</provisionsDescKey>
+                <provisionsDescKey>SWCP_Provisions_Desc_4xSupplyContainer10days</provisionsDescKey>
                 <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
                 <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
                 <provisions>
                     <li>
                         <thing>guy762_KotORLootBox_FoodMeds</thing>
-                        <amountRange>6</amountRange>
+                        <amountRange>4</amountRange>
                     </li>
                 </provisions>
                 <provisionsRestockInDays>10</provisionsRestockInDays>

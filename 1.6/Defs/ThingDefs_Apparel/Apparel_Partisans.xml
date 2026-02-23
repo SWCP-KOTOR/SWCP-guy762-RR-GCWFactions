@@ -84,7 +84,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -195,7 +197,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ScumAndRebelHats</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -302,7 +306,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -405,7 +410,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -471,7 +477,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/noshoulder/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  <layers Inherit="False">
@@ -511,7 +517,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -632,7 +640,8 @@
 		</apparel>
 		
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
 		</tradeTags>
 		
 		<comps>
@@ -756,7 +765,7 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

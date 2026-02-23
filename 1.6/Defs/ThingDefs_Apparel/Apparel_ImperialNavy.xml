@@ -51,7 +51,9 @@
 		  </bodyPartGroups>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -107,7 +109,9 @@
 		  </bodyPartGroups>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -169,7 +173,9 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_ORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -252,7 +258,8 @@
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -337,7 +344,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -487,7 +495,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/TIEPilot/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  <layers Inherit="False">
@@ -498,9 +506,8 @@
 		  </bodyPartGroups>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
-			<li>guy762TT_KotORArmor_space</li>
-			<li>guy762TT_KotORArmor_powered</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_ImpSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -546,7 +553,7 @@
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
 			
 			<Insulation_Cold>25</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<!-- <Insulation_Heat>10</Insulation_Heat> -->
 			
 			<EquipDelay>3</EquipDelay>
 			<WorkToMake>4000</WorkToMake>
@@ -567,13 +574,16 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialCrew/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
 			<li>guy762TT_KotORUnderArmor</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
+			<li>guy762TT_GCWArmor_ImpSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

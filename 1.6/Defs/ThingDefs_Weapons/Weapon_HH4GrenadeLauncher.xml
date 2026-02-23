@@ -34,7 +34,10 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWRanged_destructive</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_RebelSurplus</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>

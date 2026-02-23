@@ -48,7 +48,9 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -128,7 +130,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -226,7 +229,10 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -289,7 +295,9 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -356,7 +364,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  <layers Inherit="False">
@@ -400,7 +408,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -456,7 +465,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/medic/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  <layers Inherit="False">
@@ -496,7 +505,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -572,7 +582,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/armylt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  <layers Inherit="False">
@@ -614,7 +624,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -749,7 +760,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_CloneWarsSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -864,7 +876,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -963,7 +976,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_PartisanArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1066,7 +1080,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1161,7 +1176,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1296,7 +1312,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

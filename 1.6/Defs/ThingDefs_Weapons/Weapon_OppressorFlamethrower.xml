@@ -29,7 +29,9 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORWeapon_illegal</li>
+			<li>guy762TT_GCWRanged_destructive</li>
+			<li>guy762TT_GCWWeapon_ExoticIllegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>

@@ -30,7 +30,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
-			<li>guy762TT_KotORWeapon_illegal</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -113,7 +113,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
-			<li>guy762TT_KotORWeapon_illegal</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -222,7 +222,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
-			<li>guy762TT_KotORWeapon_illegal</li>
+			<li>guy762TT_GCWWeapon_ExoticIllegal</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -288,8 +288,8 @@
 				</points>
 				</beamLineFleckChanceCurve>
 				
-				<ai_IsWeapon>true</ai_IsWeapon>
-				<!-- <onlyManualCast>true</onlyManualCast> -->
+				<ai_IsWeapon>false</ai_IsWeapon>
+				<onlyManualCast>true</onlyManualCast>
 			</li>
 		</verbs>
 		<tools>

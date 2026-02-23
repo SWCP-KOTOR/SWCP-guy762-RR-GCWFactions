@@ -6,8 +6,8 @@
     <!--_____ NCR _____-->
 
     <SWCP.Enlist.FactionEnlistOptionsDef>
-        <defName>guy762_SWFactionEnlistment_RebelCell</defName>
-        <minGoodwillRequrementToEnlist>35</minGoodwillRequrementToEnlist>
+        <defName>guy762_SWFactionEnlistment_ZsinjDominion</defName>
+        <minGoodwillRequrementToEnlist>-25</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
 		<currencyDef>guy762_KotORcredits</currencyDef>
 
@@ -17,9 +17,9 @@
         <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
         <enlistButtonLabelKey>SWCP_Enlist_Button_Label</enlistButtonLabelKey>
         <enlistButtonDescKey>SWCP_Enlist_Button_Desc</enlistButtonDescKey>
-        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_harsh</enlistRequrementsNotSatisfiedKey>
+        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_easy</enlistRequrementsNotSatisfiedKey>
         <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
-        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_Rebellion</enlistButtonIconTexPath>
+        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_ZsinjDominion</enlistButtonIconTexPath>
         <enlistedSoundDef>kotorsound_levelup</enlistedSoundDef>
         <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
 
@@ -29,11 +29,11 @@
         <missionsLabelKey>SWCP_Missions_Label</missionsLabelKey>
         <missionsDescKey>SWCP_Missions_Desc</missionsDescKey>
         <missionsButtonIconTexPath>UI/Icons/Datapad</missionsButtonIconTexPath>
-        <missionsBackgroundMenuTexPath>Things/UI/Enlisted/SWCP_Missions</missionsBackgroundMenuTexPath>
+        <missionsBackgroundMenuTexPath>UI/Icons/Datapad</missionsBackgroundMenuTexPath>
 		
-        <missionsMenuAmbientSoundDef>SWCPSound_RogueSquadronN64_hangar</missionsMenuAmbientSoundDef>
+        <!-- <missionsMenuAmbientSoundDef>SWCPSound_RogueSquadronN64_hangar</missionsMenuAmbientSoundDef> -->
 		
-        <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc</missionsMenuDescriptionKey>
+        <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc_imp</missionsMenuDescriptionKey>
         <missionsMenuSelectQuestKey>SWCP_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
         <missionsMenuStartQuestKey>SWCP_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
         <missionsQuestCost>0</missionsQuestCost>
@@ -44,27 +44,45 @@
         <salaryIsEnabled>true</salaryIsEnabled>
         <salaryDef>guy762_KotORcredits</salaryDef>
         <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
-        <salaryDescKey>SWCP_Salary_Desc_15days</salaryDescKey>
+        <salaryDescKey>SWCP_Salary_Desc_10days</salaryDescKey>
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
-        <salaryRange>500~1000</salaryRange>
-        <salaryPeriodDays>15</salaryPeriodDays>
+        <salaryRange>1000~2000</salaryRange>
+        <salaryPeriodDays>10</salaryPeriodDays>
 
     <!-- Provision Options -->
 
         <provisionOptions>
             <li>
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
-                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer10days</provisionsDescKey>
+                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer15days</provisionsDescKey>
                 <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
-                <!-- <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath> -->
+                <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
                 <provisions>
                     <li>
                         <thing>guy762_KotORLootBox_FoodMeds</thing>
                         <amountRange>6</amountRange>
                     </li>
                 </provisions>
-                <provisionsRestockInDays>10</provisionsRestockInDays>
+                <provisionsRestockInDays>15</provisionsRestockInDays>
             </li>
+			
+			
+			 <!-- will spawn them in but won't let pawns enter them for sone reason -->
+			<!-- <li MayRequire="SWCP.GCWVehicles"> -->
+                <!-- <provisionsLabelKey>SWCP_Provisions_Label_74zSpeeder</provisionsLabelKey> -->
+                <!-- <provisionsDescKey>SWCP_Provisions_Desc_74zSpeeder</provisionsDescKey> -->
+                <!-- <provisionsButtonIconTexPath>LandVehicles/74Z/74Z_L1_east</provisionsButtonIconTexPath> -->
+                <!-- <provisions> -->
+                    <!-- <li> -->
+                        <!-- <thing>guy762_SWVehicleBP_74ZSpeeder</thing> -->
+                        <!-- <amountRange>1</amountRange> -->
+                    <!-- </li> -->
+                <!-- </provisions> -->
+                <!-- <provisionsRestockInDays>60</provisionsRestockInDays> -->
+            <!-- </li> -->
+			
+			
+			
             <!-- <li> -->
                 <!-- <provisionsLabelKey>SWCP_Provisions_Label_Standard_Issue</provisionsLabelKey> -->
                 <!-- <provisionsDescKey>SWCP_Provisions_Desc_Standard_Issue</provisionsDescKey> -->
@@ -96,31 +114,21 @@
         <workOptions>
             <li>
                 <workLabelKey>SWCP_Part_Time_Job_Label</workLabelKey>
-                <workDescKey>SWCP_Part_Time_Job_Desc_rebel</workDescKey>
+                <workDescKey>SWCP_Part_Time_Job_Desc_imp</workDescKey>
                 <workButtonIconTexPath>Items/Credits/credits_b</workButtonIconTexPath>
-                <additionalRestFall>0.25</additionalRestFall>
-                <silverGainPerHour>20</silverGainPerHour>
+                <additionalRestFall>0.45</additionalRestFall>
+                <silverGainPerHour>10</silverGainPerHour>
             </li>
             <li>
                 <workLabelKey>SWCP_Hospital_Label</workLabelKey>
                 <workDescKey>SWCP_Hospital_Desc</workDescKey>
                 <workButtonIconTexPath>Items/Medkits/medkit_a</workButtonIconTexPath>
                 <additionalRestFall>0.25</additionalRestFall>
-                <tendCaravanMembersEveryTicks>600</tendCaravanMembersEveryTicks>
+                <tendCaravanMembersEveryTicks>1200</tendCaravanMembersEveryTicks>
                 <medicinesToTend>
                     <li>KOTOR_SpacerMedKit</li>
                 </medicinesToTend>
-                <immunityGainSpeedMultiplier>2</immunityGainSpeedMultiplier>
-            </li>
-            <li>
-                <workLabelKey>SWCP_Medical_Training_Label</workLabelKey>
-                <workDescKey>SWCP_Medical_Training_Desc</workDescKey>
-                <!-- <workButtonIconTexPath>UI/Icons/medicsigil</workButtonIconTexPath> -->
-                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Treat_Injury</workButtonIconTexPath>
-                <experienceGainsPerHour>
-                    <Medicine>500</Medicine>
-                </experienceGainsPerHour>
-                <additionalRestFall>0.25</additionalRestFall>
+                <immunityGainSpeedMultiplier>1.25</immunityGainSpeedMultiplier>
             </li>
             <li>
                 <workLabelKey>SWCP_Shooting_Training_Label</workLabelKey>
@@ -131,16 +139,24 @@
                 </experienceGainsPerHour>
                 <additionalRestFall>0.3</additionalRestFall>
             </li>
-            <li>
-                <workLabelKey>SWCP_Survival_Training_Label</workLabelKey>
-                <workDescKey>SWCP_Survival_Training_Desc</workDescKey>
-                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath>
+			<li>
+                <workLabelKey>SWCP_Melee_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Melee_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Melee_Weapons</workButtonIconTexPath>
                 <experienceGainsPerHour>
-                    <Animals>450</Animals>
-                    <Cooking>350</Cooking>
-                    <Plants>450</Plants>
+                    <Melee>500</Melee>
                 </experienceGainsPerHour>
                 <additionalRestFall>0.5</additionalRestFall>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Command_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Command_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/_KotOR_Feat_War_Veteran</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Social>350</Social>
+                    <Intellectual>250</Intellectual>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.3</additionalRestFall>
             </li>
         </workOptions>
 
@@ -149,11 +165,11 @@
         <turnInIsEnabled>true</turnInIsEnabled>
         <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
         <turnInDescKey>SWCP_Turn_In_Desc</turnInDescKey>
-        <turnInButtonIconTexPath>UI/Icons/stormtrooper</turnInButtonIconTexPath>
+        <turnInButtonIconTexPath>UI/Icons/rebel</turnInButtonIconTexPath>
 		
-        <turnInTraderKind>guy762_TraderKind_PrisonerExchange_rebel</turnInTraderKind>
+        <turnInTraderKind>guy762_TraderKind_PrisonerExchange_zsinj</turnInTraderKind>
 		
-        <turnInThought>SWCP_Thought_PrisonerTurnedIn_rebels</turnInThought>
+        <turnInThought>SWCP_Thought_PrisonerTurnedIn_imperial</turnInThought>
         <turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
         <turnInTraderNameKey>SWCP_Turn_In_Trader_Name</turnInTraderNameKey>
 
@@ -164,22 +180,22 @@
 	<!-- Shuttle Service Options (Vertibird) -->
 
         <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled>
-		<shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/uwing</shuttleServiceButtonIconTexPath>
-        <shuttleServiceCost>500</shuttleServiceCost>
+		<shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/Lambda</shuttleServiceButtonIconTexPath>
+        <shuttleServiceCost>250</shuttleServiceCost>
 		
         <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey>
-        <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_500credits</shuttleServiceDescKey>
+        <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_250credits</shuttleServiceDescKey>
         <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey>
 
     <!-- Resign Options -->
 
-        <resignGoodwillGain>-25</resignGoodwillGain>
-        <resignMenuTextKey>SWCP_Resign_Menu_Text</resignMenuTextKey>
+        <resignGoodwillGain>-75</resignGoodwillGain>
+        <resignMenuTextKey>SWCP_Resign_Menu_Text_harsh</resignMenuTextKey>
         <resignLetterTitleKey>SWCP_Resign_Letter_Title</resignLetterTitleKey>
-        <resignLetterLabelKey>SWCP_Resign_Letter_Label</resignLetterLabelKey>
-        <resignButtonLabelKey>SWCP_Resign_Button_Label</resignButtonLabelKey>
+        <resignLetterLabelKey>SWCP_Resign_Letter_Label_harsh</resignLetterLabelKey>
+        <resignButtonLabelKey>SWCP_Resign_Button_Label_harsh</resignButtonLabelKey>
         <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
-        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_Rebellion</resignButtonIconTexPath>
+        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_ImperialRemnant</resignButtonIconTexPath>
 
     <!-- Kicked Out Options -->
 
@@ -191,9 +207,9 @@
         <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
         <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
         <reinforcementsButtonDescKey>SWCP_Reinforcements_Button_Desc</reinforcementsButtonDescKey>
-        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_RebelCell</reinforcementsButtonIconTexPath>
-        <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost>
-        <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks>
+        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_ZsinjDominion</reinforcementsButtonIconTexPath>
+        <reinforcementCallGoodwillCost>0</reinforcementCallGoodwillCost>
+        <reinforcementCallCooldownTicks>32500</reinforcementCallCooldownTicks>
         <reinforcementOptions>
             <li>
                 <relationsRange>75~100</relationsRange>
@@ -217,8 +233,8 @@
 	
 	
 	<TraderKindDef>
-        <defName>guy762_TraderKind_PrisonerExchange_rebel</defName>
-        <label>Rebel Prisoner Exchange</label>
+        <defName>guy762_TraderKind_PrisonerExchange_zsinj</defName>
+        <label>Zsinj's Dominion Prisoner Exchange</label>
         <category>Slaver</category>
         <stockGenerators>
 
@@ -237,22 +253,22 @@
 
             <li Class="StockGenerator_SingleDef">
                 <thingDef>guy762_KotORcredits</thingDef>
-                <countRange>750~1200</countRange>
+                <countRange>1250~2000</countRange>
             </li>
         </stockGenerators>
     </TraderKindDef>
 	
-	<ThoughtDef>
-        <defName>SWCP_Thought_PrisonerTurnedIn_rebels</defName>
-        <durationDays>3</durationDays>
-        <stackLimit>1</stackLimit>
-        <stages>
-            <li>
-                <label>turned in an Imperial</label>
-                <description>We apprehended an Imperial and they're now being debriefed by Rebel Intelligence.</description>
-                <baseMoodEffect>2</baseMoodEffect>
-            </li>
-        </stages>
-    </ThoughtDef>
+	<!-- <ThoughtDef> -->
+        <!-- <defName>SWCP_Thought_PrisonerTurnedIn_imperial</defName> -->
+        <!-- <durationDays>3</durationDays> -->
+        <!-- <stackLimit>1</stackLimit> -->
+        <!-- <stages> -->
+            <!-- <li> -->
+                <!-- <label>turned in a rebel</label> -->
+                <!-- <description>We apprehended a rebel and they're now being interrogated by COMPNOR.</description> -->
+                <!-- <baseMoodEffect>2</baseMoodEffect> -->
+            <!-- </li> -->
+        <!-- </stages> -->
+    <!-- </ThoughtDef> -->
 
 </Defs>

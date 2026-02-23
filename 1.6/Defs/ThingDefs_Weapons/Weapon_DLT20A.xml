@@ -31,6 +31,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_CivLegal</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -138,6 +139,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -237,6 +240,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -329,6 +334,9 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
+			<li>guy762TT_GCWWeapon_RebelSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>

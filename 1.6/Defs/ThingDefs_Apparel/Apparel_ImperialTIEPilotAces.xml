@@ -83,7 +83,8 @@
 			
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_ImpSpaceGear</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -194,7 +195,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/TIEPilot/bodysuit_ace/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  
@@ -233,6 +234,8 @@
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
 			<li>guy762TT_KotORUnderArmor</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -375,7 +378,8 @@
 			
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -464,41 +468,5 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	  
-	  
-	  
-	  
-	  
-	  
-	
-	  
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 </Defs>

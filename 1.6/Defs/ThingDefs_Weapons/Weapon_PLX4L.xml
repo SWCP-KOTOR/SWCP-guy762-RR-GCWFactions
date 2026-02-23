@@ -29,7 +29,11 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORWeapon_illegal</li>
+			<li>guy762TT_GCWRanged_destructive</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_PDFsurplus</li>
+			<li>guy762TT_GCWWeapon_RebelSurplus</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -61,8 +65,8 @@
 				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_SAAVProtonMissile_light</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<defaultCooldownTime>10</defaultCooldownTime>
+				<warmupTime>2</warmupTime>
+				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>

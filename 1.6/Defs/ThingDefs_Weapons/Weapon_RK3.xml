@@ -32,6 +32,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_CivLegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<!-- <li> -->
@@ -111,6 +113,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -189,11 +193,11 @@
 			<li>SWKotORWeaponCategoryTag_pistol</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORLegendary</li>
+			<li>guy762TT_GCWLegendary</li>
 		</tradeTags>
-		<!-- <thingSetMakerTags> -->
-			<!-- <li>UniqueWeapon</li> -->
-		<!-- </thingSetMakerTags> -->
+		<thingSetMakerTags>
+			<li>UniqueWeapon</li>
+		</thingSetMakerTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

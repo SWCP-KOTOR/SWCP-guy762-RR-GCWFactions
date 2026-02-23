@@ -83,9 +83,8 @@
 			<li>SWKotORWeaponCategoryTag_melee</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORMelee</li>
-			<li>guy762TT_KotORGeneric_adv</li>
-			<li>guy762TT_KotORGeneric_CivLegal</li>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
 		</tradeTags>
 		<thingSetMakerTags>
 		  <!-- <li>RewardStandardLowFreq</li> -->

@@ -34,6 +34,9 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_PDFsurplus</li>
+			<li>guy762TT_GCWWeapon_RebelSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>

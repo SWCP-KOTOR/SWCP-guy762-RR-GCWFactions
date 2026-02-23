@@ -75,7 +75,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -237,7 +238,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -340,7 +342,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -450,7 +453,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -568,7 +572,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWCharacterItem</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -675,7 +680,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -740,7 +746,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -831,7 +838,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_ImpArmyArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -924,7 +932,9 @@
 		  <immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 				<options>
@@ -1032,7 +1042,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_ImpArmyArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1116,7 +1127,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_ImpArmyArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1212,7 +1224,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_WarlordArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

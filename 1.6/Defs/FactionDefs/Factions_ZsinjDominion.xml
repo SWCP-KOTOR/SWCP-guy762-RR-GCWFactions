@@ -65,7 +65,25 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
-		
+		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</arrivalLayerWhitelist>
 
 		<naturalEnemy>true</naturalEnemy>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -77,6 +95,12 @@
 		<modExtensions Inherit="False">
 			<li Class="SWCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
+			</li>
+			<li Class="SWCP.Enlist.FactionEnlistOptions">
+				<enlistOptionsDefs>
+					<li>guy762_SWFactionEnlistment_ZsinjDominion</li>
+				</enlistOptionsDefs>
+				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
 			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
 				<arrivalModes>
@@ -263,15 +287,16 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
-		<!-- <orbitalTraderKinds> -->
-		  <!-- <li>Orbital_BulkGoods</li> -->
-		  <!-- <li>Orbital_CombatSupplier</li> -->
-		  <!-- <li>Orbital_Exotic</li> -->
-		  <!-- <li>Orbital_PirateMerchant</li> -->
-		<!-- </orbitalTraderKinds> -->
+		<baseTraderKinds>
+			<!-- <li>SWCP_GCWBaseTraderKind_ZsinjQuartermaster</li> -->
+			<li>SWCP_GCWBaseTraderKind_gunrunner</li>
+			<!-- <li>SWCP_GCWOrbitalTraderKind_ImperialSlaver</li> -->
+		</baseTraderKinds>
+		<orbitalTraderKinds>
+			<li>SWCP_GCWOrbitalTraderKind_gunrunner</li>
+			<li>guy762_TraderKind_spicerunner</li>
+			<!-- <li>SWCP_GCWOrbitalTraderKind_ImperialSlaver</li> -->
+		</orbitalTraderKinds>
 		
 		
 		
@@ -301,7 +326,7 @@
 		
 		
 		<pawnGroupMakers>
-		  <li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies> <!-- entire vanilla list -->
 					<li>EmergeFromWater</li>
@@ -321,16 +346,16 @@
 					<guy762_SWVehicle_Z95Zsinj_bot_PawnKind>4</guy762_SWVehicle_Z95Zsinj_bot_PawnKind>
 					<guy762_SWVehicle_TIEBomber_bot_PawnKind>2</guy762_SWVehicle_TIEBomber_bot_PawnKind>
 				</options>
-		  </li>
+			</li>
 		  
 		  
-		  <li>
-			<kindDef>Peaceful</kindDef>
-			<options>
-			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyLieutenant>50</SWZsinj_ArmyLieutenant>
-			</options>
-		  </li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+				  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
+				  <SWZsinj_ArmyLieutenant>50</SWZsinj_ArmyLieutenant>
+				</options>
+			</li>
 		  
 		  
 		  
@@ -339,12 +364,35 @@
 			<!-- army skirmish -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>950</commonality>
+				<commonality>975</commonality>
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
 					<li>Siege</li>
 					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_ArmyTrooper_40x>100</xSWZsinj_ArmyTrooper_40x>
+					<xSWZsinj_ArmyGrenadier_4x>100</xSWZsinj_ArmyGrenadier_4x>
+					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
+					<!-- <xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x> -->
+					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
+				</options>
+			</li>
+			
+			<li>
+				<!-- territory intrusion -->
+				<kindDef>Combat</kindDef>
+				<commonality>950</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
 					<li>ImmediateAttackSappers</li>
 					<li>ImmediateAttackBreaching</li>
@@ -362,7 +410,62 @@
 				</options>
 			</li>
 			
-			<!-- combined mega assault -->
+			<li>
+				<!-- raptor only raid -->
+				<kindDef>Combat</kindDef>
+				<commonality>950</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_Raptor_24x>100</xSWZsinj_Raptor_24x>
+					<xSWZsinj_RaptorRepeater_4x>100</xSWZsinj_RaptorRepeater_4x>
+					<xSWZsinj_RaptorFlamethrower_2x>100</xSWZsinj_RaptorFlamethrower_2x>
+					<xSWZsinj_RaptorMissile_8x>100</xSWZsinj_RaptorMissile_8x>
+					<xSWZsinj_RaptorOfficer_2x>100</xSWZsinj_RaptorOfficer_2x>
+				</options>
+			</li>
+			
+			
+			<li>
+				<!-- army + raptor assault -->
+				<kindDef>Combat</kindDef>
+				<commonality>925</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_ArmyTrooper_40x>100</xSWZsinj_ArmyTrooper_40x>
+					<xSWZsinj_ArmyGrenadier_4x>100</xSWZsinj_ArmyGrenadier_4x>
+					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
+					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
+					
+					<xSWZsinj_Raptor_24x>100</xSWZsinj_Raptor_24x>
+					<xSWZsinj_RaptorRepeater_4x>100</xSWZsinj_RaptorRepeater_4x>
+					<xSWZsinj_RaptorFlamethrower_2x>100</xSWZsinj_RaptorFlamethrower_2x>
+					<xSWZsinj_RaptorMissile_8x>100</xSWZsinj_RaptorMissile_8x>
+					<xSWZsinj_RaptorOfficer_2x>100</xSWZsinj_RaptorOfficer_2x>
+					
+					<xSWZsinj_Raptor_4x>100</xSWZsinj_Raptor_4x>
+					<xSWZsinj_ArmyMajor_1x>100</xSWZsinj_ArmyMajor_1x>
+				</options>
+			</li>
+		  
+			
+			
+			<!-- combined infantry mega assault -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>910</commonality>
@@ -396,7 +499,7 @@
 			</li>
 			
 			
-			<!-- assassination team -->
+			<!-- dark trooper raid -->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>910</commonality>
@@ -414,179 +517,59 @@
 					<xSWZsinj_P0DarkTrooperRocket_3x>100</xSWZsinj_P0DarkTrooperRocket_3x>
 				</options>
 			</li>
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  <li>
-			<!-- army skirmish -->
-			<kindDef>Combat</kindDef>
-			<commonality>75</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>ImmediateAttackSmart</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
-			  <SWZsinj_ArmyLieutenant>50</SWZsinj_ArmyLieutenant>
-			</options>
-		  </li>
-		  
-		  <li>
-			<!-- territory intrusion -->
-			<kindDef>Combat</kindDef>
-			<commonality>50</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>EmergeFromWater</li>
-				<li>ImmediateAttack</li>
-				<li>ImmediateAttackSmart</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
-			  
-			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
-			</options>
-		  </li>
-		  
-		  
-		  <li>
-			<!-- raptor only raid -->
-			<kindDef>Combat</kindDef>
-			<commonality>50</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>StageThenAttack</li>
-				<li>ImmediateAttack</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWZsinj_Raptor>100</SWZsinj_Raptor>
-			  <!-- <SWImpRemnant_stormierifle>50</SWImpRemnant_stormierifle> -->
-			  <SWZsinj_RaptorHvy>100</SWZsinj_RaptorHvy>
-			  <SWZsinj_RaptorOfficer>100</SWZsinj_RaptorOfficer>
-			</options>
-		  </li>
-		  
-		  <li>
-			<!-- assault -->
-			<kindDef>Combat</kindDef>
-			<commonality>25</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>StageThenAttack</li>
-				<li>ImmediateAttack</li>
-			</disallowedStrategies>
-			<options>
-			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
-			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
-			  <SWZsinj_ArmyMajor>100</SWZsinj_ArmyMajor>
-			  
-			  <SWZsinj_Raptor>50</SWZsinj_Raptor>
-			  <SWZsinj_RaptorHvy>50</SWZsinj_RaptorHvy>
-			</options>
-		  </li>
-		  
-		  
-		  <li>
-			<!-- mega assault -->
-			<kindDef>Combat</kindDef>
-			<commonality>25</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>StageThenAttack</li>
-				<li>ImmediateAttack</li>
-			</disallowedStrategies>
-			<options>
-			  <SWZsinj_ArmyTrooper>100</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyHeavy>50</SWZsinj_ArmyHeavy>
-			  <!-- <SWZsinj_ArmySniper>25</SWZsinj_ArmySniper> -->
-			  <SWZsinj_ArmyLieutenant>100</SWZsinj_ArmyLieutenant>
-			  
-			  <SWZsinj_ArmyGeneral_field>100</SWZsinj_ArmyGeneral_field>
-			  
-			  <SWZsinj_Raptor>50</SWZsinj_Raptor>
-			  <SWZsinj_RaptorHvy>50</SWZsinj_RaptorHvy>
-			</options>
-		  </li>
-
-		  
-		  
-		  
-		  
+			
+			
+			
+			
 		  
 
-		  <li>
-			<kindDef>Settlement</kindDef> <!-- base -->
-			<commonality>1</commonality>
-			<options>
-			  <SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-			  <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
-			  <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
 
-			  <SWZsinj_RaptorPilot>5</SWZsinj_RaptorPilot>
 
-			  <SWZsinj_ArmyTrooper>25</SWZsinj_ArmyTrooper>
-			  <SWZsinj_ArmyHeavy>5</SWZsinj_ArmyHeavy>
-			  <!-- <SWZsinj_ArmySniper>5</SWZsinj_ArmySniper> -->
-			  
-			  <SWZsinj_ArmyLieutenant>10</SWZsinj_ArmyLieutenant>
-			  <SWZsinj_ArmyMajor>5</SWZsinj_ArmyMajor>
-			  <SWZsinj_ArmyGeneral>1</SWZsinj_ArmyGeneral>
-			  
-			  <SWZsinj_Raptor>10</SWZsinj_Raptor>
-			  <SWZsinj_RaptorHvy>10</SWZsinj_RaptorHvy>
-			  <SWZsinj_RaptorOfficer>10</SWZsinj_RaptorOfficer>
-			  
-			  <SWZsinj_NavyLt>1</SWZsinj_NavyLt>
-			  <SWZsinj_NavyCaptain>1</SWZsinj_NavyCaptain>
-			  <SWZsinj_NavyAdmiral>1</SWZsinj_NavyAdmiral>
-			  
-			  <SWZannCon_Defiler>1</SWZannCon_Defiler>
-			  
-			</options>
-		  </li>
+			<li>
+				<kindDef>Settlement</kindDef> <!-- base -->
+				<commonality>1</commonality>
+				<options>
+					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
+					<SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
+					<SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
 
-		  
-		  
+					<SWZsinj_RaptorPilot>5</SWZsinj_RaptorPilot>
+
+					<SWZsinj_ArmyTrooper>25</SWZsinj_ArmyTrooper>
+					<SWZsinj_ArmyHeavy>5</SWZsinj_ArmyHeavy>
+					<!-- <SWZsinj_ArmySniper>5</SWZsinj_ArmySniper> -->
+
+					<SWZsinj_ArmyLieutenant>10</SWZsinj_ArmyLieutenant>
+					<SWZsinj_ArmyMajor>5</SWZsinj_ArmyMajor>
+					<SWZsinj_ArmyGeneral>1</SWZsinj_ArmyGeneral>
+
+					<SWZsinj_Raptor>10</SWZsinj_Raptor>
+					<SWZsinj_RaptorHvy>10</SWZsinj_RaptorHvy>
+					<SWZsinj_RaptorOfficer>10</SWZsinj_RaptorOfficer>
+
+					<SWZsinj_NavyLt>1</SWZsinj_NavyLt>
+					<SWZsinj_NavyCaptain>1</SWZsinj_NavyCaptain>
+					<SWZsinj_NavyAdmiral>1</SWZsinj_NavyAdmiral>
+
+					<SWZannCon_Defiler>1</SWZannCon_Defiler>
+				</options>
+			</li>
+			
+			<li>
+                <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
+                <kindDef>SWCPPawnGroupKind_TaxCollector</kindDef>
+                <traders>
+                    <SWZsinj_NavyLt>1</SWZsinj_NavyLt>
+                </traders>
+                <carriers>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+					<Muffalo>1</Muffalo>
+                </carriers>
+                <guards>
+					<SWZsinj_Raptor>10</SWZsinj_Raptor>
+					<SWZsinj_RaptorOfficer>10</SWZsinj_RaptorOfficer>
+                </guards>
+            </li>
 		</pawnGroupMakers>
 		
 		<raidLootMaker>guy762_RaidLootMaker_ZsinjDominion</raidLootMaker>

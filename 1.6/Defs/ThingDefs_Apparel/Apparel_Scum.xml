@@ -78,7 +78,8 @@
 		</apparel>
 		
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
@@ -183,7 +184,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -293,7 +295,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -416,7 +419,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
@@ -496,7 +500,8 @@
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -589,7 +594,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_BlackSunSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -678,7 +684,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_ORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_BlackSunSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -757,7 +764,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -843,7 +851,8 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -923,7 +932,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1002,7 +1012,8 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

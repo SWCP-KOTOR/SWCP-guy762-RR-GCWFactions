@@ -1312,6 +1312,9 @@
 		<defName>SWZsinj_NavyLt</defName>
 		<label>navy lieutenant</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<trader>true</trader> <!-- can appear as tax collector -->
+		
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>

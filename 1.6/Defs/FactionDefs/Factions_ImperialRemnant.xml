@@ -71,12 +71,7 @@
 		
 		
 		
-		<!-- <arrivalLayerWhitelist> -->
-			<!-- <li>Surface</li> -->
-			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">SWCPPlanetLayer_TatooineOrbit</li> -->
-		<!-- </arrivalLayerWhitelist> -->
+		
 		
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<!-- <li>Surface</li> -->
@@ -98,6 +93,27 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
+		
+		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</arrivalLayerWhitelist>
 		
 		<!-- <neutralArrivalLayerBlacklist> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
@@ -857,9 +873,10 @@
 				<kindDef>Settlement</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
-					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
-					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
+					<xSWImpRemnant_ArmyRifleman_35x>100</xSWImpRemnant_ArmyRifleman_35x>
+					<xSWImpRemnant_ArmyRepeater_4x>100</xSWImpRemnant_ArmyRepeater_4x>
+					<xSWImpRemnant_ArmyMissile_4x>100</xSWImpRemnant_ArmyMissile_4x>
+					<xSWImpRemnant_ArmyIon_2x>100</xSWImpRemnant_ArmyIon_2x>
 					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
 					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> <!-- has a max of 2 -->
 					
@@ -867,17 +884,17 @@
 					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
 					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
 					
-					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
-					<!-- <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer> -->
+					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
+					<SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
 					<!-- <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat> -->
 
-					<!-- <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper> -->
+					<SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper>
 					<!-- <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer> -->
 
 					<!-- <SWImpRemnant_ArmyMajor>100</SWImpRemnant_ArmyMajor> -->
 					<!-- <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral> -->
 
-					<!-- <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt> -->
+					<SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt>
 					<!-- <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral> -->
 
 					<!-- <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy> -->

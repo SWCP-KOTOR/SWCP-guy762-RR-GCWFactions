@@ -450,6 +450,53 @@
 	
 	
 	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyRifleman_35x" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xSWImpRemnant_ArmyRifleman_35x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>35</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyRepeater_4x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyRepeater_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyIon_2x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyIon_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyMissile_4x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyMissile_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	
 	
 	
 	

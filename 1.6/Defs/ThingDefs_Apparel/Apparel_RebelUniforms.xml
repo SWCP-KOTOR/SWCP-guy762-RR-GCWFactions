@@ -48,7 +48,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		  
@@ -89,7 +89,8 @@
 		<!-- </randomStyle> -->
 		
 		<tradeTags>
-			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -262,7 +263,8 @@
 		<!-- </randomStyle> -->
 		
 		<tradeTags>
-			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelOfficer</li>
 		</tradeTags>
 		
 		<comps>

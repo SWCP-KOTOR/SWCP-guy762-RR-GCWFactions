@@ -110,7 +110,10 @@
 				<li>guy762_Ability_DetonateDetpack</li>
 			</abilities>
         </apparel>
-
+		<tradeTags>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
+		</tradeTags>
     </ThingDef>
 
 

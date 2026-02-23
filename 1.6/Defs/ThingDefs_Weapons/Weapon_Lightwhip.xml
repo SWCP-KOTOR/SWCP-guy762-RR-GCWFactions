@@ -55,10 +55,9 @@
 			<li>SWRanged_LumiyaLightwhip</li>
 			<li>SWKotORWeaponCategoryTag_lightsaber</li>
 		</weaponTags>
-		<!-- <tradeTags> -->
-			<!-- <li>guy762TT_KotORLegendary</li> -->
-			<!-- <li>guy762TT_KotORLightsaber</li> -->
-		<!-- </tradeTags> -->
+		<tradeTags>
+			<li>guy762TT_GCWCharacterItem</li>
+		</tradeTags>
 		<relicChance>3</relicChance>
 		<verbs>
 			<li>

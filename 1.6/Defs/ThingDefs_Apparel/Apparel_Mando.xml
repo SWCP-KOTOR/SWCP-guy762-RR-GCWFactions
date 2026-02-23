@@ -113,7 +113,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_MNCArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -334,7 +336,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_MNCArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -545,7 +549,9 @@
 			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_MNCArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -778,8 +784,10 @@
 		  </options>
 		</colorGenerator>
 		<tradeTags>
-		  <li>guy762TT_KotORElite</li>
-		  <li>guy762TT_MNCArmor</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+			<li>guy762TT_GCWArmor_ExoticRare</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<verbs>
 		  <li>

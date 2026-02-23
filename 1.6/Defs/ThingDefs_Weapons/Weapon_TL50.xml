@@ -31,10 +31,11 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 		</weaponTags>
-		<!--tradeTags Inherit="False">
+		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
-			<li>guy762TT_KotORWeapon_illegal</li>
-		</tradeTags-->
+			<li>guy762TT_GCWWeapon_ExoticIllegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -142,10 +143,11 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
 		</weaponTags>
-		<!--tradeTags Inherit="False">
+		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
-			<li>guy762TT_KotORWeapon_illegal</li>
-		</tradeTags-->
+			<li>guy762TT_GCWWeapon_Illegal</li>
+			<li>guy762TT_GCWWeapon_ImpSurplus</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

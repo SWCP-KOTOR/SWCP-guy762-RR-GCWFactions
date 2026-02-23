@@ -31,6 +31,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_CloneWarsSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -101,6 +102,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_PDFsurplus</li>
+			<li>guy762TT_GCWWeapon_CloneWarsSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -189,6 +192,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_CloneWarsSurplus</li>
 		</tradeTags>
 		<verbs>
 			<li>
@@ -297,6 +301,7 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
+			<li>guy762TT_GCWWeapon_CloneWarsSurplus</li>
 		</tradeTags>
 		<verbs>
 			<!-- <li> -->

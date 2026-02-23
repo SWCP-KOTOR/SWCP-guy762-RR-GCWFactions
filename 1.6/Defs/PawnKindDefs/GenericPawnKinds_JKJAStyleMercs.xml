@@ -97,7 +97,7 @@
 	
     <weaponMoney>1000~4500</weaponMoney>
     <weaponTags>
-	  <li>SaV_JKweequay</li>
+		<li>SWRanged_CR1BlastCannon</li> <!-- needs merc bowcaster -->
     </weaponTags>
 	<biocodeWeaponChance>0.25</biocodeWeaponChance>
 	
@@ -240,6 +240,8 @@
     <defName>SWScum_JKSniperRodian</defName>
 	<label>underworld sniper</label>
     <combatPower>75</combatPower>
+	
+	<maxPerGroup>1</maxPerGroup>
 	
 	<useFactionXenotypes>false</useFactionXenotypes>
 	<xenotypeSet>

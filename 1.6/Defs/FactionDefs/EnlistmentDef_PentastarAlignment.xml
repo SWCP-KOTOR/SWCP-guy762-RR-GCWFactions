@@ -44,9 +44,9 @@
         <salaryIsEnabled>true</salaryIsEnabled>
         <salaryDef>guy762_KotORcredits</salaryDef>
         <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
-        <salaryDescKey>SWCP_Salary_Desc</salaryDescKey>
+        <salaryDescKey>SWCP_Salary_Desc_15days</salaryDescKey>
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
-        <salaryRange>1200~2500</salaryRange>
+        <salaryRange>1250~1750</salaryRange>
         <salaryPeriodDays>14</salaryPeriodDays>
 
     <!-- Provision Options -->
@@ -54,7 +54,7 @@
         <provisionOptions>
             <li>
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
-                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer</provisionsDescKey>
+                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer10days</provisionsDescKey>
                 <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
                 <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
                 <provisions>
@@ -149,25 +149,35 @@
                 <additionalRestFall>0.3</additionalRestFall>
             </li>
 			<li>
-                <workLabelKey>SWCP_Melee_Training_Label</workLabelKey>
-                <workDescKey>SWCP_Melee_Training_Desc</workDescKey>
-                <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Melee_Weapons</workButtonIconTexPath>
+                <workLabelKey>SWCP_Engineering_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Engineering_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Repair</workButtonIconTexPath>
                 <experienceGainsPerHour>
-                    <Melee>100</Melee>
+                    <Construction>450</Construction>
+                    <Crafting>350</Crafting>
                 </experienceGainsPerHour>
-                <additionalRestFall>0.4</additionalRestFall>
+                <additionalRestFall>0.3</additionalRestFall>
             </li>
-            <li>
-                <workLabelKey>SWCP_Survival_Training_Label</workLabelKey>
-                <workDescKey>SWCP_Survival_Training_Desc</workDescKey>
-                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath>
-                <experienceGainsPerHour>
-                    <Animals>200</Animals>
-                    <Cooking>200</Cooking>
-                    <Plants>200</Plants>
-                </experienceGainsPerHour>
-                <additionalRestFall>0.5</additionalRestFall>
-            </li>
+			<!-- <li> -->
+                <!-- <workLabelKey>SWCP_Melee_Training_Label</workLabelKey> -->
+                <!-- <workDescKey>SWCP_Melee_Training_Desc</workDescKey> -->
+                <!-- <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Melee_Weapons</workButtonIconTexPath> -->
+                <!-- <experienceGainsPerHour> -->
+                    <!-- <Melee>100</Melee> -->
+                <!-- </experienceGainsPerHour> -->
+                <!-- <additionalRestFall>0.4</additionalRestFall> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <workLabelKey>SWCP_Survival_Training_Label</workLabelKey> -->
+                <!-- <workDescKey>SWCP_Survival_Training_Desc</workDescKey> -->
+                <!-- <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath> -->
+                <!-- <experienceGainsPerHour> -->
+                    <!-- <Animals>200</Animals> -->
+                    <!-- <Cooking>200</Cooking> -->
+                    <!-- <Plants>200</Plants> -->
+                <!-- </experienceGainsPerHour> -->
+                <!-- <additionalRestFall>0.5</additionalRestFall> -->
+            <!-- </li> -->
 			<li>
                 <workLabelKey>SWCP_Intelligence_Training_Label</workLabelKey>
                 <workDescKey>SWCP_Intelligence_Training_Desc</workDescKey>

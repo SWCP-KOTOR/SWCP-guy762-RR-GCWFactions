@@ -43,12 +43,13 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/default/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -105,12 +106,13 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/bigbelt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -180,7 +182,8 @@
 		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -250,7 +253,8 @@
 		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -320,12 +324,13 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/blankskirt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -397,7 +402,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
@@ -422,7 +427,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -539,7 +545,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/linecaptain/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
@@ -564,7 +570,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		
 		<comps>
@@ -690,7 +697,7 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
+		  <defaultOutfitTags>
 			<li>Worker</li>
 		  </defaultOutfitTags>
 		</apparel>
@@ -721,7 +728,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_SEArmor</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
 		</tradeTags>
 		
 		<comps>
@@ -894,7 +902,8 @@
 		</randomStyle>
 		
 		<tradeTags>
-			<li>guy762TT_KotORCharacterItem</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWCharacterItem</li>
 		</tradeTags>
 		
 		<comps>

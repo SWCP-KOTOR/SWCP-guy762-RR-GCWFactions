@@ -55,8 +55,8 @@
 			<li>SWKotORWeaponCategoryTag_melee</li>
 		</weaponTags>
 		<tradeTags>
-			<li>guy762TT_KotORMelee</li>
-			<li>guy762TT_KotORWeapon_exotic</li>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
 		</tradeTags>
 		<comps>
 			<li Class="CompExtraSounds.CompProperties_ExtraSounds">

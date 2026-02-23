@@ -74,6 +74,26 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
+		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</arrivalLayerWhitelist>
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<modExtensions Inherit="False">
@@ -269,15 +289,15 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
-		<!-- <orbitalTraderKinds> -->
-		  <!-- <li>Orbital_BulkGoods</li> -->
-		  <!-- <li>Orbital_CombatSupplier</li> -->
-		  <!-- <li>Orbital_Exotic</li> -->
-		  <!-- <li>Orbital_PirateMerchant</li> -->
-		<!-- </orbitalTraderKinds> -->
+		<baseTraderKinds>
+			<li>SWCP_GCWBaseTraderKind_gunrunner</li>
+			<li>guy762_BaseTraderKind_spicerunner</li>
+		</baseTraderKinds>
+		<orbitalTraderKinds>
+			<li>SWCP_GCWOrbitalTraderKind_gunrunner</li>
+			<li>guy762_TraderKind_spicerunner</li>
+			<li>guy762_TraderKind_TrandoSlaver</li>
+		</orbitalTraderKinds>
 		
 		
 		

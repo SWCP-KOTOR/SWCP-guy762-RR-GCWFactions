@@ -65,7 +65,7 @@
 		  <color>(105,125,105)</color>
 		</graphicData>
 		<statBases>
-		  <MarketValue>100</MarketValue>
+		  <MarketValue>1000</MarketValue>
 		  <WorkToMake>6500</WorkToMake>
 		</statBases>
 		
@@ -89,7 +89,8 @@
 		</apparel>
 		
 		<tradeTags>
-			<li>guy762TT_KotOREquipment_hitech</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
 		</tradeTags>
 	</ThingDef>
   
