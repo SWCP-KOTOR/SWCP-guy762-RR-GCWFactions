@@ -142,6 +142,16 @@
                 </experienceGainsPerHour>
                 <additionalRestFall>0.5</additionalRestFall>
             </li>
+			<li>
+				<workLabelKey>SWCP_Piloting_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Piloting_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/XWing</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Intellectual>300</Intellectual>
+					<Construction>150</Construction>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.45</additionalRestFall>
+            </li>
         </workOptions>
 
     <!-- Bounty Options -->

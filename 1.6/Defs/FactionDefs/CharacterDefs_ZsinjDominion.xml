@@ -38,17 +38,17 @@
         </roles>
     </SWCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
-        <defName>SWZsinjDominionCharacter_LanuPasiqPotF</defName>
-        <pawnKind>SWCharPawnZJ_LanuPasiq_PotF</pawnKind>
-        <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
-        <xenotype>Baseliner</xenotype>
-        <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
-                <seniority>25</seniority> <!-- veteran inquisitor that can assume control if everyone else is killed -->
-            </li>
-        </roles>
-    </SWCP.Core.CharacterDef>
+	<!-- <SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF"> -->
+        <!-- <defName>SWZsinjDominionCharacter_LanuPasiqPotF</defName> -->
+        <!-- <pawnKind>SWCharPawnZJ_LanuPasiq_PotF</pawnKind> -->
+        <!-- <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction> -->
+        <!-- <xenotype>Baseliner</xenotype> -->
+        <!-- <roles> -->
+            <!-- <li Class="SWCP.Core.CharacterRole_FactionLeader"> -->
+                <!-- <seniority>25</seniority> -->
+            <!-- </li> -->
+        <!-- </roles> -->
+    <!-- </SWCP.Core.CharacterDef> -->
 	
 	
 	<!-- 50: Teubbo the Hutt -->

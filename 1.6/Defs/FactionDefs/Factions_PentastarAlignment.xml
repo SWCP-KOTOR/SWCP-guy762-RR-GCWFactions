@@ -61,7 +61,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
-		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
 			<li>Surface</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
@@ -79,7 +79,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
-		</arrivalLayerWhitelist>
+		</raidArrivalLayerWhitelist>
 
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
@@ -583,7 +583,7 @@
 				  
 				  <SWPentastar_ArmyMajor>100</SWPentastar_ArmyMajor>
 
-				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF>
+				  <!-- <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF> -->
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">10</SWPentastar_InQuestor_VPE>
 				</options>
@@ -614,7 +614,7 @@
 				  <SWPentastar_GuardianProtector>25</SWPentastar_GuardianProtector>
 				  <SWPentastar_ArmyGeneral_field>100</SWPentastar_ArmyGeneral_field>
 				  
-				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF>
+				  <!-- <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF> -->
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">10</SWPentastar_InQuestor_VPE>
 				</options>
@@ -637,7 +637,7 @@
 				<options>
 				  <!-- purge troopers -->
 				  
-				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">100</SWPentastar_InQuestor_PotF>
+				  <!-- <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">100</SWPentastar_InQuestor_PotF> -->
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">100</SWPentastar_InQuestor_VPE>
 				</options>
@@ -676,7 +676,7 @@
 				  <SWPentastar_Moff>0.1</SWPentastar_Moff>
 				  <SWPentastar_GuardianProtector>10</SWPentastar_GuardianProtector>
 				  
-				  <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF>
+				  <!-- <SWPentastar_InQuestor_PotF MayRequire="guy762.Lee.KotORPotF">10</SWPentastar_InQuestor_PotF> -->
 				  
 				  <SWPentastar_InQuestor_VPE MayRequire="lee.theforce.psycast">10</SWPentastar_InQuestor_VPE>
 				</options>

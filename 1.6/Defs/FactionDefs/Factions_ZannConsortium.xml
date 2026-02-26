@@ -67,7 +67,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
-		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
 			<li>Surface</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
@@ -86,7 +86,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
-		</arrivalLayerWhitelist>
+		</raidArrivalLayerWhitelist>
 		
 		
 		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
@@ -273,15 +273,17 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
-		<!-- <orbitalTraderKinds> -->
-		  <!-- <li>Orbital_BulkGoods</li> -->
-		  <!-- <li>Orbital_CombatSupplier</li> -->
-		  <!-- <li>Orbital_Exotic</li> -->
-		  <!-- <li>Orbital_PirateMerchant</li> -->
-		<!-- </orbitalTraderKinds> -->
+		<baseTraderKinds>
+			<li>SWCP_GCWBaseTraderKind_ScumGunrunner</li>
+			<li>guy762_BaseTraderKind_spicerunner</li>
+			<li>SWCP_GCWBaseTraderKind_ScumStarfighterDealer</li>
+		</baseTraderKinds>
+		<orbitalTraderKinds>
+			<li>SWCP_GCWOrbitalTraderKind_ScumGunrunner</li>
+			<li>SWCP_GCWOrbitalTraderKind_ScumStarfighterDealer</li>
+			<li>guy762_TraderKind_spicerunner</li>
+			<li>guy762_TraderKind_TrandoSlaver</li>
+		</orbitalTraderKinds>
 		
 		
 		

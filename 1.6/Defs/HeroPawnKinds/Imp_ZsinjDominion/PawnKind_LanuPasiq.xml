@@ -342,10 +342,10 @@
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWZsinj_LanuPasiq_PotF"  ParentName="SWWEPlayableVillain_LanuPasiq_PotF">
-		<defName>SWCharPawnZJ_LanuPasiq_PotF</defName>
-		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-	</PawnKindDef>
+	<!-- <PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWZsinj_LanuPasiq_PotF"  ParentName="SWWEPlayableVillain_LanuPasiq_PotF"> -->
+		<!-- <defName>SWCharPawnZJ_LanuPasiq_PotF</defName> -->
+		<!-- <defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType> -->
+	<!-- </PawnKindDef> -->
 
 
 

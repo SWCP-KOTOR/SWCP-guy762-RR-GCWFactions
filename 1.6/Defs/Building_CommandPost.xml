@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SWCP_CommandPost_small</defName>
+    <label>command post</label>
+    <description>.</description>
+	<thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Buildings/CommandPosts/CommandPost_small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+	  <drawOffset>(0,0,1)</drawOffset>
+	  
+      <shadowData>
+        <volume>(0.58, 0.35, 0.25)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+	
+	<size>(1,1)</size>
+	<uiIconScale>0.3</uiIconScale>
+	
+    <comps>
+		
+    </comps>
+	
+	<placeWorkers>
+      <li>PlaceWorker_NeverAdjacentSameDef</li>
+    </placeWorkers>
+
+	<!-- <specialDisplayRadius>3</specialDisplayRadius> -->
+	
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+	
+	<useHitPoints>False</useHitPoints>
+    <statBases>
+		<MarketValue>2000</MarketValue>
+		<WorkToBuild>1500</WorkToBuild>
+		<Mass>35</Mass>
+    </statBases>
+	
+	<canOverlapZones>false</canOverlapZones>
+    <building>
+		<ai_chillDestination>true</ai_chillDestination>
+		<allowAutoroof>false</allowAutoroof>
+		<minDistanceToSameTypeOfBuilding>3</minDistanceToSameTypeOfBuilding>
+    </building>
+    <costList>
+		<Steel>75</Steel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>2</ComponentSpacer>
+    </costList>
+	
+    <pathCost>1</pathCost>
+    <passability>PassThroughOnly</passability>
+    <!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+    <designationCategory>Joy</designationCategory>
+    <rotatable>false</rotatable>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	
+	<researchPrerequisites>
+		<li>Electricity</li>
+	</researchPrerequisites>
+	
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <!-- <tradeability>All</tradeability> -->
+    <!-- <tradeTags> -->
+      <!-- <li>ExoticBuilding</li> -->
+	  <!-- <li>guy762TT_SWMoistureVaporator</li> -->
+    <!-- </tradeTags> -->
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  <TerrainAffordanceDef>
+    <defName>guy762_TerrainAffordance_softsand</defName>
+    <label>soft sand</label>
+    <order>2362</order>
+    <visualizeOnAffordanceOverlay>true</visualizeOnAffordanceOverlay>
+    <affordanceOverlayColor>(196,196,64)</affordanceOverlayColor>
+  </TerrainAffordanceDef>
+
+
+
+</Defs>

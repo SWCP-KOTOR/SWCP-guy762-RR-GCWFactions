@@ -65,7 +65,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
-		<arrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
 			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
@@ -83,7 +83,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
-		</arrivalLayerWhitelist>
+		</raidArrivalLayerWhitelist>
 
 		<naturalEnemy>true</naturalEnemy>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -289,12 +289,13 @@
 		<!-- </visitorTraderKinds> -->
 		<baseTraderKinds>
 			<!-- <li>SWCP_GCWBaseTraderKind_ZsinjQuartermaster</li> -->
-			<li>SWCP_GCWBaseTraderKind_gunrunner</li>
+			<li>SWCP_GCWBaseTraderKind_ScumGunrunner</li>
 			<!-- <li>SWCP_GCWOrbitalTraderKind_ImperialSlaver</li> -->
 		</baseTraderKinds>
 		<orbitalTraderKinds>
-			<li>SWCP_GCWOrbitalTraderKind_gunrunner</li>
+			<li>SWCP_GCWOrbitalTraderKind_ScumGunrunner</li>
 			<li>guy762_TraderKind_spicerunner</li>
+			<li>SWCP_GCWOrbitalTraderKind_ScumStarfighterDealer</li>
 			<!-- <li>SWCP_GCWOrbitalTraderKind_ImperialSlaver</li> -->
 		</orbitalTraderKinds>
 		

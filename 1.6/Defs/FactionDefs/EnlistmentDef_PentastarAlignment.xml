@@ -179,13 +179,17 @@
                 <!-- <additionalRestFall>0.5</additionalRestFall> -->
             <!-- </li> -->
 			<li>
-                <workLabelKey>SWCP_Intelligence_Training_Label</workLabelKey>
-                <workDescKey>SWCP_Intelligence_Training_Desc</workDescKey>
-                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Computer_Use</workButtonIconTexPath>
+                <!-- <workLabelKey>SWCP_Intelligence_Training_Label</workLabelKey> -->
+                <!-- <workDescKey>SWCP_Intelligence_Training_Desc</workDescKey> -->
+                <!-- <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Computer_Use</workButtonIconTexPath> -->
+				<workLabelKey>SWCP_Piloting_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Piloting_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/XWing</workButtonIconTexPath>
                 <experienceGainsPerHour>
                     <Intellectual>300</Intellectual>
+					<Construction>150</Construction>
                 </experienceGainsPerHour>
-                <additionalRestFall>0.25</additionalRestFall>
+                <additionalRestFall>0.45</additionalRestFall>
             </li>
         </workOptions>
 

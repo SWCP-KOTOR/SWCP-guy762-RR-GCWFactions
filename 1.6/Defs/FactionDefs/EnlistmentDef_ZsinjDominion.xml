@@ -195,7 +195,7 @@
         <resignLetterLabelKey>SWCP_Resign_Letter_Label_harsh</resignLetterLabelKey>
         <resignButtonLabelKey>SWCP_Resign_Button_Label_harsh</resignButtonLabelKey>
         <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
-        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_ImperialRemnant</resignButtonIconTexPath>
+        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_ZsinjDominion</resignButtonIconTexPath>
 
     <!-- Kicked Out Options -->
 
