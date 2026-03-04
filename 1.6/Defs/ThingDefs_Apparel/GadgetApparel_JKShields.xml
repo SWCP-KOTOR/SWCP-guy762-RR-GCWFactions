@@ -26,7 +26,7 @@
 		<apparel>
 		  <bodyPartGroups>
 			<!-- <li>Waist</li> -->
-			<li>Arms</li>
+			<li>Legs</li>
 		  </bodyPartGroups>
 		  <tags>
 			<li>SWShield_light</li>
@@ -297,7 +297,7 @@
 		<apparel>
 		  <bodyPartGroups>
 			<!-- <li>Waist</li> -->
-			<li>Arms</li>
+			<li>Legs</li>
 		  </bodyPartGroups>
 		  <tags>
 			<li>SWShield_heavy</li>

@@ -655,9 +655,7 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<!-- <li>WorkDrive</li> -->
-			<li>ProductionCommand</li>
-			<!-- <li>MarksmanCommand</li> -->
+			<!-- <li>ProductionCommand</li> -->
 		</abilities>
 		
 		<modExtensions>

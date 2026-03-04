@@ -279,13 +279,14 @@
 		
 		
 		<caravanTraderKinds>
-		  <li>guy762_TraderKind_WanderingDoctor</li>
+			<li>guy762_TraderKind_WanderingDoctor</li>
+			<li>SWCPTrader_TaxCollector_RebelCell</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-		  <li>Visitor_Outlander_Standard</li>
+			<li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-		  <li>Base_Outlander_Standard</li>
+			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->
@@ -607,13 +608,16 @@
 			
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <kindDef>SWCPPawnGroupKind_TaxCollector</kindDef>
+                <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef>
                 <traders>
                     <SWRebel_NavyLt>1</SWRebel_NavyLt>
                 </traders>
                 <carriers>
-                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
-					<Muffalo>1</Muffalo>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">10</Dewback>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
                 </carriers>
                 <guards>
 					<SWRebel_trooper>10</SWRebel_trooper>

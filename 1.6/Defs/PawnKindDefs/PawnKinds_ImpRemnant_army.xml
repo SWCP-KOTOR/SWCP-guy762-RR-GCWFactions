@@ -461,6 +461,7 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_E22rifle</li>
 		</weaponTags>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWImpRemnant_ArmyRepeater_4x" ParentName="SWImpRemnant_ArmyHeavy">
@@ -472,6 +473,7 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_RT97Crepeater</li>
 		</weaponTags>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWImpRemnant_ArmyIon_2x" ParentName="SWImpRemnant_ArmyHeavy">
@@ -483,6 +485,7 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWImpRemnant_ArmyMissile_4x" ParentName="SWImpRemnant_ArmyHeavy">
@@ -494,6 +497,31 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_MMPTLMissieLauncher</li>
 		</weaponTags>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
+	</PawnKindDef>
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard one-offs -->
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyLieutenant_1x" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>xSWImpRemnant_ArmyLieutenant_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyTrooperBeaconGuard" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xSWImpRemnant_ArmyTrooperBeaconGuard</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>35</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E10rifle</li>
+		</weaponTags>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 	</PawnKindDef>
 	
 	
@@ -757,23 +785,8 @@
 		<weaponTags>
 			<li>SWRanged_TL50conc</li>
 		</weaponTags>
-		<!-- <biocodeWeaponChance>0.5</biocodeWeaponChance> -->
-		<!-- <weaponMoney>400~600</weaponMoney> -->
-		<!-- <weaponTags> -->
-			<!-- <li>SWRanged_SE14pistol</li> -->
-			<!-- <li>SWRanged_E11carbine</li> -->
-		<!-- </weaponTags> -->
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -788,9 +801,7 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<!-- <li>WorkDrive</li> -->
-			<!-- <li>ProductionCommand</li> -->
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		<startingHediffs>
 			<li>
@@ -882,20 +893,7 @@
 			<!-- <li>SWRanged_E11carbine</li> -->
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -996,26 +994,12 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350~500</weaponMoney>
+		<weaponMoney>400~1000</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -1031,6 +1015,9 @@
 		
 		<abilities>
 			<li>guy762_Ability_CommandTierIV</li>
+			
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
 		</abilities>
 		
 		<modExtensions>
@@ -1054,6 +1041,204 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<!-- non-field officers -->
+	
+	<PawnKindDef Name="SWImpRemnant_ArmyLt_onBase" ParentName="SWImpRemnant_Base">
+		<defName>SWImpRemnant_ArmyLt_onBase</defName>
+		<label>army lieutenant</label>
+		<combatPower>40</combatPower>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		
+		<maxPerGroup>4</maxPerGroup>
+		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_UniformCap_imperial</li>
+			<li>guy762_ImpUniform_lowrank</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_armylt</styleDef>
+				<color>(125,125,110)</color> <!-- imperial olive -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.9</biocodeWeaponChance>
+		<weaponMoney>400~1000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_SE14pistol</li>
+		</weaponTags>
+		
+		<invNutrition>4</invNutrition><invFoodDef>MealSimple</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<!-- <disallowedTraits> -->
+			<!-- <li>Brawler</li> -->
+		<!-- </disallowedTraits> -->
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<abilities>
+			<!-- <li>MarksmanCommand</li> -->
+		</abilities>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_takecover</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWImpRemnant_ArmyMajor_onBase" ParentName="SWImpRemnant_Base">
+		<defName>SWImpRemnant_ArmyMajor_onBase</defName>
+		<label>army major</label>
+		<combatPower>40</combatPower>
+		<minGenerationAge>26</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		
+		<maxPerGroup>1</maxPerGroup>
+		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_UniformCap_imperial</li>
+			<li>guy762_ImpUniform_midrank</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef>
+				<color>(125,125,110)</color> <!-- imperial olive -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.9</biocodeWeaponChance>
+		<weaponMoney>400~1000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_SE14pistol</li>
+		</weaponTags>
+		
+		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<!-- <disallowedTraits> -->
+			<!-- <li>Brawler</li> -->
+		<!-- </disallowedTraits> -->
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<abilities>
+			<li>guy762_Ability_CommandTierVI</li>
+		</abilities>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -1102,25 +1287,12 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350</weaponMoney>
+		<weaponMoney>400~1000</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RK3pistol</li>
+			<li>SWRanged_SE14pistol</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -1141,8 +1313,11 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 			<li>guy762_Ability_CommandTierV</li>
+			
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
 		</abilities>
 		
 		<modExtensions>
@@ -1164,6 +1339,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWLocalWarlord_ArmyGeneral" ParentName="SWImpRemnant_ArmyGeneral">
+		<defName>SWLocalWarlord_ArmyGeneral</defName>
+		<label>local warlord</label>
+		<factionLeader>true</factionLeader>
+		<defaultFactionType>guy762_SWWarlordsFaction_LocalWarlord</defaultFactionType>
 	</PawnKindDef>
 	
 	

@@ -10,39 +10,43 @@
 		</graphicData>
 		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
 		<statBases>
-		  <MarketValue>1000</MarketValue>
-		  <Mass>1</Mass>
+			<MarketValue>1000</MarketValue>
+			<RoyalFavorValue>0.5</RoyalFavorValue> <!-- 1 honor/2 datapads -->
+			<Mass>1</Mass>
 		</statBases>
 		
-		<thingClass>Book</thingClass>
-		<thingCategories>
-		  <li>Books</li>
-		</thingCategories>
-		<inspectorTabs>
-		  <li>ITab_Book</li>
-		</inspectorTabs>
-		<comps>
-			<li Class="CompProperties_Book">
-				<nameMaker>Namer_Map</nameMaker>
-				<descriptionMaker>Description_Map</descriptionMaker>
-				<ageYearsRange>0~1</ageYearsRange>
-				<openGraphic>
-				  <texPath>Things/Item/Book/Map/Map_Open</texPath>
-				  <graphicClass>Graphic_Multi</graphicClass>
-				  <drawSize>0.7</drawSize>
-				</openGraphic>
-				<verticalGraphic>
-				  <texPath>Things/Item/Book/Map/Map_Vertical</texPath>
-				  <graphicClass>Graphic_Multi</graphicClass>
-				  <addTopAltitudeBias>true</addTopAltitudeBias>
-				</verticalGraphic>
-				<doers>
-				  <li Class="BookOutcomeProperties_GiveQuest">
-					<questChance>0.5</questChance>
-				  </li>
-				</doers>
-			</li>
-		</comps>
+		
+					<!-- broken + breaks world generation because these things are set to spawn on faction leaders -->
+		
+		<!-- <thingClass>Book</thingClass> -->
+		<!-- <thingCategories> -->
+		  <!-- <li>Books</li> -->
+		<!-- </thingCategories> -->
+		<!-- <inspectorTabs> -->
+		  <!-- <li>ITab_Book</li> -->
+		<!-- </inspectorTabs> -->
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_Book"> -->
+				<!-- <nameMaker>Namer_Map</nameMaker> -->
+				<!-- <descriptionMaker>Description_Map</descriptionMaker> -->
+				<!-- <ageYearsRange>0~1</ageYearsRange> -->
+				<!-- <openGraphic> -->
+				  <!-- <texPath>Things/Item/Book/Map/Map_Open</texPath> -->
+				  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				  <!-- <drawSize>0.7</drawSize> -->
+				<!-- </openGraphic> -->
+				<!-- <verticalGraphic> -->
+				  <!-- <texPath>Things/Item/Book/Map/Map_Vertical</texPath> -->
+				  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				  <!-- <addTopAltitudeBias>true</addTopAltitudeBias> -->
+				<!-- </verticalGraphic> -->
+				<!-- <doers> -->
+				  <!-- <li Class="BookOutcomeProperties_GiveQuest"> -->
+					<!-- <questChance>0.5</questChance> -->
+				  <!-- </li> -->
+				<!-- </doers> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 
 		<thingSetMakerTags>
 		  <!-- <li>RewardStandardMidFreq</li> -->
@@ -212,39 +216,40 @@
 		</graphicData>
 		<!-- <stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay> -->
 		<statBases>
-		  <MarketValue>10000</MarketValue>
-		  <Mass>1</Mass>
+			<MarketValue>10000</MarketValue>
+			<RoyalFavorValue>10</RoyalFavorValue> <!-- 10 honor/datapad -->
+			<Mass>1</Mass>
 		</statBases>
 		
-		<thingClass>Book</thingClass>
-		<thingCategories>
-		  <li>Books</li>
-		</thingCategories>
-		<inspectorTabs>
-		  <li>ITab_Book</li>
-		</inspectorTabs>
-		<comps>
-			<li Class="CompProperties_Book">
-				<nameMaker>Namer_Map</nameMaker>
-				<descriptionMaker>Description_Map</descriptionMaker>
-				<ageYearsRange>0~1</ageYearsRange>
-				<openGraphic>
-				  <texPath>Things/Item/Book/Map/Map_Open</texPath>
-				  <graphicClass>Graphic_Multi</graphicClass>
-				  <drawSize>0.7</drawSize>
-				</openGraphic>
-				<verticalGraphic>
-				  <texPath>Things/Item/Book/Map/Map_Vertical</texPath>
-				  <graphicClass>Graphic_Multi</graphicClass>
-				  <addTopAltitudeBias>true</addTopAltitudeBias>
-				</verticalGraphic>
-				<doers>
-				  <li Class="BookOutcomeProperties_GiveQuest">
-					<questChance>0.5</questChance>
-				  </li>
-				</doers>
-			</li>
-		</comps>
+		<!-- <thingClass>Book</thingClass> -->
+		<!-- <thingCategories> -->
+		  <!-- <li>Books</li> -->
+		<!-- </thingCategories> -->
+		<!-- <inspectorTabs> -->
+		  <!-- <li>ITab_Book</li> -->
+		<!-- </inspectorTabs> -->
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_Book"> -->
+				<!-- <nameMaker>Namer_Map</nameMaker> -->
+				<!-- <descriptionMaker>Description_Map</descriptionMaker> -->
+				<!-- <ageYearsRange>0~1</ageYearsRange> -->
+				<!-- <openGraphic> -->
+				  <!-- <texPath>Things/Item/Book/Map/Map_Open</texPath> -->
+				  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				  <!-- <drawSize>0.7</drawSize> -->
+				<!-- </openGraphic> -->
+				<!-- <verticalGraphic> -->
+				  <!-- <texPath>Things/Item/Book/Map/Map_Vertical</texPath> -->
+				  <!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				  <!-- <addTopAltitudeBias>true</addTopAltitudeBias> -->
+				<!-- </verticalGraphic> -->
+				<!-- <doers> -->
+				  <!-- <li Class="BookOutcomeProperties_GiveQuest"> -->
+					<!-- <questChance>0.5</questChance> -->
+				  <!-- </li> -->
+				<!-- </doers> -->
+			<!-- </li> -->
+		<!-- </comps> -->
 
 		<thingSetMakerTags>
 		  <!-- <li>RewardStandardMidFreq</li> -->

@@ -45,6 +45,7 @@
 		  <tags Inherit="False">
 			<li>RebelAlliance_lowrankofficer</li>
 			<li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyRebelOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -225,6 +226,7 @@
 			<tags Inherit="False">
 				<li>NewRepublic_ArmyOfficer</li>
 				<li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingRebelOfficerUniform</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

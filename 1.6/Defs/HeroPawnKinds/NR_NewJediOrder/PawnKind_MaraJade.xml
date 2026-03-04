@@ -46,7 +46,7 @@
 		<weaponTags>
 		  <!-- <li>SE_bandon</li> -->
 		  <!-- <li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_LightsaberSingle</li> -->
-		  <li>SWRanged_RK3pistol_silenced</li>
+		  <li>SWRanged_EC17pistol_silenced</li>
 		</weaponTags>
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_I</li>

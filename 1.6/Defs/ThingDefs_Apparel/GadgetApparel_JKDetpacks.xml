@@ -94,7 +94,8 @@
             <careIfDamaged>false</careIfDamaged>
             <wearPerDay>0</wearPerDay>
             <bodyPartGroups>
-                <li>Waist</li>
+                <!-- <li>Waist</li> -->
+				<li>Legs</li>
             </bodyPartGroups>
             <layers>
                 <li>Belt</li>
@@ -122,7 +123,7 @@
         <label>flying detpack</label>
         <thingClass>MinePocket.Projectile_SpawnMine</thingClass>        <!-- important -->
 		<graphicData>
-		  <texPath>Items/JK_detpack_item</texPath>
+			<texPath>Items/JK_detpack_item</texPath>
 		</graphicData>
         <projectile>
             <speed>25</speed>

@@ -154,6 +154,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_lowrankofficer</li>
 			<li>SWGCWSpecificApparelItem_LowRankNewRepublicOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyNewRepublicOfficerUniform</li>
 		  </tags>
 		  <layers Inherit="False">
 			<li>Middle</li>

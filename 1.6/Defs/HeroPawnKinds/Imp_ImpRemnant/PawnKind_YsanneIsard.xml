@@ -38,8 +38,7 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RK3pistol_isard</li>
-			<!-- <li>SWRanged_A180pistol</li> give to Daala instead -->
+			<li>SWRanged_A180pistol</li>
 		</weaponTags>
 		<!-- <skills> -->
 			<!-- <li> -->

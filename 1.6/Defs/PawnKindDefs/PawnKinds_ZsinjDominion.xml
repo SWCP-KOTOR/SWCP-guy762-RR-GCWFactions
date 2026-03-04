@@ -587,9 +587,9 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>1600~4800</weaponMoney>
+		<weaponMoney>2200</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_DH17rifle_bayonet</li>
+			<li>SWRanged_BK43repeater_raptor</li>
 		</weaponTags>
 
 		<techHediffsChance>1</techHediffsChance>
@@ -1170,10 +1170,11 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<weaponMoney>7000</weaponMoney>
+		<weaponMoney>4000~14000</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_EXpulsecarbine</li>
-			<!-- <li>SWRanged_PLX4LRocketRifle</li> -->
+			<li>SWRanged_ArcCaster</li>
+			<li>SWRanged_PLX4LRocketRifle</li>
 		</weaponTags>
 
 		<techHediffsChance>5</techHediffsChance>
@@ -1260,6 +1261,10 @@
 		<defName>xSWZsinj_P0DarkTrooper_9x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>9</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_EXpulsecarbine</li>
+		</weaponTags>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWZsinj_P0DarkTrooperArcCaster_6x" ParentName="SWZsinj_phase0darktrooper">

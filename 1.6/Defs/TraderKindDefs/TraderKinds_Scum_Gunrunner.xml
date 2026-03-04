@@ -271,6 +271,13 @@
 		  <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
 		  <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
 		  <li Class="StockGenerator_BuyTradeTag"><tag>HoraxWeapon</tag></li>
+		  
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_KotORMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_KotORRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWApparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWGadgetEquipment_any</tag></li>
 
 		</stockGenerators>
 	</TraderKindDef>

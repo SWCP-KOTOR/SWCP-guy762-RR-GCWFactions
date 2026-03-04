@@ -247,6 +247,8 @@
 			<!-- <li>KotORRoyaltyTag_ORprivI</li> -->
 			<!-- <li>KotORRoyaltyTag_ORprivII</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 		  </tags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -321,6 +323,8 @@
 		<apparel>
 		  <tags Inherit="False">
 			<li>SWGCWSpecificApparelItem_SkirtedImperialOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/blankskirt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -399,6 +403,7 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_impofficer</li>
 			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -409,21 +414,12 @@
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_opslt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_ISBlt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_INTlt</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_departmentCO</styleDef>
-		  </li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_armylt</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_opslt</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_ISBlt</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_INTlt</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_departmentCO</styleDef></li>
 		</randomStyle>
 		
 		<tradeTags>
@@ -440,6 +436,17 @@
 		</colorGenerator>
 	</ThingDef>
 	  
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficer_armylt</defName>
+		<overrideLabel>imperial uniform, army lieutenant's</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/armylieutenant/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialOfficer/armylieutenant/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_navylt</defName>
 		<overrideLabel>imperial uniform, navy lieutenant's</overrideLabel>
@@ -542,6 +549,7 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_imprankingofficer</li>
 			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/linecaptain/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -552,21 +560,12 @@
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_linecap</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_viceroy</styleDef>
-		  </li>
-		  <li>
-			<styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef>
-		  </li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_linecap</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_viceroy</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef></li>
 		</randomStyle>
 		
 		<tradeTags>
@@ -590,6 +589,17 @@
 		</colorGenerator>
 	</ThingDef>
 	  
+	<ThingStyleDef>
+		<defName>guy762_RankStyle_ImpOfficer_armymajor</defName>
+		<overrideLabel>imperial uniform, army major's</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/armymajor/Apparel</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ImperialOfficer/armymajor/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_navycap</defName>
 		<overrideLabel>imperial uniform, navy captain's</overrideLabel>
@@ -694,6 +704,8 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_warlord</li>
 			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -885,6 +897,8 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_warlord</li>
 			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>

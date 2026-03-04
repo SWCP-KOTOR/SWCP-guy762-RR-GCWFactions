@@ -49,6 +49,8 @@
 			<tags>
 				<li>RemnantEmpire_darktrooperP0armor</li>
 				<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Armor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/DarkTrooperPhase0/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -155,6 +157,8 @@
 			<tags>
 				<li>RemnantEmpire_darktrooperP0armor</li>
 				<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Helmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/DarkTrooperPhase0/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -166,6 +170,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<drawData>
 				<!-- <defaultData> -->
@@ -372,6 +378,8 @@
 			<tags>
 				<li>PentastarAlignment_GuardianProtector</li>
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/PAGuardianProtector/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -510,6 +518,8 @@
 				<!--li>EVA</li-->
 				<li>PentastarAlignment_GuardianProtector</li>
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/PAGuardianProtector/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -521,6 +531,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -658,6 +670,7 @@
 			<tags>
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Stormtrooper/raptor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -793,6 +806,7 @@
 			<tags>
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Stormtrooper/raptor/raptorhelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -804,6 +818,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -897,6 +913,7 @@
 			<tags>
 				<li>ZsinjEmpire_raptorpilot</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorPilotHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/TIEPilot/raptorpilot</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -908,6 +925,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -1282,6 +1301,7 @@
 		  <tags Inherit="False">
 			<li>PentastarAlignment_InQuestor</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
+			<li>SWGCWRoyaltyTag_AnySithApparel</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Inquisitor/Armor/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -1381,6 +1401,7 @@
 			<tags Inherit="False">
 				<li>PentastarAlignment_InQuestor</li>
 				<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
+				<li>SWGCWRoyaltyTag_AnySithApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Inquisitor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1469,7 +1490,7 @@
 
 
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ImpRoyalGuardHelmet</defName>
 		<label>Sovereign Protector helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1501,6 +1522,9 @@
 			<tags>
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWGCWRoyaltyTag_AnySithApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RoyalGuard/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1605,6 +1629,9 @@
 			<tags>
 				<li>RemnantEmpire_royalguard</li>
 				<li>SWGCWSpecificApparelItem_ImperialRoyalGuardHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWGCWRoyaltyTag_AnySithApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RoyalGuard/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

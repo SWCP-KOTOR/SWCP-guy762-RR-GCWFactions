@@ -245,6 +245,7 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<ai_IsWeapon>true</ai_IsWeapon>
+				<onlyManualCast>false</onlyManualCast>
 				<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
 			</li>
 			<li>
@@ -288,7 +289,7 @@
 				</points>
 				</beamLineFleckChanceCurve>
 				
-				<ai_IsWeapon>false</ai_IsWeapon>
+				<!-- <ai_IsWeapon>false</ai_IsWeapon> -->
 				<onlyManualCast>true</onlyManualCast>
 			</li>
 		</verbs>

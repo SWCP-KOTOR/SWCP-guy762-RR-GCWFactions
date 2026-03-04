@@ -146,8 +146,8 @@
     </SWCP.Core.CharacterDef>
 	
 	<SWCP.Core.CharacterDef>
-        <defName>SWPentastarCharacter_InitialPlanetaryViceroy</defName>
-        <pawnKind>SWPentastar_Viceroy</pawnKind>
+        <defName>SWPentastarCharacter_InitialPlanetaryMoff</defName>
+        <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>

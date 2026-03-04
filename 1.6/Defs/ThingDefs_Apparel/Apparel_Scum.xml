@@ -752,6 +752,7 @@
 			<tags>
 				<li>ZannConsortium_DisruptorMerc</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumMercHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ZannMerc/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -810,6 +811,7 @@
 			<tags>
 				<li>ZannConsortium_DisruptorMerc</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumMercArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ZannMerc/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -919,6 +921,7 @@
 			<tags>
 				<li>ZannConsortium_defiler</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ZannDefiler/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -930,6 +933,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -993,6 +998,7 @@
 			<tags>
 				<li>ZannConsortium_defiler</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ZannDefiler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

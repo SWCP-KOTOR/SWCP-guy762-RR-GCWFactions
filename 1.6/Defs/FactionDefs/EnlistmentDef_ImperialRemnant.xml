@@ -55,11 +55,10 @@
             <li>
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
                 <provisionsDescKey>SWCP_Provisions_Desc_4xSupplyContainer10days</provisionsDescKey>
-                <provisionsButtonIconTexPath>UI/Icons/supply_container</provisionsButtonIconTexPath>
-                <provisionsButtonIconTexPath>Buildings/KotOR_PlasteelCylinder</provisionsButtonIconTexPath>
+                <provisionsButtonIconTexPath>UI/Icons/SupplyContainer_SotEBlue</provisionsButtonIconTexPath>
                 <provisions>
                     <li>
-                        <thing>guy762_KotORLootBox_FoodMeds</thing>
+                        <thing>SWCPItemLootBox_FoodMeds</thing>
                         <amountRange>4</amountRange>
                     </li>
                 </provisions>

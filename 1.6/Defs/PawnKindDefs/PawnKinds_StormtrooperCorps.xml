@@ -36,6 +36,8 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 		
+		<invNutrition>2</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
+		
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 		</forcedTraits>

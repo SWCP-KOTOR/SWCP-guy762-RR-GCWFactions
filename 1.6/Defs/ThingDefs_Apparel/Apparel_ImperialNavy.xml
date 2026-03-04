@@ -57,9 +57,13 @@
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
+				<!-- <li> -->
+					<!-- <weight>15</weight> -->
+					<!-- <only>(250,250,250)</only> -->
+				<!-- </li> -->
 				<li>
-					<weight>15</weight>
-					<only>(250,250,250)</only>
+					<weight>10</weight>
+					<only>(40,40,40)</only>  <!-- deeper black -->
 				</li>
 			</options>
 		</colorGenerator>
@@ -245,6 +249,7 @@
 			<tags>
 				<li>GreaterMaldrood_navycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImpNavyCommando/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -256,6 +261,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -304,6 +311,7 @@
 			<tags Inherit="False">
 				<li>GreaterMaldrood_navycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImpNavyCommando/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

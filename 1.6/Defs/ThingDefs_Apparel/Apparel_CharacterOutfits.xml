@@ -71,6 +71,7 @@
 		  </layers>
 		  <tags>
 			<li>SWGCWSpecificApparelItem_LumiyaHeaddress</li>
+			<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 		  </tags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -143,6 +144,7 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_LumiyaArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Lumiya/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -196,6 +198,7 @@
 		<apparel>
 			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_CarnorJaxRoyalGuardArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			
 			<renderNodeProperties Inherit="False">
@@ -291,6 +294,7 @@
 		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_DengarArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Dengar/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -394,6 +398,7 @@
 			<tags>
 				<li>SaV_JodoKast</li>
 				<li>SWGCWSpecificApparelItem_JodoKastMandoArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			
 			<gender>Male</gender>
@@ -541,6 +546,7 @@
 			<tags>
 				<li>SaV_JodoKast</li>
 				<li>SWGCWSpecificApparelItem_WornMandoHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Mandalorian/jodokast/helmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -676,6 +682,7 @@
 			<tags Inherit="False">
 				<li>SWCPSpecificApparelItem_ZuckussArmor</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Zuckuss/Apparel</wornGraphicPath>
 			<drawData>
@@ -764,6 +771,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_kylekatarn</li>
 			<li>SWGCWSpecificApparelItem_KyleKatarnClothes</li>
+			<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/CharacterOutfits/KyleKatarn/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -882,6 +890,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_nym</li>
 			<li>SWGCWSpecificApparelItem_NymBodysuit</li>
+			<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/CharacterOutfits/Nym/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -988,6 +997,7 @@
 		  <tags>
 			<li>NewRepublic_herasyndulla</li>
 			<li>SWGCWSpecificApparelItem_HeraSyndullaTwilekHat</li>
+			<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 		  </tags>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -1091,6 +1101,7 @@
 			<tags Inherit="False">
 				<li>NewRepublic_herasyndulla</li>
 				<li>SWGCWSpecificApparelItem_HeraSyndullaBodysuit</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/HeraSyndulla/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1219,6 +1230,7 @@
 			<tags>
 				<li>NewRepublic_roguesquadron</li>
 				<li>SWGCWSpecificApparelItem_RogueSquadronXWingPilotHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelPilot/helmet_wedge/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1350,6 +1362,7 @@
 			<tags>
 				<li>NewRepublic_keo</li>
 				<li>SWGCWSpecificApparelItem_CharacterAWingPilotHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelPilot/helmetAWing_keo/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

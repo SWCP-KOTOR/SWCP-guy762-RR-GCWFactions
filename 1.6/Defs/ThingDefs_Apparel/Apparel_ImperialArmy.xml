@@ -35,6 +35,7 @@
 			<tags Inherit="False">
 				<li>RemnantEmpire_armycommando</li>
 				<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
 			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
@@ -209,6 +210,7 @@
 			<tags>
 				<li>RemnantEmpire_armylieutenant</li>
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -313,6 +315,7 @@
 			<tags>
 				<li>RemnantEmpire_armymajor</li>
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -421,6 +424,8 @@
 			<tags>
 				<li>RemnantEmpire_armygeneral</li>
 				<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -548,6 +553,8 @@
 			<tags>
 				<li>RemnantEmpire_grandgeneral</li>
 				<li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1211,6 +1218,7 @@
 			<tags>
 				<li>RemnantEmpire_armycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialTankTrooper/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1222,6 +1230,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>

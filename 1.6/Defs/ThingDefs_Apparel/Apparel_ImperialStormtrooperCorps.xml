@@ -170,6 +170,8 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
 			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -246,6 +248,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
 			<layers Inherit="False">
 				<li>Shell</li>
 			</layers>
@@ -255,6 +258,7 @@
 			<tags Inherit="False">
 				<li>RemnantEmpire_stormieofficer</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/pauldron/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -325,6 +329,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
 			<layers Inherit="False">
 				<li>Shell</li>
 			</layers>
@@ -334,6 +339,7 @@
 			<tags Inherit="False">
 				<li>ThrawnEmpire_stormieofficer</li>
 				<li>SWGCWSpecificApparelItem_ThrawnImperialStormtrooperPauldron</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/pauldron/7thFleet/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -648,6 +654,8 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -785,6 +793,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -995,6 +1005,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">

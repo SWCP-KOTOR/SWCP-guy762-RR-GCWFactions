@@ -62,6 +62,7 @@
 			<!--immuneToToxGasExposure>true</immuneToToxGasExposure-->
 			<tags>
 				<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Mandalorian/helmet_norangefinder/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -77,6 +78,8 @@
 				<li>guy762_KotORFaction_Mando</li>
 			</ideoDesireAllowedFactionCategoryTags-->
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -285,6 +288,7 @@
 			<!--immuneToToxGasExposure>true</immuneToToxGasExposure-->
 			<tags>
 				<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Mandalorian/helmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -300,6 +304,8 @@
 				<li>guy762_KotORFaction_Mando</li>
 			</ideoDesireAllowedFactionCategoryTags-->
 			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -497,7 +503,7 @@
 		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_MandoArmor</li>
-				<!-- <li>KotORRoyaltyTag_AnyMandoArmor</li> -->
+				<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Mandalorian/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

@@ -106,14 +106,13 @@
 		</backstoryFiltersOverride>
 		<abilities>
 			<li>guy762_Ability_CommandTierV</li>
+			
+			<li>SWPotF_TacticAbility_Charge</li>
+			<li>SWPotF_TacticDelegationAbility_charge</li>
 			<li>SWPotF_TacticAbility_Harass</li>
 			<li>SWPotF_TacticDelegationAbility_harass</li>
 			<li>SWPotF_TacticAbility_ZealousRage</li>
 			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
-			<li>SWPotF_TacticAbility_Sprint</li>
-			<li>SWPotF_TacticDelegationAbility_sprint</li>
-
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">

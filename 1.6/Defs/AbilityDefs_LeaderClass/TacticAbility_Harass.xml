@@ -156,7 +156,7 @@
 	<HediffDef>
         <defName>SWPotF_TacticAbilityHediff_HarassMoving</defName>
         <label>Harassing</label>
-        <description>This pawn is using "harass" tactics to intimidate the enemy. Movement speed and damage resistance is greatly increased</description>
+        <description>This pawn is using "harass" tactics to intimidate the enemy. Movement speed and damage resistance is greatly increased.</description>
 		<defaultLabelColor>(255,255,135)</defaultLabelColor> <!-- soft yellow -->
         <hediffClass>HediffWithComps</hediffClass>
         <isBad>false</isBad>

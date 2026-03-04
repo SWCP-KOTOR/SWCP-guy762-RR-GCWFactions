@@ -283,6 +283,7 @@
 			<tags>
 				<li>NewRepublic_rebelheavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelCloneArmor/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -579,6 +580,7 @@
 		  <tags Inherit="False">
 			<li>NewRepublic_rebeltrooper</li>
 			<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
+			<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/armylt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -719,6 +721,9 @@
 			<tags>
 				<li>NewRepublic_cloneveteran</li>
 				<li>SWGCWSpecificApparelItem_VeteranCloneTrooperArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWGCWRoyaltyTag_AnyCloneWarsApparel</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CloneTrooper/501st_dirty/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -835,6 +840,7 @@
 			<tags>
 				<li>RebelCell_heavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelCloneArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -930,6 +936,7 @@
 			<tags>
 				<li>RebelCell_heavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelBattleHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RebelCloneArmor/bighelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

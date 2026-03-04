@@ -50,16 +50,15 @@
 		
 		
 		
-		<!-- <royalTitleTags> -->
-		  <!-- <li>KotORTitleTag_OR_privateer</li> -->
-		  <!-- <li>KotORTitleTag_OR_enlisted</li> -->
-		<!-- </royalTitleTags> -->
-		<!-- <royalFavorLabel>commendations</royalFavorLabel> -->
-		<!-- <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath> -->
+		<royalTitleTags>
+			<li>KotORTitleTag_OR_enlisted</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
 		
-		<!-- <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass> -->
-		<!-- <royalTitleInheritanceRelations> -->
-		<!-- </royalTitleInheritanceRelations> -->
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
 		
 		
 		
@@ -331,12 +330,13 @@
 		</backstoryFilters>
 		
 		
-		<!-- <caravanTraderKinds> -->
+		<caravanTraderKinds>
+			<li>SWCPTrader_TaxCollector_ImpRemnant</li>
 		  <!-- <li>Caravan_Outlander_BulkGoods</li> -->
 		  <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
 		  <!-- <li>Caravan_Outlander_Exotic</li> -->
 		  <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
-		<!-- </caravanTraderKinds> -->
+		</caravanTraderKinds>
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
@@ -885,16 +885,17 @@
 					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
 					
 					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-					<SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
-					<!-- <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat> -->
+					<SWImpRemnant_Engineer>5</SWImpRemnant_Engineer>
+					<SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat>
 
-					<SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper>
+					<!-- <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper> -->
 					<!-- <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer> -->
 
+	<!-- officers are handled by the base generation parts -->
 					<!-- <SWImpRemnant_ArmyMajor>100</SWImpRemnant_ArmyMajor> -->
 					<!-- <SWImpRemnant_ArmyGeneral>0.1</SWImpRemnant_ArmyGeneral> -->
 
-					<SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt>
+					<!-- <SWImpRemnant_OpsLt>5</SWImpRemnant_OpsLt> -->
 					<!-- <SWImpRemnant_OpsGeneral>0.1</SWImpRemnant_OpsGeneral> -->
 
 					<!-- <SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy> -->
@@ -940,14 +941,17 @@
 			
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <kindDef>SWCPPawnGroupKind_TaxCollector</kindDef>
+                <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef>
                 <traders>
                     <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt>
                     <SWImpRemnant_Viceroy>0.25</SWImpRemnant_Viceroy>
                 </traders>
                 <carriers>
-                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
-					<Muffalo>1</Muffalo>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">10</Dewback>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
                 </carriers>
                 <guards>
 					<SWImpRemnant_ArmyConscript>10</SWImpRemnant_ArmyConscript>

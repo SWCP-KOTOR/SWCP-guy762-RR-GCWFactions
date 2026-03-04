@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Abstract="True" Name="SWCPBuildingLootBoxBASE" ParentName="BuildingBase">
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<rotatable>false</rotatable>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<canLandGravshipOn>false</canLandGravshipOn>
+		</building>
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+
+    <ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_FoodMeds</defName>
+        <label>supply container</label>
+        <description>A supply container containing some food and medical supplies.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_PlasteelCylinder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+		
+		<killedLeavings>
+            <KotORChunk_plasteel>1</KotORChunk_plasteel>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="SWCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>MealSurvivalPack</thingDef>
+                        <countRange>3~6</countRange>
+						<weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_SpacerMedKit</thingDef>
+                        <countRange>1~2</countRange>
+						<weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>Chocolate</thingDef>
+                        <countRange>1~2</countRange>
+                        <weight>0.5</weight>
+                    </li>
+                    <li>
+                        <thingDef>KOTOR_kolto</thingDef>
+                        <countRange>2~3</countRange>
+                        <weight>0.1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac</thingDef>
+                        <countRange>3~5</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac_adv</thingDef>
+                        <countRange>2~4</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_medpac_life</thingDef>
+                        <countRange>1~3</countRange>
+                        <weight>0.1</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_plasteelcylinder_open</soundOnUsed>
+			</li>
+            <!-- <li Class="CompProperties_UseEffectDestroySelf"/> -->
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_FoodMeds</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_FoodMeds>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_FoodMeds>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_ImpBaseCommon</defName>
+        <label>equipment container</label>
+        <description>An equipment container for security and combat personnel.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_MetalBox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+		
+		<killedLeavings>
+            <ChunkSlagSteel>1</ChunkSlagSteel>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="SWCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>3</numWeightedDrops>
+				<guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+				
+					<li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>10~250</countRange>
+                        <weight>0.5</weight>
+                    </li>
+
+					<!-- weapons -->
+					<li>
+                        <thingDef>guy762_RK3pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_SE14pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_EC17pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_E10rifle</thingDef>
+                        <countRange>1</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_E11carbine</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_ElectroBatonGCW</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+						<!-- armor -->
+					<li>
+                        <thingDef>guy762_ImpLightCombatArmor</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_NavyTrooperHelmet</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_ArmyTrooperGasMask</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+						<!-- consumables -->
+					<li>
+                        <thingDef>guy762_grenadebelt_frag</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_grenadebelt_stun</thingDef>
+                        <countRange>1</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_battle</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_con</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.49</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_dex</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.48</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_str</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.47</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_metalbox_open</soundOnUsed>
+			</li>
+            <!-- <li Class="CompProperties_UseEffectDestroySelf"/> -->
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_ImpBaseCommon</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_ImpBaseCommon>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_ImpBaseCommon>
+		</things>
+	</PrefabDef>
+    
+
+</Defs>

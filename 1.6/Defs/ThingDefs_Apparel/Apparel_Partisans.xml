@@ -724,6 +724,7 @@
 		<apparel>
 			<tags>
 				<li>SWGCWSpecificApparelItem_PartisanWarlordArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/PartisanWarlord/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

@@ -51,6 +51,8 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
 			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -192,6 +194,7 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_TIEpilotAce</li>
 			<li>SWGCWSpecificApparelItem_AceImperialTIEPilotBodysuit</li>
+			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/TIEPilot/bodysuit_ace/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -332,6 +335,7 @@
 			<tags>
 				<li>RemnantEmpire_TIEpilotAce</li>
 				<li>SWGCWSpecificApparelItem_AceImperialTIEPilotHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
 			<wornGraphicPath>SWApparel/TIEPilot/helmet_veteran/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -343,6 +347,8 @@
 				<li>FullHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">

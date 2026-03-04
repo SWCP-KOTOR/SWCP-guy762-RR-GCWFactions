@@ -137,6 +137,7 @@
 				<statFactors>
 					<MoveSpeed>0</MoveSpeed>
 					<CrawlSpeed>0</CrawlSpeed>
+					<Vulnerability MayRequire="rim.job.world">0</Vulnerability>
 				</statFactors>
 				<statOffsets>
 					<MeleeDodgeChance>0</MeleeDodgeChance>
@@ -175,7 +176,7 @@
 			<li Class="HediffCompProperties_Invisibility">
 				<visibleToPlayer>true</visibleToPlayer>
 			</li>
-			
+			<li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_Disappears">
                 <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->

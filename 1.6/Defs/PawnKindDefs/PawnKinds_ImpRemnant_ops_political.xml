@@ -259,6 +259,10 @@
 						<skill>Construction</skill>
 						<range>4~6</range>
 					</li>
+					<li>
+						<skill>Mining</skill>
+						<range>4~6</range>
+					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>

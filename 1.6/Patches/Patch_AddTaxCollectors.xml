@@ -16,6 +16,7 @@
 				<minWealth>15000</minWealth>
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
 				</allowedTargetTags>
 				<enableIfAnyModActive>
 					<li>Ludeon.RimWorld.Royalty</li>
@@ -30,6 +31,7 @@
 				<minWealth>15000</minWealth>
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
 				</allowedTargetTags>
 				<enableIfAnyModActive>
 					<li>Ludeon.RimWorld.Royalty</li>
@@ -44,6 +46,7 @@
 				<minWealth>15000</minWealth>
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
 				</allowedTargetTags>
 				<enableIfAnyModActive>
 					<li>Ludeon.RimWorld.Royalty</li>
@@ -58,6 +61,7 @@
 				<minWealth>15000</minWealth>
 				<allowedTargetTags>
 					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
 				</allowedTargetTags>
 				<enableIfAnyModActive>
 					<li>Ludeon.RimWorld.Royalty</li>
