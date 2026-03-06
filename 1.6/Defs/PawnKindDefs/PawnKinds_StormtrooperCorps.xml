@@ -1163,12 +1163,13 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.9</biocodeWeaponChance>
-		<weaponMoney>1800~5000</weaponMoney>
+		<weaponMoney>2050~5000</weaponMoney>
 		<weaponTags>
-			<!-- <li>SWRanged_TL50blaster</li> -->
+			<li>SWRanged_TL50blaster</li>
 			<li>SWRanged_EE3carbine</li>
-			<!-- <li>SWRanged_DLT19repeater</li> -->
-			<!-- <li>SWRanged_DLT20Asniper</li> -->
+			<li>SWRanged_DLT19repeater</li>
+			<li>SWRanged_DLT20Asniper</li>
+			<li>SWRanged_EC17pistol_silenced</li>
 		</weaponTags>
 
 		<techHediffsChance>10</techHediffsChance>
@@ -1297,6 +1298,10 @@
 		<defName>xSWImpRemnant_StormCommando_6x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_EE3carbine</li>
+		</weaponTags>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWImpRemnant_StormCommandoSniper_3x" ParentName="SWImpRemnant_stormcommando">

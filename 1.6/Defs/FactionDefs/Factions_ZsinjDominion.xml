@@ -93,23 +93,23 @@
 		
 		<settlementGenerationWeight>5</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
-			<li Class="SWCP.Enlist.FactionEnlistOptions">
+			<li Class="FCP.Enlist.FactionEnlistOptions">
 				<enlistOptionsDefs>
 					<li>guy762_SWFactionEnlistment_ZsinjDominion</li>
 				</enlistOptionsDefs>
 				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>CenterDrop</li>
 					<li>RandomDrop</li>
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_lambda_zsinj</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
@@ -149,7 +149,7 @@
 				<neverConnectToRoads>false</neverConnectToRoads>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_HasTerritory"> -->
 					<!-- <territoryColor>(165,155,80,32)</territoryColor> -->
 					<!-- <territoryBorderColor>(165,155,80,128)</territoryBorderColor> -->
 					<!-- <factionLabelColor>(165,155,80,255)</factionLabelColor> -->
@@ -161,7 +161,7 @@
 					
 					
 					
-			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_FixedIdeo"> -->
 				<!-- <ideoIconDef>guy762_IdeoIcon_zsinj</ideoIconDef> -->
 				<!-- <ideoColorDef>guy762_IdeoFactionColor_ZsinjYellow</ideoColorDef> -->
 				<!-- <memberName>Imperial</memberName> -->
@@ -322,8 +322,7 @@
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
 		<baseTraderKinds>
-			<!-- <li>SWCP_GCWBaseTraderKind_ZsinjQuartermaster</li> -->
-			<li>SWCP_GCWBaseTraderKind_ScumGunrunner</li>
+			<li>SWCP_GCWBaseTraderKind_ZsinjBasic</li>
 			<!-- <li>SWCP_GCWOrbitalTraderKind_ImperialSlaver</li> -->
 		</baseTraderKinds>
 		<orbitalTraderKinds>
@@ -592,7 +591,7 @@
 			
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <!-- <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef> -->
+                <!-- <kindDef>FCP_PawnGroupKind_TaxCollector</kindDef> -->
                 <kindDef>Trader</kindDef>
                 <traders>
                     <SWZsinj_NavyLt>100</SWZsinj_NavyLt>
@@ -611,7 +610,7 @@
             </li>
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef>
+                <kindDef>FCP_PawnGroupKind_TaxCollector</kindDef>
                 <!-- <kindDef>Trader</kindDef> -->
                 <traders>
                     <SWZsinj_NavyLt>100</SWZsinj_NavyLt>

@@ -80,6 +80,31 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 		
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to -->
+			<li>Surface</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</raidArrivalLayerWhitelist>
+		
+		
+		
+		
+		
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
 		<permanentEnemy>false</permanentEnemy>
@@ -87,17 +112,17 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>CenterDrop</li>
 					<li>RandomDrop</li>
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_uwing_NR</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
@@ -136,7 +161,7 @@
 				<hasCities>true</hasCities>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_HasTerritory"> -->
 					<!-- <territoryColor>(205,125,20,32)</territoryColor> -->
 					<!-- <territoryBorderColor>(205,125,20,128)</territoryBorderColor> -->
 					<!-- <factionLabelColor>(205,125,20,255)</factionLabelColor> -->
@@ -464,7 +489,7 @@
 		  
 		  
 			<!-- wandering doctor -->
-			<!-- <li Class="SWCP.Core.GroupMakerWithTraderKind"> -->
+			<!-- <li Class="FCP.Core.GroupMakerWithTraderKind"> -->
 				<!-- <kindDef>Trader</kindDef> -->
 				<!-- <commonality>1</commonality> -->
 				<!-- <traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds> -->

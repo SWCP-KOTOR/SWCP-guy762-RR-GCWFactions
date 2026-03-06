@@ -129,16 +129,16 @@
 		
 		<settlementGenerationWeight>4</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
-			<li Class="SWCP.Enlist.FactionEnlistOptions">
+			<li Class="FCP.Enlist.FactionEnlistOptions">
 				<enlistOptionsDefs>
 					<li>guy762_SWFactionEnlistment_ImperialRemnant</li>
 				</enlistOptionsDefs>
 				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>EdgeDrop</li>
 					<li>EdgeDropGroups</li>
@@ -147,7 +147,7 @@
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_lambda</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
@@ -190,7 +190,7 @@
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
 			
-			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_HasTerritory"> -->
 				<!-- <territoryColor>(25,110,30,32)</territoryColor> -->
 				<!-- <territoryBorderColor>(25,110,30,128)</territoryBorderColor> -->
 				<!-- <factionLabelColor>(25,110,30,255)</factionLabelColor> -->
@@ -207,7 +207,7 @@
 				
 				
 				
-			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_FixedIdeo"> -->
 				<!-- <ideoIconDef>guy762_IdeoIcon_empire</ideoIconDef> -->
 				<!-- <ideoColorDef>guy762_IdeoFactionColor_Greenpire</ideoColorDef> -->
 				<!-- <memberName>Imperial</memberName> -->
@@ -392,28 +392,7 @@
 				-->
 			
 			
-			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
-				<kindDef>Combat</kindDef>
-				<disallowedStrategies>
-					<li>EmergeFromWater</li>
-					<li>ImmediateAttack</li>
-					<li>ImmediateAttackSmart</li>
-					<li>ImmediateAttackSappers</li>
-					<li>ImmediateAttackBreaching</li>
-					<li>ImmediateAttackBreachingSmart</li>
-					<li>StageThenAttack</li>
-					<li>Siege</li>
-				</disallowedStrategies>
-				<commonality>700</commonality>
-				<minPoints>2000</minPoints>
-				<minAircraftCount>3</minAircraftCount>
-				<maxAircraftCount>6</maxAircraftCount>
-				<options>
-					<guy762_SWVehicle_TIEFighter_bot_PawnKind>5</guy762_SWVehicle_TIEFighter_bot_PawnKind>
-					<!-- <guy762_SWVehicle_TIEInterceptor_bot_PawnKind>1</guy762_SWVehicle_TIEInterceptor_bot_PawnKind> -->
-					<guy762_SWVehicle_TIEBomber_bot_PawnKind>3</guy762_SWVehicle_TIEBomber_bot_PawnKind>
-				</options>
-			</li>
+			
 			<!--
 			<li MayRequire="SWCP.GCWVehicles" >
 				<kindDef>Combat</kindDef>
@@ -443,6 +422,65 @@
 				  <SWWarlords_ArmyMedic>25</SWWarlords_ArmyMedic>
 				</options>
 			</li>
+			
+			
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ vehicle raids -->
+			
+			<li MayRequire="SWCP.GCWVehicles">
+			
+				<kindDef>Combat</kindDef>
+				<commonality>900</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<!-- <li>Siege</li> -->
+					<!-- <li>StageThenAttack</li> -->
+					<!-- <li>ImmediateAttack</li> -->
+				</disallowedStrategies>
+				<options>
+					<SWImpRemnant_TankDriver>50</SWImpRemnant_TankDriver>
+					<SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper>
+					<SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat>
+					<guy762_SWVehicle_TX225Occupier_bot_PawnKind>10</guy762_SWVehicle_TX225Occupier_bot_PawnKind>
+					<guy762_SWVehicle_ATST_bot_PawnKind>25</guy762_SWVehicle_ATST_bot_PawnKind>
+					<guy762_SWVehicle_ATPT_bot_PawnKind>50</guy762_SWVehicle_ATPT_bot_PawnKind>
+				</options>
+			</li>
+			
+			
+			
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ air raids -->
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>900</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>3</minAircraftCount>
+				<maxAircraftCount>6</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_TIEFighter_bot_PawnKind>5</guy762_SWVehicle_TIEFighter_bot_PawnKind>
+					<!-- <guy762_SWVehicle_TIEInterceptor_bot_PawnKind>1</guy762_SWVehicle_TIEInterceptor_bot_PawnKind> -->
+					<guy762_SWVehicle_TIEBomber_bot_PawnKind>3</guy762_SWVehicle_TIEBomber_bot_PawnKind>
+				</options>
+			</li>
+			
+			
+			
+			
+			
+			
 			
 			
 			
@@ -845,7 +883,7 @@
 			</li>
 			
 			
-			<!-- <li Class="SWCP.Core.GroupMakerWithCustomChar"> -->
+			<!-- <li Class="FCP.Core.GroupMakerWithCustomChar"> -->
                 <!-- 1st Recon Alpha Squad - elite sniper unit -->
                 <!-- <kindDef>Combat</kindDef> -->
                 <!-- <disallowedStrategies> -->
@@ -941,7 +979,7 @@
 			
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef>
+                <kindDef>FCP_PawnGroupKind_TaxCollector</kindDef>
                 <traders>
                     <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt>
                     <SWImpRemnant_Viceroy>0.25</SWImpRemnant_Viceroy>

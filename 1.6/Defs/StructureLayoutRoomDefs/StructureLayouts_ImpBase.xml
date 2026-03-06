@@ -311,9 +311,9 @@
 			<AncientEmergencyLight_Blue>
 				<countRange>1~2</countRange>
 			</AncientEmergencyLight_Blue>
-			<!-- <SWCPBuilding_NPCLifeSupportUnit> -->
-				<!-- <countRange>1~1</countRange> -->
-			<!-- </SWCPBuilding_NPCLifeSupportUnit> -->
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
 		</wallAttachments>
 
 		<roomDefs>

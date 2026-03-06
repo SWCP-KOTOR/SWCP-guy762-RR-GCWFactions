@@ -16,7 +16,7 @@
 		  <!-- </points> -->
 		<!-- </commonalityMultFromPopulationIntent> -->
 		<modExtensions>
-			<!-- <li Class="SWCP.Currencies.CurrencyReplacement"> -->
+			<!-- <li Class="FCP.Currencies.CurrencyReplacement"> -->
 				<!-- <currency>Silver</currency> -->
 			<!-- </li> -->
 		</modExtensions>
@@ -110,7 +110,7 @@
 		  <!-- Weapons -->
 
 			<li Class="StockGenerator_Tag">
-				<tradeTag>guy762TT_KotORGeneric_CivLegal</tradeTag>
+				<tradeTag>guy762TT_GCWWeapon_CivLegal</tradeTag>
 				<thingDefCountRange>6~8</thingDefCountRange>
 				<countRange>2~4</countRange>
 			</li>

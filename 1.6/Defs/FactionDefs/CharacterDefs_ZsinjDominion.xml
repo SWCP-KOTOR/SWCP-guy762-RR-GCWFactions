@@ -14,57 +14,57 @@
     
 	
 	
-	<SWCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
+	<FCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
         <defName>SWZsinjDominionCharacter_LanuPasiqTFS</defName>
         <pawnKind>SWCharPawnZJ_LanuPasiq_TFS</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>25</seniority> <!-- veteran inquisitor that can assume control if everyone else is killed -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
+	<FCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
         <defName>SWZsinjDominionCharacter_LanuPasiqVPE</defName>
         <pawnKind>SWCharPawnZJ_LanuPasiq_VPE</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>25</seniority> <!-- veteran inquisitor that can assume control if everyone else is killed -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<!-- <SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF"> -->
+	<!-- <FCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF"> -->
         <!-- <defName>SWZsinjDominionCharacter_LanuPasiqPotF</defName> -->
         <!-- <pawnKind>SWCharPawnZJ_LanuPasiq_PotF</pawnKind> -->
         <!-- <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction> -->
         <!-- <xenotype>Baseliner</xenotype> -->
         <!-- <roles> -->
-            <!-- <li Class="SWCP.Core.CharacterRole_FactionLeader"> -->
+            <!-- <li Class="FCP.Core.CharacterRole_FactionLeader"> -->
                 <!-- <seniority>25</seniority> -->
             <!-- </li> -->
         <!-- </roles> -->
-    <!-- </SWCP.Core.CharacterDef> -->
+    <!-- </FCP.Core.CharacterDef> -->
 	
 	
 	<!-- 50: Teubbo the Hutt -->
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Screed</defName>
         <pawnKind>SWCharPawnZJ_Screed</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>75</seniority> <!-- rat bastard who let the rest of the faction leadership get killed off -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	
@@ -72,61 +72,61 @@
 	<!-- /////////////////////////////////// -->
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_WarlordZsinj</defName>
         <pawnKind>SWCharPawnZJ_WarlordZsinj</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>100</seniority> <!-- galactic-level faction leader -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Melvar</defName>
         <pawnKind>SWCharPawnZJ_Melvar</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>200</seniority> <!-- second-in-command general -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Trigit</defName>
         <pawnKind>SWCharPawnZJ_ApwarTrigit</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>400</seniority> <!-- high-ranking admiral -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	<!-- 500: Admiral Banjeer -->
 	
 	
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_Varnillian</defName>
         <pawnKind>SWCharPawnZJ_NiclaraVarnillian</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>600</seniority> <!-- promminent allied warlord -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	
@@ -136,41 +136,41 @@
 	
 	<!-- generic leaders -->
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_ThirdAdmiral</defName>
         <pawnKind>SWZsinj_NavyAdmiral</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>800</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_SecondGeneral</defName>
         <pawnKind>SWZsinj_ArmyGeneral</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>900</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWZsinjDominionCharacter_InitialGeneral</defName>
         <pawnKind>SWZsinj_ArmyGeneral</pawnKind>
         <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>1000</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	

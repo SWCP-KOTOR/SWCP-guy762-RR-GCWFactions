@@ -2,20 +2,33 @@
 <Defs>
 
     
-	 <PawnGroupKindDef>
-        <defName>SWCP_PawnGroupKind_TaxCollector</defName>
-        <workerClass>PawnGroupKindWorker_Trader</workerClass>
-    </PawnGroupKindDef>
+	<!-- <PawnGroupKindDef> -->
+        <!-- <defName>FCP_PawnGroupKind_TaxCollector</defName> -->
+        <!-- <workerClass>PawnGroupKindWorker_Trader</workerClass> -->
+    <!-- </PawnGroupKindDef> this is in KotOR Core already -->
 
     <IncidentDef Name="SWCPIncident_TaxCollectorBASE" Abstract="True">
-        <label>tax collector caravan arrival</label>
+        <label>high command inspection</label>
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
-        <workerClass>SWCP.Core.IncidentWorker_CaravanArrivalTaxCollector</workerClass>
+        <!-- <workerClass>FCP.Factions.IncidentWorker_CaravanArrivalTaxCollector</workerClass> -->
+        <workerClass>FCP.TaxCollectorShuttles.IncidentWorker_TaxCollectorShuttle</workerClass> <!-- in a separate assembly -->
         <category>FactionArrival</category>
         <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
         <requireColonistsPresent>True</requireColonistsPresent>
+		
+		<layerBlacklist>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</layerBlacklist>
     </IncidentDef>
 	
 	
@@ -38,7 +51,7 @@
 		<!-- <letterText>Logistics officers from a local Rebel cell are approaching.\n\nThey are seeking any unused equipment, supplies, and resources your colony would be willing to donate. They will also accept monetary donations. The one who gives over the donations will receive Commendations for contributing their resources to the cause.\n\nLogistics officers will visit roughly twice per year as long as you are not enemies with the local Rebel cell.</letterText> -->
         <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
         <modExtensions>
-            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
                 <factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
                 <traderKindDef>SWCPTrader_TaxCollector_RebelCell</traderKindDef>
             </li>
@@ -85,7 +98,7 @@
         </stockGenerators>
         <modExtensions>
             <!-- Just so NCR dollars show up -->
-            <li Class="SWCP.Currencies.CurrencyReplacement">
+            <li Class="FCP.Currencies.CurrencyReplacement">
                 <currency>WoodLog</currency>
             </li>
         </modExtensions>
@@ -110,7 +123,7 @@
 		<!-- <letterText>A tax collector from the Imperial Remnant is approaching.\n\nThey will accept tax in credits or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to the Empire.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with the Imperial Remnant.</letterText> -->
         <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
         <modExtensions>
-            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
                 <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
                 <traderKindDef>SWCPTrader_TaxCollector_ImpRemnant</traderKindDef>
             </li>
@@ -156,7 +169,7 @@
         </stockGenerators>
         <modExtensions>
             <!-- Just so NCR dollars show up -->
-            <li Class="SWCP.Currencies.CurrencyReplacement">
+            <li Class="FCP.Currencies.CurrencyReplacement">
                 <currency>WoodLog</currency>
             </li>
         </modExtensions>
@@ -184,7 +197,7 @@
 		<!-- <letterText>A tax collector from Zsinj's Dominion is approaching.\n\nThey will accept tax in credits, spice, or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to Zsinj's Dominion.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with Zsinj's Dominion.</letterText> -->
         <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
         <modExtensions>
-            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
                 <factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
                 <traderKindDef>SWCPTrader_TaxCollector_ZsinjDominion</traderKindDef>
             </li>
@@ -226,7 +239,7 @@
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li> -->
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMaldrood</tag></li>
-			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyEriadu</tag></li> -->
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalEriadu</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
@@ -235,7 +248,7 @@
         </stockGenerators>
         <modExtensions>
             <!-- Just so NCR dollars show up -->
-            <li Class="SWCP.Currencies.CurrencyReplacement">
+            <li Class="FCP.Currencies.CurrencyReplacement">
                 <currency>WoodLog</currency>
             </li>
         </modExtensions>
@@ -266,7 +279,7 @@
 		
         <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
         <modExtensions>
-            <li Class="SWCP.Core.ModExtension_FactionTaxCollectors">
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
                 <factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
                 <traderKindDef>SWCPTrader_TaxCollector_PentastarAlignment</traderKindDef>
             </li>
@@ -302,8 +315,8 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li>
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li> -->
-			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMaldrood</tag></li> -->
-			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyEriadu</tag></li> -->
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMaldrood</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalEriadu</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
@@ -312,7 +325,7 @@
         </stockGenerators>
         <modExtensions>
             <!-- Just so NCR dollars show up -->
-            <li Class="SWCP.Currencies.CurrencyReplacement">
+            <li Class="FCP.Currencies.CurrencyReplacement">
                 <currency>WoodLog</currency>
             </li>
         </modExtensions>

@@ -172,7 +172,7 @@
                 </abilitiesAtSeverities>
             </li>
 			
-			<li><compClass>SWCP.Core.Hediffs.HediffComp_Prone</compClass></li>
+			<li><compClass>SWCP_Lee_Misc.Hediffs.HediffComp_Prone</compClass></li>
 			<li Class="HediffCompProperties_Invisibility">
 				<visibleToPlayer>true</visibleToPlayer>
 			</li>

@@ -95,10 +95,10 @@
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>EdgeDrop</li>
 					<li>EdgeDropGroups</li>
@@ -107,7 +107,7 @@
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_uwing_partisans</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
@@ -150,7 +150,7 @@
 			
 			
 			
-			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_FixedIdeo"> -->
 				<!-- <ideoIconDef>guy762_IdeoIcon_partisans</ideoIconDef> -->
 				<!-- <ideoColorDef>guy762_IdeoFactionColor_PartisanRust</ideoColorDef> -->
 				<!-- <memberName>Partisan</memberName> -->

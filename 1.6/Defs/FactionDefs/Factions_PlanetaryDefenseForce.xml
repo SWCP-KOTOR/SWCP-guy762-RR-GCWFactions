@@ -81,7 +81,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<settlementGenerationWeight>7</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
 			<li Class="VEF.Factions.FactionDefExtension">
@@ -118,7 +118,7 @@
 				<hasCities>true</hasCities>
 			</li>
 			
-			<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo"> -->
 				<!-- <hostileFactionDefs> -->
 					<!-- <li>guy762_KotORFaction_SithRemnant</li> -->
 					<!-- <li>guy762_KotORFaction_KrathRaiders</li> -->
@@ -343,7 +343,7 @@
 		  </li>
 		  
 		  
-		  <li Class="SWCP.Core.GroupMakerWithTraderKind">
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef> <!-- wandering doctor -->
 			<commonality>0.5</commonality>
 			<traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds>

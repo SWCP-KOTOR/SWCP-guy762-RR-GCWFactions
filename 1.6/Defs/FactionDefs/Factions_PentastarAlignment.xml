@@ -86,16 +86,16 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
-			<li Class="SWCP.Enlist.FactionEnlistOptions">
+			<li Class="FCP.Enlist.FactionEnlistOptions">
 				<enlistOptionsDefs>
 					<li>guy762_SWFactionEnlistment_PentastarAlignment</li>
 				</enlistOptionsDefs>
 				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>EdgeDrop</li>
 					<li>EdgeDropGroups</li>
@@ -104,7 +104,7 @@
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_DX10Transport_pentastar</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
@@ -146,7 +146,7 @@
 				<neverConnectToRoads>false</neverConnectToRoads>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<!-- <li Class="SWCP.Core.ModExtension_FactionTerritory"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_HasTerritory"> -->
 					<!-- <territoryColor>(65,70,190,32)</territoryColor> -->
 					<!-- <territoryBorderColor>(65,70,190,128)</territoryBorderColor> -->
 					<!-- <factionLabelColor>(65,70,190,255)</factionLabelColor> -->
@@ -159,7 +159,7 @@
 					
 					
 					
-			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_FixedIdeo"> -->
 				<!-- <ideoIconDef>guy762_IdeoIcon_pentastar</ideoIconDef> -->
 				<!-- <ideoColorDef>guy762_IdeoFactionColor_PentastarBlue</ideoColorDef> -->
 				<!-- <memberName>Imperial</memberName> -->
@@ -685,7 +685,7 @@
 			
 			<li>
                 <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
-                <kindDef>SWCP_PawnGroupKind_TaxCollector</kindDef>
+                <kindDef>FCP_PawnGroupKind_TaxCollector</kindDef>
                 <traders>
                     <SWPentastar_OpsLt>1</SWPentastar_OpsLt>
                     <SWPentastar_Viceroy>0.25</SWPentastar_Viceroy>

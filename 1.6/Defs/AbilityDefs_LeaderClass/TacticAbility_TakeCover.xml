@@ -149,7 +149,7 @@
 			<li Class="HediffCompProperties_GiveAbility">
 				<abilityDef>SWPotF_TacticAbility_TakeCoverCancel</abilityDef>
 			</li>
-			<li><compClass>SWCP.Core.Hediffs.HediffComp_Prone</compClass></li>
+			<li><compClass>SWCP_Lee_Misc.Hediffs.HediffComp_Prone</compClass></li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_Disappears">
                 <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->

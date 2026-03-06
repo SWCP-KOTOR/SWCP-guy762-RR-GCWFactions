@@ -32,12 +32,12 @@
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
             <nodes>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
                     <storeAs>asker</storeAs>
                     <!--The faction def that issues the quest-->
                     <factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetFactionFromList">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
                     <storeAs>enemyFaction</storeAs>
                     <!--The faction def that will be guarding-->
                     <factionDefs>
@@ -46,14 +46,14 @@
                         <li>guy762_SWWarlordsFaction_Pentastar</li>
                     </factionDefs>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetFactionFromList">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
                     <storeAs>prisonerFaction</storeAs>
                     <!--The faction def that will be the prisoner-->
                     <factionDefs>
                         <li>guy762_SWWarlordsFaction_RebelCell</li>
                     </factionDefs>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetPawnKind">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetPawnKind">
                     <!--Dont change storeAs its hardcoded in C#-->
                     <storeAs>prisonerPawnKind</storeAs>
                     <pawnKindDef>SWPrisoner_Rebel_agent</pawnKindDef>
@@ -186,12 +186,12 @@
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
             <nodes>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
                     <storeAs>asker</storeAs>
                     <!--The faction def that issues the quest-->
                     <factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetFactionFromList">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
                     <storeAs>enemyFaction</storeAs>
                     <!--The faction def that will be guarding-->
                     <factionDefs>
@@ -202,14 +202,14 @@
                         <li>guy762_SWWarlordsFaction_ZannConsortium</li>
                     </factionDefs>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetFactionFromList">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
                     <storeAs>prisonerFaction</storeAs>
                     <!--The faction def that will be the prisoner-->
                     <factionDefs>
                         <li>guy762_SWWarlordsFaction_RebelCell</li>
                     </factionDefs>
                 </li>
-                <li Class="SWCP.RadiantQuests.QuestNode_GetPawnKind">
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetPawnKind">
                     <!--Dont change storeAs its hardcoded in C#-->
                     <storeAs>prisonerPawnKind</storeAs>
                     <pawnKindDef>SWPrisoner_Rebel_ArmyLt</pawnKindDef>

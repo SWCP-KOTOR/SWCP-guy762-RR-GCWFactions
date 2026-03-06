@@ -263,6 +263,10 @@
 						<skill>Mining</skill>
 						<range>4~6</range>
 					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>4~6</range>
+					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
@@ -572,8 +576,9 @@
 	<PawnKindDef Name="SWImpRemnant_INTLt" ParentName="SWImpRemnant_ISBLt">
 		<defName>SWImpRemnant_INTLt</defName>
 		<label>intelligence lieutenant</label>
+		<weaponMoney>1010</weaponMoney>
 		<weaponTags Inherit="False">
-			<li>SWRanged_RK3pistol_silenced</li>
+			<li>SWRanged_EC17pistol_silenced</li>
 		</weaponTags>
 		<specificApparelRequirements Inherit="False">
 			<li>

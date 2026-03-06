@@ -5,7 +5,7 @@
 
     <!--_____ NCR _____-->
 
-    <SWCP.Enlist.FactionEnlistOptionsDef>
+    <FCP.Enlist.FactionEnlistOptionsDef>
         <defName>guy762_SWFactionEnlistment_ImperialRemnant</defName>
         <minGoodwillRequrementToEnlist>0</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
@@ -229,7 +229,7 @@
             </li>
         </reinforcementOptions>
 
-    </SWCP.Enlist.FactionEnlistOptionsDef>
+    </FCP.Enlist.FactionEnlistOptionsDef>
 	
 	
 	<TraderKindDef>
@@ -240,7 +240,7 @@
 
             <!--__ Slaves __-->
 
-            <li Class="SWCP.Core.StockGenerator_PawnsWithXenotype">
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype">
                 <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
                 <respectPopulationIntent>false</respectPopulationIntent>
                 <countRange>2~5</countRange>

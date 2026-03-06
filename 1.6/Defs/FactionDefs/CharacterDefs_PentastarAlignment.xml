@@ -11,17 +11,17 @@
 	
 	-->
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_TessalaCorvae</defName>
         <pawnKind>SWCharPawnPA_TessalaCorvae</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>50</seniority> <!-- lower-ranking military commander that can assume control if everyone else is killed -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	<!-- 75: Commerce Master Gregor Raquoran -->
@@ -31,43 +31,43 @@
 	
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_ArdusKaine</defName>
         <pawnKind>SWCharPawnPA_ArdusKaine</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>100</seniority> <!-- galactic-level faction leader -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 
 
-    <SWCP.Core.CharacterDef>
+    <FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_OctavianGrant</defName>
         <pawnKind>SWCharPawnPA_OctavianGrant</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>200</seniority> <!-- de jure supreme commander of the faction's military -->
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_EltaBesk</defName>
         <pawnKind>SWCharPawnPA_EltaBesk</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
         <roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>300</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	<!-- 300: Director Elta Besk -->
@@ -82,25 +82,25 @@
 	
 	
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_IbDekeet</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>700</seniority> <!-- higher-ranking political leader -->
             </li>
         </roles>
         <definitions>
-            <li Class="SWCP.Core.CharacterStoryDefinition">
+            <li Class="FCP.Core.CharacterStoryDefinition">
                 <firstName>Ib</firstName>
                 <lastName>Dekeet</lastName>
                 <nickname>Dekeet</nickname>
                 <gender>Male</gender>
                 <age>53</age>
             </li>
-            <li Class="SWCP.Core.CharacterAppearanceDefinition">
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(50,50,50)</hairColor>
                 <hairDef>Scatman</hairDef>
                 <beardDef>Machete</beardDef>
@@ -109,7 +109,7 @@
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
         </definitions>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
 	
 	
@@ -121,41 +121,41 @@
 	
 	<!-- generic leaders -->
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_ThirdPlanetaryMoff</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>800</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_SecondPlanetaryMoff</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>900</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 	
-	<SWCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_InitialPlanetaryMoff</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
-            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
                 <seniority>1000</seniority>
             </li>
         </roles>
-    </SWCP.Core.CharacterDef>
+    </FCP.Core.CharacterDef>
 
 
 

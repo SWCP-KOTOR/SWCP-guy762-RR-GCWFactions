@@ -30,7 +30,7 @@
         <defName>SWCP_Site_SettlementRaidInProgress_Settlement</defName>
         <linkWithSite>SWCP_Site_SettlementRaidInProgress</linkWithSite>
         <order>450</order>
-        <genStep Class="SWCP.RadiantQuests.GenStep_SettlementScaleable">
+        <genStep Class="FCP.Core.RadiantQuests.GenStep_SettlementScaleable">
             <settlementSizeMin>15</settlementSizeMin>
             <settlementSizeMax>20</settlementSizeMax>
             <generateLoot>false</generateLoot>

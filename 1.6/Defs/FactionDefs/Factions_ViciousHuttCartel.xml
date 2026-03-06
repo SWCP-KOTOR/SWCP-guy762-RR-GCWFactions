@@ -84,10 +84,10 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_vicioushutts</transportShipDef>
 				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
@@ -135,7 +135,7 @@
 				<!-- </allowedBiomes> -->
 			</li>
 			
-			<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo"> -->
 				<!-- <hostileFactionDefs> -->
 					<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
 					<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
@@ -148,7 +148,7 @@
 				<!-- </hostileFactionDefs> -->
 			<!-- </li> -->
 			
-			<li Class="SWCP.Core.ModExtension_FixedIdeo">
+			<li Class="FCP.Factions.FactionExtension_FixedIdeo">
 				<ideoIconDef>guy762_IdeoIcon_huttsB</ideoIconDef>
 				<ideoColorDef>guy762_IdeoFactionColor_SunYellow</ideoColorDef>
 				<!--memberName>Citizen</memberName>
@@ -587,7 +587,7 @@
 			  <!-- <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">7</KotORDroidBad_DevWD_weak> -->
 			</guards>
 		  </li>
-		  <li Class="SWCP.Core.GroupMakerWithTraderKind">
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef> <!-- jawa caravan -->
 			<commonality>0.5</commonality>
 			<traderKinds><li>guy762_TraderKind_JawaScavs</li></traderKinds>

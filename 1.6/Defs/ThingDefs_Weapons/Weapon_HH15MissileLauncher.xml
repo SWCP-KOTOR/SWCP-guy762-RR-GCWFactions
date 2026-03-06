@@ -117,7 +117,7 @@
 		
 		<!-- <equippedDistanceOffset >0.125</equippedDistanceOffset > -->
 		<!-- <comps> -->
-            <!-- <li Class="SWCP.Core.CompProperties_PositionAttributes"> -->
+            <!-- <li Class="FCP.Core.CompProperties_PositionAttributes"> -->
                 <!-- <HeldDrawOffset>(0.125, -0.125)</HeldDrawOffset> -->
             <!-- </li> -->
         <!-- </comps> -->

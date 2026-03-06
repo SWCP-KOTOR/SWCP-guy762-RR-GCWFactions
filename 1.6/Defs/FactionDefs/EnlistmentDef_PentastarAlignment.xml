@@ -5,7 +5,7 @@
 
     <!--_____ NCR _____-->
 
-    <SWCP.Enlist.FactionEnlistOptionsDef>
+    <FCP.Enlist.FactionEnlistOptionsDef>
         <defName>guy762_SWFactionEnlistment_PentastarAlignment</defName>
         <minGoodwillRequrementToEnlist>0</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>10</enlistGoodwillGain>
@@ -261,7 +261,7 @@
             </li>
         </reinforcementOptions>
 
-    </SWCP.Enlist.FactionEnlistOptionsDef>
+    </FCP.Enlist.FactionEnlistOptionsDef>
 	
 	
 

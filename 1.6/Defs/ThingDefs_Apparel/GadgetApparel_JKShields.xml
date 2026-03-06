@@ -332,7 +332,7 @@
 				<chargeNoun>usage</chargeNoun>
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 			</li>
-			<li Class="SWCP.Core.CompProperties_LabelColored">
+			<li Class="FCP.Core.CompProperties_LabelColored">
 				<rarity>Rare</rarity>
 			</li>
 		</comps>

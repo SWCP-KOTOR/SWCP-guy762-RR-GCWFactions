@@ -100,7 +100,7 @@
 				  <muzzleFlashScale>9</muzzleFlashScale>
 				</DeflectVerb>
 			</li>
-            <li Class="SWCP.Core.CompProperties_LabelColored">
+            <li Class="FCP.Core.CompProperties_LabelColored">
                 <rarity>Unique</rarity>
             </li>
 		</comps>

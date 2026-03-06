@@ -88,17 +88,17 @@
 		
 		<settlementGenerationWeight>6</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionBannedArrivalModes">
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>CenterDrop</li>
 					<li>RandomDrop</li>
 					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
 				</arrivalModes>
 			</li>
-			<li Class="SWCP_Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_DX10Transport_localwarlord</transportShipDef>
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
@@ -140,7 +140,7 @@
 				<neverConnectToRoads>false</neverConnectToRoads>
 				<!-- <minDistanceToOtherSettlements>40</minDistanceToOtherSettlements> incompatible with orbit layer -->
 			</li>
-			<li Class="SWCP.Core.ModExtension_FactionTerritory">
+			<li Class="FCP.Factions.FactionExtension_HasTerritory">
 				<territoryColor>(25,110,30,32)</territoryColor>
 				<territoryBorderColor>(25,110,30,128)</territoryBorderColor>
 				<factionLabelColor>(25,110,30,255)</factionLabelColor>
@@ -152,7 +152,7 @@
 				
 				
 				
-			<!-- <li Class="SWCP.Core.ModExtension_FixedIdeo"> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_FixedIdeo"> -->
 				<!-- <ideoIconDef>guy762_IdeoIcon_empire</ideoIconDef> -->
 				<!-- <ideoColorDef>guy762_IdeoFactionColor_Greenpire</ideoColorDef> -->
 				<!-- <memberName>Imperial</memberName> -->
