@@ -154,6 +154,12 @@
                 <weightedDrops>
 				
 					<li>
+                        <thingDef>SWCPItem_BF2AmmoSupplyPickup</thingDef>
+                        <countRange>1~2</countRange>
+                        <weight>1.25</weight>
+                    </li>
+					
+					<li>
                         <thingDef>guy762_KotORcredits</thingDef>
                         <countRange>10~250</countRange>
                         <weight>0.5</weight>

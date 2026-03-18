@@ -54,12 +54,15 @@
 		  </li>
 		</verbs>
 		<comps>
-			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>2</maxCharges>
-				<destroyOnEmpty>false</destroyOnEmpty>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>usage</chargeNoun>
-				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<!-- <li Class="CompProperties_ApparelReloadable"> -->
+				<!-- <maxCharges>2</maxCharges> -->
+				<!-- <destroyOnEmpty>false</destroyOnEmpty> -->
+				<!-- <hotKey>Misc4</hotKey> -->
+				<!-- <chargeNoun>usage</chargeNoun> -->
+				<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
+			<!-- </li> -->
+			<li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
+				<ticksCooldown>14400</ticksCooldown>
 			</li>
 		</comps>
 	</ThingDef>
@@ -325,12 +328,15 @@
 		  </li>
 		</verbs>
 		<comps>
-			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>4</maxCharges>
-				<destroyOnEmpty>false</destroyOnEmpty>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>usage</chargeNoun>
-				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<!-- <li Class="CompProperties_ApparelReloadable"> -->
+				<!-- <maxCharges>4</maxCharges> -->
+				<!-- <destroyOnEmpty>false</destroyOnEmpty> -->
+				<!-- <hotKey>Misc4</hotKey> -->
+				<!-- <chargeNoun>usage</chargeNoun> -->
+				<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
+			<!-- </li> -->
+			<li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
+				<ticksCooldown>14400</ticksCooldown>
 			</li>
 			<li Class="FCP.Core.CompProperties_LabelColored">
 				<rarity>Rare</rarity>

@@ -212,7 +212,7 @@
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<itemQuality>Normal</itemQuality>
 		<apparelTags Inherit="False">
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>RemnantEmpire_armyveterantrooper</li>

@@ -132,6 +132,7 @@
 					<!-- <li>KotORRoyaltyTag_ORprivI</li> -->
 					<!-- <li>KotORRoyaltyTag_ORprivII</li> -->
 					<!-- <li>KotORRoyaltyTag_LSCharacterApparel</li> -->
+					<li>SWCPSpecificApparelItem_Bandana</li>
 					<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
 					<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
 					<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
@@ -201,16 +202,16 @@
 
 		<grantedAbilities>
 			<li>Speech</li>
-			<li>guy762_Ability_CommandTierVI</li>
+			<!-- <li>guy762_Ability_CommandTierVI</li> -->
 		</grantedAbilities>
 		<speechCooldown>1200000</speechCooldown>
-		<modExtensions>
-			<li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility">        <!-- removes duplicates -->
-				<abilityDefs>
-					<li>guy762_Ability_CommandTierVI</li>
-				</abilityDefs>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> -->
+				<!-- <abilityDefs> -->
+					<!-- <li>guy762_Ability_CommandTierVI</li> -->
+				<!-- </abilityDefs> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 
 		<requiredApparel>
 			<li>
@@ -252,6 +253,7 @@
 					<li>guy762PatchedTag_Crowns</li>
 					<!-- <li>KotORRoyaltyTag_RegalVisor</li> -->
 					<!-- <li>KotORRoyaltyTag_LSCharacterApparel</li> -->
+					<li>SWCPSpecificApparelItem_Bandana</li>
 					<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
 					<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
 					<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
@@ -417,17 +419,17 @@
 		</permits>
 
 		<grantedAbilities>
-			<li>guy762_Ability_CommandTierV</li>
+			<!-- <li>guy762_Ability_CommandTierV</li> -->
 		</grantedAbilities>
 		<speechCooldown>1000000</speechCooldown>
-		<modExtensions>
-			<li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility">        <!-- removes duplicates -->
-				<abilityDefs>
-					<li>guy762_Ability_CommandTierVI</li>
-					<li>guy762_Ability_CommandTierV</li>
-				</abilityDefs>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> -->
+				<!-- <abilityDefs> -->
+					<!-- <li>guy762_Ability_CommandTierVI</li> -->
+					<!-- <li>guy762_Ability_CommandTierV</li> -->
+				<!-- </abilityDefs> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 
 		<requiredApparel>
 			<li>
@@ -636,18 +638,18 @@
 		</permits>
 
 		<grantedAbilities>
-			<li>guy762_Ability_CommandTierIV</li>
+			<!-- <li>guy762_Ability_CommandTierIV</li> -->
 		</grantedAbilities>
 		<speechCooldown>800000</speechCooldown>
-		<modExtensions>
-			<li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility">        <!-- removes duplicates -->
-				<abilityDefs>
-					<li>guy762_Ability_CommandTierV</li>
-					<li>guy762_Ability_CommandTierV</li>
-					<li>guy762_Ability_CommandTierIV</li>
-				</abilityDefs>
-			</li>
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> -->
+				<!-- <abilityDefs> -->
+					<!-- <li>guy762_Ability_CommandTierV</li> -->
+					<!-- <li>guy762_Ability_CommandTierV</li> -->
+					<!-- <li>guy762_Ability_CommandTierIV</li> -->
+				<!-- </abilityDefs> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
 
 		<requiredApparel>
 			<li>

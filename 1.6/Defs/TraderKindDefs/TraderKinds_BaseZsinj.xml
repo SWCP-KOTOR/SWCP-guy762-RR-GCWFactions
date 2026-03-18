@@ -307,6 +307,13 @@
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>6~8</countRange>
 			</li>
+			
+			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWArmor_ImpSpaceGear</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
 
 
 
@@ -350,6 +357,20 @@
 		<!-- Buildings/Vehicles/Starfighters -->
 		
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_ImperialBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~4</countRange>
+			</li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_ZsinjSurplus</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
 				<tradeTag>SWCPTT_ItemizedStarfighters_ImperialBasic</tradeTag>
 				<thingDefCountRange>0~2</thingDefCountRange>
 				<countRange>1~4</countRange>
@@ -359,6 +380,9 @@
 				<thingDefCountRange>0~1</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>
+			
+			
+			
 			
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
 				<tradeTag>guy762TT_GCWBuildings_DeployableTurretsSmall</tradeTag>

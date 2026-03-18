@@ -361,7 +361,7 @@
 	<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_ResourceDropBase">
 		<defName>SWGCWPermit_ZsinjPrivateer_creditdrop</defName>
 		<label>minor credit requisition</label>
-		<description>Call for a drop of 1000 Republic credits.</description>
+		<description>Call for a drop of 5000 Republic credits.</description>
 		
 		<minTitle>SWGCWTitle_ZsinjPrivateer_privateer</minTitle>
 		<uiPosition>(1,3)</uiPosition>
@@ -369,7 +369,7 @@
 		<royalAid>
 		  <favorCost>10</favorCost>
 		  <itemsToDrop>
-			<guy762_KotORcredits>1000</guy762_KotORcredits>
+			<guy762_KotORcredits>5000</guy762_KotORcredits>
 		  </itemsToDrop>
 		</royalAid>
 		<cooldownDays>60</cooldownDays>
@@ -378,7 +378,7 @@
 	<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_ResourceDropBase">
 		<defName>SWGCWPermit_ZsinjPrivateer_creditdropbig</defName>
 		<label>major credit requisition</label>
-		<description>Call for a drop of 10000 Republic credits.</description>
+		<description>Call for a drop of 25000 Republic credits.</description>
 		
 		<minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
 		<prerequisite>SWGCWPermit_ZsinjPrivateer_creditdrop</prerequisite>
@@ -387,7 +387,7 @@
 		<royalAid>
 			<favorCost>10</favorCost>
 			<itemsToDrop>
-				<guy762_KotORcredits>10000</guy762_KotORcredits>
+				<guy762_KotORcredits>25000</guy762_KotORcredits>
 			</itemsToDrop>
 		</royalAid>
 		<cooldownDays>60</cooldownDays>

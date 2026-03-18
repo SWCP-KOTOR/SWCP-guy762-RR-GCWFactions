@@ -98,7 +98,43 @@
 			<thingDef>CEC_Shell_ProtonTorpedo</thingDef>
 			<countRange>4~8</countRange>
 		  </li>
-		  
+		 
+		
+		
+		<!-- Ground Vehicles -->
+
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_ScumBasic</tradeTag>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<countRange>3~5</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_ScumAdv</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_CloneWarsSurplus</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_CivilianBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_RebelBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_ImperialBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
 		 
 		<!-- Starfighters -->
 

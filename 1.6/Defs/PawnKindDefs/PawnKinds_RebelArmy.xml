@@ -240,7 +240,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
+		  <!-- <li>KotOREquipment_basic</li> -->
 		  <li>NewRepublic_RebelBackpackMix</li>
 		  <li>NewRepublic_rebeltrooper</li>
 		  <li>SWWarlordsAccessory_scumtrooper</li>
@@ -413,7 +413,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWCPSpecificApparelItem_HeavySuspenders</li>
 			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
 			<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
@@ -881,7 +881,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>NewRepublic_rebelheavytrooper</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
 			<li>SWGCWSpecificApparelItem_RebelBattleHelmet</li>

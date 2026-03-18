@@ -233,7 +233,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORDisruptorBolt_sniper</defaultProjectile>
-				<warmupTime>2.5</warmupTime>
+				<warmupTime>2</warmupTime>
 				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>30</range>
 				<accuracyMedium>0.95</accuracyMedium>

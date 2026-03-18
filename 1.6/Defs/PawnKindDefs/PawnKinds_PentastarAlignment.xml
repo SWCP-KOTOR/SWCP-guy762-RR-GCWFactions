@@ -202,7 +202,10 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
+			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NavyTrooperHelmet</li>
@@ -287,7 +290,11 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_NavyTrooperHelmet</li>
@@ -401,6 +408,11 @@
 		<apparelTags>
 			<li>KotOREquipment_adv</li>
 			<li>PentastarAlignment_GuardianProtector</li>
+			
+			<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorHelmet</li>
+			<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			<li>guy762PatchedTag_Cape</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_PAGuardianProtectorHelmet</li>
@@ -580,8 +592,11 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
-			<li>KotORUtility_weakgrenade</li>
+			<!-- <li>KotOREquipment_basic</li> -->
+			<!-- <li>KotORUtility_weakgrenade</li> -->
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>

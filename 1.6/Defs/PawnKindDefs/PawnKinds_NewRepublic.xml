@@ -656,7 +656,7 @@
 		<apparelMoney>3000~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>NewRepublic_trooper</li>
 			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
@@ -749,7 +749,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>NewRepublic_RebelBackpackMix</li>
 			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
 			<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>

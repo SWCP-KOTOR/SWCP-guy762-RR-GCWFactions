@@ -225,7 +225,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
@@ -524,24 +524,25 @@
 			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
 
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
 		<inventoryOptions>
-			<skipChance>0.25</skipChance>
+			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>guy762_medpac</thingDef>
-					<countRange>1~3</countRange>
+					<thingDef>SWCP_FactionIntelDatapad_ImpRemnant</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
+					<countRange>0~1</countRange>
 				</li>
 			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 
 		<!-- <disallowedTraits> -->
@@ -644,7 +645,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
 			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
 		</apparelTags>
@@ -668,16 +669,22 @@
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
 
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<!-- <subOptionsTakeAll> no datapad because these guys should just be wandering around the map -->
+				<!-- <li> -->
+					<!-- <thingDef>SWCP_FactionIntelDatapad_ImpRemnant</thingDef> -->
+					<!-- <countRange>0~1</countRange> -->
+				<!-- </li> -->
+			<!-- </subOptionsTakeAll> -->
+		</inventoryOptions>
 
 		<!-- <disallowedTraits> -->
 			<!-- <li>Brawler</li> -->
@@ -756,16 +763,7 @@
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -776,8 +774,8 @@
 			</subOptionsChooseOne>
 			<subOptionsTakeAll>
 				<li>
-				  <thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
-				  <countRange>0~1</countRange>
+					<thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
+					<countRange>1~1</countRange>
 				</li>
 			</subOptionsTakeAll>
 		</inventoryOptions>
@@ -786,10 +784,10 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -872,30 +870,31 @@
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		<invNutrition>4</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>guy762_medpac_adv</thingDef>
+					<thingDef>guy762_medpac_life</thingDef>
 					<countRange>1~3</countRange>
 				</li>
 			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -974,7 +973,7 @@
 			<subOptionsTakeAll>
 				<li>
 				  <thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
-				  <countRange>0~1</countRange>
+				  <countRange>1~1</countRange>
 				</li>
 			</subOptionsTakeAll>
 		</inventoryOptions>
@@ -983,10 +982,7 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 		</abilities>
 		

@@ -87,9 +87,19 @@
 		<requiresFactionOfDef>guy762_SWWarlordsFaction_ImpRemnant</requiresFactionOfDef>
 		<extraGenSteps>
 			<li>SWCPMapGenStep_ImperialStructure_testbasePawns</li>
-			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_WanderingPersonnel</li>
+
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li> -->
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_BigCommandPostGuards</li>
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</li>
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_ATPTsDefendingAATurret</li>
+
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_basecommaders</li>
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_controlroomguards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</li>
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</li>
 		</extraGenSteps>
 		<categories Inherit="False" /> <!-- Remove the AncientStructure category so this isn't chosen for ancient mercenaries quest -->
 		<!-- <biomeWhitelist Inherit="False"> -->
@@ -192,11 +202,19 @@
 			<li>RocksFromGrid</li>
 			<li>SWCPMapGenStep_ImperialStructure_testbase</li>
 			<li>SWCPMapGenStep_ImperialStructure_testbasePawns</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_WanderingPersonnel</li>
 
-			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li>
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li> -->
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_BigCommandPostGuards</li>
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_ATPTsDefendingAATurret</li> -->
 
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_basecommaders</li>
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_controlroomguards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</li>
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</li>
 		</genSteps>
 	</MapGeneratorDef>
 	
@@ -227,6 +245,30 @@
 		</genStep>
 	</GenStepDef>
 	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_WanderingPersonnel</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
+		  <factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+		  <initialCivilianCount>25~30</initialCivilianCount>
+		  <keepPopulationReplenished>false</keepPopulationReplenished>
+		  <maxPopulation>30</maxPopulation>
+		  <options>
+			<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
+			<!-- <xSWImpRemnant_ArmyConscriptBaseGuard>7.5</xSWImpRemnant_ArmyConscriptBaseGuard> -->
+			<SWImpRemnant_Engineer>5</SWImpRemnant_Engineer>
+			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
+			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
+		</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
 	<GenStepDef>
 		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</defName>
 		<order>960</order>
@@ -245,6 +287,67 @@
 		</genStep>
 	</GenStepDef>
 	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_BigCommandPostGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>8~10</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_big</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWImpRemnant_ArmyConscriptBaseGuard>75</xSWImpRemnant_ArmyConscriptBaseGuard>
+				<xSWImpRemnant_ArmyTrooperBeaconGuard>50</xSWImpRemnant_ArmyTrooperBeaconGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>30</defendRadius>
+			<pawnsPerBeacon>1~2</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>guy762_SWTurret_BP4AntiVehicle</li>
+			</beaconBuildingDefs>
+			<options>
+				<guy762_SWVehicle_TIEFighter_bot_PawnKind>100</guy762_SWVehicle_TIEFighter_bot_PawnKind>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_ATPTsDefendingAATurret</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>30</defendRadius>
+			<pawnsPerBeacon>1~2</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>guy762_SWTurret_FPC67AntiAir</li>
+			</beaconBuildingDefs>
+			<options>
+				<guy762_SWVehicle_ATPT_bot_PawnKind>100</guy762_SWVehicle_ATPT_bot_PawnKind>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<GenStepDef>
 		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_basecommaders</defName>
 		<order>960</order>
@@ -257,9 +360,9 @@
 			</beaconBuildingDefs>
 			<options>
 				<SWImpRemnant_ArmyLt_onBase>100</SWImpRemnant_ArmyLt_onBase>
-				<SWImpRemnant_OpsLt>75</SWImpRemnant_OpsLt>
+				<!-- <SWImpRemnant_OpsLt>75</SWImpRemnant_OpsLt> -->
 				<SWImpRemnant_ArmyMajor_onBase>75</SWImpRemnant_ArmyMajor_onBase>
-				<SWImpRemnant_INTLt>50</SWImpRemnant_INTLt>
+				<SWImpRemnant_INTLt>25</SWImpRemnant_INTLt>
 				<SWImpRemnant_ArmyGeneral>25</SWImpRemnant_ArmyGeneral>
 				<SWImpRemnant_OpsGeneral>10</SWImpRemnant_OpsGeneral>
 				<SWImpRemnant_Viceroy>10</SWImpRemnant_Viceroy>
@@ -308,37 +411,44 @@
 		<areaPrunePercent>0.05</areaPrunePercent>
 		
 		<wallAttachments>
-			<AncientEmergencyLight_Blue>
-				<countRange>1~2</countRange>
-			</AncientEmergencyLight_Blue>
+			<!-- <AncientEmergencyLight_Blue> -->
+				<!-- <countRange>1~2</countRange> -->
+			<!-- </AncientEmergencyLight_Blue> -->
 			<SWCPBuilding_NPCLifeSupportUnit>
 				<countRange>1~1</countRange>
 			</SWCPBuilding_NPCLifeSupportUnit>
 		</wallAttachments>
-
+		
+		<!-- will spawn one per generated building -->
+		<!-- <importantRoomDef>SWCPRoomLayout_ImpInquisitorBossRoom</importantRoomDef> -->
+		
 		<roomDefs>
-		  <SWCPRoomLayout_ImpWeaponsStorage>
-			<countRange>1</countRange>
-		  </SWCPRoomLayout_ImpWeaponsStorage>
-		  <SWCPRoomLayout_ImpGarrisonShellStorageRoom>
-			<countRange>1</countRange>
-		  </SWCPRoomLayout_ImpGarrisonShellStorageRoom>
-		  <AncientCryptosleepRoom_Hostile_Deserted>
-			<countRange>0~1</countRange>
-		  </AncientCryptosleepRoom_Hostile_Deserted>
+			<SWCPRoomLayout_ImpWeaponsStorage>
+				<countRange>1</countRange>
+			</SWCPRoomLayout_ImpWeaponsStorage>
+			<SWCPRoomLayout_ImpGarrisonShellStorageRoom>
+				<countRange>1</countRange>
+			</SWCPRoomLayout_ImpGarrisonShellStorageRoom>
+			<AncientCryptosleepRoom_Hostile_Deserted>
+				<countRange>0~1</countRange>
+			</AncientCryptosleepRoom_Hostile_Deserted>
 
-		  <!-- Decorative -->
-		  <SWCPRoomLayout_ImpCanteen>2</SWCPRoomLayout_ImpCanteen>
-		  <SWCPRoomLayout_ImpShelfRoom>1</SWCPRoomLayout_ImpShelfRoom>
-		  <SWCPRoomLayout_ImpLockerRoom>1</SWCPRoomLayout_ImpLockerRoom>
-		  <SWCPRoomLayout_ImpOrbitalUplink>0.1</SWCPRoomLayout_ImpOrbitalUplink>
-		  <SWCPRoomLayout_ImpGarrisonBarracks>1</SWCPRoomLayout_ImpGarrisonBarracks>
 
-		  <!-- Smaller threats -->
-		  <!-- <AncientRuinsChemfuelWorkshop>1</AncientRuinsChemfuelWorkshop> -->
-		  <SWCPRoomLayout_ImpComputerRoom>1</SWCPRoomLayout_ImpComputerRoom>
-		  <SWCPRoomLayout_ImpWorkshop>1</SWCPRoomLayout_ImpWorkshop>
-		  <!-- <SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle>1</SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle> keep spawning the vehicles overlapping with objects -->
+		<!-- objective rooms -->
+			<SWCPRoomLayout_ImpComputerRoom>0.5</SWCPRoomLayout_ImpComputerRoom>
+			<SWCPRoomLayout_ImpInquisitorBossRoom>0.1</SWCPRoomLayout_ImpInquisitorBossRoom>
+			<SWCPRoomLayout_ImpOrbitalUplink>0.1</SWCPRoomLayout_ImpOrbitalUplink>
+
+		<!-- Decorative -->
+			<SWCPRoomLayout_ImpCanteen>2</SWCPRoomLayout_ImpCanteen>
+			<SWCPRoomLayout_ImpShelfRoom>1</SWCPRoomLayout_ImpShelfRoom>
+			<SWCPRoomLayout_ImpLockerRoom>1</SWCPRoomLayout_ImpLockerRoom>
+			<SWCPRoomLayout_ImpGarrisonBarracks>1</SWCPRoomLayout_ImpGarrisonBarracks>
+			<SWCPRoomLayout_ImpWorkshop>1</SWCPRoomLayout_ImpWorkshop>
+
+		<!-- Smaller threats -->
+			<!-- <AncientRuinsChemfuelWorkshop>1</AncientRuinsChemfuelWorkshop> -->
+			<!-- <SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle>1</SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle> keep spawning the vehicles overlapping with objects -->
 		</roomDefs>
 		<junkScaterrers>
 		  <AncientMilitaryCrate>
@@ -350,16 +460,10 @@
 		
 		<scatteredPrefabs>
 			<li>
-			  <countPer10kCellsRange>2~4</countPer10kCellsRange>
-			  <minSpacing>60</minSpacing>
+			  <countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
+			  <minSpacing>80</minSpacing>
 			  <maxDistFromStructure>250</maxDistFromStructure>
 			  <prefabs>
-				<!-- <SWCPPrefabSmallCommandPost_ImpRemnant> -->
-					<!-- <weight>100</weight> -->
-					<!-- <indoorRuin>false</indoorRuin> -->
-					<!-- <max>1</max> -->
-				<!-- </SWCPPrefabSmallCommandPost_ImpRemnant> -->
-				
 				<SWCPTurretPrefab_BP4AntiVehicle>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
@@ -370,6 +474,11 @@
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
 				</SWCPTurretPrefab_FPC67AntiAir>
+				<SWCPPrefabBigCommandPost_ImpRemnant>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPPrefabBigCommandPost_ImpRemnant>
 			  </prefabs>
 			</li>
 			
@@ -448,6 +557,11 @@
 		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <IndustrialShelf_Edge>
 			<countPerTenEdgeCells>2</countPerTenEdgeCells>
@@ -484,6 +598,11 @@
 		<minSingleRectHeight>8</minSingleRectHeight>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<noRoof>true</noRoof>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <AncientUplink>
 			<countPerHundredCells>3</countPerHundredCells>
@@ -511,6 +630,11 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>8</minSingleRectWidth>
 		<minSingleRectHeight>8</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 			<SWCPPrefabSmallCommandPost_ImpRemnant>
 				<countPerHundredCells>1</countPerHundredCells>
@@ -547,11 +671,6 @@
 			<minMaxRange>0~1</minMaxRange>
 		  </AncientFortifiedWall_Pillar3x3>
 		</prefabs>
-		<!-- <parts> -->
-		  <!-- <SWCPRoomPart_PawnKind_ImpArmyLieutenant>0.25</SWCPRoomPart_PawnKind_ImpArmyLieutenant> -->
-		  <!-- <SWCPRoomPart_PawnKind_ImpArmyMajor>0.125</SWCPRoomPart_PawnKind_ImpArmyMajor> -->
-		  <!-- <SWCPRoomPart_PawnKind_Stormtrooper>1</SWCPRoomPart_PawnKind_Stormtrooper> -->
-		<!-- </parts> -->
 		<floorTypes>
 		  <li>guy762_FloorTiles_DoomgiverRectangleTile_H</li>
 		  <li>guy762_FloorTiles_DoomgiverRectangleTile_V</li>
@@ -577,6 +696,11 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <AncientBed_Rows>
 			<countPerHundredCells>3</countPerHundredCells>
@@ -606,6 +730,11 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <TableWithStools_2x4>
 			<countPerHundredCells>3</countPerHundredCells>
@@ -647,6 +776,11 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <IndustrialShelf_Edge>
 			<countPerTenEdgeCells>2</countPerTenEdgeCells>
@@ -691,6 +825,11 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <SWCPPrefabInterior_2x2ImpVehicle>
 			<countPerHundredCells>1</countPerHundredCells>
@@ -724,6 +863,11 @@
 		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 			<SWCPPrefabTechBuilding_JKAmmoBank>
 				<countPerHundredCells>1</countPerHundredCells>
@@ -762,6 +906,11 @@
 		<defName>SWCPRoomLayout_ImpLockerRoom</defName>
 		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<prefabs>
 		  <AncientLockers_Row>
 			<countPerTenEdgeCells>3</countPerTenEdgeCells>
@@ -819,6 +968,11 @@
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpWeaponsStorage</defName>
 		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
 		<parts>
 		  <SWCPRoomPart_ImpWeaponsStorage />
 		  <!-- <CornerArmoredTurret /> -->
@@ -838,42 +992,99 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>1</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>Force_Darkside_MeditationSpot</li>
+			</beaconBuildingDefs>
+			<options>
+				<SWWarlords_Inquisitor_TFS MayRequire="lee.theforce.standalone">100</SWWarlords_Inquisitor_TFS>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>2</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>Force_Darkside_MeditationSpot</li>
+			</beaconBuildingDefs>
+			<options>
+				<SWWarlords_shadowstormie>100</SWWarlords_shadowstormie> <!-- replace with purge troopers eventually -->
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ImpInquisitorBossRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		
+		<!-- <requiresSingleRectRoom>true</requiresSingleRectRoom> -->
+		<minSingleRectWidth>10</minSingleRectWidth>
+		<minSingleRectHeight>10</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Red>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Red>
+		</wallAttachments>
+		<prefabs>
+			<SWCPPrefab_DarkSideBossRoom_ImpRemnant>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefab_DarkSideBossRoom_ImpRemnant>
+		</prefabs>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_darkwhiteoutlines_H</li>
+		</floorTypes>
+		<edgeTerrain>MetalTile</edgeTerrain>
+	</LayoutRoomDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefab_DarkSideBossRoom_ImpRemnant</defName>
+		<size>(11,9)</size>
+		<things>
+			<Force_Darkside_MeditationSpot MayRequire="lee.theforce.standalone">
+				<position>(5, 0, 4)</position>
+			</Force_Darkside_MeditationSpot>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+
 
 	
 	
 	
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpConscript</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpConscriptPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpArmyTrooper</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpArmyTrooperPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpArmyLieutenant</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpArmyLieutenantPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpArmyMajor</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpArmyMajorPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpArmyGeneral</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpArmyGeneralPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_Stormtrooper</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_StormtrooperPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_TIEPilot</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_TIEPilotPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
-	<!-- <RoomPartDef> -->
-		<!-- <defName>SWCPRoomPart_PawnKind_ImpWorker</defName> -->
-		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpWorkerPawn</workerClass> -->
-	<!-- </RoomPartDef> -->
+	
 	
 	
 </Defs>

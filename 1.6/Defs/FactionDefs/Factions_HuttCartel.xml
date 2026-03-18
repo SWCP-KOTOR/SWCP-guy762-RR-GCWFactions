@@ -755,6 +755,7 @@
 					<li>KOTOR_Spice</li>
 					<li>Pemmican</li>
 					
+					<li>SWCPItem_BF2AmmoSupplyPickup</li>
 					<li>KOTOR_SpacerMedKit</li>
 					<li>KOTOR_PlasmaCartridge</li>
 				  </thingDefs>

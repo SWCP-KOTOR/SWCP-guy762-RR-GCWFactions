@@ -121,7 +121,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
-				<warmupTime>1.5</warmupTime>
+				<warmupTime>1.25</warmupTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>

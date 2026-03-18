@@ -79,6 +79,7 @@
                 <!-- <thingDef>Gold</thingDef> -->
             <!-- </li> -->
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 			
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
@@ -154,6 +155,7 @@
                 <!-- <thingDef>Gold</thingDef> -->
             <!-- </li> -->
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 			
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li> -->
@@ -231,6 +233,7 @@
                 <!-- <thingDef>KOTOR_Spice</thingDef> -->
             <!-- </li> -->
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 			
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
@@ -310,6 +313,7 @@
                 <!-- <thingDef>Gold</thingDef> -->
             <!-- </li> -->
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 			
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>

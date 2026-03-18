@@ -5,7 +5,7 @@
     <ThingDef ParentName="ApparelNoQualityBase">
         <defName>guy762_JKDetpackCase</defName>
         <label>detpack case</label>
-        <description>placeholder.</description>
+        <description>A case of remotely detonated explosive charges. The explosives used are designed specifically for destroying structures, and can breach most doors and walls with ease. The case contains a built in detonation switch which requires you to manually target a placed charge in order to detonate it.</description>
         <techLevel>Spacer</techLevel>
 		<graphicData>
             <texPath>Items/JK_detpack_case</texPath>

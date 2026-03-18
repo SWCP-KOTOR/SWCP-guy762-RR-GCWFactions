@@ -43,9 +43,9 @@
 				<defaultProjectile>SWProj_TL50slugbolt</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<range>30</range>
-				<defaultCooldownTime>4</defaultCooldownTime>
+				<defaultCooldownTime>3</defaultCooldownTime>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
+				<burstShotCount>9</burstShotCount>
 				<soundCast>kotorsound_pulse</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -58,8 +58,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_TL50conc</defaultProjectile>
-				<warmupTime>5.5</warmupTime>
-				<defaultCooldownTime>8</defaultCooldownTime>
+				<warmupTime>5</warmupTime>
+				<defaultCooldownTime>6</defaultCooldownTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>

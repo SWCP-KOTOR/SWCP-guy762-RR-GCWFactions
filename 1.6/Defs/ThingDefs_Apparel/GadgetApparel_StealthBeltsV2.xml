@@ -18,6 +18,11 @@
 		  <bodyPartGroups>
 			<li>Waist</li>
 		  </bodyPartGroups>
+			
+			<!-- <abilities> -->
+				<!-- <li>SWCP_Ability_StealthMode</li> -->
+				<!-- using this method would be nice for the AbilityValidator functionality, but it prevents HediffCompProperties_RemoveIfApparelDropped from working, and the Stealth Mode hediff is removed immediately after being cast anyways if the caster has the Caught! hediff  -->
+			<!-- </abilities> -->
 		</apparel>
 		<verbs>
 			<li Class="SelfHediffVerb.VerbProperties_SelfHediff">
@@ -36,7 +41,7 @@
 		</verbs>
 		<comps>
 			<li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
-				<ticksCooldown>7200</ticksCooldown> <!-- 60ticks = 1sec -->
+				<ticksCooldown>7200</ticksCooldown>
 			</li>
 		</comps>
 	</ThingDef>

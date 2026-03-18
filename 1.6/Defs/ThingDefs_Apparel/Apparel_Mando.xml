@@ -816,12 +816,13 @@
 
 		  </li>
 		  
-		  <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle">
+		  <!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+		  <li>
 				<label>homing AA/AV missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
-				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
+				<verbClass>Verb_Shoot</verbClass><!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWProj_SAAVProtonMissile_light</defaultProjectile>
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<defaultCooldownTime>12</defaultCooldownTime>
 				<range>40</range>
@@ -837,27 +838,27 @@
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
-				<targetParams>
-                    <canTargetLocations>false</canTargetLocations>
-                </targetParams>
-                <onlyTargetVehicle>True</onlyTargetVehicle>
-                <onlyTargetFleshType>False</onlyTargetFleshType>
+				<!-- <targetParams> -->
+                    <!-- <canTargetLocations>false</canTargetLocations> -->
+                <!-- </targetParams> -->
+                <!-- <onlyTargetVehicle>True</onlyTargetVehicle> -->
+                <!-- <onlyTargetFleshType>False</onlyTargetFleshType> -->
                 <!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
 			</li>
 			
 			
 		</verbs>
 		<comps>
-		  <li Class="CompProperties_ApparelReloadable">
-			<maxCharges>1</maxCharges>
-			<soundReload>Standard_Reload</soundReload>
-			<hotKey>Misc4</hotKey>
-			<chargeNoun>jump</chargeNoun>
-			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-			<replenishAfterCooldown>true</replenishAfterCooldown>
-			<baseReloadTicks>1800</baseReloadTicks>
-		  </li>
-		  <li Class="CompProperties_Explosive">
+			<li Class="CompProperties_ApparelReloadable"> <!-- no ammo because using the jump feature also counts as using a charge -->
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>jump</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<replenishAfterCooldown>true</replenishAfterCooldown>
+				<baseReloadTicks>1800</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3</explosiveRadius>
 				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
 				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>

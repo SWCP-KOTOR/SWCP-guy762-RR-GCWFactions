@@ -2,6 +2,33 @@
 <Defs>
 
 	
+	<PawnKindDef Name="SWWarlords_Inquisitor_TFS" ParentName="SWWarlords_BASEInquisitor">
+		<defName>SWWarlords_Inquisitor_TFS</defName>
+		  
+		<forcedTraits>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
+		</forcedTraits>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+				   <min>10</min>
+				   <max>12</max>
+				</forceLevelRange>
+				<darkSideRange>25 ~ 55</darkSideRange>
+				<grantRandomAbilities>true</grantRandomAbilities>
+				<minRandomAbilities>6</minRandomAbilities>
+				<maxRandomAbilities>8</maxRandomAbilities>
+				<abilityCategories>
+				   <li>Force_Neutral</li>
+				   <li>Force_Darkside</li>
+				   <li>Force_Telekinesis</li>
+				   <li>Force_LightsaberCombat</li>
+				</abilityCategories>
+			 </li>
+		</modExtensions>
+	</PawnKindDef>	
+	
+	
 	<PawnKindDef Name="SWPentastar_InQuestor_TFS" ParentName="SWPentastar_BASEInQuestor">
 		<defName>SWPentastar_InQuestor_TFS</defName>
 		  

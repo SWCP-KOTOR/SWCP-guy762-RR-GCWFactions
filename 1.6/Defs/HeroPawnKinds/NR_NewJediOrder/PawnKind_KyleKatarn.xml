@@ -178,7 +178,7 @@
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
             <bladeColors>
                <li>(0, 64, 255, 255)</li> <!-- KotOR blue -->
-               <li>(0, 255, 0, 255)</li> <!-- basic green -->
+               <!-- <li>(0, 255, 0, 255)</li> apparently the green one was originally Qu Rahn's, so he shouldn't get it as his default color --> <!-- basic green -->
             </bladeColors>
             <coreColors>
                <!-- White Core -->

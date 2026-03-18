@@ -24,7 +24,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
 			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
 		</apparelTags>
@@ -93,7 +93,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialNavyTrooperHelmet</li>
 			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
 			<li>SWGCWSpecificApparelItem_BigBeltImperialOfficerUniform</li>
@@ -180,7 +180,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotHelmet</li>
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
@@ -511,7 +511,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
 			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
 		</apparelTags>
@@ -604,7 +604,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
 			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
 		</apparelTags>

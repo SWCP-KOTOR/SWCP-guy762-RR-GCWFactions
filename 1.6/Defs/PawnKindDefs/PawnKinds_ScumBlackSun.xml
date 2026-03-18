@@ -191,7 +191,7 @@
 		
 		<apparelMoney>2500~5500</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
+		  <!-- <li>KotOREquipment_basic</li> -->
 		  <li>KotORUtility_weakgrenade</li>
 		  <li>BlackSun_FalleenSoldier</li>
 		  <li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>
@@ -301,7 +301,7 @@
 		
 		<apparelMoney>2500~5500</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
+		  <!-- <li>KotOREquipment_basic</li> -->
 		  <li>BlackSun_FalleenSoldier</li>
 		  <li>SWGCWSpecificApparelItem_BlackSunSoldierHelmet</li>
 		  <li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>

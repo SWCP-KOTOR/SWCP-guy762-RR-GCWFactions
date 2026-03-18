@@ -24,7 +24,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
+		  <!-- <li>KotOREquipment_basic</li> -->
 		  <li>SWGCWSpecificApparelItem_RebelFleetTrooperHelmet</li>
 		  <li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
 		  <li>SWCPSpecificApparelItem_ScoutVest</li>
@@ -170,7 +170,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
+		  <!-- <li>KotOREquipment_basic</li> -->
 		  <li>SWCPSpecificApparelItem_GenericUniformHat</li>
 		  <li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
 		</apparelTags>
@@ -470,7 +470,7 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>KotOREquipment_basic</li>
+			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
 			<li>SWCPSpecificApparelItem_FlightVest</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>

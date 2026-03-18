@@ -104,9 +104,9 @@
                 <label>throw frag grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -124,7 +124,10 @@
         <comps>
 			<li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -187,9 +190,9 @@
                 <label>throw ion grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -207,7 +210,10 @@
         <comps>
             <li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -271,9 +277,9 @@
                 <label>throw stun grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -291,7 +297,10 @@
         <comps>
             <li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -356,9 +365,9 @@
                 <label>throw poison grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -375,7 +384,10 @@
         <comps>
 			<li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -445,9 +457,9 @@
                 <label>throw plasma grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -464,7 +476,10 @@
         <comps>
 			<li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -540,9 +555,9 @@
                 <label>throw sonic grenade</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>12.9</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -560,7 +575,10 @@
         <comps>
             <li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -625,9 +643,9 @@
                 <label>throw thermal detonator</label>
                 <verbClass>Verb_LaunchProjectileStatic</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <range>15</range>
+                <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -645,7 +663,10 @@
         <comps>
             <li Class="CompProperties_ApparelReloadable">
                 <maxCharges>3</maxCharges>
-                <destroyOnEmpty>true</destroyOnEmpty>
+                <!-- <destroyOnEmpty>true</destroyOnEmpty> --><destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef>
+				<soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>

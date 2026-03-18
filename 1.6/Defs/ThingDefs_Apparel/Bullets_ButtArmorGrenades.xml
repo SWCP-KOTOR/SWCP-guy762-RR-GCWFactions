@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+  
+	
+	<ThingDef ParentName="guy762_BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_stormtrooper</defName>
+		<label>stun grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_stormtrooper</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>2</explosionRadius >
+		  <!--damageDef>guy762_GrenadeDamage_stun</damageDef-->
+		  <damageDef>Stun</damageDef>
+		  <explosionDelay>100</explosionDelay>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <soundExplode>kotorsound_stungrenade</soundExplode>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="guy762_BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_raptor</defName>
+		<label>posion grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_raptor</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <damageDef>ToxGas</damageDef>
+		  <explosionDelay>100</explosionDelay>
+		  <explosionRadius>1.9</explosionRadius>
+		  <explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+		  <postExplosionGasType>ToxGas</postExplosionGasType>
+		  <screenShakeFactor>0.5</screenShakeFactor>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <soundExplode>kotorsound_poisongrenade</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="guy762_BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_stormcommando</defName>
+		<label>plasma grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_stormcommando</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>2.3</explosionRadius >
+		  <damageDef>guy762_GrenadeDamage_plasma</damageDef>
+		  <damageAmountBase>50</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <ai_IsIncendiary>true</ai_IsIncendiary>
+		  <shadowSize>0.6</shadowSize>
+		  <screenShakeFactor>0.5</screenShakeFactor>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <extraDamages>
+				<li>
+					<def>guy762_GrenadeDamage_ion</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+</Defs>

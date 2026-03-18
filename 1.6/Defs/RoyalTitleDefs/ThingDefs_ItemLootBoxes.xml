@@ -27,7 +27,8 @@
             <li>ItemsMisc</li>
         </thingCategories>
         <drawGUIOverlay>false</drawGUIOverlay>
-        <tradeability>Sellable</tradeability>
+        <!-- <tradeability>Sellable</tradeability> -->
+        <tradeability>All</tradeability>
         <techLevel>Spacer</techLevel>
         <comps>
             <li Class="CompProperties_Usable">
@@ -117,7 +118,8 @@
             <li>ItemsMisc</li>
         </thingCategories>
         <drawGUIOverlay>false</drawGUIOverlay>
-        <tradeability>Sellable</tradeability>
+        <!-- <tradeability>Sellable</tradeability> -->
+        <tradeability>All</tradeability>
         <techLevel>Spacer</techLevel>
         <comps>
             <li Class="CompProperties_Usable">
@@ -157,6 +159,22 @@
                         <countRange>10~15</countRange>
                         <weight>0.5</weight>
                     </li>
+					
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>RikknitOvum</thingDef>
+                        <countRange>4~6</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Glitterstim</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>JiRikknit</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.5</weight>
+                    </li>
 					<li>
                         <thingDef>KOTOR_Spice</thingDef>
                         <countRange>10~15</countRange>
@@ -171,8 +189,12 @@
 			<li Class="CompProperties_Forbiddable"/>
         </comps>
 		<thingSetMakerTags>
-		  <li>RewardStandardCore</li>
+			<li>RewardStandardCore</li>
 		</thingSetMakerTags>
+		<tradeTags>
+			<li>guy762TT_GCWItemLootBoxes_any</li>
+			<li>guy762TT_GCWItemLootBoxes_illegal</li>
+		</tradeTags>
     </ThingDef>
 	
 	
@@ -182,7 +204,7 @@
         <label>foodstuff shipment</label>
         <description>A shipment of bulk grains, animal products, and more.</description>
         <graphicData>
-            <texPath>Buildings/SotE_singlecrate_yellow</texPath>
+            <texPath>Buildings/SotE_singlecrate_red</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.5</drawSize>
         </graphicData>
@@ -202,7 +224,8 @@
             <li>ItemsMisc</li>
         </thingCategories>
         <drawGUIOverlay>false</drawGUIOverlay>
-        <tradeability>Sellable</tradeability>
+        <!-- <tradeability>Sellable</tradeability> -->
+        <tradeability>All</tradeability>
         <techLevel>Spacer</techLevel>
         <comps>
             <li Class="CompProperties_Usable">
@@ -227,11 +250,80 @@
                         <countRange>300~600</countRange>
                         <weight>1</weight>
                     </li>
+					
+					
+					
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Gorg_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>1</weight> <!-- market value of 1 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Silica_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>1</weight> <!-- market value of 1 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Insectile_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>0.75</weight> <!-- market value of 1.5 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Reptavian_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>0.5</weight> <!-- market value of 2 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Mammavian_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>0.5</weight> <!-- market value of 2 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Reptomammal_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>0.5</weight> <!-- market value of 2 -->
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Crustapod_Meat</thingDef>
+                        <countRange>300~600</countRange>
+                        <weight>0.25</weight> <!-- market value of 2.5 -->
+                    </li>
+					
+					
                     <li>
                         <thingDef>Milk</thingDef>
                         <countRange>150~300</countRange>
-                        <weight>0.75</weight>
+                        <weight>0.5</weight>
                     </li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">
+                        <thingDef>GS_Milk</thingDef>
+                        <countRange>150~300</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>GreenMilk</thingDef>
+                        <countRange>150~300</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>BlueMilk</thingDef>
+                        <countRange>150~300</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					
+					
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Gornt_Meat</thingDef>
+                        <countRange>150~300</countRange>
+                        <weight>0.1</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Rycrit_Meat</thingDef>
+                        <countRange>150~300</countRange>
+                        <weight>0.1</weight>
+                    </li>
+					
+					
 					<li>
                         <thingDef>EggChickenUnfertilized</thingDef>
                         <countRange>150~300</countRange>
@@ -250,21 +342,6 @@
 					<li>
                         <thingDef>RawFungus</thingDef>
                         <countRange>150~300</countRange>
-                        <weight>0.25</weight>
-                    </li>
-					<li>
-                        <thingDef>InsectJelly</thingDef>
-                        <countRange>150~300</countRange>
-                        <weight>0.25</weight>
-                    </li>
-					<li>
-                        <thingDef>Chocolate</thingDef>
-                        <countRange>150~300</countRange>
-                        <weight>0.25</weight>
-                    </li>
-					<li>
-                        <thingDef>Ambrosia</thingDef>
-                        <countRange>150~300</countRange>
                         <weight>0.1</weight>
                     </li>
                 </weightedDrops>
@@ -276,8 +353,140 @@
 			<li Class="CompProperties_Forbiddable"/>
         </comps>
 		<thingSetMakerTags>
-		  <li>RewardStandardCore</li>
+			<li>RewardStandardCore</li>
 		</thingSetMakerTags>
+		<tradeTags>
+			<li>guy762TT_GCWItemLootBoxes_any</li>
+			<li>guy762TT_GCWItemLootBoxes_food</li>
+		</tradeTags>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+        <defName>SWCPItemLootBox_Meals</defName>
+        <label>meal shipment</label>
+        <description>A shipment of pre-cooked, ready-to-eat meals.</description>
+        <graphicData>
+            <texPath>Buildings/SotE_singlecrate_red</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1750</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>20</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <!-- <tradeability>Sellable</tradeability> -->
+        <tradeability>All</tradeability>
+        <techLevel>Spacer</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>1</numWeightedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>MealSimple</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>1</weight>
+                    </li>
+					
+					
+					<li>
+                        <thingDef>MealFine</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>MealFine_Veg</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>MealFine_Meat</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					
+					
+					
+					<li>
+                        <thingDef>KotOR_water</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>MealSurvivalPack</thingDef>
+                        <countRange>30~60</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>Pemmican</thingDef>
+                        <countRange>225~450</countRange>
+						<weight>0.25</weight>
+                    </li>
+					
+					
+					
+					<li>
+                        <thingDef>MealLavish</thingDef>
+                        <countRange>30~60</countRange>
+						<weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>MealLavish_Veg</thingDef>
+                        <countRange>30~60</countRange>
+						<weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>MealLavish_Meat</thingDef>
+                        <countRange>30~60</countRange>
+						<weight>0.25</weight>
+                    </li>
+					
+					
+					<li>
+                        <thingDef>MealNutrientPaste</thingDef>
+                        <countRange>30~60</countRange>
+						<weight>0.1</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>guy762TT_GCWItemLootBoxes_any</li>
+			<li>guy762TT_GCWItemLootBoxes_food</li>
+		</tradeTags>
     </ThingDef>
 	
 	

@@ -439,10 +439,11 @@
 					<!-- <li>ImmediateAttack</li> -->
 				</disallowedStrategies>
 				<options>
-					<SWImpRemnant_TankDriver>50</SWImpRemnant_TankDriver>
-					<SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper>
-					<SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat>
-					<guy762_SWVehicle_TX225Occupier_bot_PawnKind>10</guy762_SWVehicle_TX225Occupier_bot_PawnKind>
+					<!-- <SWImpRemnant_TankDriver>50</SWImpRemnant_TankDriver> -->
+					<!-- <SWImpRemnant_ArmyTrooper>10</SWImpRemnant_ArmyTrooper> -->
+					<!-- <SWImpRemnant_EngiCombat>10</SWImpRemnant_EngiCombat> -->
+					
+					<!-- <guy762_SWVehicle_TX225Occupier_bot_PawnKind>10</guy762_SWVehicle_TX225Occupier_bot_PawnKind> -->
 					<guy762_SWVehicle_ATST_bot_PawnKind>25</guy762_SWVehicle_ATST_bot_PawnKind>
 					<guy762_SWVehicle_ATPT_bot_PawnKind>50</guy762_SWVehicle_ATPT_bot_PawnKind>
 				</options>
@@ -922,9 +923,9 @@
 					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
 					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
 					
-					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-					<SWImpRemnant_Engineer>5</SWImpRemnant_Engineer>
-					<SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat>
+					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
+					<!-- <SWImpRemnant_Engineer>5</SWImpRemnant_Engineer> -->
+					<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 
 					<!-- <SWImpRemnant_stormtrooper>5</SWImpRemnant_stormtrooper> -->
 					<!-- <SWImpRemnant_stormieofficer>5</SWImpRemnant_stormieofficer> -->
@@ -1023,6 +1024,7 @@
 					<li>MealSurvivalPack</li>
 					
 					<li>KOTOR_SpacerMedKit</li>
+					<li>SWCPItem_BF2AmmoSupplyPickup</li>
 					<li>KOTOR_PlasmaCartridge</li>
 					<li>KOTOR_FabricArmorweave</li>
 				  </thingDefs>

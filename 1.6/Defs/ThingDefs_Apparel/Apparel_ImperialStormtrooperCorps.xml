@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
-	
-  
-	
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>guy762_ThrownGrenade_stormtrooper</defName>
-		<label>stun grenade</label>
-		<thingClass>Projectile_Explosive</thingClass>
-		<graphicData>
-		  <texPath>Weapons/Projectiles/Grenades/grenade_stormtrooper</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-		  <explosionRadius>2</explosionRadius >
-		  <!--damageDef>guy762_GrenadeDamage_stun</damageDef-->
-		  <damageDef>Stun</damageDef>
-		  <explosionDelay>100</explosionDelay>
-		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
-		  <soundExplode>kotorsound_stungrenade</soundExplode>
-		</projectile>
-	</ThingDef>
-  
-  
-  
-  
+
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_StormieArmor</defName>
 		<label>Stormtrooper armor</label>
@@ -90,7 +66,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -112,8 +88,8 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>ComponentIndustrial</ammoDef>
-				<ammoCountToRefill>2</ammoCountToRefill>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
@@ -394,7 +370,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_ImpStormtrooperBackpack</defName>
 		<label>backpack, SD-48 survival pack</label>
 		<description>.</description>
@@ -565,7 +541,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -587,8 +563,8 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>KOTOR_PlasmaCartridge</ammoDef>
-				<ammoCountToRefill>2</ammoCountToRefill>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
             <li Class="FCP.Core.CompProperties_LabelColored">
@@ -909,7 +885,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -931,8 +907,8 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>ComponentIndustrial</ammoDef>
-				<ammoCountToRefill>2</ammoCountToRefill>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
@@ -1063,32 +1039,7 @@
 	</ThingDef>
 	
 	
-	
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>guy762_ThrownGrenade_stormcommando</defName>
-		<label>plasma grenade</label>
-		<thingClass>Projectile_Explosive</thingClass>
-		<graphicData>
-		  <texPath>Weapons/Projectiles/Grenades/grenade_stormcommando</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-		  <explosionRadius>2.3</explosionRadius >
-		  <damageDef>guy762_GrenadeDamage_plasma</damageDef>
-		  <damageAmountBase>50</damageAmountBase>
-		  <explosionDelay>100</explosionDelay>
-		  <ai_IsIncendiary>true</ai_IsIncendiary>
-		  <shadowSize>0.6</shadowSize>
-		  <screenShakeFactor>0.5</screenShakeFactor>
-		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
-		  <extraDamages>
-				<li>
-					<def>guy762_GrenadeDamage_ion</def>
-					<amount>25</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-	</ThingDef>
+
 	
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_StormCommandoArmor</defName>
@@ -1191,7 +1142,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -1213,7 +1164,7 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>KOTOR_PlasmaCartridge</ammoDef>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
 				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
@@ -1453,7 +1404,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -1475,8 +1426,8 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>ComponentIndustrial</ammoDef>
-				<ammoCountToRefill>2</ammoCountToRefill>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
         </comps>
@@ -1497,7 +1448,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_ImpSnowtrooperBackpack</defName>
 		<label>backpack, temperature control unit</label>
 		<description>.</description>

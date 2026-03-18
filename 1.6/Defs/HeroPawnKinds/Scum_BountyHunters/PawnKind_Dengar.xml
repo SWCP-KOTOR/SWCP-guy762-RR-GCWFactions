@@ -46,6 +46,7 @@
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_Headwrap_open</apparelDef>
+				<styleDef>guy762_OpenHeadwrapStyle_chin</styleDef>
 				<quality>Legendary</quality>
 				<color>(250,250,250)</color> <!-- white -->
 			</li>

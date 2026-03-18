@@ -40,12 +40,14 @@
 			<li>guy762TT_GCWWeapon_ImpSurplus</li>
 		</tradeTags>
 		<verbs>
-			<li Class="VerbShootVehicle.VerbPropertiesAntiVehicle">
+			<!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+			<li>
 				<label>homing AV/AA missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
-				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
+				<!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWProj_SAAVProtonMissile_heavy</defaultProjectile>
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_heavy</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<defaultCooldownTime>6</defaultCooldownTime>
 				<!-- <range>36</range> -->
@@ -62,12 +64,11 @@
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
-                <targetParams>
-                    <canTargetLocations>false</canTargetLocations>
-                </targetParams>
-                <onlyTargetVehicle>True</onlyTargetVehicle>
-                <onlyTargetFleshType>False</onlyTargetFleshType>
-                <!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
+                <!-- <targetParams> -->
+                    <!-- <canTargetLocations>false</canTargetLocations> -->
+                <!-- </targetParams> -->
+                <!-- <onlyTargetVehicle>True</onlyTargetVehicle> -->
+                <!-- <onlyTargetFleshType>False</onlyTargetFleshType> -->
             </li>
 		</verbs>
 		<tools>

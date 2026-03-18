@@ -371,7 +371,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <range>25</range>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>1.75</warmupTime>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
                 <noiseRadius>4</noiseRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>kotorsound_grenadethrow</soundCast>
@@ -393,7 +393,7 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>grenades</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				<ammoDef>KOTOR_PlasmaCartridge</ammoDef>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
 				<ammoCountToRefill>1</ammoCountToRefill>
 				<baseReloadTicks>60</baseReloadTicks>
             </li>
