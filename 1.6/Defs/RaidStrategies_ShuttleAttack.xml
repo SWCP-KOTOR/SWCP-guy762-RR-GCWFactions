@@ -114,6 +114,23 @@
 					</points>
 				</selectionWeightPerPointsCurve>
 			</li>
+			<!-- //////////////////////////////////////////////////////////////////////////////////// -->
+			<li>
+				<faction>guy762_SWWarlordsFaction_PDF</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_LocalWarlord</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
 		</selectionWeightCurvesPerFaction>
         <pointsFactorCurve>
             <points>

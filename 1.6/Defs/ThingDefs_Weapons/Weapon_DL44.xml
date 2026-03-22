@@ -220,12 +220,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_heavy</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_JK_DL44charge</soundAiming>
 				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>25</range>
 				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<!--soundAiming>kotorsound_powercharge</soundAiming-->
 				<soundCast>kotorsound_dl44_altfire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -321,12 +320,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_advheavy</defaultProjectile>
-				<warmupTime>4</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_JK_DL44charge</soundAiming>
 				<defaultCooldownTime>5.5</defaultCooldownTime>
 				<range>25</range>
 				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<!--soundAiming>kotorsound_powercharge</soundAiming-->
 				<soundCast>kotorsound_bryar_alt</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

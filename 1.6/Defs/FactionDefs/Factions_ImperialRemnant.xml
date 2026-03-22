@@ -183,6 +183,14 @@
 					<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+					
+					<TribeCivil>-100</TribeCivil>
+					<TribeRough>-100</TribeRough>
+					<TribeSavage>-100</TribeSavage>
+					<TribeCannibal>-100</TribeCannibal>
+					<NudistTribe>-100</NudistTribe>
+					<TribeRoughNeanderthal>-100</TribeRoughNeanderthal>
+					<TribeSavageImpid>-100</TribeSavageImpid>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>

@@ -29,6 +29,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed> <!-- +1 -->
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		<apparel>
@@ -201,6 +202,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>0.2</SocialImpact>
@@ -306,6 +308,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>0.5</SocialImpact>
@@ -415,6 +418,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>0.7</SocialImpact>
@@ -544,6 +548,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>1</SocialImpact>
@@ -661,6 +666,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed>
 			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -728,6 +734,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed>
 			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		

@@ -43,7 +43,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_ScatterBlasterBolt</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>2</warmupTime><soundAiming>kotorsound_KotORpowercharge_2seconds</soundAiming>
 				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>25</range>
 				<accuracyTouch>0.35</accuracyTouch>
@@ -52,7 +52,6 @@
 				<accuracyLong>0.30</accuracyLong>
 				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 				<burstShotCount>8</burstShotCount>
-				<!--soundAiming>kotorsound_bowcharge</soundAiming-->
 				<soundCast>kotorsound_battlefrontshotgun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

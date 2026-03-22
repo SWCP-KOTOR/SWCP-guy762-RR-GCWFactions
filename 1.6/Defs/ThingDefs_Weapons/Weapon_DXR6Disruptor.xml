@@ -213,7 +213,7 @@
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.85</AccuracyLong>
-			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>1.4</RangedWeapon_DamageMultiplier>
 		</statBases>
 		<weaponTags Inherit="False">
@@ -259,7 +259,7 @@
 				<beamCurvature>0.1</beamCurvature>
 
 				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_JKDisruptor_charge</soundAiming>
 				<defaultCooldownTime>8</defaultCooldownTime>
 				
 				<range>60</range>

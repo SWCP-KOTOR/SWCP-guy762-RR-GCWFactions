@@ -201,6 +201,7 @@
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.4</HuntingStealth> -->
 		<!-- <MeleeDodgeChance>0.1</MeleeDodgeChance> -->
+		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance> -->
 		<!-- <PawnTrapSpringChance>-0.2</PawnTrapSpringChance> -->
 	<!-- </equippedStatOffsets> -->
 	
@@ -282,6 +283,7 @@
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.6</HuntingStealth> -->
 		<!-- <MeleeDodgeChance>0.2</MeleeDodgeChance> -->
+		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance> -->
 	<!-- </equippedStatOffsets> -->
     <!-- <apparel> -->
       <!-- <bodyPartGroups> -->
@@ -347,6 +349,7 @@
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.8</HuntingStealth> -->
 		<!-- <MeleeDodgeChance>0.3</MeleeDodgeChance> -->
+		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance> -->
 	<!-- </equippedStatOffsets> -->
     <!-- <apparel> -->
       <!-- <bodyPartGroups> -->

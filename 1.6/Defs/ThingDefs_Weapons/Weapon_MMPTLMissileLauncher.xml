@@ -62,6 +62,7 @@
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<!-- <onlyManualCast>true</onlyManualCast> -->
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
                 <!-- <targetParams> -->

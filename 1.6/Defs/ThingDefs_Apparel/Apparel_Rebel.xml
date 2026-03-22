@@ -121,9 +121,14 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>(175,150,120)</color> <!-- bespin beige -->
+						<color>(175,150,120)</color>
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
+					  
+						<altDefs>
+							<li>guy762_RebelEndorHelmetCustomization_Default</li>
+							<li>guy762_RebelEndorHelmetCustomization_OrdMantellMilitia</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
@@ -158,6 +163,58 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelEndorHelmetCustomization_Default</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RebelEndorHelmetDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Rebel/endorhelmet</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(175,150,120)</color> <!-- bespin beige -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelEndorHelmetCustomization_OrdMantellMilitia</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_MantellianMilitiaTrooper/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Rebel/endorhelmet</li></texturePaths>
+			<colorA>
+				<color>(110,80,45)</color>         <!-- Mantellian Defense Force brown -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(70,90,125)</color> <!-- K1 jedi blue -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -712,6 +769,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.3</MoveSpeed> <!-- -1 -->
 			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 			
 			<SocialImpact>0.1</SocialImpact>
@@ -824,15 +882,16 @@
 		<statBases>
 			<Mass>12</Mass>
 			<MarketValue>5000</MarketValue>
-			<MaxHitPoints>475</MaxHitPoints> <!-- battle armor stats -1 -->
-      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<MaxHitPoints>475</MaxHitPoints> <!-- battle armor stats -->
+      		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.4</MoveSpeed>
 			<MeleeDodgeChance>-0.4</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.4</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -926,9 +985,9 @@
 			<MarketValue>2500</MarketValue>
 			
 			<MaxHitPoints>175</MaxHitPoints>
-      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		

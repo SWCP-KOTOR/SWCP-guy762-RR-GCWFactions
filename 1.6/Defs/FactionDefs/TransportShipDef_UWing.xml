@@ -46,7 +46,8 @@
         <defName>guy762_SWShuttleThing_uwing</defName>
         <label>UT-60D U-wing troop transport</label>
         <description>.</description>
-        <altitudeLayer>Building</altitudeLayer>
+        <!-- <altitudeLayer>Building</altitudeLayer> -->
+		<altitudeLayer>Skyfaller</altitudeLayer>
         <pathCost>50</pathCost>
         <blockWind>true</blockWind>
         <passability>Impassable</passability>
@@ -57,7 +58,10 @@
 		15 - length of cabin + engines
 		-->
         <!-- <size>(9,24)</size> -->
-        <size>(15,9)</size>
+		
+		
+        <!-- <size>(15,9)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(5,3)</size>
         
 		<drawHighlight>true</drawHighlight>
         <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
@@ -143,7 +147,8 @@
 
     <ThingDef Name="guy762_SWShuttleSkyfaller_uwingBASE" ParentName="SkyfallerBase" Abstract="True">
         <!-- <size>(9,24)</size> -->
-        <size>(15,9)</size>
+        <!-- <size>(15,9)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(5,3)</size>
         <graphicData>
             <texPath>Shuttles_MajesticMadman/uwing</texPath>
             <graphicClass>Graphic_Single</graphicClass>

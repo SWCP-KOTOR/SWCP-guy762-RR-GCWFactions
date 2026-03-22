@@ -91,6 +91,7 @@
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li> -->
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li> -->
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMilitia</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
 			
 			<!-- put a bunch of "buy" trade tags here, they'll take anything and everything useful -->
@@ -167,6 +168,7 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMilitia</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
         </stockGenerators>
         <modExtensions>
@@ -247,6 +249,7 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMilitia</tag></li>
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li> -->
         </stockGenerators>
         <modExtensions>
@@ -325,6 +328,7 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMilitia</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
         </stockGenerators>
         <modExtensions>

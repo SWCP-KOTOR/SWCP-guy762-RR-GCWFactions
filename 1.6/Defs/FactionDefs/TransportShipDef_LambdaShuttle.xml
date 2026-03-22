@@ -41,13 +41,16 @@
         <defName>guy762_SWShuttleThing_lambda</defName>
         <label>Lambda-class T-4a shuttle</label>
         <description>.</description>
-        <altitudeLayer>Building</altitudeLayer>
+        <!-- <altitudeLayer>Building</altitudeLayer> -->
+		<altitudeLayer>Skyfaller</altitudeLayer>
         <pathCost>50</pathCost>
         <blockWind>true</blockWind>
         <passability>Impassable</passability>
         <fillPercent>1.0</fillPercent>
-        <!-- <size>(10,20)</size> -->
-        <size>(20,10)</size>
+		
+        <!-- <size>(20,10)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(6,3)</size>
+		
         <drawHighlight>true</drawHighlight>
         <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
         <graphicData>
@@ -131,8 +134,8 @@
     <!-- NCR Standard Vertibird -->
 
     <ThingDef Name="guy762_SWShuttleSkyfaller_lambdaBASE" ParentName="SkyfallerBase" Abstract="True">
-        <!-- <size>(10,20)</size> -->
-        <size>(20,10)</size>
+        <!-- <size>(20,10)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(6,3)</size>
         <graphicData>
             <texPath>Shuttles_MajesticMadman/Lambda</texPath>
             <graphicClass>Graphic_Single</graphicClass>

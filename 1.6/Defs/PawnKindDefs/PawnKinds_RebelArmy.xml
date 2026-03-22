@@ -112,7 +112,7 @@
 		<apparelTags>
 		  <li>KotOREquipment_officer</li>
 		  <li>NewRepublic_ArmyOfficer</li>
-		  <li>NewRepublic_endortrooperhelmet</li>
+		  <li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
 		  <li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
 		  <li>SWCPSpecificApparelItem_GenericUniform</li>
 		  <li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
@@ -240,13 +240,15 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <!-- <li>KotOREquipment_basic</li> -->
-		  <li>NewRepublic_RebelBackpackMix</li>
-		  <li>NewRepublic_rebeltrooper</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>NewRepublic_RebelTrooperOnSkin</li>
-		  <li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
-		</apparelTags>
+			<!-- <li>KotOREquipment_basic</li> -->
+			<li>NewRepublic_RebelBackpackMix</li>
+			<li>SWCPSpecificApparelItem_FlakHat</li>
+			<li>SWGCWSpecificApparelItem_RebelFleetTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>NewRepublic_RebelTrooperOnSkin</li>
+			<li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
+			</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelCombatSuit</li>
 			<!-- <li>guy762_GenericUniform_fatigues</li> -->
@@ -290,6 +292,9 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_RebelEndorHelmetDefault/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -324,12 +329,13 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_basic</li>
-		  <li>NewRepublic_sharpshooterhat</li>
-		  <li>SWWarlordsAccessory_onlyponcho</li>
-		  <li>NewRepublic_RebelSniperOnSkin</li>
-		  <!-- <li>SWCPSpecificApparelItem_GenericUniform</li> -->
-		  <li>SWCPSpecificApparelItem_ScoutVest</li>
+			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_FlakHat</li>
+			<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
+			<li>SWWarlordsAccessory_onlyponcho</li>
+			<li>NewRepublic_RebelSniperOnSkin</li>
+			<!-- <li>SWCPSpecificApparelItem_GenericUniform</li> -->
+			<li>SWCPSpecificApparelItem_ScoutVest</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Jacket_scout</li>
@@ -380,6 +386,9 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_RebelEndorHelmetDefault/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

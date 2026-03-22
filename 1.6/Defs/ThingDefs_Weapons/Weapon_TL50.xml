@@ -42,8 +42,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_TL50slugbolt</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
-				<range>30</range>
 				<defaultCooldownTime>3</defaultCooldownTime>
+				<range>30</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>9</burstShotCount>
 				<soundCast>kotorsound_pulse</soundCast>
@@ -71,6 +71,7 @@
 				<ai_IsWeapon>true</ai_IsWeapon>
 				
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -134,7 +135,7 @@
 			<AccuracyShort>0.65</AccuracyShort>
 			<AccuracyMedium>0.50</AccuracyMedium>
 			<AccuracyLong>0.40</AccuracyLong>
-			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
 		</statBases>
 		<weaponTags>
@@ -154,9 +155,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
+				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
+				<burstShotCount>9</burstShotCount>
 				<soundCast>kotorsound_SWGLrepeater</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

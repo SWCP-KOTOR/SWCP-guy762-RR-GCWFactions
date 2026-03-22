@@ -57,6 +57,7 @@
 				<ai_IsWeapon>true</ai_IsWeapon>
 				
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>

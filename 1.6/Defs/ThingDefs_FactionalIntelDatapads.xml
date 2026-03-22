@@ -180,6 +180,21 @@
 	
 	
 	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Militia</defName>
+		<label>intel datapad, Planetary Defense Force</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Militia</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyMilitia</li>
+			<li>SWCPTT_FactionIntelDatapads_basicMilitia</li>
+			<li>SWCPTT_FactionIntelDatapads_anyneutral</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
 		<defName>SWCP_FactionIntelDatapad_Zann</defName>
 		<label>intel datapad, Zann Consortium</label>
 		<graphicData>
@@ -378,6 +393,21 @@
 			<li>SWCPTT_FactionIntelDatapads_anyPartisans</li>
 			<li>SWCPTT_FactionIntelDatapads_criticalPartisans</li>
 			<li>SWCPTT_FactionIntelDatapads_anyrebels</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Militia</defName>
+		<label>critical intel datapad, Planetary Defense Force</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Militia</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyMilitia</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalMilitia</li>
+			<li>SWCPTT_FactionIntelDatapads_anyneutral</li>
 		</tradeTags>
 	</ThingDef>
 	

@@ -129,6 +129,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -468,6 +469,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed> <!-- -1 -->
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -545,6 +547,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -804,6 +807,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.4</MoveSpeed>
 			<MeleeDodgeChance>-0.4</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.4</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
@@ -985,6 +989,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.4</MoveSpeed>
 			<MeleeDodgeChance>-0.4</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.4</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 			
 			<MeleeDamageFactor>0.1</MeleeDamageFactor>

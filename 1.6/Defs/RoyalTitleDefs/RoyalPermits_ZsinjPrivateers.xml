@@ -542,9 +542,9 @@
 	
 	
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_ArmyTroopers8x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_ArmyTroopers8x3days</defName>
 															<label>temporary deployment: 8x army troopers</label>
-															<description>Request a group of 8 army troopers to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 8 army troopers to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateer</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_ArmyGrenadiers4xReinforcements</prerequisite> -->
@@ -556,16 +556,16 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>15</cooldownDays>
 														</RoyalTitlePermitDef>
 														
 														
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_ArmyGrenadiers4x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_ArmyGrenadiers4x3days</defName>
 															<label>temporary deployment: 4x army grenadiers</label>
-															<description>Request a group of 4 army grenadiers armed with anti-vehicle grenade launchers to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 4 army grenadiers armed with anti-vehicle grenade launchers to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateer</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_ArmyTroopers8x5days</prerequisite> -->
@@ -577,15 +577,15 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>15</cooldownDays>
 														</RoyalTitlePermitDef>
 														
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_ArmyTroopers16x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_ArmyTroopers16x3days</defName>
 															<label>temporary deployment: 16x army troopers</label>
-															<description>Request a group of 16 army troopers to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 16 army troopers to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateer</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_ArmyGrenadiers4x5days</prerequisite> -->
@@ -597,7 +597,7 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>15</cooldownDays>
 														</RoyalTitlePermitDef>
@@ -652,9 +652,9 @@
 
 
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_Raptors6x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_Raptors6x3days</defName>
 															<label>temporary deployment: 6x Raptors</label>
-															<description>Request a group of 6 elite Raptor shock troops to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 6 elite Raptor shock troops to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_RaptorsHeavy4xReinforcements</prerequisite> -->
@@ -666,7 +666,7 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>30</cooldownDays>
 														</RoyalTitlePermitDef>
@@ -674,9 +674,9 @@
 														
 														
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_RaptorHeavies4x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_RaptorHeavies4x3days</defName>
 															<label>temporary deployment: 4x Raptor Heavies</label>
-															<description>Request a group of 4 Raptor heavies with anti-vehicle missile launchers to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 4 Raptor heavies with anti-vehicle missile launchers to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_Raptors6x5days</prerequisite> -->
@@ -688,7 +688,7 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>30</cooldownDays>
 														</RoyalTitlePermitDef>
@@ -696,9 +696,9 @@
 
 														
 														<RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_CustomLaborerDropBase">
-															<defName>SWGCWPermit_ZsinjPrivateer_Raptors12x5days</defName>
+															<defName>SWGCWPermit_ZsinjPrivateer_Raptors12x3days</defName>
 															<label>temporary deployment: 12x Raptors</label>
-															<description>Request a group of 12 elite Raptor shock troops to join your ranks for 5 days. You can control them as though they were your own colonists.</description>
+															<description>Request a group of 12 elite Raptor shock troops to join your ranks for 3 days. You can control them as though they were your own colonists.</description>
 															
 															<minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
 															<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_RaptorHeavies4x5days</prerequisite> -->
@@ -710,7 +710,7 @@
 																<targetingRange>44.9</targetingRange>
 																<targetingRequireLOS>false</targetingRequireLOS>
 
-																<aidDurationDays>5</aidDurationDays>
+																<aidDurationDays>3</aidDurationDays>
 															</royalAid>
 															<cooldownDays>30</cooldownDays>
 														</RoyalTitlePermitDef>

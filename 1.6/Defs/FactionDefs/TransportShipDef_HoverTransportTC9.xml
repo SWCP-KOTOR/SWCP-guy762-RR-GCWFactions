@@ -33,6 +33,10 @@
 	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_HoverTransportTC9">
         <defName>guy762_SWShuttleTransportShip_HoverTransportTC9_zannconsortium</defName>
     </TransportShipDef>
+	
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_HoverTransportTC9">
+        <defName>guy762_SWShuttleTransportShip_HoverTransportTC9_PDF</defName>
+    </TransportShipDef>
 
     <!--_____ Building ThingDefs _____-->
 
@@ -42,13 +46,16 @@
         <defName>guy762_SWShuttleThing_HoverTransportTC9_</defName>
         <label>Hover Transport TC9</label>
         <description>.</description>
-        <altitudeLayer>Building</altitudeLayer>
+        <!-- <altitudeLayer>Building</altitudeLayer> -->
+		<altitudeLayer>Skyfaller</altitudeLayer>
         <pathCost>50</pathCost>
         <blockWind>true</blockWind>
         <passability>Impassable</passability>
         <fillPercent>1.0</fillPercent>
-        <!-- <size>(10,20)</size> -->
-        <size>(14,6)</size>
+		
+        <!-- <size>(14,6)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(7,3)</size>
+		
         <drawHighlight>true</drawHighlight>
         <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
         <graphicData>
@@ -132,8 +139,8 @@
     <!-- NCR Standard Vertibird -->
 
     <ThingDef Name="guy762_SWShuttleSkyfaller_HoverTransportTC9BASE" ParentName="SkyfallerBase" Abstract="True">
-        <!-- <size>(10,20)</size> -->
-        <size>(14,6)</size>
+        <!-- <size>(14,6)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(7,3)</size>
         <graphicData>
             <texPath>Shuttles/HoverTransportTC9</texPath>
             <graphicClass>Graphic_Single</graphicClass>

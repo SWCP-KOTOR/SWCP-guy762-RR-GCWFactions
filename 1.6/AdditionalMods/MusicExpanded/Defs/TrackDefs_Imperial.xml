@@ -449,7 +449,12 @@
 	
 	
 	
-	
+	<SongDef>
+		<defName>SWCPSong_nullsound</defName>
+		<clipPath>kotormisc/fol_GEN_silence_01</clipPath>
+		<volume>0</volume>
+		<commonality>0</commonality>
+	</SongDef>
 	
 	
 	

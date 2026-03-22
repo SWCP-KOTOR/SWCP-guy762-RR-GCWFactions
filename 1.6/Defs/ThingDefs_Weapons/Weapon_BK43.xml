@@ -84,7 +84,7 @@
 	
 	<ThingDef ParentName="KotORRangedModdable_TwoHand">
 		<defName>guy762_BK43repeater_raptor</defName>
-		<label>BK-43Z Battle Rifle</label>
+		<label>ZK-43 Battle Rifle</label>
 		<description>A modified version of the Merr-Sonn BK-43 repeater used by Warlord Zsinj's elite Raptor Corps. Accuracy has been improved, and the 'repeater' firing mode has been replaced with a three-bolt burst. Additionally, a large vibrodagger has been affixed to the barrel as a bayonet, providing the wielder with an effective and terrifying weapon for melee.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>

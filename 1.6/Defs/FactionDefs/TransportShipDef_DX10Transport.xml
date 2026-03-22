@@ -46,13 +46,16 @@
         <defName>guy762_SWShuttleThing_DX10Transport</defName>
         <label>DX-10 troop transport</label>
         <description>.</description>
-        <altitudeLayer>Building</altitudeLayer>
+        <!-- <altitudeLayer>Building</altitudeLayer> -->
+        <altitudeLayer>Skyfaller</altitudeLayer>
         <pathCost>50</pathCost>
         <blockWind>true</blockWind>
         <passability>Impassable</passability>
         <fillPercent>1.0</fillPercent>
-        <!-- <size>(10,20)</size> -->
-        <size>(14,7)</size>
+		
+        <!-- <size>(14,7)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(7,1)</size>
+		
         <drawHighlight>true</drawHighlight>
         <highlightColor>(0.56, 0.62, 0.9)</highlightColor>
         <graphicData>
@@ -136,8 +139,8 @@
     <!-- NCR Standard Vertibird -->
 
     <ThingDef Name="guy762_SWShuttleSkyfaller_DX10TransportBASE" ParentName="SkyfallerBase" Abstract="True">
-        <!-- <size>(10,20)</size> -->
-        <size>(14,7)</size>
+        <!-- <size>(14,7)</size> for the purposes of not destroying your gravship's hangar bay when you use a royalty permit to drop resources/troops/whatever, the actual occupied size has to be shrunk to a reasonable amount -->
+        <size>(7,1)</size>
         <graphicData>
             <texPath>Shuttles_NelsonArts/DX10Transport</texPath>
             <graphicClass>Graphic_Single</graphicClass>

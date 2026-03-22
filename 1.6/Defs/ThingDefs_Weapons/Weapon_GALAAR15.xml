@@ -58,12 +58,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORBlasterBolt_heavy</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_KotORpowercharge</soundAiming>
 				<defaultCooldownTime>4.5</defaultCooldownTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
-				<!--soundAiming>kotorsound_powercharge</soundAiming-->
 				<soundCast>kotorsound_heavy2</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

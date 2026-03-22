@@ -46,7 +46,7 @@
 				<beamCurvature>0.1</beamCurvature>
 
 				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_KotORpowercharge</soundAiming>
 				<defaultCooldownTime>6</defaultCooldownTime>
 				
 				<range>50</range>

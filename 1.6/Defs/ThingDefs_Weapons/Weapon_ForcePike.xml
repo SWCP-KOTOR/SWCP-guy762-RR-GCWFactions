@@ -27,7 +27,7 @@
 			<WorkToMake>17000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
