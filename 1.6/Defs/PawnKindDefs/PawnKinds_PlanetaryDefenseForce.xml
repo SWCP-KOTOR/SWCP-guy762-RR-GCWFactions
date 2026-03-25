@@ -711,7 +711,7 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RebelHelmet_endor</li>
-			<li>guy762_RebelHelmet_vanguard</li>
+			<li>guy762_Accessory_suspendersC</li>
 			<li>guy762_PartisanCombatSuit</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
@@ -803,6 +803,13 @@
 		
 		<maxPerGroup>2</maxPerGroup>
 		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
@@ -838,6 +845,7 @@
 			<li>SWRanged_E5Crifle</li>
 		</weaponTags>
 
+		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -847,7 +855,7 @@
 				</li>
 				<li>
 					<thingDef>guy762_KotORcredits</thingDef>
-					<countRange>1000~10000</countRange>
+					<countRange>1000~5000</countRange>
 				</li>
 			</subOptionsChooseOne>
 			<subOptionsTakeAll>
@@ -907,6 +915,13 @@
 		
 		<maxPerGroup>2</maxPerGroup>
 		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
@@ -943,7 +958,8 @@
 		<weaponTags>
 			<li>SWRanged_DL44pistol</li>
 		</weaponTags>
-
+		
+		<invNutrition>4</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -1036,6 +1052,38 @@
 	
 	
 	
+	<PawnKindDef Name="xSWOrdMantell_TrooperBaseGuard_30x" ParentName="SWOrdMantell_trooper">
+		<defName>xSWOrdMantell_TrooperBaseGuard_30x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>30</maxPerGroup>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
+		<apparelTags Inherit="False">
+			<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+	</PawnKindDef>
+	<PawnKindDef Name="xSWOrdMantell_ShotgunBaseGuard_4x" ParentName="SWOrdMantell_heavy">
+		<defName>xSWOrdMantell_ShotgunBaseGuard_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_CR1BlastCannon</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWCPSpecificApparelItem_HeavySuspenders</li>
+			<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+	</PawnKindDef>
+	
+	
+	
+	
 	<PawnKindDef Name="xSWOrdMantell_Trooper_30x" ParentName="SWOrdMantell_trooper">
 		<defName>xSWOrdMantell_Trooper_30x</defName>
 		<combatPower>1</combatPower>
@@ -1081,12 +1129,72 @@
 		<defaultFactionType>guy762_SWWarlordsFaction_PDF</defaultFactionType>
 	</PawnKindDef>
 	
+	<PawnKindDef Name="xSWOrdMantell_ISBLt_1x" ParentName="SWImpRemnant_ISBLt">
+		<defName>xSWOrdMantell_ISBLt_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_PDF</defaultFactionType>
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Militia</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>1000~10000</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
+	
+	
 	<PawnKindDef Name="xSWOrdMantell_Commandant_1x" ParentName="SWOrdMantell_commandant">
 		<defName>xSWOrdMantell_Commandant_1x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>1</maxPerGroup>
 	</PawnKindDef>
 	
+	
+	
+	<PawnKindDef Name="xSWOrdMantell_ImpViceroy_1x" ParentName="SWImpRemnant_Viceroy">
+		<defName>xSWOrdMantell_ImpViceroy_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_PDF</defaultFactionType>
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_Militia</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>10000~100000</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
 	
 	
 	

@@ -196,6 +196,21 @@
 	  - 1700:     Place gravship marker
 	-->
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- HOW IT WORKS: a Harmony patch replaces each individually patched faction's settlement MapGenerator with a hardcoded DefOf (SWCPMapGenerator_x) -->
+	
 	<MapGeneratorDef ParentName="MapCommonBase">
 		<defName>SWCPMapGenerator_FortressImperial</defName>
 		<genSteps>
@@ -262,6 +277,10 @@
 			<SWImpRemnant_Engineer>5</SWImpRemnant_Engineer>
 			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
+			
+			<SWCPDroidColonistBnS_ASP7LaborDroid>2</SWCPDroidColonistBnS_ASP7LaborDroid>
+			<SWCPDroidColonistBnS_IMP_RA7ProtocolDroid>1</SWCPDroidColonistBnS_IMP_RA7ProtocolDroid>
+			<SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>0.5</SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>
 		</options>
 		</genStep>
 	</GenStepDef>
@@ -360,12 +379,13 @@
 			</beaconBuildingDefs>
 			<options>
 				<SWImpRemnant_ArmyLt_onBase>100</SWImpRemnant_ArmyLt_onBase>
-				<!-- <SWImpRemnant_OpsLt>75</SWImpRemnant_OpsLt> -->
+				<SWImpRemnant_OpsLt>75</SWImpRemnant_OpsLt>
 				<SWImpRemnant_ArmyMajor_onBase>75</SWImpRemnant_ArmyMajor_onBase>
 				<SWImpRemnant_INTLt>25</SWImpRemnant_INTLt>
-				<SWImpRemnant_ArmyGeneral>25</SWImpRemnant_ArmyGeneral>
-				<SWImpRemnant_OpsGeneral>10</SWImpRemnant_OpsGeneral>
-				<SWImpRemnant_Viceroy>10</SWImpRemnant_Viceroy>
+			<!-- rare pulls -->
+				<SWImpRemnant_ArmyGeneral>10</SWImpRemnant_ArmyGeneral>
+				<SWImpRemnant_OpsGeneral>5</SWImpRemnant_OpsGeneral>
+				<SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -464,16 +484,17 @@
 			  <minSpacing>80</minSpacing>
 			  <maxDistFromStructure>250</maxDistFromStructure>
 			  <prefabs>
-				<SWCPTurretPrefab_BP4AntiVehicle>
+				<SWCPTurretPrefab_BP4AntiVehicle_ImpRemnant>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_BP4AntiVehicle>
-				<SWCPTurretPrefab_FPC67AntiAir>
+				</SWCPTurretPrefab_BP4AntiVehicle_ImpRemnant>
+				<SWCPTurretPrefab_FPC67AntiAir_ImpRemnant>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_FPC67AntiAir>
+				</SWCPTurretPrefab_FPC67AntiAir_ImpRemnant>
+				
 				<SWCPPrefabBigCommandPost_ImpRemnant>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>

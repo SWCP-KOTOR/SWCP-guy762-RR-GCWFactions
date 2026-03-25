@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--
+	  General order:
+	  - 10-100:   Underlying grids (Elevation/Fertility/Caves)
+	  - 200-300:  Natural terrain gen
+	  - 400-500:  Critical large structures (quest locations, settlements, etc.)
+	  - 600:      Reserve Gravship area
+	  - 700-800:  Non-critical large structures (ruins, etc.) - these must take into account UsedRects
+	  - 850:      Player start spot
+	  - 900-1200: Non-critical gen (geysers, plants, animals, etc)
+	  - 1500:     Fog
+	  - 1600+:    Important buildings/features that need to be unfogged
+	  - 1700:     Place gravship marker
+	-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- HOW IT WORKS: a Harmony patch replaces each individually patched faction's settlement MapGenerator with a hardcoded DefOf (SWCPMapGenerator_x) -->
+	
+	<MapGeneratorDef ParentName="MapCommonBase">
+		<defName>SWCPMapGenerator_FortressMilitia</defName>
+		<genSteps>
+			<li>RocksFromGrid</li>
+			<li>SWCPMapGenStep_MilitiaStructure_FortressSettlement</li>
+			<li>SWCPMapGenStep_MilitiaStructure_FortressSettlementPawns</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_Militia_WanderingPersonnel</li>
+
+			<li>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_BigCommandPostGuards</li>
+
+			<li>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_controlroomguards</li>
+		</genSteps>
+	</MapGeneratorDef>
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_MilitiaStructure_FortressSettlement</defName>
+		<order>400</order>
+		<!-- <genStep Class="GenStep_AncientRuins"> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortress">
+			<layoutDef>SWCPMilitiaStructure_FortressSettlement</layoutDef>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef><!-- this one is still needed to spawn in the base Settlement pawngroup, the other pawn GenSteps are supplemental	-->
+		<defName>SWCPMapGenStep_MilitiaStructure_FortressSettlementPawns</defName>
+		<order>700</order>
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
+		  <factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_Militia_WanderingPersonnel</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<initialCivilianCount>25~30</initialCivilianCount>
+			<keepPopulationReplenished>false</keepPopulationReplenished>
+			<maxPopulation>30</maxPopulation>
+			<options>
+				<SWCPCivilian_prole>10</SWCPCivilian_prole>
+				<SWCPCivilian_ugnaught>5</SWCPCivilian_ugnaught>
+				<SWCPCivilian_spacer>1</SWCPCivilian_spacer>
+				
+				<SWCPDroidColonistBnS_PitDroid>3</SWCPDroidColonistBnS_PitDroid>
+				<SWCPDroidColonistBnS_ASP7LaborDroid>2</SWCPDroidColonistBnS_ASP7LaborDroid>
+				<SWCPDroidColonistBnS_R4AstDrd>1</SWCPDroidColonistBnS_R4AstDrd>
+				<SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>0.5</SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_BigCommandPostGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>8~10</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_big</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWOrdMantell_TrooperBaseGuard_30x>75</xSWOrdMantell_TrooperBaseGuard_30x>
+			</options>
+		</genStep>
+	</GenStepDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_basecommaders</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>2~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_small</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWOrdMantell_Lieutenant_2x>100</xSWOrdMantell_Lieutenant_2x>
+				<xSWOrdMantell_Commandant_1x>25</xSWOrdMantell_Commandant_1x>
+				<xSWOrdMantell_ISBLt_1x>25</xSWOrdMantell_ISBLt_1x>
+			<!-- rare pulls -->
+				<xSWOrdMantell_ImpViceroy_1x>1</xSWOrdMantell_ImpViceroy_1x>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_MilitiaOrdMantell_controlroomguards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>3~4</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_small</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWOrdMantell_Stormtrooper_2x>100</xSWOrdMantell_Stormtrooper_2x>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	<StructureLayoutDef>
+		<defName>SWCPMilitiaStructure_FortressSettlement</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<minRoomWidth>8</minRoomWidth>
+		<minRoomHeight>8</minRoomHeight>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallDef>guy762_PoweredWall_NarShaddaaCantinaA</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_iron</terrainDef>
+		<surroundingTerrainDef>Concrete</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<ensureOneDoorUnlocked>true</ensureOneDoorUnlocked>
+		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<areaPrunePercent>0.05</areaPrunePercent>
+		
+		<wallAttachments>
+			<!-- <AncientEmergencyLight_Blue> -->
+				<!-- <countRange>1~2</countRange> -->
+			<!-- </AncientEmergencyLight_Blue> -->
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		<!-- will spawn one per generated building -->
+		<!-- <importantRoomDef>SWCPRoomLayout_MilitiaInquisitorBossRoom</importantRoomDef> -->
+		
+		<roomDefs>
+			<!-- <SWCPRoomLayout_MilitiaWeaponsStorage> -->
+				<!-- <countRange>1</countRange> -->
+			<!-- </SWCPRoomLayout_MilitiaWeaponsStorage> -->
+			<SWCPRoomLayout_MilitiaGarrisonShellStorageRoom>
+				<countRange>1</countRange>
+			</SWCPRoomLayout_MilitiaGarrisonShellStorageRoom>
+			<AncientCryptosleepRoom_Hostile_Deserted>
+				<countRange>0~1</countRange>
+			</AncientCryptosleepRoom_Hostile_Deserted>
+
+
+		<!-- objective rooms -->
+			<SWCPRoomLayout_MilitiaComputerRoom>0.5</SWCPRoomLayout_MilitiaComputerRoom>
+			<SWCPRoomLayout_MilitiaOrbitalUplink>0.1</SWCPRoomLayout_MilitiaOrbitalUplink>
+
+		<!-- Decorative -->
+			<SWCPRoomLayout_MilitiaCanteen>2</SWCPRoomLayout_MilitiaCanteen>
+			<SWCPRoomLayout_MilitiaShelfRoom>1</SWCPRoomLayout_MilitiaShelfRoom>
+			<SWCPRoomLayout_MilitiaLockerRoom>1</SWCPRoomLayout_MilitiaLockerRoom>
+			<SWCPRoomLayout_MilitiaGarrisonBarracks>1</SWCPRoomLayout_MilitiaGarrisonBarracks>
+			<SWCPRoomLayout_MilitiaWorkshop>1</SWCPRoomLayout_MilitiaWorkshop>
+
+		<!-- Smaller threats -->
+			<!-- <AncientRuinsChemfuelWorkshop>1</AncientRuinsChemfuelWorkshop> -->
+		</roomDefs>
+		<junkScaterrers>
+		  <AncientMilitaryCrate>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </AncientMilitaryCrate>
+		</junkScaterrers>
+		
+		<scatteredPrefabs>
+			<li>
+			  <countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
+			  <minSpacing>80</minSpacing>
+			  <maxDistFromStructure>250</maxDistFromStructure>
+			  <prefabs>
+				<SWCPTurretPrefab_BP4AntiVehicle_Militia>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_BP4AntiVehicle_Militia>
+				<SWCPTurretPrefab_FPC67AntiAir_Militia>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_FPC67AntiAir_Militia>
+				
+				<SWCPPrefabBigCommandPost_Militia>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPPrefabBigCommandPost_Militia>
+			  </prefabs>
+			</li>
+			
+			<li>
+				<countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
+				<minSpacing>10</minSpacing>
+				<maxDistFromStructure>50</maxDistFromStructure>
+				<prefabs>
+					<Exterior_AncientTankTraps>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>2</max>
+					</Exterior_AncientTankTraps>
+					<!-- <SWCPPrefabExterior_WalkerWreckageCluster> -->
+						<!-- <weight>2.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_MachineBits</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>5</max> -->
+					<!-- </SWCPPrefabExterior_WalkerWreckageCluster> -->
+					
+					<Exterior_AncientBunker>
+						<weight>0.25</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>2</max>
+					</Exterior_AncientBunker>
+					<Exterior_ContainerSite>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>2</max>
+					</Exterior_ContainerSite>
+					<Exterior_MilitaryBlockade>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>2</max>
+					</Exterior_MilitaryBlockade>
+					<Exterior_FourSmallBuildings>
+						<weight>0.2</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>1</max>
+					</Exterior_FourSmallBuildings>
+					<Exterior_AncientContainerForklift>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.2</filthChance>
+						<max>1</max>
+					</Exterior_AncientContainerForklift>
+				</prefabs>
+			</li>
+		</scatteredPrefabs>
+	</StructureLayoutDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaShelfRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>10~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <IndustrialShelf_Rows>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </IndustrialShelf_Rows>
+		  <WoodenCratesWithSomeLoot>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCratesWithSomeLoot>
+		  <WoodenCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCrate_Cluster>
+		  <AncientCratePallet_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratePallet_Cluster>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaOrbitalUplink</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<noRoof>true</noRoof>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <AncientUplink>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientUplink>
+		  <AncientSystemRack>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>5~10</minMaxRange>
+		  </AncientSystemRack>
+		  <AncientSecurityTerminal>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>5~10</minMaxRange>
+		  </AncientSecurityTerminal>
+		  <AncientBarrel_Cluster>
+			<countPerHundredCells>5</countPerHundredCells>
+			<minMaxRange>1~5</minMaxRange>
+		  </AncientBarrel_Cluster>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaComputerRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+			<SWCPPrefabSmallCommandPost_Militia>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabSmallCommandPost_Militia>
+			
+			<SWCPPrefabInterior_BigGreenRebelScreen>
+				<countPerHundredCells>2</countPerHundredCells>
+				<minMaxRange>1~2</minMaxRange>
+			</SWCPPrefabInterior_BigGreenRebelScreen>
+			
+		  <AncientSystemRacks_Rows>
+			<countPerHundredCells>5</countPerHundredCells>
+			<minMaxRange>1~10</minMaxRange>
+		  </AncientSystemRacks_Rows>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  <AncientSystemRack>
+			<countPerHundredCells>4</countPerHundredCells>
+			<minMaxRange>1~10</minMaxRange>
+		  </AncientSystemRack>
+		  <AncientSecurityTerminal>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~2</minMaxRange>
+		  </AncientSecurityTerminal>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaGarrisonBarracks</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <AncientBed_Rows>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientBed_Rows>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <ShowerAndToilet_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </ShowerAndToilet_Edge>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaCanteen</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <TableWithStools_2x4>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </TableWithStools_2x4>
+		  <AncientTableStoveElectric_Edge>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientTableStoveElectric_Edge>
+		  <SurvivalMealPallet>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </SurvivalMealPallet>
+		  
+			<SWCPPrefabLootbox_FoodMeds>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_FoodMeds>
+			
+		  <AncientStove_Cluster>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientStove_Cluster>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+
+		<floorTypes>
+		  <li>guy762_FloorTiles_DivotedTile_offwhite</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaWorkshop</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>10~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <Shelves_Rows>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Shelves_Rows>
+		  <RustedEngine_Cluster>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </RustedEngine_Cluster>
+		  <AncientSafe>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientSafe>
+		  <AncientTableMachining_Edge>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientTableMachining_Edge>
+		  <AncientAmmoStack_Cluster>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>2~5</minMaxRange>
+		  </AncientAmmoStack_Cluster>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaWorkshop_2x2ImpVehicle</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <SWCPPrefabInterior_2x2ImpVehicle>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </SWCPPrefabInterior_2x2ImpVehicle>
+		  <RustedEngine_Cluster>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </RustedEngine_Cluster>
+		  <AncientSafe>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientSafe>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaGarrisonShellStorageRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+			<SWCPPrefabTechBuilding_JKAmmoBank>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>1~1</countRange>
+			</SWCPPrefabTechBuilding_JKAmmoBank>
+			
+		  <AncientSealedCrate_Shells>
+			<countRange>0~2</countRange>
+		  </AncientSealedCrate_Shells>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <IndustrialShelf_Rows>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </IndustrialShelf_Rows>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>4</countPerHundredCells>
+			<minMaxRange>3~10</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_XGrate_yellow</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_MilitiaLockerRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <TableWithStools_2x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </TableWithStools_2x2>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~3</minMaxRange>
+		  </TableWithStools_1x2>
+		  <TVWithArmchairs>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TVWithArmchairs>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  
+			<SWCPPrefabLootbox_ImpBaseCommon>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_ImpBaseCommon>
+			
+			<SWCPPrefabTechBuilding_JKShieldBank>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefabTechBuilding_JKShieldBank>
+			
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_XGrate_yellow</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <LayoutRoomDef> -->
+		<!-- <defName>SWCPRoomLayout_MilitiaWeaponsStorage</defName> -->
+		<!-- <spawnJunk>false</spawnJunk> -->
+		<!-- <wallAttachments> -->
+			<!-- <AncientEmergencyLight_Blue> -->
+				<!-- <countRange>3~4</countRange> -->
+			<!-- </AncientEmergencyLight_Blue> -->
+		<!-- </wallAttachments> -->
+		<!-- <parts> -->
+		  <!-- <SWCPRoomPart_ImpWeaponsStorage /> -->
+		<!-- </parts> -->
+		<!-- <floorTypes> -->
+		  <!-- <li>guy762_FloorTiles_DivotedTile_iron</li> -->
+		<!-- </floorTypes> -->
+	<!-- </LayoutRoomDef> -->
+	
+	<!-- <RoomPartDef> -->
+		<!-- <defName>SWCPRoomPart_ImpWeaponsStorage</defName> -->
+		<!-- <workerClass>SWCP_LevelDesignStuff.RoomPart_ImpWeaponsStorage</workerClass> -->
+	<!-- </RoomPartDef> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

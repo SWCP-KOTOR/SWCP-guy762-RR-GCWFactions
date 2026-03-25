@@ -215,12 +215,12 @@
 		<maxGenerationAge>50</maxGenerationAge>
 		<itemQuality>Poor</itemQuality>
 		
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
+		<!-- <xenotypeSet Inherit="False"> -->
+		  <!-- <xenotypeChances> -->
+			<!-- <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner> -->
+		  <!-- </xenotypeChances> -->
+		<!-- </xenotypeSet> -->
+		<!-- <useFactionXenotypes>false</useFactionXenotypes> -->
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
