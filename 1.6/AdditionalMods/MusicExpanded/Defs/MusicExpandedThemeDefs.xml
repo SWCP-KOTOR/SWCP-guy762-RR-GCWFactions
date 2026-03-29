@@ -34,25 +34,41 @@
 			<li>SWCP_METrack_WarlordEmpire_ImperialCasualC</li>
 			<li>SWCP_METrack_WarlordEmpire_ImperialCasualD</li>
 			<!-- <li>SWCP_METrack_WarlordEmpire_ImperialCasualE</li> -->
+			<li>SWCP_METrack_WarlordEmpire_ImperialCasualF</li>
+			<li>SWCP_METrack_WarlordEmpire_ImperialCasualG</li>
 
 			<li>SWCP_METrack_WarlordEmpire_ScumCasualA</li>
 			<li>SWCP_METrack_WarlordEmpire_ScumCasualB</li>
 			<li>SWCP_METrack_WarlordEmpire_ScumCasualC</li>
 			<li>SWCP_METrack_WarlordEmpire_ScumCasualD</li>
+			<li>SWCP_METrack_WarlordEmpire_ScumCasualE</li>
+			<li>SWCP_METrack_WarlordEmpire_ScumCasualF</li>
 
 			<li>SWCP_METrack_WarlordEmpire_ScumIntenseA</li>
 			<li>SWCP_METrack_WarlordEmpire_ScumIntenseB</li>
 
 
 
+			<li>SWCP_METrack_WarlordEmpire_SpaceBiomeA</li>
+			<li>SWCP_METrack_WarlordEmpire_SpaceBiomeB</li>
+			<li>SWCP_METrack_WarlordEmpire_SpaceBiomeC</li>
+			<li>SWCP_METrack_WarlordEmpire_SpaceBiomeD</li>
+			
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeA</li>
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeB</li>
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeC</li>
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeD</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeE</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeF</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeG</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeH</li>
 
 			<li>SWCP_METrack_WarlordEmpire_DesertBiomeA</li>
 
 			<li>SWCP_METrack_WarlordEmpire_GrasslandBiomeA</li>
+			<li>SWCP_METrack_WarlordEmpire_GrasslandBiomeB</li>
+			
+			<li>SWCP_METrack_WarlordEmpire_SwampBiomeA</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 	

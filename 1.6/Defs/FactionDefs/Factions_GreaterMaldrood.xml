@@ -346,8 +346,10 @@
 				<maxAircraftCount>6</maxAircraftCount>
 				<options>
 					<guy762_SWVehicle_TIEFighter_bot_PawnKind>5</guy762_SWVehicle_TIEFighter_bot_PawnKind>
-					<guy762_SWVehicle_SkiprayImperial_bot_PawnKind>1</guy762_SWVehicle_SkiprayImperial_bot_PawnKind>
-					<guy762_SWVehicle_TIEAvenger_bot_PawnKind>1</guy762_SWVehicle_TIEAvenger_bot_PawnKind>
+					<guy762_SWVehicle_TIEBrute_bot_PawnKind>2</guy762_SWVehicle_TIEBrute_bot_PawnKind>
+					
+					<!-- <guy762_SWVehicle_SkiprayImperial_bot_PawnKind>1</guy762_SWVehicle_SkiprayImperial_bot_PawnKind> -->
+					<!-- <guy762_SWVehicle_TIEAvenger_bot_PawnKind>1</guy762_SWVehicle_TIEAvenger_bot_PawnKind> -->
 				</options>
 			</li>
 			  

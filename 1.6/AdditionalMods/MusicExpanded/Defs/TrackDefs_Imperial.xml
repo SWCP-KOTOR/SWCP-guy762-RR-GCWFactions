@@ -42,6 +42,8 @@
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Space</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
 			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li> -->
+			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineExtremeDesert</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineHighland</li> -->
 			
@@ -261,6 +263,20 @@
 		<volume>2.5</volume>
     </MusicExpanded.TrackDef>
 	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_ImperialCasualF</defName>
+		<label>The Empire Strikes Back - The Imperial Probe/Aboard The Executor</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/ImperialCasual_ESB_AboardTheExecutor</clipPath>
+		<!-- <volume>2.5</volume> -->
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_ImperialCasualG</defName>
+		<label>The Empire Strikes Back - Deal With Dark Lord</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/ImperialCasual_ESB_DealWithDarkLord</clipPath>
+		<!-- <volume>2.5</volume> -->
+    </MusicExpanded.TrackDef>
+	
 	
 	
 	
@@ -290,6 +306,21 @@
 		<defName>SWCP_METrack_WarlordEmpire_ScumCasualD</defName>
 		<label>Forces of Corruption - Tyber's Plan</label>
 		<clipPath>SWCPmusic/SWWarlordEmpire/ScumCasual_EaWFoC_TybersPlan</clipPath>
+		<volume>1.125</volume>
+    </MusicExpanded.TrackDef>
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_ScumCasualE</defName>
+		<label>Return of the Jedi - The Droids Are Captured</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/ScumCasual_RotJ_TheDroidsAreCaptured</clipPath>
+		<volume>1.125</volume>
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_ScumCasualF</defName>
+		<label>Return of the Jedi - The Droids Are Captured/Han Solo Returns</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/ScumCasual_BF2_RotJHanSoloReturns</clipPath>
 		<volume>1.125</volume>
     </MusicExpanded.TrackDef>
 	
@@ -354,6 +385,83 @@
 	
 	
 	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_SpaceBiomeA</defName>
+		<label>The Sith Lords - Mining Facility</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesSpace_KotOR2_PeragusMiningFacility</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+		</allowedBiomes>
+		
+		<volume>2</volume>
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_SpaceBiomeB</defName>
+		<label>The Sith Lords - Lifeless Ebon Hawk</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesSpace_KotOR2_LifelessEbonHawk</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+		</allowedBiomes>
+		
+		<volume>2</volume>
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_SpaceBiomeC</defName>
+		<label>The Sith Lords - Aboard Ebon Hawk</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesSpace_KotOR2_AboardEbonHawk</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+		</allowedBiomes>
+		
+		<volume>2</volume>
+    </MusicExpanded.TrackDef>
+	
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_SpaceBiomeD</defName>
+		<label>The Phantom Menace - Boarding the Federation Battleship</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesSpace_TPM_BoardingTheFederationBattleship</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+		</allowedBiomes>
+		
+		<volume>2</volume>
+    </MusicExpanded.TrackDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<MusicExpanded.TrackDef>
 		<defName>SWCP_METrack_WarlordEmpire_UrbanBiomeA</defName>
 		<label>Knights of the Old Republic - Tatooine</label>
 		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesUrban_KotOR_Tatooine</clipPath>
@@ -362,6 +470,8 @@
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
 
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+			
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
 		</allowedBiomes>
 		
@@ -400,6 +510,70 @@
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkyard</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkSwamp</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_UrbanBiomeE</defName>
+		<label>The Sith Lords - Citadel Station</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesUrban_KotOR2_TelosCitadelStation</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_UrbanBiomeF</defName>
+		<label>The Sith Lords - Mandalorian Ruins</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesUrban_KotOR2_DxunMandalorianRuins</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_UrbanBiomeG</defName>
+		<label>The Sith Lords - Khoonda</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesUrban_KotOR2_DantooineKhoonda</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellGrasslands</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_UrbanBiomeH</defName>
+		<label>The Sith Lords - Jekk'Jekk Tarr</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesUrban_KotOR2_NarShaddaaJekkJekkTarr</clipPath>
+		
+		<allowedBiomes>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Space</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_Orbit</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkyard</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkSwamp</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
 		</allowedBiomes>
     </MusicExpanded.TrackDef>
 	
@@ -443,6 +617,49 @@
 		<allowedBiomes>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellGrasslands</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_GrasslandBiomeB</defName>
+		<label>The Sith Lords - Restoration Zone</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesGrassland_KotOR2_TelosRestorationZone</clipPath>
+		
+		<allowedBiomes>
+			<li>BorealForest</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Grasslands</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellGrasslands</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellScrubland</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellTundra</li>
+		</allowedBiomes>
+    </MusicExpanded.TrackDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<MusicExpanded.TrackDef>
+		<defName>SWCP_METrack_WarlordEmpire_SwampBiomeA</defName>
+		<label>The Sith Lords - Jungle</label>
+		<clipPath>SWCPmusic/SWWarlordEmpire/BiomesSwamp_KotOR2_DxunJungle</clipPath>
+		
+		<allowedBiomes>
+			<li>ColdBog</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkSwamp</li>
 		</allowedBiomes>
     </MusicExpanded.TrackDef>
 	
