@@ -476,10 +476,12 @@
 			<WorkToMake>90000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
 			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<recipeMaker>

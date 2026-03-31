@@ -226,6 +226,18 @@
 		<label>army trooper</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		
+		<apparelTags Inherit="False">
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>RemnantEmpire_armyveterantrooper</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -294,6 +306,19 @@
 		<defName>SWMaldrood_ArmyLieutenant</defName>
 		<label>army lieutenant</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>RemnantEmpire_armylieutenant</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
+			<li>guy762_ArmyOfficerArmor</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -384,7 +409,7 @@
 	<PawnKindDef Name="SWMaldrood_TankDriver" ParentName="SWImpRemnant_TankDriver">
 		<defName>SWMaldrood_TankDriver</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
-		<specificApparelRequirements>
+		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(55,50,50)</color>        <!-- red-tint black -->

@@ -23,17 +23,24 @@
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
 			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
 			<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
 			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield_big</li>
-			<li>guy762_ArmyTrooperHelmet</li>
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
 			<li>guy762_ArmyOfficerArmor_highbrass</li>
 			<li>guy762_ImpUniform_highbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_ArmyTrooperHelmet_ClassicGoggles</apparelDef>
+				<styleDef>guy762_ArmyTrooperHelmetStyle_ClassicGogglesUp</styleDef>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<quality>Legendary</quality>
+			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ArmyOfficerArmor_topbrass</apparelDef>

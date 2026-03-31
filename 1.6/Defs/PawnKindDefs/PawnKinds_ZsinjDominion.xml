@@ -230,12 +230,13 @@
 		<apparelTags>
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>ZsinjEmpire_armytrooper</li>
 			<!-- <li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li> -->
-			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_ArmyTrooperArmor</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -372,7 +373,18 @@
 			<!-- <li>SWRanged_SE14pistol</li> -->
 			<!-- <li>SWRanged_Power5pistol</li> -->
 		<!-- </weaponTags> -->
-		
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>RemnantEmpire_armylieutenant</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
+			<li>guy762_ArmyOfficerArmor</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -467,7 +479,7 @@
 	<PawnKindDef Name="SWZsinj_TankDriver" ParentName="SWImpRemnant_TankDriver">
 		<defName>SWZsinj_TankDriver</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
-		<specificApparelRequirements>
+		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(80,90,75)</color>       <!-- dark jungle green -->

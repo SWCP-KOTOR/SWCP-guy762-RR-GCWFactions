@@ -40,6 +40,7 @@
 			<li>RemnantEmpire_armyconscript</li>
 			<!-- <li>RemnantEmpire_armytrooper</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialUniformHat</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
@@ -103,12 +104,12 @@
 			<li>RemnantEmpire_armyveterantrooper</li>
 			<!-- <li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
-			<li>guy762_ArmyTrooperArmor</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -176,7 +177,7 @@
 	
 	<PawnKindDef Name="SWImpRemnant_ArmySniper" ParentName="SWImpRemnant_TrooperBase">
 		<defName>SWImpRemnant_ArmySniper</defName>
-		<label>army sharpshooter</label>
+		<label>army veteran</label>
 		<combatPower>75</combatPower>
 		<minGenerationAge>19</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
@@ -198,16 +199,16 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelTags>
-			<!-- <li>KotOREquipment_basic</li> -->
-			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>KotOREquipment_basic</li>
+			<!-- <li>SWCPSpecificApparelItem_PlainPoncho</li> -->
 			<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_Accessory_poncho</li>
+			<!-- <li>guy762_Accessory_poncho</li> -->
 			<li>guy762_ArmyTrooperHelmet_mask</li>
-			<li>guy762_ArmyTrooperArmor</li>
+			<li>guy762_ArmyTrooperHeavyArmor_NCO</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -247,7 +248,11 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>10~12</range>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -288,13 +293,13 @@
 			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Accessory_suspendersA</li>
 			<li>guy762_ImpTankTrooperHelmet</li>
-			<li>guy762_ArmyTrooperArmor</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -560,13 +565,19 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<!-- <li>KotOREquipment_basic</li> -->
-			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
 			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_ArmyTrooperHelmet</li>
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
 			<li>guy762_Bodysuit_utility</li>
 		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+			</li>
+		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>500</weaponMoney>
@@ -638,12 +649,12 @@
 		<apparelTags>
 			<!-- <li>KotOREquipment_basic</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialEngineerBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ImpTankTrooperHelmet</li>
-			<li>guy762_ImpLightCombatArmor</li>
+			<li>guy762_ArmyTrooperArmor</li>
 			<li>guy762_Bodysuit_utility</li>
 		</apparelRequired>
 		<specificApparelRequirements>

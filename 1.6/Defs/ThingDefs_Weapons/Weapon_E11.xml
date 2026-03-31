@@ -277,7 +277,8 @@
 	<ThingDef ParentName="KotORRangedModdable_TwoHand">
 		<defName>guy762_E22rifle</defName>
 		<label>E-22 double blaster rifle</label>
-		<description>An expertly-designed long-range counterpart to the E-11, the E-22 uses many of the same parts as the E-11 in an unusual double-barreled reciprocative design that is easy for BlasTech factories to produce. Both barrels can be fired at once for precise targeting and increased damage, or the weapon can be fired rapidly with suppressing fire capabilities comparable to that of the bulkier T-21 repeater.</description>
+		<!-- <description>An expertly-designed long-range counterpart to the E-11, the E-22 uses many of the same parts as the E-11 in an unusual double-barreled reciprocative design that is easy for BlasTech factories to produce. Both barrels can be fired at once for precise targeting and increased damage, or the weapon can be fired rapidly with suppressing fire capabilities comparable to that of the bulkier T-21 repeater.</description> -->
+		<description>An expertly-designed long-range counterpart to the E-11, the E-22 uses many of the same parts as the E-11 in an unusual double-barreled reciprocative design that is easy for BlasTech factories to produce. Both barrels can be fired at once for precise targeting and increased damage.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
@@ -320,32 +321,28 @@
 				<burstShotCount>3</burstShotCount>
 				<soundCast>kotorsound_E11carbine</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
-				<ai_IsWeapon>true</ai_IsWeapon> <!-- so they use their longer range attack more -->
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
-			<li>
-				<label>adv. rapid shot</label>
-				<!-- <description>Fire extra bolts with reduced accuracy.</description> -->
-				<!-- <iconPath>UI/Improved_Rapid_Shot</iconPath> -->
-				<commandIcon>UI/Improved_Rapid_Shot</commandIcon>
-				<!-- <verbClass>Verb_Shoot</verbClass> -->
-				<verbClass>SWCP_Misc.Verb_SuppressingFire</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
-				<warmupTime>4</warmupTime>
-				<defaultCooldownTime>4</defaultCooldownTime>
-				<range>30</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>12</burstShotCount>
-				<forcedMissRadius>2</forcedMissRadius>
-				<soundCast>kotorsound_E11alt</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<ai_IsWeapon>false</ai_IsWeapon> <!-- so they use their longer range attack more -->
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
+			<!-- <li> -->
+				<!-- <label>adv. rapid shot</label> -->
+				<!-- <commandIcon>UI/Improved_Rapid_Shot</commandIcon> -->
+				<!-- <verbClass>SWCP_Misc.Verb_SuppressingFire</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_default</defaultProjectile> -->
+				<!-- <warmupTime>4</warmupTime> -->
+				<!-- <defaultCooldownTime>4</defaultCooldownTime> -->
+				<!-- <range>30</range> -->
+				<!-- <ticksBetweenBurstShots>8</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>12</burstShotCount> -->
+				<!-- <forcedMissRadius>2</forcedMissRadius> -->
+				<!-- <soundCast>kotorsound_E11alt</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+				<!-- <ai_IsWeapon>true</ai_IsWeapon> -->
+				<!-- <targetParams> -->
+					<!-- <canTargetLocations>true</canTargetLocations> -->
+				<!-- </targetParams> -->
+			<!-- </li> -->
 		</verbs>
 		<tools>
 			<li>

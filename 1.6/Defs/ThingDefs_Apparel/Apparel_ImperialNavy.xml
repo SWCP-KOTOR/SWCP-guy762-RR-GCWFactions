@@ -32,10 +32,12 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 		  <tags Inherit="False">
@@ -93,10 +95,12 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 		  <tags Inherit="False">
@@ -306,7 +310,12 @@
 		</statBases>
 		<equippedStatOffsets>
 			<!-- no movement penalty -->
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<!-- <MoveSpeed>-1.25</MoveSpeed> -->
+			<!-- <MeleeDodgeChance>-0.25</MeleeDodgeChance> -->
+			<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance> -->
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -408,7 +417,7 @@
 			<!-- <colorC>true</colorC> -->
 		  </li>
 		</modExtensions>
-	  </ThingDef>
+	</ThingDef>
 	
 	
 	  
@@ -491,10 +500,14 @@
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
 			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
-			
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
 		</equippedStatOffsets>
 		

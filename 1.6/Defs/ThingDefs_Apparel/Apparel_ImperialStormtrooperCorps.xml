@@ -21,10 +21,12 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
@@ -495,10 +497,11 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<HuntingStealth>0.6</HuntingStealth>
 		</equippedStatOffsets>
@@ -815,10 +818,12 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<!-- <thingSetMakerTags> -->
@@ -1069,10 +1074,11 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor> <!-- +0.05 -->
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<HuntingStealth>1</HuntingStealth>
 		</equippedStatOffsets>
@@ -1324,7 +1330,7 @@
 		<statBases>
 			<Mass>10</Mass>
 			<MarketValue>500</MarketValue>
-			<MaxHitPoints>350</MaxHitPoints>
+			<MaxHitPoints>475</MaxHitPoints> <!-- SWCPStat_InfantryArmorClass_heavy -->
       		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
@@ -1334,10 +1340,12 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
+			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<apparel>

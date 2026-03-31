@@ -595,12 +595,12 @@
 			<!-- <li>KotOREquipment_basic</li> -->
 			<!-- <li>KotORUtility_weakgrenade</li> -->
 			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_ArmyTrooperHelmet</li>
-			<li>guy762_ArmyTrooperArmor</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
 			<li>guy762_GenericUniform_fatigues</li>
 		</apparelRequired>
 		<specificApparelRequirements>
@@ -834,7 +834,7 @@
 	<PawnKindDef Name="SWPentastar_TankDriver" ParentName="SWImpRemnant_TankDriver">
 		<defName>SWPentastar_TankDriver</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
-		<specificApparelRequirements>
+		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(50,50,55)</color>       <!-- blue-tint black -->

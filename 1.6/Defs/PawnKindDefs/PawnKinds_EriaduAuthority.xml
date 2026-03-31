@@ -384,7 +384,7 @@
 	<PawnKindDef Name="SWEriadu_TankDriver" ParentName="SWImpRemnant_TankDriver">
 		<defName>SWEriadu_TankDriver</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
-		<specificApparelRequirements>
+		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<color>(110,120,115)</color>  <!-- army slate green -->

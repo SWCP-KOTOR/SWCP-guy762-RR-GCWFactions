@@ -274,7 +274,7 @@
 		<defName>SWCP_METrack_WarlordEmpire_ImperialCasualG</defName>
 		<label>The Empire Strikes Back - Deal With Dark Lord</label>
 		<clipPath>SWCPmusic/SWWarlordEmpire/ImperialCasual_ESB_DealWithDarkLord</clipPath>
-		<!-- <volume>2.5</volume> -->
+		<volume>2.5</volume>
     </MusicExpanded.TrackDef>
 	
 	

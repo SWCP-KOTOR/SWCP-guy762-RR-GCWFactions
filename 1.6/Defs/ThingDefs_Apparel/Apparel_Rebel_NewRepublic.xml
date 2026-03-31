@@ -426,8 +426,13 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<!-- +2 agility - no debuff -->
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<!-- no movement penalty -->
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<!-- <MoveSpeed>-1.25</MoveSpeed> -->
+			<!-- <MeleeDodgeChance>-0.25</MeleeDodgeChance> -->
+			<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance> -->
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 		  <tags Inherit="False">
@@ -467,7 +472,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>70,90,125</color> <!--K1 blue-->
+						<color>(70,90,125)</color> <!--K1 blue-->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>

@@ -123,7 +123,12 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<!-- <MoveSpeed>-0.5</MoveSpeed> -->
+			<!-- <MeleeDodgeChance>-0.1</MeleeDodgeChance> -->
+			<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance> -->
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
 			<MoveSpeed>0.2</MoveSpeed>
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
@@ -287,10 +292,12 @@
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
 			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -373,13 +380,14 @@
 			<WorkToMake>90000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.4</SocialImpact>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
-			
-			<MoveSpeed>-0.5</MoveSpeed>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
 			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
+			<SocialImpact>0.4</SocialImpact>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
 		</equippedStatOffsets>
 		
 		<recipeMaker>

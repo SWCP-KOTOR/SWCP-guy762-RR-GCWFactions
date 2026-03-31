@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_ImpTankTrooperHelmet</defName>
+		<label>army commando helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ImperialTankTrooper/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>175</MaxHitPoints>
+      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.2</AimingDelayFactor>
+			
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<tags>
+				<li>RemnantEmpire_armycommando</li>
+				<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialTankTrooper/helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RareImpSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only>  <!-- white -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 	  
 	<!-- military suit stat level -->	  
 	  
@@ -27,10 +90,12 @@
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed> <!-- +1 -->
-			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		<apparel>
 			<tags Inherit="False">
@@ -185,7 +250,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -200,10 +265,11 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
@@ -214,7 +280,7 @@
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -259,9 +325,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_armylt</defName>
 		<overrideLabel>light battle armor, army lieutenant's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/armylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -270,9 +336,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_detachmentCO</defName>
 		<overrideLabel>light battle armor, detachment C.O.'s</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/detachmentCO/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/detachmentCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -291,7 +357,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -306,10 +372,11 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<SocialImpact>0.5</SocialImpact>
 		</equippedStatOffsets>
@@ -320,7 +387,7 @@
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -370,9 +437,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_armymajor</defName>
 		<overrideLabel>light battle armor, army major's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/armymajor/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -381,9 +448,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</defName>
 		<overrideLabel>light battle armor, task squadron C.O.'s</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/tasksquadCO/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/tasksquadCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -401,7 +468,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -416,10 +483,11 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<SocialImpact>0.7</SocialImpact>
 		</equippedStatOffsets>
@@ -431,7 +499,7 @@
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -484,9 +552,9 @@
 	<!-- <ThingStyleDef> -->
 		<!-- <defName>guy762_RankStyle_armygen</defName> -->
 		<!-- <overrideLabel>light battle armor, army general's</overrideLabel> -->
-		<!-- <wornGraphicPath>SWApparel/ImperialArmyTrooper/armygeneral/Apparel</wornGraphicPath> -->
+		<!-- <wornGraphicPath>SWApparel/ImperialArmyOfficer/armygeneral/Apparel</wornGraphicPath> -->
 		<!-- <graphicData> -->
-		  <!-- <texPath>SWApparel/ImperialArmyTrooper/armygeneral/Apparel</texPath> -->
+		  <!-- <texPath>SWApparel/ImperialArmyOfficer/armygeneral/Apparel</texPath> -->
 		  <!-- <graphicClass>Graphic_Single</graphicClass> -->
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		<!-- </graphicData> -->
@@ -495,9 +563,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_armycolonel</defName>
 		<overrideLabel>light battle armor, army colonel's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/armycolonel/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/armycolonel/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -506,9 +574,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_taskforceCO</defName>
 		<overrideLabel>light battle armor, task force C.O.'s</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/taskforceCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -531,7 +599,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -546,10 +614,11 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
-			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<SocialImpact>1</SocialImpact>
 		</equippedStatOffsets>
@@ -561,7 +630,7 @@
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -606,9 +675,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_grandgeneral</defName>
 		<overrideLabel>light battle armor, grand general's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/grandgeneral/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -617,9 +686,9 @@
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</defName>
 		<overrideLabel>light battle armor, field marshal's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialArmyTrooper/fieldmarshal/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/ImperialArmyOfficer/fieldmarshal/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialArmyTrooper/fieldmarshal/Apparel</texPath>
+		  <texPath>SWApparel/ImperialArmyOfficer/fieldmarshal/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -647,7 +716,7 @@
 	  
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperArmor</defName>
-		<label>battle armor</label>
+		<label>light battle armor</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
@@ -655,24 +724,25 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<Mass>8</Mass>
+			<Mass>5</Mass>
 			<MarketValue>500</MarketValue>
 			<MaxHitPoints>350</MaxHitPoints>
       		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
-			<EquipDelay>8</EquipDelay>
+			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<apparel>
 			<tags>
-				<li>RemnantEmpire_armytrooper</li>
 				<li>RemnantEmpire_armyconscript</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			</tags>
@@ -686,9 +756,9 @@
 				<li>Shoulders</li>
 				<li>Neck</li>
 				<!-- <li>Arms</li> -->
-				<li>Hands</li>
+				<!-- <li>Hands</li> -->
 				<!-- <li>Legs</li> -->
-				<li>Feet</li>
+				<!-- <li>Feet</li> -->
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		</apparel>
@@ -706,6 +776,187 @@
 		</colorGenerator>
 		
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_ArmyTrooperHeavyArmor</defName>
+		<label>battle armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ImperialArmyTrooper/fullplate/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>475</MaxHitPoints> <!-- SWCPStat_InfantryArmorClass_heavy -->
+      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
+			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
+		</equippedStatOffsets>
+		
+		<apparel>
+			<tags>
+				<li>RemnantEmpire_armytrooper</li>
+				<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/fullplate/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(110,120,115)</only>  <!-- army slate green -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_ArmyTrooperHeavyArmor_NCO</defName>
+		<label>battle armor, non-commissioned officer's</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ImperialArmyTrooper/NCO/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>475</MaxHitPoints> <!-- SWCPStat_InfantryArmorClass_heavy -->
+      		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
+			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<tags>
+				<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialArmyTrooper/NCO/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialArmyTrooper/NCO/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+						</colorA>
+						<colorB>
+							<color>(140,130,110)</color> <!-- sandbag beige -->
+							<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+						</colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(110,120,115)</only>  <!-- army slate green -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -732,10 +983,12 @@
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.3</MoveSpeed>
-			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -796,7 +1049,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef Name="guy762_ArmyTrooperHelmet" ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyTrooperHelmet</defName>
 		<label>army trooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -980,55 +1233,36 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="guy762_ArmyTrooperHelmet">
 		<defName>guy762_ArmyTrooperHelmet_mask</defName>
 		<label>army trooper helmet, masked</label>
-		<techLevel>Spacer</techLevel>
-		<description>.</description>
 		<graphicData>
 			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(130,125,105)</colorTwo> -->
 		</graphicData>
-		<thingCategories>
-		  <li>ArmorHeadgear</li>
-		</thingCategories>
-		<statBases>
-			<Mass>3.5</Mass>
-			<MarketValue>200</MarketValue>
-			<MaxHitPoints>175</MaxHitPoints>
-      		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.65</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
 		
-		<!-- <randomStyleChance>0.5</randomStyleChance> -->
-		<!-- <randomStyle> -->
-		  <!-- <li> -->
-			<!-- <styleDef>guy762_RemnantArmyHelmetStyle_visordown</styleDef> -->
-		  <!-- </li> -->
-		<!-- </randomStyle> -->
-		<!-- <comps> -->
-			<!-- <li Class="CompProperties_Styleable"></li> -->
-		<!-- </comps> -->
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+
+		<randomStyleChance Inherit="False"/>
+		<randomStyle Inherit="False"/>
+
 		
 		<apparel>
-			<tags>
-				<li>ZsinjEmpire_armytrooper</li>
+			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
+			<layers Inherit="False">
 				<li>Overhead</li>
 				<li>EyeCover</li>
 			</layers>
-			<bodyPartGroups>
+			<bodyPartGroups Inherit="False">
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -1038,7 +1272,7 @@
 					<shader>BS_CutoutThreeColor</shader>
 					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
 					<conditionalGraphics>
-					  <texturePaths>
+					<texturePaths>
 						<li>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</li>
 						<li>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visordown/helmet</li>
 					</texturePaths>
@@ -1047,7 +1281,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>130,125,105</color> <!-- khaki -->
+						<color>(130,125,105)</color> <!-- khaki -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -1057,7 +1291,7 @@
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
-			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
+			<!-- <li>guy762TT_GCWArmor_ZsinjSurplus</li> -->
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1077,6 +1311,168 @@
 		</modExtensions>
 	</ThingDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_ArmyTrooperHelmet_ClassicGoggles" ParentName="guy762_ArmyTrooperHelmet">
+		<defName>guy762_ArmyTrooperHelmet_ClassicGoggles</defName>
+		<label>army trooper helmet</label>
+		<graphicData>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_up/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li><styleDef>guy762_ArmyTrooperHelmetStyle_ClassicGogglesUp</styleDef></li>
+			<li><styleDef>guy762_ArmyTrooperHelmetStyle_ClassicGogglesDown</styleDef></li>
+		</randomStyle>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>ZsinjEmpire_armytrooper</li>
+				<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_up/helmet</wornGraphicPath>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
+			<li>guy762TT_GCWArmor_MaldroodSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(80,90,75)</only>  <!-- Zsinj's army dark jungle green -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_ArmyTrooperHelmetStyle_ClassicGogglesUp</defName>
+		<overrideLabel>army trooper helmet</overrideLabel>
+		<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_up/helmet</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_up/helmet</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_ArmyTrooperHelmetStyle_ClassicGogglesDown</defName>
+		<overrideLabel>army trooper helmet</overrideLabel>
+		<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_down/helmet</wornGraphicPath>
+		<graphicData>
+		  <texPath>SWApparel/ArmyTrooper_RemnantKitbashes/classicgoggles_down/helmet</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ArmyTrooperHelmet_ClassicGoggles">
+		<defName>guy762_ArmyTrooperHelmet_MaskedClassicGoggles</defName>
+		<label>army trooper helmet, masked</label>
+		<graphicData>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_up/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(130,125,105)</colorTwo> -->
+		</graphicData>
+		
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<randomStyleChance Inherit="False"/>
+		<randomStyle Inherit="False"/>
+
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>ZsinjEmpire_armytrooper</li>
+				<li>SWGCWSpecificApparelItem_ImperialArmyHelmetMaskedClassicGoggles</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_up/helmet</wornGraphicPath>
+			<layers Inherit="False">
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>FullHead</li>
+			</bodyPartGroups>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					<texturePaths>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_up/helmet</li>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_down/helmet</li>
+					</texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(130,125,105)</color> <!-- khaki -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ZsinjSurplus</li>
+		</tradeTags>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	
 	
 	
@@ -1168,113 +1564,7 @@
 	  
 	  
 	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
-		<defName>guy762_ImpTankTrooperHelmet</defName>
-		<label>army commando helmet</label>
-		<techLevel>Spacer</techLevel>
-		<description>.</description>
-		<graphicData>
-			<texPath>SWApparel/ImperialTankTrooper/helmet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<thingCategories>
-		  <li>ArmorHeadgear</li>
-		</thingCategories>
-		<statBases>
-			<Mass>4</Mass>
-			<MarketValue>300</MarketValue>
-			<MaxHitPoints>175</MaxHitPoints>
-      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
-			<AimingDelayFactor>-0.2</AimingDelayFactor>
-			
-			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
-			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-		</equippedStatOffsets>
-		
-		<apparel>
-			<tags>
-				<li>RemnantEmpire_armycommando</li>
-				<li>SWGCWSpecificApparelItem_ImperialTankTrooperHelmet</li>
-				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
-			</tags>
-			<wornGraphicPath>SWApparel/ImperialTankTrooper/helmet</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-				<li>EyeCover</li>
-			</layers>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-			
-			<immuneToToxGasExposure>true</immuneToToxGasExposure>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_GCWApparel</li>
-			<li>guy762TT_GCWArmor_RareImpSurplus</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(250,250,250)</only>  <!-- white -->
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-	
-	
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+
 	
 	
 </Defs>
