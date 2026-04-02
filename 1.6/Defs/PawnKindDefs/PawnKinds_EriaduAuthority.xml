@@ -211,15 +211,21 @@
 		<label>army trooper</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<itemQuality>Normal</itemQuality>
+		
 		<apparelTags Inherit="False">
 			<!-- <li>KotOREquipment_basic</li> -->
 			<li>KotORUtility_weakgrenade</li>
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>RemnantEmpire_armyveterantrooper</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
 			<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
+			<li>guy762_ArmyTrooperHeavyArmor</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -288,6 +294,18 @@
 		<defName>SWEriadu_ArmyLieutenant</defName>
 		<label>army lieutenant</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>RemnantEmpire_armylieutenant</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyHelmetClassicGoggles</li>
+			<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_ArmyTrooperHelmet_ClassicGoggles</li>
+			<li>guy762_ArmyOfficerArmor</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>

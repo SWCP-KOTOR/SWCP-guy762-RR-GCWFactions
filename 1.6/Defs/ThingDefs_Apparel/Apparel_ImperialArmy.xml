@@ -1090,7 +1090,6 @@
 			</drawData>
 			<tags>
 				<li>RemnantEmpire_armytrooper</li>
-				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/helmet</wornGraphicPath>
@@ -1255,7 +1254,8 @@
 			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_RaiderMaskedImperialArmyHelmet</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</wornGraphicPath>
+			<!-- <wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/helmet_norust_visorup/helmet</wornGraphicPath> -->
+			<wornGraphicPath Inherit="False"/>
 			<layers Inherit="False">
 				<li>Overhead</li>
 				<li>EyeCover</li>
@@ -1334,8 +1334,8 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
+		<randomStyleChance Inherit="False">1</randomStyleChance>
+		<randomStyle Inherit="False">
 			<li><styleDef>guy762_ArmyTrooperHelmetStyle_ClassicGogglesUp</styleDef></li>
 			<li><styleDef>guy762_ArmyTrooperHelmetStyle_ClassicGogglesDown</styleDef></li>
 		</randomStyle>
@@ -1426,7 +1426,8 @@
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyHelmetMaskedClassicGoggles</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_up/helmet</wornGraphicPath>
+			<wornGraphicPath Inherit="False"/>
+			<!-- <wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/masked_classicgoggles_up/helmet</wornGraphicPath> -->
 			<layers Inherit="False">
 				<li>Overhead</li>
 				<li>EyeCover</li>
