@@ -744,7 +744,7 @@
 		<maxGenerationAge>45</maxGenerationAge>
 		<itemQuality>Good</itemQuality>
 		
-		<maxPerGroup>4</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -799,7 +799,7 @@
 		<abilities>
 			<!-- <li>WorkDrive</li> -->
 			<!-- <li>ProductionCommand</li> -->
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		<startingHediffs>
 			<!-- <li> -->

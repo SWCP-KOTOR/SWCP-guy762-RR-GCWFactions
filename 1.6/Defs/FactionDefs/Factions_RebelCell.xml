@@ -368,17 +368,17 @@
 			
 			
 			<!-- airspeeders and Z-95 escort -->
-			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
-				<kindDef>Combat</kindDef>
-				<commonality>900</commonality>
-				<minPoints>2000</minPoints>
-				<minAircraftCount>3</minAircraftCount>
-				<maxAircraftCount>5</maxAircraftCount>
-				<options>
-					<guy762_SWVehicle_T47AirspeederRebel_bot_PawnKind>5</guy762_SWVehicle_T47AirspeederRebel_bot_PawnKind>
-					<guy762_SWVehicle_Z95Rebel_bot_PawnKind>3</guy762_SWVehicle_Z95Rebel_bot_PawnKind>
-				</options>
-			</li>
+			<!-- <li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
+				<!-- <kindDef>Combat</kindDef> -->
+				<!-- <commonality>900</commonality> -->
+				<!-- <minPoints>2000</minPoints> -->
+				<!-- <minAircraftCount>3</minAircraftCount> -->
+				<!-- <maxAircraftCount>5</maxAircraftCount> -->
+				<!-- <options> -->
+					<!-- <guy762_SWVehicle_T47AirspeederRebel_bot_PawnKind>5</guy762_SWVehicle_T47AirspeederRebel_bot_PawnKind> -->
+					<!-- <guy762_SWVehicle_Z95Rebel_bot_PawnKind>3</guy762_SWVehicle_Z95Rebel_bot_PawnKind> -->
+				<!-- </options> -->
+			<!-- </li> -->
 			
 			<!-- bombers and interceptor escort -->
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
@@ -401,7 +401,7 @@
 				<commonality>900</commonality>
 				<minPoints>2000</minPoints>
 				<minAircraftCount>3</minAircraftCount>
-				<maxAircraftCount>3</maxAircraftCount>
+				<maxAircraftCount>4</maxAircraftCount>
 				<options>
 					<guy762_SWVehicle_XWingRebel_bot_PawnKind>5</guy762_SWVehicle_XWingRebel_bot_PawnKind>
 				</options>
