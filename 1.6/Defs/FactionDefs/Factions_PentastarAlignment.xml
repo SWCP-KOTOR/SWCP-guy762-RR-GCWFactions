@@ -340,7 +340,52 @@
 					<li>Siege</li>
 				</disallowedStrategies>
 				-->
+				
+				
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ air raids -->
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>10050</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>5</minAircraftCount>
+				<maxAircraftCount>6</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_TIEInterceptor_bot_PawnKind>5</guy762_SWVehicle_TIEInterceptor_bot_PawnKind>
+					<guy762_SWVehicle_AlphaXG1StarwingPentastar_bot_PawnKind>2</guy762_SWVehicle_AlphaXG1StarwingPentastar_bot_PawnKind>
+				</options>
+			</li>
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
+				<kindDef>Combat</kindDef>
+				<disallowedStrategies>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttack</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+					<li>StageThenAttack</li>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<commonality>10025</commonality>
+				<minPoints>2000</minPoints>
+				<minAircraftCount>4</minAircraftCount>
+				<maxAircraftCount>5</maxAircraftCount>
+				<options>
+					<guy762_SWVehicle_TIEDefender_bot_PawnKind>2</guy762_SWVehicle_TIEDefender_bot_PawnKind>
+				</options>
+			</li>
 			
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
@@ -356,16 +401,18 @@
 				</disallowedStrategies>
 				<commonality>10000</commonality>
 				<minPoints>2000</minPoints>
-				<minAircraftCount>3</minAircraftCount>
-				<maxAircraftCount>6</maxAircraftCount>
+				<minAircraftCount>4</minAircraftCount>
+				<maxAircraftCount>5</maxAircraftCount>
 				<options>
-					<guy762_SWVehicle_TIEInterceptor_bot_PawnKind>3</guy762_SWVehicle_TIEInterceptor_bot_PawnKind>
-					<guy762_SWVehicle_TIEDefender_bot_PawnKind>2</guy762_SWVehicle_TIEDefender_bot_PawnKind>
+					<guy762_SWVehicle_TIEDefender_bot_PawnKind>1</guy762_SWVehicle_TIEDefender_bot_PawnKind>
 					<guy762_SWVehicle_TIEAvenger_bot_PawnKind>1</guy762_SWVehicle_TIEAvenger_bot_PawnKind>
+					<guy762_SWVehicle_AlphaXG1StarwingPentastar_bot_PawnKind>1</guy762_SWVehicle_AlphaXG1StarwingPentastar_bot_PawnKind>
 				</options>
 			</li>
 			
-			<!-- vehicle assault --><!--
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ vehicle raids -->
+			
+			<!--
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>1000</commonality>
