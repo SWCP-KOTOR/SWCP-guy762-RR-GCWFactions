@@ -961,7 +961,6 @@
 
 
 
-			<!-- EaWX-style platoon defense -->
 			<li>
 				<kindDef>Settlement</kindDef>
 				<commonality>1</commonality>
@@ -970,12 +969,12 @@
 					<xSWImpRemnant_ArmyRepeater_4x>100</xSWImpRemnant_ArmyRepeater_4x>
 					<xSWImpRemnant_ArmyMissile_4x>100</xSWImpRemnant_ArmyMissile_4x>
 					<xSWImpRemnant_ArmyIon_2x>100</xSWImpRemnant_ArmyIon_2x>
-					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
-					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> <!-- has a max of 2 -->
+					<xSWImpRemnant_UniformArmyLtBaseGuard>100</xSWImpRemnant_UniformArmyLtBaseGuard>
+					<xSWImpRemnant_ArmyMedicBaseGuard_2x>100</xSWImpRemnant_ArmyMedicBaseGuard_2x>
 					
 					<!-- commander and guards -->
-					<xSWImpRemnant_StormtrooperRifle_4x>100</xSWImpRemnant_StormtrooperRifle_4x>
-					<xSWImpRemnant_ArmyMajor_1x>100</xSWImpRemnant_ArmyMajor_1x>
+					<xSWImpRemnant_StormtrooperRifle_4x_BaseGuard>100</xSWImpRemnant_StormtrooperRifle_4x_BaseGuard>
+					<xSWImpRemnant_UniformArmyMajorBaseGuard>100</xSWImpRemnant_UniformArmyMajorBaseGuard>
 					
 					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
 					<!-- <SWImpRemnant_Engineer>5</SWImpRemnant_Engineer> -->
@@ -995,6 +994,27 @@
 					<!-- <SWImpRemnant_Moff>0.1</SWImpRemnant_Moff> -->
 				</options>
 			</li>
+			
+			
+			<!-- <li> -->
+				<!-- <kindDef>Settlement</kindDef> -->
+				<!-- <commonality>1</commonality> -->
+				<!-- <options> -->
+					<!-- <xSWImpRemnant_ArmyRifleman_35x>100</xSWImpRemnant_ArmyRifleman_35x> -->
+					<!-- <xSWImpRemnant_ArmyRepeater_4x>100</xSWImpRemnant_ArmyRepeater_4x> -->
+					<!-- <xSWImpRemnant_ArmyMissile_4x>100</xSWImpRemnant_ArmyMissile_4x> -->
+					<!-- <xSWImpRemnant_ArmyIon_2x>100</xSWImpRemnant_ArmyIon_2x> -->
+					<!-- <xSWImpRemnant_UniformArmyLtBaseGuard>100</xSWImpRemnant_UniformArmyLtBaseGuard> -->
+					<!-- <xSWImpRemnant_ArmyMedicBaseGuard_2x>100</xSWImpRemnant_ArmyMedicBaseGuard_2x> -->
+					
+					<!-- <xSWImpRemnant_StormtrooperBaseGuard>100</xSWImpRemnant_StormtrooperBaseGuard> -->
+					<!-- <xSWImpRemnant_UniformArmyMajorBaseGuard>100</xSWImpRemnant_UniformArmyMajorBaseGuard> -->
+					
+				<!-- </options> -->
+			<!-- </li> -->
+			
+			
+			
 			
 			<!-- base -->
 			<!-- <li> -->

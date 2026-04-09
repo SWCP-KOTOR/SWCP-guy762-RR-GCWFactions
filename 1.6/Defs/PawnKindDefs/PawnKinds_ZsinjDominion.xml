@@ -416,7 +416,7 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(95,120,75)</color>       <!-- jungle green -->
+				<color>(80,90,75)</color>       <!-- dark jungle green -->
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>

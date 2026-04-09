@@ -22,6 +22,10 @@
 			<AccuracyLong>0.30</AccuracyLong>
 			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_heavyordnance>1</SWCPStat_InfantryWeaponClass_heavyordnance>
+		</equippedStatOffsets>
+		
 		<weaponTags>
 			<li>SWRanged_Oppressorflamethrower</li>
 			<li>SWRanged_AnyOrdinance</li>

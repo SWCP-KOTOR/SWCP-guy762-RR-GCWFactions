@@ -117,8 +117,14 @@
 		
 		<abilities>
 			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li>SWPotF_TacticAbility_Barrage</li>
+			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_Harass</li>
+			<li>SWPotF_TacticDelegationAbility_harass</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
 			<!-- ACE TIER 2 -->
 		</abilities>
 		

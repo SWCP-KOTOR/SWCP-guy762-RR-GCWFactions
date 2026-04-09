@@ -25,6 +25,9 @@
 			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>1.5</RangedWeapon_DamageMultiplier>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_heavyordnance>1</SWCPStat_InfantryWeaponClass_heavyordnance>
+		</equippedStatOffsets>
 		
 		<weaponTags>
 			<li>SWRanged_RelbyMortar</li>

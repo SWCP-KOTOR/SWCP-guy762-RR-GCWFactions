@@ -40,20 +40,21 @@
 		<weaponTags>
 			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_ArmyOfficerHelmet</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		
 		<forcedTraits>
 			<Neurotic>1</Neurotic>
 			<Industriousness>2</Industriousness>
@@ -70,9 +71,13 @@
 			<li>guy762_Ability_CommandTierIII</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerGrandAdmiral/></flags>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_AveragePointy</li>

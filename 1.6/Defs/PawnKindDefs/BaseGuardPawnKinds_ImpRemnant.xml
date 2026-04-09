@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyRifleman_35x" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xSWImpRemnant_ArmyRifleman_35x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>35</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyRepeater_4x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyRepeater_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyIon_2x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyIon_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyMissile_4x" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xSWImpRemnant_ArmyMissile_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xSWImpRemnant_ArmyMedicBaseGuard_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard one-offs -->
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyLieutenant_1x" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>xSWImpRemnant_ArmyLieutenant_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyTrooperBeaconGuard" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xSWImpRemnant_ArmyTrooperBeaconGuard</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<!-- <maxPerGroup>35</maxPerGroup> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E10rifle</li>
+		</weaponTags>
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_ArmyConscriptBaseGuard" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>xSWImpRemnant_ArmyConscriptBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<!-- <maxPerGroup>56</maxPerGroup> -->
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
+		<defName>xSWImpRemnant_WorkerBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
+		<defName>xSWImpRemnant_EngineerBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperBaseGuard" ParentName="SWImpRemnant_stormtrooper">
+		<defName>xSWImpRemnant_StormtrooperBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_StormtrooperRifle_4x_BaseGuard" ParentName="xSWImpRemnant_StormtrooperRifle_4x">
+		<defName>xSWImpRemnant_StormtrooperRifle_4x_BaseGuard</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="xSWWarlords_Inquisitor_TFS_BaseGuard" ParentName="SWWarlords_Inquisitor_TFS">
+		<defName>xSWWarlords_Inquisitor_TFS_BaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_liteneeddisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWWarlords_ShadowStormieBaseGuard" ParentName="SWWarlords_shadowstormie">
+		<defName>xSWWarlords_ShadowStormieBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ officers -->
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_UniformArmyLtBaseGuard" ParentName="SWImpRemnant_ArmyLt_onBase">
+		<defName>xSWImpRemnant_UniformArmyLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_UniformArmyMajorBaseGuard" ParentName="SWImpRemnant_ArmyMajor_onBase">
+		<defName>xSWImpRemnant_UniformArmyMajorBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_UniformArmyGeneralBaseGuard" ParentName="SWImpRemnant_ArmyGeneral">
+		<defName>xSWImpRemnant_UniformArmyGeneralBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
+		<defName>xSWImpRemnant_ISBLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_INTLtBaseGuard" ParentName="SWImpRemnant_INTLt">
+		<defName>xSWImpRemnant_INTLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt">
+		<defName>xSWImpRemnant_OpsLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral">
+		<defName>xSWImpRemnant_OpsGeneralBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWImpRemnant_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy">
+		<defName>xSWImpRemnant_ViceroyBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+
+
+</Defs>

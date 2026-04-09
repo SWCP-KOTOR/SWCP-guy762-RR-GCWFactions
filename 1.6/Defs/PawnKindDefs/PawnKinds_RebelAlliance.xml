@@ -254,8 +254,9 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotORUtility_engi_novisor</li>
-			<li>KotORUtility_weakgrenade</li>
-			<li>SWDetpackCase</li>
+			<!-- <li>KotORUtility_weakgrenade</li> -->
+			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
 			<li>NewRepublic_RebelAgent_hats</li>
 			<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
 			<li>SWCPSpecificApparelItem_ScoutVest</li>
@@ -263,6 +264,7 @@
 			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>SWCP_stealthbelt_default</li>
 			<li>guy762_JKDetpackCase</li>
 			<li>guy762_Accessory_poncho</li>
 			<li>guy762_Jacket_scout</li>

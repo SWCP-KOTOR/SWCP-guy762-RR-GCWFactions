@@ -42,24 +42,21 @@
 		<weaponTags>
 		  <li>SWRanged_GALAAR15carbine</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_ArmyOfficerHelmet</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		
 		<forcedTraits>
 			<Nerves>2</Nerves> <!-- needs a custom third tier, refer to notes in faction mod channel -->
 			<Greedy>0</Greedy>
@@ -77,10 +74,19 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierII</li>
 			
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
+			<li>SWPotF_TacticAbility_ZealousRage</li>
+			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerGrandAdmiral/></flags>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_AverageWide</li>

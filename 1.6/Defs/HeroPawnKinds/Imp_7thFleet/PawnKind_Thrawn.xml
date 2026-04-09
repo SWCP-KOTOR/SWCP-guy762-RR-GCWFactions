@@ -43,13 +43,17 @@
 		</weaponTags>
 		
 		<inventoryOptions>
-		  <skipChance>0</skipChance>
-		  <subOptionsChooseOne>
-			<li>
-			  <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
-			  <countRange>1</countRange>
-			</li>
-		  </subOptionsChooseOne>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_ArmyOfficerHelmet</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 		
 		<!-- <skills> -->
@@ -97,6 +101,10 @@
 			
 			<li>SWPotF_TacticAbility_Ambush</li>
 			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_Barrage</li>
+			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_Charge</li>
+			<li>SWPotF_TacticDelegationAbility_charge</li>
 			<li>SWPotF_TacticAbility_Harass</li>
 			<li>SWPotF_TacticDelegationAbility_harass</li>
 			<li>SWPotF_TacticAbility_TakeCover</li>
@@ -107,9 +115,13 @@
 			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerGrandAdmiral/></flags>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_AverageWide</li>

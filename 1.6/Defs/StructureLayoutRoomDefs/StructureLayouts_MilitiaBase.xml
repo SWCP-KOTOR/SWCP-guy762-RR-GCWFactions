@@ -365,6 +365,11 @@
 			<countPerHundredCells>1</countPerHundredCells>
 			<minMaxRange>0~1</minMaxRange>
 		  </AncientFortifiedWall_Pillar3x3>
+		  
+			<SWCPPrefab_LargeCrateForHidingIn>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefab_LargeCrateForHidingIn>
 		</prefabs>
 	</LayoutRoomDef>
 	

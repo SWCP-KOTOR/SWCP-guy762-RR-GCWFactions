@@ -146,7 +146,9 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
 			
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
@@ -509,7 +511,9 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
 			
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>

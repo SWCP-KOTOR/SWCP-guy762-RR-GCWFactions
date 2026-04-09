@@ -21,20 +21,27 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_officer</li>
-		  <li>RemnantEmpire_grandgeneral</li>
-		  <li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
-		  <li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
+			<li>KotOREquipment_officer</li>
+			<li>RemnantEmpire_grandgeneral</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyOfficerHelmet</li>
+			<li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
+			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
 		</apparelTags>
 		<apparelRequired>
+		   <li>guy762_ArmyOfficerHelmet</li>
 		   <li>guy762_ArmyOfficerArmor_topbrass</li>
 		   <li>guy762_ImpUniform_topbrass</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<quality>Legendary</quality>
+			</li>
+			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef> -->
 				<color>(110,120,115)</color>  <!-- army slate green -->
 				<quality>Legendary</quality>
 			</li>
@@ -84,10 +91,22 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierII</li>
 			
+			<li>SWPotF_TacticAbility_Ambush</li>
+			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_Charge</li>
+			<li>SWPotF_TacticDelegationAbility_charge</li>
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
+			<li>SWPotF_TacticAbility_Sprint</li>
+			<li>SWPotF_TacticDelegationAbility_sprint</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerGrandGeneral/></flags>
+			</li>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_NarrowWide</li>

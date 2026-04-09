@@ -12,6 +12,10 @@
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
 			<canLandGravshipOn>false</canLandGravshipOn>
+			
+			<neverBuildable>true</neverBuildable>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
 		</building>
 	</ThingDef>
 
@@ -156,7 +160,7 @@
 					<li>
                         <thingDef>SWCPItem_BF2AmmoSupplyPickup</thingDef>
                         <countRange>1~2</countRange>
-                        <weight>1.25</weight>
+                        <weight>1</weight>
                     </li>
 					
 					<li>
@@ -169,7 +173,7 @@
 					<li>
                         <thingDef>guy762_RK3pistol</thingDef>
                         <countRange>1</countRange>
-                        <weight>1</weight>
+                        <weight>0.75</weight>
                     </li>
 					<li>
                         <thingDef>guy762_SE14pistol</thingDef>
@@ -184,7 +188,7 @@
 					<li>
                         <thingDef>guy762_E10rifle</thingDef>
                         <countRange>1</countRange>
-                        <weight>1</weight>
+                        <weight>0.75</weight>
                     </li>
 					<li>
                         <thingDef>guy762_E11carbine</thingDef>
@@ -221,7 +225,7 @@
 					<li>
                         <thingDef>guy762_grenadebelt_stun</thingDef>
                         <countRange>1</countRange>
-                        <weight>1</weight>
+                        <weight>0.75</weight>
                     </li>
 					<li>
                         <thingDef>guy762_stim_battle</thingDef>

@@ -195,7 +195,7 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -229,13 +229,13 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>EyeCover</apparelLayer>
 				<bodyPartGroup>Mouth</bodyPartGroup>
 				<!-- <apparelDef>guy762_ArmyTrooperGasMask</apparelDef> -->
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -243,7 +243,7 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -263,7 +263,7 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -271,7 +271,7 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -309,13 +309,13 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Normal</quality>
 			</li>
 			<li>
@@ -334,13 +334,13 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Good</quality>
 			</li>
 			<li>
@@ -377,7 +377,7 @@
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Excellent</quality>
 			</li>
 			<li>
@@ -405,7 +405,7 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -435,11 +435,11 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<color>(115,115,105)</color>  <!-- vague olive -->
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>

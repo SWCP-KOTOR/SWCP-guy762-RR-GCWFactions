@@ -48,20 +48,21 @@
 		<weaponTags>
 		  <li>SWRanged_RK3pistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>19~20</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_ArmyOfficerHelmet</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		
 		<forcedTraits>
 			<HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia>
 			<Jealous>0</Jealous>
@@ -80,9 +81,13 @@
 			<li>guy762_Ability_CommandTierII</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerGrandAdmiral/></flags>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_NarrowWide</li>

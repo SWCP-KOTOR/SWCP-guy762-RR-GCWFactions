@@ -219,17 +219,18 @@
 			<li>SWCPMapGenStep_ImperialStructure_testbasePawns</li>
 			
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_WanderingPersonnel</li>
-
-			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li> -->
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_BigCommandPostGuards</li>
-			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_ATPTsDefendingAATurret</li> -->
-
+			
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_basecommaders</li>
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_controlroomguards</li>
 			
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</li>
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</li>
+			
+			
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_ATPTsDefendingAATurret</li> -->
 		</genSteps>
 	</MapGeneratorDef>
 	
@@ -272,9 +273,9 @@
 		  <keepPopulationReplenished>false</keepPopulationReplenished>
 		  <maxPopulation>30</maxPopulation>
 		  <options>
-			<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
+			<xSWImpRemnant_WorkerBaseGuard>10</xSWImpRemnant_WorkerBaseGuard>
 			<!-- <xSWImpRemnant_ArmyConscriptBaseGuard>7.5</xSWImpRemnant_ArmyConscriptBaseGuard> -->
-			<SWImpRemnant_Engineer>5</SWImpRemnant_Engineer>
+			<xSWImpRemnant_EngineerBaseGuard>5</xSWImpRemnant_EngineerBaseGuard>
 			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
 			
@@ -378,14 +379,14 @@
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWImpRemnant_ArmyLt_onBase>100</SWImpRemnant_ArmyLt_onBase>
-				<SWImpRemnant_OpsLt>75</SWImpRemnant_OpsLt>
-				<SWImpRemnant_ArmyMajor_onBase>75</SWImpRemnant_ArmyMajor_onBase>
-				<SWImpRemnant_INTLt>25</SWImpRemnant_INTLt>
+				<xSWImpRemnant_OpsLtBaseGuard>100</xSWImpRemnant_OpsLtBaseGuard>
+				<xSWImpRemnant_UniformArmyLtBaseGuard>75</xSWImpRemnant_UniformArmyLtBaseGuard>
+				<xSWImpRemnant_UniformArmyMajorBaseGuard>50</xSWImpRemnant_UniformArmyMajorBaseGuard>
+				<xSWImpRemnant_INTLtBaseGuard>25</xSWImpRemnant_INTLtBaseGuard>
 			<!-- rare pulls -->
-				<SWImpRemnant_ArmyGeneral>10</SWImpRemnant_ArmyGeneral>
-				<SWImpRemnant_OpsGeneral>5</SWImpRemnant_OpsGeneral>
-				<SWImpRemnant_Viceroy>1</SWImpRemnant_Viceroy>
+				<xSWImpRemnant_UniformArmyGeneralBaseGuard>10</xSWImpRemnant_UniformArmyGeneralBaseGuard>
+				<xSWImpRemnant_OpsGeneralBaseGuard>5</xSWImpRemnant_OpsGeneralBaseGuard>
+				<xSWImpRemnant_ViceroyBaseGuard>1</xSWImpRemnant_ViceroyBaseGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -401,11 +402,46 @@
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWImpRemnant_stormtrooper>100</SWImpRemnant_stormtrooper>
+				<xSWImpRemnant_StormtrooperBaseGuard>100</xSWImpRemnant_StormtrooperBaseGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
 	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>1</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>Force_Darkside_MeditationSpot</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWWarlords_Inquisitor_TFS_BaseGuard MayRequire="lee.theforce.standalone">100</xSWWarlords_Inquisitor_TFS_BaseGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>2</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>Force_Darkside_MeditationSpot</li>
+			</beaconBuildingDefs>
+			<options>
+				<xSWWarlords_ShadowStormieBaseGuard>100</xSWWarlords_ShadowStormieBaseGuard> <!-- replace with purge troopers eventually -->
+			</options>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -608,6 +644,11 @@
 			<countPerHundredCells>1</countPerHundredCells>
 			<minMaxRange>0~1</minMaxRange>
 		  </AncientFortifiedWall_Pillar3x3>
+		  
+			<SWCPPrefab_LargeCrateForHidingIn>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefab_LargeCrateForHidingIn>
 		</prefabs>
 	</LayoutRoomDef>
 	
@@ -895,6 +936,11 @@
 				<countRange>1~1</countRange>
 			</SWCPPrefabTechBuilding_JKAmmoBank>
 			
+			<!-- <SWCPPrefab_AncientEnemyTerminal> -->
+				<!-- <countPerHundredCells>1</countPerHundredCells> -->
+				<!-- <countRange>0~1</countRange> -->
+			<!-- </SWCPPrefab_AncientEnemyTerminal> -->
+			
 		  <AncientSealedCrate_Shells>
 			<countRange>0~2</countRange>
 		  </AncientSealedCrate_Shells>
@@ -919,6 +965,18 @@
 		  <li>guy762_FloorTiles_XGrate_grey</li>
 		</floorTypes>
 	</LayoutRoomDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefab_AncientEnemyTerminal</defName>
+		<edgeOnly>true</edgeOnly>
+		<size>(1,1)</size>
+		<things>
+			<AncientEnemyTerminal> <!-- this summons a raid of random value (?) and faction, but only works when spawned in through the ideology ancient complex thing -->
+				<relativeRotation>Opposite</relativeRotation>
+			</AncientEnemyTerminal>
+		</things>
+	</PrefabDef>
+	
 	
 	
 	
@@ -963,7 +1021,7 @@
 				<countPerHundredCells>1</countPerHundredCells>
 				<countRange>0~1</countRange>
 			</SWCPPrefabTechBuilding_JKShieldBank>
-			
+
 		  <AncientCardboardBox_Cluster>
 			<countPerHundredCells>1</countPerHundredCells>
 			<minMaxRange>0~1</minMaxRange>
@@ -1025,37 +1083,7 @@
 	
 	
 	
-	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</defName>
-		<order>960</order>
-		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
-			<defendRadius>5</defendRadius>
-			<pawnsPerBeacon>1</pawnsPerBeacon>
-			<beaconBuildingDefs>
-				<li>Force_Darkside_MeditationSpot</li>
-			</beaconBuildingDefs>
-			<options>
-				<SWWarlords_Inquisitor_TFS MayRequire="lee.theforce.standalone">100</SWWarlords_Inquisitor_TFS>
-			</options>
-		</genStep>
-	</GenStepDef>
 	
-	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</defName>
-		<order>960</order>
-		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
-			<defendRadius>5</defendRadius>
-			<pawnsPerBeacon>2</pawnsPerBeacon>
-			<beaconBuildingDefs>
-				<li>Force_Darkside_MeditationSpot</li>
-			</beaconBuildingDefs>
-			<options>
-				<SWWarlords_shadowstormie>100</SWWarlords_shadowstormie> <!-- replace with purge troopers eventually -->
-			</options>
-		</genStep>
-	</GenStepDef>
 	
 	
 	

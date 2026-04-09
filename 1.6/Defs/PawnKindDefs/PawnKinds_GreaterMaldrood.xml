@@ -166,12 +166,12 @@
 	
 	
 	
-	<PawnKindDef Name="xSWMaldrood_NavyTrooper_48x" ParentName="SWImpRemnant_NavyTrooper">
-		<defName>xSWMaldrood_NavyTrooper_48x</defName>
+	<PawnKindDef Name="xSWMaldrood_NavyTrooper_26x" ParentName="SWImpRemnant_NavyTrooper">
+		<defName>xSWMaldrood_NavyTrooper_26x</defName>
 		<!-- <label>DEBUG</label> -->
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		<combatPower>1</combatPower>
-		<maxPerGroup>48</maxPerGroup>
+		<maxPerGroup>26</maxPerGroup>
 	</PawnKindDef>
 	
 	
@@ -347,7 +347,7 @@
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<color>(110,105,100)</color>        <!-- maldrood army grey -->
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>

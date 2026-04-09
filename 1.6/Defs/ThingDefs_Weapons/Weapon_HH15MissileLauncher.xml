@@ -24,6 +24,8 @@
 			<RangedWeapon_Cooldown>12</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_heavyordnance>1</SWCPStat_InfantryWeaponClass_heavyordnance>
+			
 			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		

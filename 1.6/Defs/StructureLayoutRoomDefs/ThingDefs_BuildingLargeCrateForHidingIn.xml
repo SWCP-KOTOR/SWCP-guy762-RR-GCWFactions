@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <ThingDef Abstract="True" Name="SWCPBuildingLootBoxBASE" ParentName="BuildingBase"> -->
+		<!-- <drawerType>MapMeshAndRealTime</drawerType> -->
+		<!-- <altitudeLayer>Building</altitudeLayer> -->
+		<!-- <passability>PassThroughOnly</passability> -->
+		<!-- <pathCost>50</pathCost> -->
+		<!-- <noRightClickDraftAttack>true</noRightClickDraftAttack> -->
+		<!-- <rotatable>false</rotatable> -->
+		<!-- <building> -->
+			<!-- <isInert>true</isInert> -->
+			<!-- <ai_chillDestination>false</ai_chillDestination> -->
+			<!-- <canLandGravshipOn>false</canLandGravshipOn> -->
+			
+			<!-- <neverBuildable>true</neverBuildable> -->
+			<!-- <claimable>false</claimable> -->
+			<!-- <expandHomeArea>false</expandHomeArea> -->
+		<!-- </building> -->
+	<!-- </ThingDef> -->
+
+
+
+
+
+
+
+
+
+
+    <ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuilding_LargeCrateForHidingIn</defName>
+        <label>empty crate</label>
+        <description>A long, empty crate. A pawn could safely hide in this.</description>
+        <graphicData>
+            <texPath>Buildings/SotE_DoubleCrate/SotE_DoubleCrate_Closed</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.12)</drawOffset>
+			<drawRotated>false</drawRotated>
+			
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		
+        <size>(2,1)</size>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+		
+		<building>
+			<isPlayerEjectable>true</isPlayerEjectable>
+		</building>
+		
+		<killedLeavings>
+            <KotORChunk_plasteel>1</KotORChunk_plasteel>
+        </killedLeavings>
+		
+        <comps>
+            <li Class="CompProperties_EmptyStateGraphic">
+                <graphicData>
+					<texPath>Buildings/SotE_DoubleCrate/SotE_DoubleCrate_Open</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2.5,2.5)</drawSize>
+					<drawOffset>(0,0,0.12)</drawOffset>
+					<drawRotated>false</drawRotated>
+					
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+					<shadowData>
+						<volume>(0.3, 0.33, 0.3)</volume>
+					</shadowData>
+                </graphicData>
+            </li>
+        </comps>
+		
+		<thingClass>EBSGFramework.Building_SleepCasket</thingClass>
+        <containedPawnsSelectable>true</containedPawnsSelectable>
+		<hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <!-- <defaultPlacingRot>South</defaultPlacingRot> -->
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<startSound>kotorsound_largelocker_close</startSound>
+				<endSound>kotorsound_largelocker_open</endSound>
+				
+				<ejectLabel>exit crate</ejectLabel>
+				<ejectDescription>Order the currently concealed pawn to get out of the crate.</ejectDescription>
+				<ejectIcon>Buildings/SotE_DoubleCrate/SotE_DoubleCrate_Open</ejectIcon>
+			</li>
+        </modExtensions>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefab_LargeCrateForHidingIn</defName>
+		<size>(2,1)</size>
+		<things>
+			<SWCPBuilding_LargeCrateForHidingIn>
+				<chance>0.5</chance>
+			</SWCPBuilding_LargeCrateForHidingIn>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+</Defs>

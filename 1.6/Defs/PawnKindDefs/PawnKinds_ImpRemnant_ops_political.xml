@@ -524,7 +524,7 @@
 			<li>SWRanged_Power5pistol</li>
 		</weaponTags>
 
-		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
+		<invNutrition>2</invNutrition><invFoodDef>MealFine</invFoodDef>
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>

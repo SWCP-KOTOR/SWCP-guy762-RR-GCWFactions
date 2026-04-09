@@ -24,7 +24,9 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
+			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
 			
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
@@ -640,17 +642,42 @@
 				<li>Neck</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+					  
+						<altDefs>
+							<li>guy762_ImpArmyOfficerArmorTopBrassCustomization_GrandAdmiral</li>
+							<li>guy762_ImpArmyOfficerArmorTopBrassCustomization_GrandGeneral</li>
+							<li>guy762_ImpArmyOfficerArmorTopBrassCustomization_FieldMarshal</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
-			<li>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef>
-			</li>
-			<li>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef>
-			</li>
-		</randomStyle>
+		<!-- <randomStyleChance>1</randomStyleChance> -->
+		<!-- <randomStyle> -->
+			<!-- <li> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef> -->
+			<!-- </li> -->
+		<!-- </randomStyle> -->
 		
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -670,8 +697,15 @@
                 <rarity>Unique</rarity>
             </li>
         </comps>
+		<modExtensions>
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+			</li>
+		</modExtensions>
 	</ThingDef>	 
 	
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficerArmor_grandgeneral</defName>
 		<overrideLabel>light battle armor, grand general's</overrideLabel>
@@ -693,10 +727,94 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	-->
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerArmorTopBrassCustomization_GrandAdmiral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandAdmiral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</li></texturePaths>
+			<colorA>
+				<color>(250,250,250)</color><!-- white -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerArmorTopBrassCustomization_GrandGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandGeneral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</li></texturePaths>
+			<colorA>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerArmorTopBrassCustomization_FieldMarshal</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDirector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialArmyOfficer/fieldmarshal/Apparel</li></texturePaths>
+			<colorA>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_ArmyOfficerHelmet" ParentName="guy762_ArmyTrooperHelmet">
+		<defName>guy762_ArmyOfficerHelmet</defName>
+		<label>army officer helmet</label>
+		<graphicData>
+			<texPath>SWApparel/ImperialArmyOfficer/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
+		
+		<randomStyleChance Inherit="False"/>
+		<randomStyle Inherit="False" />
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_ImperialArmyOfficerHelmet</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/helmet</wornGraphicPath>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpOfficer</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only>  <!-- white (to be added to the inventories of Grand Admiral characters) -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 	
 	
 	
@@ -919,7 +1037,10 @@
 							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 						</colorA>
 						<colorB>
-							<color>(140,130,110)</color> <!-- sandbag beige -->
+							<!-- sandbag beige -->
+							<!-- <color>(140,130,110)</color> -->
+							
+							<color>(90,85,65)</color> <!-- grease green -->
 							<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 						</colorB>
 					</conditionalGraphics>

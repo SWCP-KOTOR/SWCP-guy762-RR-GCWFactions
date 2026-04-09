@@ -23,13 +23,13 @@
 		<apparelTags>
 			<li>KotOREquipment_officer</li>
 			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
-			<li>SWGCWSpecificApparelItem_ImperialArmyHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialArmyOfficerHelmet</li>
 			<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield_big</li>
-			<li>guy762_ArmyTrooperHelmet</li>
+			<li>guy762_ArmyOfficerHelmet</li>
 			<li>guy762_ArmyOfficerArmor_highbrass</li>
 			<li>guy762_Bodysuit_TIEpilot</li>
 		</apparelRequired>

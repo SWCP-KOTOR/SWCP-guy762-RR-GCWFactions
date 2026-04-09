@@ -21,10 +21,10 @@
 				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef>
 			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef> -->
+			<!-- </li> -->
 			
 			<li>
 				<thingDef>guy762_ImpUniform_lowrank</thingDef>
@@ -97,10 +97,10 @@
 				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
 			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef> -->
+			<!-- </li> -->
 			
 			<li>
 				<thingDef>guy762_ImpUniform_lowrank</thingDef>
@@ -144,10 +144,10 @@
 				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
 				<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
 			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef> -->
+			<!-- </li> -->
 			
 			<!-- <li> -->
 				<!-- <thingDef>guy762_ImpUniform_lowrank</thingDef> -->

@@ -75,10 +75,19 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierIV</li>
 			
+			<li>SWPotF_TacticAbility_Ambush</li>
+			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_ZealousRage</li>
+			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerDirector/></flags>
+			</li>
+			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Female_AveragePointy</li>

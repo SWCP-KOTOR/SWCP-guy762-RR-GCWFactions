@@ -29,6 +29,8 @@
 			<RangedWeapon_DamageMultiplier>1.4</RangedWeapon_DamageMultiplier>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_heavyordnance>1</SWCPStat_InfantryWeaponClass_heavyordnance>
+			
 			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		
@@ -161,6 +163,8 @@
 			<RangedWeapon_DamageMultiplier>1.6</RangedWeapon_DamageMultiplier>
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_heavyordnance>1</SWCPStat_InfantryWeaponClass_heavyordnance>
+			
 			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		

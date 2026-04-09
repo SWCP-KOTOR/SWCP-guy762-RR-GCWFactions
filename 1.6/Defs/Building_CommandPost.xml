@@ -51,6 +51,8 @@
 			<ai_chillDestination>true</ai_chillDestination>
 			<allowAutoroof>false</allowAutoroof>
 			<minDistanceToSameTypeOfBuilding>3</minDistanceToSameTypeOfBuilding>
+			
+			<claimable>false</claimable>
 		</building>
 		<costList>
 			<Steel>75</Steel>
@@ -136,6 +138,8 @@
 			<ai_chillDestination>true</ai_chillDestination>
 			<allowAutoroof>false</allowAutoroof>
 			<minDistanceToSameTypeOfBuilding>3</minDistanceToSameTypeOfBuilding>
+			
+			<claimable>false</claimable>
 		</building>
 		<costList>
 			<Steel>75</Steel>

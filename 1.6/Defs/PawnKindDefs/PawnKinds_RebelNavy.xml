@@ -43,10 +43,10 @@
 		</specificApparelRequirements>
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>500~1100</weaponMoney>
+		<weaponMoney>550~1100</weaponMoney>
 		<weaponTags>
 		  <li>SWRanged_DH17pistol</li>
-		  <li>SWRanged_E11carbine</li>
+		  <li>SWRanged_DH17carbine</li>
 		  <li>SWRanged_DH17rifle</li>
 		</weaponTags>
 		
