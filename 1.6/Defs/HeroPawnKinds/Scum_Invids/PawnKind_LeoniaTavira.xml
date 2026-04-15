@@ -48,24 +48,7 @@
 		<weaponTags>
 			<li>SWMelee_Vibrosword</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
 		<forcedTraits>
 			<Beauty>2</Beauty>
 			<Psychopath>0</Psychopath>

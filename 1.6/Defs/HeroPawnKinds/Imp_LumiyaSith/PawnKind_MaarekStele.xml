@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
 	
-	<PawnKindDef Name="SWWarlordsHeroBase_MaarekStele"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
-		<defName>SWWarlordsHeroBase_MaarekStele</defName>
+	<PawnKindDef Name="SWWEPlayableVillain_MaarekStele"  ParentName="guy762_HeroPawnKindBase">
+		<!-- <defName>SWWarlordsHeroBase_MaarekStele</defName> -->
+		<defName>SWWEPlayableVillain_MaarekStele</defName>
 		<nameMaker>guy762_HeroNamer_MaarekStele</nameMaker>
 		<label>Emperor's Hand</label>
 		<combatPower>500</combatPower>
@@ -48,28 +49,7 @@
 		<weaponTags>
 		  <li>SWRanged_Power5pistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>19~20</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
@@ -88,8 +68,10 @@
 		<abilities>
 			<!-- ACE TIER 2 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceIonize</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Precognition</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceIonize</li> -->
+			
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_droidstun</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -142,7 +124,7 @@
 			</li>
 			
 			<li Class="BigAndSmall.Flagger">
-				<flags> <guy762AltTag_TIEPilotBaron/></flags>
+				<flags> <guy762AltTag_TIEPilot181st/></flags>
 			</li>
 			
 			
@@ -171,20 +153,6 @@
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			  
-				<itemGraphics> <!-- do not use colorA, stick to specificApparelRequirements -->
-					<li>
-					  <graphic>
-						<colorB>140,0,0</colorB> <!-- dark red -->
-					  </graphic>
-					  <apparelLayer><li>Overhead</li></apparelLayer>
-					</li>
-					<li>
-					  <graphic>
-						<colorB>140,0,0</colorB>	<!-- dark red -->
-					  </graphic>
-					  <apparelLayer><li>OnSkin</li></apparelLayer>
-					</li>
-				</itemGraphics>
 			</li>
 			
 		</modExtensions>
@@ -259,77 +227,69 @@
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
 	
-	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_MaarekStele_TFS"  ParentName="SWWarlordsHeroBase_MaarekStele">
-		<defName>SWWEPlayableVillain_MaarekStele_TFS</defName>
-		<modExtensions>
-			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
-				<forceLevelRange>
-					<min>2</min>
-					<max>2</max>
-				</forceLevelRange>
-				<!-- <darkSideRange>25 ~ 45</darkSideRange> -->
-				<grantRandomAbilities>false</grantRandomAbilities>
+	<!-- <PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_MaarekStele_TFS"  ParentName="SWWarlordsHeroBase_MaarekStele"> -->
+		<!-- <defName>SWWEPlayableVillain_MaarekStele_TFS</defName> -->
+		<!-- <modExtensions> -->
+			<!-- <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser"> -->
+				<!-- <forceLevelRange> -->
+					<!-- <min>3</min> -->
+					<!-- <max>3</max> -->
+				<!-- </forceLevelRange> -->
+				<!-- <grantRandomAbilities>false</grantRandomAbilities> -->
+			<!-- </li>       -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_MaarekStele_VPE"  ParentName="SWWarlordsHeroBase_MaarekStele"> -->
+		<!-- <defName>SWWEPlayableVillain_MaarekStele_VPE</defName> -->
+		<!-- <modExtensions> -->
+         <!-- <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts"> -->
+            <!-- <implantDef>VPE_PsycastAbilityImplant</implantDef> -->
+            <!-- <initialLevel>5</initialLevel> -->
+            <!-- <statUpgradePoints>2~3</statUpgradePoints> -->
+            <!-- <unlockedPaths> -->
+				<!-- <Force_Neutral>1~3|4~6</Force_Neutral> -->
+				<!-- <Force_Telekinesis>1~3|3~4</Force_Telekinesis> -->
+				<!-- <Force_LightsaberCombat>1~3|3~4</Force_LightsaberCombat> -->
 				
-				<!-- <minRandomAbilities>3</minRandomAbilities> -->
-				<!-- <maxRandomAbilities>6</maxRandomAbilities> -->
-				<!-- <abilityCategories> -->
-					<!-- <li>Force_Darkside</li> -->
-					<!-- <li>Force_Neutral</li> -->
-				<!-- </abilityCategories> -->
-			</li>      
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_MaarekStele_VPE"  ParentName="SWWarlordsHeroBase_MaarekStele">
-		<defName>SWWEPlayableVillain_MaarekStele_VPE</defName>
-		<modExtensions>
-         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
-            <implantDef>VPE_PsycastAbilityImplant</implantDef>
-            <initialLevel>5</initialLevel>
-            <statUpgradePoints>2~3</statUpgradePoints>
-            <unlockedPaths>
-				<Force_Neutral>1~3|4~6</Force_Neutral>
-				<Force_Telekinesis>1~3|3~4</Force_Telekinesis>
-				<Force_LightsaberCombat>1~3|3~4</Force_LightsaberCombat>
-				
-				<Force_Darkside>1~3|4~6</Force_Darkside>
-            </unlockedPaths>
-         </li>
-      </modExtensions>
-	</PawnKindDef>
+				<!-- <Force_Darkside>1~3|4~6</Force_Darkside> -->
+            <!-- </unlockedPaths> -->
+         <!-- </li> -->
+      <!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
 	
 	
 

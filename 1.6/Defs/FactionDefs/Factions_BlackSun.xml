@@ -114,6 +114,8 @@
 				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
 			</li>
+			
+			<li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
 					<guy762_SWWarlordsFaction_NewRepublic>-50~0</guy762_SWWarlordsFaction_NewRepublic>
@@ -156,6 +158,16 @@
 					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li> -->
 					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_NevarroAshFlatsDesert</li> -->
 				<!-- </allowedBiomes>	 -->
+			</li>
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<!-- <layerWeights> -->
+					<!-- <li><key>Surface</key><value>3</value></li> -->
+					<!-- <li><key>Orbit</key><value>0</value></li> -->
+				<!-- </layerWeights> -->
+				<biomeWeights>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPBiome_OrdMantellUrban</key><value>3</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPBiome_NevarroAshFlatsDesert</key><value>2</value></li>
+				</biomeWeights>
 			</li>
 		</modExtensions>
 		

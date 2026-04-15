@@ -8,12 +8,12 @@
 	
 	<match Class="PatchOperationSequence">
 	  <operations>
-		<li Class="PatchOperationReplace">
-		  <xpath>Defs/PawnKindDef[@Name="SWWarlordsHeroBase_Lumiya"]/forcedHair</xpath>
-			<value>
-			  <forcedHair>VHE_Beautiful</forcedHair>
-			</value>
-		</li>
+		<!-- <li Class="PatchOperationReplace"> -->
+		  <!-- <xpath>Defs/PawnKindDef[@Name="SWWarlordsHeroBase_Lumiya"]/forcedHair</xpath> -->
+			<!-- <value> -->
+			  <!-- <forcedHair>VHE_Beautiful</forcedHair> -->
+			<!-- </value> -->
+		<!-- </li> -->
 		<li Class="PatchOperationReplace">
 		  <xpath>Defs/PawnKindDef[@Name="SWWarlordsHeroBase_KyleKatarn"]/forcedHair</xpath>
 			<value>
@@ -162,6 +162,12 @@
 		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_EltaBesk"]/forcedHair</xpath>
 			<value>
 			  <forcedHair>VHE_SideBraid</forcedHair>
+			</value>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWarlordsHeroBase_LukeSkywalker"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_Farmboy</forcedHair>
 			</value>
 		</li>
 	  </operations>

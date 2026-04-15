@@ -124,7 +124,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+			<SWCPStat_AwarenessGearOffset>-0.2</SWCPStat_AwarenessGearOffset>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
 			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
@@ -506,7 +506,7 @@
 			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<HuntingStealth>0.6</HuntingStealth>
-			<SWCPStat_Stealth>0.6</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.6</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
 		<apparel>
 			<tags>
@@ -611,13 +611,13 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+			<SWCPStat_AwarenessGearOffset>-0.2</SWCPStat_AwarenessGearOffset>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
 			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
 			
 			<HuntingStealth>0.4</HuntingStealth>
-			<SWCPStat_Stealth>0.4</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.4</SWCPStat_StealthGearOffset>
 			
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
@@ -973,7 +973,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
 			<HuntingStealth>1</HuntingStealth>
-			<SWCPStat_Stealth>1</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>1</SWCPStat_StealthGearOffset>
 			
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
@@ -1088,7 +1088,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<HuntingStealth>1</HuntingStealth>
-			<SWCPStat_Stealth>1</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>1</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
 		
 		

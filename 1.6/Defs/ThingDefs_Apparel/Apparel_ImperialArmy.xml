@@ -24,7 +24,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+			<SWCPStat_AwarenessGearOffset>-0.2</SWCPStat_AwarenessGearOffset>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
 			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>

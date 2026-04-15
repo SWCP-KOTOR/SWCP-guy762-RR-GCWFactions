@@ -140,7 +140,7 @@
     <!-- </statBases> -->
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.2</HuntingStealth> -->
-		<!-- <SWCPStat_Stealth>0.2</SWCPStat_Stealth> -->
+		<!-- <SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset> -->
 	<!-- </equippedStatOffsets> -->
     <!-- <apparel> -->
       <!-- <bodyPartGroups> -->
@@ -201,11 +201,11 @@
     <!-- </statBases> -->
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.4</HuntingStealth> -->
-		<!-- <SWCPStat_Stealth>0.4</SWCPStat_Stealth> -->
+		<!-- <SWCPStat_StealthGearOffset>0.4</SWCPStat_StealthGearOffset> -->
 		<!-- <MeleeDodgeChance>0.1</MeleeDodgeChance> -->
 		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance> -->
 		<!-- <PawnTrapSpringChance>-0.2</PawnTrapSpringChance> -->
-		<!-- <SWCPStat_Awareness>0.2</SWCPStat_Awareness> -->
+		<!-- <SWCPStat_AwarenessGearOffset>0.2</SWCPStat_AwarenessGearOffset> -->
 	<!-- </equippedStatOffsets> -->
 	
 	<!-- <recipeMaker> -->
@@ -285,7 +285,7 @@
     <!-- </statBases> -->
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.6</HuntingStealth> -->
-		<!-- <SWCPStat_Stealth>0.6</SWCPStat_Stealth> -->
+		<!-- <SWCPStat_StealthGearOffset>0.6</SWCPStat_StealthGearOffset> -->
 		<!-- <MeleeDodgeChance>0.2</MeleeDodgeChance> -->
 		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance> -->
 	<!-- </equippedStatOffsets> -->
@@ -352,7 +352,7 @@
 	<!-- <tradeNeverStack>true</tradeNeverStack> -->
 	<!-- <equippedStatOffsets> -->
 		<!-- <HuntingStealth>0.8</HuntingStealth> -->
-		<!-- <SWCPStat_Stealth>0.8</SWCPStat_Stealth> -->
+		<!-- <SWCPStat_StealthGearOffset>0.8</SWCPStat_StealthGearOffset> -->
 		<!-- <MeleeDodgeChance>0.3</MeleeDodgeChance> -->
 		<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance> -->
 	<!-- </equippedStatOffsets> -->

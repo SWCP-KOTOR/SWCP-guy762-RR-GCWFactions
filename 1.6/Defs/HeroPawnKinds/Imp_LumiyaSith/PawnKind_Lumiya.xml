@@ -10,9 +10,13 @@
 		<minGenerationAge>25</minGenerationAge>
 		<maxGenerationAge>26</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
-		<forcedHair>Victoria</forcedHair>
-		<forcedHairColor>(144,90,51)</forcedHairColor>
+		<forcedHair>Fringe</forcedHair>
+		
+		<!-- <forcedHairColor>(144,90,51)</forcedHairColor> -->
+		<forcedHairColor>(140,0,25)</forcedHairColor>
 		<skinColorOverride>(255,239,189)</skinColorOverride>
+		<favoriteColor>guy762_StructureColor_RoyalGuardRed</favoriteColor>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<Baseliner>999</Baseliner>
@@ -42,13 +46,14 @@
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
 		<techHediffsRequired>
-		  <li>guy762_ImplantDock_II</li>
-		  <li>BionicArm</li>
-		  <li>BionicLeg</li>
-		  <li>BionicLeg</li>
-		  <li>BionicSpine</li>
-		  <li>BionicHeart</li>
-		  <li>BionicStomach</li>
+			<li>guy762_ImplantDock_II</li>
+			<li>SWCPItem_BionicHand</li>
+			<li>BionicArm</li>
+			<li>BionicLeg</li>
+			<li>BionicLeg</li>
+			<li>BionicSpine</li>
+			<li>BionicHeart</li>
+			<li>BionicStomach</li>
 		</techHediffsRequired>
 		<disallowedTraits><li>BodyPurist</li></disallowedTraits>
 		
@@ -111,34 +116,45 @@
 		<abilities>
 			<!-- ACE TIER 1 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
-			<li MayRequire="lee.theforce.standalone">Force_Insanity</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Fear</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Insanity</li> -->
 			<li MayRequire="lee.theforce.standalone">Force_MindControl</li>
-			<li MayRequire="lee.theforce.standalone">Force_DrainVitality</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_DrainVitality</li> -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForcePush</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceChoke</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fear</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_horror</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li>
 		</abilities>
 		
 		<modExtensions>
 		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
           <geneSets>
 			<li>
-              <isXenogene>true</isXenogene>
-              <chance>1</chance>
-              <geneDefs>
-                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_DSCorruptionII</li>
-              </geneDefs>
+				<isXenogene>true</isXenogene>
+				<chance>1</chance>
+				<geneDefs>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_DSCorruptionII</li>
+				</geneDefs>
             </li>
 			<li>
-              <isXenogene>false</isXenogene>
-              <chance>1</chance>
-              <geneDefs>
-                <li>Skin_Melanin4</li>
-                <li>Hair_ReddishBrown</li>
-              </geneDefs>
+				<isXenogene>false</isXenogene>
+				<chance>1</chance>
+				<geneDefs>
+					<li>Skin_Melanin4</li>
+					<!-- <li>Hair_ReddishBrown</li> -->
+					<li>guy762_Hair_DarkRed</li>
+				</geneDefs>
             </li>
           </geneSets>
 		</li>
@@ -282,8 +298,8 @@
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
-					<min>8</min>
-					<max>8</max>
+					<min>9</min>
+					<max>9</max>
 				</forceLevelRange>
 				<darkSideRange>45 ~ 65</darkSideRange>
 				<grantRandomAbilities>false</grantRandomAbilities>

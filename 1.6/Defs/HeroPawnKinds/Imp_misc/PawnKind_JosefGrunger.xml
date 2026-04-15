@@ -58,7 +58,7 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
-			<Nerves>2</Nerves> <!-- needs a custom third tier, refer to notes in faction mod channel -->
+			<SWCPTrait_Unyielding MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_Unyielding>
 			<Greedy>0</Greedy>
 			<Abrasive>0</Abrasive>
 			<ShootingAccuracy>-1</ShootingAccuracy>

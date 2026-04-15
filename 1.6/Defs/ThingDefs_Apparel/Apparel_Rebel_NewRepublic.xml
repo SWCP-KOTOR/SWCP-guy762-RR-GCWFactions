@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_NewRepUniform_bigbelt</defName>
-		<label>New Republic uniform, guard's</label>
+		<label>New Republic armored uniform, guard's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/NewRepublicOfficer/bigbelt/Apparel</texPath>
@@ -14,17 +14,17 @@
 		<statBases>
 			<Mass>4</Mass>
 			<MarketValue>170</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<MaxHitPoints>175</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<EquipDelay>3</EquipDelay>
 			
 			<WorkToMake>5000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+			<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -50,9 +50,9 @@
 		  
 		  <wornGraphicPath>SWApparel/NewRepublicOfficer/bigbelt/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
+		  <!-- <defaultOutfitTags> -->
+			<!-- <li>Worker</li> -->
+		  <!-- </defaultOutfitTags> -->
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -115,7 +115,7 @@
 	  
 	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_NewRepUniform_lowrank</defName>
-		<label>New Republic uniform, junior officer's</label>
+		<label>New Republic armored uniform, junior officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</texPath>
@@ -126,17 +126,17 @@
 		<statBases>
 			<Mass>4</Mass>
 			<MarketValue>1070</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<MaxHitPoints>175</MaxHitPoints>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<EquipDelay>3</EquipDelay>
 			
 			<WorkToMake>5000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.2</SocialImpact>
+			<SocialImpact>0.2</SocialImpact>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -163,9 +163,9 @@
 		  
 		  <wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
+		  <!-- <defaultOutfitTags> -->
+			<!-- <li>Worker</li> -->
+		  <!-- </defaultOutfitTags> -->
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -350,7 +350,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>70,90,125</color> <!--K1 blue-->
+						<color>(70,90,125)</color> <!--K1 blue-->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>

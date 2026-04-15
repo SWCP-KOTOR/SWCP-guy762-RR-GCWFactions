@@ -22,7 +22,8 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>29999</apparelMoney>
 		<apparelTags>
-			<li>SWDetpackCase</li>
+			<li>KotORHeroAccessories_canderousMerc</li>
+			<li>SWCPSpecificGadgetItem_JediArmband</li>
 			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
 			<li>SWGCWSpecificApparelItem_KyleKatarnClothes</li>
 		</apparelTags>
@@ -43,30 +44,30 @@
 		  <skipChance>0</skipChance>
 		  <subOptionsTakeAll>
 			<li>
-			  <thingDef>guy762_Bryar</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_Bryar</thingDef>
+				<countRange>1</countRange>
 			</li>
 		  </subOptionsTakeAll>
 		  <subOptionsChooseOne>
 			<li>
-			  <thingDef>guy762_E11carbine</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_E11carbine</thingDef>
+				<countRange>1</countRange>
 			</li>
 			<li>
-			  <thingDef>guy762_TL50repeater_hvy</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_TL50repeater_hvy</thingDef>
+				<countRange>1</countRange>
 			</li>
 			<li>
-			  <thingDef>guy762_FC1Flechette</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_FC1Flechette</thingDef>
+				<countRange>1</countRange>
 			</li>
 			<li>
-			  <thingDef>guy762_DXR6DisruptorSniper</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_DXR6DisruptorSniper</thingDef>
+				<countRange>1</countRange>
 			</li>
 			<li>
-			  <thingDef>guy762_PLX4LRocketRifle</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_PLX4LRocketRifle</thingDef>
+				<countRange>1</countRange>
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
@@ -110,14 +111,18 @@
 		<abilities>
 			<!-- ACE TIER 4 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
-			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Leap</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceGrip</li> -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_LightningB</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_LightningB</li> -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
-			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceHealing</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_aura</li>
 		</abilities>
 		
 		<modExtensions>
@@ -169,7 +174,7 @@
 				</li>
 				<li>
 					<skill>Intellectual</skill>
-					<range>10~12</range>
+					<range>8~10</range>
 				</li>
 			</skillRange>
 			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -239,8 +244,8 @@
 	
 	<BackstoryDef>
 		<defName>guy762_BackstoryA_KyleKatarn</defName>
-		<title>Jedi Outcast</title>
-		<titleShort>Jedi Outcast</titleShort>
+		<title>Rebel Agent</title>
+		<titleShort>Rebel Agent</titleShort>
 		<description>.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
@@ -263,8 +268,8 @@
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
-					<min>6</min>
-					<max>6</max>
+					<min>3</min>
+					<max>3</max>
 				</forceLevelRange>
 				<!-- <darkSideRange>0 ~ 15</darkSideRange> -->
 				<grantRandomAbilities>false</grantRandomAbilities>

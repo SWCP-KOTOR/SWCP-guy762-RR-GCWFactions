@@ -11,6 +11,7 @@
 		<maxGenerationAge>26</maxGenerationAge>
 		<fixedGender>Male</fixedGender>
 		<forcedHair>Topdog</forcedHair>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<guy762_xenotype_echani>999</guy762_xenotype_echani>
@@ -52,24 +53,6 @@
 		  <li>SWMelee_VibroDoubleBlade</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>18~20</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
 			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
@@ -89,8 +72,12 @@
 		<abilities>
 			<!-- ACE TIER 3 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
-			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Rage</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li>
 		</abilities>
 		
 		<modExtensions>
@@ -241,8 +228,8 @@
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
-					<min>2</min>
-					<max>2</max>
+					<min>3</min>
+					<max>3</max>
 				</forceLevelRange>
 				<darkSideRange>25 ~ 45</darkSideRange>
 				<grantRandomAbilities>false</grantRandomAbilities>

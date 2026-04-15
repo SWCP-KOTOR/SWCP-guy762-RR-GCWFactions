@@ -59,6 +59,7 @@
 			<!-- </li> -->
 		<!-- </skills> -->
 		<forcedTraits>
+			<SWCPTrait_Sadistic MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_Sadistic>
 			<Beauty>2</Beauty>
 			<Psychopath>0</Psychopath>
 			<Bloodlust>0</Bloodlust>

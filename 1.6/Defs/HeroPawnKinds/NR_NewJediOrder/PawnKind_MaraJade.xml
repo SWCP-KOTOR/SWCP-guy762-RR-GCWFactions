@@ -11,8 +11,11 @@
 		<maxGenerationAge>22</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
 		<forcedHair>Victoria</forcedHair>
+		
 		<forcedHairColor>(200,85,25)</forcedHairColor>
 		<skinColorOverride>(255,239,213,255)</skinColorOverride>
+		<favoriteColor>guy762_StructureColor_ZalAlloyPurple</favoriteColor>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<Baseliner>999</Baseliner>
@@ -24,81 +27,66 @@
 		<apparelTags>
 			<li>KotORHeroAccessories_visas</li>
 			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
+			<li>SWCPSpecificApparelItem_MaskedHeadwrap</li>
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorTunic</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>SWCP_stealthbelt_default</li>
+			<li>guy762_Headwrap_masked</li>
+			<li>guy762_Accessory_poncho</li>
 			<li>guy762_InquisitorArmor</li>
 			<li>guy762_InquisitorTunic_default</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
-		<!-- <specificApparelRequirements> -->
-			<!-- <li> -->
-				<!-- <apparelLayer>OnSkin</apparelLayer> -->
-				<!-- <apparelDef>guy762_InquisitorTunic_default</apparelDef> -->
-				<!-- <quality>Legendary</quality> -->
-				<!-- <color>(165,165,165)</color> -->
-			<!-- </li> -->
-		<!-- </specificApparelRequirements> -->
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<quality>Legendary</quality>
+				<color>(50,50,50)</color>  <!-- black -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<quality>Legendary</quality>
+				<color>(80,80,90)</color>       <!-- engi hood stone blue -->
+			</li>
+		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <!-- <li>SE_bandon</li> -->
-		  <!-- <li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_LightsaberSingle</li> -->
-		  <li>SWRanged_EC17pistol_silenced</li>
+			<li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_LightsaberSingle</li>
+			<!-- <li>SWRanged_EC17pistol_silenced</li> -->
 		</weaponTags>
 		<techHediffsRequired>
-		  <li>guy762_ImplantDock_I</li>
+			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
 		<inventoryOptions>
-		  <skipChance>0</skipChance>
-		  <subOptionsTakeAll>
-			<li>
-			  <!-- <thingDef>guy762_DL18pistol</thingDef> -->
-			  <thingDef>Force_Lightsaber_Custom</thingDef>
-			  <countRange>1</countRange>
-			</li>
-		  </subOptionsTakeAll>
-		  <subOptionsChooseOne>
-			<li>
-			  <thingDef>guy762_ImplantItemPkg_health</thingDef>
-			  <countRange>1</countRange>
-			</li>
-			<li>
-			  <thingDef>guy762_ImplantItemPkg_fitness</thingDef>
-			  <countRange>1</countRange>
-			</li>
-			<li>
-			  <thingDef>guy762_ImplantItemPkg_response</thingDef>
-			  <countRange>1</countRange>
-			</li>
-		  </subOptionsChooseOne>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_EC17pistol_silenced</thingDef>
+					<!-- <thingDef>Force_Lightsaber_Custom</thingDef> -->
+					<countRange>1</countRange>
+				</li>
+			</subOptionsTakeAll>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_ImplantItemPkg_health</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ImplantItemPkg_fitness</thingDef>
+					<countRange>1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_ImplantItemPkg_response</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>8~10</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
@@ -116,13 +104,19 @@
 		<abilities>
 			<!-- ACE TIER 4 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
-			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
-			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Leap</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Precognition</li> -->
 			
 			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
-			<li MayRequire="lee.theforce.standalone">Force_LightningB</li>
-			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_LightningB</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ThrowItem</li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_disarm</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li>
 		</abilities>
 		
 		<modExtensions>
@@ -161,17 +155,21 @@
 					<skill>Melee</skill>
 					<range>12~14</range>
 				</li>
+				<!-- <li> -->
+					<!-- <skill>Construction</skill> -->
+					<!-- <range>4~6</range> -->
+				<!-- </li> -->
 				<li>
-					<skill>Construction</skill>
-					<range>4~6</range>
-				</li>
-				<li>
-					<skill>Social</skill>
+					<skill>Crafting</skill>
 					<range>8~10</range>
 				</li>
 				<li>
-					<skill>Intellectual</skill>
+					<skill>Social</skill>
 					<range>12~14</range>
+				</li>
+				<li>
+					<skill>Intellectual</skill>
+					<range>8~10</range>
 				</li>
 			</skillRange>
 			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -221,8 +219,8 @@
 		<slot>Childhood</slot>
 		<skillGains>
 			<Melee>10</Melee>
-			<Social>8</Social>
-			<Intellectual>10</Intellectual>
+			<Crafting>8</Crafting>
+			<Social>10</Social>
 		</skillGains>
 		<forcedTraits>
 		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->

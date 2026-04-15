@@ -34,13 +34,13 @@
 			<li>guy762_Bodysuit_Dyeable</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_RebPilotHelmet_roguesquadron</apparelDef>
-				<styleDef>guy762_RebelPilotHelmetStyle_wedge</styleDef>
-				<color>(110,120,115)</color> <!-- army slate green -->
-				<quality>Legendary</quality>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_RebPilotHelmet_roguesquadron</apparelDef> -->
+				<!-- <styleDef>guy762_RebelPilotHelmetStyle_wedge</styleDef> -->
+				<!-- <color>(110,120,115)</color> -->
+				<!-- <quality>Legendary</quality> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_FlightVest</apparelDef>
@@ -124,6 +124,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_Wedge/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

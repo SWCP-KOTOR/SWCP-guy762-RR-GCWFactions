@@ -34,13 +34,13 @@
 			<li>guy762_Bodysuit_Dyeable</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<apparelDef>guy762_RebPilotHelmet_roguesquadron</apparelDef>
-				<styleDef>guy762_RebelPilotHelmetStyle_corran</styleDef>
-				<color>(55,80,75)</color> <!-- Corran's viridian -->
-				<quality>Legendary</quality>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <apparelDef>guy762_RebPilotHelmet_roguesquadron</apparelDef> -->
+				<!-- <styleDef>guy762_RebelPilotHelmetStyle_corran</styleDef> -->
+				<!-- <color>(55,80,75)</color> -->
+				<!-- <quality>Legendary</quality> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<apparelDef>guy762_FlightVest</apparelDef>
@@ -58,36 +58,7 @@
 		<weaponTags>
 		  <li>SWRanged_DL44pistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Artistic</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>17~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
@@ -109,19 +80,19 @@
 		
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
-			  <whitelist>
-				<li>Male_AverageWide</li>
-			  </whitelist>
-			  <blacklist>
+				<whitelist>
+					<li>Male_AverageWide</li>
+				</whitelist>
+				<blacklist>
 				<!--leave blank to disable-->
-			  </blacklist>
-			  <priority>
-				<li>Male_AverageWide</li>
-			  </priority>
-			  <checkGender>False</checkGender>
+				</blacklist>
+				<priority>
+					<li>Male_AverageWide</li>
+				</priority>
+				<checkGender>False</checkGender>
 			</li>
 			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
-			  <forcedBeard>Circle</forcedBeard>
+				<forcedBeard>Circle</forcedBeard>
 			</li>
 			<li Class="AddGeneForPK.PKAdditionalGenes">
 			  <geneSets>
@@ -137,6 +108,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_Corran/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

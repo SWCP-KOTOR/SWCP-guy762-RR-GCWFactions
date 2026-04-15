@@ -56,37 +56,11 @@
 			</subOptionsTakeAll>
 		</inventoryOptions>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Animals</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Artistic</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>19~20</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
+			<SWCPTrait_ArtLover MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_ArtLover>
 			<Psychopath>0</Psychopath>
 			<Industriousness>2</Industriousness>
 			<Nerves>2</Nerves>
-			<TooSmart>0</TooSmart>
 		</forcedTraits>
 		
 		<backstoryFiltersOverride>
@@ -111,6 +85,8 @@
 			<li>SWPotF_TacticDelegationAbility_takecover</li>
 			<li>SWPotF_TacticAbility_Sprint</li>
 			<li>SWPotF_TacticDelegationAbility_sprint</li>
+			<li>SWPotF_TacticAbility_StealthAdvance</li>
+			<li>SWPotF_TacticDelegationAbility_stealthadvance</li>
 			<li>SWPotF_TacticAbility_ZealousRage</li>
 			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
 			

@@ -103,8 +103,9 @@
 				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>24</maxPawnCountInOneShuttle>
 			</li>
-			<!-- <li Class = "Vehicles.VehicleRaiderDefModExtension"/> -->
+			<!-- <li MayRequire="SmashPhil.VehicleFramework" Class = "Vehicles.VehicleRaiderDefModExtension"/> -->
 			
+			<li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
 					<guy762_SWWarlordsFaction_NewRepublic>-50~0</guy762_SWWarlordsFaction_NewRepublic>

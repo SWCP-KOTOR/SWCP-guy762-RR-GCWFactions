@@ -49,11 +49,10 @@
 		</specificApparelRequirements>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <!-- <li>SE_bandon</li> -->
-		  <li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_InquisitorLightsaber</li>
+			<li MayRequireAnyOf ="lee.theforce.lightsaber,lee.theforce.lightsaber_steam">Force_InquisitorLightsaber</li>
 		</weaponTags>
 		<techHediffsRequired>
-		  <li>guy762_ImplantDock_I</li>
+			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
 		<inventoryOptions>
@@ -101,17 +100,41 @@
 		</backstoryFiltersOverride>
 		
 		<abilities>
-			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
-			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
-			<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+			<!-- ACE TIER 5 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Leap</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceBody</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Malacia</li> -->
+			
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Fear</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceGrip</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceChoke</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForcePush</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForcePull</li> -->
+			
+
+
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li> -->
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightjump</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cloak</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_suppression</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_breathcontrol</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_rend</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fury</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li>
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_affliction</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li>
 		</abilities>
 		
 		
@@ -158,6 +181,10 @@
 				<li>
 					<skill>Social</skill>
 					<range>10~12</range>
+				</li>
+				<li>
+					<skill>Intellectual</skill>
+					<range>6~8</range>
 				</li>
 			</skillRange>
 			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -270,8 +297,8 @@
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
-					<min>10</min>
-					<max>10</max>
+					<min>15</min>
+					<max>15</max>
 				</forceLevelRange>
 				<darkSideRange>35 ~ 55</darkSideRange>
 				<grantRandomAbilities>false</grantRandomAbilities>

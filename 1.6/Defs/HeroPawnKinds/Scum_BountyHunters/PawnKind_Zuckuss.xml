@@ -80,10 +80,17 @@
 		<abilities>
 			<!-- ACE TIER 4 -->
 			
-			<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
-			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
-			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+			<!-- <li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_Precognition</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
+			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceBody</li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_stun</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_focus</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cure</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_energyres</li>
 		</abilities>
 		
 		<modExtensions>
@@ -252,8 +259,8 @@
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
 				<forceLevelRange>
-					<min>4</min>
-					<max>4</max>
+					<min>6</min>
+					<max>6</max>
 				</forceLevelRange>
 				<!-- <darkSideRange>25 ~ 45</darkSideRange> -->
 				<grantRandomAbilities>false</grantRandomAbilities>

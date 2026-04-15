@@ -363,20 +363,20 @@
 						<texturePaths><li>SWApparel/TIEPilot/helmet_veteran/helmet</li></texturePaths>
 						<colorA>
 							<!-- darker black -->
-							<color>40,40,40</color>
+							<color>(40,40,40)</color>
 							<altDefs><li>BS_CustomGlobalA</li></altDefs>
 						</colorA>
 						<colorB>
 							<!-- grey -->
-							<color>125,125,125</color>
+							<color>(125,125,125)</color>
 							<altDefs><li>BS_CustomGlobalB</li></altDefs>
 						</colorB>
 						<colorC>
-							<color>250,250,250</color>
+							<color>(250,250,250)</color>
 							<altDefs><li>BS_CustomGlobalC</li></altDefs>
 						</colorC>
 					  
-						<altDefs><li>guy762_TIEPilotAceHelmetCustomization_veteran</li><li>guy762_TIEPilotAceHelmetCustomization_baron</li><li>guy762_TIEPilotAceHelmetCustomization_ryad</li></altDefs>
+						<altDefs><li>guy762_TIEPilotAceHelmetCustomization_veteran</li><li>guy762_TIEPilotAceHelmetCustomization_baron</li><li>guy762_TIEPilotAceHelmetCustomization_181st</li><li>guy762_TIEPilotAceHelmetCustomization_ryad</li></altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>
 				</li>
@@ -412,16 +412,16 @@
 		  <texturePaths><li>SWApparel/TIEPilot/helmet_veteran/helmet</li></texturePaths>
 		  <colorA>
 			<!-- darker black -->
-			<color>40,40,40</color>
+			<color>(40,40,40)</color>
 			<altDefs><li>BS_CustomGlobalA</li></altDefs>
 		  </colorA>
 		  <colorB>
 			<!-- grey -->
-			<color>125,125,125</color>
+			<color>(125,125,125)</color>
 			<altDefs><li>BS_CustomGlobalB</li></altDefs>
 		  </colorB>
 		  <colorC>
-			<color>250,250,250</color>
+			<color>(250,250,250)</color>
 			<altDefs><li>BS_CustomGlobalC</li></altDefs>
 		  </colorC>
 		</conditionalGraphics>
@@ -433,7 +433,7 @@
 			<triggerFlags><whitelist><guy762AltTag_TIEPilotBaron/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/TIEPilot/helmet_baron/helmet</li></texturePaths>
 			<colorA>
-				<color>40,40,40</color>		<!-- darker black -->
+				<color>(40,40,40)</color>		<!-- darker black -->
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 			<colorB>
@@ -443,7 +443,28 @@
 				<altDefs><li>BS_CustomGlobalB</li></altDefs>
 			</colorB>
 			<colorC>
-				<color>250,250,250</color>
+				<color>(250,250,250)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_TIEPilotAceHelmetCustomization_181st</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_TIEPilot181st/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/TIEPilot/helmet_baron/helmet</li></texturePaths>
+			<colorA>
+				<color>(40,40,40)</color>		<!-- darker black -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(140,0,0)</color>	<!-- dark red -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(250,250,250)</color>
 				<altDefs><li>BS_CustomGlobalC</li></altDefs>
 			</colorC>
 		</conditionalGraphics>
@@ -458,15 +479,15 @@
 			<!-- <maskPaths><li>SWApparel/TIEPilot/helmet_ryad/helmet</li></maskPaths> -->
 			<colorA>
 				<!-- darker black -->
-				<color>40,40,40</color>
+				<color>(40,40,40)</color>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 			<colorB>
-				<color>220,190,0</color>	<!-- mid yellow -->
+				<color>(220,190,0)</color>	<!-- mid yellow -->
 				<altDefs><li>BS_CustomGlobalB</li></altDefs>
 			</colorB>
 			<colorC>
-				<color>205,15,40</color>	<!-- maldrood crimson -->
+				<color>(205,15,40)</color>	<!-- maldrood crimson -->
 				<altDefs><li>BS_CustomGlobalC</li></altDefs>
 			</colorC>
         </conditionalGraphics>

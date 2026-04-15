@@ -28,9 +28,9 @@
 		  <!-- <WorkToMake>5000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
-			<PsychicSensitivity>0.1</PsychicSensitivity>
-			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.125</Force_FPMaxOffset>
+			<PsychicSensitivity>0.3</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
+			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.325</Force_FPMaxOffset>
 		</equippedStatOffsets>
 	
 	
@@ -732,7 +732,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_KyleKatarnOutfit</defName>
 		<label>Kyle Katarn's outfit</label>
 		<description>.</description>
@@ -744,7 +744,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
-			<MarketValue>10</MarketValue>
+			<MarketValue>100</MarketValue>
 			
 			<MaxHitPoints>300</MaxHitPoints>
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -847,7 +847,7 @@
 			<!-- <colorC>true</colorC> -->
 		  </li>
 		</modExtensions>
-	  </ThingDef>
+	</ThingDef>
 	  
 	
 	
@@ -1030,7 +1030,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>160,115,35</color> <!-- dark gold -->
+						<color>(160,115,35)</color> <!-- dark gold -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -1135,7 +1135,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>90,75,60</color>	<!-- patchleather --> 
+						<color>(90,75,60)</color>	<!-- patchleather --> 
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -1167,36 +1167,264 @@
 			<!-- <colorC>true</colorC> -->
 		  </li>
 		</modExtensions>
-	  </ThingDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_LukeRotJOutfit</defName>
+		<label>Luke Skywalker's outfit</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/CharacterOutfits/Luke_RotJ/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <!-- <colorTwo>(140,110,80)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>100</MarketValue>
+			
+			<MaxHitPoints>300</MaxHitPoints>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			
+			<EquipDelay>3</EquipDelay>
+			<!-- <WorkToMake>1000</WorkToMake> -->
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.3</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
+			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.325</Force_FPMaxOffset>
+		</equippedStatOffsets>
+		
+		
+		<!-- <costList> -->
+		  <!-- <Cloth>75</Cloth> -->
+		<!-- </costList> -->
+		
+		<apparel>
+		  <layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_LukeSkywalkerClothes</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+			</tags>
+			<wornGraphicPath>SWApparel/CharacterOutfits/Luke_RotJ/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<gender>Male</gender>
+
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORCharacterItem</li>
+		</tradeTags>
+		
+		<comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
+		
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_LukeGeneralUniform</defName>
+		<label>New Republic armored uniform, Luke's</label>
+		<description>.</description>
+		<graphicData>
+		  <texPath>SWApparel/CharacterOutfits/Luke_Armor/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <!-- <colorTwo>(250,250,250)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>5077</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+			
+			<!-- <WorkToMake>5000</WorkToMake> -->
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<!-- <MoveSpeed>-0.5</MoveSpeed> -->
+			<!-- <MeleeDodgeChance>-0.1</MeleeDodgeChance> -->
+			<!-- <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance> -->
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
+			<SocialImpact>1</SocialImpact>
+			
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.125</Force_FPMaxOffset>
+		</equippedStatOffsets>
+		
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>6</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <Synthread>75</Synthread> -->
+			<!-- <Plasteel>15</Plasteel> -->
+		<!-- </costList> -->
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_LukeGeneralArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+		  
+			<wornGraphicPath>SWApparel/CharacterOutfits/Luke_Armor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<gender>Male</gender>
+		  
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/CharacterOutfits/Luke_Armor/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+						</colorA>
+						<colorB>
+							<color>(50,50,50)</color> <!-- black -->
+							<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+						</colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		
+		<tradeTags>
+			<li>guy762TT_KotORCharacterItem</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(80,80,90)</only>       <!-- engi hood stone blue -->
+				</li>
+				
+				<!-- k2 jedi knight brown -->
+				<!-- <li> -->
+					<!-- <weight>15</weight> -->
+					<!-- <only>(90,55,40)</only> -->
+				<!-- </li> -->
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+		</comps>
+		<modExtensions>
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<!-- <colorC>true</colorC> -->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+
+
+
+	
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_RebPilotHelmet_roguesquadron</defName>
-		<label>K-22995 flight helmet (Wedge's)</label>
+		<label>K-22995 flight helmet, ace pilot's</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/RebelPilot/helmet_wedge/helmet</texPath>
+			<texPath>SWApparel/RebelPilot/helmet_luke/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingCategories>
-		  <li>ArmorHeadgear</li>
+			<li>ArmorHeadgear</li>
 		</thingCategories>
 		<statBases>
 			<Mass>3</Mass>
@@ -1210,24 +1438,23 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>1</SocialImpact>
-			
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>
 		
-		<randomStyleChance>1</randomStyleChance>
-		<randomStyle>
-			  <li>
-				<styleDef>guy762_RebelPilotHelmetStyle_wedge</styleDef>
-			  </li>
-			  <li>
-				<styleDef>guy762_RebelPilotHelmetStyle_luke</styleDef>
-			  </li>
-			  <li>
-				<styleDef>guy762_RebelPilotHelmetStyle_corran</styleDef>
-			  </li>
-		</randomStyle>
+		<!-- <randomStyleChance>1</randomStyleChance> -->
+		<!-- <randomStyle> -->
+			  <!-- <li> -->
+				<!-- <styleDef>guy762_RebelPilotHelmetStyle_wedge</styleDef> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <styleDef>guy762_RebelPilotHelmetStyle_luke</styleDef> -->
+			  <!-- </li> -->
+			  <!-- <li> -->
+				<!-- <styleDef>guy762_RebelPilotHelmetStyle_corran</styleDef> -->
+			  <!-- </li> -->
+		<!-- </randomStyle> -->
 		<comps>
-			<li Class="CompProperties_Styleable"></li>
+			<!-- <li Class="CompProperties_Styleable"></li> -->
 			<li Class="FCP.Core.CompProperties_LabelColored">
                 <rarity>Unique</rarity>
             </li>
@@ -1244,7 +1471,7 @@
 				<li>SWGCWSpecificApparelItem_RogueSquadronXWingPilotHelmet</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
-			<wornGraphicPath>SWApparel/RebelPilot/helmet_wedge/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/RebelPilot/helmet_luke/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -1255,6 +1482,39 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_TransparentThreeColor</shader>
+					<baseLayer>84</baseLayer>
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/RebelPilot/helmet_luke/helmet</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+						<colorB>
+							<!-- <color>(225,225,225)</color> -->
+							<altDefs><li>BS_CustomGlobalB</li></altDefs>
+						</colorB>
+						<colorC>
+							<!-- <color>(100,100,100)</color> -->
+							<altDefs><li>BS_CustomGlobalC</li></altDefs>
+						</colorC>
+					  
+						<altDefs>
+							<li>guy762_RebelPilotHelmetCustomization_Wedge</li>
+							<li>guy762_RebelPilotHelmetCustomization_Luke</li>
+							<li>guy762_RebelPilotHelmetCustomization_Corran</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>84</layer> </dataNorth> </drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORCharacterItem</li>
@@ -1263,12 +1523,22 @@
 			<options>
 				<li>
 					<weight>10</weight>
-					<only>(110,120,115)</only>  <!-- army slate green -->
+					<only>(190,45,45)</only>  <!-- red squadron -->
 				</li>
 			</options>
 		</colorGenerator>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.HasCustomizableGraphics">
+				<!-- Tag is not needed for apparel. -->
+				<colorA>true</colorA>
+				<colorB>true</colorB>
+				<colorC>true</colorC>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RebelPilotHelmetStyle_wedge</defName>
 		<overrideLabel>K-22995 flight helmet (Wedge's)</overrideLabel>
@@ -1301,9 +1571,51 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
+	-->
 	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelPilotHelmetCustomization_Wedge</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_Wedge/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/RebelPilot/helmet_wedge/helmet</li></texturePaths>
+			<colorA>
+				<color>(110,120,115)</color>  <!-- army slate green -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<!-- <colorB> -->
+				<!-- <color>(225,225,225)</color> -->
+				<!-- <altDefs><li>BS_CustomGlobalB</li></altDefs> -->
+			<!-- </colorB> -->
+			<!-- <colorC> -->
+				<!-- <color>(135,105,55)</color> -->
+				<!-- <altDefs><li>BS_CustomGlobalC</li></altDefs> -->
+			<!-- </colorC> -->
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelPilotHelmetCustomization_Luke</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_Luke/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/RebelPilot/helmet_luke/helmet</li></texturePaths>
+			<colorA>
+				<color>(190,45,45)</color>  <!-- red squadron -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelPilotHelmetCustomization_Corran</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_Corran/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/RebelPilot/helmet_corran/helmet</li></texturePaths>
+			<colorA>
+				<color>(55,80,75)</color>  <!-- Corran's viridian -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
 	
 	

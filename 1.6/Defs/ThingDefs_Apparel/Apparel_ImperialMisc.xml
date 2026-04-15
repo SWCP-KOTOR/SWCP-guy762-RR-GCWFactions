@@ -146,7 +146,7 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+			<SWCPStat_AwarenessGearOffset>-0.2</SWCPStat_AwarenessGearOffset>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
 			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
@@ -511,7 +511,7 @@
 			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_Awareness>-0.2</SWCPStat_Awareness>
+			<SWCPStat_AwarenessGearOffset>-0.2</SWCPStat_AwarenessGearOffset>
 			<ShootingAccuracyPawn>-0.2</ShootingAccuracyPawn>
 			
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
@@ -1270,7 +1270,7 @@
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_InquisitorArmor</defName>
 		<label>Inquisitor armor</label>
-		<description>Designed for those who relish personal combat, and know that power comes to those who take it, this armor offers good protection with no hindrance to movement.</description>
+		<description>.</description>
 		<graphicData>
 		  <texPath>SWApparel/Inquisitor/Armor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -1732,6 +1732,9 @@
 		  <PsychicSensitivity>0.1</PsychicSensitivity>
 		  <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets-->
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+		
 		<apparel>
 			<drawData>
 			  <dataNorth>
