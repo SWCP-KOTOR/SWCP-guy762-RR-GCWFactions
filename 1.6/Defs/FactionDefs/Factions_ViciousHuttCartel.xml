@@ -4,7 +4,10 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_ViciousHutts</defName>
 		<label>vicious Hutt cartel</label>
+		<!-- <fixedName></fixedName> -->
+		<factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
 		<description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile some Hutt Kajidics maintain cordial relations with outside groups, others believe it is the Hutt's divine right to rule the galaxy and strike out openly at the lesser non-Hutt groups, raiding and pillaging as they see fit.</description>
+		
 		<pawnSingular>scum</pawnSingular>
 		<pawnsPlural>scum</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
@@ -29,7 +32,7 @@
 		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 
-		<factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
+		
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<leaderTitle>kajidii</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -84,6 +87,10 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <!-- <newLabel>Underworld Organization</newLabel> -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>

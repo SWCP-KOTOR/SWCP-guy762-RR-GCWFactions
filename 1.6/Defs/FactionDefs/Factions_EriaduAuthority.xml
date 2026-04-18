@@ -3,8 +3,11 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_EriaduAuthority</defName>
-		<label>Eriadu Authority fleet</label>
+		<label>Eriadu Authority</label>
+		<fixedName>Eriadu Authority</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_EriaduStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
@@ -34,13 +37,12 @@
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
 		
-		<factionNameMaker>guy762_NamerFaction_EriaduStarfleet</factionNameMaker>
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>field marshal</leaderTitle>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-		  <li>SWEriadu_ArmyGeneral</li>
-		</fixedLeaderKinds>
+		<leaderTitle>Superior General</leaderTitle>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>SWEriadu_ArmyGeneral</li> -->
+		<!-- </fixedLeaderKinds> -->
 		
 		
 		
@@ -93,6 +95,10 @@
 		
 		<settlementGenerationWeight>4</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

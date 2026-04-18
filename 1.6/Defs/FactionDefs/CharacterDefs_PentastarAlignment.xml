@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--
-	ESCALATION RULES: since these are galaxy-wide factions, senority values are arranged in descending order so that the established faction leader is among the last leaders to appear in the succession order, 
-	while generic nameless leaders are the ones you get initially. this is to provide a sense of "escalation" as you kill off an enemy faction's leadership - the more leaders you kill, the bigger the threat
-	you become to this faction, meaning they'll send more and more qualified personnel to take you out.
-	
-	now, having the actual established faction leaders show up to your random rim world planet just to kill you probably won't make sense for *every* faction (there's no way someone like Isard would do that),
-	but this way I at least have a chance to have their fancy PawnKinds actually appear somewhere in-game that's somewhat appropriate for the role in the setting they have.
-	
-	-->
-	
-	<FCP.Core.CharacterDef>
-        <defName>SWPentastarCharacter_TessalaCorvae</defName>
-        <pawnKind>SWCharPawnPA_TessalaCorvae</pawnKind>
-        <faction>guy762_SWWarlordsFaction_Pentastar</faction>
-        <xenotype>Baseliner</xenotype>
-        <roles>
-            <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>50</seniority> <!-- lower-ranking military commander that can assume control if everyone else is killed -->
-            </li>
-        </roles>
-    </FCP.Core.CharacterDef>
-	
-	
-	<!-- 75: Commerce Master Gregor Raquoran -->
-	
-	
+
 	<!-- /////////////////////////////////// -->
 	
 	
@@ -38,11 +13,12 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>100</seniority> <!-- galactic-level faction leader -->
+                <seniority>1000</seniority> <!-- galactic-level faction leader -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
-
+	
+	<!-- 900: Grand Inquisitor Jerec -->
 
     <FCP.Core.CharacterDef>
         <defName>SWPentastarCharacter_OctavianGrant</defName>
@@ -51,10 +27,13 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>200</seniority> <!-- de jure supreme commander of the faction's military -->
+                <seniority>800</seniority> <!-- de jure supreme commander of the faction's military -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
+	
+	
+	<!-- 700: Commerce Master Gregor Raquoran -->
 	
 	
 	<FCP.Core.CharacterDef>
@@ -64,22 +43,10 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>300</seniority>
+                <seniority>600</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
-	
-	
-	<!-- 300: Director Elta Besk -->
-
-	
-	<!-- 400: Grand Inquisitor Jerec -->
-	
-	<!-- 450: Inquisitor Sariss -->
-	<!-- 500: Inquisitor Maw -->
-	
-	<!-- 600: High Inquisitor Mox Slosin -->
-	
 	
 	
 	<FCP.Core.CharacterDef>
@@ -89,7 +56,7 @@
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>700</seniority> <!-- higher-ranking political leader -->
+                <seniority>500</seniority> <!-- higher-ranking political leader -->
             </li>
         </roles>
         <definitions>
@@ -112,9 +79,21 @@
     </FCP.Core.CharacterDef>
 	
 	
+	<!-- 400: High Inquisitor Mox Slosin -->
+	<!-- 300: Inquisitor Maw -->
+	<!-- 200: Inquisitor Sariss -->
 	
-	
-	
+	<FCP.Core.CharacterDef>
+        <defName>SWPentastarCharacter_TessalaCorvae</defName>
+        <pawnKind>SWCharPawnPA_TessalaCorvae</pawnKind>
+        <faction>guy762_SWWarlordsFaction_Pentastar</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>100</seniority> <!-- lower-ranking military commander that can assume control if everyone else is killed -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
 	
 	
 	
@@ -122,13 +101,13 @@
 	<!-- generic leaders -->
 	
 	<FCP.Core.CharacterDef>
-        <defName>SWPentastarCharacter_ThirdPlanetaryMoff</defName>
+        <defName>SWPentastarCharacter_FirstPlanetaryMoff</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>800</seniority>
+                <seniority>75</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -140,19 +119,19 @@
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>900</seniority>
+                <seniority>50</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
 	
 	<FCP.Core.CharacterDef>
-        <defName>SWPentastarCharacter_InitialPlanetaryMoff</defName>
+        <defName>SWPentastarCharacter_ThirdPlanetaryMoff</defName>
         <pawnKind>SWPentastar_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_Pentastar</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>1000</seniority>
+                <seniority>25</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>

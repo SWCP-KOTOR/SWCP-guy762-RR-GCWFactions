@@ -3,8 +3,11 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_GreaterMaldrood</defName>
-		<label>Greater Maldrood fleet</label>
+		<label>Greater Maldrood</label>
+		<fixedName>Greater Maldrood</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_MaldroodStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
@@ -34,13 +37,13 @@
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
 		
-		<factionNameMaker>guy762_NamerFaction_MaldroodStarfleet</factionNameMaker>
+		
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>fleet admiral</leaderTitle>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-		  <li>SWMaldrood_NavyAdmiral</li>
-		</fixedLeaderKinds>
+		<leaderTitle>High Admiral</leaderTitle>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>SWMaldrood_NavyAdmiral</li> -->
+		<!-- </fixedLeaderKinds> -->
 		
 		
 		
@@ -95,6 +98,10 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

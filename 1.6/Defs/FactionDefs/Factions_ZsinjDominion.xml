@@ -3,8 +3,11 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_ZsinjDominion</defName>
-		<label>Zsinj's Dominion fleet</label>
+		<label>Zsinj's Dominion</label>
+		<fixedName>Zsinj's Dominion</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_ZsinjStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>Zsinj's minion</pawnSingular>
 		<pawnsPlural>Zsinj's minions</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
@@ -34,13 +37,14 @@
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
 		
-		<factionNameMaker>guy762_NamerFaction_ZsinjStarfleet</factionNameMaker>
+		
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>warlord</leaderTitle>
+		<leaderTitle>Warlord</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
-		  <li>SWZsinj_NavyAdmiral</li>
-		  <li>SWZsinj_ArmyGeneral</li>
+			<li>SWCharPawnZJ_WarlordZsinj</li>
+			<!-- <li>SWZsinj_NavyAdmiral</li> -->
+			<!-- <li>SWZsinj_ArmyGeneral</li> -->
 		</fixedLeaderKinds>
 		
 		
@@ -93,6 +97,10 @@
 		
 		<settlementGenerationWeight>5</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

@@ -39,7 +39,7 @@
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_linecap</styleDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef>
 				<color>(50,50,50)</color>
 				<quality>Legendary</quality>
 			</li>

@@ -40,6 +40,34 @@
     </FCP.Core.CharacterDef>
 	
 	
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWCunningHuttsCharacter_InitialKajidi</defName>
+        <pawnKind>SWHutts_HuttLord</pawnKind>
+        <faction>guy762_SWWarlordsFaction_HuttCartel</faction>
+        <xenotype>guy762_xenotype_hutt</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWViciousHuttsCharacter_InitialKajidi</defName>
+        <pawnKind>SWViciousHutts_HuttLord</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ViciousHutts</faction>
+        <xenotype>guy762_xenotype_hutt</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
 
 
 </Defs>

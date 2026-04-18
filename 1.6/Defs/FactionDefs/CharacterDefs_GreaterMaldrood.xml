@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!-- /////////////////////////////////// -->
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_TreutenTeradoc</defName>
+        <pawnKind>SWCharPawnGM_TreutenTeradoc</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority> <!-- galactic-level faction leader -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<!-- 900: Kosh Teradoc -->
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_PeccatiSyn</defName>
+        <pawnKind>SWCharPawnGM_PeccatiSyn</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>800</seniority> <!-- a Grand Admiral -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	<!-- 700: Grand Moff Therbon -->
+	<!-- 600: Grand Moff Tanniel -->
+	
+	
+	
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_LeoniaTavira</defName>
+        <pawnKind>SWCharPawnGM_LeoniaTavira</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>400</seniority> <!-- promminent pirate ally -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_ZelJohans</defName>
+        <pawnKind>SWCharPawnGM_ZelJohans</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>300</seniority> <!-- star ground commander -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+    
+	
+	
+	<!-- generic leaders -->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_FirstAdmiral</defName>
+        <pawnKind>SWMaldrood_NavyAdmiral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>75</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_SecondAdmiral</defName>
+        <pawnKind>SWMaldrood_NavyAdmiral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMaldroodCharacter_ThirdAdmiral</defName>
+        <pawnKind>SWMaldrood_NavyAdmiral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>25</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+
+
+
+
+
+
+</Defs>

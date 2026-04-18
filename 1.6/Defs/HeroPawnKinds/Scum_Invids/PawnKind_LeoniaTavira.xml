@@ -65,8 +65,13 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierIV</li>
 			
+			<li>SWPotF_TacticAbility_Barrage</li>
+			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_Harass</li>
+			<li>SWPotF_TacticDelegationAbility_harass</li>
+			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
@@ -119,6 +124,12 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWCharPawnGM_LeoniaTavira"  ParentName="SWWEPlayableVillain_LeoniaTavira">
+		<defName>SWCharPawnGM_LeoniaTavira</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 	</PawnKindDef>
 	  
 	  

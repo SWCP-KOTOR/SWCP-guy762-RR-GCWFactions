@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--
-	ESCALATION RULES: since these are galaxy-wide factions, senority values are arranged in descending order so that the established faction leader is among the last leaders to appear in the succession order, 
-	while generic nameless leaders are the ones you get initially. this is to provide a sense of "escalation" as you kill off an enemy faction's leadership - the more leaders you kill, the bigger the threat
-	you become to this faction, meaning they'll send more and more qualified personnel to take you out.
-	
-	now, having the actual established faction leaders show up to your random rim world planet just to kill you probably won't make sense for *every* faction (there's no way someone like Isard would do that),
-	but this way I at least have a chance to have their fancy PawnKinds actually appear somewhere in-game that's somewhat appropriate for the role in the setting they have.
-	
-	-->
-
-    
-	
-	
-	
-	<!-- 25: Agent Blackhole -->
-	<!-- 50: Lord Ars Dangor -->
 	
 	<FCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_RufaanTigellinus</defName>
@@ -25,7 +9,7 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>75</seniority> <!-- political rival that can finally sieze power now that all leaders loyal to the previous regime are dead -->
+                <seniority>500</seniority> <!-- political rival that can finally sieze power now that all leaders loyal to the previous regime are dead -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -43,14 +27,14 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>100</seniority> <!-- galactic-level faction leader -->
+                <seniority>1000</seniority> <!-- galactic-level faction leader -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
 	
-	<!-- 150: Intelligence Colonel Kirtan Loor -->
+	<!-- 900: Intelligence Colonel Kirtan Loor -->
 	
-	
+	<!-- 800: Lord Ars Dangor -->
 	
 	
 	<FCP.Core.CharacterDef>
@@ -60,7 +44,7 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>200</seniority> <!-- rear-guard grand admiral -->
+                <seniority>700</seniority> <!-- rear-guard grand admiral -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -72,7 +56,7 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>300</seniority> <!-- de facto supreme ground forces commander -->
+                <seniority>600</seniority> <!-- de facto supreme ground forces commander -->
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -113,7 +97,7 @@
         <xenotype>Baseliner</xenotype>
         <roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>500</seniority>
+                <seniority>300</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -129,13 +113,13 @@
 	<!-- generic leaders -->
 	
 	<FCP.Core.CharacterDef>
-        <defName>SWImpRemnantCharacter_ThirdPlanetaryMoff</defName>
+        <defName>SWImpRemnantCharacter_FirstPlanetaryMoff</defName>
         <pawnKind>SWImpRemnant_Moff</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>800</seniority>
+                <seniority>200</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
@@ -147,19 +131,19 @@
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>900</seniority>
+                <seniority>100</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>
 	
 	<FCP.Core.CharacterDef>
-        <defName>SWImpRemnantCharacter_InitialPlanetaryViceroy</defName>
+        <defName>SWImpRemnantCharacter_ThirdPlanetaryViceroy</defName>
         <pawnKind>SWImpRemnant_Viceroy</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
             <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>1000</seniority>
+                <seniority>50</seniority>
             </li>
         </roles>
     </FCP.Core.CharacterDef>

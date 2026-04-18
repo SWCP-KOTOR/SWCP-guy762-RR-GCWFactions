@@ -5,7 +5,7 @@
 		<race>Human</race>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		<chemicalAddictionChance>0.35</chemicalAddictionChance>
-		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>0.75</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>

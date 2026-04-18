@@ -513,7 +513,7 @@
 		<label>imperial uniform, ranking officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/linecaptain/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -541,29 +541,29 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-		  <Synthread>75</Synthread>
-		  <guy762_ImpRankPlaque_midrank>1</guy762_ImpRankPlaque_midrank>
+			<Synthread>75</Synthread>
+			<guy762_ImpRankPlaque_midrank>1</guy762_ImpRankPlaque_midrank>
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_imprankingofficer</li>
-			<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImperialOfficer/linecaptain/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<tags Inherit="False">
+				<li>RemnantEmpire_imprankingofficer</li>
+				<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
 		</apparel>
 		
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef></li>
-			<li><styleDef>guy762_RankStyle_ImpOfficer_linecap</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef></li>
+			<li><styleDef>guy762_RankStyle_ImpOfficer_taskdivisionCO</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_viceroy</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef></li>
 		</randomStyle>
@@ -612,22 +612,22 @@
 	</ThingStyleDef>
 	  
 	<ThingStyleDef>
-		<defName>guy762_RankStyle_ImpOfficer_linecap</defName>
-		<overrideLabel>imperial uniform, captain of the line's</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialOfficer/linecaptain/Apparel</wornGraphicPath>
+		<defName>guy762_RankStyle_ImpOfficer_tasksquadCO</defName>
+		<overrideLabel>imperial uniform, task squadron C.O.'s</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/linecaptain/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 	  
 	<ThingStyleDef>
-		<defName>guy762_RankStyle_ImpOfficer_tasksquadCO</defName>
-		<overrideLabel>imperial uniform, task squadron C.O.'s</overrideLabel>
-		<wornGraphicPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</wornGraphicPath>
+		<defName>guy762_RankStyle_ImpOfficer_taskdivisionCO</defName>
+		<overrideLabel>imperial uniform, task division C.O.'s</overrideLabel>
+		<wornGraphicPath>SWApparel/ImperialOfficer/taskdivisionCO/Apparel</wornGraphicPath>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/taskdivisionCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>

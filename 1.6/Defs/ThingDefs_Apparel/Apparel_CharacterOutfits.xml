@@ -359,7 +359,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/jodokast/Apparel</texPath>
+			<texPath>SWApparel/CharacterOutfits/JodoKast/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			
 			<!-- <shaderType>CutoutMultiMask</shaderType> -->
@@ -414,7 +414,7 @@
 			
 			<gender>Male</gender>
 			
-			<wornGraphicPath>SWApparel/Mandalorian/jodokast/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/CharacterOutfits/JodoKast/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -439,7 +439,7 @@
 					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/Mandalorian/jodokast/Apparel</li></texturePaths>
+					  <texturePaths><li>SWApparel/CharacterOutfits/JodoKast/Apparel</li></texturePaths>
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts>
@@ -447,13 +447,13 @@
 						</alts>
 					  </colorA>
 					  <colorB>
-						<color>230,185,45</color>	<!--republic yellow-->
+						<color>(230,185,45)</color>	<!--republic yellow-->
 						<alts>
 							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
 						</alts>
 					  </colorB>
 					  <colorC>
-						<color>45,100,185</color>	<!-- blue squadron -->
+						<color>(45,100,185)</color>	<!-- blue squadron -->
 						<alts>
 							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
 						</alts>
@@ -502,7 +502,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/Mandalorian/jodokast/helmet/helmet</texPath>
+			<texPath>SWApparel/CharacterOutfits/JodoKast/helmet/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			
 			<!-- <shaderType>CutoutMultiMask</shaderType> -->
@@ -559,7 +559,7 @@
 				<li>SWGCWSpecificApparelItem_WornMandoHelmet</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Mandalorian/jodokast/helmet/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/CharacterOutfits/JodoKast/helmet/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -579,7 +579,7 @@
 					<baseLayer>68</baseLayer>	<!-- OVERHEAD -->
 					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
 					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/Mandalorian/jodokast/helmet/helmet</li></texturePaths>
+					  <texturePaths><li>SWApparel/CharacterOutfits/JodoKast/helmet/helmet</li></texturePaths>
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts>
@@ -587,13 +587,13 @@
 						</alts>
 					  </colorA>
 					  <colorB>
-						<color>230,185,45</color>	<!--republic yellow-->
+						<color>(230,185,45)</color>	<!--republic yellow-->
 						<alts>
 							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
 						</alts>
 					  </colorB>
 					  <colorC>
-						<color>45,100,185</color>	<!-- blue squadron -->
+						<color>(45,100,185)</color>	<!-- blue squadron -->
 						<alts>
 							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
 						</alts>
@@ -1711,5 +1711,294 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ModdableMakeableArmor_hard">
+		<defName>guy762_MandoGCWArmor_FennShysa</defName>
+		<label>Fenn Shysa's Mandalorian Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/CharacterOutfits/FennShysa/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>14</Mass>
+			<MarketValue>9000</MarketValue>
+			
+			<MaxHitPoints>1000</MaxHitPoints>
+      		<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.25</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+			
+			<!-- <WorkToMake>90000</WorkToMake> -->
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
+			<MoveSpeed>-2</MoveSpeed>
+			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
+			
+			<SocialImpact>0.6</SocialImpact>
+		</equippedStatOffsets>
+		
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>11</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <KOTOR_AlloyDurasteel>100</KOTOR_AlloyDurasteel> -->
+			<!-- <KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave> -->
+			<!-- <ComponentSpacer>2</ComponentSpacer> -->
+		<!-- </costList> -->
+		
+		<apparel>
+			<tags>
+				<li>SWGCWSpecificApparelItem_FennShysaMandoArmor</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+			</tags>
+			
+			<gender>Male</gender>
+			
+			<wornGraphicPath>SWApparel/CharacterOutfits/FennShysa/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<!-- <li>Hands</li> -->
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/CharacterOutfits/FennShysa/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>(205,125,20)</color> <!-- new republic orange -->
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>(100,100,100)</color>	<!-- dark grey -->
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORCharacterItem</li>
+		</tradeTags>
+		
+		<comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
+		
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_HelmetModMakeableBase">
+		<defName>guy762_MandoGCWHelmet_FennShysa</defName>
+		<label>Mandalorian Helmet, Fenn Shysa's</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/CharacterOutfits/FennShysa/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+			<!-- <shaderType>CutoutMultiMask</shaderType> -->
+			
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow--> 
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>8500</MarketValue>
+			
+			<MaxHitPoints>500</MaxHitPoints>
+      		<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.05</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<!-- <WorkToMake>50000</WorkToMake> -->
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.2</AimingDelayFactor>
+			
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+		</equippedStatOffsets>
+		
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>12</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <ComponentSpacer>3</ComponentSpacer> -->
+			<!-- <KOTOR_IngotBeskar>60</KOTOR_IngotBeskar> -->
+		<!-- </costList> -->
+		
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>67</layer>
+				</defaultData>
+			</drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<!--immuneToToxGasExposure>true</immuneToToxGasExposure-->
+			<tags>
+				<li>SWGCWSpecificApparelItem_FennShysaMandoHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+			</tags>
+			<wornGraphicPath>SWApparel/CharacterOutfits/FennShysa/helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>68</baseLayer>	<!-- OVERHEAD -->
+					<!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/CharacterOutfits/FennShysa/helmet</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts>
+							<li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li>
+						</alts>
+					  </colorA>
+					  <colorB>
+						<color>(100,100,100)</color>	<!-- dark grey -->
+						<alts>
+							<li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li>
+						</alts>
+					  </colorB>
+					  <colorC>
+						<color>(250,250,250)</color>	<!-- white -->
+						<alts>
+							<li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li>
+						</alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>68</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		
+		<comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Unique</rarity>
+            </li>
+        </comps>
+		
+		<tradeTags>
+			<li>guy762TT_KotORCharacterItem</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(205,125,20)</only> <!-- new republic orange -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+
 
 </Defs>

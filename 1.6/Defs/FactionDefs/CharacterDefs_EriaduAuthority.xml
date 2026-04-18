@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!-- /////////////////////////////////// -->
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_SanderDelvardus</defName>
+        <pawnKind>SWCharPawnEA_SanderDelvardus</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority> <!-- galactic-level faction leader -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_GeneralVeers</defName>
+        <pawnKind>SWCharPawnEA_Veers</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>900</seniority> <!-- Vader's general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_IvanCronus</defName>
+        <pawnKind>SWCharPawnEA_IvanCronus</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>800</seniority> <!-- Kampe Authority second-in-command -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<!-- 700: Shea Hublin -->
+	<!-- 500: Ayde Prittick -->
+	<!-- 400: Octavion Sorin -->
+	<!-- 300: Nyrox -->
+	
+	
+
+    
+	
+	
+	<!-- generic leaders -->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_FirstGeneral</defName>
+        <pawnKind>SWEriadu_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>75</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_SecondGeneral</defName>
+        <pawnKind>SWEriadu_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWEriaduCharacter_ThirdGeneral</defName>
+        <pawnKind>SWEriadu_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>25</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+
+
+
+
+
+
+</Defs>

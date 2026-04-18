@@ -27,11 +27,11 @@
 		<!-- CURRENCY -->
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
-				<countRange>1500~3000</countRange>
+				<countRange>5000~10000</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Gold</thingDef>
-				<countRange>50~200</countRange>
+				<countRange>500~2000</countRange>
 			</li>
 			  
 			<li Class="StockGenerator_SingleDef">
@@ -420,6 +420,7 @@
 			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWApparel</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWGadgetEquipment_any</tag></li>
 			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 
 		</stockGenerators>

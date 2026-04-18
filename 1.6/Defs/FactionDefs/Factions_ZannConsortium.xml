@@ -4,18 +4,21 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_ZannConsortium</defName>
 		<label>Zann Consortium</label>
+		<fixedName>Zann Consortium</fixedName>
+		<!-- <factionNameMaker></factionNameMaker> -->
+		<description>.</description>
+		
 		<pawnSingular>goon</pawnSingular>
 		<pawnsPlural>goons</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
-		<description>.</description>
 		<factionIconPath>World/ZannConsortium</factionIconPath>
 		<colorSpectrum>
-		  <li>(230,170,45)</li> <!-- consortium yellow -->
+			<li>(230,170,45)</li> <!-- consortium yellow -->
 		</colorSpectrum>
 		
-		<fixedName>Zann Consortium</fixedName> <!-- !!!IDEA!!!: faction names are local 'front' corporations?  -->
+		
 		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
-		<leaderTitle>underboss</leaderTitle>
+		<leaderTitle>Underlord</leaderTitle>
 		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
 		<!-- <fixedLeaderKinds> -->
 			<!-- <li>KotORExchg_vigo</li> -->
@@ -98,6 +101,10 @@
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Underworld Organization</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

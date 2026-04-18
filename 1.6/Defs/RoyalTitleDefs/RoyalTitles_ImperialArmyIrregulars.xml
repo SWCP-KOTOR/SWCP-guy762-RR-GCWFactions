@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RoyalTitleDef Abstract="True" Name="SWGCWTitle_ImpArmyIrregular_base">
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		<tags>
+			<li>SWGCWTitleTag_ImperialArmyIrregulars</li>
+		</tags>
+		<awardThought>GainedTitle</awardThought>
+		<lostThought>LostTitle</lostThought>
+		<canBeInherited>false</canBeInherited>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<!-- <replaceOnRecruited>SWGCWTitle_ImpArmyIrregular_private</replaceOnRecruited> -->
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+
+		<!-- <permits> -->
+		  <!-- <li>TradeSettlement</li> -->
+		  <!-- <li>TradeCaravan</li> -->
+		  <!-- <li>TradeOrbital</li> -->
+		<!-- </permits> -->
+	</RoyalTitleDef>
+	
+	
+	
+	<RoyalTitleDef Abstract="True" Name="SWGCWTitle_ImpArmyIrregularBase_HUMANONLY" ParentName="SWGCWTitle_ImpArmyIrregular_base">
+		<modExtensions>
+			<li Class="XenoTitle.ModExtension_XenoTitle">
+				<xenotypeDefs>
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li> -->
+					
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Starjack</li>
+					
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_aqualish</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_arkanian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_bith</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_bothan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_cathar</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_chadrafan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_chiss</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_defel</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_devaronian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_duros</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_echani</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_ewok</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_falleen</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_feeorin</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_gamorrean</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_gand</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_gungan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_hutt</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_ithorian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_iridonian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_jawa</li>
+					<li MayRequire="guy762.StarWarsXenotypes">Lee_xenotype_kage</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_kaleesh</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_keldor</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_klatoonian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_kubaz</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_lasat</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_mimbanese</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_miraluka</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_mirialan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_moncal</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_nagai</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_nautolan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_nelvaanian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_nemoidian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_nikto</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_pantoran</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_quarren</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_rodian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_selkath</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_sith</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_snivvian</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_sullustan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_taung</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_togruta</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_trandoshan</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_tusken</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_twilek</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_ugnaught</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_umbaran</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_weequay</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_wookiee</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_yoder</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zabrak</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zabrakDathomiri</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zeltron</li>
+					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zygerrian</li>
+				</xenotypeDefs>
+				<isDenylist>true</isDenylist>
+				<noFurtherTitles>false</noFurtherTitles>
+			</li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+
+
+
+
+
+		<!-- ============== titles ============================= -->
+
+	<RoyalTitleDef ParentName="SWGCWTitle_ImpArmyIrregular_base"> <!-- NCO armor -->
+		<defName>SWGCWTitle_ImpArmyIrregular_corporal</defName>
+		<label>corporal</label>
+		<description>The only non-commissioned officer rank within the Republic's military structure. Sergeants typically lead squadrons of soldiers into battle, and have authority to request shuttle transportation and basic supply drops of food and medkits.</description>
+		<seniority>10</seniority>
+		<favorCost>30</favorCost>
+		<recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+		<!-- <commonality>1</commonality> -->
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li>
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+		</requiredApparel>
+
+		<permitPointsAwarded>2</permitPointsAwarded>
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef ParentName="SWGCWTitle_ImpArmyIrregular_base"> <!-- NCO armor -->
+		<defName>SWGCWTitle_ImpArmyIrregular_sergeant</defName>
+		<label>sergeant</label>
+		<description>.</description>
+		<seniority>25</seniority>
+		<favorCost>20</favorCost>
+		<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li>
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+		</requiredApparel>
+
+		<permitPointsAwarded>2</permitPointsAwarded>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_ImpArmyIrregular_base"> <!-- detachment C.O. -->
+		<defName>SWGCWTitle_ImpArmyIrregular_lieutenant</defName>
+		<label>lieutenant</label>
+		<description>.</description>
+		<seniority>50</seniority>
+		<favorCost>40</favorCost>
+		<recruitmentResistanceOffset>20</recruitmentResistanceOffset>
+
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<disabledWorkTags>
+			<li>Cleaning</li>
+		</disabledWorkTags>
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
+					<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>UpperHead</li>
+					<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+		</requiredApparel>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerDetachmentCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_ImpArmyIrregular_base"> <!-- task squad C.O. -->
+		<defName>SWGCWTitle_ImpArmyIrregular_captain</defName>
+		<label>captain</label>
+		<description>.</description>
+		<seniority>100</seniority>
+		<favorCost>40</favorCost>
+		<minExpectation>Moderate</minExpectation>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>4</permitPointsAwarded>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>2400000</speechCooldown>
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
+					<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>UpperHead</li>
+					<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+		</requiredApparel>
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskSquadCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_ImpArmyIrregular_base"> <!-- task division C.O. -->
+		<defName>SWGCWTitle_ImpArmyIrregular_commander</defName>
+		<label>commander</label>
+		<description>.</description>
+		
+		<seniority>500</seniority>
+		<favorCost>50</favorCost>
+		<minExpectation>High</minExpectation>
+		<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+		<recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>4</permitPointsAwarded>
+
+		<decreeTags>
+			<li>All</li>
+		</decreeTags>
+		<decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>1200000</speechCooldown>
+
+		<requiredApparel>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>Torso</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
+					<li>SWGCWSpecificApparelItem_MidRankImperialOfficerUniform</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+			<li>
+				<bodyPartGroupsMatchAny>
+					<li>UpperHead</li>
+					<li>FullHead</li>
+				</bodyPartGroupsMatchAny>
+				<requiredTags>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+					<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+					
+					<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				</requiredTags>
+			</li>
+		</requiredApparel>
+
+		<throneRoomRequirements>
+		  <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+			<things>
+			  <li>Throne</li>
+			  <li>GS_Palp_Throne</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_Area">
+			<area>24</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoBeds</labelKey>
+			<buildingTags>
+			  <li>Bed</li>
+			</buildingTags>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+			<labelKey>RoomRequirementNoAltars</labelKey>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</throneRoomRequirements>
+
+		<bedroomRequirements>
+		  <li Class="RoomRequirement_Area">
+			<area>16</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ThingAnyOf">
+			<disablingPrecepts>
+			  <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+			</disablingPrecepts>
+			<things>
+			  <li>DoubleBed</li>
+			  <li>RoyalBed</li>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</bedroomRequirements>
+		
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</Defs>

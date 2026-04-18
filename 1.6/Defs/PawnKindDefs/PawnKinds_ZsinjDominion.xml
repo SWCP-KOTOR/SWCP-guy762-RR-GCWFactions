@@ -392,8 +392,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
 				<color>(80,90,75)</color>       <!-- dark jungle green -->
 				<quality>Normal</quality>
 			</li>
@@ -420,8 +420,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
 				<color>(80,90,75)</color>       <!-- dark jungle green -->
 				<quality>Good</quality>
 			</li>
@@ -438,7 +438,7 @@
 	
 	<PawnKindDef Name="SWZsinj_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
 		<defName>SWZsinj_ArmyGeneral_field</defName>
-		<label>army general</label>
+		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		
 		<weaponMoney>400~1450</weaponMoney>
@@ -455,8 +455,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
 				<color>(80,90,75)</color>       <!-- dark jungle green -->
 				<quality>Excellent</quality>
 			</li>

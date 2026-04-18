@@ -40,8 +40,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef> -->
 				<color>(55,50,50)</color>        <!-- red-tint black -->
 				<quality>Legendary</quality>
 			</li>
@@ -77,8 +77,8 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierIII</li>
 			
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
@@ -109,6 +109,10 @@
 			  </geneSets>
 			</li>
 			
+			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyColonel/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

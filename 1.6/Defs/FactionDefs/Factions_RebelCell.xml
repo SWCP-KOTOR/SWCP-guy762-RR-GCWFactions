@@ -4,7 +4,10 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_RebelCell</defName>
 		<label>rebel cell</label>
+		<!-- <fixedName></fixedName> -->
+		<factionNameMaker>guy762_NamerFaction_RebelCell</factionNameMaker>
 		<description>.</description>
+		
 		<pawnSingular>rebel</pawnSingular>
 		<pawnsPlural>rebels</pawnsPlural>
 		<categoryTag>Outlander</categoryTag>
@@ -33,7 +36,6 @@
 		
 		
 		
-		<factionNameMaker>guy762_NamerFaction_RebelCell</factionNameMaker>
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
 		<leaderTitle>general</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -102,6 +104,10 @@
 		
 		<settlementGenerationWeight>4</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <!-- <newLabel>Rebel Coalition</newLabel> -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

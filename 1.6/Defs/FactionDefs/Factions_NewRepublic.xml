@@ -3,14 +3,17 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_NewRepublic</defName>
-		<label>New Republic starfleet</label>
+		<label>New Republic</label>
+		<fixedName>New Republic</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_NRStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>rebel</pawnSingular>
 		<pawnsPlural>rebels</pawnsPlural>
 		<categoryTag>Outlander</categoryTag>
 		<factionIconPath>World/NewRepublic</factionIconPath>
 		<colorSpectrum>
-		  <li>RGB(205,125,20)</li> <!-- new republic orange -->
+			<li>RGB(205,125,20)</li> <!-- new republic orange -->
 		</colorSpectrum>
 		
 		<!-- replaces a faction in the default vanilla setup list -->
@@ -34,7 +37,7 @@
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
 		
-		<factionNameMaker>guy762_NamerFaction_NRStarfleet</factionNameMaker>
+		
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
 		<leaderTitle>general</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -112,6 +115,10 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Rebel Coalition</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

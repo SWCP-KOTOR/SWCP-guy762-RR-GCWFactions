@@ -31,7 +31,7 @@
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_taskdivisionCO</styleDef>
 				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
 				<quality>Legendary</quality>
 			</li>

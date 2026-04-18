@@ -9,18 +9,18 @@
 		<soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
 		<ritualVisualEffectDef>Techist</ritualVisualEffectDef>
 		<thingDefStyles>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_midrank</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_midrank</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armycolonel</styleDef> -->
+			<!-- </li> -->
 			<!-- <li> -->
 				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
 				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_grandgeneral</styleDef> -->
@@ -85,18 +85,18 @@
 		<soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
 		<ritualVisualEffectDef>Techist</ritualVisualEffectDef>
 		<thingDefStyles>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_detachmentCO</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_midrank</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_detachmentCO</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_midrank</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef> -->
+			<!-- </li> -->
 			<!-- <li> -->
 				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
 				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef> -->
@@ -108,7 +108,7 @@
 			</li>
 			<li>
 				<thingDef>guy762_ImpUniform_midrank</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_linecap</styleDef>
+				<styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef>
 			</li>
 			<li>
 				<thingDef>guy762_ImpUniform_highbrass</thingDef>
@@ -132,18 +132,18 @@
 		<soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
 		<ritualVisualEffectDef>Techist</ritualVisualEffectDef>
 		<thingDefStyles>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_detachmentCO</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_midrank</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
-			</li>
-			<li>
-				<thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_detachmentCO</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_midrank</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <thingDef>guy762_ArmyOfficerArmor_highbrass</thingDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef> -->
+			<!-- </li> -->
 			<!-- <li> -->
 				<!-- <thingDef>guy762_ArmyOfficerArmor_topbrass</thingDef> -->
 				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_fieldmarshal</styleDef> -->

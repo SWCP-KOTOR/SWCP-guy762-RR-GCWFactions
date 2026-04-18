@@ -6,7 +6,7 @@
   <RoyalTitleDef Abstract="True" Name="SWGCWTitle_ZsinjPrivateer_base">
     <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
     <tags>
-      <li>SWGCWTitleTag_ZsinjPrivateer</li>
+		<li>SWGCWTitleTag_ZsinjPrivateer</li>
     </tags>
     <awardThought>GainedTitle</awardThought>
     <lostThought>LostTitle</lostThought>
@@ -164,6 +164,10 @@
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
 			</allowedDefs>
 		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerDetachmentCO/></flags></li>
+		</modExtensions>
 	</RoyalTitleDef>
 
 
@@ -369,6 +373,10 @@
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
 			</allowedDefs>
 		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskSquadCO/></flags></li>
+		</modExtensions>
 	</RoyalTitleDef>
 	
 	
@@ -584,6 +592,10 @@
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
 			</allowedDefs>
 		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li>
+		</modExtensions>
 	</RoyalTitleDef>
 	
 	
@@ -804,6 +816,10 @@
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
 			</allowedDefs>
 		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerDirector/></flags></li>
+		</modExtensions>
 	</RoyalTitleDef>
 
 

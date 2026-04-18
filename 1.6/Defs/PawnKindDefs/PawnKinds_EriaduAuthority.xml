@@ -313,8 +313,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
 				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Normal</quality>
 			</li>
@@ -338,8 +338,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
 				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Good</quality>
 			</li>
@@ -359,7 +359,7 @@
 	
 	<PawnKindDef Name="SWEriadu_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
 		<defName>SWEriadu_ArmyGeneral_field</defName>
-		<label>army general</label>
+		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		
 		<weaponMoney>400~1450</weaponMoney>
@@ -375,8 +375,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
 				<color>(115,115,105)</color>  <!-- vague olive -->
 				<quality>Excellent</quality>
 			</li>

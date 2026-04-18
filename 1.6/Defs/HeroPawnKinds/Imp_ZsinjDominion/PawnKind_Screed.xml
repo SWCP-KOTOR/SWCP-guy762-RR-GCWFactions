@@ -56,11 +56,12 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsRequired>
-		  <li>guy762_ImplantDock_II</li>
-		  <li>BionicArm</li>
-		  <li>BionicLeg</li>
-		  <li>BionicLeg</li>
-		  <li>BionicEye</li>
+			<li>guy762_ImplantDock_II</li>
+			<li>SWCPItem_BionicHand</li>
+			<li>BionicArm</li>
+			<li>BionicLeg</li>
+			<li>BionicLeg</li>
+			<li>BionicEye</li>
 		</techHediffsRequired>
 		<disallowedTraits><li>BodyPurist</li></disallowedTraits>
 		

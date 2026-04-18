@@ -774,6 +774,7 @@
 							<li>guy762_Z6JetpackCustomization_default</li>
 							<li>guy762_Z6JetpackCustomization_MandoGCWDefault</li>
 							<li>guy762_Z6JetpackCustomization_JodoKast</li>
+							<li>guy762_Z6JetpackCustomization_FennShysa</li>
 						</altDefs>
 					</conditionalGraphics>
 					<drawData>
@@ -953,6 +954,26 @@
 			</colorB>
 			<colorC>
 				<color>(45,100,185)</color>
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_Z6JetpackCustomization_FennShysa</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_FennShysa/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Mandalorian/Z6jetpack/Z6jetpack</li></texturePaths>
+			<colorA>
+				<color>(250,250,250)</color> <!-- white -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(100,100,100)</color> <!-- dark grey -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(205,125,20)</color> <!-- new republic orange -->
 				<altDefs><li>BS_CustomGlobalC</li></altDefs>
 			</colorC>
 		</conditionalGraphics>

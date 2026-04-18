@@ -3,8 +3,11 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_ImpRemnant</defName>
-		<label>Imperial Remnant fleet</label>
+		<label>Imperial Remnant</label>
+		<fixedName>Imperial Remnant</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_ImpRemnantStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
@@ -35,23 +38,23 @@
 
 		
 		
-		<factionNameMaker>guy762_NamerFaction_ImpRemnantStarfleet</factionNameMaker>
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>governor</leaderTitle>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-		  <!-- <li>SWImpRemnant_Viceroy</li> too low ranking -->
-		  <li>SWImpRemnant_Moff</li>
-		  <!-- <li>SWImpRemnant_GrandMoff</li> should be story quest-only -->
-		  
-		  <!-- <li>SWImpRemnant_NavyAdmiral</li> -->
-		  <!-- <li>SWImpRemnant_ArmyGeneral</li> political officers only, Zsinj/Maldrood/Eriadu could use military officers instead -->
-		</fixedLeaderKinds>
+		<leaderTitle>Emperor</leaderTitle>
+		<leaderTitleFemale>Empress</leaderTitleFemale>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>SWImpRemnant_Viceroy</li> too low ranking -->
+			<!-- <li>SWImpRemnant_Moff</li> -->
+			<!-- <li>SWImpRemnant_GrandMoff</li> should be story quest-only -->
+
+			<!-- <li>SWImpRemnant_NavyAdmiral</li> -->
+			<!-- <li>SWImpRemnant_ArmyGeneral</li> political officers only, Zsinj/Maldrood/Eriadu could use military officers instead -->
+		<!-- </fixedLeaderKinds> -->
 		
 		
 		
 		<royalTitleTags>
-			<li>KotORTitleTag_OR_enlisted</li>
+			<li>SWGCWTitleTag_ImperialArmyIrregulars</li>
 		</royalTitleTags>
 		<royalFavorLabel>commendations</royalFavorLabel>
 		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
@@ -129,6 +132,10 @@
 		
 		<settlementGenerationWeight>4</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+            <li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

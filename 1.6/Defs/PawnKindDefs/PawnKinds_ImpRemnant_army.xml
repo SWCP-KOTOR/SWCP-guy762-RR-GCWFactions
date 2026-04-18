@@ -697,8 +697,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
 				<color>(110,120,115)</color>  <!-- army slate green -->
 				<quality>Normal</quality>
 			</li>
@@ -806,8 +806,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
 				<color>(110,120,115)</color>  <!-- army slate green -->
 				<quality>Good</quality>
 			</li>
@@ -874,7 +874,7 @@
 	
 	<PawnKindDef Name="SWImpRemnant_ArmyGeneral_field" ParentName="SWImpRemnant_Base">
 		<defName>SWImpRemnant_ArmyGeneral_field</defName>
-		<label>army general</label>
+		<label>army colonel</label>
 		<combatPower>100</combatPower>
 		<minGenerationAge>35</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge>
@@ -908,14 +908,14 @@
 		<apparelRequired>
 			<li>guy762_JKenergyshield</li>
 			<li>guy762_UniformCap_imperial</li>
-			<li>guy762_ArmyOfficerArmor_midrank</li>
+			<li>guy762_ArmyOfficerArmor_highbrass</li>
 			<li>guy762_ImpUniform_default</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
 				<color>(110,120,115)</color>  <!-- army slate green -->
 				<quality>Excellent</quality>
 			</li>

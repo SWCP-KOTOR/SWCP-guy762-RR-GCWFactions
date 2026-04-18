@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Faction Groups __________-->
+
+
+    <FCP.Factions.FactionGroupDef>
+        <defName>SWCPFactionGroup_Imperials</defName>
+        <label>The Galactic Empire</label>
+        <description>TBD</description>
+        <leadingFaction>guy762_SWWarlordsFaction_ImpRemnant</leadingFaction>
+        <factions>
+            <li>guy762_SWWarlordsFaction_ImpRemnant</li>
+            <li>guy762_SWWarlordsFaction_ZsinjDominion</li>
+            <li>guy762_SWWarlordsFaction_Pentastar</li>
+            <li>guy762_SWWarlordsFaction_GreaterMaldrood</li>
+            <li>guy762_SWWarlordsFaction_EriaduAuthority</li>
+            <!-- <li>guy762_SWWarlordsFaction_ImpMandalore</li> -->
+            <li>guy762_SWWarlordsFaction_LocalWarlord</li>
+        </factions>
+        <!-- <playerFactions> -->
+            <!-- <li>FCP_Faction_BoS_Player</li> -->
+        <!-- </playerFactions> -->
+    </FCP.Factions.FactionGroupDef>
+	
+	
+	
+	<FCP.Factions.FactionGroupDef>
+        <defName>SWCPFactionGroup_Rebels</defName>
+        <label>The Rebellion</label>
+        <description>TBD</description>
+        <leadingFaction>guy762_SWWarlordsFaction_NewRepublic</leadingFaction>
+        <factions>
+            <li>guy762_SWWarlordsFaction_NewRepublic</li>
+            <li>guy762_SWWarlordsFaction_RebelCell</li>
+            <li>guy762_SWWarlordsFaction_PartisanCell</li>
+        </factions>
+        <!-- <playerFactions> -->
+            <!-- <li>FCP_Faction_BoS_Player</li> -->
+        <!-- </playerFactions> -->
+    </FCP.Factions.FactionGroupDef>
+	
+	
+	<FCP.Factions.FactionGroupDef>
+        <defName>SWCPFactionGroup_Underworld</defName>
+        <label>Scum and Villainy</label>
+        <description>TBD</description>
+        <leadingFaction>guy762_SWWarlordsFaction_ZsinjDominion</leadingFaction>
+        <factions>
+            <li>guy762_SWWarlordsFaction_ZsinjDominion</li>
+			
+            <li>guy762_SWWarlordsFaction_HuttCartel</li>
+            <li>guy762_SWWarlordsFaction_ViciousHutts</li>
+            <li>guy762_SWWarlordsFaction_BlackSun</li>
+            <li>guy762_SWWarlordsFaction_ZannConsortium</li>
+			
+            <!-- <li>guy762_SWWarlordsFaction_MandoClan</li> -->
+            <!-- <li>guy762_SWWarlordsFaction_CSA</li> -->
+        </factions>
+        <!-- <playerFactions> -->
+            <!-- <li>FCP_Faction_BoS_Player</li> -->
+        <!-- </playerFactions> -->
+    </FCP.Factions.FactionGroupDef>
+	
+	
+	
+	<FCP.Factions.FactionGroupDef>
+        <defName>SWCPFactionGroup_Neutral</defName>
+        <label>Unaligned Forces</label>
+        <description>TBD</description>
+        <leadingFaction>guy762_SWWarlordsFaction_PDF</leadingFaction>
+        <factions>
+            <li>guy762_SWWarlordsFaction_PDF</li>
+            <li>guy762_KotORFaction_Civilians</li>
+            <!-- <li>guy762_SWCPFaction_JawaMerchants</li> -->
+            <!-- <li>guy762_SWCPFaction_TuskenClan</li> -->
+			
+            <li>TribeCivil</li>
+            <li>TribeRough</li>
+            <li>TribeRough</li>
+            <li>TribeSavage</li>
+            <li>TribeCannibal</li>
+            <li>NudistTribe</li>
+            <li>TribeRoughNeanderthal</li>
+            <li>TribeSavageImpid</li>
+        </factions>
+        <!-- <playerFactions> -->
+            <!-- <li>FCP_Faction_BoS_Player</li> -->
+        <!-- </playerFactions> -->
+    </FCP.Factions.FactionGroupDef>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+					<!-- <guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan> -->
+					<!-- <guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF> -->
+					<!-- <guy762_SWWarlordsFaction_LocalWarlord>0~50</guy762_SWWarlordsFaction_LocalWarlord> -->
+					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
+					
+					<!-- <guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians> -->
+					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
+					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+					<!-- <TribeCivil>-100</TribeCivil> -->
+					<!-- <TribeRough>-100</TribeRough> -->
+					<!-- <TribeSavage>-100</TribeSavage> -->
+					<!-- <TribeCannibal>-100</TribeCannibal> -->
+					<!-- <NudistTribe>-100</NudistTribe> -->
+					<!-- <TribeRoughNeanderthal>-100</TribeRoughNeanderthal> -->
+					<!-- <TribeSavageImpid>-100</TribeSavageImpid> -->
+   
+</Defs>

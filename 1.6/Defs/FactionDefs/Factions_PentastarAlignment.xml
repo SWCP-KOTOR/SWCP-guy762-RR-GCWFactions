@@ -3,8 +3,11 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_Pentastar</defName>
-		<label>Pentastar Alignment fleet</label>
+		<label>Pentastar Alignment</label>
+		<fixedName>Pentastar Alignment</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_PentastarStarfleet</factionNameMaker> -->
 		<description>.</description>
+		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
 		<categoryTag>Empire</categoryTag>
@@ -30,12 +33,12 @@
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
 		
-		<factionNameMaker>guy762_NamerFaction_PentastarStarfleet</factionNameMaker>
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>governor</leaderTitle>
+		<leaderTitle>Director</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
-			<li>SWPentastar_Moff</li>
+			<li>SWCharPawnPA_ArdusKaine</li>
+			<!-- <li>SWPentastar_Moff</li> -->
 		</fixedLeaderKinds>
 		
 		
@@ -86,6 +89,10 @@
 		
 		<settlementGenerationWeight>3</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>

@@ -40,20 +40,6 @@
 		<weaponTags>
 			<li>SWRanged_DXP2DisruptorPistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>8~10</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<Greedy>0</Greedy>
 			<Abrasive>0</Abrasive>
@@ -117,9 +103,14 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnBS_AndalSait"  ParentName="SWWEPlayableVillain_AndalSait">
+		<defName>SWCharPawnBS_AndalSait</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_AndalSait</defName>
         <rulePack>
             <rulesStrings>

@@ -10,7 +10,8 @@
 		<minGenerationAge>25</minGenerationAge>
 		<maxGenerationAge>26</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
-		<forcedHair>Fringe</forcedHair>
+		<!-- <forcedHair>Fringe</forcedHair> -->
+		<forcedHair>Flowy</forcedHair>
 		
 		<!-- <forcedHairColor>(144,90,51)</forcedHairColor> -->
 		<forcedHairColor>(140,0,25)</forcedHairColor>
@@ -36,7 +37,7 @@
 		</apparelRequired>
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_LumiyaLightwhip</li>
+			<li>SWRanged_LumiyaLightwhip</li>
 		</weaponTags>
 		<techHediffsMoney>9999999</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>

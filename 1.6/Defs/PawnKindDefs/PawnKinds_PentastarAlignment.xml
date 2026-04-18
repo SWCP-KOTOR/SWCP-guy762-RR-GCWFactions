@@ -720,8 +720,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 				<quality>Normal</quality>
 			</li>
@@ -747,8 +747,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 				<quality>Good</quality>
 			</li>
@@ -768,7 +768,7 @@
 	
 	<PawnKindDef Name="SWPentastar_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
 		<defName>SWPentastar_ArmyGeneral_field</defName>
-		<label>army general</label>
+		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
 		<specificApparelRequirements Inherit="False">
 			<li>
@@ -777,8 +777,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
 				<color>(50,50,55)</color>       <!-- blue-tint black -->
 				<quality>Excellent</quality>
 			</li>

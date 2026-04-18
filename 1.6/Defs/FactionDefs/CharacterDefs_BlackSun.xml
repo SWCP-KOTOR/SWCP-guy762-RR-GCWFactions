@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- /////////////////////////////////// -->
+	
+	
+
+	
+	<!-- 1000: Savan -->
+	<!-- 900: Fliry Vorru (should be Dequc but fuck making another xenotype for a one-off species appearance) -->
+	<!-- 800: Y'ull Acib -->
+	<!-- 700: Durga the Hutt -->
+	
+	
+	<!-- 500: Zekka Thyne -->
+	
+	
+				<!--
+				
+				VIGOS FROM THE SHADOWS OF THE EMPIRE SOURCEBOOK WHO ARE NOT CONFIRMED DEAD:
+				- Clezo (rodian)
+				- Kreet'ah (kian'thar, probably retcon into a kaleesh or zeltron)
+				- Lonay (green twi'lek, noted coward)
+				- Perit (darkgrey mon calamari)
+				- Sprax (nalroni, probably retcon into a bothan or something else that's dog-like)
+				- Wumdi (etti human)
+				
+				NOTABLE CHARACTERS FROM NEW CANON:
+				- Gyuti (underboss/Vigo)
+				- Rynscar (human female capo under Gyuti, has a fancy "rusted demon" mask)
+				- Xanak Grunseit
+				- Xanak Grunseit's unnamed cousin (who was the leader of Black Sun around 4ABY)
+				
+				-->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWBlackSunCharacter_AndalSait</defName>
+        <pawnKind>SWCharPawnBS_AndalSait</pawnKind>
+        <faction>guy762_SWWarlordsFaction_BlackSun</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>300</seniority> <!-- merc with an ISD -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- generic leaders -->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWBlackSunCharacter_FirstImpOverseer</defName>
+        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <faction>guy762_SWWarlordsFaction_BlackSun</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>200</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWBlackSunCharacter_SecondImpOverseer</defName>
+        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <faction>guy762_SWWarlordsFaction_BlackSun</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>100</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWBlackSunCharacter_ThirdImpOverseer</defName>
+        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <faction>guy762_SWWarlordsFaction_BlackSun</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</Defs>

@@ -4,7 +4,10 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_PartisanCell</defName>
 		<label>partisan cell</label>
+		<!-- <fixedName></fixedName> -->
+		<factionNameMaker>guy762_NamerFaction_PartisanCell</factionNameMaker>
 		<description>.</description>
+		
 		<pawnSingular>partisan</pawnSingular>
 		<pawnsPlural>partisans</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
@@ -33,7 +36,6 @@
 		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
 		<canGenerateQuestSites>true</canGenerateQuestSites>
 		
-		<factionNameMaker>guy762_NamerFaction_PartisanCell</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<leaderTitle>warlord</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -95,6 +97,10 @@
 		
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <!-- <newLabel>Rebel Coalition</newLabel> -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>

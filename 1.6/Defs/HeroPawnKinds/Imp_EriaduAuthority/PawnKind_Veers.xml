@@ -41,8 +41,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_taskforceCO</styleDef> -->
 				<color>(110,120,115)</color>  <!-- army slate green -->
 				<quality>Legendary</quality>
 			</li>
@@ -119,6 +119,8 @@
 				</li>
 			  </geneSets>
 			</li>
+			
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskForceCO/></flags></li>
 			
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>

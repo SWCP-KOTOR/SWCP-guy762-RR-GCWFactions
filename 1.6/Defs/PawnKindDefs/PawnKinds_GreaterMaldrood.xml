@@ -326,8 +326,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armylt</styleDef> -->
 				<color>(110,105,100)</color>        <!-- maldrood army grey -->
 				<quality>Normal</quality>
 			</li>
@@ -351,8 +351,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_armymajor</styleDef> -->
 				<color>(110,105,100)</color>        <!-- maldrood army grey -->
 				<quality>Good</quality>
 			</li>
@@ -369,7 +369,7 @@
 	
 	<PawnKindDef Name="SWMaldrood_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
 		<defName>SWMaldrood_ArmyGeneral_field</defName>
-		<label>army general</label>
+		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		
 		<weaponMoney>400~1450</weaponMoney>
@@ -385,8 +385,8 @@
 			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
-				<apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ArmyOfficerArmor_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficerArmor_tasksquadCO</styleDef> -->
 				<color>(110,105,100)</color>        <!-- maldrood army grey -->
 				<quality>Excellent</quality>
 			</li>
