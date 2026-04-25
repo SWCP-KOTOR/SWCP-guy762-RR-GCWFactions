@@ -872,8 +872,8 @@
 	
 	
 	
-	<PawnKindDef Name="SWImpRemnant_ArmyGeneral_field" ParentName="SWImpRemnant_Base">
-		<defName>SWImpRemnant_ArmyGeneral_field</defName>
+	<PawnKindDef Name="SWImpRemnant_ArmyColonelField" ParentName="SWImpRemnant_Base">
+		<defName>SWImpRemnant_ArmyColonelField</defName>
 		<label>army colonel</label>
 		<combatPower>100</combatPower>
 		<minGenerationAge>35</minGenerationAge>
@@ -891,9 +891,9 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<backstoryFiltersOverride Inherit="False">
-			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyGeneral</li></categories></li>
-		</backstoryFiltersOverride>
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_ImpArmyGeneral</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
 
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>

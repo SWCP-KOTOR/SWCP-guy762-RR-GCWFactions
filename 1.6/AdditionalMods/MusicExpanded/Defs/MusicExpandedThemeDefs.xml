@@ -62,13 +62,17 @@
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeF</li>
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeG</li>
 			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeH</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeI</li>
+			<li>SWCP_METrack_WarlordEmpire_UrbanBiomeJ</li>
 
 			<li>SWCP_METrack_WarlordEmpire_DesertBiomeA</li>
+			<li>SWCP_METrack_WarlordEmpire_DesertBiomeB</li>
 
 			<li>SWCP_METrack_WarlordEmpire_GrasslandBiomeA</li>
 			<li>SWCP_METrack_WarlordEmpire_GrasslandBiomeB</li>
 			
 			<li>SWCP_METrack_WarlordEmpire_SwampBiomeA</li>
+			<li>SWCP_METrack_WarlordEmpire_SwampBiomeB</li>
         </tracks>
     </MusicExpanded.ThemeDef>
 	

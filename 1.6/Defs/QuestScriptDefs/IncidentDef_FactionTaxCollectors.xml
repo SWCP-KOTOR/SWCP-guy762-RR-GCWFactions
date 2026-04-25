@@ -26,7 +26,7 @@
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li>
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerBlacklist>
     </IncidentDef>

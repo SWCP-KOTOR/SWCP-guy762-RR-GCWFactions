@@ -766,7 +766,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWPentastar_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
+	<PawnKindDef Name="SWPentastar_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyColonelField">
 		<defName>SWPentastar_ArmyGeneral_field</defName>
 		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>

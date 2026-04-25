@@ -436,7 +436,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWZsinj_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
+	<PawnKindDef Name="SWZsinj_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyColonelField">
 		<defName>SWZsinj_ArmyGeneral_field</defName>
 		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>

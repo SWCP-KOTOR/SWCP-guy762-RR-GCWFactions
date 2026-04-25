@@ -1753,7 +1753,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_hard">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_MandoGCWArmor_FennShysa</defName>
 		<label>Fenn Shysa's Mandalorian Armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1876,7 +1876,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="guy762_HelmetModMakeableBase">
+	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_MandoGCWHelmet_FennShysa</defName>
 		<label>Mandalorian Helmet, Fenn Shysa's</label>
 		<techLevel>Spacer</techLevel>
@@ -1890,6 +1890,9 @@
 			<!-- <shaderType>CutoutComplex</shaderType> -->
 			<!-- <colorTwo>(230,185,45)</colorTwo> republic yellow--> 
 		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
 		<statBases>
 			<Mass>6</Mass>
 			<MarketValue>8500</MarketValue>

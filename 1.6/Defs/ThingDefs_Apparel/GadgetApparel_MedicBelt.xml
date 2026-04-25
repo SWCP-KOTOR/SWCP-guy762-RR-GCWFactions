@@ -6,17 +6,26 @@
     <defName>guy762_MedicBelt</defName>
     <label>field medic belt</label>
     <description>A field medic belt contains all the necessary equipment for battlefield medical operations as well as several recovery stims, which can heal any downed pawn in a short radius.</description>
-    <graphicData>
+    <descriptionHyperlinks>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyMedpac</AbilityDef>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyAdvMedpac</AbilityDef>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyLifeSupportPack</AbilityDef>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyAntidoteKit</AbilityDef>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyKolto</AbilityDef>
+		<AbilityDef>guy762_AbilityMedicBelt_ApplyBacta</AbilityDef>
+	</descriptionHyperlinks>
+	
+	<graphicData>
       <texPath>Items/belt_medic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Spacer</techLevel>
     <statBases>
-      <Mass>4</Mass>
-      <EquipDelay>2</EquipDelay>
-      <!-- <MarketValue>47200</MarketValue> -->
-      <MarketValue>4700</MarketValue>
-      <MaxHitPoints>100</MaxHitPoints>
+		<Mass>4</Mass>
+		<EquipDelay>2</EquipDelay>
+		<!-- <MarketValue>47200</MarketValue> -->
+		<MarketValue>4700</MarketValue>
+		<MaxHitPoints>100</MaxHitPoints>
     </statBases>
 	<equippedStatOffsets>
 		<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
@@ -25,26 +34,32 @@
 	</equippedStatOffsets>
 	
     <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <ignoredByNonViolent>true</ignoredByNonViolent>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-	  <tags>
-		<li>KotORBelt_medicbelt</li>
-		<li>SWMedicBelt</li>
-		<li>SWCPSpecificGadgetItem_MedicBelt</li>
-	  </tags>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<ignoredByNonViolent>true</ignoredByNonViolent>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Waist</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Belt</li>
+		</layers>
+		<tags>
+			<li>KotORBelt_medicbelt</li>
+			<li>SWMedicBelt</li>
+			<li>SWCPSpecificGadgetItem_MedicBelt</li>
+		</tags>
 	  
 		<abilities>
-			<li>guy762_Ability_MedicBeltRevive</li>
-			<li>guy762_Ability_MedicBeltHeal</li>
+			<!-- <li>guy762_Ability_MedicBeltRevive</li> -->
+			<!-- <li>guy762_Ability_MedicBeltHeal</li> -->
+			<li>guy762_AbilityMedicBelt_ApplyMedpac</li>
+			<li>guy762_AbilityMedicBelt_ApplyAdvMedpac</li>
+			<li>guy762_AbilityMedicBelt_ApplyLifeSupportPack</li>
+			<li>guy762_AbilityMedicBelt_ApplyAntidoteKit</li>
+			<li>guy762_AbilityMedicBelt_ApplyKolto</li>
+			<li>guy762_AbilityMedicBelt_ApplyBacta</li>
 		</abilities>
     </apparel>
 	<tradeTags>
@@ -61,7 +76,7 @@
         <label>apply recovery stim</label>
         <description>Use a recovery stim on a nearby downed pawn.</description>
         <!-- <iconPath>UI/kolto_heal_icon</iconPath> -->
-        <iconPath>UI/medicbelt_revive_icon</iconPath>
+        <iconPath>UI/MedicBeltAbilities/medicbelt_revive_icon</iconPath>
 		<uiOrder>999</uiOrder>
 		
         <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
@@ -138,7 +153,7 @@
         <label>apply medpac</label>
         <description>Use a medpac on a nearby wounded pawn.</description>
         <!-- <iconPath>UI/kolto_heal_icon</iconPath> -->
-        <iconPath>UI/medicbelt_heal_icon</iconPath>
+        <iconPath>UI/MedicBeltAbilities/MedicBeltHeal_AdvMedpac</iconPath>
 		<uiOrder>999</uiOrder>
 		
         <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
@@ -203,6 +218,227 @@
     </AbilityDef>
 	
 	
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityMedicBeltBASE" Abstract="True">
+		<uiOrder>999</uiOrder>
+		
+        <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		
+        <hotKey>Misc4</hotKey>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>true</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		<!-- <aiCanUse>true</aiCanUse> -->
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		
+		<writeCombatLog>True</writeCombatLog>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration> <!-- this is in seconds, not ticks -->
+		</statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3</range>
+            <drawAimPie>true</drawAimPie>
+            <warmupTime>0.25</warmupTime>
+            <requireLineOfSight>True</requireLineOfSight>
+			<soundCast>kotorsound_inject</soundCast>
+            <targetParams>
+                <!-- <onlyTargetIncapacitatedPawns>true</onlyTargetIncapacitatedPawns> -->
+				<canTargetSelf>false</canTargetSelf>
+				
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+				
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyMedpac</defName>
+		<label>apply medpac</label>
+		<description>Use a medpac on a nearby wounded pawn. The caster must have medpacs in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_Medpac</iconPath>
+
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_medpacHeal</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>guy762_medpac</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyAdvMedpac</defName>
+		<label>apply advanced medpac</label>
+		<description>Use an advanced medpac on a nearby wounded pawn. The caster must have advanced medpacs in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_AdvMedpac</iconPath>
+
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_medpacHeal_adv</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>guy762_medpac_adv</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyLifeSupportPack</defName>
+		<label>apply Life Support Pack</label>
+		<description>Use a Life Support Pack on a nearby wounded pawn. The caster must have Life Support Packs in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_LifeSupportPack</iconPath>
+
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_medpacHeal_life</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>guy762_medpac_life</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyKolto</defName>
+		<label>apply Kolto</label>
+		<description>Use Kolto on a nearby wounded pawn. The caster must have Kolto in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_Kolto</iconPath>
+		
+		<warmupSound>kotorsound_medicbelt_longerloop</warmupSound>
+        <verbProperties>
+            <warmupTime>2</warmupTime>
+			<soundCast>kotorsound_medicbelt_smack</soundCast>
+        </verbProperties>
+		
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_hediff_kolto</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>KOTOR_kolto</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyBacta</defName>
+		<label>apply Bacta</label>
+		<description>Use Bacta on a nearby wounded pawn. The caster must have Bacta in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_Bacta</iconPath>
+		
+		<warmupSound>kotorsound_medicbelt_longerloop</warmupSound>
+        <verbProperties>
+            <warmupTime>2</warmupTime>
+			<soundCast>kotorsound_medicbelt_smack</soundCast>
+        </verbProperties>
+		
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>SWCPHediff_BactaHeal</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>SWCPItem_Bacta</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+	<AbilityDef ParentName="guy762_AbilityMedicBeltBASE">
+		<defName>guy762_AbilityMedicBelt_ApplyAntidoteKit</defName>
+		<label>apply Antidote Kit</label>
+		<description>Use an Antidote Kit on a nearby wounded pawn. The caster must have Antidote Kits in their inventory for this ability to work.</description>
+		<iconPath>UI/MedicBeltAbilities/MedicBeltHeal_AntidoteKit</iconPath>
+
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_medpacHeal_antidote</hediffDef>
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_RemoveItemFromInventory">
+				<casterThing>guy762_medpac_antidote</casterThing>
+				<casterCount>1</casterCount>
+				<casterBestEffort>False</casterBestEffort>
+				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+            </li>
+        </comps>
+    </AbilityDef>
 	
   
 </Defs>

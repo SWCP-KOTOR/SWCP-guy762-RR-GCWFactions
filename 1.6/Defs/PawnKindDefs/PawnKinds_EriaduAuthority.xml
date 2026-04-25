@@ -357,7 +357,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWEriadu_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyGeneral_field">
+	<PawnKindDef Name="SWEriadu_ArmyGeneral_field" ParentName="SWImpRemnant_ArmyColonelField">
 		<defName>SWEriadu_ArmyGeneral_field</defName>
 		<label>army colonel</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>

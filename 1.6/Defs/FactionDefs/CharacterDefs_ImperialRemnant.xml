@@ -63,7 +63,7 @@
 	
 	<FCP.Core.CharacterDef>
         <defName>SWImpRemnantCharacter_TalAshen</defName>
-        <pawnKind>SWImpRemnant_ArmyGeneral_field</pawnKind>
+        <pawnKind>SWImpRemnant_ArmyColonelField</pawnKind>
         <faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
