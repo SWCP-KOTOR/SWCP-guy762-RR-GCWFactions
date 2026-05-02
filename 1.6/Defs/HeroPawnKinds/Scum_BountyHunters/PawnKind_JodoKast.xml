@@ -22,12 +22,15 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 			<li>KotORHeroAccessories_canderous</li>
+			
+			<li>SWGCWSpecificGadgetItem_MandoGauntletFettFlamethrowerRocket</li>
 			<li>SWGCWSpecificGadgetItem_Z6Jetpack</li>
 			<li>SWGCWSpecificApparelItem_WornMandoHelmet</li>
 			<li>SWGCWSpecificApparelItem_JodoKastMandoArmor</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_MandoGauntlet_FettFlamethrowerRocket</li>
 			<li>guy762_Jetpack_Z6launcher</li>
 			<li>guy762_MandoGCWHelmet_worn</li>
 			<li>guy762_MandoGCWArmor_jodokast</li>

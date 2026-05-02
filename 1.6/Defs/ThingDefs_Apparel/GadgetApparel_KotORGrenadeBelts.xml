@@ -115,6 +115,7 @@
                 <defaultProjectile>guy762_ThrownGrenade_frag</defaultProjectile>
                 <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_IsWeapon>true</ai_IsWeapon>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -566,6 +567,7 @@
                 <defaultProjectile>guy762_ThrownGrenade_sonic</defaultProjectile>
                 <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_IsWeapon>true</ai_IsWeapon>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -654,6 +656,7 @@
                 <defaultProjectile>guy762_ThrownGrenade_thermaldet</defaultProjectile>
                 <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_IsWeapon>true</ai_IsWeapon>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>

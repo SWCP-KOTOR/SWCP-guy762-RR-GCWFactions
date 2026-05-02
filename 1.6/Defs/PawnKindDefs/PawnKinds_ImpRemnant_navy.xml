@@ -522,8 +522,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_lowrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef> -->
 				<color>(125,125,110)</color> <!-- imperial olive -->
 				<quality>Normal</quality>
 			</li>
@@ -568,6 +568,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerNavyLieutenant/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -615,8 +618,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef> -->
 				<color>(125,125,110)</color> <!-- imperial olive -->
 				<quality>Good</quality>
 			</li>
@@ -659,6 +662,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerNavyCaptain/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -711,8 +717,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef> -->
 				<color>(125,125,110)</color>       <!-- imperial olive -->
 				<quality>Excellent</quality>
 			</li>
@@ -758,11 +764,14 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 			<li>guy762_Ability_CommandTierV</li>
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerNavyAdmiral/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

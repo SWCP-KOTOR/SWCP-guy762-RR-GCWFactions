@@ -800,35 +800,34 @@
 			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<verbs>
-		  <li>
-			<verbClass>Verb_Jump</verbClass>
-			<label>jump</label>
-			<violent>false</violent>
-			<hasStandardCommand>true</hasStandardCommand>
-			<onlyManualCast>True</onlyManualCast>
-			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<warmupTime>0.5</warmupTime>
-			<warmupEffecter>JumpWarmupEffect</warmupEffecter>
-			<requireLineOfSight>true</requireLineOfSight>
-			<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-			<soundLanding>JumpPackLand</soundLanding>
-			<targetParams>
-			  <canTargetLocations>true</canTargetLocations>
-			  <canTargetPawns>false</canTargetPawns>
-			  <canTargetBuildings>false</canTargetBuildings>
-			</targetParams>
-
-		  </li>
+			<li>
+				<verbClass>Verb_Jump</verbClass>
+				<label>jump</label>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>0.5</warmupTime>
+				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
+				<requireLineOfSight>true</requireLineOfSight>
+				<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+				<soundLanding>JumpPackLand</soundLanding>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				  <canTargetPawns>false</canTargetPawns>
+				  <canTargetBuildings>false</canTargetBuildings>
+				</targetParams>
+			</li>
 		  
-		  <!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
-		  <li>
+			<!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+			<li>
 				<label>homing AA/AV missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
 				<verbClass>Verb_Shoot</verbClass><!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile>
-				<warmupTime>4</warmupTime>
-				<defaultCooldownTime>12</defaultCooldownTime>
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_heavy</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<defaultCooldownTime>6</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
@@ -838,8 +837,9 @@
 				<ai_IsWeapon>true</ai_IsWeapon>
 				
 				<forcedMissRadius>0.5</forcedMissRadius>
-				<onlyManualCast>true</onlyManualCast>
+				<!-- <onlyManualCast>true</onlyManualCast> -->
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
 				<!-- <targetParams> -->

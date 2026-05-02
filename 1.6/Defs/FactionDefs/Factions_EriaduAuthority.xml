@@ -45,6 +45,17 @@
 		<!-- </fixedLeaderKinds> -->
 		
 		
+		<royalTitleTags>
+			<li>SWGCWTitleTag_ImperialArmyIrregulars</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
+		
+		
 		
 		
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
@@ -97,7 +108,7 @@
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>4</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
@@ -141,7 +152,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-50~0</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>0</guy762_SWWarlordsFaction_CSA> -->
@@ -188,7 +199,15 @@
 			<!-- </li> -->
 			
 			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Nevarro</key><value>4</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_NevarroOrbit</key><value>3</value></li>
+				</layerWeights>
+			</li>
 		</modExtensions>
+		<settlementGenerationWeight>4</settlementGenerationWeight>
+		
 		<!--permanentEnemyToEveryoneExcept>
 		  <li>OutlanderCivil</li>
 		  <li>TribeCivil</li>
@@ -206,13 +225,8 @@
 		<styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
 
-			<li>guy762_RankStyleCategory_ImperialArmy</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialNavy</li> -->
-			<li>guy762_RankStyleCategory_ImperialTaskforce</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialPolitiburo</li> -->
-			<!-- <li>guy762_RankStyleCategory_ImpISB</li> maldrood only -->
-			<!-- <li>guy762_RankStyleCategory_ImpINT</li> -->
-			<!-- <li>guy762_RankStyleCategory_ImperialOps</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialArmy</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialTaskforce</li> -->
 		</styles>
 		
 		<requiredMemes>

@@ -54,8 +54,6 @@
 			</li>
 			<li>
 				<label>frag launcher</label>
-				<!--description>Fire a single charged bolt.</description>
-				<iconPath>UI/Bowcaster_Power_Blast</iconPath-->
 				<commandIcon>Weapons/Projectiles/Grenades/grenade_flechettelauncher</commandIcon>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>

@@ -38,8 +38,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_moff</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_moff</styleDef> -->
 				<color>(125,125,110)</color>       <!-- imperial olive -->
 				<quality>Legendary</quality>
 			</li>
@@ -102,6 +102,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerPolMoff/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

@@ -92,7 +92,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 		
-		<settlementGenerationWeight>3</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <!-- <newLabel>Underworld Organization</newLabel> -->
@@ -129,7 +129,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-50</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>0~50</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
@@ -202,9 +202,13 @@
 				</roleOverrides>
 			</li>
 		</modExtensions>
+		<settlementGenerationWeight>3</settlementGenerationWeight>
+		
+		
+		
 		
 		<!-- <royalTitleTags> -->
-		  <!-- <li>KotORTitleTag_Hutts</li> -->
+			<!-- <li>KotORTitleTag_Hutts</li> -->
 		<!-- </royalTitleTags> -->
 		<!-- <royalFavorLabel>prestige</royalFavorLabel> -->
 		<!-- <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath> -->

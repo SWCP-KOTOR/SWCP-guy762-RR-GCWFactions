@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AbilityDef Name="guy762_AbilityWeapon_snipershot">
+		<defName>guy762_AbilityWeapon_snipershot</defName>
+		<label>sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<warmupTime>4</warmupTime>
+			<soundCast>kotorsound_impsniper</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_BlasterBoltSniper</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+							<AbilityDef ParentName="guy762_AbilityWeapon_snipershot">
+								<defName>guy762_AbilityWeapon_snipershot_DH17pistol</defName>
+								<verbProperties>
+									<range>30</range>
+									<soundCast>kotorsound_RebelBlaster</soundCast>
+								</verbProperties>
+							</AbilityDef>
+							
+							<AbilityDef ParentName="guy762_AbilityWeapon_snipershot">
+								<defName>guy762_AbilityWeapon_snipershot_DL18pistol</defName>
+								<verbProperties>
+									<range>30</range>
+									<soundCast>kotorsound_DL18pistol_snipe</soundCast>
+								</verbProperties>
+							</AbilityDef>
+	
+	
+	
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityWeapon_advsnipershot">
+		<defName>guy762_AbilityWeapon_advsnipershot</defName>
+		<label>adv. sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Improved_Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>50</range>
+			<warmupTime>3.5</warmupTime>
+			<soundCast>kotorsound_impsniper</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_BlasterBoltSniper_adv</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+							
+							<AbilityDef ParentName="guy762_AbilityWeapon_advsnipershot">
+								<defName>guy762_AbilityWeapon_advsnipershot_EE3Carbine</defName>
+								<verbProperties>
+									<range>40</range>
+									<soundCast>kotorsound_EE3carbine_alt</soundCast>
+								</verbProperties>
+							</AbilityDef>
+							
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityWeapon_mstsnipershot">
+		<defName>guy762_AbilityWeapon_mstsnipershot</defName>
+		<label>master sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Master_Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>60</range>
+			<warmupTime>3</warmupTime>
+			<soundCast>kotorsound_impsniper_withtrail</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_BlasterBoltSniper_mst</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityWeapon_mstsnipershot_ion">
+		<defName>guy762_AbilityWeapon_mstsnipershot_ion</defName>
+		<label>master sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Ion_Master_Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>60</range>
+			<warmupTime>3</warmupTime>
+			<soundCast>kotorsound_impsniper_withtrail</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_IonBoltSniper_mst</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityWeapon_mstsnipershot_slug">
+		<defName>guy762_AbilityWeapon_mstsnipershot_slug</defName>
+		<label>master sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Slug_Master_Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>150</range>
+			<warmupTime>4</warmupTime>
+			<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SlugBoltSniper_mst</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+</Defs>

@@ -382,7 +382,7 @@
 				<xSWImpRemnant_OpsLtBaseGuard>100</xSWImpRemnant_OpsLtBaseGuard>
 				<xSWImpRemnant_UniformArmyLtBaseGuard>75</xSWImpRemnant_UniformArmyLtBaseGuard>
 				<xSWImpRemnant_UniformArmyMajorBaseGuard>50</xSWImpRemnant_UniformArmyMajorBaseGuard>
-				<xSWImpRemnant_INTLtBaseGuard>25</xSWImpRemnant_INTLtBaseGuard>
+				<xSWImpRemnant_IMILtBaseGuard>25</xSWImpRemnant_IMILtBaseGuard>
 			<!-- rare pulls -->
 				<xSWImpRemnant_UniformArmyGeneralBaseGuard>10</xSWImpRemnant_UniformArmyGeneralBaseGuard>
 				<xSWImpRemnant_OpsGeneralBaseGuard>5</xSWImpRemnant_OpsGeneralBaseGuard>

@@ -135,7 +135,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>75,75,75</color>	<!-- dark grey -->
+						<color>(75,75,75)</color>	<!-- dark grey -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -252,7 +252,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -282,7 +282,7 @@
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -307,7 +307,7 @@
 					<baseLayer>22</baseLayer>
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-						<texturePaths><li>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</li></texturePaths>
+						<texturePaths><li>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</li></texturePaths>
 						<colorA>
 							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 							<altDefs><li>BS_CustomGlobalA</li></altDefs>
@@ -387,7 +387,7 @@
 			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyLieutenant/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/armylieutenant/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -399,7 +399,7 @@
 			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDetachmentCO/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -423,11 +423,11 @@
 	
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_ArmyOfficerArmor_midrank</defName>
-		<label>light battle armor, ranking officer's</label>
+		<label>light battle armor, senior officer's</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -457,7 +457,7 @@
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyOfficer/armymajor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -482,7 +482,7 @@
 					<baseLayer>22</baseLayer>
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-						<texturePaths><li>SWApparel/ImperialArmyOfficer/armymajor/Apparel</li></texturePaths>
+						<texturePaths><li>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</li></texturePaths>
 						<colorA>
 							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 							<altDefs><li>BS_CustomGlobalA</li></altDefs>
@@ -570,7 +570,7 @@
 			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyMajor/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/armymajor/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -579,10 +579,15 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerArmorMidRankCustomization_TaskSquadCO</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskSquadCO/></whitelist></triggerFlags>
+			<triggerFlags>
+				<whitelist>
+					<guy762AltTag_ImpOfficerTaskSquadCO/>
+					<!-- <guy762AltTag_ImpOfficerPolAdministrator/> -->
+				</whitelist>
+			</triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -591,10 +596,15 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerArmorMidRankCustomization_TaskDivisionCO</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskDivisionCO/></whitelist></triggerFlags>
+			<triggerFlags>
+				<whitelist>
+					<guy762AltTag_ImpOfficerTaskDivisionCO/>
+					<guy762AltTag_ImpOfficerPolViceroy/>
+				</whitelist>
+			</triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/taskdivisionCO/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -621,7 +631,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</texPath>
+			<texPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -652,7 +662,7 @@
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
 			</tags>
-			<wornGraphicPath>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -677,7 +687,7 @@
 					<baseLayer>22</baseLayer>
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-						<texturePaths><li>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</li></texturePaths>
+						<texturePaths><li>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</li></texturePaths>
 						<colorA>
 							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 							<altDefs><li>BS_CustomGlobalA</li></altDefs>
@@ -766,7 +776,7 @@
 			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyColonel/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/armycolonel/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -775,10 +785,20 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerArmorHighRankCustomization_TaskForceCO</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskForceCO/></whitelist></triggerFlags>
+			<triggerFlags>
+				<whitelist>
+					<guy762AltTag_ImpOfficerTaskForceCO/>
+					
+					<guy762AltTag_ImpOfficerNavyAdmiral/>
+					<guy762AltTag_ImpOfficerOpsGeneral/>
+					<guy762AltTag_ImpOfficerPolMoff/>
+					<guy762AltTag_ApwarTrigit/>
+					<guy762AltTag_TerrinaldScreed/>
+				</whitelist>
+			</triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -892,7 +912,7 @@
 			<options>
 				<li>
 					<weight>10</weight>
-					<only>(250,250,250)</only>  <!-- white -->
+					<only>(110,120,115)</only>  <!-- army slate green -->
 				</li>
 			</options>
 		</colorGenerator>
@@ -938,7 +958,12 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerArmorTopBrassCustomization_GrandAdmiral</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandAdmiral/></whitelist></triggerFlags>
+			<triggerFlags>
+				<whitelist>
+					<guy762AltTag_ImpOfficerGrandAdmiral/>
+					<guy762AltTag_RufaanTigellinus/>
+				</whitelist>
+			</triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</li></texturePaths>
 			<colorA>
 				<color>(250,250,250)</color><!-- white -->
@@ -953,7 +978,7 @@
 			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandGeneral/></whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>
@@ -962,10 +987,19 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerArmorTopBrassCustomization_FieldMarshal</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDirector/></whitelist></triggerFlags>
+			<triggerFlags>
+				<whitelist>
+					<guy762AltTag_ImpOfficerDirector/>
+					<guy762AltTag_ImpOfficerGrandMoff/>
+					
+					<guy762AltTag_WarlordZsinj/>
+					<guy762AltTag_SanderDelvardus/>
+					<guy762AltTag_TreutenTeradoc/>
+				</whitelist>
+			</triggerFlags>
 			<texturePaths><li>SWApparel/ImperialArmyOfficer/fieldmarshal/Apparel</li></texturePaths>
 			<colorA>
-				<color>(110,120,115)</color>  <!-- army slate green -->
+				<apparelColorA>true</apparelColorA>
 				<altDefs><li>BS_CustomGlobalA</li></altDefs>
 			</colorA>
 		</conditionalGraphics>

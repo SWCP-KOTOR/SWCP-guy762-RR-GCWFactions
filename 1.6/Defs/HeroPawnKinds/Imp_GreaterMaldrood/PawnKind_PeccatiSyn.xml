@@ -30,8 +30,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef> -->
 				<color>(250,250,250)</color>
 				<quality>Legendary</quality>
 			</li>

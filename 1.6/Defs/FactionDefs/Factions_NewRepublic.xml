@@ -117,7 +117,7 @@
 		<permanentEnemy>false</permanentEnemy>
 		<!--permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>3</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Rebel Coalition</newLabel>						<!-- Faction Tab Type Name -->
@@ -159,7 +159,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~25</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0~25</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>25</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-50~0</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>0</guy762_SWWarlordsFaction_CSA> -->
@@ -182,7 +182,16 @@
 					<!-- <territoryBorderColor>(100,60,10,128)</territoryBorderColor> -->
 					<!-- <factionLabelColor>(100,60,10,255)</factionLabelColor> -->
 					
+					
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_RhenVarOrbit</key><value>3</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Nevarro</key><value>5</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_NevarroOrbit</key><value>5</value></li>
+				</layerWeights>
+			</li>		
 		</modExtensions>
+		<settlementGenerationWeight>4</settlementGenerationWeight>
 		
 		<allowedCultures>
 			<li>guy762_culture_coreworlds</li>

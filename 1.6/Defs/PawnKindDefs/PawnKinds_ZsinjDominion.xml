@@ -1339,8 +1339,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_lowrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navylt</styleDef> -->
 				<color>(95,120,75)</color>       <!-- jungle green -->
 				<quality>Normal</quality>
 			</li>
@@ -1359,8 +1359,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navycap</styleDef> -->
 				<color>(95,120,75)</color>       <!-- jungle green -->
 				<quality>Good</quality>
 			</li>
@@ -1379,8 +1379,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef> -->
 				<color>(95,120,75)</color>       <!-- jungle green -->
 				<quality>Excellent</quality>
 			</li>
@@ -1417,8 +1417,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef> -->
 				<color>(95,120,75)</color>       <!-- jungle green -->
 				<quality>Excellent</quality>
 			</li>

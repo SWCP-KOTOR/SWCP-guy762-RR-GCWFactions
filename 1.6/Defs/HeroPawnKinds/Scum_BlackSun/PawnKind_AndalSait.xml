@@ -30,8 +30,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef> -->
 				<color>(220,225,220)</color> <!-- off-white -->
 				<quality>Legendary</quality>
 			</li>
@@ -85,6 +85,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerFakeGrandAdmiral/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

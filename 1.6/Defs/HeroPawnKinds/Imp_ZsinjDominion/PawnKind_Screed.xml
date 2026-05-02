@@ -38,8 +38,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_screed</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_screed</styleDef> -->
 				<color>(110,110,110)</color>
 				<quality>Legendary</quality>
 			</li>
@@ -154,6 +154,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_TerrinaldScreed/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

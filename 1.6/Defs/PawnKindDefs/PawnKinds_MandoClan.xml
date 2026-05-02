@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWMandoBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_SWWarlordsFaction_MandoClan</defaultFactionType>
+		<minGenerationAge>14</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		
+		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
+		
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<!-- <biocodeWeaponChance>0.95</biocodeWeaponChance> -->
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+			<li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+		</disallowedTraits>
+
+		<!-- <inventoryOptions> -->
+		  <!-- <skipChance>0.5</skipChance> -->
+		  <!-- <subOptionsTakeAll> -->
+			<!-- <li> -->
+			  <!-- <thingDef>KOTOR_Deathstick</thingDef> -->
+			  <!-- <countRange>2~3</countRange> -->
+			<!-- </li> -->
+		  <!-- </subOptionsTakeAll> -->
+		<!-- </inventoryOptions> -->
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Male</li>
+				<li>Female</li>
+				<li>Hulk</li>
+				<li>Thin</li>
+			  </whitelist>
+			  <blacklist>
+				<!-- <li>Fat</li> -->
+				<!-- <li>Baby</li> -->
+				<!-- <li>Child</li> -->
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMando_protector" ParentName="SWMandoBase">
+		<defName>SWMando_protector</defName>
+		<label>Mandalorian Protector</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>24</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		
+		<itemQuality>Normal</itemQuality>
+		<!-- <gearHealthRange>0.7~2.3</gearHealthRange> -->
+		<apparelMoney>14000~17000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>SWGCWGadget_AnyMandoGauntlet</li>
+			
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_MandoArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MandoGCWHelmet</li>
+			<li>guy762_MandoGCWArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>   <!-- khaki -->
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer> <!-- darker grey -->
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_EE3carbine</li>
+			<li>SWRanged_E5Crifle</li>
+			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_BK43repeater</li>
+			<li>SWRanged_DXR4DisruptorRifle</li>
+		</weaponTags>
+		
+		<techHediffsMoney>250~750</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_MandoProtector/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMando_merc" ParentName="SWMandoBase">
+		<defName>SWMando_merc</defName>
+		<label>Mandalorian mercenary</label>
+		<combatPower>75</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelMoney>14000~17000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>SWWarlordsAccessory_scumtrooper_poncho</li>
+			<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_MandoArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MandoGCWHelmet</li>
+			<li>guy762_MandoGCWArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer> <!-- TCW death watch blue -->
+				<color>(70,100,165)</color>
+			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Middle</apparelLayer> -->
+				<!-- <color>(90,120,85)</color> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <color>(90,120,85)</color> -->
+			<!-- </li> -->
+		</specificApparelRequirements>
+		
+		<weaponMoney>2100</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_GALAAR15carbine</li>
+		</weaponTags>
+		
+		<techHediffsMoney>250~750</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_MandoTCWDeathWatch/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>7~11</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~7</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMando_commando" ParentName="SWMandoBase">
+		<defName>SWMando_commando</defName>
+		<label>Mandalorian commando</label>
+		<combatPower>200</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>14000~17000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>SWGCWGadget_AnyMandoGauntlet</li>
+			
+			<li>SWGCWSpecificGadgetItem_Z6Jetpack</li>
+			<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_MandoArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Jetpack_Z6launcher</li>
+			<li>guy762_MandoGCWHelmet_rangefinder</li>
+			<li>guy762_MandoGCWArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(90,90,80)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(135,105,55)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(135,105,55)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,80)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>1200~3000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_WESTAR35</li>
+		</weaponTags>
+		
+		<techHediffsMoney>250~750</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_hyperbattle</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions Inherit="False">
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_MandoGCWDefault/></flags>
+			</li>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~13</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~7</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Male</li>
+				<li>Female</li>
+				<li>Hulk</li>
+			  </whitelist>
+			  <blacklist>
+				<!-- <li>Thin</li> -->
+				<!-- <li>Fat</li> -->
+				<!-- <li>Baby</li> -->
+				<!-- <li>Child</li> -->
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+</Defs>

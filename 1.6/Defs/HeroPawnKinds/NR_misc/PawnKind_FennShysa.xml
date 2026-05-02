@@ -25,12 +25,14 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 			<li>KotORHeroAccessories_canderous</li>
+			<li>SWGCWSpecificGadgetItem_MandoGauntletShysaBlasterMissile</li>
 			<li>SWGCWSpecificGadgetItem_Z6Jetpack</li>
 			<li>SWGCWSpecificApparelItem_FennShysaMandoHelmet</li>
 			<li>SWGCWSpecificApparelItem_FennShysaMandoArmor</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_MandoGauntlet_ShysaBlasterMissile</li>
 			<li>guy762_Jetpack_Z6launcher</li>
 			<li>guy762_MandoGCWHelmet_FennShysa</li>
 			<li>guy762_MandoGCWArmor_FennShysa</li>
@@ -47,7 +49,7 @@
 		
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_E5Crifle</li> <!-- this guy is rocking dual wrist blasters in like every depiction. he should probably get those when I get around to making them -->
+			<li>SWRanged_GALAAR15carbine</li>
 		</weaponTags>
 		<techHediffsRequired>
 			<li>guy762_ImplantDock_II</li>

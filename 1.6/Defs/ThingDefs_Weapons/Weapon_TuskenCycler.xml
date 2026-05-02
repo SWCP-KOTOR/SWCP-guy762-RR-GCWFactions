@@ -53,23 +53,21 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<label>master sniper shot</label>
-				<!-- <description>Fire a single bolt with increased range and armor penetration.</description> -->
-				<!-- <iconPath>UI/Master_Sniper_Shot</iconPath> -->
-				<commandIcon>UI/Master_Sniper_Shot</commandIcon>
+				<!-- <label>master sniper shot</label> -->
+				<!-- <commandIcon>UI/Master_Sniper_Shot</commandIcon> -->
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORSlugBolt</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<defaultCooldownTime>5</defaultCooldownTime>
-				<!-- <range>60</range> -->
-				<range>150</range>
+				<range>60</range>
+				<!-- <range>150</range> -->
 				<accuracyMedium>1.00</accuracyMedium>
 				<accuracyLong>1.00</accuracyLong>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
 				<!-- <soundCast>kotorsound_GoldeneyeRifle</soundCast> -->
-				<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
+				<soundCast>kotorsound_TuskenCycler</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<ai_IsWeapon>true</ai_IsWeapon>
@@ -103,7 +101,10 @@
 		
 		<equippedDistanceOffset >0.45</equippedDistanceOffset >
 		<comps>
-            <li Class="FCP.Core.CompProperties_PositionAttributes">
+            <li Class="CompProperties_EquippableAbility">
+				<abilityDef>guy762_AbilityWeapon_mstsnipershot_slug</abilityDef>
+			</li>
+			<li Class="FCP.Core.CompProperties_PositionAttributes">
                 <HeldDrawOffset>(0.125, -0.125)</HeldDrawOffset>
             </li>
         </comps>

@@ -99,7 +99,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<!--<naturalEnemy>true</naturalEnemy>-->
 		
-		<settlementGenerationWeight>1</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <!-- <newLabel>Rebel Coalition</newLabel> -->
@@ -143,7 +143,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>25~100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>25~100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-50</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-50</guy762_SWWarlordsFaction_CSA> -->
@@ -194,8 +194,18 @@
 			
 			
 			
-			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li><key>Surface</key><value>1</value></li>
+					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit"><key>Orbit</key><value>1</value></li>
+					
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Onderon</key><value>5</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OnderonOrbit</key><value>1</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Dxun</key><value>2</value></li>
+				</layerWeights>
+			</li>	
 		</modExtensions>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
 		
 		
 		<xenotypeSet Inherit="False">

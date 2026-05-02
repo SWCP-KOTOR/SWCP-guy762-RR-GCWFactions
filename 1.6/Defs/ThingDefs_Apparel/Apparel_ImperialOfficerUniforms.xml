@@ -364,10 +364,10 @@
 	  
 	<ThingDef ParentName="guy762_glovelessclothingbase">
 		<defName>guy762_ImpUniform_lowrank</defName>
-		<label>imperial uniform, officer's</label>
+		<label>imperial uniform, junior officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/navylieutenant/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/departmentCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -385,7 +385,7 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -400,18 +400,47 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_impofficer</li>
-			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImperialOfficer/navylieutenant/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<tags Inherit="False">
+				<li>RemnantEmpire_impofficer</li>
+				<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialOfficer/departmentCO/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialOfficer/departmentCO/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+						
+						<altDefs>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_ArmyLt</li>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_NavyLt</li>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_OpsLt</li>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_ISBlt</li>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_IMIlt</li>
+							<li>guy762_ImpArmyOfficerUniformLowRankCustomization_DepartmentCO</li> <!-- two-wide -->
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
+		<!--
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_armylt</styleDef></li>
@@ -421,6 +450,7 @@
 			<li><styleDef>guy762_RankStyle_ImpOfficer_INTlt</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_departmentCO</styleDef></li>
 		</randomStyle>
+		-->
 		
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -435,7 +465,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	  
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_armylt</defName>
 		<overrideLabel>imperial uniform, army lieutenant's</overrideLabel>
@@ -501,16 +531,106 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	-->  
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_ArmyLt</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyLieutenant/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/armylieutenant/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_NavyLt</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerNavyLieutenant/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/navylieutenant/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_OpsLt</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerOpsLieutenant/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/operationslieutenant/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_ISBlt</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerISBLieutenant/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/ISBlieutenant/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_IMIlt</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerIMILieutenant/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/INTlieutenant/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_DepartmentCO</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDetachmentCO/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/departmentCO/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="guy762_glovelessclothingbase">
 		<defName>guy762_ImpUniform_midrank</defName>
-		<label>imperial uniform, ranking officer's</label>
+		<label>imperial uniform, senior officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/ImperialOfficer/tasksquadCO/Apparel</texPath>
@@ -556,8 +676,38 @@
 			<!-- <defaultOutfitTags> -->
 				<!-- <li>Worker</li> -->
 			<!-- </defaultOutfitTags> -->
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialOfficer/tasksquadCO/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+						
+						<altDefs>
+							<li>guy762_ImpArmyOfficerUniformMidRankCustomization_ArmyMajor</li>
+							<li>guy762_ImpArmyOfficerUniformMidRankCustomization_NavyCaptain</li>
+							<li>guy762_ImpArmyOfficerUniformMidRankCustomization_TaskSquadCO</li> <!-- three-wide -->
+							<li>guy762_ImpArmyOfficerUniformMidRankCustomization_TaskDivisionCO</li> <!-- four-wide -->
+							<!-- <li>guy762_ImpArmyOfficerUniformMidRankCustomization_PolAdmin</li> -->
+							
+							<li>guy762_ImpArmyOfficerUniformMidRankCustomization_FakeGrandAdmiral</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		
+		<!--
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef></li>
@@ -567,7 +717,7 @@
 			<li><styleDef>guy762_RankStyle_ImpOfficer_viceroy</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_fakeGA</styleDef></li>
 		</randomStyle>
-		
+		-->
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
 			<li>guy762TT_GCWArmor_ImpOfficer</li>
@@ -588,7 +738,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	  
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_armymajor</defName>
 		<overrideLabel>imperial uniform, army major's</overrideLabel>
@@ -654,21 +804,108 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	-->
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformMidRankCustomization_ArmyMajor</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyMajor/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/armymajor/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformMidRankCustomization_NavyCaptain</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerNavyCaptain/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/navycaptain/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformMidRankCustomization_TaskSquadCO</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskSquadCO/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/tasksquadCO/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformMidRankCustomization_TaskDivisionCO</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskDivisionCO/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/taskdivisionCO/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<!-- <BigAndSmall.GraphicSetDef> -->
+		<!-- <defName>guy762_ImpArmyOfficerUniformMidRankCustomization_PolAdmin</defName> -->
+		<!-- <conditionalGraphics> -->
+			<!-- <triggerFlags><whitelist><guy762AltTag_ImpOfficerPolAdministrator/></whitelist></triggerFlags> -->
+			<!-- <texturePaths><li>SWApparel/ImperialOfficer/administrator/Apparel</li></texturePaths> -->
+			<!-- <colorA> -->
+				<!-- <apparelColorA>true</apparelColorA> -->
+				<!-- <altDefs><li>BS_CustomGlobalA</li></altDefs> -->
+			<!-- </colorA> -->
+		<!-- </conditionalGraphics> -->
+	<!-- </BigAndSmall.GraphicSetDef> -->
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformMidRankCustomization_FakeGrandAdmiral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerFakeGrandAdmiral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/fakeGA/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="guy762_glovelessclothingbase">
 		<defName>guy762_ImpUniform_highbrass</defName>
-		<label>imperial uniform, high brass</label>
+		<label>imperial uniform, flag officer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/grandmoff/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/taskforceCO/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -701,19 +938,50 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_warlord</li>
-			<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<tags Inherit="False">
+				<li>RemnantEmpire_warlord</li>
+				<li>SWGCWSpecificApparelItem_HighRankImperialOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialOfficer/taskforceCO/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialOfficer/taskforceCO/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+						
+						<altDefs>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_ArmyGeneral</li>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_NavyAdmiral</li>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_OpsGeneral</li>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_TaskForceCO</li> <!-- five-wide -->
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_PolViceroy</li>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_PolMoff</li>
+							
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_Trigit</li>
+							<li>guy762_ImpArmyOfficerUniformHighRankCustomization_Screed</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
-		
+		<!--
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
 		  <li>
@@ -738,7 +1006,7 @@
 			<styleDef>guy762_RankStyle_ImpOfficer_screed</styleDef>
 		  </li>
 		</randomStyle>
-		
+		-->
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
 			<li>guy762TT_GCWArmor_ImpOfficer</li>
@@ -759,7 +1027,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	  
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_armygen</defName>
 		<overrideLabel>imperial uniform, general's</overrideLabel>
@@ -836,32 +1104,125 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	-->
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_ArmyGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyGeneral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/armygeneral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_NavyAdmiral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerNavyAdmiral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/navyadmiral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_OpsGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerOpsGeneral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/operationsgeneral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_TaskForceCO</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerTaskForceCO/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/taskforceCO/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_PolViceroy</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerPolViceroy/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/viceroy/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_PolMoff</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerPolMoff/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/moff/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_Trigit</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ApwarTrigit/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/trigit/Apparel</li></texturePaths>
+			<colorA>
+				<color>(50,50,50)</color><!-- black -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformHighRankCustomization_Screed</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_TerrinaldScreed/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/screed/Apparel</li></texturePaths>
+			<colorA>
+				<color>(110,110,110)</color><!-- grey -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="guy762_glovelessclothingbase">
 		<defName>guy762_ImpUniform_topbrass</defName>
 		<label>imperial uniform, top brass</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>SWApparel/ImperialOfficer/grandmoff/Apparel</texPath>
+		  <texPath>SWApparel/ImperialOfficer/director/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -889,21 +1250,52 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-		  <Synthread>75</Synthread>
-		  <guy762_ImpRankPlaque_topbrass>1</guy762_ImpRankPlaque_topbrass>
+			<Synthread>75</Synthread>
+			<guy762_ImpRankPlaque_topbrass>1</guy762_ImpRankPlaque_topbrass>
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_warlord</li>
-			<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/ImperialOfficer/grandmoff/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>RemnantEmpire_warlord</li>
+				<li>SWGCWSpecificApparelItem_TopBrassImperialOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
+			</tags>
+			<wornGraphicPath>SWApparel/ImperialOfficer/director/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/ImperialOfficer/director/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						</colorA>
+						
+						<altDefs>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_Director</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandMoff</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandGeneral</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandAdmiral</li>
+							
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_Zsinj</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_Tigellinus</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_Delvardus</li>
+							<li>guy762_ImpArmyOfficerUniformTopBrassCustomization_TreutenTeradoc</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
-		
+		<!--
 		<randomStyleChance>1</randomStyleChance>
 		<randomStyle>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_grandmoff</styleDef></li>
@@ -914,7 +1306,7 @@
 			<li><styleDef>guy762_RankStyle_ImpOfficer_delvardus</styleDef></li>
 			<li><styleDef>guy762_RankStyle_ImpOfficer_treutenteradoc</styleDef></li>
 		</randomStyle>
-		
+		-->
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
 			<li>guy762TT_GCWCharacterItem</li>
@@ -937,8 +1329,7 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
-	  
-	  
+	<!--
 	<ThingStyleDef>
 		<defName>guy762_RankStyle_ImpOfficer_grandmoff</defName>
 		<overrideLabel>imperial uniform, grand moff's</overrideLabel>
@@ -1015,8 +1406,109 @@
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
-	  
-
-	  
-
+	-->
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_Director</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDirector/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/director/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandMoff</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandMoff/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/grandmoff/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandGeneral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/grandadmiral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_GrandAdmiral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_ImpOfficerGrandAdmiral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/grandadmiral/Apparel</li></texturePaths>
+			<colorA>
+				<color>(250,250,250)</color><!-- white -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_Zsinj</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_WarlordZsinj/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/zsinj/Apparel</li></texturePaths>
+			<colorA>
+				<color>(250,250,250)</color><!-- white -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_Tigellinus</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RufaanTigellinus/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/tigellinus/Apparel</li></texturePaths>
+			<colorA>
+				<color>(250,250,250)</color><!-- white -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_Delvardus</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_SanderDelvardus/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/delvardus/Apparel</li></texturePaths>
+			<colorA>
+				<color>(65,100,95)</color>	<!-- delvardus' viridian -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_ImpArmyOfficerUniformTopBrassCustomization_TreutenTeradoc</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_TreutenTeradoc/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/ImperialOfficer/teradoc_treuten/Apparel</li></texturePaths>
+			<colorA>
+				<color>(170,160,150)</color> <!-- stone grey -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
 </Defs>

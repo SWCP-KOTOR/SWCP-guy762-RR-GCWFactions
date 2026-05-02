@@ -147,6 +147,8 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<ai_IsWeapon>true</ai_IsWeapon>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 			</li>
 		</verbs>
 		<tools>
@@ -226,10 +228,8 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<label>sniper shot</label>
-				<!-- <description>Fire a single bolt with increased range and armor penetration.</description> -->
-				<!-- <iconPath>UI/Sniper_Shot</iconPath> -->
-				<commandIcon>UI/Disruptor_Sniper_Shot</commandIcon>
+				<!-- <label>sniper shot</label> -->
+				<!-- <commandIcon>UI/Disruptor_Sniper_Shot</commandIcon> -->
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>KotORDisruptorBolt_sniper</defaultProjectile>

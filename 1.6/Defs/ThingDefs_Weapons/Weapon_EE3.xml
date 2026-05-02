@@ -48,26 +48,24 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
-			<li>
-				<label>adv. sniper shot</label>
-				<!-- <description>Fire a single bolt with increased range and armor penetration.</description> -->
-				<!-- <iconPath>UI/Improved_Sniper_Shot</iconPath> -->
-				<commandIcon>UI/Improved_Sniper_Shot</commandIcon>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>KotORBlasterBolt_sniper</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>35</range>
-				<accuracyMedium>1.00</accuracyMedium>
-				<accuracyLong>0.95</accuracyLong>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>kotorsound_EE3carbine_alt</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<ai_IsWeapon>true</ai_IsWeapon>
-				<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
-			</li>
+			<!-- <li> -->
+				<!-- <label>adv. sniper shot</label> -->
+				<!-- <commandIcon>UI/Improved_Sniper_Shot</commandIcon> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_sniper</defaultProjectile> -->
+				<!-- <warmupTime>3.5</warmupTime> -->
+				<!-- <range>35</range> -->
+				<!-- <accuracyMedium>1.00</accuracyMedium> -->
+				<!-- <accuracyLong>0.95</accuracyLong> -->
+				<!-- <ticksBetweenBurstShots>20</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <soundCast>kotorsound_EE3carbine_alt</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+				<!-- <ai_IsWeapon>true</ai_IsWeapon> -->
+				<!-- <bodypartTagTarget>ConsciousnessSource</bodypartTagTarget> -->
+			<!-- </li> -->
 		</verbs>
 		<tools>
 			<li>
@@ -88,15 +86,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!--comps>
-			<li Class="ModularWeapons.CompProperties_ModularParts">
-				<compClass>ModularWeapons.CompModularParts</compClass>
-				<bundlePackageId>guy762.KotORWeaponsArmor</bundlePackageId>
-				<partKinds>
-					<li>guy762_slot_trigger_lgtrep</li>
-				</partKinds>
+		<comps>
+			<li Class="CompProperties_EquippableAbility">
+				<abilityDef>guy762_AbilityWeapon_advsnipershot_EE3Carbine</abilityDef>
 			</li>
-		</comps-->
+		</comps>
 	</ThingDef>
 	
 	

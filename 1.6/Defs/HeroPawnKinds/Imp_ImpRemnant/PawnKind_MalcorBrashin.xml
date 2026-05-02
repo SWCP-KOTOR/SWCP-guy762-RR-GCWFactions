@@ -47,8 +47,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_grandadmiral</styleDef> -->
 				<color>(125,125,110)</color> <!-- imperial olive -->
 				<quality>Legendary</quality>
 			</li>

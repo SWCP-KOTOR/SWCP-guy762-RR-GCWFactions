@@ -30,8 +30,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_navyadmiral</styleDef> -->
 				<color>(125,125,110)</color>       <!-- imperial olive -->
 				<quality>Legendary</quality>
 			</li>
@@ -59,7 +59,7 @@
 			<li>guy762_Ability_CommandTierIII</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
@@ -90,6 +90,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerNavyAdmiral/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

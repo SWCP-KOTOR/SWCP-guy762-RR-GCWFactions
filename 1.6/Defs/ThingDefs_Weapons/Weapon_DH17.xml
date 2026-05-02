@@ -51,27 +51,25 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
-			<li>
-				<label>sniper shot</label>
-				<!--description>Fire a single bolt with increased range and armor penetration.</description>
-				<iconPath>UI/Sniper_Shot</iconPath-->
-				<commandIcon>UI/Sniper_Shot</commandIcon>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>KotORBlasterBolt_sniper</defaultProjectile>
-				<warmupTime>2</warmupTime>
-				<defaultCooldownTime>1</defaultCooldownTime>
-				<range>30</range>
-				<accuracyMedium>0.95</accuracyMedium>
-				<accuracyLong>0.90</accuracyLong>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>kotorsound_RebelBlaster</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<ai_IsWeapon>true</ai_IsWeapon>
-				<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
-			</li>
+			<!-- <li> -->
+				<!-- <label>sniper shot</label> -->
+				<!-- <commandIcon>UI/Sniper_Shot</commandIcon> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <defaultProjectile>KotORBlasterBolt_sniper</defaultProjectile> -->
+				<!-- <warmupTime>2</warmupTime> -->
+				<!-- <defaultCooldownTime>1</defaultCooldownTime> -->
+				<!-- <range>30</range> -->
+				<!-- <accuracyMedium>0.95</accuracyMedium> -->
+				<!-- <accuracyLong>0.90</accuracyLong> -->
+				<!-- <ticksBetweenBurstShots>20</ticksBetweenBurstShots> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <soundCast>kotorsound_RebelBlaster</soundCast> -->
+				<!-- <soundCastTail>GunTail_Medium</soundCastTail> -->
+				<!-- <muzzleFlashScale>9</muzzleFlashScale> -->
+				<!-- <ai_IsWeapon>true</ai_IsWeapon> -->
+				<!-- <bodypartTagTarget>ConsciousnessSource</bodypartTagTarget> -->
+			<!-- </li> -->
 		</verbs>
 		<tools>
 			<li>
@@ -92,6 +90,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<comps>
+            <li Class="CompProperties_EquippableAbility">
+				<abilityDef>guy762_AbilityWeapon_snipershot_DH17pistol</abilityDef>
+			</li>
+        </comps>
 	</ThingDef>
 	
 	

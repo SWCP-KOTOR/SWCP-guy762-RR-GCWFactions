@@ -67,7 +67,7 @@
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
@@ -78,9 +78,9 @@
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
 			
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
@@ -89,7 +89,7 @@
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
@@ -103,7 +103,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<naturalEnemy>true</naturalEnemy>
 		
-		<settlementGenerationWeight>1</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Underworld Organization</newLabel>						<!-- Faction Tab Type Name -->
@@ -149,7 +149,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
 					<!-- <guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord> -->
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
@@ -169,7 +169,6 @@
 					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">LAO_Luna</li> -->
 					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineHighland</li> -->
 					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineExtremeDesert</li> -->
-					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_NevarroAshFlatsDesert</li> -->
 				<!-- </allowedBiomes> -->
 			</li>
 			
@@ -180,6 +179,7 @@
 			</li>
 			
 		</modExtensions>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
 		
 		
 		

@@ -308,8 +308,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWImpRemnant_INTLtBaseGuard" ParentName="SWImpRemnant_INTLt">
-		<defName>xSWImpRemnant_INTLtBaseGuard</defName>
+	<PawnKindDef Name="xSWImpRemnant_IMILtBaseGuard" ParentName="SWImpRemnant_IMILt">
+		<defName>xSWImpRemnant_IMILtBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>

@@ -151,6 +151,8 @@
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<ai_IsWeapon>true</ai_IsWeapon>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 			</li>
 		</verbs>
 		<tools>

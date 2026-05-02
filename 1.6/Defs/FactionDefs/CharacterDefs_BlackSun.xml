@@ -65,7 +65,7 @@
 	
 	<FCP.Core.CharacterDef>
         <defName>SWBlackSunCharacter_FirstImpOverseer</defName>
-        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <pawnKind>SWImpRemnant_IMILt</pawnKind>
         <faction>guy762_SWWarlordsFaction_BlackSun</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
@@ -77,7 +77,7 @@
 	
 	<FCP.Core.CharacterDef>
         <defName>SWBlackSunCharacter_SecondImpOverseer</defName>
-        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <pawnKind>SWImpRemnant_IMILt</pawnKind>
         <faction>guy762_SWWarlordsFaction_BlackSun</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>
@@ -89,7 +89,7 @@
 	
 	<FCP.Core.CharacterDef>
         <defName>SWBlackSunCharacter_ThirdImpOverseer</defName>
-        <pawnKind>SWImpRemnant_INTLt</pawnKind>
+        <pawnKind>SWImpRemnant_IMILt</pawnKind>
         <faction>guy762_SWWarlordsFaction_BlackSun</faction>
         <xenotype>Baseliner</xenotype>
 		<roles>

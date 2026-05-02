@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+	<ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+		<defName>guy762_MandoGauntlet_FettFlamethrowerRocket</defName>
+		<label>wrist launcher, anti-infantry</label>
+		<description>A wrist-mounted weapons system of Mandalorian origin. Has a built-in Czerka ZX miniature flame projector and a Kelvarek MM9 mini concussion rocket launcher.</description>
+		<graphicData>
+			<texPath>Items/MandoGauntlet_FettRotJ</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<descriptionHyperlinks>
+			<AbilityDef>guy762_AbilityMandoGauntlet_flamethrower</AbilityDef>
+		</descriptionHyperlinks>
+		
+		<soundInteract>kotorsound_select_ion</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<Mass>3</Mass>
+			<EquipDelay>3</EquipDelay>
+			<MarketValue>7620</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.40</AccuracyShort>
+			<AccuracyMedium>0.20</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+			<skillRequirements>
+				<Shooting>10</Shooting>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>40</Plasteel>
+		</costList>
+
+
+
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>SWGCWGadget_AnyMandoGauntlet</li>
+				<li>SWGCWSpecificGadgetItem_MandoGauntletFettFlamethrowerRocket</li>
+			</tags>
+			
+			<abilities>
+				<li>guy762_AbilityMandoGauntlet_flamethrower</li>
+			</abilities>
+		</apparel>
+
+		<verbs>
+            <li>
+				<label>concussion rocket</label>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SWProj_AIConcRocket</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<defaultCooldownTime>3</defaultCooldownTime>
+				<range>40</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>kotorsound_BF1missile</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<ai_IsWeapon>true</ai_IsWeapon>
+				
+				<forcedMissRadius>1</forcedMissRadius>
+				<!-- <onlyManualCast>true</onlyManualCast> -->
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>rocket</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+            </li>
+        </comps>
+	
+		<tradeTags>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityMandoGauntlet_flamethrower</defName>
+		<label>flamethrower</label>
+		<description>Spew a burst of flame over a short area.</description>
+		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
+		<iconPath>UI/Fire</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>2400</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>kotorsound_flamethrower</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>5</range>
+				<lineWidthEnd>3</lineWidthEnd>
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+		<defName>guy762_MandoGauntlet_ShysaBlasterMissile</defName>
+		<label>wrist launcher, anti-vehicle</label>
+		<description>A wrist-mounted weapons system of Mandalorian origin.</description>
+		<graphicData>
+			<texPath>Items/MandoGauntlet_FettESB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<descriptionHyperlinks>
+			<AbilityDef>guy762_AbilityMandoGauntlet_snipershot</AbilityDef>
+		</descriptionHyperlinks>
+		
+		<soundInteract>kotorsound_select_ion</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<Mass>3</Mass>
+			<EquipDelay>3</EquipDelay>
+			<MarketValue>7620</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+
+			<!-- <AccuracyTouch>0.50</AccuracyTouch> -->
+			<!-- <AccuracyShort>0.40</AccuracyShort> -->
+			<!-- <AccuracyMedium>0.20</AccuracyMedium> -->
+			<!-- <AccuracyLong>0.10</AccuracyLong> -->
+			<!-- <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> -->
+
+			<WorkToMake>12000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_advupgrade</researchPrerequisite>
+			<skillRequirements>
+				<Shooting>10</Shooting>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>40</Plasteel>
+		</costList>
+
+
+
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>SWGCWGadget_AnyMandoGauntlet</li>
+				<li>SWGCWSpecificGadgetItem_MandoGauntletShysaBlasterMissile</li>
+			</tags>
+			
+			<abilities>
+				<li>guy762_AbilityMandoGauntlet_snipershot</li>
+			</abilities>
+		</apparel>
+
+		<verbs>
+            <!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+			<li>
+				<label>homing AA/AV missile</label>
+				<commandIcon>UI/targetlock</commandIcon>
+				<verbClass>Verb_Shoot</verbClass><!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<defaultCooldownTime>12</defaultCooldownTime>
+				<range>40</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>kotorsound_JKrocket_alt</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<ai_IsWeapon>true</ai_IsWeapon>
+				
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<!-- <onlyManualCast>true</onlyManualCast> -->
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				
+				<!-- <targetParams> -->
+                    <!-- <canTargetLocations>false</canTargetLocations> -->
+                <!-- </targetParams> -->
+                <!-- <onlyTargetVehicle>True</onlyTargetVehicle> -->
+                <!-- <onlyTargetFleshType>False</onlyTargetFleshType> -->
+                <!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
+			</li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>missile</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+            </li>
+        </comps>
+	
+		<tradeTags>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+			<li>guy762TT_GCWArmor_MandoSurplus</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityMandoGauntlet_snipershot</defName>
+		<label>sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration and perfect accuracy (unless the target successfully dodges).</description>
+		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
+		<iconPath>UI/Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>90</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>30</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>kotorsound_sniper</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_BlasterBoltSniper</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+  
+</Defs>

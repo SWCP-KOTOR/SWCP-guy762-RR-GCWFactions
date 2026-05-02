@@ -135,6 +135,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerDetachmentCO/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

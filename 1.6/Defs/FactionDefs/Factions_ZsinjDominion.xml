@@ -99,7 +99,7 @@
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>5</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
@@ -149,7 +149,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>25~50</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>25~50</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-50~0</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>100</guy762_SWWarlordsFaction_CSA> -->
@@ -195,8 +195,16 @@
 				<!-- </roleOverrides> -->
 			<!-- </li> -->
 			
-			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantell</key><value>5</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantellOrbit</key><value>5</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_RhenVar</key><value>4</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_RhenVarOrbit</key><value>3</value></li>
+				</layerWeights>
+			</li>
 		</modExtensions>
+		<settlementGenerationWeight>5</settlementGenerationWeight>
 		
 		
 		
@@ -209,16 +217,16 @@
 		
 		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
 		<royalTitleInheritanceRelations>
-		  <!-- <li>Spouse</li> -->
-		  <!-- <li>Child</li> -->
-		  <!-- <li>Sibling</li> -->
-		  <!--li>Grandchild</li>
-		  <li>GreatGrandchild</li>
-		  <li>NephewOrNiece</li>
-		  <li>HalfSibling</li>
-		  <li>Cousin</li>
-		  <li>Parent</li>
-		  <li>UncleOrAunt</li-->
+			<!-- <li>Spouse</li> -->
+			<!-- <li>Child</li> -->
+			<!-- <li>Sibling</li> -->
+			<!--li>Grandchild</li>
+			<li>GreatGrandchild</li>
+			<li>NephewOrNiece</li>
+			<li>HalfSibling</li>
+			<li>Cousin</li>
+			<li>Parent</li>
+			<li>UncleOrAunt</li-->
 		</royalTitleInheritanceRelations>
 		
 		
@@ -247,13 +255,8 @@
 		<styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
 
-			<li>guy762_RankStyleCategory_ImperialArmy</li>
-			<li>guy762_RankStyleCategory_ImperialNavy</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialTaskforce</li> player factions and EA only -->
-			<!-- <li>guy762_RankStyleCategory_ImperialPolitiburo</li> -->
-			<!-- <li>guy762_RankStyleCategory_ImpISB</li> maldrood only -->
-			<!-- <li>guy762_RankStyleCategory_ImpINT</li> -->
-			<!-- <li>guy762_RankStyleCategory_ImperialOps</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialArmy</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialNavy</li> -->
 		</styles>
 		
 		<requiredMemes>

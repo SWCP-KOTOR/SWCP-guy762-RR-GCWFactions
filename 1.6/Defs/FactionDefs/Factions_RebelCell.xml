@@ -106,7 +106,7 @@
 		<permanentEnemy>false</permanentEnemy>
 		<!--permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
 		
-		<settlementGenerationWeight>4</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <!-- <newLabel>Rebel Coalition</newLabel> -->
@@ -158,7 +158,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~25</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0~25</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-25</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>0</guy762_SWWarlordsFaction_CSA> -->
@@ -180,7 +180,18 @@
 			<!-- </li> -->
 					<!-- <territoryBorderColor>(100,60,10,128)</territoryBorderColor> -->
 					<!-- <factionLabelColor>(100,60,10,255)</factionLabelColor> -->
+			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li><key>Surface</key><value>2</value></li>
+					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit"><key>Orbit</key><value>2</value></li>
+					
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantell</key><value>5</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Onderon</key><value>4</value></li>
+				</layerWeights>
+			</li>	
 		</modExtensions>
+		<settlementGenerationWeight>4</settlementGenerationWeight>
 		
 		<allowedCultures>
 			<li>guy762_culture_outerrim</li>

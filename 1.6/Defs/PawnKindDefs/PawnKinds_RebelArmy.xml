@@ -584,9 +584,23 @@
 				</li>
 				<li>
 					<thingDef>KOTOR_kolto</thingDef>
-					<countRange>2~3</countRange>
+					<countRange>3~4</countRange>
 				</li>
 			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>9~10</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>6~7</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>4~5</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 
 		<initialWillRange>0.5~2</initialWillRange>

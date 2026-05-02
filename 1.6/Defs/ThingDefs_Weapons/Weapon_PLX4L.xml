@@ -64,12 +64,14 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 			</li>
-			<li Class="VerbShootVehicle.VerbPropertiesAntiVehicle">
-				<label>homing AA/AV missile</label>
+			<!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+			<li>
+				<label>homing AV/AA missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
-				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
+				<!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWProj_SAAVProtonMissile_light</defaultProjectile>
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile>
 				<warmupTime>2</warmupTime>
 				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>40</range>
@@ -81,17 +83,18 @@
 				<ai_IsWeapon>true</ai_IsWeapon>
 				
 				<forcedMissRadius>0.5</forcedMissRadius>
-				<onlyManualCast>true</onlyManualCast>
+				<!-- <onlyManualCast>true</onlyManualCast> -->
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
-				<targetParams>
-                    <canTargetLocations>false</canTargetLocations>
-                </targetParams>
-                <onlyTargetVehicle>True</onlyTargetVehicle>
-                <onlyTargetFleshType>False</onlyTargetFleshType>
-                <!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
-			</li>
+                <!-- <targetParams> -->
+                    <!-- <canTargetLocations>false</canTargetLocations> -->
+                <!-- </targetParams> -->
+                <!-- <onlyTargetVehicle>True</onlyTargetVehicle> -->
+                <!-- <onlyTargetFleshType>False</onlyTargetFleshType> -->
+				<!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
+            </li>
 		</verbs>
 		<tools>
 			<li>

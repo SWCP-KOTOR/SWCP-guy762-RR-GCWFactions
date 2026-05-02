@@ -17,8 +17,8 @@
 		<replacesFaction>OutlanderCivil</replacesFaction> <!-- replaces a faction in the default vanilla setup list -->
 		
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<listOrderPriority>1775</listOrderPriority>
-		<configurationListOrderPriority>1775</configurationListOrderPriority>
+		<listOrderPriority>1776</listOrderPriority>
+		<configurationListOrderPriority>1776</configurationListOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>4</maxCountAtGameStart>
 		<techLevel>Spacer</techLevel>
@@ -86,7 +86,7 @@
 		</raidArrivalLayerWhitelist>
 		
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<settlementGenerationWeight>7</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Local Militia</newLabel>						<!-- Faction Tab Type Name -->
@@ -121,7 +121,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-75~-50</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>25</guy762_SWWarlordsFaction_CSA> -->
@@ -154,7 +154,17 @@
 					<!-- <li>guy762_KotORPlayerFaction_HuttUpstart</li> -->
 				<!-- </hostileFactionDefs> -->
 			<!-- </li> -->
+			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantell</key><value>7</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantellOrbit</key><value>4</value></li>
+				</layerWeights>
+			</li>
 		</modExtensions>
+		<settlementGenerationWeight>7</settlementGenerationWeight>
+		
+		
 		
 		
 		<xenotypeSet Inherit="False">

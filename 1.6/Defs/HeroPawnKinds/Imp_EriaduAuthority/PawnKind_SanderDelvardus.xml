@@ -30,8 +30,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_delvardus</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_delvardus</styleDef> -->
 				<color>(65,100,95)</color>	<!-- delvardus' viridian -->
 				<quality>Legendary</quality>
 			</li>
@@ -58,7 +58,7 @@
 			<li>guy762_Ability_CommandTierIV</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
@@ -89,6 +89,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_SanderDelvardus/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

@@ -90,7 +90,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
@@ -98,7 +98,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 		
-		<settlementGenerationWeight>1</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Underworld Organization</newLabel>						<!-- Faction Tab Type Name -->
@@ -144,7 +144,7 @@
 					
 					<!-- . -->
 
-					<!-- <guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>0~100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>0~50</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
@@ -177,6 +177,7 @@
 				</biomeWeights>
 			</li>
 		</modExtensions>
+		<settlementGenerationWeight>2</settlementGenerationWeight>
 		
 		
 		<!-- <royalTitleTags> -->

@@ -38,8 +38,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_tigellinus</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_tigellinus</styleDef> -->
 				<color>(250,250,250)</color>
 				<quality>Legendary</quality>
 			</li>
@@ -84,10 +84,6 @@
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
-			<li Class="BigAndSmall.Flagger">
-				<flags> <guy762AltTag_ImpOfficerGrandAdmiral/></flags>
-			</li>
-			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Male_NarrowWide</li>
@@ -116,6 +112,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_RufaanTigellinus/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

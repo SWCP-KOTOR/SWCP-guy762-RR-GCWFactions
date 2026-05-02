@@ -34,7 +34,8 @@
 		
 		
 		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
-		<leaderTitle>Director</leaderTitle>
+		<leaderTitle>Chairman</leaderTitle>
+		<leaderTitleFemale>Chairwoman</leaderTitleFemale>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
 			<li>SWCharPawnPA_ArdusKaine</li>
@@ -91,7 +92,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
 		
-		<settlementGenerationWeight>3</settlementGenerationWeight>
+		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
                 <newLabel>Imperial Splinter Faction</newLabel>						<!-- Faction Tab Type Name -->
@@ -144,7 +145,7 @@
 					
 					<!-- . -->
 					
-					<!-- <guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan> -->
+					<guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>25</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-25</guy762_SWWarlordsFaction_CSA> -->
@@ -190,11 +191,16 @@
 					<!-- </li> -->
 				<!-- </roleOverrides> -->
 			<!-- </li> -->
-		  
-		  
-		  
-		  
+			
+			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
+				<layerWeights>
+					<li><key>Surface</key><value>3</value></li>
+					<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit"><key>Orbit</key><value>3</value></li>
+				</layerWeights>
+			</li>
 		</modExtensions>
+		<settlementGenerationWeight>3</settlementGenerationWeight>
+		
 		<!--permanentEnemyToEveryoneExcept>
 		  <li>OutlanderCivil</li>
 		  <li>TribeCivil</li>
@@ -212,13 +218,9 @@
 		<styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
 
-			<!-- <li>guy762_RankStyleCategory_ImperialArmy</li> -->
-			<li>guy762_RankStyleCategory_ImperialNavy</li>
-			<!-- <li>guy762_RankStyleCategory_ImperialTaskforce</li> player factions and EA only -->
-			<li>guy762_RankStyleCategory_ImperialPolitiburo</li>
-			<!-- <li>guy762_RankStyleCategory_ImpISB</li> maldrood only -->
-			<!-- <li>guy762_RankStyleCategory_ImpINT</li> -->
-			<li>guy762_RankStyleCategory_ImperialOps</li>
+			<!-- <li>guy762_RankStyleCategory_ImperialNavy</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialPolitiburo</li> -->
+			<!-- <li>guy762_RankStyleCategory_ImperialOps</li> -->
 		</styles>
 		
 		<requiredMemes>

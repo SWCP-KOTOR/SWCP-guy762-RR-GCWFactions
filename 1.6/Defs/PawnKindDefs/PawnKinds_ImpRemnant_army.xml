@@ -741,6 +741,9 @@
 		
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyLieutenant/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -844,6 +847,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyMajor/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -953,6 +959,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyColonel/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -1024,8 +1033,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_lowrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_armylt</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_lowrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_armylt</styleDef> -->
 				<color>(125,125,110)</color> <!-- imperial olive -->
 				<quality>Normal</quality>
 			</li>
@@ -1066,6 +1075,9 @@
 		</startingHediffs>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyLieutenant/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -1117,8 +1129,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_armymajor</styleDef> -->
 				<color>(125,125,110)</color> <!-- imperial olive -->
 				<quality>Good</quality>
 			</li>
@@ -1161,6 +1173,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyMajor/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
@@ -1220,8 +1235,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_armygen</styleDef> -->
 				<color>(125,125,110)</color>       <!-- imperial olive -->
 				<quality>Excellent</quality>
 			</li>
@@ -1262,6 +1277,9 @@
 		</abilities>
 		
 		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerArmyGeneral/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

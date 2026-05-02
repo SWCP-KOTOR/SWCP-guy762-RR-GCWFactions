@@ -39,7 +39,7 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<label>Bowcaster charge shot</label>
+				<label>power blast</label>
 				<commandIcon>UI/Bowcaster_Power_Blast</commandIcon>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -55,6 +55,8 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<forcedMissRadius>0.01</forcedMissRadius>
 				<ai_IsWeapon>true</ai_IsWeapon>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 			</li>
 			<li>
 				<label>spread shot</label>

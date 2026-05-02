@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>guy762_SWWarlordsFaction_MandoClan</defName>
+		<label>Mandalorian Clan</label>
+		<!-- <fixedName></fixedName> -->
+		<factionNameMaker>guy762_NamerFaction_MandoClan</factionNameMaker>
+		<description>.</description>
+		
+		<pawnSingular>Mandalorian</pawnSingular>
+		<pawnsPlural>Mandalorians</pawnsPlural>
+		<categoryTag>Pirate</categoryTag>
+		<factionIconPath>World/Mandalorians</factionIconPath>
+		<colorSpectrum>
+			<li>(190,200,210)</li> <!-- beskar silver -->
+		</colorSpectrum>
+		
+		
+		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
+		<leaderTitle>Chieftan</leaderTitle>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>KotORExchg_vigo</li> -->
+		<!-- </fixedLeaderKinds> -->
+		
+		
+		
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<listOrderPriority>1775</listOrderPriority>
+		<configurationListOrderPriority>1775</configurationListOrderPriority>
+		<mustStartOneEnemy>false</mustStartOneEnemy>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<techLevel>Spacer</techLevel>
+		
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<canRequestTraders>false</canRequestTraders>
+		<canRequestMilitaryAid>false</canRequestMilitaryAid>
+		<canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+		<canGenerateQuestSites>true</canGenerateQuestSites>
+		
+		
+		
+		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
+			<li>Surface</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</layerWhitelist>
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to. even if a faction is not set to spawn on both layers, everything in the system should be included here -->
+			<li>Surface</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</raidArrivalLayerWhitelist>
+		
+		
+		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+		<naturalEnemy>false</naturalEnemy>
+		
+		
+		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <!-- <newLabel>Underworld Organization</newLabel> -->
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
+			<li Class="FCP.Currencies.CurrencyReplacement">
+				<currency>Silver</currency>
+			</li>
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+				<arrivalModes>
+					<li>EdgeDrop</li>
+					<li>EdgeDropGroups</li>
+					<li>CenterDrop</li>
+					<li>RandomDrop</li>
+					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
+				</arrivalModes>
+			</li>
+			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
+				<transportShipDef>guy762_SWShuttleTransportShip_ST70AssaultShip</transportShipDef>
+				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
+				<maxPawnCountInOneShuttle>10</maxPawnCountInOneShuttle>
+			</li>
+			
+			<li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<guy762_SWWarlordsFaction_NewRepublic>0~25</guy762_SWWarlordsFaction_NewRepublic>
+					<guy762_SWWarlordsFaction_RebelCell>0~25</guy762_SWWarlordsFaction_RebelCell>
+					<guy762_SWWarlordsFaction_PartisanCell>25~100</guy762_SWWarlordsFaction_PartisanCell>
+					
+					<guy762_SWWarlordsFaction_ImpRemnant>-50</guy762_SWWarlordsFaction_ImpRemnant>
+					<guy762_SWWarlordsFaction_ZsinjDominion>25~50</guy762_SWWarlordsFaction_ZsinjDominion>
+					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+					
+					<guy762_SWWarlordsFaction_GreaterMaldrood>0~50</guy762_SWWarlordsFaction_GreaterMaldrood>
+					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
+					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
+					
+					<guy762_SWWarlordsFaction_ZannConsortium>0~100</guy762_SWWarlordsFaction_ZannConsortium>
+					<guy762_SWWarlordsFaction_BlackSun>0~100</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>0~100</guy762_SWWarlordsFaction_HuttCartel>
+					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
+					
+					<!-- . -->
+					
+					<guy762_SWWarlordsFaction_MandoClan>-100~0</guy762_SWWarlordsFaction_MandoClan>
+					<guy762_SWWarlordsFaction_PDF>0</guy762_SWWarlordsFaction_PDF>
+					<guy762_SWWarlordsFaction_LocalWarlord>-50</guy762_SWWarlordsFaction_LocalWarlord>
+					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
+					
+					<guy762_KotORFaction_Civilians>-25~0</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
+					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+				</startingGoodwillByFactionDefs>
+				<excludeFromCommConsole>true</excludeFromCommConsole>
+				<hasCities>true</hasCities>
+				
+				<!-- <minDistanceToOtherSettlements>20</minDistanceToOtherSettlements> incompatible with orbit layer -->
+				
+				<!-- <allowedBiomes> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">LAO_Luna</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineHighland</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineExtremeDesert</li> -->
+				<!-- </allowedBiomes> -->
+			</li>
+			
+			<li Class="FCP.Factions.FactionExtension_FixedIdeo">
+				<ideoIconDef>guy762_IdeoIcon_mandoB</ideoIconDef>
+				<ideoColorDef>guy762_IdeoFactionColor_BeskarSilver</ideoColorDef>
+				<memberName>Mandalorian</memberName>
+				<adjective>Mandalorian</adjective>
+				<roleOverrides>
+					<li>
+						<preceptDef>IdeoRole_Leader</preceptDef>
+						<newName>Chieftan</newName>
+						<disableApparelRequirements>true</disableApparelRequirements>
+					</li>
+					<li>
+						<preceptDef>IdeoRole_Moralist</preceptDef>
+						<newName>Armorer</newName>
+						<disableApparelRequirements>true</disableApparelRequirements>
+						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+					</li>
+					<li>
+						<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+						<newName>Supercommando</newName>
+						<disableApparelRequirements>true</disableApparelRequirements>
+						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+					</li>
+					<li>
+						<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+						<newName>Champion</newName>
+						<disableApparelRequirements>true</disableApparelRequirements>
+						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+					</li>
+				</roleOverrides>
+			</li>
+			
+			
+			
+			<!-- <li Class="SWCP.FactionExtension_SettlementWeightOverrides"> -->
+				<!-- <biomeWeights> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPBiome_OrdMantellUrban</key><value>3</value></li> -->
+				<!-- </biomeWeights> -->
+			<!-- </li> -->
+			
+		</modExtensions>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		
+		
+		
+		
+		<allowedCultures>
+			<li>guy762_culture_mando</li>
+		</allowedCultures>
+		<styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+		</styles>
+		
+		<fixedIdeo>true</fixedIdeo>
+		<ideoName>Children of Mandalore</ideoName>
+		<ideoDescription>.</ideoDescription>
+		
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_mando</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nomad</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRole_Moralist</li> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">guy762_KotORIdeoRole_Inquisitor</li> -->
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+		</disallowedPrecepts>
+		
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.80</Baseliner>
+				<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+				<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_iridonian>
+				<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_togruta>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_twilek>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_zabrak>
+				<guy762_xenotype_zabrakDathomiri MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrakDathomiri>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		
+		
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outlander</li>
+			</categories>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+			<commonality>0.33</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Pirate</li>
+			</categories>
+			<commonality>0.33</commonality>
+		  </li>
+		</backstoryFilters>
+		
+		
+		
+		
+		
+		
+		
+		<!-- <caravanTraderKinds> -->
+		  <!-- <li>Caravan_Outlander_BulkGoods</li> -->
+		  <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
+		  <!-- <li>Caravan_Outlander_Exotic</li> -->
+		  <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
+		<!-- </caravanTraderKinds> -->
+		<!-- <visitorTraderKinds> -->
+		  <!-- <li>Visitor_Outlander_Standard</li> -->
+		<!-- </visitorTraderKinds> -->
+		<!-- <baseTraderKinds> -->
+			<!-- <li>SWCP_GCWBaseTraderKind_ScumGunrunner</li> -->
+			<!-- <li>guy762_BaseTraderKind_spicerunner</li> -->
+			<!-- <li>SWCP_GCWBaseTraderKind_ScumStarfighterDealer</li> -->
+		<!-- </baseTraderKinds> -->
+		<!-- <orbitalTraderKinds> -->
+			<!-- <li>SWCP_GCWOrbitalTraderKind_ScumGunrunner</li> -->
+			<!-- <li>SWCP_GCWOrbitalTraderKind_ScumStarfighterDealer</li> -->
+			<!-- <li>guy762_TraderKind_spicerunner</li> -->
+			<!-- <li>guy762_TraderKind_TrandoSlaver</li> -->
+		<!-- </orbitalTraderKinds> -->
+		
+		
+		
+		
+		
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+			<li>KOTOR_FabricArmorweave</li>
+			<li>Plasteel</li>
+			<li>KOTOR_AlloyDurasteel</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		
+		
+		
+		
+		
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,50)</li> <!-- cost of thug shooter/brawler -->
+			<li>(100, 75)</li> <!-- cost of hitman -->
+			<li>(250, 100)</li> <!-- cost of JKJA goons minus rocket launcher -->
+			<li>(1000, 200)</li> <!-- cost of most ethnic mercs -->
+			<li>(2500, 10000)</li> <!-- eligible for the bounty hunter kill squad -->
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		
+		<earliestRaidDays>20</earliestRaidDays>
+		
+		<pawnGroupMakers>
+
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+			  <SWMando_protector>100</SWMando_protector>
+			</options>
+		  </li>
+			  
+
+		  
+		  <li>
+			<!-- raid -->
+			<kindDef>Combat</kindDef>
+			<commonality>75</commonality>
+			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+				<li>Siege</li>
+				<li>EmergeFromWater</li>
+				<li>StageThenAttack</li>
+				<li>ImmediateAttack</li>
+				<li>ImmediateAttackSappers</li>
+				<li>ImmediateAttackBreaching</li>
+				<li>ImmediateAttackBreachingSmart</li>
+			</disallowedStrategies>
+			<options>
+			  <SWMando_protector>100</SWMando_protector>
+			  <!-- <KotORMerc_shooter>50</KotORMerc_shooter> -->
+			  <!-- <KotORMerc_brawler>50</KotORMerc_brawler> -->
+			</options>
+		  </li>
+
+		  
+		  <li>
+			<kindDef>Combat</kindDef> <!-- merc assault -->
+			<commonality>50</commonality>
+			<disallowedStrategies>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+				<li>Siege</li>
+				<li>EmergeFromWater</li>
+				<li>StageThenAttack</li>
+				<li>ImmediateAttack</li>
+				<li>ImmediateAttackSappers</li>
+				<li>ImmediateAttackBreaching</li>
+				<li>ImmediateAttackBreachingSmart</li>
+			</disallowedStrategies>
+			<options>
+			  <SWMando_protector>100</SWMando_protector>
+			  <SWMando_commando>50</SWMando_commando>
+			</options>
+		  </li>
+
+			<li>
+				<!-- the bing -->
+				<kindDef>Settlement</kindDef>
+				<commonality>1</commonality>
+				<options>
+				  <!-- civilians -->
+				  <!-- <SWCPCivilian_SlaveEntertainer>20</SWCPCivilian_SlaveEntertainer> -->
+				  
+				  <!-- factional -->
+				  
+				  <!-- <KotORDroidBad_hk50>1</KotORDroidBad_hk50> -->
+				  <!-- <KotORMerc_gandmelee>5</KotORMerc_gandmelee> -->
+				  <!-- <KotORMerc_gandranged>5</KotORMerc_gandranged> -->
+				  <!-- <KotORMerc_kaleeshmelee>2.5</KotORMerc_kaleeshmelee> -->
+				  <!-- <KotORMerc_kaleeshranged>2.5</KotORMerc_kaleeshranged> -->
+				  <!-- <KotORMerc_nagaimelee>1</KotORMerc_nagaimelee> -->
+				  <!-- <KotORMerc_nagairanged>1</KotORMerc_nagairanged> -->
+				  <!-- <KotORBntyHntr_mandoweak>5</KotORBntyHntr_mandoweak> -->
+				  <!-- <KotORBntyHntr_mandomid>2.5</KotORBntyHntr_mandomid> -->
+				  <!-- <KotORBntyHntr_mandostar>1</KotORBntyHntr_mandostar> -->
+					<SWMando_protector>100</SWMando_protector>
+					<SWMando_commando>50</SWMando_commando>
+				  
+				  <!-- <KotORExchg_capo>100</KotORExchg_capo> -->
+				  <!-- <KotORExchg_vigo>100</KotORExchg_vigo> -->
+				</options>
+			</li>
+		  
+		</pawnGroupMakers>
+		
+		<raidLootMaker>guy762_RaidLootMaker_KotORMando</raidLootMaker>
+	</FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>guy762_RaidLootMaker_KotORMando</defName>
+	<root Class="ThingSetMaker_Sum">
+      <options>
+        <li>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+				<filter>
+				  <thingDefs>
+					<li>MealSurvivalPack</li>
+					<li>Pemmican</li>
+					<li>KOTOR_SpacerMedKit</li>
+					<li>KOTOR_PlasmaCartridge</li>
+				  </thingDefs>
+				</filter>
+			</fixedParams>
+          </thingSetMaker>
+        </li>
+		<li>
+          <thingSetMaker  Class="ThingSetMaker_RandomOption">
+            <options>
+              <li>
+                <weight>5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_basic</li>
+						<li>guy762TT_armormod_basic</li>
+						<li>guy762TT_KotORStims</li>
+						<li>guy762TT_MandoLoot</li>
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_adv</li>
+						<li>guy762TT_armormod_adv</li>
+						<li>guy762TT_implants_basic</li>
+						<li>guy762TT_KotORHyperStims</li>
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>0.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_rare</li>
+						<li>guy762TT_implants_adv</li>
+						
+						<!-- THE TRADETAG PALETTE:
+						<li>guy762TT_weaponmod_basic</li>
+						<li>guy762TT_weaponmod_adv</li>
+						<li>guy762TT_weaponmod_rare</li>
+						
+						<li>guy762TT_sabermod_basic</li>
+						<li>guy762TT_sabermod_adv</li>
+						<li>guy762TT_sabermod_rare</li>
+						
+						<li>guy762TT_armormod_basic</li>
+						<li>guy762TT_armormod_adv</li>
+						
+						<li>guy762TT_DroidWeapons_light</li>
+						<li>guy762TT_DroidWeapons_heavy</li>
+						
+						<li>guy762TT_DroidShields</li>
+						
+						<li>guy762TT_DroidUpgrades</li>
+						<li>guy762TT_DroidUpgrades_rare</li>
+						
+						<li>guy762TT_implants_basic</li>
+						<li>guy762TT_implants_adv</li>
+						<li>guy762TT_implants_rare</li>
+						<li>guy762TT_implants_DPkg</li>
+						
+						<li>guy762TT_KotORStims</li>
+						<li>guy762TT_KotORHyperStims</li>
+						-->
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+            </options>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+	
+	
+	
+	<RulePackDef>
+		<defName>guy762_NamerFaction_MandoClan</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[clan] [msyl][msyl]</li>
+
+
+				<li>clan->Clan</li>
+
+				<li>msyl->nyar</li>
+				<li>msyl->alg</li>
+				<li>msyl->xan</li>
+				<li>msyl->zel</li>
+				<li>msyl->kil</li>
+				<li>msyl->len</li>
+				<li>msyl->lax</li>
+				<li>msyl->alph</li>
+				<li>msyl->ome</li>
+				<li>msyl->iri</li>
+				<li>msyl->slin</li>
+				<li>msyl->toth</li>
+				<li>msyl->arth</li>
+				<li>msyl->unth</li>
+				<li>msyl->ox</li>
+				<li>msyl->arm</li>
+				<li>msyl->murd</li>
+				<li>msyl->zen</li>
+				<li>msyl->yoth</li>
+				<li>msyl->lite</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  
+</Defs>

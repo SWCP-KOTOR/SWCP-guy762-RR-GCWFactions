@@ -38,8 +38,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_midrank</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_midrank</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_tasksquadCO</styleDef> -->
 				<color>(50,50,50)</color>
 				<quality>Legendary</quality>
 			</li>
@@ -112,6 +112,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerTaskSquadCO/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

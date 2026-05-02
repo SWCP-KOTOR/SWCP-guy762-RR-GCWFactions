@@ -30,8 +30,8 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_topbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_director</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_topbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_director</styleDef> -->
 				<color>(195,55,45)</color> <!-- isard's red -->
 				<quality>Legendary</quality>
 			</li>
@@ -85,10 +85,6 @@
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
-			<li Class="BigAndSmall.Flagger">
-				<flags> <guy762AltTag_ImpOfficerDirector/></flags>
-			</li>
-			
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
 			  <whitelist>
 				<li>Female_AveragePointy</li>
@@ -117,6 +113,9 @@
 			  </geneSets>
 			</li>
 			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_ImpOfficerDirector/></flags>
+			</li>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

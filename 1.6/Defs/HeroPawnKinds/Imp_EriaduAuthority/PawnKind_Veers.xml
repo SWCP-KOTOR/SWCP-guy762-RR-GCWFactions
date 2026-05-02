@@ -48,8 +48,8 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<apparelDef>guy762_ImpUniform_highbrass</apparelDef>
-				<styleDef>guy762_RankStyle_ImpOfficer_taskforceCO</styleDef>
+				<!-- <apparelDef>guy762_ImpUniform_highbrass</apparelDef> -->
+				<!-- <styleDef>guy762_RankStyle_ImpOfficer_taskforceCO</styleDef> -->
 				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
 				<quality>Legendary</quality>
 			</li>

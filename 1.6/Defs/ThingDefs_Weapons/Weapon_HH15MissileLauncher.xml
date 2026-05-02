@@ -46,7 +46,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_AIConcRocket</defaultProjectile>
 				<warmupTime>5</warmupTime>
-				<defaultCooldownTime>12</defaultCooldownTime>
+				<defaultCooldownTime>10</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
@@ -64,16 +64,16 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 			</li>
-			<li Class="VerbShootVehicle.VerbPropertiesAntiVehicle">
+			<!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
+			<li>
 				<label>homing AV/AA missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
-				<verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass>
+				<!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>SWProj_SAAVProtonMissile_heavy</defaultProjectile>
-				<!-- <defaultProjectile>SWProj_SAAAProtonMissile_heavy</defaultProjectile> -->
+				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_heavy</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
-				<defaultCooldownTime>4</defaultCooldownTime>
-				<!-- <range>36</range> -->
+				<defaultCooldownTime>5</defaultCooldownTime>
 				<range>60</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
@@ -88,13 +88,12 @@
 				<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				
-				<targetParams>
-                    <canTargetLocations>false</canTargetLocations>
-                </targetParams>
-                <onlyTargetVehicle>True</onlyTargetVehicle>
-                <onlyTargetFleshType>False</onlyTargetFleshType>
-                <!-- <fleshTypeDef>FleshTypeDef</fleshTypeDef> -->
-			</li>
+                <!-- <targetParams> -->
+                    <!-- <canTargetLocations>false</canTargetLocations> -->
+                <!-- </targetParams> -->
+                <!-- <onlyTargetVehicle>True</onlyTargetVehicle> -->
+                <!-- <onlyTargetFleshType>False</onlyTargetFleshType> -->
+            </li>
 		</verbs>
 		<tools>
 			<li>
