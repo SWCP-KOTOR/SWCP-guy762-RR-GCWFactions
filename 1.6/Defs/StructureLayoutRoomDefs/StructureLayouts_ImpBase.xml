@@ -882,41 +882,38 @@
 	</LayoutRoomDef>
 	
 	
-	<LayoutRoomDef>
-		<defName>SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle</defName>
-		<spawnJunk>false</spawnJunk>
-		<minSingleRectWidth>6</minSingleRectWidth>
-		<minSingleRectHeight>6</minSingleRectHeight>
-		<wallAttachments>
-			<AncientEmergencyLight_Blue>
-				<countRange>3~4</countRange>
-			</AncientEmergencyLight_Blue>
-		</wallAttachments>
-		<prefabs>
-		  <SWCPPrefabInterior_2x2ImpVehicle>
-			<countPerHundredCells>1</countPerHundredCells>
-			<minMaxRange>0~1</minMaxRange>
-		  </SWCPPrefabInterior_2x2ImpVehicle>
-		  <RustedEngine_Cluster>
-			<countPerHundredCells>3</countPerHundredCells>
-			<minMaxRange>1~2</minMaxRange>
-		  </RustedEngine_Cluster>
-		  <AncientSafe>
-			<countPerHundredCells>1</countPerHundredCells>
-			<minMaxRange>0~1</minMaxRange>
-		  </AncientSafe>
-		  <AncientMilitaryCrate_Cluster>
-			<countPerHundredCells>1</countPerHundredCells>
-			<minMaxRange>3~5</minMaxRange>
-		  </AncientMilitaryCrate_Cluster>
-		</prefabs>
-		<!-- <parts> -->
-		  <!-- <SWCPRoomPart_PawnKind_ImpWorker>1</SWCPRoomPart_PawnKind_ImpWorker> -->
-		<!-- </parts> -->
-		<floorTypes>
-		  <li>guy762_FloorTiles_ImpBaseTile</li>
-		</floorTypes>
-	</LayoutRoomDef>
+	<!-- <LayoutRoomDef> -->
+		<!-- <defName>SWCPRoomLayout_ImpWorkshop_2x2ImpVehicle</defName> -->
+		<!-- <spawnJunk>false</spawnJunk> -->
+		<!-- <minSingleRectWidth>6</minSingleRectWidth> -->
+		<!-- <minSingleRectHeight>6</minSingleRectHeight> -->
+		<!-- <wallAttachments> -->
+			<!-- <AncientEmergencyLight_Blue> -->
+				<!-- <countRange>3~4</countRange> -->
+			<!-- </AncientEmergencyLight_Blue> -->
+		<!-- </wallAttachments> -->
+		<!-- <prefabs> -->
+		  <!-- <SWCPPrefabInterior_2x2ImpVehicle> -->
+			<!-- <countPerHundredCells>1</countPerHundredCells> -->
+			<!-- <minMaxRange>0~1</minMaxRange> -->
+		  <!-- </SWCPPrefabInterior_2x2ImpVehicle> -->
+		  <!-- <RustedEngine_Cluster> -->
+			<!-- <countPerHundredCells>3</countPerHundredCells> -->
+			<!-- <minMaxRange>1~2</minMaxRange> -->
+		  <!-- </RustedEngine_Cluster> -->
+		  <!-- <AncientSafe> -->
+			<!-- <countPerHundredCells>1</countPerHundredCells> -->
+			<!-- <minMaxRange>0~1</minMaxRange> -->
+		  <!-- </AncientSafe> -->
+		  <!-- <AncientMilitaryCrate_Cluster> -->
+			<!-- <countPerHundredCells>1</countPerHundredCells> -->
+			<!-- <minMaxRange>3~5</minMaxRange> -->
+		  <!-- </AncientMilitaryCrate_Cluster> -->
+		<!-- </prefabs> -->
+		<!-- <floorTypes> -->
+		  <!-- <li>guy762_FloorTiles_ImpBaseTile</li> -->
+		<!-- </floorTypes> -->
+	<!-- </LayoutRoomDef> -->
 
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ImpGarrisonShellStorageRoom</defName>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_flamethrower</defName>
+		<label>flamethrower</label>
+		<description>Spew a burst of flame over a short area.</description>
+		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
+		<iconPath>UI/Fire</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>2400</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>kotorsound_flamethrower</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>5</range>
+				<lineWidthEnd>3</lineWidthEnd>
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_snipershot</defName>
+		<label>sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration and perfect accuracy (unless the target successfully dodges).</description>
+		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
+		<iconPath>UI/Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>90</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>30</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>kotorsound_sniper</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_BlasterBoltSniper</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_concussionrocket</defName>
+		<label>concussion rocket</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>Items/Rockets/rocket_conc/rocket_conc_a</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<!-- <verbClass>Verb_Shoot</verbClass><defaultProjectile>SWProj_AIConcRocket</defaultProjectile> -->
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+			<soundCast>kotorsound_BF1missile</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_AIConcRocket</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <ammoPerCharge>1</ammoPerCharge>
+                <ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><reloadSound>kotorsound_BF2ammoPickup</reloadSound>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_protonmissile_light</defName>
+		<label>light homing AA/AV missile</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>UI/targetlock</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<!-- <verbClass>Verb_Shoot</verbClass><defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile> -->
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+			<soundCast>kotorsound_JKrocket_alt</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SmallArmsAssaultProtonMissile_light</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <ammoPerCharge>1</ammoPerCharge>
+                <ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><reloadSound>kotorsound_BF2ammoPickup</reloadSound>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_protonmissile_heavy</defName>
+		<label>heavy homing AA/AV missile</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>UI/targetlock</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<!-- <verbClass>Verb_Shoot</verbClass><defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_heavy</defaultProjectile> -->
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+			<soundCast>kotorsound_JKrocket_alt</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SmallArmsAssaultProtonMissile_heavy</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <ammoPerCharge>1</ammoPerCharge>
+                <ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><reloadSound>kotorsound_BF2ammoPickup</reloadSound>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	
+  
+</Defs>

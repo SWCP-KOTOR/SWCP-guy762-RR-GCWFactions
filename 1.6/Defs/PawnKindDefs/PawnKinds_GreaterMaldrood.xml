@@ -4,7 +4,8 @@
 	<PawnKindDef Name="SWMaldrood_Base" Abstract="True">
 		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
 		<race>Human</race>
-
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<!-- <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality> -->
 		<!-- <backstoryFiltersOverride> -->
 			<!-- <li> -->

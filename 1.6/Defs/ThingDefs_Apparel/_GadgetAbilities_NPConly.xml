@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_concussionrocket_NPCversion</defName>
+		<label>concussion rocket</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>Items/Rockets/rocket_conc/rocket_conc_a</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties> 
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>kotorsound_BF1missile</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_AIConcRocket</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <removeOnceEmpty>True</removeOnceEmpty>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_protonmissile_light_NPCversion</defName>
+		<label>light homing AA/AV missile</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>UI/targetlock</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties Class="VerbShootVehicle.VerbPropertiesAntiVehicle">  
+			<verbClass>VerbShootVehicle.Verb_CastAbilityAntiVehicle</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+			<soundCast>kotorsound_JKrocket_alt</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			
+			<onlyTargetVehicle>True</onlyTargetVehicle>
+			<allowTargetBuilding>True</allowTargetBuilding>
+			<onlyTargetFleshType>False</onlyTargetFleshType>
+			<fleshTypeDef />
+		</verbProperties>
+
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SmallArmsAssaultProtonMissile_light</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <removeOnceEmpty>True</removeOnceEmpty>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>guy762_AbilityGadget_protonmissile_heavy_NPCversion</defName>
+		<label>heavy homing AA/AV missile</label>
+		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<iconPath>UI/targetlock</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties Class="VerbShootVehicle.VerbPropertiesAntiVehicle">  
+			<verbClass>VerbShootVehicle.Verb_CastAbilityAntiVehicle</verbClass>
+			<range>40</range>
+			<warmupTime>1</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+			<soundCast>kotorsound_JKrocket_alt</soundCast>
+			
+			<forcedMissRadius>0.5</forcedMissRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsDoorDestroyer>true</ai_IsDoorDestroyer>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			
+			<onlyTargetVehicle>True</onlyTargetVehicle>
+			<allowTargetBuilding>True</allowTargetBuilding>
+			<onlyTargetFleshType>False</onlyTargetFleshType>
+			<fleshTypeDef />
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SmallArmsAssaultProtonMissile_heavy</projectileDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>1</maxCharges>
+                <removeOnceEmpty>True</removeOnceEmpty>
+            </li>
+		</comps>
+	</AbilityDef>
+	
+	
+  
+</Defs>

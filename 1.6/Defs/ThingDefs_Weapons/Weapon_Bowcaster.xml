@@ -46,7 +46,7 @@
 				<defaultProjectile>KotORBowcasterBolt_heavy</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<defaultCooldownTime>3</defaultCooldownTime>
-				<range>35</range>
+				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
 				<soundAiming>kotorsound_bowcharge</soundAiming>

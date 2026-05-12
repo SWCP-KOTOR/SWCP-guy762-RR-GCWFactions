@@ -118,7 +118,7 @@
 			</li>
 			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_ST70AssaultShip</transportShipDef>
-				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
+				<minDistanceBetweenShuttles>20</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>10</maxPawnCountInOneShuttle>
 			</li>
 			
@@ -133,7 +133,7 @@
 					<guy762_SWWarlordsFaction_ZsinjDominion>25~50</guy762_SWWarlordsFaction_ZsinjDominion>
 					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
 					
-					<guy762_SWWarlordsFaction_GreaterMaldrood>0~50</guy762_SWWarlordsFaction_GreaterMaldrood>
+					<guy762_SWWarlordsFaction_GreaterMaldrood>-100~0</guy762_SWWarlordsFaction_GreaterMaldrood>
 					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
 					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
 					
@@ -149,7 +149,7 @@
 					<guy762_SWWarlordsFaction_LocalWarlord>-50</guy762_SWWarlordsFaction_LocalWarlord>
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
 					
-					<guy762_KotORFaction_Civilians>-25~0</guy762_KotORFaction_Civilians>
+					<guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
 				</startingGoodwillByFactionDefs>

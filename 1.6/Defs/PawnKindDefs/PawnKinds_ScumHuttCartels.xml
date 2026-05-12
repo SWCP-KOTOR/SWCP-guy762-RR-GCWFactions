@@ -5,6 +5,8 @@
 		<race>Human</race>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>0.75</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
@@ -624,14 +626,14 @@
 	
 	
 	  
-	  <PawnKindDef Name="SWHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
+	<PawnKindDef Name="SWHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
 		<defName>SWHutts_SlaveEntertainer</defName>
 		<label>slave</label>
 		<!-- <defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType> -->
 		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
 		
 		<!--fixedGender>Female</fixedGender-->
-	  </PawnKindDef>
+	</PawnKindDef>
 	
 	
 	<!-- <PawnKindDef Name="SWHutts_droid_protocol" ParentName="KotORDroidGood_GE3PD" MayRequire="guy762.KotORDroids"> -->
@@ -641,13 +643,13 @@
 		<!-- <skinColorOverride>(220,175,80)</skinColorOverride> -->
 	  <!-- </PawnKindDef> -->
 	  
-	  <PawnKindDef Name="SWHutts_smuggler" ParentName="SWCPCivilian_smuggler">
+	<PawnKindDef Name="SWHutts_smuggler" ParentName="SWCPCivilian_smuggler">
 		<defName>SWHutts_smuggler</defName>
 		<!-- <defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType> -->
 		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
 		<trader>true</trader>
 		<!-- <titleRequired>KotORTitleHutts_associate</titleRequired> -->
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  

@@ -10,6 +10,12 @@
         <minGoodwillRequrementToEnlist>-25</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
 		<currencyDef>guy762_KotORcredits</currencyDef>
+		<noSettlementProximityPenalty>True</noSettlementProximityPenalty>
+		
+		<settlementGiftingLockedBehindEnlist>False</settlementGiftingLockedBehindEnlist>
+		<!-- <settlementGiftingLockedBehindEnlistReasonKey></settlementGiftingLockedBehindEnlistReasonKey> -->
+		<settlementTradingLockedBehindEnlist>True</settlementTradingLockedBehindEnlist>
+		<settlementTradingLockedBehindEnlistReasonKey>SWCP_SettlementTradeReserved</settlementTradingLockedBehindEnlistReasonKey>
 
     <!-- Enlistment Options -->
 
@@ -48,6 +54,23 @@
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
         <salaryRange>1000~2000</salaryRange>
         <salaryPeriodDays>10</salaryPeriodDays>
+		
+		<titleWageBonuses>
+			<li><title>SWGCWTitle_ZsinjPrivateer_contact</title><multiplier>1</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_asset</title><multiplier>1.5</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_operative</title><multiplier>2</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_privateer</title><multiplier>5</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_privateerCaptain</title><multiplier>10</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_privateerCommodore</title><multiplier>100</multiplier></li>
+			<li><title>SWGCWTitle_ZsinjPrivateer_warlord</title><multiplier>1000</multiplier></li>
+		</titleWageBonuses>
+
+    <!-- Auto-Feed Options -->
+	
+		<autoFeedIsEnabled>True</autoFeedIsEnabled>
+		<autoFeedButtonIconTexPath>UI/Icons/autofeed</autoFeedButtonIconTexPath>
+		<autoFeedLabelKey>SWCP_AutoFeed_Label</autoFeedLabelKey>
+		<autoFeedDescKey>SWCP_AutoFeed_Desc</autoFeedDescKey>
 
     <!-- Provision Options -->
 
@@ -64,9 +87,19 @@
                 </provisions>
                 <provisionsRestockInDays>15</provisionsRestockInDays>
             </li>
+			<li>
+                <provisionsLabelKey>SWCP_ProvisionRecruit_Label_ArmyTrooper</provisionsLabelKey>
+                <provisionsDescKey>SWCP_ProvisionRecruit_Desc_ImpArmyTrooper15days</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/FactionIcons_Recruit/Recruit_ZsinjArmyTrooper</provisionsButtonIconTexPath>
+                <recruits>
+                    <li><pawnKind>xpSWZsinj_ArmyTrooper_playable</pawnKind><count>1</count></li>
+                    <!-- <li><pawnKind>SWZsinj_ArmyTrooper</pawnKind><count>1</count></li> -->
+                </recruits>
+                <provisionsRestockInDays>15</provisionsRestockInDays>
+            </li>
 			
 			
-			 <!-- will spawn them in but won't let pawns enter them for sone reason -->
+			<!-- will spawn them in but won't let pawns enter them for sone reason -->
 			<!-- <li MayRequire="SWCP.GCWVehicles"> -->
                 <!-- <provisionsLabelKey>SWCP_Provisions_Label_74zSpeeder</provisionsLabelKey> -->
                 <!-- <provisionsDescKey>SWCP_Provisions_Desc_74zSpeeder</provisionsDescKey> -->
@@ -99,6 +132,31 @@
                 <!-- <provisionsRestockInDays>30</provisionsRestockInDays> -->
             <!-- </li> -->
         </provisionOptions>
+		
+		
+	<!-- Exclusive Trader Options -->
+
+        <exclusiveTraderIsEnabled>true</exclusiveTraderIsEnabled>
+        <exclusiveTraderLabelKey>SWCP_ExclusiveTrader_Label</exclusiveTraderLabelKey>
+        <exclusiveTraderDescKey>SWCP_ExclusiveTrader_Desc</exclusiveTraderDescKey>
+        <exclusiveTraderButtonIconTexPath>UI/Icons/exclusivetrader</exclusiveTraderButtonIconTexPath>
+		
+        <exclusiveTraderKind>SWCP_GCWBaseTraderKind_ScumStarfighterDealer</exclusiveTraderKind>
+        <exclusiveTraderRefreshInDays>7</exclusiveTraderRefreshInDays>
+		
+        <exclusiveTraderRequiredGoodwill>75</exclusiveTraderRequiredGoodwill>
+        <exclusiveTraderRequiredTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</exclusiveTraderRequiredTitle>
+        <exclusiveTraderRequirementsNotMetKey>SWCP_ExclusiveTrader_RequirementsNotMet</exclusiveTraderRequirementsNotMetKey>
+	
+	<!-- Tax Collector Options -->
+
+        <taxCollectorIsEnabled>true</taxCollectorIsEnabled>
+        <taxCollectorLabelKey>SWCP_TaxCollector_Label</taxCollectorLabelKey>
+        <taxCollectorDescKey>SWCP_TaxCollector_Desc</taxCollectorDescKey>
+        <taxCollectorButtonIconTexPath>UI/Icons/taxcollector</taxCollectorButtonIconTexPath>
+		
+        <taxCollectorTraderKind>SWCPTrader_TaxCollector_ZsinjDominion</taxCollectorTraderKind>
+        <taxCollectorRefreshInDays>7</taxCollectorRefreshInDays>
 
     <!-- Storage Options -->
 
@@ -114,14 +172,14 @@
             <li>
                 <workLabelKey>SWCP_Part_Time_Job_Label</workLabelKey>
                 <workDescKey>SWCP_Part_Time_Job_Desc_imp</workDescKey>
-                <workButtonIconTexPath>Items/Credits/credits_b</workButtonIconTexPath>
+                <workButtonIconTexPath>UI/Icons/work</workButtonIconTexPath>
                 <additionalRestFall>0.45</additionalRestFall>
                 <silverGainPerHour>10</silverGainPerHour>
             </li>
             <li>
                 <workLabelKey>SWCP_Hospital_Label</workLabelKey>
                 <workDescKey>SWCP_Hospital_Desc</workDescKey>
-                <workButtonIconTexPath>Items/Medkits/medkit_a</workButtonIconTexPath>
+                <workButtonIconTexPath>UI/Icons/hospital</workButtonIconTexPath>
                 <additionalRestFall>0.25</additionalRestFall>
                 <tendCaravanMembersEveryTicks>1200</tendCaravanMembersEveryTicks>
                 <medicinesToTend>
@@ -158,10 +216,53 @@
                 <additionalRestFall>0.3</additionalRestFall>
             </li>
         </workOptions>
+		
+		
+		
+		
+		
+	 <!-- Ability Training Options -->
 
-    <!-- Bounty Options -->
+        <abilityTrainingIsEnabled>true</abilityTrainingIsEnabled>
+        <abilityTrainingLabelKey>SWCP_AbilityTraining_Label</abilityTrainingLabelKey>
+        <abilityTrainingDescKey>SWCP_AbilityTraining_Desc</abilityTrainingDescKey>
+		
+		<abilityTrainingCompleteLetterTitleKey>SWCP_AbilityTrainingCompleted_LetterTitle</abilityTrainingCompleteLetterTitleKey>
+        <abilityTrainingCompleteLetterLabelKey>SWCP_AbilityTrainingCompleted_Desc</abilityTrainingCompleteLetterLabelKey>
+        <abilityTrainingButtonIconTexPath>UI/FeatIcons/KotORII_Feat_Mentor</abilityTrainingButtonIconTexPath>
+		
+        <abilityTrainingOptions>
+            <li>
+                <labelKey>SWCP_AbilityTraining_CommandTierVI_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_CommandTierVI_Desc</descKey>
+                <iconTexPath>UI/TierIcons/CommandTier_VI</iconTexPath>
+				
+				<abilityDef>guy762_Ability_CommandTierVI</abilityDef>
+				<!-- <hediffDef></hediffDef> -->
+				<!-- <traitDef></traitDef><traitDegree>0</traitDegree> -->
+				
+                <trainingDurationDays>15</trainingDurationDays>
+            </li>
+        </abilityTrainingOptions>
+		
+		
 
-        <turnInIsEnabled>true</turnInIsEnabled>
+    <!-- Bounty Hunter Options -->
+
+        <bountyHunterIsEnabled>true</bountyHunterIsEnabled>
+        <bountyHunterLabelKey>SWCP_Turn_In_Label</bountyHunterLabelKey>
+        <bountyHunterDescKey>SWCP_Turn_In_Desc</bountyHunterDescKey>
+        <bountyHunterButtonIconTexPath>UI/Icons/bountyhunter</bountyHunterButtonIconTexPath>
+		
+        <bountyHunterTraderKind>guy762_TraderKind_PrisonerExchange_zsinj</bountyHunterTraderKind>
+		
+        <bountyHunterThought>SWCP_Thought_PrisonerTurnedIn_imperial</bountyHunterThought>
+        <bountyHunterRefreshSilverInDays>7</bountyHunterRefreshSilverInDays>
+        <bountyHunterTraderNameKey>SWCP_Turn_In_Trader_Name</bountyHunterTraderNameKey>
+		
+	<!-- Prisoner Turn-In Options -->	
+	
+		<turnInIsEnabled>true</turnInIsEnabled>
         <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
         <turnInDescKey>SWCP_Turn_In_Desc</turnInDescKey>
         <turnInButtonIconTexPath>UI/Icons/rebel</turnInButtonIconTexPath>

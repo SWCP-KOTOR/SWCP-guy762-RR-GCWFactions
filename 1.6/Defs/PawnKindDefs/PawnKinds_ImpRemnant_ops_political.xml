@@ -4,7 +4,8 @@
 	<PawnKindDef Name="SWImpRemnant_Base" Abstract="True">
 		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
 		<race>Human</race>
-
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<!-- <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality> -->
 		<!-- <backstoryFiltersOverride> -->
 			<!-- <li> -->
@@ -316,11 +317,11 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>350~1050</weaponMoney>
+		<weaponMoney>550</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RK3pistol</li>
+			<!-- <li>SWRanged_RK3pistol</li> -->
 			<li>SWRanged_DH17pistol</li>
-			<li>SWRanged_Power5pistol</li>
+			<!-- <li>SWRanged_Power5pistol</li> -->
 		</weaponTags>
 
 		<!-- <skills> -->
@@ -745,7 +746,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.9</biocodeWeaponChance>
-		<weaponMoney>350~500</weaponMoney>
+		<weaponMoney>650</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
@@ -842,7 +843,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350</weaponMoney>
+		<weaponMoney>650~1500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
@@ -952,7 +953,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350</weaponMoney>
+		<weaponMoney>650~1500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
@@ -1041,7 +1042,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350</weaponMoney>
+		<weaponMoney>650~1500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>

@@ -192,9 +192,9 @@
 		</apparelRequired>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>350~500</weaponMoney>
+		<weaponMoney>400</weaponMoney>
 		<weaponTags>
-			<li>SWRanged_RK3pistol</li>
+			<!-- <li>SWRanged_RK3pistol</li> -->
 			<li>SWRanged_SE14pistol</li>
 		</weaponTags>
 
@@ -530,7 +530,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.9</biocodeWeaponChance>
-		<weaponMoney>350~500</weaponMoney>
+		<weaponMoney>650</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
@@ -626,7 +626,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0.9</biocodeWeaponChance>
-		<weaponMoney>350~500</weaponMoney>
+		<weaponMoney>650~1500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
@@ -725,7 +725,7 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>1</biocodeWeaponChance>
-		<weaponMoney>350</weaponMoney>
+		<weaponMoney>650~1500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>

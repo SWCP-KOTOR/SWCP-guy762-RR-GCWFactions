@@ -14,7 +14,7 @@
 		</graphicData>
 		<soundInteract>kotorsound_select_pistol</soundInteract>
 		<statBases>
-			<MarketValue>350</MarketValue>
+			<MarketValue>650</MarketValue>
 			<Mass>1</Mass>
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
@@ -59,6 +59,23 @@
 				<soundCast>kotorsound_empirepistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+			<li>
+				<label>stun ray</label>
+				<commandIcon>Weapons/Projectiles/setforSTUN</commandIcon>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>KotORknockoutBolt</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<defaultCooldownTime>8</defaultCooldownTime>
+				<range>20</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>kotorsound_stun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				
+				<violent>false</violent>
 			</li>
 		</verbs>
 		<tools>

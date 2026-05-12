@@ -193,7 +193,7 @@
 				<defaultProjectile>KotORBlasterBolt_heavy</defaultProjectile>
 				<warmupTime>5</warmupTime>
 				<defaultCooldownTime>6</defaultCooldownTime>
-				<range>30</range>
+				<range>40</range>
 				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<!--soundAiming>kotorsound_powercharge</soundAiming-->

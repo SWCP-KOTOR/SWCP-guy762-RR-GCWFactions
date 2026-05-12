@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabExterior_WalkerWreckageCluster</defName>
+		<rotations>North</rotations>
+		<size>(17,25)</size>
+		<things>
+		  <guy762_ShipChunk_ATST>
+			<chance>1</chance>
+			<positions>
+			  <li>(3, 0, 3)</li>
+			  <li>(10, 0, 3)</li>
+			  <li>(3, 0, 8)</li>
+			  <li>(10, 0, 8)</li>
+			  <li>(3, 0, 13)</li>
+			  <li>(10, 0, 13)</li>
+			  <li>(3, 0, 18)</li>
+			  <li>(10, 0, 18)</li>
+			</positions>
+		  </guy762_ShipChunk_ATST>
+		  <AncientTankTrap>
+			<chance>0.85</chance>
+			<positions>
+			  <li>(9, 0, 0)</li>
+			  <li>(15, 0, 11)</li>
+			  <li>(6, 0, 21)</li>
+			  <li>(14, 0, 21)</li>
+			  <li>(0, 0, 23)</li>
+			</positions>
+		  </AncientTankTrap>
+		</things>
+	</PrefabDef>
+	
+</Defs>

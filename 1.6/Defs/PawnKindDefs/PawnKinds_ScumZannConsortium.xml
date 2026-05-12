@@ -10,6 +10,7 @@
 		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
 		
 		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<invNutrition>1</invNutrition>
 		<invFoodDef>MealSurvivalPack</invFoodDef>

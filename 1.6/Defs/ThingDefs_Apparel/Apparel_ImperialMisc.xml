@@ -231,7 +231,9 @@
 		  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 		  <ArmorRating_Heat>0.2</ArmorRating_Heat>
-		  <JumpRange>30</JumpRange>
+		  
+		  <!-- <JumpRange>30</JumpRange> -->
+		  <JumpRange>60</JumpRange>
 		  
 		  <WorkToMake>30000</WorkToMake>
 		</statBases>
@@ -297,11 +299,15 @@
 		</tradeTags>
 		<verbs>
 			<li>
-				<verbClass>Verb_Jump</verbClass>
 				<label>jump</label>
+				<commandIcon>UI/Icons/Jetpack_jump_alt</commandIcon>
+				<verbClass>Verb_Jump</verbClass>
 				<violent>false</violent>
 				<hasStandardCommand>true</hasStandardCommand>
-				<onlyManualCast>True</onlyManualCast>
+				
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<onlyManualCast>False</onlyManualCast>
+				
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>0.5</warmupTime>
 				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
@@ -313,7 +319,6 @@
 					<canTargetPawns>false</canTargetPawns>
 					<canTargetBuildings>false</canTargetBuildings>
 				</targetParams>
-
 			</li>
 		</verbs>
 		<comps>
@@ -324,7 +329,7 @@
 			<chargeNoun>jump</chargeNoun>
 			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 			<replenishAfterCooldown>true</replenishAfterCooldown>
-			<baseReloadTicks>1800</baseReloadTicks>
+			<baseReloadTicks>2400</baseReloadTicks>
 		  </li>
 		  <li Class="CompProperties_Explosive">
 				<explosiveRadius>3</explosiveRadius>

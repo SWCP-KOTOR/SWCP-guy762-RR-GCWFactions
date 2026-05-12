@@ -7,7 +7,9 @@
 		<label>Zsinj's Dominion supply officer</label>
 		<!-- <orbital>true</orbital> -->
 		<faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+		
 		<permitRequiredForTrading>TradeSettlement</permitRequiredForTrading>
+		
 		<!-- <commonalityMultFromPopulationIntent> -->
 		  <!-- <points> -->
 			<!-- <li>(0.2, 0)</li> -->

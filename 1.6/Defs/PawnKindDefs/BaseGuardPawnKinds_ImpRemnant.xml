@@ -11,7 +11,8 @@
 		<maxPerGroup>35</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags Inherit="False">
-			<li>SWRanged_E22rifle</li>
+			<!-- <li>SWRanged_E22rifle</li> -->
+			<li>SWRanged_E10rifle</li>
 		</weaponTags>
 		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		

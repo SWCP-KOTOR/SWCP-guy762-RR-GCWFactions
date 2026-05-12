@@ -61,7 +61,7 @@
 				<defaultProjectile>SWProj_GrenadeLauncherProtonGrenade</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<defaultCooldownTime>6</defaultCooldownTime>
-				<range>30</range>
+				<range>40</range>
 				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
 				<!--soundAiming>kotorsound_powercharge</soundAiming-->

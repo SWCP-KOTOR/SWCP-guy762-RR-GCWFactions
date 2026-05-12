@@ -12,7 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<descriptionHyperlinks>
-			<AbilityDef>guy762_AbilityMandoGauntlet_flamethrower</AbilityDef>
+			<AbilityDef>guy762_AbilityGadget_flamethrower</AbilityDef>
 		</descriptionHyperlinks>
 		
 		<soundInteract>kotorsound_select_ion</soundInteract>
@@ -68,7 +68,7 @@
 			</tags>
 			
 			<abilities>
-				<li>guy762_AbilityMandoGauntlet_flamethrower</li>
+				<li>guy762_AbilityGadget_flamethrower</li>
 			</abilities>
 		</apparel>
 
@@ -78,7 +78,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_AIConcRocket</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>1</warmupTime>
 				<defaultCooldownTime>3</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -118,37 +118,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	
-	
-	<AbilityDef>
-		<defName>guy762_AbilityMandoGauntlet_flamethrower</defName>
-		<label>flamethrower</label>
-		<description>Spew a burst of flame over a short area.</description>
-		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
-		<iconPath>UI/Fire</iconPath>
-		<aiCanUse>true</aiCanUse>
-		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
-		<showOnCharacterCard>false</showOnCharacterCard>
-		<cooldownTicksRange>2400</cooldownTicksRange>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<range>5</range>
-			<warmupTime>1</warmupTime>
-			<soundCast>kotorsound_flamethrower</soundCast>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-		</verbProperties>
-		<comps>
-			<li Class="CompProperties_AbilityFireSpew">
-				<range>5</range>
-				<lineWidthEnd>3</lineWidthEnd>
-				<filthDef>Filth_FlammableBile</filthDef>
-				<effecterDef>Fire_Spew</effecterDef>
-				<canHitFilledCells>true</canHitFilledCells>
-			</li>
-		</comps>
-	</AbilityDef>
+
 	
 	
 	
@@ -169,7 +139,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<descriptionHyperlinks>
-			<AbilityDef>guy762_AbilityMandoGauntlet_snipershot</AbilityDef>
+			<AbilityDef>guy762_AbilityGadget_snipershot</AbilityDef>
 		</descriptionHyperlinks>
 		
 		<soundInteract>kotorsound_select_ion</soundInteract>
@@ -225,7 +195,7 @@
 			</tags>
 			
 			<abilities>
-				<li>guy762_AbilityMandoGauntlet_snipershot</li>
+				<li>guy762_AbilityGadget_snipershot</li>
 			</abilities>
 		</apparel>
 
@@ -234,11 +204,11 @@
 			<li>
 				<label>homing AA/AV missile</label>
 				<commandIcon>UI/targetlock</commandIcon>
-				<verbClass>Verb_Shoot</verbClass><!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_light</defaultProjectile>
-				<warmupTime>4</warmupTime>
-				<defaultCooldownTime>12</defaultCooldownTime>
+				<warmupTime>4</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
+				<defaultCooldownTime>6</defaultCooldownTime>
 				<range>40</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
@@ -280,34 +250,7 @@
 			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 	</ThingDef>
-	
-	
-	
-	<AbilityDef>
-		<defName>guy762_AbilityMandoGauntlet_snipershot</defName>
-		<label>sniper shot</label>
-		<description>Fire a single bolt with increased armor penetration and perfect accuracy (unless the target successfully dodges).</description>
-		<!-- <iconPath>Items/droidweapon/droidweapon_flame</iconPath> -->
-		<iconPath>UI/Sniper_Shot</iconPath>
-		<aiCanUse>true</aiCanUse>
-		<!-- <warmupStartSound>Interact_Shotgun</warmupStartSound> -->
-		<showOnCharacterCard>false</showOnCharacterCard>
-		<cooldownTicksRange>90</cooldownTicksRange>
-		<verbProperties>
-			<verbClass>Verb_CastAbility</verbClass>
-			<range>30</range>
-			<warmupTime>1</warmupTime>
-			<soundCast>kotorsound_sniper</soundCast>
-			<!-- <targetParams> -->
-				<!-- <canTargetLocations>true</canTargetLocations> -->
-			<!-- </targetParams> -->
-		</verbProperties>
-		<comps>
-			<li Class="CompProperties_AbilityLaunchProjectile">
-				<projectileDef>SWProj_BlasterBoltSniper</projectileDef>
-			</li>
-		</comps>
-	</AbilityDef>
+
 	
 	
   

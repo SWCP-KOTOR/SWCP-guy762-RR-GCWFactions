@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="xpSWZsinj_ArmyTrooper_playable" ParentName="SWZsinj_ArmyTrooper">
+		<defName>xpSWZsinj_ArmyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWZsinj_Raptor_playable" ParentName="SWZsinj_Raptor">
+		<defName>xpSWZsinj_Raptor_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWMando_merc_playable" ParentName="SWMando_merc">
+		<defName>xpSWMando_merc_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWMando_protector_playable" ParentName="SWMando_protector">
+		<defName>xpSWMando_protector_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWMando_commando_playable" ParentName="SWMando_commando">
+		<defName>xpSWMando_commando_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+</Defs>

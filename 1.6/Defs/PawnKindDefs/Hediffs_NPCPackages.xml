@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="SWCPNPCPackageHediff_AbilityGiverMandoCommando" ParentName="SWCPHediff_NPCPackageBASE">
+		<defName>SWCPNPCPackageHediff_AbilityGiverMandoCommando</defName>
+		<label>NPC Package: Mandalorian Commando missile abilities</label>
+		<description>This is a debug hediff that gives single-use debug abilities that mimic the missile launching verbs of Mandalorian jetpacks and wrist gauntlets, since the AI won't use them by default, and it's frankly more effort than it's worth to make the AI able to do so when I can instead just use this. Also disables various needs.\n\nThis hediff will be removed if the pawn is downed or killed.</description>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<disablesNeeds>
+					<li>Food</li>
+					<li>Rest</li>
+					
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>DrugDesire</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		
+		<abilities>
+			<li>guy762_AbilityGadget_protonmissile_light_NPCversion</li>
+			<li>guy762_AbilityGadget_protonmissile_heavy_NPCversion</li>
+			<!-- <li>guy762_AbilityGadget_concussionrocket_NPCversion</li> -->
+		</abilities>
+	</HediffDef>
+
+
+	
+
+</Defs>

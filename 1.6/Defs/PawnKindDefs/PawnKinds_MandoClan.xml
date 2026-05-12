@@ -8,6 +8,7 @@
 		<minGenerationAge>14</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge>
 		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
 		
 		<chemicalAddictionChance>0.15</chemicalAddictionChance>
@@ -69,98 +70,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWMando_protector" ParentName="SWMandoBase">
-		<defName>SWMando_protector</defName>
-		<label>Mandalorian Protector</label>
-		<combatPower>125</combatPower>
-		<minGenerationAge>24</minGenerationAge>
-		<maxGenerationAge>55</maxGenerationAge>
-		
-		<itemQuality>Normal</itemQuality>
-		<!-- <gearHealthRange>0.7~2.3</gearHealthRange> -->
-		<apparelMoney>14000~17000</apparelMoney>
-		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
-		<apparelTags>
-			<li>KotORUtility_weakgrenade</li>
-			<li>KotORUtility_utilitygrenade</li>
-			<li>SWGCWGadget_AnyMandoGauntlet</li>
-			
-			<li>SWCPSpecificApparelItem_PlainPoncho</li>
-			<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
-			<li>SWGCWSpecificApparelItem_MandoArmor</li>
-			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
-		</apparelTags>
-		<apparelRequired Inherit="False">
-			<li>guy762_MandoGCWHelmet</li>
-			<li>guy762_MandoGCWArmor_battle</li>
-			<li>guy762_Bodysuit_Dyeable</li>
-		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Shell</apparelLayer>   <!-- khaki -->
-				<color>(130,125,105)</color>
-			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer> <!-- darker grey -->
-				<color>(125,125,125)</color>
-			</li>
-		</specificApparelRequirements>
-		
-		<weaponMoney>1500~4000</weaponMoney>
-		<weaponTags>
-			<li>SWRanged_EE3carbine</li>
-			<li>SWRanged_E5Crifle</li>
-			<li>SWRanged_A280Crifle</li>
-			<li>SWRanged_BK43repeater</li>
-			<li>SWRanged_DXR4DisruptorRifle</li>
-		</weaponTags>
-		
-		<techHediffsMoney>250~750</techHediffsMoney>
-		<techHediffsChance>1</techHediffsChance>
-		<techHediffsTags>
-			<li>Spacer</li>
-			<li>Advanced</li>
-			<li>AdvancedWeapon</li>
-		</techHediffsTags>
-		
-		<inventoryOptions>
-			<skipChance>0.25</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>guy762_medpac</thingDef>
-					<countRange>1~3</countRange>
-				</li>
-				<li>
-				  <thingDef>guy762_stim_battle</thingDef>
-				  <countRange>1~2</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-		
-		<initialWillRange>5~10</initialWillRange>
-		<initialResistanceRange>10~20</initialResistanceRange>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		
-		<modExtensions>
-			<li Class="BigAndSmall.Flagger">
-				<flags> <guy762AltTag_MandoProtector/></flags>
-			</li>
-			
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>10~12</range>
-					</li>
-					<li>
-						<skill>Melee</skill>
-						<range>8~10</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
+	
 	
 	
 	
@@ -229,9 +139,11 @@
 			<!-- </li> -->
 		</specificApparelRequirements>
 		
-		<weaponMoney>2100</weaponMoney>
+		<weaponMoney>2100~5500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_GALAAR15carbine</li>
+			<li>SWRanged_RelbyMortar</li>
+			<li>SWRanged_EE3carbine</li>
 		</weaponTags>
 		
 		<techHediffsMoney>250~750</techHediffsMoney>
@@ -283,7 +195,97 @@
 	
 	
 	
-	
+	<PawnKindDef Name="SWMando_protector" ParentName="SWMandoBase">
+		<defName>SWMando_protector</defName>
+		<label>Mandalorian Protector</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>24</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>14000~17000</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>SWGCWGadget_AnyMandoGauntlet</li>
+			
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_MandoArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MandoGCWHelmet_rangefinder</li>
+			<li>guy762_MandoGCWArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>   <!-- khaki -->
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer> <!-- darker grey -->
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>1500~4000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_E22rifle</li>
+			<li>SWRanged_E5Crifle</li>
+			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_BK43repeater</li>
+			<li>SWRanged_DXR4DisruptorRifle</li>
+		</weaponTags>
+		
+		<techHediffsMoney>250~750</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_MandoProtector/></flags>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -295,7 +297,7 @@
 		<minGenerationAge>25</minGenerationAge>
 		<maxGenerationAge>55</maxGenerationAge>
 		
-		<itemQuality>Normal</itemQuality>
+		<itemQuality>Good</itemQuality>
 		<apparelMoney>14000~17000</apparelMoney>
 		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
 		<apparelTags>
@@ -364,7 +366,11 @@
 		<initialResistanceRange>10~20</initialResistanceRange>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_AbilityGiverMandoCommando</def><chance>1</chance></li>
+		</startingHediffs>
 		<modExtensions Inherit="False">
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.Flagger">
 				<flags> <guy762AltTag_MandoGCWDefault/></flags>
 			</li>

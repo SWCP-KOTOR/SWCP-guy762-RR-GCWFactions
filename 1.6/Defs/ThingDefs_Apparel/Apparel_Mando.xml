@@ -695,7 +695,8 @@
 		  <AccuracyMedium>0.20</AccuracyMedium>
 		  <AccuracyLong>0.10</AccuracyLong>
 		  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-		  <JumpRange>30</JumpRange>
+		  
+		  <!-- <JumpRange>30</JumpRange> -->
 		  
 		  <WorkToMake>40000</WorkToMake>
 		</statBases>
@@ -800,24 +801,24 @@
 			<li>guy762TT_GCWArmor_MandoSurplus</li>
 		</tradeTags>
 		<verbs>
-			<li>
-				<verbClass>Verb_Jump</verbClass>
-				<label>jump</label>
-				<violent>false</violent>
-				<hasStandardCommand>true</hasStandardCommand>
-				<onlyManualCast>True</onlyManualCast>
-				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>0.5</warmupTime>
-				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
-				<requireLineOfSight>true</requireLineOfSight>
-				<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-				<soundLanding>JumpPackLand</soundLanding>
-				<targetParams>
-				  <canTargetLocations>true</canTargetLocations>
-				  <canTargetPawns>false</canTargetPawns>
-				  <canTargetBuildings>false</canTargetBuildings>
-				</targetParams>
-			</li>
+			<!-- <li> -->
+				<!-- <verbClass>Verb_Jump</verbClass> -->
+				<!-- <label>jump</label> -->
+				<!-- <violent>false</violent> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<!-- <forceNormalTimeSpeed>false</forceNormalTimeSpeed> -->
+				<!-- <warmupTime>0.5</warmupTime> -->
+				<!-- <warmupEffecter>JumpWarmupEffect</warmupEffecter> -->
+				<!-- <requireLineOfSight>true</requireLineOfSight> -->
+				<!-- <flightEffecterDef>JumpFlightEffect</flightEffecterDef> -->
+				<!-- <soundLanding>JumpPackLand</soundLanding> -->
+				<!-- <targetParams> -->
+				  <!-- <canTargetLocations>true</canTargetLocations> -->
+				  <!-- <canTargetPawns>false</canTargetPawns> -->
+				  <!-- <canTargetBuildings>false</canTargetBuildings> -->
+				<!-- </targetParams> -->
+			<!-- </li> -->
 		  
 			<!-- <li Class="VerbShootVehicle.VerbPropertiesAntiVehicle"> -->
 			<li>
@@ -826,9 +827,9 @@
 				<verbClass>Verb_Shoot</verbClass><!-- <verbClass>VerbShootVehicle.Verb_ShootAntiVehicle</verbClass> -->
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SWProj_SmallArmsAssaultProtonMissile_heavy</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>3</warmupTime><soundAiming>kotorsound_JKdetpack_warningSustainer</soundAiming>
 				<defaultCooldownTime>6</defaultCooldownTime>
-				<range>40</range>
+				<range>60</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>kotorsound_JKrocket_alt</soundCast>
@@ -853,19 +854,37 @@
 			
 		</verbs>
 		<comps>
-			<li Class="CompProperties_ApparelReloadable"> <!-- no ammo because using the jump feature also counts as using a charge -->
-				<maxCharges>1</maxCharges>
-				<soundReload>Standard_Reload</soundReload>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>jump</chargeNoun>
-				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-				<replenishAfterCooldown>true</replenishAfterCooldown>
-				<baseReloadTicks>1800</baseReloadTicks>
-			</li>
+			<!-- ORIGINAL AMMO-LESS VERSION -->
+			<!-- <li Class="CompProperties_ApparelReloadable"> -->
+				<!-- <maxCharges>1</maxCharges> -->
+				<!-- <soundReload>Standard_Reload</soundReload> -->
+				<!-- <hotKey>Misc4</hotKey> -->
+				<!-- <chargeNoun>jump</chargeNoun> -->
+				<!-- <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted> -->
+				<!-- <replenishAfterCooldown>true</replenishAfterCooldown> -->
+				<!-- <baseReloadTicks>1800</baseReloadTicks> -->
+			<!-- </li> -->
+			
+			
+			<li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>missile</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+            </li>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>3</explosiveRadius>
 				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
 				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+			
+			<li Class="Jetpack.CompProperties_AddHediff_Apparel">
+				<hediff>SWCP_Jetpack</hediff>
+				<part>Torso</part>
 			</li>
 		</comps>
 		
