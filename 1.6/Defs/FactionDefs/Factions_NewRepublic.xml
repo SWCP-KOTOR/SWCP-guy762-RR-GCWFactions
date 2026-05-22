@@ -38,7 +38,7 @@
 		
 		
 		
-		<settlementNameMaker>guy762_NamerSettlement_GenericFleetBaseName</settlementNameMaker>
+		<settlementNameMaker>guy762_NamerSettlement_NewRepublic</settlementNameMaker>
 		<leaderTitle>general</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
@@ -788,7 +788,25 @@
     </rulePack>
   </RulePackDef>
   
-  
+  <RulePackDef>
+    <defName>guy762_NamerSettlement_NewRepublic</defName>
+    <include>
+		<li>guy762_NamerFactionFiles_GenericFleetName</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<li>r_name(p=12)->[checkpoint] [SWSN_Aurebesh]-NR[SWSN_Digit]</li>
+		<li>r_name(p=9)->[outpost] [SWSN_Aurebesh]-NR[SWSN_Digit]</li>
+		<li>r_name(p=6)->[camp] [SWSN_Aurebesh]-NR[SWSN_Digit]</li>
+		<li>r_name(p=3)->[depot] [SWSN_Aurebesh]-NR[SWSN_Digit]</li>
+		
+		<li>checkpoint->Checkpoint</li>
+		<li>outpost->Outpost</li>
+		<li>camp->Camp</li>
+		<li>depot->Depot</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
   
   
   

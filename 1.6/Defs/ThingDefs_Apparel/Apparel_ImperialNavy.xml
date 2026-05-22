@@ -161,9 +161,9 @@
 			<MarketValue>100</MarketValue>
 			
 			<MaxHitPoints>175</MaxHitPoints>
-      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+      		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		

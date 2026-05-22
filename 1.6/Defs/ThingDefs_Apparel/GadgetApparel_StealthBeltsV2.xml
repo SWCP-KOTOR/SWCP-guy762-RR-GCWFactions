@@ -75,7 +75,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>KOTOR_Research_cloaking</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_cloaking</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
@@ -91,6 +91,10 @@
 			<tags>
 				<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<tradeTags>
@@ -210,8 +214,8 @@
 	
 	<!-- <recipeMaker> -->
 		<!-- <researchPrerequisites> -->
-			<!-- <li>guy762_ResearchKotOR_exchange</li> -->
-			<!-- <li>KOTOR_Research_cloaking</li> -->
+			<!-- <li>SWCPResearch_PLACEHOLDER</li> -->
+			<!-- <li>SWCPResearch_cloaking</li> -->
 		<!-- </researchPrerequisites> -->
 		<!-- <skillRequirements> -->
 			<!-- <Crafting>14</Crafting> -->

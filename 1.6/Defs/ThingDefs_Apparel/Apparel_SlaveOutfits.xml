@@ -34,7 +34,7 @@
 			<DevilstrandCloth>40</DevilstrandCloth>
 		</costList>
 		<recipeMaker>
-			<!-- <researchPrerequisite>guy762_ResearchKotOR_visas</researchPrerequisite> -->
+			<!-- <researchPrerequisite>SWCPResearch_visas</researchPrerequisite> -->
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -193,7 +193,7 @@
 	
 	<ThingDef ParentName="KotORArmorModdable_soft">
 		<defName>guy762_SlaveOutfit_KotORII</defName>
-		<label>dancer's outfit, historic</label>
+		<label>dancer's outfit, antique</label>
 		<description>.\n\nDeveloper's Note: this outfit was drawn to be compatible with the "Malang Bodies" mod.\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2838181007</description>
 		<graphicData>
 		  <texPath>SWApparel/SlaveOutfits/KotOR2/Apparel</texPath>
@@ -261,8 +261,8 @@
 				<li>SWCPSpecificApparelItem_KotOR2DancerOutfit</li>
 			</tags>
 			<defaultOutfitTags>
-				<!-- <li>SWCPOutfitTag_Civilian</li> -->
-				<li>SWCPOutfitTag_Slave</li><li>Slave</li>
+				<li>Slave</li>
+				<li>SWCPOutfitTag_Slave</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>

@@ -4,7 +4,7 @@
 	<AbilityDef>
 		<defName>guy762_AbilityGadget_concussionrocket_NPCversion</defName>
 		<label>concussion rocket</label>
-		<description>Fire a homing proton missile, effective against air and vehicular targets.</description>
+		<description>Fire a concussion rocket, effective against infantry and structural targets.</description>
 		<iconPath>Items/Rockets/rocket_conc/rocket_conc_a</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<showOnCharacterCard>false</showOnCharacterCard>

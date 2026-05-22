@@ -31,12 +31,16 @@
         <linkWithSite>SWCP_Site_SettlementRaidInProgress</linkWithSite>
         <order>450</order>
         <genStep Class="FCP.Core.RadiantQuests.GenStep_SettlementScaleable">
-            <settlementSizeMin>15</settlementSizeMin>
-            <settlementSizeMax>20</settlementSizeMax>
-            <generateLoot>false</generateLoot>
+            <!-- <settlementSizeMin>15</settlementSizeMin> -->
+            <!-- <settlementSizeMax>20</settlementSizeMax> -->
+			<settlementSizeMin>75</settlementSizeMin>
+            <settlementSizeMax>100</settlementSizeMax>
+            <!-- <generateLoot>false</generateLoot> -->
+            <generateLoot>true</generateLoot>
             <count>1</count>
             <nearMapCenter>true</nearMapCenter>
-            <generatePawns>false</generatePawns>
+            <!-- <generatePawns>false</generatePawns> -->
+            <generatePawns>true</generatePawns>
             <clearBuildingFaction>true</clearBuildingFaction>
         </genStep>
     </GenStepDef>

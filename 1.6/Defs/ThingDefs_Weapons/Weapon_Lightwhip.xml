@@ -37,7 +37,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-		  <researchPrerequisite>guy762_ResearchKotOR_advsabers</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		  <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
 		  <skillRequirements>
 			<Melee>16</Melee>

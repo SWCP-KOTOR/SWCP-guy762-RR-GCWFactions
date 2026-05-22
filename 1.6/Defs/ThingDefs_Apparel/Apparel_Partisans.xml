@@ -40,9 +40,9 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_Mask</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <renderSkipFlags>
+			<wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_Mask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
 				<li>Hair</li>
 				<li>Beard</li>
 			</renderSkipFlags>
@@ -53,13 +53,9 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-		  <tags>
-			<li>PartisanAlliance_trooperheadwear</li>
-			<li>SWCPSpecificApparelItem_PartisanFlakHat</li>
-		  </tags>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -82,6 +78,18 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWCPSpecificApparelItem_PartisanFlakHat</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -155,25 +163,23 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_GogglesMask</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <renderSkipFlags>
+			<wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_GogglesMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderSkipFlags>
 				<li>Hair</li>
 				<li>Beard</li>
 			</renderSkipFlags>
 			<bodyPartGroups>
 				<li>UpperHead</li>
-				<li>Mouth</li>
-			</bodyPartGroups>
+			<li>Mouth</li>
+				</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
 			</layers>
-		  <tags>
-			<li>SWCPSpecificApparelItem_PartisanGogglesFlakHat</li>
-		  </tags>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-		  <!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
+			
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -196,6 +202,17 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>SWCPSpecificApparelItem_PartisanGogglesFlakHat</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -253,21 +270,17 @@
 			<Mass>2.5</Mass>
 			<MarketValue>100</MarketValue>
 			
-			<MaxHitPoints>115</MaxHitPoints>
-      		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.45</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
+			<MaxHitPoints>175</MaxHitPoints>
+      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>PartisanAlliance_trooperheadwear</li>
-				<li>SWGCWSpecificApparelItem_PartisanFleetTrooperHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Rebel/PartisanHelmets/PartisanFleetHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderSkipFlags>
@@ -308,6 +321,18 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWGCWSpecificApparelItem_PartisanFleetTrooperHelmet</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -371,10 +396,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>PartisanAlliance_trooperheadwear</li>
-				<li>SWGCWSpecificApparelItem_PartisanEndorTrooperHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Rebel/PartisanHelmets/PartisanEndorHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderSkipFlags>
@@ -415,6 +436,18 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>PartisanAlliance_trooperheadwear</li>
+				<li>SWGCWSpecificApparelItem_PartisanEndorTrooperHelmet</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -483,15 +516,8 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>PartisanAlliance_trooperarmor</li>
-			<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
-		  </tags>
 		  <wornGraphicPath>SWApparel/Rebel/noshoulder/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		  <layers Inherit="False">
 			<li>Middle</li>
 		  </layers>
@@ -527,6 +553,16 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>PartisanAlliance_trooperarmor</li>
+				<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -615,9 +651,6 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>SWGCWSpecificApparelItem_PartisanRangerDuster</li>
-			</tags>
 			<wornGraphicPath>SWApparel/RebelArmyDuster/ranger/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			
@@ -649,6 +682,15 @@
 					<drawData> <dataNorth> <layer>66</layer> </dataNorth> </drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_PartisanRangerDuster</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<tradeTags>
@@ -736,10 +778,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>SWGCWSpecificApparelItem_PartisanWarlordArmor</li>
-				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/PartisanWarlord/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -778,6 +816,15 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			<tags>
+				<li>SWGCWSpecificApparelItem_PartisanWarlordArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelHeavyInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWArmor_ExoticRare</li>

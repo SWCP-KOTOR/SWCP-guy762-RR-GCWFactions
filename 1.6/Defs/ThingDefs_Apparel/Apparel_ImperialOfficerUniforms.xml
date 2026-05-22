@@ -27,7 +27,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -90,7 +90,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -311,7 +311,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -389,7 +389,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -538,7 +538,10 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_ArmyLt</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerArmyLieutenant/></whitelist></triggerFlags>
+			<triggerFlags><whitelist>
+				<guy762AltTag_ImpOfficerArmyLieutenant/>
+				<guy762AltTag_ImpOfficerRebelDoubleAgentUniformPool/>
+			</whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialOfficer/armylieutenant/Apparel</li></texturePaths>
 			<colorA>
 				<apparelColorA>true</apparelColorA>
@@ -550,7 +553,10 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_NavyLt</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerNavyLieutenant/></whitelist></triggerFlags>
+			<triggerFlags><whitelist>
+				<guy762AltTag_ImpOfficerNavyLieutenant/>
+				<guy762AltTag_ImpOfficerRebelDoubleAgentUniformPool/>
+			</whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialOfficer/navylieutenant/Apparel</li></texturePaths>
 			<colorA>
 				<apparelColorA>true</apparelColorA>
@@ -562,7 +568,10 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_OpsLt</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerOpsLieutenant/></whitelist></triggerFlags>
+			<triggerFlags><whitelist>
+				<guy762AltTag_ImpOfficerOpsLieutenant/>
+				<guy762AltTag_ImpOfficerRebelDoubleAgentUniformPool/>
+			</whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialOfficer/operationslieutenant/Apparel</li></texturePaths>
 			<colorA>
 				<apparelColorA>true</apparelColorA>
@@ -598,7 +607,10 @@
 	<BigAndSmall.GraphicSetDef>
 		<defName>guy762_ImpArmyOfficerUniformLowRankCustomization_DepartmentCO</defName>
 		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_ImpOfficerDetachmentCO/></whitelist></triggerFlags>
+			<triggerFlags><whitelist>
+				<guy762AltTag_ImpOfficerDetachmentCO/>
+				<guy762AltTag_ImpOfficerRebelDoubleAgentUniformPool/>
+			</whitelist></triggerFlags>
 			<texturePaths><li>SWApparel/ImperialOfficer/departmentCO/Apparel</li></texturePaths>
 			<colorA>
 				<apparelColorA>true</apparelColorA>
@@ -655,7 +667,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -927,7 +939,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -1244,7 +1256,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>

@@ -41,6 +41,9 @@
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 		</forcedTraits>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>30~60</initialResistanceRange>
 
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -131,8 +134,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -244,8 +245,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -360,8 +359,7 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		
 		<modExtensions Inherit="False">
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 				<whitelist>
@@ -490,8 +488,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<abilities>
 			<li>MarksmanCommand</li>
@@ -989,8 +985,6 @@
 		<disallowedTraits>
 		  <li>ShootingAccuracy</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -1082,8 +1076,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -1216,8 +1208,9 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>60~90</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">

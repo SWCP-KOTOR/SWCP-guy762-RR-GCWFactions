@@ -24,15 +24,19 @@
 		</statBases>
 		<!--stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay-->
 		<apparel>
-		  <bodyPartGroups>
-			<!-- <li>Waist</li> -->
-			<li>Legs</li>
-		  </bodyPartGroups>
-		  <tags>
-			<li>SWShield_light</li>
-			<li>SWShield_any</li>
-			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
-		  </tags>
+			<bodyPartGroups>
+				<!-- <li>Waist</li> -->
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>SWShield_light</li>
+				<li>SWShield_any</li>
+				<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWGadgetEquipment_any</li>
@@ -298,15 +302,19 @@
 		</statBases>
 		<!--stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay-->
 		<apparel>
-		  <bodyPartGroups>
-			<!-- <li>Waist</li> -->
-			<li>Legs</li>
-		  </bodyPartGroups>
-		  <tags>
-			<li>SWShield_heavy</li>
-			<li>SWShield_any</li>
-			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
-		  </tags>
+			<bodyPartGroups>
+				<!-- <li>Waist</li> -->
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>SWShield_heavy</li>
+				<li>SWShield_any</li>
+				<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWGadgetEquipment_any</li>

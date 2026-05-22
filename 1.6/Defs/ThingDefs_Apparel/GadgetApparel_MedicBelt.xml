@@ -50,6 +50,12 @@
 			<li>SWMedicBelt</li>
 			<li>SWCPSpecificGadgetItem_MedicBelt</li>
 		</tags>
+		<defaultOutfitTags>	
+			<li>Worker</li>
+			<li>SWCPOutfitTag_Worker</li>
+			<li>Soldier</li>
+			<li>SWCPOutfitTag_AnyGadget</li>
+		</defaultOutfitTags>
 	  
 		<abilities>
 			<!-- <li>guy762_Ability_MedicBeltRevive</li> -->

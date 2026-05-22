@@ -22,7 +22,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_bluntmelee</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>

@@ -1518,7 +1518,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_AdvPhysiology</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>

@@ -37,7 +37,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberSingle"]</xpath>
 				<value>
-					<researchPrerequisite>guy762_ResearchKotOR_lightsabers</researchPrerequisite>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 					<workAmount>6000</workAmount>
 					<skillRequirements>
 						<Crafting>6</Crafting>
@@ -92,7 +92,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberCurved"]</xpath>
 				<value>
-					<researchPrerequisite>guy762_ResearchKotOR_lightsabers</researchPrerequisite>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 					<workAmount>10000</workAmount>
 					<skillRequirements>
 						<Melee>14</Melee>
@@ -151,7 +151,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberShoto"]</xpath>
 				<value>
-					<researchPrerequisite>guy762_ResearchKotOR_lightsabers</researchPrerequisite>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 					<workAmount>5000</workAmount>
 					<skillRequirements>
 						<Crafting>6</Crafting>
@@ -209,7 +209,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberDual"]</xpath>
 				<value>
-					<researchPrerequisite>guy762_ResearchKotOR_advsabers</researchPrerequisite>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 					<workAmount>12000</workAmount>
 					<skillRequirements>
 						<Crafting>8</Crafting>
@@ -266,7 +266,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Force_CraftLightsaberCrossguard"]</xpath>
 				<value>
-					<researchPrerequisite>guy762_ResearchKotOR_advsabers</researchPrerequisite>
+					<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 					<workAmount>14000</workAmount>
 					<skillRequirements>
 						<Melee>12</Melee>
@@ -342,7 +342,7 @@
 			<!-- <li Class="PatchOperationAdd"> -->
 				<!-- <xpath>Defs/RecipeDef[defName=""]</xpath> -->
 				<!-- <value> -->
-					<!-- <researchPrerequisite>guy762_ResearchKotOR_advsabers</researchPrerequisite> RECIPE FOR INQUISITOR LIGHTSABERS, NEEDS AN ACTUAL RECIPE AND PROBABLY INQUISITOR-EXCLUSIVE RESEARCH -->
+					<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> RECIPE FOR INQUISITOR LIGHTSABERS, NEEDS AN ACTUAL RECIPE AND PROBABLY INQUISITOR-EXCLUSIVE RESEARCH -->
 					<!-- <workAmount>14000</workAmount> -->
 					<!-- <skillRequirements> -->
 						<!-- <Crafting>16</Crafting> -->

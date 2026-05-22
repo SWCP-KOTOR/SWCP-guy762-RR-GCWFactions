@@ -227,6 +227,8 @@
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorBoss</li>
 			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_InquisitorGuards</li>
 			
+			<li>SWCPGenStep_FactionFortressGuards_ImpRemnant_rebeldoubleagents</li>
+			
 			
 			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_turretguards</li> -->
 			<!-- <li>SWCPGenStep_FactionFortressGuards_ImpRemnant_TIEFightersDefendingAVTurret</li> -->
@@ -322,6 +324,7 @@
 			<options>
 				<xSWImpRemnant_ArmyConscriptBaseGuard>75</xSWImpRemnant_ArmyConscriptBaseGuard>
 				<xSWImpRemnant_ArmyTrooperBeaconGuard>50</xSWImpRemnant_ArmyTrooperBeaconGuard>
+				<SWRebel_DoubleAgentImpOfficer>1</SWRebel_DoubleAgentImpOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -403,6 +406,25 @@
 			</beaconBuildingDefs>
 			<options>
 				<xSWImpRemnant_StormtrooperBaseGuard>100</xSWImpRemnant_StormtrooperBaseGuard>
+				<SWRebel_DoubleAgentImpOfficer>1</SWRebel_DoubleAgentImpOfficer>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_ImpRemnant_rebeldoubleagents</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			<defendRadius>100</defendRadius>
+			<pawnsPerBeacon>1</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCPBuilding_LargeCrateForHidingIn</li>
+			</beaconBuildingDefs>
+			<options>
+				<SWRebel_DoubleAgentImpOfficer>100</SWRebel_DoubleAgentImpOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>

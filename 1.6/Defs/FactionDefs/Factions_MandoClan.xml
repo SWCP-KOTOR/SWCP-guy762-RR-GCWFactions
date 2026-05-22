@@ -19,10 +19,10 @@
 		
 		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
 		<leaderTitle>Chieftan</leaderTitle>
-		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
-		<!-- <fixedLeaderKinds> -->
-			<!-- <li>KotORExchg_vigo</li> -->
-		<!-- </fixedLeaderKinds> -->
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<fixedLeaderKinds>
+			<li>SWMando_commando</li>
+		</fixedLeaderKinds>
 		
 		
 		

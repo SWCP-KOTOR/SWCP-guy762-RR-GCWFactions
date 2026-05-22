@@ -240,8 +240,8 @@
 		
 		<recipeMaker>
 		  <researchPrerequisites>
-			<li>KOTOR_Research_plasmaApplications</li>
-			<li>guy762_ResearchKotOR_mando</li>
+			<li>SWCPResearch_plasmaApplications</li>
+			<li>SWCPResearch_PLACEHOLDER</li>
 		  </researchPrerequisites>
 		  <skillRequirements>
 			<Crafting>16</Crafting>
@@ -1381,7 +1381,7 @@
 			<!--VPE_Eltex>3</VPE_Eltex> added by patch -->
 		  </costList>
 		  <recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 			  <Crafting>12</Crafting>
 			</skillRequirements>

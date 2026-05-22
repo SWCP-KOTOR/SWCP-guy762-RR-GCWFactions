@@ -32,7 +32,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -42,16 +42,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RebelAlliance_lowrankofficer</li>
-			<li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyRebelOfficerUniform</li>
-		  </tags>
 		  <wornGraphicPath>SWApparel/RebelOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -77,6 +69,16 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>RebelAlliance_lowrankofficer</li>
+				<li>SWGCWSpecificApparelItem_LowRankRebelOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyRebelOfficerUniform</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<!-- <randomStyleChance>1</randomStyleChance> -->
@@ -223,11 +225,6 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>NewRepublic_ArmyOfficer</li>
-				<li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
-				<li>SWGCWRoyaltyTag_AnyHighRankingRebelOfficerUniform</li>
-			</tags>
 			<wornGraphicPath>SWApparel/RebelArmyDuster/general/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			
@@ -255,6 +252,16 @@
 					<drawData> <dataNorth> <layer>66</layer> </dataNorth> </drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>NewRepublic_ArmyOfficer</li>
+				<li>SWGCWSpecificApparelItem_HighRankRebelArmyOfficerDuster</li>
+				<li>SWGCWRoyaltyTag_AnyHighRankingRebelOfficerUniform</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<!-- <randomStyleChance>1</randomStyleChance> -->

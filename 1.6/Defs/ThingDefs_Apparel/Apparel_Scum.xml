@@ -27,7 +27,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -39,10 +39,6 @@
 		</costList>
 		
 		<apparel>
-			<tags>
-				<li>HuttKajidics_tantelarmor</li>
-				<li>SWGCWSpecificApparelItem_TantelHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Helmets/CombatHelmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -75,6 +71,15 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>HuttKajidics_tantelarmor</li>
+				<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<tradeTags>
@@ -136,7 +141,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_hutts</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -156,10 +161,6 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>HuttKajidics_tantelarmor</li>
-				<li>SWGCWSpecificApparelItem_TantelArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/TantelArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			
@@ -185,6 +186,15 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>HuttKajidics_tantelarmor</li>
+				<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -262,11 +272,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>SaV_outfit_JKWeequay</li>
-				<li>SaV_outfit_weakmerc</li>
-				<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
-			</tags>
 			<wornGraphicPath>SWApparel/JAWeequay/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -301,6 +306,16 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>SaV_outfit_JKWeequay</li>
+				<li>SaV_outfit_weakmerc</li>
+				<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -369,7 +384,7 @@
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
-			<!-- <researchPrerequisite>guy762_ResearchKotOR_midarmor</researchPrerequisite> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
 			<!-- <skillRequirements> -->
 				<!-- <Crafting>6</Crafting> -->
 			<!-- </skillRequirements> -->
@@ -388,10 +403,6 @@
 				<li>Hair</li>
 				<li>Eyes</li>
 			</renderSkipFlags>
-			<tags>
-				<li>SaV_outfit_merc</li>
-				<li>SWGCWSpecificApparelItem_JKJAMercHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/JAMerc/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -425,6 +436,15 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>SaV_outfit_merc</li>
+				<li>SWGCWSpecificApparelItem_JKJAMercHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -486,13 +506,6 @@
 		  <li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
 		<apparel>
-			<tags>
-				<li>SaV_outfit_merc</li>
-				<li>SaV_outfit_JKmerc</li>
-				<li>PartisanAlliance_trooperOnSkin</li>
-				<li>PartisanAlliance_trooperarmor</li>
-				<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/JAMerc/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -509,6 +522,19 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<tags>
+				<li>SaV_outfit_merc</li>
+				<li>SaV_outfit_JKmerc</li>
+				<li>PartisanAlliance_trooperOnSkin</li>
+				<li>PartisanAlliance_trooperarmor</li>
+				<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldUniform</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -563,10 +589,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>BlackSun_FalleenSoldier</li>
-				<li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/BlackSun/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -606,6 +628,15 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>BlackSun_FalleenSoldier</li>
+				<li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -660,10 +691,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>BlackSun_FalleenSoldier</li>
-				<li>SWGCWSpecificApparelItem_BlackSunSoldierHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/BlackSun/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -696,6 +723,15 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>BlackSun_FalleenSoldier</li>
+				<li>SWGCWSpecificApparelItem_BlackSunSoldierHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -763,11 +799,6 @@
 		</statBases>
 		
 		<apparel>
-			<tags>
-				<li>ZannConsortium_DisruptorMerc</li>
-				<li>SWGCWSpecificApparelItem_ZannConsortiumMercHelmet</li>
-				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/ZannMerc/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -777,6 +808,16 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<tags>
+				<li>ZannConsortium_DisruptorMerc</li>
+				<li>SWGCWSpecificApparelItem_ZannConsortiumMercHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -825,11 +866,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>ZannConsortium_DisruptorMerc</li>
-				<li>SWGCWSpecificApparelItem_ZannConsortiumMercArmor</li>
-				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/ZannMerc/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -868,6 +904,16 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>ZannConsortium_DisruptorMerc</li>
+				<li>SWGCWSpecificApparelItem_ZannConsortiumMercArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -935,11 +981,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>ZannConsortium_defiler</li>
-				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
-				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/ZannDefiler/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -952,6 +993,16 @@
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
+			<tags>
+				<li>ZannConsortium_defiler</li>
+				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -1014,11 +1065,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>ZannConsortium_defiler</li>
-				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
-				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
-			</tags>
 			<wornGraphicPath>SWApparel/ZannDefiler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -1035,6 +1081,16 @@
 				<li>Feet</li>
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<tags>
+				<li>ZannConsortium_defiler</li>
+				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>

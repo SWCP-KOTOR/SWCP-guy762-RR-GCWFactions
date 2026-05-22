@@ -19,10 +19,10 @@
 		
 		<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
 		<leaderTitle>Underlord</leaderTitle>
-		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
-		<!-- <fixedLeaderKinds> -->
-			<!-- <li>KotORExchg_vigo</li> -->
-		<!-- </fixedLeaderKinds> -->
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<fixedLeaderKinds>
+			<li>SWZannCon_Defiler</li>
+		</fixedLeaderKinds>
 		
 		
 		
@@ -172,12 +172,24 @@
 				<!-- </allowedBiomes> -->
 			</li>
 			
-			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
-				<biomeWeights>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPBiome_OrdMantellUrban</key><value>3</value></li>
-				</biomeWeights>
-			</li>
 			
+			
+			
+			<!-- <li Class="SWCP.FactionExtension_SettlementWeightOverrides"> -->
+				<!-- <biomeWeights> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPBiome_OrdMantellUrban</key><value>3</value></li> -->
+				<!-- </biomeWeights> -->
+			<!-- </li> -->
+			<!-- <li Class="FCP.Factions.FactionExtension_SpawnConfig"> -->
+                <!-- <allowedBiomes> -->
+                    <!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li> -->
+                    <!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li> -->
+                    <!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_TatooineHighland</li> -->
+                <!-- </allowedBiomes> -->
+                <!-- <clustered>true</clustered> -->
+                <!-- <clusterRadius>30</clusterRadius> -->
+            <!-- </li> -->
 		</modExtensions>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		

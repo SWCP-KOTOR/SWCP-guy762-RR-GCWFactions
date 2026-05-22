@@ -28,7 +28,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -39,10 +39,6 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_guard</li>
-			<li>SWGCWSpecificApparelItem_BigBeltNewRepublicOfficerUniform</li>
-		  </tags>
 		  <layers Inherit="False">
 			<li>Middle</li>
 			<li>OnSkin</li>
@@ -76,6 +72,15 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>NewRepublic_guard</li>
+				<li>SWGCWSpecificApparelItem_BigBeltNewRepublicOfficerUniform</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -140,7 +145,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -151,21 +156,12 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_lowrankofficer</li>
-			<li>SWGCWSpecificApparelItem_LowRankNewRepublicOfficerUniform</li>
-			<li>SWGCWRoyaltyTag_AnyNewRepublicOfficerUniform</li>
-		  </tags>
 		  <layers Inherit="False">
 			<li>Middle</li>
 			<li>OnSkin</li>
 		  </layers>
-		  
 		  <wornGraphicPath>SWApparel/NewRepublicOfficer/navylieutenant/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <!-- <defaultOutfitTags> -->
-			<!-- <li>Worker</li> -->
-		  <!-- </defaultOutfitTags> -->
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -191,6 +187,16 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>NewRepublic_lowrankofficer</li>
+				<li>SWGCWSpecificApparelItem_LowRankNewRepublicOfficerUniform</li>
+				<li>SWGCWRoyaltyTag_AnyNewRepublicOfficerUniform</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelUniform</li>
+			</defaultOutfitTags>
 		</apparel>
 		
 		<!-- <randomStyleChance>1</randomStyleChance> -->
@@ -321,10 +327,6 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<tags>
-				<li>NewRepublic_marine</li>
-				<li>SWGCWSpecificApparelItem_NewRepublicMarineHelmet</li>
-			</tags>
 			<wornGraphicPath>SWApparel/NewRepublic/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
@@ -357,6 +359,15 @@
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_marine</li>
+				<li>SWGCWSpecificApparelItem_NewRepublicMarineHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -435,15 +446,8 @@
 			
 		</equippedStatOffsets>
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_marine</li>
-			<li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
-		  </tags>
 		  <wornGraphicPath>SWApparel/NewRepublic/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags>
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		  <layers Inherit="False">
 			<li>Middle</li>
 		  </layers>
@@ -479,6 +483,15 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>NewRepublic_marine</li>
+				<li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
@@ -517,5 +530,165 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_NewRepublicInfiltratorArmor</defName>
+		<label>New Republic Commando armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/RebelInfiltrator/KotaMilita/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(250,250,250)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
+			<HuntingStealth>0.5</HuntingStealth>
+			<SWCPStat_StealthGearOffset>0.5</SWCPStat_StealthGearOffset>
+		</equippedStatOffsets>
+		
+		<!-- <thingSetMakerTags> -->
+			<!-- <li>RewardStandardMidFreq</li> -->
+		<!-- </thingSetMakerTags> -->
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelInfiltrator/KotaMilita/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelInfiltrator/KotaMilita/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(50,50,50)</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWGCWSpecificApparelItem_NewRepublicInfiltratorArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelLightInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_NewRepublicSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(70,90,125)</only> <!-- K1 jedi blue -->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<verbs>
+            <li>
+                <label>throw stun grenade</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>25</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>1.25</warmupTime><defaultCooldownTime>1.25</defaultCooldownTime>
+                <noiseRadius>4</noiseRadius>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>kotorsound_grenadethrow</soundCast>
+                <onlyManualCast>true</onlyManualCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <defaultProjectile>guy762_ThrownGrenade_stormtrooper</defaultProjectile>
+                <ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<ai_IsWeapon>true</ai_IsWeapon>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>grenades</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				<ammoDef>SWCPItem_BF2AmmoSupplyPickup</ammoDef><soundReload>kotorsound_BF2ammoPickup</soundReload>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
 	
 </Defs>

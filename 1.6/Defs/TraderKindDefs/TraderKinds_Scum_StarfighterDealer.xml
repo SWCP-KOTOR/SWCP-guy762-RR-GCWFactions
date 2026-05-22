@@ -144,17 +144,17 @@
 				<countRange>3~5</countRange>
 			</li>
 			<li Class="StockGenerator_Tag">
-				<tradeTag>SWCPTT_ItemizedStarfighters_BlackSunShips</tradeTag>
+				<tradeTag>SWCPTT_ItemizedStarfighters_BlackSunSurplus</tradeTag>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>2~3</countRange>
 			</li>
 			<li Class="StockGenerator_Tag">
-				<tradeTag>SWCPTT_ItemizedStarfighters_HuttShips</tradeTag>
+				<tradeTag>SWCPTT_ItemizedStarfighters_HuttSurplus</tradeTag>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<countRange>2~3</countRange>
 			</li>
 			<li Class="StockGenerator_Tag">
-				<tradeTag>SWCPTT_ItemizedStarfighters_ZannConsortiumShips</tradeTag>
+				<tradeTag>SWCPTT_ItemizedStarfighters_ZannConsortiumSurplus</tradeTag>
 				<thingDefCountRange>0~1</thingDefCountRange>
 				<countRange>1~2</countRange>
 			</li>

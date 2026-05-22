@@ -94,6 +94,10 @@
 				<li>SWCPSpecificGadgetItem_FragGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -168,7 +172,7 @@
 		  <skillRequirements>
 			<Crafting>8</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_ion</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Plasteel>20</Plasteel>
@@ -181,6 +185,10 @@
 				<li>SWCPSpecificGadgetItem_IonGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -268,6 +276,10 @@
 				<li>SWCPSpecificGadgetItem_StunGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -356,6 +368,10 @@
 				<li>SWCPSpecificGadgetItem_PoisonGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -426,8 +442,8 @@
 		
 		<recipeMaker>
 		  <researchPrerequisites>
-			<!--li>KOTOR_Research_AdvMunitions</li-->
-			<li>KOTOR_Research_plasma</li>
+			<!--li>SWCPResearch_PLACEHOLDER</li-->
+			<li>SWCPResearch_plasma</li>
 		  </researchPrerequisites>
 		  <skillRequirements>
 			<Crafting>10</Crafting>
@@ -448,6 +464,10 @@
 				<li>SWCPSpecificGadgetItem_PlasmaGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -528,7 +548,7 @@
 		  <skillRequirements>
 			<Crafting>8</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>guy762_ResearchKotOR_sonic</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Plasteel>20</Plasteel>
@@ -546,6 +566,10 @@
 				<li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_consumables</li>
@@ -617,7 +641,7 @@
 		  <skillRequirements>
 			<Crafting>12</Crafting>
 		  </skillRequirements>
-		  <researchPrerequisite>KOTOR_Research_Baradium</researchPrerequisite>
+		  <researchPrerequisite>SWCPResearch_Baradium</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Plasteel>20</Plasteel>
@@ -635,6 +659,10 @@
 				<li>SWCPSpecificGadgetItem_ThermalDetonatorBelt</li>
 				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_AnyGadget</li>
+			</defaultOutfitTags>
         </apparel>
 		<tradeTags>
 			<li>guy762TT_KotORElite</li>

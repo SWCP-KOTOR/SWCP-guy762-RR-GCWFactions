@@ -391,7 +391,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
@@ -532,7 +532,7 @@
 		</equippedStatOffsets>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
@@ -1319,7 +1319,7 @@
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
-			<!-- <researchPrerequisite>guy762_ResearchKotOR_sith</researchPrerequisite> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
 			<!-- <skillRequirements> -->
 				<!-- <Crafting>6</Crafting> -->
 			<!-- </skillRequirements> -->
@@ -1786,7 +1786,7 @@
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
-			<!-- <researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
 			<!-- <skillRequirements> -->
 				<!-- <Crafting>11</Crafting> -->
 			<!-- </skillRequirements> -->
@@ -1915,7 +1915,7 @@
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
-			<!-- <researchPrerequisite>guy762_ResearchKotOR_mando</researchPrerequisite> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
 			<!-- <skillRequirements> -->
 				<!-- <Crafting>12</Crafting> -->
 			<!-- </skillRequirements> -->

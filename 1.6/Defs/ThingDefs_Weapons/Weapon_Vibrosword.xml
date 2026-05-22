@@ -23,7 +23,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_vibroweapons</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -117,7 +117,7 @@
 		</statBases>
 		
 		<recipeMaker>
-			<researchPrerequisite>guy762_ResearchKotOR_vibroweapons</researchPrerequisite>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>

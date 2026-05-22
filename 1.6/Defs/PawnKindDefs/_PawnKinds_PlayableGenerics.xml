@@ -2,6 +2,53 @@
 <Defs>
 
 	
+	<PawnKindDef Name="xpSWRebel_trooper_playable" ParentName="SWRebel_trooper">
+		<defName>xpSWRebel_trooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWNewRepub_trooper_playable" ParentName="SWNewRepub_trooper">
+		<defName>xpSWNewRepub_trooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWRebel_infiltrator_playable" ParentName="SWRebel_infiltrator">
+		<defName>xpSWRebel_infiltrator_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWImpRemnant_ArmyConscript_playable" ParentName="SWImpRemnant_ArmyConscript">
+		<defName>xpSWImpRemnant_ArmyConscript_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWImpRemnant_ArmyTrooper_playable" ParentName="SWImpRemnant_ArmyTrooper">
+		<defName>xpSWImpRemnant_ArmyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWImpRemnant_Stormtrooper_playable" ParentName="SWImpRemnant_stormtrooper">
+		<defName>xpSWImpRemnant_Stormtrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
 	<PawnKindDef Name="xpSWZsinj_ArmyTrooper_playable" ParentName="SWZsinj_ArmyTrooper">
 		<defName>xpSWZsinj_ArmyTrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -12,6 +59,27 @@
 		<defName>xpSWZsinj_Raptor_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
 	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWPentastar_EnforcerTrooper_playable" ParentName="SWPentastar_EnforcerTrooper">
+		<defName>xpSWPentastar_EnforcerTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWPentastar_ArmyTrooper_playable" ParentName="SWPentastar_ArmyTrooper">
+		<defName>xpSWPentastar_ArmyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
 	
 	
 	

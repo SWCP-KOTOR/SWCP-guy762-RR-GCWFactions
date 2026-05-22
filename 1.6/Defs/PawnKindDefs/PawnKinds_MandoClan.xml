@@ -114,6 +114,9 @@
 		<apparelTags>
 			<li>KotORUtility_weakgrenade</li>
 			<li>KotORUtility_utilitygrenade</li>
+			
+			<li>SWGCWGadget_AnyMandoGauntlet</li>
+			
 			<li>SWWarlordsAccessory_scumtrooper_poncho</li>
 			<li>SWGCWSpecificApparelItem_NoRangefinderMandoHelmet</li>
 			<li>SWGCWSpecificApparelItem_MandoArmor</li>
@@ -208,14 +211,15 @@
 		<apparelTags>
 			<li>KotORUtility_weakgrenade</li>
 			<li>KotORUtility_utilitygrenade</li>
-			<li>SWGCWGadget_AnyMandoGauntlet</li>
 			
+			<li>SWGCWSpecificGadgetItem_MandoGauntletFettFlamethrowerRocket</li>
 			<li>SWCPSpecificApparelItem_PlainPoncho</li>
 			<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
 			<li>SWGCWSpecificApparelItem_MandoArmor</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
+			<li>guy762_MandoGauntlet_FettFlamethrowerRocket</li>
 			<li>guy762_MandoGCWHelmet_rangefinder</li>
 			<li>guy762_MandoGCWArmor_battle</li>
 			<li>guy762_Bodysuit_Dyeable</li>
@@ -266,7 +270,11 @@
 		<initialResistanceRange>10~20</initialResistanceRange>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_AbilityGiverMandoProtector</def><chance>1</chance></li>
+		</startingHediffs>
 		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.Flagger">
 				<flags> <guy762AltTag_MandoProtector/></flags>
 			</li>
@@ -302,14 +310,16 @@
 		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>KotORUtility_utilitygrenade</li>
-			<li>SWGCWGadget_AnyMandoGauntlet</li>
+			<!-- <li>SWGCWGadget_AnyMandoGauntlet</li> -->
 			
+			<li>SWGCWSpecificGadgetItem_MandoGauntletShysaBlasterMissile</li>
 			<li>SWGCWSpecificGadgetItem_Z6Jetpack</li>
 			<li>SWGCWSpecificApparelItem_RangefinderMandoHelmet</li>
 			<li>SWGCWSpecificApparelItem_MandoArmor</li>
 			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
+			<li>guy762_MandoGauntlet_ShysaBlasterMissile</li>
 			<li>guy762_Jetpack_Z6launcher</li>
 			<li>guy762_MandoGCWHelmet_rangefinder</li>
 			<li>guy762_MandoGCWArmor_battle</li>

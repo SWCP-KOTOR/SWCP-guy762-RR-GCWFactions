@@ -2,7 +2,7 @@
 <Defs>
 
     <QuestScriptDef>
-        <defName>SWCP_Quest_RebelCell_SettlementRaidDefense</defName>
+        <defName>SWCPQuest_SettlementRaidDefense_RebelCell_OrdMantell</defName>
         <rootSelectionWeight>1.0</rootSelectionWeight>
         <rootMinPoints>50</rootMinPoints>
         <defaultChallengeRating>1</defaultChallengeRating>
@@ -121,7 +121,8 @@
                             <li Class="FCP.Core.RadiantQuests.QuestNode_GeneratePawns">
                                 <storeAs>settlers</storeAs>
                                 <faction>$siteFaction</faction>
-                                <pawnGroupKind>Peaceful</pawnGroupKind>
+                                <!-- <pawnGroupKind>Peaceful</pawnGroupKind> -->
+                                <pawnGroupKind>Settlement</pawnGroupKind>
                                 <pointsToUse>$pointsForSettlers</pointsToUse>
                             </li>
                             <li Class="FCP.Core.RadiantQuests.QuestNode_GeneratePawns">

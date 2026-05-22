@@ -20,7 +20,7 @@
         <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_harsh</enlistRequrementsNotSatisfiedKey>
         <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
         <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_Rebellion</enlistButtonIconTexPath>
-        <enlistedSoundDef>kotorsound_levelup</enlistedSoundDef>
+        <enlistedSoundDef>kotorsound_levelup_OnCamera</enlistedSoundDef>
         <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
 
     <!-- Mission Options -->
@@ -48,6 +48,13 @@
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
         <salaryRange>500~1000</salaryRange>
         <salaryPeriodDays>15</salaryPeriodDays>
+		
+	<!-- Auto-Feed Options -->
+	
+		<autoFeedIsEnabled>True</autoFeedIsEnabled>
+		<autoFeedButtonIconTexPath>UI/Icons/autofeed</autoFeedButtonIconTexPath>
+		<autoFeedLabelKey>SWCP_AutoFeed_Label</autoFeedLabelKey>
+		<autoFeedDescKey>SWCP_AutoFeed_Desc</autoFeedDescKey>
 
     <!-- Provision Options -->
 
@@ -81,6 +88,17 @@
                 <!-- <provisionsRestockInDays>30</provisionsRestockInDays> -->
             <!-- </li> -->
         </provisionOptions>
+	
+	
+	<!-- Tax Collector Options -->
+
+        <taxCollectorIsEnabled>true</taxCollectorIsEnabled>
+        <taxCollectorLabelKey>SWCP_TaxCollector_Label</taxCollectorLabelKey>
+        <taxCollectorDescKey>SWCP_TaxCollector_Desc</taxCollectorDescKey>
+        <taxCollectorButtonIconTexPath>UI/Icons/taxcollector</taxCollectorButtonIconTexPath>
+		
+        <taxCollectorTraderKind>SWCPTrader_TaxCollector_RebelCell</taxCollectorTraderKind>
+        <taxCollectorRefreshInDays>7</taxCollectorRefreshInDays>
 
     <!-- Storage Options -->
 

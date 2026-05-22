@@ -251,7 +251,7 @@
 		<!-- </skills> -->
 
 		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialResistanceRange>0~0.5</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -349,7 +349,7 @@
 		</inventoryOptions>
 
 		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialResistanceRange>1~5</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -549,8 +549,8 @@
 		<!-- <disallowedTraits> -->
 			<!-- <li>Brawler</li> -->
 		<!-- </disallowedTraits> -->
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>3~7</initialWillRange>
+		<initialResistanceRange>30~50</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li>WorkDrive</li> -->
@@ -652,8 +652,8 @@
 		<!-- <disallowedTraits> -->
 			<!-- <li>Brawler</li> -->
 		<!-- </disallowedTraits> -->
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>3~7</initialWillRange>
+		<initialResistanceRange>30~50</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li>WorkDrive</li> -->
@@ -771,8 +771,8 @@
 		<!-- <disallowedTraits> -->
 			<!-- <li>Brawler</li> -->
 		<!-- </disallowedTraits> -->
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>1~5</initialWillRange>
+		<initialResistanceRange>10~30</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li>WorkDrive</li> -->
@@ -865,8 +865,8 @@
 			</subOptionsTakeAll>
 		</inventoryOptions>
 
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>30~50</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
@@ -975,8 +975,8 @@
 			</subOptionsTakeAll>
 		</inventoryOptions>
 
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>20~40</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
@@ -1069,8 +1069,8 @@
 			</subOptionsTakeAll>
 		</inventoryOptions>
 
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~40</initialResistanceRange>
 		
 		<abilities>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
