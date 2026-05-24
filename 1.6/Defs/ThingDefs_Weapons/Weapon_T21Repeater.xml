@@ -4,7 +4,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_T21repeater</defName>
 		<label>T-21 heavy repeating blaster</label>
 		<description>Seeking to further prove the versatility of Stormtrooper infantry doctrine, the Imperial Stormtrooper corps commissioned BlasTech to design a heavy blaster capable of functioning both as an anti-tank rifle and as a squad automatic weapon to effectively counter a wider variety of targets. The result was the T-21, a cumbersome but powerful weapon used to great effect in counter-insurgency operations.</description>
@@ -141,7 +141,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_T21Bheavyrifle</defName>
 		<label>T-21B heavy blaster</label>
 		<description>A more role-specific variation on the T-21 platform, the T-21B is a powerful anti-armor rifle inspired by the B2-HA Super Battle Droid's integrated blaster cannon arm. It is designed to be used alongside lighter repeating blasters such as the TL-50 or E-22, a combination capable of responding to both vehicle and infantry threats far quicker than units armed with the original T-21.</description>

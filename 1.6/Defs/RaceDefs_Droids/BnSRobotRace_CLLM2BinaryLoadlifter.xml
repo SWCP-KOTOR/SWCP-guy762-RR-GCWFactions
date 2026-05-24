@@ -500,5 +500,19 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 	
+	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_CLLM2BinaryLoadlifter</defName>
+		<label>build CLL-M2 Binary Loadlifter</label>
+		<description>Create a CLL-M2 Binary Loadlifter.</description>
+		<uiIconPath>UI/DroidIcons/Icon_CLLM2BinaryLoadlifter</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_CLLM2BinaryLoadlifter</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

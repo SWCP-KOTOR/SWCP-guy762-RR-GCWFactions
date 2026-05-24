@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORMeleeModdable_TwoHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_TwoHand">
 		<defName>guy762_VibroAxeGCW</defName>
 		<label>Vibroaxe</label>
 		<description>The underlings of the Hutt clans have wielded these weapons for many millenia, though as the military involvement of the Hutts has decreased since the Xim wars, these are mostly just used to indimidate outlanders who do business with the Kajidics.</description>

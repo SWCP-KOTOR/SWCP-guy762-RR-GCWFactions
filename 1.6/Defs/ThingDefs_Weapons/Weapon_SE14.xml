@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_SE14pistol</defName>
 		<label>SE-14 blaster pistol</label>
 		<description>A venerable repeating blaster design used by the Separatists during the Clone Wars, the SE-14 can fire formidable bursts quickly (if innacurately) to effectively keep enemies pinned in close-quarters combat.</description>

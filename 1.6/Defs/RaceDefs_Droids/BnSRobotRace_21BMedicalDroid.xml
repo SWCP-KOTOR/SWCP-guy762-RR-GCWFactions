@@ -484,5 +484,17 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_21BMedDroid</defName>
+		<label>build 2-1B-series medical droid</label>
+		<description>Create a 2-1B-series medical droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_21BMedDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_21BMedDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_GCWBowcaster</defName>
 		<label>Wookiee Bowcaster</label>
 		<description>.</description>

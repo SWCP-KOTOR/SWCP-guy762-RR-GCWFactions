@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_EC17pistol</defName>
 		<label>EC-17 hold-out blaster</label>
 		<description>.</description>
@@ -88,7 +88,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_EC17pistol_silenced</defName>
 		<label>EC-17 hold-out (ISB Issue)</label>
 		<description>.</description>

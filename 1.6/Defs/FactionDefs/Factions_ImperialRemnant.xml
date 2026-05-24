@@ -54,7 +54,8 @@
 		
 		
 		<royalTitleTags>
-			<li>SWGCWTitleTag_ImperialArmyIrregulars</li>
+			<!-- <li>SWGCWTitleTag_ImperialArmyIrregulars</li> -->
+			<li>SWGCWTitleTag_generic</li>
 		</royalTitleTags>
 		<royalFavorLabel>commendations</royalFavorLabel>
 		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
@@ -365,9 +366,9 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
+		<baseTraderKinds>
+			<li>SWCP_GCWBaseTraderKind_ImpRemnantBasic</li>
+		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->
 		  <!-- <li>Orbital_CombatSupplier</li> -->

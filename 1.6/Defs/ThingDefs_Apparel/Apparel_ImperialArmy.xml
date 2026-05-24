@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpTankTrooperHelmet</defName>
 		<label>army commando helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -71,7 +71,7 @@
 	<!-- military suit stat level -->	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpMidCombatArmor</defName>
 		<label>combat armor</label>
 		<description>.</description>
@@ -246,7 +246,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyOfficerArmor</defName>
 		<label>light battle armor, junior officer's</label>
 		<techLevel>Spacer</techLevel>
@@ -421,7 +421,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyOfficerArmor_midrank</defName>
 		<label>light battle armor, senior officer's</label>
 		<techLevel>Spacer</techLevel>
@@ -625,7 +625,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyOfficerArmor_highbrass</defName>
 		<label>light battle armor, flag officer's</label>
 		<techLevel>Spacer</techLevel>
@@ -820,7 +820,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyOfficerArmor_topbrass</defName>
 		<label>light battle armor, top brass</label>
 		<techLevel>Spacer</techLevel>
@@ -1072,7 +1072,7 @@
 	<!-- light battle armor stat level -->	 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperArmor</defName>
 		<label>light battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1147,7 +1147,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperHeavyArmor</defName>
 		<label>battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1213,7 +1213,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperHeavyArmor_NCO</defName>
 		<label>battle armor, non-commissioned officer's</label>
 		<techLevel>Spacer</techLevel>
@@ -1324,7 +1324,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperArmor_rusty</defName>
 		<label>battle armor, rusty</label>
 		<techLevel>Spacer</techLevel>
@@ -1411,7 +1411,7 @@
 	  
 	  
 	  
-	<ThingDef Name="guy762_ArmyTrooperHelmet" ParentName="KotORArmorModdable_hard">
+	<ThingDef Name="guy762_ArmyTrooperHelmet" ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperHelmet</defName>
 		<label>army trooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1849,7 +1849,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperHelmet_rusty</defName>
 		<label>army trooper helmet, rusty</label>
 		<techLevel>Spacer</techLevel>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<TraderKindDef Name="SWCP_GCWBaseTraderKind_RebelCellBasic">
+		<defName>SWCP_GCWBaseTraderKind_RebelCellBasic</defName>
+		<label>Rebel supply officer</label>
+		<!-- <orbital>true</orbital> -->
+		<faction>guy762_SWWarlordsFaction_RebelCell</faction>
+		<permitRequiredForTrading>TradeSettlement</permitRequiredForTrading>
+		<!-- <commonalityMultFromPopulationIntent> -->
+		  <!-- <points> -->
+			<!-- <li>(0.2, 0)</li> -->
+			<!-- <li>(1,   1)</li> -->
+			<!-- <li>(2,   3)</li> -->
+		  <!-- </points> -->
+		<!-- </commonalityMultFromPopulationIntent> -->
+		<modExtensions>
+			<li Class="FCP.Currencies.CurrencyReplacement">
+				<currency>guy762_KotORcredits</currency>
+			</li>
+		</modExtensions>
+		<stockGenerators>
+		
+		
+		
+		<!-- CURRENCY -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>500~1000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>50~200</countRange>
+			</li>
+			  
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>5000~10000</countRange>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>guy762TT_credits</tag>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>25~50</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>10~25</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_UltraComponent</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+		  
+		  
+		  
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_Rhydonium</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_Tibanna</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_PlasmaCartridge</thingDef>
+				<countRange>100~200</countRange>
+			</li>
+			  
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chemfuel</thingDef>
+				<countRange>100~200</countRange>
+			</li>
+			
+			
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_Plastoid</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Plasteel</thingDef>
+				<countRange>75~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Uranium</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_AlloyDurasteel</thingDef>
+				<countRange>75~150</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_AlloyBronzium</thingDef>
+				<countRange>60~80</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_Duracrete</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			
+			
+			
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>250~500</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Synthread</thingDef>
+				<countRange>250~750</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_FabricArmorweave</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Hyperweave</thingDef>
+				<countRange>25~50</countRange>
+			</li>
+			
+			
+			
+			
+			
+			
+		  <li Class="StockGenerator_ReinforcedBarrels">
+			<countRange>1~4</countRange>
+		  </li>
+		  <li Class="StockGenerator_Tag">
+			<tradeTag>MortarShell</tradeTag>
+			<thingDefCountRange>1~4</thingDefCountRange>
+			<countRange>20~40</countRange>
+		  </li>
+		  <li Class="StockGenerator_Tag">
+			<tradeTag>guy762TT_LightMunitions</tradeTag>
+			<thingDefCountRange>1~4</thingDefCountRange>
+			<countRange>10~20</countRange>
+		  </li>
+		  <li Class="StockGenerator_Tag">
+			<tradeTag>guy762TT_LightCannons</tradeTag>
+			<thingDefCountRange>1~3</thingDefCountRange>
+			<countRange>1~2</countRange>
+		  </li>
+		  
+		  <li MayRequire ="kentington.saveourship2" Class="StockGenerator_SingleDef">
+			<thingDef>ShipTorpedo_HighExplosive</thingDef>
+			<countRange>4~8</countRange>
+		  </li>
+		  <li MayRequire ="kentington.saveourship2" Class="StockGenerator_SingleDef">
+			<thingDef>ShipTorpedo_EMP</thingDef>
+			<countRange>4~8</countRange>
+		  </li>
+		  <li MayRequire ="kentington.saveourship2" Class="StockGenerator_SingleDef">
+			<thingDef>ShipTorpedo_Antimatter</thingDef>
+			<countRange>0~1</countRange>
+		  </li>
+		  <li MayRequire ="FantasyFan.SOS2.StarWarsShip" Class="StockGenerator_SingleDef">
+			<thingDef>CEC_Shell_ProtonTorpedo</thingDef>
+			<countRange>4~8</countRange>
+		  </li>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		<!-- Food/Drugs/Medicine -->
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MealNutrientPaste</thingDef>
+				<countRange>100~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MealSurvivalPack</thingDef>
+				<countRange>25~50</countRange>
+			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_SpacerMedKit</thingDef>
+				<countRange>10~20</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_KotORMedicine</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>5~10</countRange>
+				<excludedThingDefs>
+					<li>KOTOR_SpacerMedKit</li>
+					<li>KOTOR_kolto</li>
+					<li>SWCPItem_Bacta</li>
+					<!--li MayRequire="guy762.KotORDroids">guy762_DroidGadget_kolto</li-->
+				</excludedThingDefs>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_KotORMedpac</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>10~20</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_KotORStims</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>15~30</countRange>
+			</li>
+		  
+		  <!-- Techprints -->
+		  
+		<!-- Weapons -->
+
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWWeapon_PDFsurplus</tradeTag>
+				<thingDefCountRange>6~8</thingDefCountRange>
+				<countRange>24~36</countRange>
+			</li>
+			
+			
+			
+			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWWeapon_CivLegal</tradeTag>
+				<thingDefCountRange>6~8</thingDefCountRange>
+				<countRange>10~16</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWWeapon_Illegal</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>3~4</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWWeapon_ExoticLegal</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWWeapon_ExoticIllegal</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			
+			
+	
+		  <!-- <li Class="StockGenerator_Tag"> -->
+			<!-- <tradeTag>guy762TT_DroidWeapons_light</tradeTag> -->
+			<!-- <thingDefCountRange>2~5</thingDefCountRange> -->
+			<!-- <countRange>1~3</countRange> -->
+		  <!-- </li> -->
+		  <!-- <li Class="StockGenerator_Tag"> -->
+			<!-- <tradeTag>guy762TT_DroidWeapons_heavy</tradeTag> -->
+			<!-- <thingDefCountRange>1~3</thingDefCountRange> -->
+			<!-- <countRange>0~2</countRange> -->
+		  <!-- </li> -->
+
+
+
+
+		<!-- Apparel -->  
+		
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWArmor_PDFSurplus</tradeTag>
+				<thingDefCountRange>6~8</thingDefCountRange>
+				<countRange>10~16</countRange>
+			</li>
+			<!-- <li Class="StockGenerator_Tag"> -->
+				<!-- <tradeTag>guy762TT_GCWArmor_CloneWarsSurplus</tradeTag> -->
+				<!-- <thingDefCountRange>2~3</thingDefCountRange> -->
+				<!-- <countRange>3~6</countRange> -->
+			<!-- </li> -->
+			
+			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWArmor_PDFSpaceGear</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
+
+
+
+		
+		  
+		<!-- Equipment -->   
+		  
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWGadgetEquipment_CivLegal</tradeTag>
+				<thingDefCountRange>4~5</thingDefCountRange>
+				<countRange>6~8</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWGadgetEquipment_Illegal</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>4~5</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWGadgetEquipment_ExoticLegal</tradeTag>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWGadgetEquipment_ExoticIllegal</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			<li Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_KotORUnderArmor</tradeTag>
+				<thingDefCountRange>4~5</thingDefCountRange>
+				<countRange>2~6</countRange>
+			</li>
+
+
+		 
+
+		  
+		  
+		<!-- Buildings/Vehicles/Starfighters -->
+		
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_RebelBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~4</countRange>
+			</li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedGroundVehicles_RebelCellSurplus</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedStarfighters_RebelBasic</tradeTag>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~4</countRange>
+			</li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>SWCPTT_ItemizedStarfighters_RebelSurplus</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			
+			
+			
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWBuildings_DeployableTurretsSmall</tradeTag>
+				<thingDefCountRange>6~8</thingDefCountRange>
+				<countRange>10~16</countRange>
+			</li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_Tag">
+				<tradeTag>guy762TT_GCWBuildings_DeployableTurretsLarge</tradeTag>
+				<thingDefCountRange>6~8</thingDefCountRange>
+				<countRange>8~14</countRange>
+			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>KOTOR_ShieldBank</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+		  
+		  <!-- Exotic -->
+		  
+		<!-- Slaves -->
+			<li Class="StockGenerator_BuySlaves" />
+		  <!-- Animals -->
+		  
+		  <!-- Buying -->
+		  <li Class="StockGenerator_BuyExpensiveSimple" />
+		  <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+		  <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+		  <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+		  <li Class="StockGenerator_BuyTradeTag"><tag>HoraxWeapon</tag></li>
+		  
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_KotORMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_KotORRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWMelee</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWRanged</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWApparel</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>guy762TT_GCWGadgetEquipment_any</tag></li>
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
+
+		</stockGenerators>
+	</TraderKindDef>
+	
+	
+</Defs>

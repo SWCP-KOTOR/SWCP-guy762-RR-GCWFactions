@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_TIEpilotHelmet</defName>
 		<label>TIE pilot Helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -279,7 +279,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_TIEpilotAceHelmet</defName>
 		<label>TIE pilot Helmet (ace)</label>
 		<techLevel>Spacer</techLevel>

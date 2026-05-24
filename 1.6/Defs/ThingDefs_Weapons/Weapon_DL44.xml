@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_Model57pistol</defName>
 		<label>Model 57 blaster pistol</label>
 		<description>A lower-powered street-legal copy of BlasTech's DL-44, the Merr-Sonn Model 57 is an affordable sidearm used by Rebel Alliance and outlaw forces alike.</description>
@@ -82,7 +82,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_Power5pistol</defName>
 		<label>Power-5 blaster pistol</label>
 		<description>An improved copy of the DL-44 which many enthusiasts conclude is worthy of a lawsuit on BlasTech's part, the Merr-Sonn Power-5 hits hard and fast. Many well-funded Imperial garrisons have begun trading in their aging SE-14 and RK-3 stockpiles for these powerful sidearms after the New Republic has repeatedly demonstrated the effectiveness of similar models.</description>
@@ -166,7 +166,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_DL44pistol</defName>
 		<label>DL-44 heavy blaster</label>
 		<description>A powerful blaster pistol capable of overcharging a shot to deliver armor-penetrating damage, the DL-44 is both expensive and difficult to find. Most Imperial weapons restrictions explicitly prohibit this model, and as a result BlasTech has all but ceased production on them, leaving them a prized commodity on the black market.</description>
@@ -268,7 +268,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_DL44pistol_hasbroPotF</defName>
 		<label>Smuggler's End</label>
 		<description>An expertly modified DL-44 heavy blaster pistol, this weapon can fire quick bursts like the popular Merr-Sonn Power-5 in addition to supercharging a blaster bolt to deliver massive amounts of armor-penetrating damage.</description>

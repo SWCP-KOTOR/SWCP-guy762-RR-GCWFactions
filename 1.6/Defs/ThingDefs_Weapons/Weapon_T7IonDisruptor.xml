@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_T7IonDisruptor</defName>
 		<label>T-7 Ion Disruptor</label>
 		<description>.</description>

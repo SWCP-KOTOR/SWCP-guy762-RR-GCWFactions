@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_RT97Crepeater</defName>
 		<label>RT-97C Repeating Blaster</label>
 		<description>.</description>

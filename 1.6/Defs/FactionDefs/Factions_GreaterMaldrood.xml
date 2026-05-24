@@ -47,6 +47,18 @@
 		
 		
 		
+		<royalTitleTags>
+			<li>SWGCWTitleTag_generic</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
+		
+		
+		
 		
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<!-- <li>Surface</li> -->
@@ -308,9 +320,9 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
+		<baseTraderKinds>
+			<li>SWCP_GCWBaseTraderKind_ImperialGenericBasic</li>
+		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->
 		  <!-- <li>Orbital_CombatSupplier</li> -->

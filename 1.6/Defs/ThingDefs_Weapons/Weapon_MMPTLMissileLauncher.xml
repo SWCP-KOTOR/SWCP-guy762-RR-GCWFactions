@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedWeapon_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_MMPTLMissieLauncher</defName>
 		<label>MiniMag-PTL heavy missile launcher</label>
 		<description>.</description>

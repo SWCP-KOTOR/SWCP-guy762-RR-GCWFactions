@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_CR1BlastCannon</defName>
 		<label>CR-1 blast cannon</label>
 		<description>.</description>

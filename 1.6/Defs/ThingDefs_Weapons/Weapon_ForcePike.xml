@@ -4,7 +4,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORMeleeNoQualityModMake_TwoHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_TwoHand">
 		<defName>guy762_ForcePike</defName>
 		<label>force pike</label>
 		<description>.</description>
@@ -24,24 +24,24 @@
 			<MarketValue>2300</MarketValue>
 			<Mass>7.5</Mass>
 			
-			<WorkToMake>17000</WorkToMake>
+			<!-- <WorkToMake>17000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>50</Plasteel>
-			<KOTOR_AlloyDurasteel>60</KOTOR_AlloyDurasteel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>12</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <ComponentSpacer>6</ComponentSpacer> -->
+			<!-- <Plasteel>50</Plasteel> -->
+			<!-- <KOTOR_AlloyDurasteel>60</KOTOR_AlloyDurasteel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
 		
 		<tools>
 			<li>

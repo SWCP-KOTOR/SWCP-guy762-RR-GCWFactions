@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_FC1Flechette</defName>
 		<label>FC-1 flechette launcher</label>
 		<description>.</description>

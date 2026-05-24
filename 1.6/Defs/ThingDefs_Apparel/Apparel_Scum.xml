@@ -116,14 +116,14 @@
 		<graphicData>
 		  <texPath>SWApparel/TantelArmor/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <shaderType>CutoutComplex</shaderType>
 		  <!-- <colorTwo>(160,115,80)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
 			<MarketValue>1000</MarketValue>
 			
-			<MaxHitPoints>225</MaxHitPoints>
+			<MaxHitPoints>350</MaxHitPoints>
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.65</ArmorRating_Heat>
@@ -242,7 +242,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_ScumWeequayArmor</defName>
 		<label>combat suit</label>
 		<techLevel>Spacer</techLevel>
@@ -354,7 +354,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_HelmetModdable_soft">
+	<ThingDef ParentName="SWCPHelmetMakeableNoQuality_soft">
 		<defName>guy762_ScumMercHelmet</defName>
 		<label>merc helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -362,7 +362,7 @@
 		<graphicData>
 			<texPath>SWApparel/JAMerc/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(160,80,80)</colorTwo> -->
 		</graphicData>
 		<statBases>
@@ -471,7 +471,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_ScumMercArmor</defName>
 		<label>mesh combat suit</label>
 		<techLevel>Spacer</techLevel>
@@ -559,7 +559,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_BlackSunSoldierArmor</defName>
 		<label>Falleen heavy combat suit</label>
 		<techLevel>Spacer</techLevel>
@@ -662,7 +662,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_BlackSunSoldierHelmet</defName>
 		<label>Falleen heavy combat helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -774,7 +774,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ZannBattleHelmet</defName>
 		<label>Iridonian Plate Helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -836,7 +836,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ZannBattleArmor</defName>
 		<label>Iridonian Plate Armor</label>
 		<techLevel>Spacer</techLevel>
@@ -946,7 +946,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ZannDefilerHelmet</defName>
 		<label>Defiler battle helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1026,7 +1026,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ZannDefilerArmor</defName>
 		<label>Defiler powered battle armor</label>
 		<techLevel>Spacer</techLevel>

@@ -81,15 +81,17 @@
         <salaryRange>1250~1750</salaryRange>
         <salaryPeriodDays>15</salaryPeriodDays>
 		
-		<!-- <titleWageBonuses> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_contact</title><multiplier>1</multiplier></li> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_asset</title><multiplier>1.5</multiplier></li> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_operative</title><multiplier>2</multiplier></li> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateer</title><multiplier>5</multiplier></li> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateerCaptain</title><multiplier>10</multiplier></li> -->
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateerCommodore</title><multiplier>100</multiplier></li> -->
+		<titleWageBonuses>
+			<li><title>SWGCWTitle_generic_initial</title><multiplier>0.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_NCO</title><multiplier>1</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><multiplier>1.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><multiplier>2</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><multiplier>5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><multiplier>10</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><multiplier>50</multiplier></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><multiplier>100</multiplier></li>
 			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_warlord</title><multiplier>1000</multiplier></li> -->
-		<!-- </titleWageBonuses> -->
+		</titleWageBonuses>
 	
 	<!-- Auto-Feed Options -->
 	
@@ -245,7 +247,7 @@
 		
 
 	
-	 <!-- Ability Training Options -->
+	<!-- Ability Training Options -->
 
         <abilityTrainingIsEnabled>true</abilityTrainingIsEnabled>
         <abilityTrainingLabelKey>SWCP_AbilityTraining_Label</abilityTrainingLabelKey>

@@ -182,7 +182,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelOfficerDuster</defName>
 		<label>rebel overcoat, top brass</label>
 		<description>This long overcoat is typically worn by ranking officers of the Rebel Alliance and New Republic.</description>

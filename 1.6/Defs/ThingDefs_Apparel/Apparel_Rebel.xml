@@ -5,7 +5,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebelHelmet_fleet</defName>
 		<label>militia combat helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -71,7 +71,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelHelmet_endor" ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_RebelHelmet_endor" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelHelmet_endor</defName>
 		<label>rebel combat helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -128,6 +128,7 @@
 						<altDefs>
 							<li>guy762_RebelEndorHelmetCustomization_Default</li>
 							<li>guy762_RebelEndorHelmetCustomization_OrdMantellMilitia</li>
+							<li>guy762_RebelEndorHelmetCustomization_Infiltrator</li>
 						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
@@ -211,6 +212,32 @@
 		</conditionalGraphics>
 	</BigAndSmall.GraphicSetDef>
 	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelEndorHelmetCustomization_Infiltrator</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RebelInfiltrator/><guy762AltTag_CrixMadine/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Rebel/endorhelmet</li></texturePaths>
+			<colorA>
+				<color>(95,100,110)</color>         <!-- rebel infiltrator bley -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(140,135,80)</color>		 <!-- rebel infiltrator olive -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -223,6 +250,7 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>SWApparel/Rebel/endorhelmetgoggles_up/helmet</wornGraphicPath>
+			<!-- <wornGraphicPath>NullTex</wornGraphicPath> -->
 
 			<renderNodeProperties Inherit="False">
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -235,20 +263,21 @@
 						<texturePaths>
 							<li>SWApparel/Rebel/endorhelmetgoggles_up/helmet</li>
 							<li>SWApparel/Rebel/endorhelmetgoggles_down/helmet</li>
+							<!-- <li>NullTex</li> -->
 						</texturePaths>
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>(175,150,120)</color>
+						<color>(140,135,80)</color> <!-- rebel infiltrator olive -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					  
-						<altDefs>
-							<li>guy762_RebelEndorHelmetGogglesCustomization_Default</li>
-							<li>guy762_RebelEndorHelmetGogglesCustomization_Infiltrator</li>
-						</altDefs>
+						<!-- <altDefs> -->
+							<!-- <li>guy762_RebelEndorHelmetGogglesCustomization_Default</li> -->
+							<!-- <li>guy762_RebelEndorHelmetGogglesCustomization_Infiltrator</li> -->
+						<!-- </altDefs> -->
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
@@ -259,54 +288,59 @@
 				<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmetGoggles</li>
 			</tags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(95,100,110)</only>         <!-- rebel infiltrator bley -->
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 	
-	<BigAndSmall.GraphicSetDef>
-		<defName>guy762_RebelEndorHelmetGogglesCustomization_Default</defName>
-		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_RebelEndorHelmetDefault/></whitelist></triggerFlags>
-			<texturePaths>
-				<li>SWApparel/Rebel/endorhelmetgoggles_up/helmet</li>
-				<li>SWApparel/Rebel/endorhelmetgoggles_down/helmet</li>
-			</texturePaths>
-			<colorA>
-				<apparelColorA>true</apparelColorA>
-				<altDefs><li>BS_CustomGlobalA</li></altDefs>
-			</colorA>
-			<colorB>
-				<color>(175,150,120)</color> <!-- bespin beige -->
-				<altDefs><li>BS_CustomGlobalB</li></altDefs>
-			</colorB>
-		</conditionalGraphics>
-	</BigAndSmall.GraphicSetDef>
+	<!-- <BigAndSmall.GraphicSetDef> -->
+		<!-- <defName>guy762_RebelEndorHelmetGogglesCustomization_Default</defName> -->
+		<!-- <conditionalGraphics> -->
+			<!-- <triggerFlags><whitelist><guy762AltTag_RebelEndorHelmetDefault/></whitelist></triggerFlags> -->
+			<!-- <texturePaths> -->
+				<!-- <li>SWApparel/Rebel/endorhelmetgoggles_up/helmet</li> -->
+				<!-- <li>SWApparel/Rebel/endorhelmetgoggles_down/helmet</li> -->
+			<!-- </texturePaths> -->
+			<!-- <colorA> -->
+				<!-- <apparelColorA>true</apparelColorA> -->
+				<!-- <altDefs><li>BS_CustomGlobalA</li></altDefs> -->
+			<!-- </colorA> -->
+			<!-- <colorB> -->
+				<!-- <color>(175,150,120)</color> -->
+				<!-- <altDefs><li>BS_CustomGlobalB</li></altDefs> -->
+			<!-- </colorB> -->
+		<!-- </conditionalGraphics> -->
+	<!-- </BigAndSmall.GraphicSetDef> -->
 	
 	
-	<BigAndSmall.GraphicSetDef>
-		<defName>guy762_RebelEndorHelmetGogglesCustomization_Infiltrator</defName>
-		<conditionalGraphics>
-			<triggerFlags><whitelist><guy762AltTag_RebelInfiltrator/></whitelist></triggerFlags>
-			<texturePaths>
-				<li>SWApparel/Rebel/endorhelmetgoggles_up/helmet</li>
-				<li>SWApparel/Rebel/endorhelmetgoggles_down/helmet</li>
-			</texturePaths>
-			<colorA>
-				<color>(95,100,110)</color>         <!-- rebel infiltrator bley -->
-				<altDefs><li>BS_CustomGlobalA</li></altDefs>
-			</colorA>
-			<colorB>
-				<color>(140,135,80)</color> <!-- rebel infiltrator olive -->
-				<altDefs><li>BS_CustomGlobalB</li></altDefs>
-			</colorB>
-		</conditionalGraphics>
-	</BigAndSmall.GraphicSetDef>
-	
-	
-	
-	
-	
-	
-	
-	
+	<!-- <BigAndSmall.GraphicSetDef> -->
+		<!-- <defName>guy762_RebelEndorHelmetGogglesCustomization_Infiltrator</defName> -->
+		<!-- <conditionalGraphics> -->
+			<!-- <triggerFlags> -->
+				<!-- <whitelist> -->
+					<!-- <guy762AltTag_RebelInfiltrator/> -->
+					<!-- <guy762AltTag_CrixMadine/> -->
+				<!-- </whitelist> -->
+			<!-- </triggerFlags> -->
+			<!-- <texturePaths> -->
+				<!-- <li>SWApparel/Rebel/endorhelmetgoggles_up/helmet</li> -->
+				<!-- <li>SWApparel/Rebel/endorhelmetgoggles_down/helmet</li> -->
+			<!-- </texturePaths> -->
+			<!-- <colorA> -->
+				<!-- <color>(95,100,110)</color> -->
+				<!-- <altDefs><li>BS_CustomGlobalA</li></altDefs> -->
+			<!-- </colorA> -->
+			<!-- <colorB> -->
+				<!-- <color>(140,135,80)</color> -->
+				<!-- <altDefs><li>BS_CustomGlobalB</li></altDefs> -->
+			<!-- </colorB> -->
+		<!-- </conditionalGraphics> -->
+	<!-- </BigAndSmall.GraphicSetDef> -->
 	
 	
 	
@@ -336,7 +370,15 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebelHelmet_AWingTrooper</defName>
 		<label>light flight helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -436,7 +478,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebelHelmet_vanguard</defName>
 		<label>militia battle helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -522,7 +564,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelCombatSuit" ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_RebelCombatSuit" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelCombatSuit</defName>
 		<label>rebel combat suit</label>
 		<description>.</description>
@@ -628,7 +670,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelCombatSuit_medic" ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_RebelCombatSuit_medic" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelCombatSuit_medic</defName>
 		<label>rebel combat suit, medic's</label>
 		<description>.</description>
@@ -731,7 +773,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_RebelCombatSuit_lowrank" ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_RebelCombatSuit_lowrank" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelCombatSuit_lowrank</defName>
 		<label>rebel combat suit, junior officer's</label>
 		<description>.</description>
@@ -878,7 +920,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_RebelInfiltratorArmor" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_RebelInfiltratorArmor</defName>
 		<label>Rebel Infiltrator combat armor</label>
 		<techLevel>Spacer</techLevel>
@@ -886,7 +928,7 @@
 		<graphicData>
 			<texPath>SWApparel/RebelInfiltrator/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
@@ -958,6 +1000,7 @@
 			
 			<tags>
 				<li>SWGCWSpecificApparelItem_RebelInfiltratorArmor</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1025,6 +1068,162 @@
 	
 	
 	
+	<ThingDef ParentName="guy762_RebelInfiltratorArmor">
+		<defName>guy762_RebelInfiltratorArmor_lowrank</defName>
+		<label>Rebel Infiltrator combat armor, junior officer's</label>
+		<graphicData>
+			<texPath>SWApparel/RebelInfiltrator/IntCaptain/Apparel</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.4</SocialImpact>
+		</equippedStatOffsets>
+
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelInfiltrator/IntCaptain/Apparel</wornGraphicPath>
+
+			<renderNodeProperties Inherit="False">
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelInfiltrator/IntCaptain/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(250,250,250)</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_RebelInfiltratorArmorJuniorOfficer</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
+			</tags>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Soldier</li> -->
+				<!-- <li>SWCPOutfitTagGCW_RebelLightInfantry</li> -->
+			<!-- </defaultOutfitTags> -->
+		</apparel>
+		
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelOfficer</li>
+			<li>guy762TT_GCWArmor_NewRepublicOfficer</li>
+		</tradeTags>
+		
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_RebelInfiltratorArmor">
+		<defName>guy762_RebelInfiltratorArmor_topbrass</defName>
+		<label>Rebel Infiltrator combat armor, top brass</label>
+		<graphicData>
+			<texPath>SWApparel/RebelInfiltrator/ArmyGeneral/Apparel</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>1</SocialImpact>
+		</equippedStatOffsets>
+
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelInfiltrator/ArmyGeneral/Apparel</wornGraphicPath>
+
+			<renderNodeProperties Inherit="False">
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelInfiltrator/ArmyGeneral/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(250,250,250)</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					  
+					  <altDefs>
+							<li>guy762_RebelInfiltratorArmorTopBrassCustomization_ArmyGeneral</li>
+							<li>guy762_RebelInfiltratorArmorTopBrassCustomization_IntGeneral</li>
+						</altDefs>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_RebelInfiltratorArmorTopBrass</li>
+				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
+			</tags>
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Soldier</li> -->
+				<!-- <li>SWCPOutfitTagGCW_RebelLightInfantry</li> -->
+			<!-- </defaultOutfitTags> -->
+		</apparel>
+		
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelOfficer</li>
+			<li>guy762TT_GCWArmor_NewRepublicOfficer</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelInfiltratorArmorTopBrassCustomization_ArmyGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RebelArmyGeneral/><guy762AltTag_CrixMadine/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/RebelInfiltrator/ArmyGeneral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(250,250,250)</color> <!-- white -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RebelInfiltratorArmorTopBrassCustomization_IntGeneral</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RebelIntelligenceGeneral/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/RebelInfiltrator/IntGeneral/Apparel</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(250,250,250)</color> <!-- white -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
 	
 	
 	
@@ -1046,7 +1245,129 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
+		<defName>guy762_RebelKotaMilitiaArmor</defName>
+		<label>Rebel light battle armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/RebelKotaMilitiaArmor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(170,160,135)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<MarketValue>750</MarketValue>
+			
+			<MaxHitPoints>350</MaxHitPoints>
+      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/RebelKotaMilitiaArmor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<!-- <li>Neck</li> -->
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelKotaMilitiaArmor/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(185,180,175)</color> <!-- warm grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					  <colorC>
+						<color>(190,110,0)</color> <!-- rebel pilot orange -->
+						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
+					  </colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWGCWSpecificApparelItem_RebelKotaMilitiaArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(190,185,155)</only>  <!-- sandstone -->
+				</li>
+			</options>
+		</colorGenerator>
+
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<colorC>true</colorC>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_CloneArmor_veteran</defName>
 		<label>worn Clone battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1060,7 +1381,7 @@
 		<statBases>
 			<Mass>12</Mass>
 			<MarketValue>500</MarketValue>
-			<MaxHitPoints>475</MaxHitPoints> <!-- battle armor stats -1 -->
+			<MaxHitPoints>350</MaxHitPoints> <!-- battle armor stats -1 -->
       		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
@@ -1171,7 +1492,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_CloneArmor_shiny</defName>
 		<label>Clone battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1305,7 +1626,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebelCloneArmor</defName>
 		<label>rebel battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1410,7 +1731,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebelBattleHelmet</defName>
 		<label>rebel battle helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1523,7 +1844,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebPilotHelmet_generic</defName>
 		<label>K-22995 flight helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1636,7 +1957,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebPilotHelmet</defName>
 		<label>K-22995 flight helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1784,7 +2105,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_AWingPilotHelmet</defName>
 		<label>A-Wing flight helmet</label>
 		<techLevel>Spacer</techLevel>

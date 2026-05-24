@@ -49,6 +49,18 @@
         <salaryRange>500~1000</salaryRange>
         <salaryPeriodDays>15</salaryPeriodDays>
 		
+		<titleWageBonuses>
+			<li><title>SWGCWTitle_generic_initial</title><multiplier>0.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_NCO</title><multiplier>1</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><multiplier>1.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><multiplier>2</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><multiplier>5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><multiplier>10</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><multiplier>50</multiplier></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><multiplier>100</multiplier></li>
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_warlord</title><multiplier>1000</multiplier></li> -->
+		</titleWageBonuses>
+		
 	<!-- Auto-Feed Options -->
 	
 		<autoFeedIsEnabled>True</autoFeedIsEnabled>
@@ -170,10 +182,87 @@
                 <additionalRestFall>0.45</additionalRestFall>
             </li>
         </workOptions>
+		
+	
+	<!-- Ability Training Options -->
 
-    <!-- Bounty Options -->
+        <abilityTrainingIsEnabled>true</abilityTrainingIsEnabled>
+        <abilityTrainingLabelKey>SWCP_AbilityTraining_Label</abilityTrainingLabelKey>
+        <abilityTrainingDescKey>SWCP_AbilityTraining_Desc</abilityTrainingDescKey>
+		
+		<abilityTrainingCompleteLetterTitleKey>SWCP_AbilityTrainingCompleted_LetterTitle</abilityTrainingCompleteLetterTitleKey>
+        <abilityTrainingCompleteLetterLabelKey>SWCP_AbilityTrainingCompleted_Desc</abilityTrainingCompleteLetterLabelKey>
+        <abilityTrainingButtonIconTexPath>UI/FeatIcons/KotORII_Feat_Mentor</abilityTrainingButtonIconTexPath>
+		
+        <abilityTrainingOptions>
+            <li>
+                <labelKey>SWCP_AbilityTraining_CommandTierVI_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_CommandTierVI_Desc</descKey>
+                <iconTexPath>UI/TierIcons/CommandTier_VI</iconTexPath>
+				
+				<abilityDef>guy762_Ability_CommandTierVI</abilityDef>
+				<!-- <hediffDef></hediffDef> -->
+				<!-- <traitDef></traitDef><traitDegree>0</traitDegree> -->
+				
+                <trainingDurationDays>15</trainingDurationDays>
+            </li>
+			
+			
+			<li>
+                <labelKey>SWCP_AbilityTraining_Ambush_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_Ambush_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Ambush</iconTexPath>
+				
+				<abilityDef>SWPotF_TacticAbility_Ambush</abilityDef>
+                <trainingDurationDays>5</trainingDurationDays>
+            </li>
+			<li>
+                <labelKey>SWCP_AbilityTraining_DelegateAmbush_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_DelegateAmbush_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Delegation/Delegate_Ambush</iconTexPath>
+				
+				<abilityDef>SWPotF_TacticDelegationAbility_ambush</abilityDef>
+                <trainingDurationDays>5</trainingDurationDays>
+            </li>
+			
+			<li>
+                <labelKey>SWCP_AbilityTraining_Sprint_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_Sprint_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Sprint</iconTexPath>
+				
+				<abilityDef>SWPotF_TacticAbility_Sprint</abilityDef>
+                <trainingDurationDays>5</trainingDurationDays>
+            </li>
+			<li>
+                <labelKey>SWCP_AbilityTraining_DelegateSprint_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_DelegateSprint_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Delegation/Delegate_Sprint</iconTexPath>
+				
+				<abilityDef>SWPotF_TacticDelegationAbility_sprint</abilityDef>
+                <trainingDurationDays>5</trainingDurationDays>
+            </li>
+        </abilityTrainingOptions>
+		
+		
+		
+	
+	
+	<!-- Bounty Hunter Options -->
 
-        <turnInIsEnabled>true</turnInIsEnabled>
+        <bountyHunterIsEnabled>true</bountyHunterIsEnabled>
+        <bountyHunterLabelKey>SWCP_Turn_In_Label</bountyHunterLabelKey>
+        <bountyHunterDescKey>SWCP_Turn_In_Desc</bountyHunterDescKey>
+        <bountyHunterButtonIconTexPath>UI/Icons/bountyhunter</bountyHunterButtonIconTexPath>
+		
+        <bountyHunterTraderKind>guy762_TraderKind_PrisonerExchange_rebel</bountyHunterTraderKind>
+		
+        <bountyHunterThought>SWCP_Thought_PrisonerTurnedIn_rebels</bountyHunterThought>
+        <bountyHunterRefreshSilverInDays>7</bountyHunterRefreshSilverInDays>
+        <bountyHunterTraderNameKey>SWCP_Turn_In_Trader_Name</bountyHunterTraderNameKey>
+		
+	<!-- Prisoner Turn-In Options -->	
+	
+		<turnInIsEnabled>true</turnInIsEnabled>
         <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
         <turnInDescKey>SWCP_Turn_In_Desc</turnInDescKey>
         <turnInButtonIconTexPath>UI/Icons/stormtrooper</turnInButtonIconTexPath>
@@ -183,20 +272,20 @@
         <turnInThought>SWCP_Thought_PrisonerTurnedIn_rebels</turnInThought>
         <turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
         <turnInTraderNameKey>SWCP_Turn_In_Trader_Name</turnInTraderNameKey>
-
+	
     <!-- Drop Pod Options -->
 
         <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
 		
-	<!-- Shuttle Service Options (Vertibird) -->
+	<!-- Shuttle Service Options (Vertibird)  DISABLED TEMPORARILY BECAUSE IT DOESN'T WORK ON OTHER PLANETS -->
 
-        <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled>
-		<shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/uwing</shuttleServiceButtonIconTexPath>
-        <shuttleServiceCost>500</shuttleServiceCost>
+        <!-- <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled> -->
+		<!-- <shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/uwing</shuttleServiceButtonIconTexPath> -->
+        <!-- <shuttleServiceCost>500</shuttleServiceCost> -->
 		
-        <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey>
-        <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_500credits</shuttleServiceDescKey>
-        <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey>
+        <!-- <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey> -->
+        <!-- <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_500credits</shuttleServiceDescKey> -->
+        <!-- <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey> -->
 
     <!-- Resign Options -->
 

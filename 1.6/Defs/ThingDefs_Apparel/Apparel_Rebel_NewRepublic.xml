@@ -298,7 +298,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_NewRepublicHelmet</defName>
 		<label>New Republic marine helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -416,7 +416,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_NewRepublicArmor_light</defName>
 		<label>New Republic marine armor</label>
 		<description>.</description>
@@ -543,7 +543,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_NewRepublicInfiltratorArmor</defName>
 		<label>New Republic Commando armor</label>
 		<techLevel>Spacer</techLevel>

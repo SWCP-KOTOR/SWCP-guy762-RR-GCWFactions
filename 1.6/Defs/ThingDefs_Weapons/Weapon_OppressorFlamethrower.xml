@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedWeapon_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_OppressorFlamethrower</defName>
 		<label>D-62x Oppressor flamethrower</label>
 		<description>.</description>

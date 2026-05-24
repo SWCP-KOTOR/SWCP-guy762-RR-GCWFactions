@@ -26,6 +26,7 @@
 			<li>SWGCWSpecificApparelItem_HeraSyndullaBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
+			<li>guy762_MedicBelt</li>
 			<li>guy762_HeraSyndullaHat</li>
 			<li>guy762_HeraSyndullaJumpsuit</li>
 		</apparelRequired>
@@ -41,41 +42,36 @@
 		<weaponTags>
 			<li>SWRanged_DC17sPistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Medicine</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>19~20</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
-		<!-- <inventoryOptions> -->
-			<!-- <skipChance>0</skipChance> -->
-			<!-- <subOptionsChooseOne> -->
-				<!-- <li> -->
-					<!-- <thingDef>KOTOR_SpacerMedKit</thingDef> -->
-					<!-- <countRange>1~2</countRange> -->
-				<!-- </li> -->
-			<!-- </subOptionsChooseOne> -->
-		<!-- </inventoryOptions> -->
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>9~10</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>6~7</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>4~5</countRange>
+				</li>
+				<li>
+					<thingDef>KOTOR_SpacerMedKit</thingDef>
+					<countRange>3~4</countRange>
+				</li>
+				<li>
+					<thingDef>KOTOR_kolto</thingDef>
+					<countRange>3~4</countRange>
+				</li>
+				<li>
+					<thingDef>SWCPItem_Bacta</thingDef>
+					<countRange>3~4</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 		
 		
 		<forcedTraits>
@@ -97,12 +93,12 @@
 			
 			<li>SWPotF_TacticAbility_Ambush</li>
 			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			<li>SWPotF_TacticAbility_Barrage</li>
+			<li>SWPotF_TacticDelegationAbility_barrage</li>
 			<li>SWPotF_TacticAbility_TakeCover</li>
 			<li>SWPotF_TacticDelegationAbility_takecover</li>
 			<li>SWPotF_TacticAbility_Sprint</li>
 			<li>SWPotF_TacticDelegationAbility_sprint</li>
-			<li>SWPotF_TacticAbility_StealthAdvance</li>
-			<li>SWPotF_TacticDelegationAbility_stealthadvance</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
@@ -153,7 +149,7 @@
 					</li>
 					<li>
 						<skill>Medicine</skill>
-						<range>4~6</range>
+						<range>6~8</range>
 					</li>
 					<li>
 						<skill>Social</skill>

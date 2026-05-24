@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_WESTAR35pistol</defName>
 		<label>WESTAR-35 blaster pistol</label>
 		<description>.</description>

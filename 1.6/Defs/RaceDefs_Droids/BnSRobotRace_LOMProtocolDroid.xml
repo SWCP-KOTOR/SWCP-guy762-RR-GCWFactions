@@ -681,5 +681,22 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_LOMProtocolDroid</defName>
+		<label>build LOM-series protocol droid</label>
+		<description>Create a LOM-series protocol droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_LOMProtocolDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_LOMProtocolDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

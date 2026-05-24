@@ -43,6 +43,19 @@
 		  <li>SWPartisan_Warlord</li>
 		</fixedLeaderKinds>
 		
+		
+		<royalTitleTags>
+			<li>SWGCWTitleTag_generic</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
+		
+		
+		
 		<layerWhitelist>
 			<li>Surface</li>
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
@@ -313,20 +326,21 @@
 
 
 		<caravanTraderKinds>
-		  <li>Caravan_Outlander_BulkGoods</li>
-		  <li>Caravan_Outlander_PirateMerchant</li>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-		  <li>Visitor_Outlander_Standard</li>
+			<li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-		  <!-- <li>guy762_BaseTraderKind_gunrunner</li> -->
+			<li>SWCP_GCWBaseTraderKind_ScumGunrunner</li>
+			<li>SWCP_GCWBaseTraderKind_RebelCellBasic</li>
 		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
-		  <!-- <li>Orbital_BulkGoods</li> -->
-		  <!-- <li>Orbital_CombatSupplier</li> -->
-		  <!-- <li>Orbital_Exotic</li> -->
-		  <!-- <li>Orbital_PirateMerchant</li> -->
+			<!-- <li>Orbital_BulkGoods</li> -->
+			<!-- <li>Orbital_CombatSupplier</li> -->
+			<!-- <li>Orbital_Exotic</li> -->
+			<!-- <li>Orbital_PirateMerchant</li> -->
 		<!-- </orbitalTraderKinds> -->
 		
 		

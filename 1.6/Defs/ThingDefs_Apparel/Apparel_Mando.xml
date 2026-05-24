@@ -450,7 +450,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_MandoGCWArmor_battle</defName>
 		<label>Mandalorian Battle Armor</label>
 		<techLevel>Spacer</techLevel>

@@ -4,7 +4,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_OneHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OneHand">
 		<defName>guy762_BH4DoubleBlaster</defName>
 		<label>BH-4 Double Blaster Pistol</label>
 		<description>.</description>

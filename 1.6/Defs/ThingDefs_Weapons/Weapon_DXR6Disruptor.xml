@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_DXP2DisruptorPistol</defName>
 		<label>DXP-2 Disruptor Pistol</label>
 		<description>.</description>
@@ -84,7 +84,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DXR4DisruptorRifle</defName>
 		<label>DXR-4 Disruptor Rifle</label>
 		<description>.</description>
@@ -197,7 +197,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DXR6DisruptorSniper</defName>
 		<label>DXR-6 Disruptor Sniper</label>
 		<description>.</description>

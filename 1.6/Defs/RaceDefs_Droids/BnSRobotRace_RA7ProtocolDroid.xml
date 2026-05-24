@@ -680,5 +680,35 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_RA7ProtocolDroid</defName>
+		<label>build RA-7 series protocol droid</label>
+		<description>Create an RA-7 series protocol droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_RA7ProtocolDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_RA7ProtocolDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_RA7ProtocolDroid_imperial</defName>
+		<label>build RA-7 series protocol droid (Imperial)</label>
+		<description>Create an Imperial RA-7 series protocol droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_RA7ProtocolDroid_imperial</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_IMP_RA7ProtocolDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

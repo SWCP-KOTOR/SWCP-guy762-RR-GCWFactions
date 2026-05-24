@@ -3,7 +3,7 @@
 
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E10rifle</defName>
 		<label>E-10 blaster rifle</label>
 		<description>A precursor to the popular E-11, the E-10 was designed as a cheap, expendable infantry rifle similar to the Separatists' E-5. The E-10 offers improved damage and range over the E-5, and though its performance may pale in comparison to nearly any other blaster rifle, this inadequacy is considered a moot point when legions of Imperial Army conscripts can pelt a target with a torrent of blaster fire with these weapons and achieve largely the same results.</description>
@@ -86,7 +86,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E11carbine</defName>
 		<label>E-11 blaster carbine</label>
 		<description>The most widely-produced blaster in history, the E-11 is utilized by nearly every armed force in the known galaxy and is the standard-issue weapon of all military branches of the Galactic Empire. Designed as a cheaper replacement to the Republic's DC-15 carbine, the E-11 is primarily made out of inexpensive milled steel and lightweight components and serves as an efficient medium-range repeating carbine.</description>
@@ -188,7 +188,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E11tactical</defName>
 		<label>E-11 tactical carbine</label>
 		<description>An improved version of the E-11 utilized by most Imperial special forces units outside of the Stormtrooper Corps, this carbine fires in quick bursts with greater accuracy than standard issue models.</description>
@@ -291,7 +291,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E22rifle</defName>
 		<label>E-22 double blaster rifle</label>
 		<!-- <description>An expertly-designed long-range counterpart to the E-11, the E-22 uses many of the same parts as the E-11 in an unusual double-barreled reciprocative design that is easy for BlasTech factories to produce. Both barrels can be fired at once for precise targeting and increased damage, or the weapon can be fired rapidly with suppressing fire capabilities comparable to that of the bulkier T-21 repeater.</description> -->
@@ -409,7 +409,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_EXpulsecarbine</defName>
 		<label>E-X250 Pulse Repeater</label>
 		<description>.</description>

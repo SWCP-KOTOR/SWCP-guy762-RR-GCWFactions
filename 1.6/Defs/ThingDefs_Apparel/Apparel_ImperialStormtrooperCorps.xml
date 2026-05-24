@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_StormieArmor</defName>
 		<label>Stormtrooper armor</label>
 		<techLevel>Spacer</techLevel>
@@ -14,10 +14,10 @@
 		<statBases>
 			<Mass>6</Mass>
 			<MarketValue>500</MarketValue>
-			<MaxHitPoints>225</MaxHitPoints>
+			<MaxHitPoints>350</MaxHitPoints>
 			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<ArmorRating_Heat>1.05</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -100,7 +100,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_StormieHelmet</defName>
 		<label>Stormtrooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -120,7 +120,7 @@
 			<MaxHitPoints>115</MaxHitPoints>
       		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -362,19 +362,9 @@
 	</ThingDef>
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
 	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_ImpStormtrooperBackpack</defName>
 		<label>backpack, SD-48 survival pack</label>
@@ -479,7 +469,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_StormieArmor_shadow</defName>
 		<label>Shadow Stormtrooper armor</label>
 		<techLevel>Spacer</techLevel>
@@ -495,7 +485,7 @@
 			<MaxHitPoints>350</MaxHitPoints> <!-- light battle armor stats -->
 			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<ArmorRating_Heat>1.05</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -584,7 +574,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_StormieHelmet_shadow</defName>
 		<label>Shadow Stormtrooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -607,7 +597,7 @@
 			<MaxHitPoints>175</MaxHitPoints>
       		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -737,7 +727,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ScoutTrooperHelmet</defName>
 		<label>Scout Trooper Helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -756,7 +746,7 @@
 			<MaxHitPoints>115</MaxHitPoints>
       		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -799,7 +789,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_ScoutTrooperArmor</defName>
 		<label>Scout Trooper combat armor</label>
 		<techLevel>Spacer</techLevel>
@@ -807,16 +797,16 @@
 		<graphicData>
 			<texPath>SWApparel/ScoutTrooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(250,250,250)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>6</Mass>
 			<MarketValue>500</MarketValue>
 			<MaxHitPoints>225</MaxHitPoints>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
 			
 			<Insulation_Cold>5</Insulation_Cold>
 			<Insulation_Heat>5</Insulation_Heat>
@@ -871,7 +861,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>250,250,250</color> <!-- white -->
+						<color>(250,250,250)</color> <!-- white -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -947,7 +937,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_StormCommandoHelmet</defName>
 		<label>Storm Commando Helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -967,7 +957,7 @@
 			<MaxHitPoints>175</MaxHitPoints>
       		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<ArmorRating_Heat>1.05</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -1056,7 +1046,7 @@
 	
 
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_StormCommandoArmor</defName>
 		<label>Storm Commando combat armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1073,7 +1063,7 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<ArmorRating_Heat>1.15</ArmorRating_Heat>
 			
 			<Insulation_Cold>10</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
@@ -1219,7 +1209,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpSnowtrooperHelmet</defName>
 		<label>snowtrooper helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -1240,7 +1230,7 @@
 			<MaxHitPoints>115</MaxHitPoints>
       		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
 			
 			<Insulation_Cold>25</Insulation_Cold>
 			
@@ -1324,7 +1314,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpSnowtrooperArmor</defName>
 		<label>cold-weather battle armor</label>
 		<techLevel>Spacer</techLevel>

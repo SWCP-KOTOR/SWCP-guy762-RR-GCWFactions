@@ -526,5 +526,19 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 	
+	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_PitDroid</defName>
+		<label>build DUM-series pit droid</label>
+		<description>Create a DUM-series pit droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_PitDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_PitDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

@@ -507,5 +507,16 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_ASP7LaborDroid</defName>
+		<label>build ASP-7 series labor droid</label>
+		<description>Create an ASP-7 series labor droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_ASP7LaborDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_ASP7LaborDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
 </Defs>

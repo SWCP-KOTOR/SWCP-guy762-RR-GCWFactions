@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableHero_CrixMadine"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableHero_CrixMadine</defName>
+		<nameMaker>guy762_HeroNamer_CrixMadine</nameMaker>
+		<label>Special Forces General</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>35</minGenerationAge>
+		<maxGenerationAge>36</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Burgundy</forcedHair>
+		<forcedHairColor>(193, 146, 85)</forcedHairColor>
+		<skinColorOverride>(255, 239, 201)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotORHeroAccessories_canderous</li>
+
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			<li>SWGCWSpecificApparelItem_RebelEndorTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_RebelInfiltratorArmorTopBrass</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>SWCP_stealthbelt_default</li>
+			<li>guy762_JKenergyshield</li>
+			
+			<li>guy762_RebelHelmet_endor</li>
+			<li>guy762_Backpack_GCWRebel</li>
+			<li>guy762_RebelInfiltratorArmor_topbrass</li>
+			<li>guy762_GenericUniform_fatigues</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Belt</apparelLayer>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<color>(50,50,50)</color>        <!-- black -->
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_GenericUniform_fatigues</apparelDef>
+				<color>(140,135,80)</color> <!-- rebel infiltrator olive -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DH17rifle</li>
+		</weaponTags>
+
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li><thingDef>guy762_RebelGasMask</thingDef><countRange>1</countRange></li>
+				<li><thingDef>guy762_A180pistol</thingDef><countRange>1</countRange></li>
+			</subOptionsTakeAll>
+			<!-- <subOptionsChooseOne> -->
+				<!-- <li> -->
+					<!-- <thingDef>guy762_E11carbine</thingDef> -->
+					<!-- <countRange>1</countRange> -->
+				<!-- </li> -->
+			<!-- </subOptionsChooseOne> -->
+		</inventoryOptions>
+		
+		<forcedTraits>
+			<TorturedArtist>0</TorturedArtist>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_CrixMadine</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+			
+			<li>SWPotF_TacticAbility_Ambush</li>
+			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
+			
+			<li>SWPotF_TacticAbility_Sprint</li>
+			<li>SWPotF_TacticDelegationAbility_sprint</li>
+			
+			<li>SWPotF_TacticAbility_StealthAdvance</li>
+			<li>SWPotF_TacticDelegationAbility_stealthadvance</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+		</abilities>
+		
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageNormal</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageNormal</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>Full</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_SandyBlonde</li>
+					<li>Skin_Melanin3</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_CrixMadine/></flags></li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnNR_CrixMadine"  ParentName="SWWEPlayableHero_CrixMadine">
+		<defName>SWCharPawnNR_CrixMadine</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+	</PawnKindDef>
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_CrixMadine</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[crix] '[madine]' [madine]</li>
+				<li>crix->Crix</li>
+				<li>madine->Madine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_CrixMadine</defName>
+		<title>Storm Commando Founder</title>
+		<titleShort>Storm Commando</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>10</Melee>
+			<Social>10</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_CrixMadine</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_CrixMadine</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_CrixMadine</defName>
+		<title>Alliance Special Forces General</title>
+		<titleShort>General</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		
+		<forcedTraits>
+			<TorturedArtist>0</TorturedArtist>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_CrixMadine</nameMaker>
+		<!-- <workDisables>Artistic, PlantWork, Cooking, Mining, Caring</workDisables> -->
+		<spawnCategories>
+			<li>guy762BSC_CrixMadine</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

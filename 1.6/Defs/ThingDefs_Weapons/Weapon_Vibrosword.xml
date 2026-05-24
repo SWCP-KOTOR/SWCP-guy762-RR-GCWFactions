@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORMeleeNoQualityModMake_OffHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_OffHand">
 		<defName>guy762_Vibrodagger</defName>
 		<label>Vibrodagger</label>
 		<description>.</description>
@@ -19,21 +19,21 @@
 			<MarketValue>200</MarketValue>
 			<Mass>2</Mass>
 			
-			<WorkToMake>6000</WorkToMake>
+			<!-- <WorkToMake>6000</WorkToMake> -->
 		</statBases>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<KOTOR_IngotCortosis>1</KOTOR_IngotCortosis>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>10</Plasteel>
-			<Steel>20</Steel>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>4</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <KOTOR_IngotCortosis>1</KOTOR_IngotCortosis> -->
+			<!-- <ComponentSpacer>1</ComponentSpacer> -->
+			<!-- <Plasteel>10</Plasteel> -->
+			<!-- <Steel>20</Steel> -->
+		<!-- </costList> -->
 		
 		<comps>
 		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
@@ -95,7 +95,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORMeleeNoQualityModMake_OneHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_OneHand">
 		<defName>guy762_VibroswordGCW</defName>
 		<label>Vibrosword</label>
 		<description>.</description>
@@ -113,21 +113,21 @@
 			<MarketValue>1685</MarketValue>
 			<Mass>5</Mass>
 			
-			<WorkToMake>24000</WorkToMake>
+			<!-- <WorkToMake>24000</WorkToMake> -->
 		</statBases>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<KOTOR_IngotCortosis>2</KOTOR_IngotCortosis>
-			<ComponentSpacer>2</ComponentSpacer>
-			<Plasteel>30</Plasteel>
-			<Steel>50</Steel>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>6</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <KOTOR_IngotCortosis>2</KOTOR_IngotCortosis> -->
+			<!-- <ComponentSpacer>2</ComponentSpacer> -->
+			<!-- <Plasteel>30</Plasteel> -->
+			<!-- <Steel>50</Steel> -->
+		<!-- </costList> -->
 		
 		<comps>
 		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">

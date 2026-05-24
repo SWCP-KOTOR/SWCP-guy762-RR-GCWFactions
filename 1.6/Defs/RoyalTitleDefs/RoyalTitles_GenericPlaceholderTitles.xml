@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+					THE HIERARCHY OF IMPERIAL RANKS
+	
+
+	SENIORITY VALUES:
+	0X: left open for misc titles ////////////////////////////
+	- 
+	
+	1X: NCO/low ranks ////////////////////////////
+	- 11 - subaltern (operations)
+	- 12 - corporal (army)
+	- 13 - cadet (navy)
+	- 14 - attendant/agent (ISB/IMI)
+	
+	- 1X - sergeant (army)
+	- 1X - ensign (navy)
+	
+	2X: low junior officer ranks ////////////////////////////
+	- 21 - lieutenant (operations)
+	- 22 - lieutenant (army)
+	- 23 - lieutenant (navy)
+	- 24 - lieutenant/supervisor (ISB/IMI)
+	
+	
+	3X: high junior officer ranks ////////////////////////////
+	- 31 - captain (operations)
+	- 32 - captain (army)
+	- 33 - lt. commander (navy)
+	- 34 - captain (ISB/IMI)
+	
+	- 37 - detachment CO (special)
+	
+	- 39 - acolyte (dark side)
+	
+	4X: low senior officer ranks ////////////////////////////
+	- 41 - major (operations)
+	- 42 - major (army)
+	- 43 - commander (navy)
+	- 44 - major (ISB/IMI)
+	
+	- 45 - baron/count (imperial court honorific)
+	- 46 - administrator (politiburo)
+	- 47 - task squadron CO (special)
+	
+	- 49 - imperial royal guard (dark side)
+	
+	5X: high senior officer ranks ////////////////////////////
+	- 51 - commander (operations)
+	- 52 - commandant (army)
+	- 53 - captain (navy)
+	- 54 - commander (ISB/IMI)
+	
+	- 55 - prince/king (imperial court honorific)
+	
+	- 57 - task division CO (special)
+	- 58 - inquisitor (inquisitorus)
+	
+	6X: low flag officer ranks ////////////////////////////
+	- 61 - commodore (operations)
+	- 62 - colonel (army)
+	- 63 - vice admiral (navy)
+	- 64 - colonel (ISB/IMI)
+	
+	- 66 - viceroy (politiburo)
+	- 67 - task force CO (special)
+	
+	- 68 - high inquisitor (inquisitorus)
+	- 69 - shadow hand (dark side)
+	
+	7X: high flag officer ranks ////////////////////////////
+	- 71 - general (operations)
+	- 72 - general (army)
+	- 73 - admiral (navy)
+	- 74 - admiral (ISB/IMI)
+	
+	- 75 - vizier (imperial court)
+	- 76 - moff (politiburo)
+	
+	- 78 - grand inquisitor (inquisitorus)
+	- 79 - emperor's hand (dark side)
+	
+	8X: special appointment ranks & self-appointed titles ////////////////////////////
+	- 81 - project director (operations)
+	- 82 - field marshal (army)
+	- 83 - fleet admiral (navy)
+	- 84 - agency director (ISB/IMI)
+	
+	- 85 - grand general (army & operations)
+	
+	- 8X - high admiral
+	- 8X - superior general
+	- 8X - warlord
+	- 8X - supreme commander
+	
+	9X+: oversector administrators & emperor's inner circle	////////////////////////////
+	- 91 - grand admiral (army & navy)
+	- 92 - grand moff (politiburo)
+	- 93 - grand vizier (imperial court)
+	
+	- 98 - military executor
+	- 99 - apprenticed Darth 
+
+	100: emperor	////////////////////////////
+	
+-->
+
+
+
+
+
+
+
+
+
+
+
+	<RoyalTitleDef Abstract="True" Name="SWGCWTitle_generic_base">
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		<tags>
+			<li>SWGCWTitleTag_generic</li>
+		</tags>
+		<awardThought>GainedTitle</awardThought>
+		<lostThought>LostTitle</lostThought>
+		<canBeInherited>false</canBeInherited>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<!-- <replaceOnRecruited>SWGCWTitle_generic_private</replaceOnRecruited> -->
+		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+
+		<!-- <permits> -->
+		  <!-- <li>TradeSettlement</li> -->
+		  <!-- <li>TradeCaravan</li> -->
+		  <!-- <li>TradeOrbital</li> -->
+		<!-- </permits> -->
+	</RoyalTitleDef>
+	
+	
+	
+	
+		<!-- ============== titles ============================= -->
+
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base"> <!-- NCO armor -->
+		<defName>SWGCWTitle_generic_initial</defName>
+		<label>recruit</label>
+		<description>This is a generic placeholder rank.</description>
+		<seniority>1</seniority>
+		<favorCost>30</favorCost>
+		<recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+		<!-- <commonality>1</commonality> -->
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		
+		<permitPointsAwarded>2</permitPointsAwarded>
+		
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base"> 
+		<defName>SWGCWTitle_generic_NCO</defName>
+		<label>non-commissioned officer</label>
+		<description>This is a generic placeholder rank.</description>
+		<seniority>100</seniority>
+		<favorCost>20</favorCost>
+		<recruitmentResistanceOffset>15</recruitmentResistanceOffset>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		
+		<permitPointsAwarded>2</permitPointsAwarded>
+		
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base"> <!-- detachment C.O. -->
+		<defName>SWGCWTitle_generic_lowjuniorofficer</defName>
+		<label>low junior officer</label>
+		<description>This is a generic placeholder rank.</description>
+		<seniority>200</seniority>
+		<favorCost>40</favorCost>
+		<recruitmentResistanceOffset>20</recruitmentResistanceOffset>
+
+		<permitPointsAwarded>2</permitPointsAwarded>
+		<disabledWorkTags>
+			<li>Cleaning</li>
+		</disabledWorkTags>
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerDetachmentCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base"> <!-- task squad C.O. -->
+		<defName>SWGCWTitle_generic_highjuniorofficer</defName>
+		<label>high junior officer</label>
+		<description>This is a generic placeholder rank.</description>
+		<seniority>300</seniority>
+		<favorCost>40</favorCost>
+		<minExpectation>Moderate</minExpectation>
+		<requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+		<recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>4</permitPointsAwarded>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>2400000</speechCooldown>
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskSquadCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base"> <!-- task division C.O. -->
+		<defName>SWGCWTitle_generic_lowseniorofficer</defName>
+		<label>low senior officer</label>
+		<description>This is a generic placeholder rank.</description>
+		
+		<seniority>400</seniority>
+		<favorCost>50</favorCost>
+		<minExpectation>High</minExpectation>
+		<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+		<recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>4</permitPointsAwarded>
+
+		<decreeTags>
+			<li>All</li>
+		</decreeTags>
+		<decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>1200000</speechCooldown>
+
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+
+		<throneRoomRequirements>
+		  <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+			<things>
+			  <li>Throne</li>
+			  <li>GS_Palp_Throne</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_Area">
+			<area>24</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoBeds</labelKey>
+			<buildingTags>
+			  <li>Bed</li>
+			</buildingTags>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+			<labelKey>RoomRequirementNoAltars</labelKey>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</throneRoomRequirements>
+
+		<bedroomRequirements>
+		  <li Class="RoomRequirement_Area">
+			<area>16</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ThingAnyOf">
+			<disablingPrecepts>
+			  <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+			</disablingPrecepts>
+			<things>
+			  <li>DoubleBed</li>
+			  <li>RoyalBed</li>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</bedroomRequirements>
+		
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li>
+		</modExtensions>
+	</RoyalTitleDef>
+	
+	
+	
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base">
+		<defName>SWGCWTitle_generic_highseniorofficer</defName>
+		<label>high senior officer</label>
+		<description>This is a generic placeholder rank.</description>
+		
+		<seniority>500</seniority>
+		<favorCost>100</favorCost>
+		<minExpectation>High</minExpectation>
+		<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+		<recruitmentResistanceOffset>80</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>6</permitPointsAwarded>
+
+		<decreeTags>
+			<li>All</li>
+		</decreeTags>
+		<decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>600000</speechCooldown>
+
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+
+		<throneRoomRequirements>
+		  <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+			<things>
+			  <li>Throne</li>
+			  <li>GS_Palp_Throne</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_Area">
+			<area>24</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoBeds</labelKey>
+			<buildingTags>
+			  <li>Bed</li>
+			</buildingTags>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+			<labelKey>RoomRequirementNoAltars</labelKey>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</throneRoomRequirements>
+
+		<bedroomRequirements>
+		  <li Class="RoomRequirement_Area">
+			<area>16</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ThingAnyOf">
+			<disablingPrecepts>
+			  <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+			</disablingPrecepts>
+			<things>
+			  <li>DoubleBed</li>
+			  <li>RoyalBed</li>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</bedroomRequirements>
+		
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li> -->
+		<!-- </modExtensions> -->
+	</RoyalTitleDef>
+	
+	
+	
+	
+	
+	
+	
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base">
+		<defName>SWGCWTitle_generic_lowflagofficer</defName>
+		<label>low flag officer</label>
+		<description>This is a generic placeholder rank.</description>
+		
+		<seniority>600</seniority>
+		<favorCost>200</favorCost>
+		<minExpectation>High</minExpectation>
+		<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+		<recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>8</permitPointsAwarded>
+
+		<decreeTags>
+			<li>All</li>
+		</decreeTags>
+		<decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>300000</speechCooldown>
+
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+
+		<throneRoomRequirements>
+		  <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+			<things>
+			  <li>Throne</li>
+			  <li>GS_Palp_Throne</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_Area">
+			<area>24</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoBeds</labelKey>
+			<buildingTags>
+			  <li>Bed</li>
+			</buildingTags>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+			<labelKey>RoomRequirementNoAltars</labelKey>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</throneRoomRequirements>
+
+		<bedroomRequirements>
+		  <li Class="RoomRequirement_Area">
+			<area>16</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ThingAnyOf">
+			<disablingPrecepts>
+			  <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+			</disablingPrecepts>
+			<things>
+			  <li>DoubleBed</li>
+			  <li>RoyalBed</li>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</bedroomRequirements>
+		
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li> -->
+		<!-- </modExtensions> -->
+	</RoyalTitleDef>
+	
+	
+	
+	
+	<RoyalTitleDef ParentName="SWGCWTitle_generic_base">
+		<defName>SWGCWTitle_generic_highflagofficer</defName>
+		<label>high flag officer</label>
+		<description>This is a generic placeholder rank.</description>
+		
+		<seniority>700</seniority>
+		<favorCost>400</favorCost>
+		<minExpectation>High</minExpectation>
+		<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+		<recruitmentResistanceOffset>120</recruitmentResistanceOffset>
+		<commonality>1</commonality>
+
+		<permitPointsAwarded>10</permitPointsAwarded>
+
+		<decreeTags>
+			<li>All</li>
+		</decreeTags>
+		<decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+
+		<grantedAbilities>
+			<li>Speech</li>
+		</grantedAbilities>
+		<speechCooldown>150000</speechCooldown>
+
+		<!-- <requiredApparel> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>Torso</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <bodyPartGroupsMatchAny> -->
+					<!-- <li>UpperHead</li> -->
+					<!-- <li>FullHead</li> -->
+				<!-- </bodyPartGroupsMatchAny> -->
+				<!-- <requiredTags> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerUniform</li> -->
+					<!-- <li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li> -->
+					
+					<!-- <li>SWGCWRoyaltyTag_AnyHeroApparel</li> -->
+				<!-- </requiredTags> -->
+			<!-- </li> -->
+		<!-- </requiredApparel> -->
+
+		<throneRoomRequirements>
+		  <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+			<things>
+			  <li>Throne</li>
+			  <li>GS_Palp_Throne</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_Area">
+			<area>24</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoBeds</labelKey>
+			<buildingTags>
+			  <li>Bed</li>
+			</buildingTags>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+			<labelKey>RoomRequirementNoAltars</labelKey>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</throneRoomRequirements>
+
+		<bedroomRequirements>
+		  <li Class="RoomRequirement_Area">
+			<area>16</area>
+		  </li>
+		  <li Class="RoomRequirement_TerrainWithTags">
+			<labelKey>RoomRequirementAllFloored</labelKey>
+			<tags>
+			  <li>Floor</li>
+			  <li>FineFloor</li>
+			</tags>
+		  </li>
+		  <li Class="RoomRequirement_ThingAnyOf">
+			<disablingPrecepts>
+			  <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+			</disablingPrecepts>
+			<things>
+			  <li>DoubleBed</li>
+			  <li>RoyalBed</li>
+			  <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+			</things>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings">
+			<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+			<buildingTags>
+			  <li>Production</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+			<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+			<buildingTags>
+			  <li>Biotech</li>
+			</buildingTags>
+		  </li>
+		  <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+			<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+			<buildingTags>
+			  <li>Anomaly</li>
+			</buildingTags>
+		  </li>
+		</bedroomRequirements>
+		
+		<foodRequirement>
+			<minQuality>MealFine</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+				<li>Chocolate</li>
+				<li>InsectJelly</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
+			</allowedDefs>
+		</foodRequirement>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BigAndSmall.Flagger"><flags><guy762AltTag_ImpOfficerTaskDivisionCO/></flags></li> -->
+		<!-- </modExtensions> -->
+	</RoyalTitleDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</Defs>

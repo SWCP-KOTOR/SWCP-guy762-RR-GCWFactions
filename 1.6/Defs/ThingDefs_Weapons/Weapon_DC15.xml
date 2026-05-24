@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedModdable_OffHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OffHand">
 		<defName>guy762_DC17sPistol</defName>
 		<label>DC-17S blaster pistol</label>
 		<description>.</description>
@@ -90,7 +90,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DC15cCarbine</defName>
 		<label>DC-15C blaster carbine</label>
 		<description>.</description>
@@ -182,7 +182,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DC15aRifle</defName>
 		<label>DC-15A blaster rifle</label>
 		<description>.</description>
@@ -291,7 +291,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DC15xSniper</defName>
 		<label>DC-15X Sniper Rifle</label>
 		<description>.</description>

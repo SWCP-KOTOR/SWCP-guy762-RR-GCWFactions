@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_TL50repeater_hvy</defName>
 		<label>TL-50C heavy repeater</label>
 		<description>.</description>
@@ -116,7 +116,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_TL50repeater</defName>
 		<label>TL-50 repeating blaster</label>
 		<description>Now considered the standard model of the TL-50 platform, this version of the popular repeater actually entered production much later than the earlier concussion-launcher-equipped model. This variant was designed to meet the needs of various Imperial special forces groups who felt the weak energy projectiles of original lacked "killing potential". The integrated concussion launcher has been removed in favor of a standard blaster firing chamber, offering per-shot damage similar to many contemporary blasters at the impressively high fire rate the TL-50 platform has become known for.</description>

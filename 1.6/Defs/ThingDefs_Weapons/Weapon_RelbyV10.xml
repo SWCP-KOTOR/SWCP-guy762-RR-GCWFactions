@@ -3,7 +3,7 @@
 
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_RelbyV10Launcher</defName>
 		<label>Relby V-10 Mortar Gun</label>
 		<description>.</description>

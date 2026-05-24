@@ -102,7 +102,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_LumiyaArmor</defName>
 		<label>Lumiya's Electromesh Suit</label>
 		<description>This light combat suit is used by Nagai operatives. It is highly resistant to blaster fire and is designed to allow the Nagai to fully capitalize on their naturally high dexterity. It cannot be modified, however.</description>
@@ -271,7 +271,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_DengarHeavyBattleArmor</defName>
 		<label>Dengar's heavy battle armor</label>
 		<techLevel>Spacer</techLevel>
@@ -353,7 +353,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_ModdableMakeableArmor_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_MandoGCWArmor_jodokast</defName>
 		<label>Jodo Kast's Mandalorian Armor</label>
 		<techLevel>Spacer</techLevel>
@@ -377,7 +377,7 @@
 			<ArmorRating_Heat>1.25</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 			
-			<WorkToMake>90000</WorkToMake>
+			<!-- <WorkToMake>90000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
 			<SWCPStat_InfantryArmorClass_heavy>1</SWCPStat_InfantryArmorClass_heavy>
@@ -390,20 +390,17 @@
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
 		</equippedStatOffsets>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>11</Crafting>
-			</skillRequirements>
-			<!--factionPrerequisiteTags>
-				<li>guy762_KotORFaction_Mando</li>
-			</factionPrerequisiteTags-->
-		</recipeMaker>
-		<costList>
-			<KOTOR_AlloyDurasteel>100</KOTOR_AlloyDurasteel>
-			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>11</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <KOTOR_AlloyDurasteel>100</KOTOR_AlloyDurasteel> -->
+			<!-- <KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave> -->
+			<!-- <ComponentSpacer>2</ComponentSpacer> -->
+		<!-- </costList> -->
 		
 		<apparel>
 			<tags>
@@ -496,7 +493,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="guy762_HelmetModMakeableBase">
+	<ThingDef ParentName="SWCPHelmetMakeableNoQuality_hard">
 		<defName>guy762_MandoGCWHelmet_worn</defName>
 		<label>Mandalorian Helmet, worn</label>
 		<techLevel>Spacer</techLevel>
@@ -520,7 +517,7 @@
 			<ArmorRating_Heat>1.05</ArmorRating_Heat>
 			<EquipDelay>3</EquipDelay>
 			
-			<WorkToMake>50000</WorkToMake>
+			<!-- <WorkToMake>50000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
 			<AimingDelayFactor>-0.2</AimingDelayFactor>
@@ -531,19 +528,16 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 		</equippedStatOffsets>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-			<!--factionPrerequisiteTags>
-				<li>guy762_KotORFaction_Mando</li>
-			</factionPrerequisiteTags-->
-		</recipeMaker>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<KOTOR_IngotBeskar>60</KOTOR_IngotBeskar>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>12</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <ComponentSpacer>3</ComponentSpacer> -->
+			<!-- <KOTOR_IngotBeskar>60</KOTOR_IngotBeskar> -->
+		<!-- </costList> -->
 		
 		<apparel>
 			<drawData>
@@ -642,7 +636,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_ZuckussArmor</defName>
 		<label>Zuckuss' Armor Rig</label>
 		<description>.</description>
@@ -732,7 +726,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_KyleKatarnOutfit</defName>
 		<label>Kyle Katarn's outfit</label>
 		<description>.</description>
@@ -854,7 +848,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_NymOutfit</defName>
 		<label>Nym's jumpsuit</label>
 		<description>.</description>
@@ -1066,7 +1060,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_HeraSyndullaJumpsuit</defName>
 		<label>Hera's pilot coveralls</label>
 		<description>.</description>
@@ -1199,7 +1193,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_LukeRotJOutfit</defName>
 		<label>Luke Skywalker's outfit</label>
 		<description>.</description>
@@ -1282,7 +1276,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_LukeGeneralUniform</defName>
 		<label>New Republic armored uniform, Luke's</label>
 		<description>.</description>
@@ -1413,7 +1407,7 @@
 
 
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RebPilotHelmet_roguesquadron</defName>
 		<label>K-22995 flight helmet, ace pilot's</label>
 		<techLevel>Spacer</techLevel>
@@ -1631,7 +1625,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="KotORArmorModdable_hard">
+	  <ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_AWingPilotHelmet_keo</defName>
 		<label>A-Wing flight helmet (Keo's)</label>
 		<techLevel>Spacer</techLevel>
@@ -1753,7 +1747,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_MandoGCWArmor_FennShysa</defName>
 		<label>Fenn Shysa's Mandalorian Armor</label>
 		<techLevel>Spacer</techLevel>
@@ -1876,7 +1870,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_MandoGCWHelmet_FennShysa</defName>
 		<label>Mandalorian Helmet, Fenn Shysa's</label>
 		<techLevel>Spacer</techLevel>

@@ -40,8 +40,24 @@
 		<leaderTitle>general</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
-		  <li>SWRebel_ArmyGeneral</li>
+			<li>SWRebel_ArmyGeneral</li>
 		</fixedLeaderKinds>
+		
+		
+		<royalTitleTags>
+			<li>SWGCWTitleTag_generic</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+		
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
+		
+		
+		
+		
+		
 		
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<li>Surface</li>
@@ -306,10 +322,10 @@
 			<li>SWCPTrader_TaxCollector_RebelCell</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li>Visitor_Outlander_Standard</li>
+			<li>guy762_TraderKind_WanderingDoctor</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Outlander_Standard</li>
+			<li>SWCP_GCWBaseTraderKind_RebelCellBasic</li>
 		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->

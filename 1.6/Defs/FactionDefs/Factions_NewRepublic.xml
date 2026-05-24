@@ -45,16 +45,15 @@
 		  <li>SWRebel_ArmyGeneral</li>
 		</fixedLeaderKinds>
 		
-		<!-- <royalTitleTags> -->
-		  <!-- <li>KotORTitleTag_OR_privateer</li> -->
-		  <!-- <li>KotORTitleTag_OR_enlisted</li> -->
-		<!-- </royalTitleTags> -->
-		<!-- <royalFavorLabel>commendations</royalFavorLabel> -->
-		<!-- <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath> -->
+		<royalTitleTags>
+			<li>SWGCWTitleTag_generic</li>
+		</royalTitleTags>
+		<royalFavorLabel>commendations</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
 		
-		<!-- <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass> -->
-		<!-- <royalTitleInheritanceRelations> -->
-		<!-- </royalTitleInheritanceRelations> -->
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+		</royalTitleInheritanceRelations>
 		
 		
 		
@@ -306,13 +305,13 @@
 		
 		
 		<caravanTraderKinds>
-		  <li>guy762_TraderKind_WanderingDoctor</li>
+			<li>guy762_TraderKind_WanderingDoctor</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-		  <li>Visitor_Outlander_Standard</li>
+			<li>guy762_TraderKind_WanderingDoctor</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-		  <li>Base_Outlander_Standard</li>
+			<li>SWCP_GCWBaseTraderKind_NewRepublicBasic</li>
 		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->

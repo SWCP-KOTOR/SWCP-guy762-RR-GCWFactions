@@ -191,7 +191,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_SlaveOutfit_KotORII</defName>
 		<label>dancer's outfit, antique</label>
 		<description>.\n\nDeveloper's Note: this outfit was drawn to be compatible with the "Malang Bodies" mod.\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2838181007</description>

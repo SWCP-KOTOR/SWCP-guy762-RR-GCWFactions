@@ -311,7 +311,7 @@
 		
 		
 
-    <!-- Bounty Hunter Options -->
+	<!-- Bounty Hunter Options -->
 
         <bountyHunterIsEnabled>true</bountyHunterIsEnabled>
         <bountyHunterLabelKey>SWCP_Turn_In_Label</bountyHunterLabelKey>
@@ -341,15 +341,15 @@
 
         <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
 		
-	<!-- Shuttle Service Options (Vertibird) -->
+	<!-- Shuttle Service Options (Vertibird)  DISABLED TEMPORARILY BECAUSE IT DOESN'T WORK ON OTHER PLANETS -->
 
-        <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled>
-		<shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/Lambda</shuttleServiceButtonIconTexPath>
-        <shuttleServiceCost>250</shuttleServiceCost>
+        <!-- <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled> -->
+		<!-- <shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/Lambda</shuttleServiceButtonIconTexPath> -->
+        <!-- <shuttleServiceCost>250</shuttleServiceCost> -->
 		
-        <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey>
-        <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_250credits</shuttleServiceDescKey>
-        <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey>
+        <!-- <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey> -->
+        <!-- <shuttleServiceDescKey>SWCP_Shuttle_Service_Desc_250credits</shuttleServiceDescKey> -->
+        <!-- <shuttleServiceCostRequirementKey>SWCP_Not_Enough_Money</shuttleServiceCostRequirementKey> -->
 
     <!-- Resign Options -->
 

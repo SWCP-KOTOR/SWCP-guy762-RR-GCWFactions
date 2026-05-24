@@ -315,9 +315,9 @@
 		<!-- <visitorTraderKinds> -->
 		  <!-- <li>Visitor_Outlander_Standard</li> -->
 		<!-- </visitorTraderKinds> -->
-		<!-- <baseTraderKinds> -->
-		  <!-- <li>Base_Outlander_Standard</li> -->
-		<!-- </baseTraderKinds> -->
+		<baseTraderKinds>
+			<li>SWCP_GCWBaseTraderKind_ImperialGenericBasic</li>
+		</baseTraderKinds>
 		<!-- <orbitalTraderKinds> -->
 		  <!-- <li>Orbital_BulkGoods</li> -->
 		  <!-- <li>Orbital_CombatSupplier</li> -->

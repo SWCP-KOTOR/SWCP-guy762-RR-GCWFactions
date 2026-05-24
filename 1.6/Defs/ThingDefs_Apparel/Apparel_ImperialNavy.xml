@@ -13,7 +13,7 @@
 	
   
   
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpLightCombatArmor</defName>
 		<label>light combat armor</label>
 		<description>.</description>
@@ -74,7 +74,7 @@
 	  
 	  
 	  
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_RemnantLightArmor</defName>
 		<label>light combat armor, rusty</label>
 		<description>.</description>
@@ -143,7 +143,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_NavyTrooperHelmet</defName>
 		<label>navy combat helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -219,7 +219,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpNavyCommandoHelmet</defName>
 		<label>navy commando helmet</label>
 		<techLevel>Spacer</techLevel>
@@ -288,7 +288,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ImpNavyCommandoArmor</defName>
 		<label>navy commando armor</label>
 		<description>.</description>
@@ -302,7 +302,7 @@
 			<Mass>6</Mass>
 			<MarketValue>700</MarketValue>
 			
-			<MaxHitPoints>225</MaxHitPoints> <!-- stormtrooper armor stats -1 -->
+			<MaxHitPoints>350</MaxHitPoints> <!-- stormtrooper armor stats -1 -->
 			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
@@ -476,7 +476,7 @@
 
 			<!-- combat suit stat level -->
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_TIEpilotArmor</defName>
 		<label>TIE pilot flight armor</label>
 		<description>.</description>

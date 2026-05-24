@@ -630,5 +630,20 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_3POProtocolDroid</defName>
+		<label>build 3PO-series protocol droid</label>
+		<description>Create a 3PO-series protocol droid.</description>
+		<uiIconPath>UI/DroidIcons/Icon_3POProtocolDroid</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_3POProtocolDroid</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

@@ -252,7 +252,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_PartisanHelmet_fleet</defName>
 		<label>militia combat helmet (masked)</label>
 		<techLevel>Spacer</techLevel>
@@ -367,7 +367,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_PartisanHelmet_endor</defName>
 		<label>partisan combat helmet (masked)</label>
 		<techLevel>Spacer</techLevel>
@@ -486,7 +486,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_PartisanCombatSuit" ParentName="KotORArmorModdable_soft">
+	<ThingDef Name="guy762_PartisanCombatSuit" ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_PartisanCombatSuit</defName>
 		<label>militia combat suit</label>
 		<description>.</description>
@@ -604,7 +604,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_soft">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_PartisanRangerDuster</defName>
 		<label>partisan ranger overcoat</label>
 		<description>These intimidating armored overcoats are typically worn by the elite ranger agents of Garm Bel Iblis' Partisan Alliance.</description>
@@ -746,7 +746,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORArmorModdable_hard">
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_PartisanHeavyBattleArmor</defName>
 		<label>partisan warlord heavy armor</label>
 		<techLevel>Spacer</techLevel>

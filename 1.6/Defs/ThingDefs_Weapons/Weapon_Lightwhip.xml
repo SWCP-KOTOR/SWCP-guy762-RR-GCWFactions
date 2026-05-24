@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedWeapon_OneHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_OneHand">
 		<defName>guy762_lightwhip_lumiya</defName>
 		<label>Lumiya's modified lightwhip</label>
 		<description>..</description>

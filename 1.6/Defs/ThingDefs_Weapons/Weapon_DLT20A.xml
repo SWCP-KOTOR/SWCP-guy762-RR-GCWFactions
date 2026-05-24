@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DLT18BattleRifle</defName>
 		<label>DLT-18 Battle Rifle</label>
 		<description>.</description>
@@ -105,7 +105,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DLT19repeater</defName>
 		<label>DLT-19 Repeating Blaster</label>
 		<description>.</description>
@@ -206,7 +206,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DLT19Xsniper</defName>
 		<label>DLT-19X Sniper Rifle</label>
 		<description>.</description>
@@ -318,7 +318,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_DLT20ASniper</defName>
 		<label>DLT-20A Sniper Rifle</label>
 		<description>.</description>

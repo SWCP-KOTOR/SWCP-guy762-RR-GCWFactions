@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORRangedModMakeable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_62Aug2CyclerRifle</defName>
 		<label>6-2Aug2 hunting rifle</label>
 		<description>Cycler rifles are crude yet reliable rifles designed to fire solid projectiles. They could hit targets at extreme ranges and penetrate energy shields. Used primarily by primitive cultures and hunters, they are strong enough to tear whole limbs from a body.</description>

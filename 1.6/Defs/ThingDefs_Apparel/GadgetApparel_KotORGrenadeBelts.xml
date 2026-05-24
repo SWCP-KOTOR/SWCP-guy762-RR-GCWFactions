@@ -23,6 +23,7 @@
 		<thingSetMakerTags>
 		  <li>SingleUseWeapon</li>
 		</thingSetMakerTags>
+		
 		<recipeMaker>
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
@@ -36,6 +37,7 @@
 		  <displayPriority>500</displayPriority>
 		  <useIngredientsForColor>false</useIngredientsForColor>
 		</recipeMaker>
+		
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>

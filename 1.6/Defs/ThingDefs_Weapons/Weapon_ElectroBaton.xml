@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="KotORMeleeNoQualityModMake_OffHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_OffHand">
 		<defName>guy762_ElectroBatonGCW</defName>
 		<label>electrobaton</label>
 		<description>.</description>
@@ -18,20 +18,20 @@
 			<MarketValue>300</MarketValue>
 			<Mass>4.5</Mass>
 			
-			<WorkToMake>8000</WorkToMake>
+			<!-- <WorkToMake>8000</WorkToMake> -->
 		</statBases>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<Plasteel>20</Plasteel>
-			<KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel>
-		</costList>
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>8</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <costList> -->
+			<!-- <ComponentSpacer>3</ComponentSpacer> -->
+			<!-- <Plasteel>20</Plasteel> -->
+			<!-- <KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel> -->
+		<!-- </costList> -->
 		
 		<comps>
 		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">

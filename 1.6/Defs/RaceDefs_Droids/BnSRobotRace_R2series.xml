@@ -623,5 +623,17 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 	
+	<RecipeDef ParentName="SWCPRecipe_DroidBASE">
+		<defName>SWCPRecipe_R2AstDrd</defName>
+		<label>build R2-series Astromech</label>
+		<description>Create an R2-series Astromech.</description>
+		<uiIconPath>UI/DroidIcons/Icon_R2</uiIconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.RecipeExtension">
+				<pawnKindDef>SWCPDroidColonistBnS_R2AstDrd</pawnKindDef>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
 
 </Defs>

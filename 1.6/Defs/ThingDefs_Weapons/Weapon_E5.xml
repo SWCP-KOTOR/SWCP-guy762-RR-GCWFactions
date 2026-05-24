@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E5rifle</defName>
 		<label>E-5 blaster carbine</label>
 		<description>.</description>
@@ -86,7 +86,7 @@
 	
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_E5Crifle</defName>
 		<label>E-5C heavy blaster rifle</label>
 		<description>.</description>

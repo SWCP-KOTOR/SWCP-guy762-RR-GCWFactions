@@ -3,7 +3,7 @@
 
 	
 	
-	<ThingDef ParentName="KotORRangedModdable_TwoHand">
+	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
 		<defName>guy762_GALAAR15carbine</defName>
 		<label>GALAAR-15 blaster carbine</label>
 		<description>.</description>

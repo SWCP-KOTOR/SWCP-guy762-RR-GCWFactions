@@ -3,7 +3,7 @@
 
 	
 	
-	<ThingDef ParentName="KotORMeleeModdable_TwoHand">
+	<ThingDef ParentName="SWCPMeleeMakeableNoQuality_TwoHand">
 		<defName>guy762_VibroDoubleBlade_SovProtector</defName>
 		<label>Sovereign Protector Vibroblade</label>
 		<description>.</description>
