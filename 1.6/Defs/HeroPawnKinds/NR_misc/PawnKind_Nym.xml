@@ -122,6 +122,10 @@
 			<li>SWPotF_TacticDelegationAbility_barrage</li>
 			<li>SWPotF_TacticAbility_Harass</li>
 			<li>SWPotF_TacticDelegationAbility_harass</li>
+			<li>SWPotF_TacticAbility_TakeCover</li>
+			<li>SWPotF_TacticDelegationAbility_takecover</li>
+			<li>SWPotF_TacticAbility_Sprint</li>
+			<li>SWPotF_TacticDelegationAbility_sprint</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->

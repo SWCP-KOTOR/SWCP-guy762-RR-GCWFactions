@@ -3,17 +3,7 @@
 
 
 	
-	<FCP.Core.CharacterDef>
-        <defName>SWNewRepublicCharacter_InitialGeneral</defName>
-        <pawnKind>SWRebel_ArmyGeneral</pawnKind>
-        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
-        <!-- <xenotype>Baseliner</xenotype> -->
-		<roles>
-            <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>1000</seniority>
-            </li>
-        </roles>
-    </FCP.Core.CharacterDef>
+
 	
 	<FCP.Core.CharacterDef>
         <defName>SWRebelCellCharacter_InitialGeneral</defName>

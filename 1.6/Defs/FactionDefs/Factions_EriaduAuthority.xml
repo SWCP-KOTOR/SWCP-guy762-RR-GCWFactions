@@ -6,7 +6,7 @@
 		<label>Eriadu Authority</label>
 		<fixedName>Eriadu Authority</fixedName>
 		<!-- <factionNameMaker>guy762_NamerFaction_EriaduStarfleet</factionNameMaker> -->
-		<description>.</description>
+		<description>The only Imperial splinter faction to be conducting a meaningful campaign against the Empire's foremost enemy, the New Republic, Sander Delvardus declared his Imperial forces independent from Isard's newly-established rule after becoming increasingly frustrated at her apathy towards New Republic advances in his territory and her refusal to provide him with any substantial intelligence reports on their operations. Commanding much of the Imperial Army forces, which were primarily stationed around Eriadu in the Western Reaches and Trailing Sectors, Delvardus declared himself to be the Superior General of the Empire, and his forces to be the Eriadu Authority, suzerain of the Empire's greatest stronghold in the Outer Rim. The Eriadu nobility were displeased at this move cutting them off from true Imperial rule, but remained compliant as the Superior General continued to be the only high-ranking Imperial committed to holding on to the Seswenna Sector. Delvardus' attempts to suppress rebel uprisings in the region have been considerably vicious, but are ineffective at halting the New Republic's advance as Mon Mothma's "hearts and minds" campaign continues to win support and secure alliegences from brutalized populations.</description>
 		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>

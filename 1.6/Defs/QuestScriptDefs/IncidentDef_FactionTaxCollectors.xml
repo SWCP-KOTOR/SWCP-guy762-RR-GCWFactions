@@ -40,6 +40,83 @@
 	
 	
 	
+	<!-- New Republic -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_NewRepublic</defName>
+        <label>New Republic logistics caravan arrival</label>
+        <letterLabel>New Republic logistics officers</letterLabel>
+        <letterText>.</letterText>
+		
+		<!-- <letterText>Logistics officers from a local Rebel cell are approaching.\n\nThey are seeking any unused equipment, supplies, and resources your colony would be willing to donate. They will also accept monetary donations. The one who gives over the donations will receive Commendations for contributing their resources to the cause.\n\nLogistics officers will visit roughly twice per year as long as you are not enemies with the local Rebel cell.</letterText> -->
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
+                <factionDef>guy762_SWWarlordsFaction_NewRepublic</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_NewRepublic</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef Name="SWCPTrader_TaxCollector_NewRepublic">
+        <defName>SWCPTrader_TaxCollector_NewRepublic</defName>
+        <label>New Republic logistics officer</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>guy762_KotORcredits</thingDef> -->
+            <!-- </li> -->
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Silver</thingDef> -->
+            <!-- </li> -->
+			<!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Gold</thingDef> -->
+            <!-- </li> -->
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
+			
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMaldrood</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyEriadu</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li> -->
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li> -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMilitia</tag></li> -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
+			
+			<!-- put a bunch of "buy" trade tags here, they'll take anything and everything useful -->
+				<!-- actually maybe not, I'd have to set RoyalFavorValue for every item -->
+			
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="FCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- Rebel Cell -->
 	
 	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">

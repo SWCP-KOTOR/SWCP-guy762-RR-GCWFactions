@@ -6,7 +6,7 @@
 		<label>Pentastar Alignment</label>
 		<fixedName>Pentastar Alignment</fixedName>
 		<!-- <factionNameMaker>guy762_NamerFaction_PentastarStarfleet</factionNameMaker> -->
-		<description>.</description>
+		<description>The most stable and secure of the Imperial splinter factions, the Pentastar Alignment is a corporate oligarchy formed by Grand Moff Ardus Kaine, architect of COMPNOR and successor of Grand Moff Tarkin. The Pentastar Alignment is an alliance of several promminent megacorporations in the Bright Jewel Oversector that was created at the behest of Kaine to create a stable economic region able to weather the storm of the forthcoming Imperial Civil War by focusing on maintaining trade and non-aggression pacts with other galactic factions. In this early stage of the war, new infrastructure is strong and profits are high, though the Alignment's Imperial military forces are at odds with recent political decisions to relax the restriction of rights on alien populaces in order to extract more profit and manpower from them. New alien regiments have been allowed to form in the Alignment's Protectorate forces, earning the ire of proponents of Human High Culture such as Grand Admiral Grant. Furthermore, a mysterious cabal of dark Jedi Inquisitors has made itself known to the Alignment's leadership, with Kaine pledging the full financial support of the Alignment to its leader in an unexpected move.</description>
 		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>
@@ -36,11 +36,10 @@
 		<settlementNameMaker>guy762_NamerSettlement_PentastarAlignment</settlementNameMaker>
 		<leaderTitle>Chairman</leaderTitle>
 		<leaderTitleFemale>Chairwoman</leaderTitleFemale>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-			<li>SWCharPawnPA_ArdusKaine</li>
-			<!-- <li>SWPentastar_Moff</li> -->
-		</fixedLeaderKinds>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>SWCharPawnPA_ArdusKaine</li> -->
+		<!-- </fixedLeaderKinds> -->
 		
 		
 		<royalTitleTags>

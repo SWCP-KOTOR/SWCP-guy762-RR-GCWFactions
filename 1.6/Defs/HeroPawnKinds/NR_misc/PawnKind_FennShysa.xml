@@ -163,9 +163,14 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnMC_FennShysa"  ParentName="SWWEPlayableHero_FennShysa">
+		<defName>SWCharPawnMC_FennShysa</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_MandoClan</defaultFactionType>
+	</PawnKindDef>
 	  
-	  <RulePackDef>
+	<RulePackDef>
         <defName>guy762_HeroNamer_FennShysa</defName>
         <rulePack>
             <rulesStrings>

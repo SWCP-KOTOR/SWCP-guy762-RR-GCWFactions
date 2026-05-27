@@ -6,7 +6,7 @@
 		<label>Imperial Remnant</label>
 		<fixedName>Imperial Remnant</fixedName>
 		<!-- <factionNameMaker>guy762_NamerFaction_ImpRemnantStarfleet</factionNameMaker> -->
-		<description>.</description>
+		<description>The primary faction of the now-fractured Galactic Empire. Though it still calls itself the true Galactic Empire, and has the best claim to legitimacy as it is supported by the Imperial Ruling Council and the Stormtrooper Corps, most of the Empire's strongest military leaders have abandoned it. The director of Imperial Military Intelligence, Ysanne Isard, has recently seized power in a bloody coup against the reigning Imperial Regent Sate Pestage. After declaring herself the new Empress, many powerful Imperial leaders rejected this move and quickly broke their forces away from her rule in favor of declaring their own warlord fiefdom. The Empire was thus plunged into a civil war of succession. Isard's Empire still controls all systems from the Core to the Inner Rim, and has more than enough fleets to back it up, though she has few truly exceptional officers under her control, and what ones she does have been sorely misplaced in ongoing early campaigns against the New Republic and her rival Warlord Zsinj.</description>
 		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>

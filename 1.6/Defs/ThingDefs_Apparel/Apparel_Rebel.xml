@@ -249,8 +249,8 @@
 			<texPath>SWApparel/Rebel/endorhelmetgoggles_up/helmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>SWApparel/Rebel/endorhelmetgoggles_up/helmet</wornGraphicPath>
-			<!-- <wornGraphicPath>NullTex</wornGraphicPath> -->
+			<!-- <wornGraphicPath>SWApparel/Rebel/endorhelmetgoggles_up/helmet</wornGraphicPath> -->
+			<wornGraphicPath>NullTex</wornGraphicPath>
 
 			<renderNodeProperties Inherit="False">
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">

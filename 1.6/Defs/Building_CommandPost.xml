@@ -251,6 +251,40 @@
 			</li>
 		</modExtensions>
 	</PrefabDef>
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_GreaterMaldrood</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_GreaterMaldrood</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
 
 
 

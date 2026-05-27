@@ -129,11 +129,11 @@
 		<!-- <replaceOnRecruited>SWGCWTitle_generic_private</replaceOnRecruited> -->
 		<allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
 
-		<!-- <permits> -->
-		  <!-- <li>TradeSettlement</li> -->
-		  <!-- <li>TradeCaravan</li> -->
-		  <!-- <li>TradeOrbital</li> -->
-		<!-- </permits> -->
+		<permits>
+			<li>TradeSettlement</li>
+			<li>TradeCaravan</li>
+			<li>TradeOrbital</li>
+		</permits>
 	</RoyalTitleDef>
 	
 	
@@ -283,6 +283,7 @@
 			<minQuality>MealFine</minQuality>
 			<allowedTypes>Processed, Liquor</allowedTypes>
 			<allowedDefs>
+				<li>MealSurvivalPack</li>
 				<li>Ambrosia</li>
 				<li>Milk</li>
 				<li>RawBerries</li>
@@ -446,6 +447,7 @@
 			<minQuality>MealFine</minQuality>
 			<allowedTypes>Processed, Liquor</allowedTypes>
 			<allowedDefs>
+				<li>MealSurvivalPack</li>
 				<li>Ambrosia</li>
 				<li>Milk</li>
 				<li>RawBerries</li>
@@ -611,6 +613,7 @@
 			<minQuality>MealFine</minQuality>
 			<allowedTypes>Processed, Liquor</allowedTypes>
 			<allowedDefs>
+				<li>MealSurvivalPack</li>
 				<li>Ambrosia</li>
 				<li>Milk</li>
 				<li>RawBerries</li>
@@ -780,6 +783,7 @@
 			<minQuality>MealFine</minQuality>
 			<allowedTypes>Processed, Liquor</allowedTypes>
 			<allowedDefs>
+				<li>MealSurvivalPack</li>
 				<li>Ambrosia</li>
 				<li>Milk</li>
 				<li>RawBerries</li>
@@ -946,6 +950,7 @@
 			<minQuality>MealFine</minQuality>
 			<allowedTypes>Processed, Liquor</allowedTypes>
 			<allowedDefs>
+				<li>MealSurvivalPack</li>
 				<li>Ambrosia</li>
 				<li>Milk</li>
 				<li>RawBerries</li>

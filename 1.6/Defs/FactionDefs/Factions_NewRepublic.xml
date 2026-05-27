@@ -6,7 +6,7 @@
 		<label>New Republic</label>
 		<fixedName>New Republic</fixedName>
 		<!-- <factionNameMaker>guy762_NamerFaction_NRStarfleet</factionNameMaker> -->
-		<description>.</description>
+		<description>A nascent galactic-level opposition government aligned against Imperial rule. The New Republic was formed from the armed resistance movements of many wealthy Core-ward Human and Outer Rim alien systems that banded together for a victorious assault on the second Death Star at Endor. As their unifying cause was a desire to restore the democracy that was subverted by Emperor Palpatine's declaration of a New Order, They have declared themselves to be the New Republic after his death at Endor, and have begun to wage open warfare against the fractured, leaderless Empire.\n\nIn this early stage of the war, the New Republic's held territories are scattered throughout the Outer Rim, and their infrastructure and governance policies have yet to be solidified. Many in the galaxy remain skeptical of this movement to restore a Republic that was so easily able to be corrupted into an Empire by the late Palpatine. Because of this, Chief of State Mon Mothma's primary goal has been to wage a "hearts and minds" campaign to win over as many unaligned systems as possible by lending generous aid and support to local populations and uprooting any oppressive Imperial tyrants.</description>
 		
 		<pawnSingular>rebel</pawnSingular>
 		<pawnsPlural>rebels</pawnsPlural>
@@ -40,10 +40,10 @@
 		
 		<settlementNameMaker>guy762_NamerSettlement_NewRepublic</settlementNameMaker>
 		<leaderTitle>general</leaderTitle>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-		  <li>SWRebel_ArmyGeneral</li>
-		</fixedLeaderKinds>
+		<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+		<!-- <fixedLeaderKinds> -->
+			<!-- <li>SWRebel_ArmyGeneral</li> -->
+		<!-- </fixedLeaderKinds> -->
 		
 		<royalTitleTags>
 			<li>SWGCWTitleTag_generic</li>
@@ -124,6 +124,12 @@
             </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
+			</li>
+			<li Class="FCP.Enlist.FactionEnlistOptions">
+				<enlistOptionsDefs>
+					<li>guy762_SWFactionEnlistment_NewRepublic</li>
+				</enlistOptionsDefs>
+				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
 			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>

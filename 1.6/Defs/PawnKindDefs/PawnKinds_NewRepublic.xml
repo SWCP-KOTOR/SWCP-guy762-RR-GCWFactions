@@ -60,8 +60,8 @@
 	  
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_fleettrooper" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_fleettrooper</defName>
+	<PawnKindDef Name="SWNewRepub_10ABYfleettrooper" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_10ABYfleettrooper</defName>
 		<label>fleet trooper</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>20</minGenerationAge>
@@ -137,8 +137,8 @@
 	  
 	  
 	  
-	<PawnKindDef Name="SWNewRepub_NavyLt" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_NavyLt</defName>
+	<PawnKindDef Name="SWNewRepub_10ABYNavyLt" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_10ABYNavyLt</defName>
 		<label>navy lieutenant</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>22</minGenerationAge>
@@ -234,8 +234,8 @@
 	</PawnKindDef>
 	
 	
-	<PawnKindDef Name="SWNewRepub_NavyCaptain" ParentName="SWNewRepub_Base">
-		<defName>SWNewRepub_NavyCaptain</defName>
+	<PawnKindDef Name="SWNewRepub_10ABYNavyCaptain" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_10ABYNavyCaptain</defName>
 		<label>navy captain</label>
 		<combatPower>40</combatPower>
 		<minGenerationAge>24</minGenerationAge>
@@ -609,39 +609,187 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+
+
+
+
+
+
+
+
+
+	<PawnKindDef Name="SWNewRepub_BothanSpy" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_BothanSpy</defName>
+		<label>Bothan spy</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
+		
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_bothan>999</guy762_xenotype_bothan>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+
+		<apparelMoney>2500~7500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORGloves_bothan</li>
+			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
+			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+			
+			<li>SWCPSpecificApparelItem_GogglesFlakHat</li>
+			<li>SWGCWSpecificApparelItem_RebelInfiltratorArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>SWCP_stealthbelt_default</li>
+			<li>guy762_JKDetpackCase</li>
+			
+			<li>guy762_RebelFlakCap_goggles</li>
+			<li>guy762_RebelInfiltratorArmor</li>
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Belt</apparelLayer>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<color>(50,50,50)</color>        <!-- black -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<color>(80,80,90)</color>       <!-- engi hood stone blue -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(150,150,150)</color> <!-- grey -->
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>3000~9000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_A180pistol</li>
+			<li>SWRanged_DXP2DisruptorPistol</li>
+			<li>SWRanged_DXR6DisruptorSniper</li>
+		</weaponTags>
+
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_battle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<techHediffsChance>10</techHediffsChance>
+		<techHediffsMoney>
+			<min>9999</min>
+			<max>99999</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>25~30</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Thin</li>
+				</whitelist>
+				<blacklist>
+					<!-- <li>Fat</li> -->
+					<!-- <li>Thin</li> -->
+					<!-- <li>Baby</li> -->
+					<!-- <li>Child</li> -->
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	<PawnKindDef Name="SWNewRepub_trooper" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_trooper</defName>
 		<label>army trooper</label>
@@ -985,6 +1133,100 @@
 	
 	<PawnKindDef Name="SWNewRepub_marine" ParentName="SWNewRepub_Base">
 		<defName>SWNewRepub_marine</defName>
+		<label>New Republic marine</label>
+		<combatPower>75</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_NewRepublicMarine</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
+		
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>KotORUtility_stronggrenade</li>
+			<li>NewRepublic_RebelBackpackMix</li>
+			<li>SWCPSpecificApparelItem_RebelGasmask</li>
+			
+			<li>SWCPSpecificApparelItem_DoubleBandolier</li>
+			<li>SWGCWSpecificApparelItem_RebelVanguardHelmet</li>
+			<li>SWGCWSpecificApparelItem_RebelKotaMilitiaArmor</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Accessory_bandolierA</li>
+			<li>guy762_RebelHelmet_vanguard</li>
+			<li>guy762_RebelKotaMilitiaArmor</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Belt</apparelLayer>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<color>(190,185,155)</color>       <!-- sandstone -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<color>(125,100,75)</color>       <!--K2 padawan-->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,85,65)</color>  <!-- grease -->
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>2500~4000</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DC15aRifle</li>
+			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_BK43repeater</li>
+		</weaponTags>
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWNewRepub_10ABYmarine" ParentName="SWNewRepub_Base">
+		<defName>SWNewRepub_10ABYmarine</defName>
 		<label>New Republic marine</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>20</minGenerationAge>

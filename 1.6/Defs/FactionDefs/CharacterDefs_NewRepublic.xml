@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- /////////////////////////////////// -->
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_CrixMadine</defName>
+        <pawnKind>SWCharPawnNR_CrixMadine</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>600</seniority> <!-- high-ranking general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_HeraSyndulla</defName>
+        <pawnKind>SWCharPawnNR_HeraSyndulla</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority> <!-- general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_Wedge</defName>
+        <pawnKind>SWCharPawnNR_Wedge</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>400</seniority> <!-- general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_Luke</defName>
+        <pawnKind>SWCharPawnNR_LukeSkywalker_TFS</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>300</seniority> <!-- general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- generic leaders -->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_FirstGeneral</defName>
+        <pawnKind>SWRebel_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>200</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_SecondGeneral</defName>
+        <pawnKind>SWRebel_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>100</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWNewRepublicCharacter_ThirdGeneral</defName>
+        <pawnKind>SWRebel_ArmyGeneral</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</Defs>

@@ -149,9 +149,16 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
-	  
-	  <RulePackDef>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWCharPawnNR_Wedge"  ParentName="SWWEPlayableHero_Wedge">
+		<defName>SWCharPawnNR_Wedge</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	<RulePackDef>
         <defName>guy762_HeroNamer_Wedge</defName>
         <rulePack>
             <rulesStrings>
@@ -161,6 +168,12 @@
             </rulesStrings>
         </rulePack>
     </RulePackDef>
+	
+	
+	
+	
+	
+	
 	
 		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
 	

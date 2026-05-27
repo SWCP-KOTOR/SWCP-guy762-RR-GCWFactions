@@ -142,81 +142,81 @@
 					</li>
 				</geneSets>
 			</li>
-		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
-		  <whitelist>
-			<li>Male_AverageNormal</li>
-		  </whitelist>
-		  <blacklist>
-			<!--leave blank to disable-->
-		  </blacklist>
-		  <priority>
-			<li>Male_AverageNormal</li>
-		  </priority>
-		  <checkGender>False</checkGender>
-		</li>
-		<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
-			<forcedBeard>NoBeard</forcedBeard>
-		</li>
-		
-		<li Class="BigAndSmall.Flagger">
-			<flags> <guy762AltTag_Luke/></flags>
-		</li>
-		<li Class="BigAndSmall.PawnKindExtension">
-			<skillRange>
-				<li>
-					<skill>Shooting</skill>
-					<range>10~12</range>
-				</li>
-				<li>
-					<skill>Melee</skill>
-					<range>14~16</range>
-				</li>
-				<li>
-					<skill>Construction</skill>
-					<range>8~10</range>
-				</li>
-				<li>
-					<skill>Crafting</skill>
-					<range>8~10</range>
-				</li>
-				<li>
-					<skill>Medicine</skill>
-					<range>6~8</range>
-				</li>
-				<li>
-					<skill>Social</skill>
-					<range>8~10</range>
-				</li>
-				<li>
-					<skill>Intellectual</skill>
-					<range>8~10</range>
-				</li>
-			</skillRange>
-			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-		</li>
-		
-		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
-            <bladeColors>
-				<li>(0, 255, 0, 255)</li> <!-- basic green -->
-            </bladeColors>
-            <coreColors>
-				<!-- White Core -->
-				<li>(1.0, 1.0, 1.0, 1.0)</li>
-            </coreColors>
-            <defaultBladeLength1>1</defaultBladeLength1>
-            <hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
-            <hiltColorTwo>(220,175,80,255)</hiltColorTwo> <!-- bronzium -->
-            <preferredHilts>
-				<li>Force_LightsaberHilt_Luke</li>
-            </preferredHilts>
-            <!-- <preferredHiltParts> -->
-				<!-- <li>Force_AdeganCrystalHiltPart</li> -->
-            <!-- </preferredHiltParts> -->
-         </li>
-      </modExtensions>
-	  </PawnKindDef>
-	  
-	  <RulePackDef>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageNormal</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageNormal</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+				<forcedBeard>NoBeard</forcedBeard>
+			</li>
+			
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_Luke/></flags>
+			</li>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<li>(0, 255, 0, 255)</li> <!-- basic green -->
+				</bladeColors>
+				<coreColors>
+					<!-- White Core -->
+					<li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>1</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(220,175,80,255)</hiltColorTwo> <!-- bronzium -->
+				<preferredHilts>
+					<li>Force_LightsaberHilt_Luke</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+					<!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			 </li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<RulePackDef>
         <defName>guy762_HeroNamer_LukeSkywalker</defName>
         <rulePack>
             <rulesStrings>
@@ -281,6 +281,17 @@
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_LukeSkywalker_TFS"  ParentName="SWWarlordsHeroBase_LukeSkywalker">
 		<defName>SWWEPlayableHero_LukeSkywalker_TFS</defName>
 		<modExtensions>
@@ -301,6 +312,12 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	<PawnKindDef Name="SWCharPawnNR_LukeSkywalker_TFS"  ParentName="SWWEPlayableHero_LukeSkywalker_TFS">
+		<defName>SWCharPawnNR_LukeSkywalker_TFS</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+	</PawnKindDef>
 
 
 </Defs>

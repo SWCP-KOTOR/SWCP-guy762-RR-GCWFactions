@@ -262,11 +262,11 @@
 		
         <abilityTrainingOptions>
             <li>
-                <labelKey>SWCP_AbilityTraining_CommandTierV_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_CommandTierV_Desc</descKey>
-                <iconTexPath>UI/TierIcons/CommandTier_V</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_CommandTierIV_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_CommandTierIV_Desc</descKey>
+                <iconTexPath>UI/TierIcons/CommandTier_IV</iconTexPath>
 				
-				<abilityDef>guy762_Ability_CommandTierV</abilityDef>
+				<abilityDef>guy762_Ability_CommandTierIV</abilityDef>
 				<!-- <hediffDef></hediffDef> -->
 				<!-- <traitDef></traitDef><traitDegree>0</traitDegree> -->
 				

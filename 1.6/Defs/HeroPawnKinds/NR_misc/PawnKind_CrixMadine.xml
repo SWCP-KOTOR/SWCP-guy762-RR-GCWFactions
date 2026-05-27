@@ -212,7 +212,7 @@
 	
 	<BackstoryDef>
 		<defName>guy762_BackstoryA_CrixMadine</defName>
-		<title>Alliance Special Forces General</title>
+		<title>Special Forces General</title>
 		<titleShort>General</titleShort>
 		<description>.</description>
 		<slot>Adulthood</slot>

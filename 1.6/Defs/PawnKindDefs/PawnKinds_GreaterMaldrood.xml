@@ -530,6 +530,22 @@
 				<quality>Good</quality>
 			</li>
 		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Maldrood</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	
@@ -571,6 +587,77 @@
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 			<li>guy762_Ability_CommandTierIV</li>
 		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyLt_onBase" ParentName="SWImpRemnant_ArmyLt_onBase">
+		<defName>SWMaldrood_ArmyLt_onBase</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWMaldrood_ArmyMajor_onBase" ParentName="SWImpRemnant_ArmyMajor_onBase">
+		<defName>SWMaldrood_ArmyMajor_onBase</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(175,155,115)</color>        <!-- outer rim garrison beige -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Maldrood</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	

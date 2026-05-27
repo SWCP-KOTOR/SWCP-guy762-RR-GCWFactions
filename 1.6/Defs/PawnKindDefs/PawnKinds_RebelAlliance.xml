@@ -349,108 +349,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWRebel_DoubleAgentImpOfficer" ParentName="SWRebel_Base">
-		<defName>SWRebel_DoubleAgentImpOfficer</defName>
-		<label>double agent</label>
-		<combatPower>70</combatPower>
-		<minGenerationAge>18</minGenerationAge>
-		<maxGenerationAge>35</maxGenerationAge>
-		<itemQuality>Normal</itemQuality>
-		
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
-
-		<apparelMoney>1500~5500</apparelMoney>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelTags>
-			<li>KotORUtility_engi_novisor</li>
-			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
-			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
-			
-			<li>SWGCWSpecificApparelItem_ImperialOfficerHat</li>
-			<li>SWGCWSpecificApparelItem_LowRankImperialOfficerUniform</li>
-		</apparelTags>
-		<apparelRequired>
-			<li>SWCP_stealthbelt_default</li>
-			<li>guy762_JKDetpackCase</li>
-			
-			<li>guy762_UniformCap_imperial</li>
-			<li>guy762_ImpUniform_lowrank</li>
-		</apparelRequired>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<color>(125,125,110)</color> <!-- imperial olive -->
-				<quality>Normal</quality>
-			</li>
-		</specificApparelRequirements>
-
-		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>400~1200</weaponMoney>
-		<weaponTags>
-			<li>SWRanged_A180pistol</li>
-			<li>SWRanged_RK3pistol</li>
-			<li>SWRanged_SE14pistol</li>
-			<li>SWRanged_Power5pistol</li>
-			<li>SWRanged_EC17pistol_silenced</li>
-		</weaponTags>
-
-		<inventoryOptions>
-			<skipChance>0.25</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>SWCP_FactionIntelDatapad_ImpRemnant</thingDef>
-					<countRange>0~1</countRange>
-				</li>
-				<li>
-					<thingDef>SWCP_FactionIntelDatapad_ImpRemnant</thingDef>
-					<countRange>1~2</countRange>
-				</li>
-				<li>
-					<thingDef>SWCP_FactionIntelDatapadAdv_ImpRemnant</thingDef>
-					<countRange>0~1</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-
-		<initialWillRange>5~10</initialWillRange>
-		<initialResistanceRange>25~30</initialResistanceRange>
-		
-		<startingHediffs>
-			<li><def>SWCPHediff_DoubleAgent</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-			<li Class="BigAndSmall.Flagger">
-				<flags> <guy762AltTag_ImpOfficerRebelDoubleAgentUniformPool/></flags>
-			</li>
-			<li Class="BigAndSmall.PawnKindExtension">
-				<skillRange>
-					<li>
-						<skill>Shooting</skill>
-						<range>8~10</range>
-					</li>
-					<li>
-						<skill>Melee</skill>
-						<range>4~6</range>
-					</li>
-					<li>
-						<skill>Social</skill>
-						<range>8~10</range>
-					</li>
-					<li>
-						<skill>Intellectual</skill>
-						<range>8~10</range>
-					</li>
-				</skillRange>
-				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
+	
 	
 	
 	
@@ -515,12 +414,15 @@
 			<li>SWRanged_DL44pistol</li>
 			<li>SWRanged_DH17carbine</li>
 			<li>SWRanged_A280Crifle</li>
-			<li>SWRanged_BK43repeater</li>
 		</weaponTags>
 
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_Vibrodagger</thingDef>
+					<countRange>1</countRange>
+				</li>
 				<li>
 					<thingDef>guy762_medpac_adv</thingDef>
 					<countRange>1~3</countRange>

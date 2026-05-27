@@ -6,16 +6,10 @@
     <!--_____ NCR _____-->
 
     <FCP.Enlist.FactionEnlistOptionsDef>
-        <defName>guy762_SWFactionEnlistment_ImperialRemnant</defName>
-        <minGoodwillRequrementToEnlist>0</minGoodwillRequrementToEnlist>
+        <defName>guy762_SWFactionEnlistment_NewRepublic</defName>
+        <minGoodwillRequrementToEnlist>35</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
 		<currencyDef>guy762_KotORcredits</currencyDef>
-		<noSettlementProximityPenalty>True</noSettlementProximityPenalty>
-		
-		<settlementGiftingLockedBehindEnlist>False</settlementGiftingLockedBehindEnlist>
-		<!-- <settlementGiftingLockedBehindEnlistReasonKey></settlementGiftingLockedBehindEnlistReasonKey> -->
-		<settlementTradingLockedBehindEnlist>True</settlementTradingLockedBehindEnlist>
-		<settlementTradingLockedBehindEnlistReasonKey>SWCP_SettlementTradeReserved</settlementTradingLockedBehindEnlistReasonKey>
 
     <!-- Enlistment Options -->
 
@@ -23,9 +17,9 @@
         <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
         <enlistButtonLabelKey>SWCP_Enlist_Button_Label</enlistButtonLabelKey>
         <enlistButtonDescKey>SWCP_Enlist_Button_Desc</enlistButtonDescKey>
-        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_easy</enlistRequrementsNotSatisfiedKey>
+        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_harsh</enlistRequrementsNotSatisfiedKey>
         <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
-        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_ImperialRemnant</enlistButtonIconTexPath>
+        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_NewRepublic</enlistButtonIconTexPath>
         <enlistedSoundDef>kotorsound_levelup_OnCamera</enlistedSoundDef>
         <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
 
@@ -35,14 +29,14 @@
         <missionsLabelKey>SWCP_Missions_Label</missionsLabelKey>
         <missionsDescKey>SWCP_Missions_Desc</missionsDescKey>
         <missionsButtonIconTexPath>UI/Icons/Datapad</missionsButtonIconTexPath>
-        <missionsBackgroundMenuTexPath>UI/Icons/Datapad</missionsBackgroundMenuTexPath>
+        <missionsBackgroundMenuTexPath>Things/UI/Enlisted/SWCP_Missions</missionsBackgroundMenuTexPath>
 		
-        <!-- <missionsMenuAmbientSoundDef>SWCPSound_RogueSquadronN64_hangar</missionsMenuAmbientSoundDef> -->
+        <missionsMenuAmbientSoundDef>SWCPSound_RogueSquadronN64_hangar</missionsMenuAmbientSoundDef>
 		
-        <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc_imp</missionsMenuDescriptionKey>
+        <missionsMenuDescriptionKey>SWCP_Menu_Missions_Desc</missionsMenuDescriptionKey>
         <missionsMenuSelectQuestKey>SWCP_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
         <missionsMenuStartQuestKey>SWCP_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
-        <missionsQuestCost>5</missionsQuestCost>
+        <missionsQuestCost>0</missionsQuestCost>
         <missionsMenuStartQuestNoEnoughMoneyKey>SWCP_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
 
     <!-- Salary Options -->
@@ -52,19 +46,21 @@
         <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
         <salaryDescKey>SWCP_Salary_Desc_15days</salaryDescKey>
         <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
-        <salaryRange>120~250</salaryRange>
+        <salaryRange>500~1000</salaryRange>
         <salaryPeriodDays>15</salaryPeriodDays>
 		
 		<titleWageBonuses>
-			<li><title>SWGCWTitle_ImpArmyIrregular_corporal</title><multiplier>1</multiplier></li>
-			<li><title>SWGCWTitle_ImpArmyIrregular_sergeant</title><multiplier>1.5</multiplier></li>
-			<li><title>SWGCWTitle_ImpArmyIrregular_lieutenant</title><multiplier>2</multiplier></li>
-			<li><title>SWGCWTitle_ImpArmyIrregular_captain</title><multiplier>5</multiplier></li>
-			<li><title>SWGCWTitle_ImpArmyIrregular_commander</title><multiplier>10</multiplier></li>
-			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateerCommodore</title><multiplier>100</multiplier></li> -->
+			<li><title>SWGCWTitle_generic_initial</title><multiplier>0.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_NCO</title><multiplier>1</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><multiplier>1.5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><multiplier>2</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><multiplier>5</multiplier></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><multiplier>10</multiplier></li>
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><multiplier>50</multiplier></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><multiplier>100</multiplier></li>
 			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_warlord</title><multiplier>1000</multiplier></li> -->
 		</titleWageBonuses>
-
+		
 	<!-- Auto-Feed Options -->
 	
 		<autoFeedIsEnabled>True</autoFeedIsEnabled>
@@ -77,46 +73,16 @@
         <provisionOptions>
             <li>
                 <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
-                <provisionsDescKey>SWCP_Provisions_Desc_4xSupplyContainer10days</provisionsDescKey>
+                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer10days</provisionsDescKey>
                 <provisionsButtonIconTexPath>UI/Icons/SupplyContainer_SotEBlue</provisionsButtonIconTexPath>
                 <provisions>
                     <li>
                         <thing>SWCPItemLootBox_FoodMeds</thing>
-                        <amountRange>4</amountRange>
+                        <amountRange>6</amountRange>
                     </li>
                 </provisions>
                 <provisionsRestockInDays>10</provisionsRestockInDays>
             </li>
-			<li>
-                <provisionsLabelKey>SWCP_ProvisionRecruit_Label_ArmyConscript</provisionsLabelKey>
-                <provisionsDescKey>SWCP_ProvisionRecruit_Desc_ImpArmyConscript5days</provisionsDescKey>
-                <provisionsButtonIconTexPath>UI/FactionIcons_Recruit/Recruit_ImpArmyConscript</provisionsButtonIconTexPath>
-                <recruits>
-                    <li><pawnKind>xpSWImpRemnant_ArmyConscript_playable</pawnKind><count>1</count></li>
-                </recruits>
-                <provisionsRestockInDays>5</provisionsRestockInDays>
-            </li>
-			
-			
-			
-			
-			
-			 <!-- will spawn them in but won't let pawns enter them for sone reason -->
-			<!-- <li MayRequire="SWCP.GCWVehicles"> -->
-                <!-- <provisionsLabelKey>SWCP_Provisions_Label_74zSpeeder</provisionsLabelKey> -->
-                <!-- <provisionsDescKey>SWCP_Provisions_Desc_74zSpeeder</provisionsDescKey> -->
-                <!-- <provisionsButtonIconTexPath>LandVehicles/74Z/74Z_L1_east</provisionsButtonIconTexPath> -->
-                <!-- <provisions> -->
-                    <!-- <li> -->
-                        <!-- <thing>guy762_SWVehicleBP_74ZSpeeder</thing> -->
-                        <!-- <amountRange>1</amountRange> -->
-                    <!-- </li> -->
-                <!-- </provisions> -->
-                <!-- <provisionsRestockInDays>60</provisionsRestockInDays> -->
-            <!-- </li> -->
-			
-			
-			
             <!-- <li> -->
                 <!-- <provisionsLabelKey>SWCP_Provisions_Label_Standard_Issue</provisionsLabelKey> -->
                 <!-- <provisionsDescKey>SWCP_Provisions_Desc_Standard_Issue</provisionsDescKey> -->
@@ -134,9 +100,9 @@
                 <!-- <provisionsRestockInDays>30</provisionsRestockInDays> -->
             <!-- </li> -->
         </provisionOptions>
-	
-	
-	
+		
+		
+		
 	<!-- Exclusive Trader Options -->
 
         <exclusiveTraderIsEnabled>true</exclusiveTraderIsEnabled>
@@ -148,8 +114,9 @@
         <exclusiveTraderRefreshInDays>7</exclusiveTraderRefreshInDays>
 		
         <exclusiveTraderRequiredGoodwill>75</exclusiveTraderRequiredGoodwill>
-        <exclusiveTraderRequiredTitle>SWGCWTitle_ImpArmyIrregular_captain</exclusiveTraderRequiredTitle>
+        <exclusiveTraderRequiredTitle>SWGCWTitle_generic_highjuniorofficer</exclusiveTraderRequiredTitle>
         <exclusiveTraderRequirementsNotMetKey>SWCP_ExclusiveTrader_RequirementsNotMet</exclusiveTraderRequirementsNotMetKey>
+	
 	
 	<!-- Tax Collector Options -->
 
@@ -158,7 +125,7 @@
         <taxCollectorDescKey>SWCP_TaxCollector_Desc</taxCollectorDescKey>
         <taxCollectorButtonIconTexPath>UI/Icons/taxcollector</taxCollectorButtonIconTexPath>
 		
-        <taxCollectorTraderKind>SWCPTrader_TaxCollector_ImpRemnant</taxCollectorTraderKind>
+        <taxCollectorTraderKind>SWCPTrader_TaxCollector_NewRepublic</taxCollectorTraderKind>
         <taxCollectorRefreshInDays>7</taxCollectorRefreshInDays>
 
     <!-- Storage Options -->
@@ -170,35 +137,36 @@
 
     <!-- Work Options -->
 
-        <recreationGainPerTick>0.00001</recreationGainPerTick>
+        <recreationGainPerTick>0.0001</recreationGainPerTick>
         <workOptions>
             <li>
                 <workLabelKey>SWCP_Part_Time_Job_Label</workLabelKey>
-                <workDescKey>SWCP_Part_Time_Job_Desc_imp</workDescKey>
+                <workDescKey>SWCP_Part_Time_Job_Desc_rebel</workDescKey>
                 <workButtonIconTexPath>Items/Credits/credits_b</workButtonIconTexPath>
-                <additionalRestFall>0.45</additionalRestFall>
-                <silverGainPerHour>5</silverGainPerHour>
+                <additionalRestFall>0.25</additionalRestFall>
+                <silverGainPerHour>20</silverGainPerHour>
             </li>
             <li>
                 <workLabelKey>SWCP_Hospital_Label</workLabelKey>
                 <workDescKey>SWCP_Hospital_Desc</workDescKey>
                 <workButtonIconTexPath>Items/Medkits/medkit_a</workButtonIconTexPath>
                 <additionalRestFall>0.25</additionalRestFall>
-                <tendCaravanMembersEveryTicks>1200</tendCaravanMembersEveryTicks>
+                <tendCaravanMembersEveryTicks>600</tendCaravanMembersEveryTicks>
                 <medicinesToTend>
                     <li>KOTOR_SpacerMedKit</li>
                 </medicinesToTend>
-                <immunityGainSpeedMultiplier>1.25</immunityGainSpeedMultiplier>
+                <immunityGainSpeedMultiplier>2</immunityGainSpeedMultiplier>
             </li>
-            <!-- <li> -->
-                <!-- <workLabelKey>SWCP_Medical_Training_Label</workLabelKey> -->
-                <!-- <workDescKey>SWCP_Medical_Training_Desc</workDescKey> -->
-                <!-- <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Treat_Injury</workButtonIconTexPath> -->
-                <!-- <experienceGainsPerHour> -->
-                    <!-- <Medicine>500</Medicine> -->
-                <!-- </experienceGainsPerHour> -->
-                <!-- <additionalRestFall>0.25</additionalRestFall> -->
-            <!-- </li> -->
+            <li>
+                <workLabelKey>SWCP_Medical_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Medical_Training_Desc</workDescKey>
+                <!-- <workButtonIconTexPath>UI/Icons/medicsigil</workButtonIconTexPath> -->
+                <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Treat_Injury</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Medicine>500</Medicine>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.25</additionalRestFall>
+            </li>
             <li>
                 <workLabelKey>SWCP_Shooting_Training_Label</workLabelKey>
                 <workDescKey>SWCP_Shooting_Training_Desc</workDescKey>
@@ -208,20 +176,28 @@
                 </experienceGainsPerHour>
                 <additionalRestFall>0.3</additionalRestFall>
             </li>
-            <!-- <li> -->
-                <!-- <workLabelKey>SWCP_Survival_Training_Label</workLabelKey> -->
-                <!-- <workDescKey>SWCP_Survival_Training_Desc</workDescKey> -->
-                <!-- <workButtonIconTexPath>UI/FeatIcons/Skills/KotOR_Icon_Awareness</workButtonIconTexPath> -->
-                <!-- <experienceGainsPerHour> -->
-                    <!-- <Animals>450</Animals> -->
-                    <!-- <Cooking>350</Cooking> -->
-                    <!-- <Plants>450</Plants> -->
-                <!-- </experienceGainsPerHour> -->
-                <!-- <additionalRestFall>0.5</additionalRestFall> -->
-            <!-- </li> -->
+			<li>
+                <workLabelKey>SWCP_Command_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Command_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/_KotOR_Feat_War_Veteran</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Social>350</Social>
+                    <Intellectual>250</Intellectual>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.3</additionalRestFall>
+            </li>
+			<li>
+				<workLabelKey>SWCP_Piloting_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Piloting_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/XWing</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Intellectual>400</Intellectual>
+					<Construction>200</Construction>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.45</additionalRestFall>
+            </li>
         </workOptions>
 		
-	
 	
 	<!-- Ability Training Options -->
 
@@ -235,11 +211,11 @@
 		
         <abilityTrainingOptions>
             <li>
-                <labelKey>SWCP_AbilityTraining_CommandTierVI_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_CommandTierVI_Desc</descKey>
-                <iconTexPath>UI/TierIcons/CommandTier_VI</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_CommandTierIV_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_CommandTierIV_Desc</descKey>
+                <iconTexPath>UI/TierIcons/CommandTier_IV</iconTexPath>
 				
-				<abilityDef>guy762_Ability_CommandTierVI</abilityDef>
+				<abilityDef>guy762_Ability_CommandTierIV</abilityDef>
 				<!-- <hediffDef></hediffDef> -->
 				<!-- <traitDef></traitDef><traitDegree>0</traitDegree> -->
 				
@@ -248,70 +224,70 @@
 			
 			
 			<li>
-                <labelKey>SWCP_AbilityTraining_TakeCover_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_TakeCover_Desc</descKey>
-                <iconTexPath>UI/EaWIcons/TakeCover</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_Harass_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_Harass_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Harass</iconTexPath>
 				
-				<abilityDef>SWPotF_TacticAbility_TakeCover</abilityDef>
+				<abilityDef>SWPotF_TacticAbility_Harass</abilityDef>
                 <trainingDurationDays>5</trainingDurationDays>
             </li>
 			<li>
-                <labelKey>SWCP_AbilityTraining_DelegateTakeCover_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_DelegateTakeCover_Desc</descKey>
-                <iconTexPath>UI/EaWIcons/Delegation/Delegate_TakeCover</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_DelegateHarass_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_DelegateHarass_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Delegation/Delegate_Harass</iconTexPath>
 				
-				<abilityDef>SWPotF_TacticDelegationAbility_takecover</abilityDef>
+				<abilityDef>SWPotF_TacticDelegationAbility_harass</abilityDef>
                 <trainingDurationDays>5</trainingDurationDays>
             </li>
 			
 			<li>
-                <labelKey>SWCP_AbilityTraining_ZealousRage_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_ZealousRage_Desc</descKey>
-                <iconTexPath>UI/EaWIcons/ZealousRage</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_StealthAdvance_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_StealthAdvance_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/StealthAdvance</iconTexPath>
 				
-				<abilityDef>SWPotF_TacticAbility_ZealousRage</abilityDef>
+				<abilityDef>SWPotF_TacticAbility_StealthAdvance</abilityDef>
                 <trainingDurationDays>5</trainingDurationDays>
             </li>
 			<li>
-                <labelKey>SWCP_AbilityTraining_DelegateZealousRage_Label</labelKey>
-                <descKey>SWCP_AbilityTraining_DelegateZealousRage_Desc</descKey>
-                <iconTexPath>UI/EaWIcons/Delegation/Delegate_ZealousRage</iconTexPath>
+                <labelKey>SWCP_AbilityTraining_DelegateStealthAdvance_Label</labelKey>
+                <descKey>SWCP_AbilityTraining_DelegateStealthAdvance_Desc</descKey>
+                <iconTexPath>UI/EaWIcons/Delegation/Delegate_StealthAdvance</iconTexPath>
 				
-				<abilityDef>SWPotF_TacticDelegationAbility_zealousrage</abilityDef>
+				<abilityDef>SWPotF_TacticDelegationAbility_stealthadvance</abilityDef>
                 <trainingDurationDays>5</trainingDurationDays>
             </li>
         </abilityTrainingOptions>
 		
+		
+		
 	
 	
-	
-
-    <!-- Bounty Hunter Options -->
+	<!-- Bounty Hunter Options -->
 
         <bountyHunterIsEnabled>true</bountyHunterIsEnabled>
         <bountyHunterLabelKey>SWCP_Turn_In_Label</bountyHunterLabelKey>
         <bountyHunterDescKey>SWCP_Turn_In_Desc</bountyHunterDescKey>
         <bountyHunterButtonIconTexPath>UI/Icons/bountyhunter</bountyHunterButtonIconTexPath>
 		
-        <bountyHunterTraderKind>guy762_TraderKind_PrisonerExchange_imperial</bountyHunterTraderKind>
+        <bountyHunterTraderKind>guy762_TraderKind_PrisonerExchange_rebel</bountyHunterTraderKind>
 		
-        <bountyHunterThought>SWCP_Thought_PrisonerTurnedIn_imperial</bountyHunterThought>
+        <bountyHunterThought>SWCP_Thought_PrisonerTurnedIn_rebels</bountyHunterThought>
         <bountyHunterRefreshSilverInDays>7</bountyHunterRefreshSilverInDays>
         <bountyHunterTraderNameKey>SWCP_Turn_In_Trader_Name</bountyHunterTraderNameKey>
 		
 	<!-- Prisoner Turn-In Options -->	
-
-        <turnInIsEnabled>true</turnInIsEnabled>
+	
+		<turnInIsEnabled>true</turnInIsEnabled>
         <turnInLabelKey>SWCP_Turn_In_Label</turnInLabelKey>
         <turnInDescKey>SWCP_Turn_In_Desc</turnInDescKey>
-        <turnInButtonIconTexPath>UI/Icons/rebel</turnInButtonIconTexPath>
+        <turnInButtonIconTexPath>UI/Icons/stormtrooper</turnInButtonIconTexPath>
 		
-        <turnInTraderKind>guy762_TraderKind_PrisonerExchange_imperial</turnInTraderKind>
+        <turnInTraderKind>guy762_TraderKind_PrisonerExchange_rebel</turnInTraderKind>
 		
-        <turnInThought>SWCP_Thought_PrisonerTurnedIn_imperial</turnInThought>
+        <turnInThought>SWCP_Thought_PrisonerTurnedIn_rebels</turnInThought>
         <turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
         <turnInTraderNameKey>SWCP_Turn_In_Trader_Name</turnInTraderNameKey>
-
+	
     <!-- Drop Pod Options -->
 
         <dropPodServiceIsEnabled>false</dropPodServiceIsEnabled>
@@ -319,7 +295,7 @@
 	<!-- Shuttle Service Options (Vertibird)  DISABLED TEMPORARILY BECAUSE IT DOESN'T WORK ON OTHER PLANETS -->
 
         <!-- <shuttleServiceIsEnabled>true</shuttleServiceIsEnabled> -->
-		<!-- <shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/Lambda</shuttleServiceButtonIconTexPath> -->
+		<!-- <shuttleServiceButtonIconTexPath>Shuttles_MajesticMadman/uwing</shuttleServiceButtonIconTexPath> -->
         <!-- <shuttleServiceCost>500</shuttleServiceCost> -->
 		
         <!-- <shuttleServiceLabelKey>SWCP_Shuttle_Service_Label</shuttleServiceLabelKey> -->
@@ -328,13 +304,13 @@
 
     <!-- Resign Options -->
 
-        <resignGoodwillGain>-75</resignGoodwillGain>
-        <resignMenuTextKey>SWCP_Resign_Menu_Text_harsh</resignMenuTextKey>
+        <resignGoodwillGain>-25</resignGoodwillGain>
+        <resignMenuTextKey>SWCP_Resign_Menu_Text</resignMenuTextKey>
         <resignLetterTitleKey>SWCP_Resign_Letter_Title</resignLetterTitleKey>
-        <resignLetterLabelKey>SWCP_Resign_Letter_Label_harsh</resignLetterLabelKey>
-        <resignButtonLabelKey>SWCP_Resign_Button_Label_harsh</resignButtonLabelKey>
+        <resignLetterLabelKey>SWCP_Resign_Letter_Label</resignLetterLabelKey>
+        <resignButtonLabelKey>SWCP_Resign_Button_Label</resignButtonLabelKey>
         <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
-        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_ImperialRemnant</resignButtonIconTexPath>
+        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_NewRepublic</resignButtonIconTexPath>
 
     <!-- Kicked Out Options -->
 
@@ -346,9 +322,9 @@
         <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
         <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
         <reinforcementsButtonDescKey>SWCP_Reinforcements_Button_Desc</reinforcementsButtonDescKey>
-        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_ImperialRemnant</reinforcementsButtonIconTexPath>
-        <reinforcementCallGoodwillCost>-10</reinforcementCallGoodwillCost>
-        <reinforcementCallCooldownTicks>25000</reinforcementCallCooldownTicks>
+        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_NewRepublic</reinforcementsButtonIconTexPath>
+        <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost>
+        <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks>
         <reinforcementOptions>
             <li>
                 <relationsRange>75~100</relationsRange>
@@ -371,43 +347,5 @@
     </FCP.Enlist.FactionEnlistOptionsDef>
 	
 	
-	<TraderKindDef>
-        <defName>guy762_TraderKind_PrisonerExchange_imperial</defName>
-        <label>Imperial Prisoner Exchange</label>
-        <category>Slaver</category>
-        <stockGenerators>
-
-            <!--__ Slaves __-->
-
-            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype">
-                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
-                <respectPopulationIntent>false</respectPopulationIntent>
-                <countRange>2~5</countRange>
-                <slaveKindDef>SWCPCivilian_slavelaborer</slaveKindDef>
-            </li>
-
-            <!--__ Currency __-->
-
-            <!-- NCR Dollars -->
-
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>guy762_KotORcredits</thingDef>
-                <countRange>750~1200</countRange>
-            </li>
-        </stockGenerators>
-    </TraderKindDef>
 	
-	<ThoughtDef>
-        <defName>SWCP_Thought_PrisonerTurnedIn_imperial</defName>
-        <durationDays>3</durationDays>
-        <stackLimit>1</stackLimit>
-        <stages>
-            <li>
-                <label>turned in a rebel</label>
-                <description>We apprehended a rebel and they're now being interrogated by COMPNOR.</description>
-                <baseMoodEffect>2</baseMoodEffect>
-            </li>
-        </stages>
-    </ThoughtDef>
-
 </Defs>

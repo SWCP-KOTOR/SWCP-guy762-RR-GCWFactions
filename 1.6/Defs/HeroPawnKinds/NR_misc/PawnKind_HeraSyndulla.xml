@@ -93,8 +93,8 @@
 			
 			<li>SWPotF_TacticAbility_Ambush</li>
 			<li>SWPotF_TacticDelegationAbility_ambush</li>
-			<li>SWPotF_TacticAbility_Barrage</li>
-			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_Harass</li>
+			<li>SWPotF_TacticDelegationAbility_harass</li>
 			<li>SWPotF_TacticAbility_TakeCover</li>
 			<li>SWPotF_TacticDelegationAbility_takecover</li>
 			<li>SWPotF_TacticAbility_Sprint</li>
@@ -163,9 +163,17 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
-	  
-	  <RulePackDef>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWCharPawnNR_HeraSyndulla"  ParentName="SWWEPlayableHero_HeraSyndulla">
+		<defName>SWCharPawnNR_HeraSyndulla</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	<RulePackDef>
         <defName>guy762_HeroNamer_HeraSyndulla</defName>
         <rulePack>
             <rulesStrings>

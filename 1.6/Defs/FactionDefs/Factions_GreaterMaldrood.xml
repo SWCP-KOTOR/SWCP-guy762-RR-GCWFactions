@@ -6,7 +6,7 @@
 		<label>Greater Maldrood</label>
 		<fixedName>Greater Maldrood</fixedName>
 		<!-- <factionNameMaker>guy762_NamerFaction_MaldroodStarfleet</factionNameMaker> -->
-		<description>.</description>
+		<description>One of the most strategically advanced of the Imperial splinter factions, the Greater Maldrood is a kingdom in the Maldrood Oversector formed by self-titled High Admiral Treuten Teradoc. Formerly a a subordinate of Warlord Zsinj, Teradoc was convinced to betray him by Director Isard of Imperial Military Intelligence, for fear that Zsinj and Teradoc's forces combined could easily thwart her forthcoming plot to seize control of the Empire. Teradoc's well-regarded position in the Imperial Navy allowed him to convince much of Zsinj's veteran forces, including the famed Crimson Command fleet, to defect with him. Additionally, he has managed to convince the Empire's foremost hovertank strategist Colonel Zel Johans as well as the Grand Admiral Peccati Syn to join his ranks. However, despite an abundance of talent at his command, Teradoc seems to lack the grand-level strategic foresight of his former benefactor, as he has hastily declared himself the pirate-king of Maldrood and a High Admiral of the Empire, and launched simultaneous campaigns against Zsinj, Isard, and all Hutt cartels. Though these campaigns are still early, few (if any) meaningful victories have been secured against any of his opponents.</description>
 		
 		<pawnSingular>imperial</pawnSingular>
 		<pawnsPlural>imperials</pawnsPlural>

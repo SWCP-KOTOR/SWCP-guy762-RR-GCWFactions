@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	
+
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMandoClanCharacter_FennShysa</defName>
+        <pawnKind>SWCharPawnMC_FennShysa</pawnKind>
+        <faction>guy762_SWWarlordsFaction_MandoClan</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMandoClanCharacter_FirstChieftan</defName>
+        <pawnKind>SWMando_commando</pawnKind>
+        <faction>guy762_SWWarlordsFaction_MandoClan</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>200</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMandoClanCharacter_SecondChieftan</defName>
+        <pawnKind>SWMando_commando</pawnKind>
+        <faction>guy762_SWWarlordsFaction_MandoClan</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>100</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWMandoClanCharacter_ThirdChieftan</defName>
+        <pawnKind>SWMando_commando</pawnKind>
+        <faction>guy762_SWWarlordsFaction_MandoClan</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+
+</Defs>

@@ -649,6 +649,12 @@
 					<countRange>1~3</countRange>
 				</li>
 			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_ImpRemnant</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 
 		<!-- <disallowedTraits> -->
