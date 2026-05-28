@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedModList>
+	<meta>
+		<gameVersion>1.6.4633 rev1261</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>ludeon.rimworld.royalty</li>
+			<li>ludeon.rimworld.ideology</li>
+			<li>ludeon.rimworld.biotech</li>
+			<li>ludeon.rimworld.odyssey</li>
+			<li>smashphil.vehicleframework</li>
+			<li>arandomkiwi.rimthemes</li>
+			<li>dubwise.dubsmintmenus</li>
+			<li>zcubekr.customfonts</li>
+			<li>redmattis.betterprerequisites</li>
+			<li>adaptive.storage.framework</li>
+			<li>oskarpotocki.vanillafactionsexpanded.core</li>
+			<li>imranfish.xmlextensions</li>
+			<li>dvs.norandomrelations</li>
+			<li>turnovus.biotech.integratedgenes</li>
+			<li>ebsg.framework</li>
+			<li>oels.vehiclemapframework</li>
+			<li>alt4s.disableanomalymusic</li>
+			<li>zal.musicmanager</li>
+			<li>zal.mef</li>
+			<li>mrhydralisk.layeredatmosphereorbit</li>
+			<li>brrainz.cameraplus</li>
+			<li>void.charactereditor</li>
+			<li>mlie.showmeyourhands</li>
+			<li>mlie.savethingasimage</li>
+			<li>mlie.spawnmodcontent</li>
+			<li>3hst.devquicktestfix</li>
+			<li>sandy.rpgstyleinventory.avilmask.revamped</li>
+			<li>avilmask.nonunopinata</li>
+			<li>koth.modmedicinepatch</li>
+			<li>exploriters.siiftun1857.launchintoemptyspace</li>
+			<li>kupie.custommapgensize</li>
+			<li>planetace.nondestructivegravlaunch</li>
+			<li>redmattis.biggergravship</li>
+			<li>starei.leadertitles</li>
+			<li>btd.remix.gravshipblueprints</li>
+			<li>btd.remix.gravshiproofmountedturrets</li>
+			<li>jdgg.adaptive.cargoholds</li>
+			<li>mrhydralisk.complementaryodyssey</li>
+			<li>vanillaexpanded.vhe</li>
+			<li>shunthewitch.cvnmechanoidwarfarecore</li>
+			<li>mlie.starwarsanimalcollection</li>
+			<li>lee.theforce.standalone</li>
+			<li>lee.theforce.lightsaber</li>
+			<li>guy762.starwarsxenotypes</li>
+			<li>swcp.guy762.rr.swcore</li>
+			<li>swcp.guy762.starwarsscoreui</li>
+			<li>guy762.lee.kotorpotf</li>
+			<li>swcp.gcwvehicles</li>
+			<li>swcp.guy762.taran.swgalaxy.gbp</li>
+			<li>swcp.guy762.warlordempire</li>
+		</modIds>
+		<modSteamIds>
+			<li>0</li>
+			<li>0</li>
+			<li>1149640</li>
+			<li>1392840</li>
+			<li>1826140</li>
+			<li>3022790</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>867467808</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Royalty</li>
+			<li>Ideology</li>
+			<li>Biotech</li>
+			<li>Odyssey</li>
+			<li>Vehicle Framework</li>
+			<li>RimThemes</li>
+			<li>Dubs Mint Menus</li>
+			<li>Custom Fonts - Forked</li>
+			<li>Big and Small - Framework</li>
+			<li>Adaptive Storage Framework</li>
+			<li>Vanilla Expanded Framework</li>
+			<li>XML Extensions</li>
+			<li>No Random Relations</li>
+			<li>Integrated Genes</li>
+			<li>EBSG Framework</li>
+			<li>Vehicle Map Framework</li>
+			<li>Disable Anomaly Music</li>
+			<li>Music Manager (Continued)</li>
+			<li>Music Expanded Framework (Continued)</li>
+			<li>Layered Atmosphere and Orbit</li>
+			<li>Camera+</li>
+			<li>Character Editor</li>
+			<li>Show Me Your Hands</li>
+			<li>Save Thing As Image</li>
+			<li>Spawn Mod Content</li>
+			<li>dev quicktest tweak</li>
+			<li>RPG Style Inventory Revamped</li>
+			<li>Non uno Pinata (don't drop items)</li>
+			<li>Mod Medicine Patch 1.6</li>
+			<li>Launch into empty space</li>
+			<li>Custom Map Generator Size</li>
+			<li>Non-Destructive Gravlaunch</li>
+			<li>Bigger Gravships (and other Odyssey spaceship related settings)</li>
+			<li>Use Faction Leader Titles</li>
+			<li>[BTD] Gravship Blueprints</li>
+			<li>[BTD] Gravship Roof-Mounted Turrets</li>
+			<li>Cargo Holds</li>
+			<li>Complementary Odyssey</li>
+			<li>Vanilla Hair Expanded</li>
+			<li>CVN Mechanoid Warfare Core</li>
+			<li>Star Wars Animal Collection (Continued)</li>
+			<li>Star Wars : The Force Standalone</li>
+			<li>Star Wars : The Force - Lightsaber</li>
+			<li>Star Wars Xenotypes</li>
+			<li>Star Wars Collaboration Project Core</li>
+			<li>Star Wars Score and UI</li>
+			<li>Star Wars: Power of the Force</li>
+			<li>Star Wars: Armored Alliance</li>
+			<li>Star Wars: The Galaxy Far, Far Away</li>
+			<li>Star Wars: GCW Factions and Assets</li>
+		</modNames>
+	</meta>
+	<modList>
+		<ids>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>ludeon.rimworld.royalty</li>
+			<li>ludeon.rimworld.ideology</li>
+			<li>ludeon.rimworld.biotech</li>
+			<li>ludeon.rimworld.odyssey</li>
+			<li>smashphil.vehicleframework</li>
+			<li>arandomkiwi.rimthemes</li>
+			<li>dubwise.dubsmintmenus</li>
+			<li>zcubekr.customfonts</li>
+			<li>redmattis.betterprerequisites</li>
+			<li>adaptive.storage.framework</li>
+			<li>oskarpotocki.vanillafactionsexpanded.core</li>
+			<li>imranfish.xmlextensions</li>
+			<li>dvs.norandomrelations</li>
+			<li>turnovus.biotech.integratedgenes</li>
+			<li>ebsg.framework</li>
+			<li>oels.vehiclemapframework</li>
+			<li>alt4s.disableanomalymusic</li>
+			<li>zal.musicmanager</li>
+			<li>zal.mef</li>
+			<li>mrhydralisk.layeredatmosphereorbit</li>
+			<li>brrainz.cameraplus</li>
+			<li>void.charactereditor</li>
+			<li>mlie.showmeyourhands</li>
+			<li>sandy.rpgstyleinventory.avilmask.revamped</li>
+			<li>avilmask.nonunopinata</li>
+			<li>koth.modmedicinepatch</li>
+			<li>exploriters.siiftun1857.launchintoemptyspace</li>
+			<li>kupie.custommapgensize</li>
+			<li>planetace.nondestructivegravlaunch</li>
+			<li>redmattis.biggergravship</li>
+			<li>starei.leadertitles</li>
+			<li>btd.remix.gravshipblueprints</li>
+			<li>btd.remix.gravshiproofmountedturrets</li>
+			<li>jdgg.adaptive.cargoholds</li>
+			<li>mrhydralisk.complementaryodyssey</li>
+			<li>vanillaexpanded.vhe</li>
+			<li>shunthewitch.cvnmechanoidwarfarecore</li>
+			<li>mlie.starwarsanimalcollection</li>
+			<li>lee.theforce.standalone</li>
+			<li>lee.theforce.lightsaber</li>
+			<li>guy762.starwarsxenotypes</li>
+			<li>swcp.guy762.rr.swcore</li>
+			<li>swcp.guy762.starwarsscoreui</li>
+			<li>guy762.lee.kotorpotf</li>
+			<li>swcp.gcwvehicles</li>
+			<li>swcp.guy762.taran.swgalaxy.gbp</li>
+			<li>swcp.guy762.warlordempire</li>
+		</ids>
+		<names>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Royalty</li>
+			<li>Ideology</li>
+			<li>Biotech</li>
+			<li>Odyssey</li>
+			<li>Vehicle Framework</li>
+			<li>RimThemes</li>
+			<li>Dubs Mint Menus</li>
+			<li>Custom Fonts - Forked</li>
+			<li>Big and Small - Framework</li>
+			<li>Adaptive Storage Framework</li>
+			<li>Vanilla Expanded Framework</li>
+			<li>XML Extensions</li>
+			<li>No Random Relations</li>
+			<li>Integrated Genes</li>
+			<li>EBSG Framework</li>
+			<li>Vehicle Map Framework</li>
+			<li>Disable Anomaly Music</li>
+			<li>Music Manager (Continued)</li>
+			<li>Music Expanded Framework (Continued)</li>
+			<li>Layered Atmosphere and Orbit</li>
+			<li>Camera+</li>
+			<li>Character Editor</li>
+			<li>Show Me Your Hands</li>
+			<li>RPG Style Inventory Revamped</li>
+			<li>Non uno Pinata (don't drop items)</li>
+			<li>Mod Medicine Patch 1.6</li>
+			<li>Launch into empty space</li>
+			<li>Custom Map Generator Size</li>
+			<li>Non-Destructive Gravlaunch</li>
+			<li>Bigger Gravships (and other Odyssey spaceship related settings)</li>
+			<li>Use Faction Leader Titles</li>
+			<li>[BTD] Gravship Blueprints</li>
+			<li>[BTD] Gravship Roof-Mounted Turrets</li>
+			<li>Cargo Holds</li>
+			<li>Complementary Odyssey</li>
+			<li>Vanilla Hair Expanded</li>
+			<li>CVN Mechanoid Warfare Core</li>
+			<li>Star Wars Animal Collection (Continued)</li>
+			<li>Star Wars : The Force Standalone</li>
+			<li>Star Wars : The Force - Lightsaber</li>
+			<li>Star Wars Xenotypes</li>
+			<li>Star Wars Collaboration Project Core</li>
+			<li>Star Wars Score and UI</li>
+			<li>Star Wars: Power of the Force</li>
+			<li>Star Wars: Armored Alliance</li>
+			<li>Star Wars: The Galaxy Far, Far Away</li>
+			<li>Star Wars: GCW Factions and Assets</li>
+		</names>
+	</modList>
+</savedModList>

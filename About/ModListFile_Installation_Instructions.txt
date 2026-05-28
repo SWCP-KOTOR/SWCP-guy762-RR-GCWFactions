@@ -1,0 +1,4 @@
+INSTALLING THE MODLIST:
+- Navigate to your Config folder (Users/[your user account]/AppData/LocalLow/Ludeon Studios/RimWorld by Ludeon Studios/ModLists
+- Copy and paste the 1.6_StarWarsGCWProject_AlphaI.rml file into this folder
+- Done.
