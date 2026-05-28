@@ -4,8 +4,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyRifleman_35x" ParentName="SWImpRemnant_ArmyTrooper">
-		<defName>xgSWImpRemnant_ArmyRifleman_35x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyRifleman_35x" ParentName="SWPentastar_ArmyTrooper">
+		<defName>xgSWPentastar_ArmyRifleman_35x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>35</maxPerGroup>
@@ -24,8 +24,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyRepeater_4x" ParentName="SWImpRemnant_ArmyHeavy">
-		<defName>xgSWImpRemnant_ArmyRepeater_4x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyRepeater_4x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xgSWPentastar_ArmyRepeater_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -43,8 +43,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyIon_2x" ParentName="SWImpRemnant_ArmyHeavy">
-		<defName>xgSWImpRemnant_ArmyIon_2x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyIon_2x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xgSWPentastar_ArmyIon_2x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
@@ -62,8 +62,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyMissile_4x" ParentName="SWImpRemnant_ArmyHeavy">
-		<defName>xgSWImpRemnant_ArmyMissile_4x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyMissile_4x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xgSWPentastar_ArmyMissile_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -81,10 +81,31 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
-		<defName>xgSWImpRemnant_ArmyMedicBaseGuard_2x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xgSWPentastar_ArmyMedicBaseGuard_2x</defName>
 		<!-- <label>DEBUG</label> -->
-		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_GuardianProtectorBaseGuard_2x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xgSWPentastar_GuardianProtectorBaseGuard_2x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
 		
@@ -101,8 +122,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard one-offs -->
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyLieutenant_1x" ParentName="SWImpRemnant_ArmyLieutenant">
-		<defName>xgSWImpRemnant_ArmyLieutenant_1x</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyLieutenant_1x" ParentName="SWPentastar_ArmyLieutenant">
+		<defName>xgSWPentastar_ArmyLieutenant_1x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>1</maxPerGroup>
@@ -115,8 +136,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyTrooperBeaconGuard" ParentName="SWImpRemnant_ArmyTrooper">
-		<defName>xgSWImpRemnant_ArmyTrooperBeaconGuard</defName>
+	<PawnKindDef Name="xgSWPentastar_ArmyTrooperBeaconGuard" ParentName="SWPentastar_ArmyTrooper">
+		<defName>xgSWPentastar_ArmyTrooperBeaconGuard</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>35</maxPerGroup> -->
@@ -134,8 +155,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_ArmyConscriptBaseGuard" ParentName="SWImpRemnant_ArmyConscript">
-		<defName>xgSWImpRemnant_ArmyConscriptBaseGuard</defName>
+	<PawnKindDef Name="xgSWPentastar_EnforcerTrooperBaseGuard" ParentName="SWPentastar_EnforcerTrooper">
+		<defName>xgSWPentastar_EnforcerTrooperBaseGuard</defName>
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>56</maxPerGroup> -->
 		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
@@ -148,12 +169,64 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
 	
-	<PawnKindDef Name="xgSWImpRemnant_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
-		<defName>xgSWImpRemnant_WorkerBaseGuard</defName>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
+		<defName>xgSWPentastar_WorkerBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWPentastar_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
+		<defName>xgSWPentastar_EngineerBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_GuardianProtectorBaseGuard" ParentName="SWPentastar_GuardianProtector">
+		<defName>xgSWPentastar_GuardianProtectorBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -164,17 +237,6 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
-		<defName>xgSWImpRemnant_EngineerBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
 	
 	
 	
@@ -185,63 +247,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWImpRemnant_StormtrooperBaseGuard" ParentName="SWImpRemnant_stormtrooper">
-		<defName>xgSWImpRemnant_StormtrooperBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_StormtrooperRifle_4x_BaseGuard" ParentName="xSWImpRemnant_StormtrooperRifle_4x">
-		<defName>xgSWImpRemnant_StormtrooperRifle_4x_BaseGuard</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	<PawnKindDef MayRequire="lee.theforce.standalone" Name="xgSWWarlords_Inquisitor_TFS_BaseGuard" ParentName="SWWarlords_Inquisitor_TFS">
-		<defName>xgSWWarlords_Inquisitor_TFS_BaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_liteneeddisabler</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	<PawnKindDef Name="xgSWWarlords_ShadowStormieBaseGuard" ParentName="SWWarlords_shadowstormie">
-		<defName>xgSWWarlords_ShadowStormieBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
+
 	
 	
 	
@@ -257,8 +264,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWImpRemnant_UniformArmyLtBaseGuard" ParentName="SWImpRemnant_ArmyLt_onBase">
-		<defName>xgSWImpRemnant_UniformArmyLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWPentastar_UniformArmyLtBaseGuard" ParentName="SWPentastar_ArmyLt_onBase">
+		<defName>xgSWPentastar_UniformArmyLtBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -269,8 +276,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_UniformArmyMajorBaseGuard" ParentName="SWImpRemnant_ArmyMajor_onBase">
-		<defName>xgSWImpRemnant_UniformArmyMajorBaseGuard</defName>
+	<PawnKindDef Name="xgSWPentastar_UniformArmyMajorBaseGuard" ParentName="SWPentastar_ArmyMajor_onBase">
+		<defName>xgSWPentastar_UniformArmyMajorBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -281,64 +288,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWImpRemnant_UniformArmyGeneralBaseGuard" ParentName="SWImpRemnant_ArmyGeneral">
-		<defName>xgSWImpRemnant_UniformArmyGeneralBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xgSWImpRemnant_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
-		<defName>xgSWImpRemnant_ISBLtBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWImpRemnant_IMILtBaseGuard" ParentName="SWImpRemnant_IMILt">
-		<defName>xgSWImpRemnant_IMILtBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xgSWImpRemnant_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt">
-		<defName>xgSWImpRemnant_OpsLtBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWImpRemnant_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral">
-		<defName>xgSWImpRemnant_OpsGeneralBaseGuard</defName>
+	<PawnKindDef Name="xgSWPentastar_UniformArmyGeneralBaseGuard" ParentName="SWPentastar_ArmyGeneral">
+		<defName>xgSWPentastar_UniformArmyGeneralBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -355,8 +306,134 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWImpRemnant_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy">
-		<defName>xgSWImpRemnant_ViceroyBaseGuard</defName>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
+		<defName>xgSWPentastar_ISBLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Pentastar</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_Pentastar</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_NavyLtBaseGuard" ParentName="SWPentastar_NavyLt">
+		<defName>xgSWPentastar_NavyLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWPentastar_NavyCaptainBaseGuard" ParentName="SWPentastar_NavyCaptain">
+		<defName>xgSWPentastar_NavyCaptainBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWPentastar_NavyAdmiralBaseGuard" ParentName="SWPentastar_NavyAdmiral">
+		<defName>xgSWPentastar_NavyAdmiralBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_OpsLtBaseGuard" ParentName="SWPentastar_OpsLt">
+		<defName>xgSWPentastar_OpsLtBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWPentastar_OpsGeneralBaseGuard" ParentName="SWPentastar_OpsGeneral">
+		<defName>xgSWPentastar_OpsGeneralBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWPentastar_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy">
+		<defName>xgSWPentastar_ViceroyBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>

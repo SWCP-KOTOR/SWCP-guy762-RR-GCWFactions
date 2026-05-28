@@ -289,7 +289,7 @@
 				<li>RawBerries</li>
 				<li>Chocolate</li>
 				<li>InsectJelly</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">GS_Milk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
@@ -453,7 +453,7 @@
 				<li>RawBerries</li>
 				<li>Chocolate</li>
 				<li>InsectJelly</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">GS_Milk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
@@ -619,7 +619,7 @@
 				<li>RawBerries</li>
 				<li>Chocolate</li>
 				<li>InsectJelly</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">GS_Milk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
@@ -789,7 +789,7 @@
 				<li>RawBerries</li>
 				<li>Chocolate</li>
 				<li>InsectJelly</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">GS_Milk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>
@@ -956,7 +956,7 @@
 				<li>RawBerries</li>
 				<li>Chocolate</li>
 				<li>InsectJelly</li>
-				<li MayRequire="SWCP.guy762.Taran.SWGalaxy">GS_Milk</li>
+				<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">GS_Milk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">BlueMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">GreenMilk</li>
 				<li MayRequire="Mlie.StarWarsAnimalCollection">RikknitOvum</li>

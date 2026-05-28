@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Star Wars: Untitled GCW Project</name>
+  <name>Star Wars: GCW Factions and Assets</name>
   <modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_SWWarlordEmpire</modIconPath>
   <author>guy762, Ranger Rick</author>
   <supportedVersions>
@@ -8,21 +8,10 @@
     <li>1.6</li>
   </supportedVersions>
   <packageId>SWCP.guy762.WarlordEmpire</packageId>
-  <description>Adds the Galactic Civil War.</description>
+  <description>SWCP Galacic Civil War project - Alpha I build. This mod is a work-in-progress.\n\nAdds factions, weapons, and apparel from the Galactic Civil War.</description>
+  <url>https://github.com/SWCP-KOTOR/SWCP-guy762-Taran-StarWarsGalaxy</url>
   
   <modDependencies>
-	<li>
-		<packageId>guy762.StarWarsXenotypes</packageId>
-		<displayName>Star Wars Xenotypes</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2915192253</steamWorkshopUrl>
-		<downloadUrl>https://github.com/guy1762/guy762-StarWarsXenotypes</downloadUrl>
-	</li>
-	<li>
-		<packageId>SWCP.guy762.RR.SWCore</packageId>
-		<displayName>Star Wars Collaboration Project Core</displayName>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl>
-		<downloadUrl>https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</downloadUrl>
-	</li>
 	<li>
 		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 		<displayName>Vanilla Expanded Framework</displayName>
@@ -47,12 +36,48 @@
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3557220601</steamWorkshopUrl>
 		<downloadUrl>https://github.com/JodemLee/Star-Wars-The-Force---Standalone/releases/tag/alpha0.5v</downloadUrl>
 	</li>
+	
+	
+	
+	
+	
+	
+	<li>
+		<packageId>guy762.StarWarsXenotypes</packageId>
+		<displayName>Star Wars Xenotypes</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2915192253</steamWorkshopUrl>
+		<downloadUrl>https://github.com/guy1762/guy762-StarWarsXenotypes</downloadUrl>
+	</li>
+	<li>
+		<packageId>SWCP.guy762.RR.SWCore</packageId>
+		<displayName>Star Wars Collaboration Project Core</displayName>
+		<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl> -->
+		<downloadUrl>https://github.com/SWCP-KOTOR/guy762-RR-MM-SWCPCore</downloadUrl>
+	</li>
+	<li>
+		<packageId>guy762.Lee.KotORPotF</packageId>
+		<displayName>Star Wars: Power of the Force</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl>
+		<downloadUrl>https://github.com/guy1762/guy762-Lee-PowerOfTheForce</downloadUrl>
+	</li>
+	<li>
+		<packageId>SWCP.GCWVehicles</packageId>
+		<displayName>Star Wars: Armored Alliance</displayName>
+		<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl> -->
+		<downloadUrl>https://github.com/SWCP-KOTOR/SWCP_GCW_Vehicles</downloadUrl>
+	</li>
+	<li>
+		<packageId>SWCP.guy762.Taran.SWGalaxy.gbp</packageId>
+		<displayName>Star Wars: The Galaxy Far, Far Away</displayName>
+		<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/3254370945</steamWorkshopUrl> -->
+		<downloadUrl>https://github.com/SWCP-KOTOR/SWCP-guy762-Taran-StarWarsGalaxy</downloadUrl>
+	</li>
   </modDependencies>
   
   
   
   
-  <loadAfter>
+	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
@@ -73,7 +98,7 @@
 		
 		<li>SWCP.guy762.RR.SWCore</li>
 		<li>SWCP.GCWVehicles</li>
-		<li>SWCP.guy762.Taran.SWGalaxy</li>
+		<li>SWCP.guy762.Taran.SWGalaxy.gbp</li>
 	</loadAfter>
 </ModMetaData>
 

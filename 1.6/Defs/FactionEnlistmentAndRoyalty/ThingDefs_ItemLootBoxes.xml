@@ -295,7 +295,7 @@
                         <countRange>150~300</countRange>
                         <weight>0.5</weight>
                     </li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">
                         <thingDef>GS_Milk</thingDef>
                         <countRange>150~300</countRange>
                         <weight>0.5</weight>

@@ -83,6 +83,36 @@
 				</enableIfAnyModActive>
 			</li>
 			
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>SWCPIncident_TaxCollector_GreaterMaldrood</incident>
+				<minDaysPassed>20</minDaysPassed>
+				<baseIncidentsPerYear>2</baseIncidentsPerYear>
+				<minSpacingDays>30</minSpacingDays>
+				<minWealth>15000</minWealth>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
+				</allowedTargetTags>
+				<enableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</enableIfAnyModActive>
+			</li>
+			
+			<li Class="StorytellerCompProperties_FactionInteraction">
+				<incident>SWCPIncident_TaxCollector_EriaduAuthority</incident>
+				<minDaysPassed>20</minDaysPassed>
+				<baseIncidentsPerYear>2</baseIncidentsPerYear>
+				<minSpacingDays>30</minSpacingDays>
+				<minWealth>15000</minWealth>
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+					<li>Gravship</li>
+				</allowedTargetTags>
+				<enableIfAnyModActive>
+					<li>Ludeon.RimWorld.Royalty</li>
+				</enableIfAnyModActive>
+			</li>
+			
 		</value>
 	</Operation>
 

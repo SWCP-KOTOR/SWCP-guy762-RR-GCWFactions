@@ -523,6 +523,21 @@
 				<quality>Good</quality>
 			</li>
 		</specificApparelRequirements>
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Eriadu</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	
@@ -556,6 +571,79 @@
 				<li>
 				  <thingDef>SWCP_FactionIntelDatapadAdv_Eriadu</thingDef>
 				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyLt_onBase" ParentName="SWImpRemnant_ArmyLt_onBase">
+		<defName>SWEriadu_ArmyLt_onBase</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWEriadu_ArmyMajor_onBase" ParentName="SWImpRemnant_ArmyMajor_onBase">
+		<defName>SWEriadu_ArmyMajor_onBase</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,130)</color>        <!-- eriadu mediocre grey -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Eriadu</thingDef>
+					<countRange>0~1</countRange>
 				</li>
 			</subOptionsTakeAll>
 		</inventoryOptions>
@@ -667,19 +755,8 @@
 		<weaponMoney>3200</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_TL50conc</li>
-			<!-- <li>SWRanged_T7IonDisruptor</li> -->
 		</weaponTags>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>

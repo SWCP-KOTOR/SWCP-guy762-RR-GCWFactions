@@ -4,8 +4,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyRifleman_35x" ParentName="SWMaldrood_ArmyTrooper">
-		<defName>xgSWMaldrood_ArmyRifleman_35x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyRifleman_35x" ParentName="SWZsinj_ArmyTrooper">
+		<defName>xgSWZsinj_ArmyRifleman_35x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>35</maxPerGroup>
@@ -24,8 +24,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyRepeater_4x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyRepeater_4x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyRepeater_4x" ParentName="SWZsinj_ArmyHeavy">
+		<defName>xgSWZsinj_ArmyRepeater_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -43,8 +43,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyIon_2x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyIon_2x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyIon_2x" ParentName="SWZsinj_ArmyHeavy">
+		<defName>xgSWZsinj_ArmyIon_2x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
@@ -62,8 +62,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyMissile_4x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyMissile_4x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyMissile_4x" ParentName="SWZsinj_ArmyHeavy">
+		<defName>xgSWZsinj_ArmyMissile_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -81,10 +81,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
-		<defName>xgSWMaldrood_ArmyMedicBaseGuard_2x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xgSWZsinj_ArmyMedicBaseGuard_2x</defName>
 		<!-- <label>DEBUG</label> -->
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
 		
@@ -104,8 +104,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyCommandoBaseGuard_4x" ParentName="SWMaldrood_NavyCommando">
-		<defName>xgSWMaldrood_NavyCommandoBaseGuard_4x</defName>
+	<PawnKindDef Name="xgSWZsinj_RaptorBaseGuard_4x" ParentName="SWZsinj_Raptor">
+		<defName>xgSWZsinj_RaptorBaseGuard_4x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		
@@ -122,8 +122,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard one-offs -->
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyLieutenant_1x" ParentName="SWMaldrood_ArmyLieutenant">
-		<defName>xgSWMaldrood_ArmyLieutenant_1x</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyLieutenant_1x" ParentName="SWZsinj_ArmyLieutenant">
+		<defName>xgSWZsinj_ArmyLieutenant_1x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>1</maxPerGroup>
@@ -136,8 +136,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyTrooperBeaconGuard" ParentName="SWMaldrood_ArmyTrooper">
-		<defName>xgSWMaldrood_ArmyTrooperBeaconGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyTrooperBeaconGuard" ParentName="SWZsinj_ArmyTrooper">
+		<defName>xgSWZsinj_ArmyTrooperBeaconGuard</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>35</maxPerGroup> -->
@@ -155,11 +155,90 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyConscriptBaseGuard" ParentName="SWMaldrood_ArmyConscript">
-		<defName>xgSWMaldrood_ArmyConscriptBaseGuard</defName>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ JK underworld goons -->
+	
+	<PawnKindDef Name="xgSWZsinj_JKRodianBaseGuard" ParentName="SWScum_JKRodian">
+		<defName>xgSWZsinj_JKRodianBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<!-- <maxPerGroup>56</maxPerGroup> -->
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWZsinj_JKHumanMercBaseGuard" ParentName="SWScum_JKHumanMerc">
+		<defName>xgSWZsinj_JKHumanMercBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWZsinj_JKWeequayBaseGuard" ParentName="SWScum_JKWeequay">
+		<defName>xgSWZsinj_JKWeequayBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWZsinj_JKTrandoBaseGuard" ParentName="SWScum_JKTrando">
+		<defName>xgSWZsinj_JKTrandoBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWZsinj_JKRocketTrandoBaseGuard" ParentName="SWScum_JKRocketTrando">
+		<defName>xgSWZsinj_JKRocketTrandoBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWZsinj_JKSniperRodianBaseGuard" ParentName="SWScum_JKSniperRodian">
+		<defName>xgSWZsinj_JKSniperRodianBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
@@ -179,13 +258,21 @@
 	
 	
 	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ naval troopers -->
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyTrooperBeaconGuard" ParentName="xSWMaldrood_NavyTrooper_26x">
-		<defName>xgSWMaldrood_NavyTrooperBeaconGuard</defName>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWZsinj_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
+		<defName>xgSWZsinj_WorkerBaseGuard</defName>
 		<combatPower>1</combatPower>
-		
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
@@ -194,43 +281,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyGuardBaseGuard" ParentName="SWImpRemnant_NavyGuard">
-		<defName>xgSWMaldrood_NavyGuardBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
+		<defName>xgSWZsinj_EngineerBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xgSWMaldrood_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
-		<defName>xgSWMaldrood_WorkerBaseGuard</defName>
-		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWMaldrood_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
-		<defName>xgSWMaldrood_EngineerBaseGuard</defName>
-		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
@@ -248,8 +302,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyCommandoBaseGuard" ParentName="SWMaldrood_NavyCommando">
-		<defName>xgSWMaldrood_NavyCommandoBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_RaptorBaseGuard" ParentName="SWZsinj_Raptor">
+		<defName>xgSWZsinj_RaptorBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -287,8 +341,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_UniformArmyLtBaseGuard" ParentName="SWMaldrood_ArmyLt_onBase">
-		<defName>xgSWMaldrood_UniformArmyLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_UniformArmyLtBaseGuard" ParentName="SWZsinj_ArmyLt_onBase">
+		<defName>xgSWZsinj_UniformArmyLtBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -299,8 +353,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_UniformArmyMajorBaseGuard" ParentName="SWMaldrood_ArmyMajor_onBase">
-		<defName>xgSWMaldrood_UniformArmyMajorBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_UniformArmyMajorBaseGuard" ParentName="SWZsinj_ArmyMajor_onBase">
+		<defName>xgSWZsinj_UniformArmyMajorBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -311,8 +365,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyGeneralBaseGuard" ParentName="SWMaldrood_ArmyGeneral">
-		<defName>xgSWMaldrood_ArmyGeneralBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_ArmyGeneralBaseGuard" ParentName="SWZsinj_ArmyGeneral">
+		<defName>xgSWZsinj_ArmyGeneralBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -336,12 +390,12 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
-		<defName>xgSWMaldrood_ISBLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_DefilerBaseGuard" ParentName="SWZannCon_Defiler">
+		<defName>xgSWZsinj_DefilerBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -351,18 +405,22 @@
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>SWCP_FactionIntelDatapad_Maldrood</thingDef>
+					<thingDef>SWCP_FactionIntelDatapad_Zsinj</thingDef>
 					<countRange>1~1</countRange>
 				</li>
 				<li>
-					<thingDef>SWCP_FactionIntelDatapadAdv_Maldrood</thingDef>
+					<thingDef>SWCP_FactionIntelDatapadAdv_Zsinj</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_Zann</thingDef>
 					<countRange>0~1</countRange>
 				</li>
 			</subOptionsChooseOne>
 			<subOptionsTakeAll>
 				<li>
-					<thingDef>guy762_medpac_adv</thingDef>
-					<countRange>1~3</countRange>
+					<thingDef>guy762_stim_hyperdex</thingDef>
+					<countRange>1~2</countRange>
 				</li>
 			</subOptionsTakeAll>
 		</inventoryOptions>
@@ -380,8 +438,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyLtBaseGuard" ParentName="SWMaldrood_NavyLt">
-		<defName>xgSWMaldrood_NavyLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_NavyLtBaseGuard" ParentName="SWZsinj_NavyLt">
+		<defName>xgSWZsinj_NavyLtBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -392,8 +450,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyCaptainBaseGuard" ParentName="SWMaldrood_NavyCaptain">
-		<defName>xgSWMaldrood_NavyCaptainBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_NavyCaptainBaseGuard" ParentName="SWZsinj_NavyCaptain">
+		<defName>xgSWZsinj_NavyCaptainBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -404,8 +462,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyAdmiralBaseGuard" ParentName="SWMaldrood_NavyAdmiral">
-		<defName>xgSWMaldrood_NavyAdmiralBaseGuard</defName>
+	<PawnKindDef Name="xgSWZsinj_NavyAdmiralBaseGuard" ParentName="SWZsinj_NavyAdmiral">
+		<defName>xgSWZsinj_NavyAdmiralBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -425,8 +483,8 @@
 	
 	
 	
-	<!-- <PawnKindDef Name="xgSWMaldrood_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt"> -->
-		<!-- <defName>xgSWMaldrood_OpsLtBaseGuard</defName> -->
+	<!-- <PawnKindDef Name="xgSWZsinj_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt"> -->
+		<!-- <defName>xgSWZsinj_OpsLtBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
@@ -437,8 +495,8 @@
 		<!-- </modExtensions> -->
 	<!-- </PawnKindDef> -->
 	
-	<!-- <PawnKindDef Name="xgSWMaldrood_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral"> -->
-		<!-- <defName>xgSWMaldrood_OpsGeneralBaseGuard</defName> -->
+	<!-- <PawnKindDef Name="xgSWZsinj_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral"> -->
+		<!-- <defName>xgSWZsinj_OpsGeneralBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
@@ -455,8 +513,8 @@
 	
 	
 	
-	<!-- <PawnKindDef Name="xgSWMaldrood_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy"> -->
-		<!-- <defName>xgSWMaldrood_ViceroyBaseGuard</defName> -->
+	<!-- <PawnKindDef Name="xgSWZsinj_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy"> -->
+		<!-- <defName>xgSWZsinj_ViceroyBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->

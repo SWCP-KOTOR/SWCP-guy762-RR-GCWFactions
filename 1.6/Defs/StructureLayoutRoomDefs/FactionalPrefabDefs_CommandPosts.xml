@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_NewRepublic</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_NewRepublic</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_NewRepublic</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_NewRepublic</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_RebelCell</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_RebelCell</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_PartisanCell</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_PartisanCell</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_PartisanCell</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_PartisanCell</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_ImpRemnant</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_ImpRemnant</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_ZsinjDominion</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_ZsinjDominion</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_PentastarAlignment</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_PentastarAlignment</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_GreaterMaldrood</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_GreaterMaldrood</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_EriaduAuthority</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_EriaduAuthority</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_Militia</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabBigCommandPost_Militia</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_big>
+				<chance>1</chance>
+			</SWCP_CommandPost_big>
+		</things>
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_PDF</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+
+
+
+</Defs>

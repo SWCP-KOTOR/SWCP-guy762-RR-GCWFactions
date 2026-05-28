@@ -62,43 +62,43 @@
 			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to. even if a faction is not set to spawn on both layers, everything in the system should be included here -->
 			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 		
 
@@ -116,6 +116,12 @@
             </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
+			</li>
+			<li Class="FCP.Enlist.FactionEnlistOptions">
+				<enlistOptionsDefs>
+					<li>guy762_SWFactionEnlistment_EriaduAuthority</li>
+				</enlistOptionsDefs>
+				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
 			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
@@ -201,8 +207,8 @@
 			
 			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
 				<layerWeights>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_Nevarro</key><value>4</value></li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_NevarroOrbit</key><value>3</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp"><key>SWCPPlanetLayer_Nevarro</key><value>4</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp"><key>SWCPPlanetLayer_NevarroOrbit</key><value>3</value></li>
 				</layerWeights>
 			</li>
 		</modExtensions>
@@ -584,29 +590,68 @@
 			  
 			  
 
+			<!-- <li> -->
+				<!-- <kindDef>Settlement</kindDef> -->
+				<!-- <commonality>1</commonality> -->
+				<!-- <options> -->
+					<!-- <SWImpRemnant_Worker>10</SWImpRemnant_Worker> -->
+					<!-- <SWImpRemnant_Engineer>10</SWImpRemnant_Engineer> -->
+					<!-- <SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat> -->
+
+					<!-- <SWEriadu_TankDriver>10</SWEriadu_TankDriver> -->
+					<!-- <SWEriadu_TankHvyDriver>10</SWEriadu_TankHvyDriver> -->
+
+					<!-- <SWEriadu_ArmyConscript>25</SWEriadu_ArmyConscript> -->
+
+					<!-- <SWEriadu_ArmyLieutenant>5</SWEriadu_ArmyLieutenant> -->
+					<!-- <SWEriadu_ArmyMajor>5</SWEriadu_ArmyMajor> -->
+					<!-- <SWEriadu_ArmyGeneral_field>2</SWEriadu_ArmyGeneral_field> -->
+					<!-- <SWEriadu_ArmyGeneral>1</SWEriadu_ArmyGeneral> -->
+
+					<!-- <SWEriadu_ArmySpecOps>10</SWEriadu_ArmySpecOps> -->
+					<!-- <SWEriadu_ArmyCommando>10</SWEriadu_ArmyCommando> -->
+					
+				<!-- </options> -->
+			<!-- </li> -->
+			
+			
 			<li>
-				<kindDef>Settlement</kindDef> <!-- base -->
+				<kindDef>Settlement</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<SWImpRemnant_Worker>10</SWImpRemnant_Worker>
-					<SWImpRemnant_Engineer>10</SWImpRemnant_Engineer>
-					<SWImpRemnant_EngiCombat>5</SWImpRemnant_EngiCombat>
-
-					<SWEriadu_TankDriver>10</SWEriadu_TankDriver>
-					<SWEriadu_TankHvyDriver>10</SWEriadu_TankHvyDriver>
-
-					<SWEriadu_ArmyConscript>25</SWEriadu_ArmyConscript>
-
-					<SWEriadu_ArmyLieutenant>5</SWEriadu_ArmyLieutenant>
-					<SWEriadu_ArmyMajor>5</SWEriadu_ArmyMajor>
-					<SWEriadu_ArmyGeneral_field>2</SWEriadu_ArmyGeneral_field>
-					<SWEriadu_ArmyGeneral>1</SWEriadu_ArmyGeneral>
-
-					<SWEriadu_ArmySpecOps>10</SWEriadu_ArmySpecOps>
-					<SWEriadu_ArmyCommando>10</SWEriadu_ArmyCommando>
+					<xgSWEriadu_ArmyRifleman_35x>100</xgSWEriadu_ArmyRifleman_35x>
+					<xgSWEriadu_ArmyRepeater_4x>100</xgSWEriadu_ArmyRepeater_4x>
+					<xgSWEriadu_ArmyMissile_4x>100</xgSWEriadu_ArmyMissile_4x>
+					<xgSWEriadu_ArmyIon_2x>100</xgSWEriadu_ArmyIon_2x>
+					<xgSWEriadu_UniformArmyLtBaseGuard>100</xgSWEriadu_UniformArmyLtBaseGuard>
+					<xgSWEriadu_ArmyMedicBaseGuard_2x>100</xgSWEriadu_ArmyMedicBaseGuard_2x>
 					
+					<!-- commander and guards -->
+					<xgSWEriadu_ArmyCommandoBaseGuard_4x>100</xgSWEriadu_ArmyCommandoBaseGuard_4x>
+					<xgSWEriadu_UniformArmyMajorBaseGuard>100</xgSWEriadu_UniformArmyMajorBaseGuard>
 				</options>
 			</li>
+			
+			<li>
+                <!-- Tax Collection (NOTE: a patch adding the IncidentDef to the storyteller base is required for this to work!!! -->
+                <kindDef>FCP_PawnGroupKind_TaxCollector</kindDef>
+                <traders>
+                    <xgSWEriadu_UniformArmyLtBaseGuard>1</xgSWEriadu_UniformArmyLtBaseGuard>
+                </traders>
+                <carriers>
+                    <Dewback MayRequire="Mlie.StarWarsAnimalCollection">10</Dewback>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+                </carriers>
+                <guards>
+					<SWEriadu_ArmyConscript>10</SWEriadu_ArmyConscript>
+					<SWEriadu_ArmyTrooper>3</SWEriadu_ArmyTrooper>
+					<SWEriadu_ArmyHeavy>3</SWEriadu_ArmyHeavy>
+					<SWEriadu_ArmyLieutenant>1</SWEriadu_ArmyLieutenant>
+                </guards>
+            </li>
 
 		  
 		  

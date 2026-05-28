@@ -559,7 +559,7 @@
 	
 	<PawnKindDef Name="SWZsinj_Raptor" ParentName="SWZsinj_RaptorCorpsBase">
 		<defName>SWZsinj_Raptor</defName>
-		<label>Raptor trooper</label>
+		<label>Raptor</label>
 		<combatPower>100</combatPower>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>40</maxGenerationAge>
@@ -646,16 +646,41 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>8~14</range>
+						<range>10~14</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>6~8</range>
+						<range>8~12</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="SWZsinj_RaptorCapeless" ParentName="SWZsinj_Raptor">
+		<defName>SWZsinj_RaptorCapeless</defName>
+		<apparelTags Inherit="False">
+			<li>ZsinjEmpire_raptorarmor</li>
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_RaptorHelmet</li>
+			<li>guy762_RaptorArmor</li>
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 	
 	
@@ -943,7 +968,7 @@
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
 	
 	
-	<PawnKindDef Name="xSWZsinj_Raptor_24x" ParentName="SWZsinj_Raptor">
+	<PawnKindDef Name="xSWZsinj_Raptor_24x" ParentName="SWZsinj_RaptorCapeless">
 		<defName>xSWZsinj_Raptor_24x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>24</maxPerGroup>
@@ -1366,6 +1391,22 @@
 				<quality>Good</quality>
 			</li>
 		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Zsinj</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	
@@ -1399,6 +1440,73 @@
 				<li>
 				  <thingDef>SWCP_FactionIntelDatapadAdv_Zsinj</thingDef>
 				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWZsinj_ArmyLt_onBase" ParentName="SWImpRemnant_ArmyLt_onBase">
+		<defName>SWZsinj_ArmyLt_onBase</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(95,120,75)</color>       <!-- jungle green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(95,120,75)</color>       <!-- jungle green -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWZsinj_ArmyMajor_onBase" ParentName="SWImpRemnant_ArmyMajor_onBase">
+		<defName>SWZsinj_ArmyMajor_onBase</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(95,120,75)</color>       <!-- jungle green -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(95,120,75)</color>       <!-- jungle green -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Zsinj</thingDef>
+					<countRange>0~1</countRange>
 				</li>
 			</subOptionsTakeAll>
 		</inventoryOptions>

@@ -221,18 +221,22 @@
 		<apparelMoney>12500~15500</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotOREquipment_adv</li>
-		  <li>KotORStealthBelt_adv</li>
-		  <li>KotORUtility_stronggrenade</li>
-		  <li>ZannConsortium_defiler</li>
-		  <li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
-		  <li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
-		  <li>SWCPSpecificApparelItem_DoubleBandolier</li>
+			<li>KotOREquipment_adv</li>
+			
+			<li>SWGCWSpecificGadgetItem_JKDetpackCase</li>
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
+			<li>ZannConsortium_defiler</li>
+			<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerHelmet</li>
+			<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
+			<li>SWCPSpecificApparelItem_DoubleBandolier</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_Accessory_bandolierA</li>
-		   <li>guy762_ZannDefilerHelmet</li>
-		   <li>guy762_ZannDefilerArmor</li>
+			<li>SWCP_stealthbelt_default</li>
+			<li>guy762_JKDetpackCase</li>
+			
+			<li>guy762_Accessory_bandolierA</li>
+			<li>guy762_ZannDefilerHelmet</li>
+			<li>guy762_ZannDefilerArmor</li>
 		</apparelRequired>
 		<specificApparelRequirements>
 			<li>
@@ -250,35 +254,13 @@
 		<techHediffsChance>20</techHediffsChance>
 		<techHediffsMoney>10000~25000</techHediffsMoney>
 		<techHediffsTags>
-		  <li>Advanced</li>
-		  <li>AdvancedWeapon</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
 		</techHediffsTags>
 		<techHediffsRequired>
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -300,12 +282,12 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<disallowedTraits>
-		  <li>Brawler</li>
+			<li>Brawler</li>
 		</disallowedTraits>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
 		<abilities>
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		
 		<modExtensions Inherit="False">

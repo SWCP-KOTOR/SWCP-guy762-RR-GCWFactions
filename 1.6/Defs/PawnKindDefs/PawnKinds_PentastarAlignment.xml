@@ -666,11 +666,6 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="SWPentastar_ArmyTrooper_40x" ParentName="SWPentastar_ArmyTrooper">
-		<defName>SWPentastar_ArmyTrooper_40x</defName>
-		<maxPerGroup>40</maxPerGroup>
-	</PawnKindDef>
-	
 	
 	
 	
@@ -789,6 +784,96 @@
 			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWPentastar_ArmyLt_onBase" ParentName="SWImpRemnant_ArmyLt_onBase">
+		<defName>SWPentastar_ArmyLt_onBase</defName>
+		<label>army lieutenant</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(90,90,95)</color>        <!-- blued grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,95)</color>        <!-- blued grey -->
+				<quality>Normal</quality>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWPentastar_ArmyMajor_onBase" ParentName="SWImpRemnant_ArmyMajor_onBase">
+		<defName>SWPentastar_ArmyMajor_onBase</defName>
+		<label>army major</label>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(90,90,95)</color>        <!-- blued grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,95)</color>        <!-- blued grey -->
+				<quality>Good</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Pentastar</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
 	
 	
 	<PawnKindDef Name="SWPentastar_ArmyGeneral" ParentName="SWImpRemnant_ArmyGeneral">
@@ -1037,6 +1122,22 @@
 				<quality>Good</quality>
 			</li>
 		</specificApparelRequirements>
+		
+		<inventoryOptions Inherit="False">
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_Pentastar</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 	</PawnKindDef>
 	
 	

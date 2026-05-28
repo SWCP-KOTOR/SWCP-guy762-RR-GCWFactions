@@ -79,24 +79,24 @@
 	
 	
 	<TileMutatorDef ParentName="AncientStructureMutBase">
-		<defName>SWCPTileMutator_FactionFortress_GreaterMaldrood</defName>
-		<label>Greater Maldrood garrison</label>
-		<description>warning: navy commando crossing</description>
+		<defName>SWCPTileMutator_FactionFortress_ZsinjDominion</defName>
+		<label>Zsinj's Dominion garrison</label>
+		<description>warning: raptor crossing</description>
 		<workerClass>TileMutatorWorker_AncientStructure</workerClass>
 		
-		<requiresFactionOfDef>guy762_SWWarlordsFaction_GreaterMaldrood</requiresFactionOfDef>
+		<requiresFactionOfDef>guy762_SWWarlordsFaction_ZsinjDominion</requiresFactionOfDef>
 		<extraGenSteps>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</li>
+			<li>SWCPMapGenStep_ImperialStructure_ZsinjDominionBasePawns</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_WanderingPersonnel</li>
 
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</li> -->
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</li>
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_turretguards</li> -->
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_BigCommandPostGuards</li>
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_ATPTsDefendingAATurret</li> -->
 
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_controlroomguards</li>
 		</extraGenSteps>
 		<categories Inherit="False" /> <!-- Remove the AncientStructure category so this isn't chosen for ancient mercenaries quest -->
 		<!-- <biomeWhitelist Inherit="False"> -->
@@ -104,7 +104,7 @@
 		<!-- </biomeWhitelist> -->
 		
 		<structureGenParms>
-		  <structureLayoutDef>SWCPImperialStructure_FactionFortress_GreaterMaldrood</structureLayoutDef>
+		  <structureLayoutDef>SWCPImperialStructure_FactionFortress_ZsinjDominion</structureLayoutDef>
 		  <structureSizeRange>75~100</structureSizeRange>
 		  <scatteredPrefabs>
 			<li>
@@ -209,37 +209,37 @@
 	<!-- HOW IT WORKS: a Harmony patch replaces each individually patched faction's settlement MapGenerator with a hardcoded DefOf (SWCPMapGenerator_x) -->
 	
 	<MapGeneratorDef ParentName="MapCommonBase">
-		<defName>SWCPMapGenerator_FortressGreaterMaldrood</defName>
+		<defName>SWCPMapGenerator_FortressZsinjDominion</defName>
 		<genSteps>
 			<li>RocksFromGrid</li>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBase</li>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</li>
+			<li>SWCPMapGenStep_ImperialStructure_ZsinjDominionBase</li>
+			<li>SWCPMapGenStep_ImperialStructure_ZsinjDominionBasePawns</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_WanderingPersonnel</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_BigCommandPostGuards</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_controlroomguards</li>
 			
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_InquisitorBoss</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_InquisitorGuards</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_InquisitorBoss</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_InquisitorGuards</li> -->
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_rebeldoubleagents</li>
+			<li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_rebeldoubleagents</li>
 			
 			
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_turretguards</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_ZsinjDominion_ATPTsDefendingAATurret</li> -->
 		</genSteps>
 	</MapGeneratorDef>
 	
 	
 	<GenStepDef>
-		<defName>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBase</defName>
+		<defName>SWCPMapGenStep_ImperialStructure_ZsinjDominionBase</defName>
 		<order>400</order>
 		<!-- <genStep Class="GenStep_AncientRuins"> -->
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortress">
-			<layoutDef>SWCPImperialStructure_FactionFortress_GreaterMaldrood</layoutDef>
+			<layoutDef>SWCPImperialStructure_FactionFortress_ZsinjDominion</layoutDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -253,10 +253,10 @@
 	
 	
 	<GenStepDef><!-- this one is still needed to spawn in the base Settlement pawngroup, the other pawn GenSteps are supplemental	-->
-		<defName>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</defName>
+		<defName>SWCPMapGenStep_ImperialStructure_ZsinjDominionBasePawns</defName>
 		<order>700</order>
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
-		  <factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+		  <factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -264,17 +264,17 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_WanderingPersonnel</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
-		  <factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+		  <factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 		  <initialCivilianCount>25~30</initialCivilianCount>
 		  <keepPopulationReplenished>false</keepPopulationReplenished>
 		  <maxPopulation>30</maxPopulation>
 		  <options>
-			<xgSWMaldrood_WorkerBaseGuard>10</xgSWMaldrood_WorkerBaseGuard>
+			<xgSWZsinj_WorkerBaseGuard>10</xgSWZsinj_WorkerBaseGuard>
 			<!-- <xgSWImpRemnant_ArmyConscriptBaseGuard>7.5</xgSWImpRemnant_ArmyConscriptBaseGuard> -->
-			<xgSWMaldrood_EngineerBaseGuard>5</xgSWMaldrood_EngineerBaseGuard>
+			<xgSWZsinj_EngineerBaseGuard>5</xgSWZsinj_EngineerBaseGuard>
 			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
 			
@@ -289,10 +289,10 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_turretguards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>8~10</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -300,7 +300,7 @@
 				<li>guy762_SWTurret_FPC67AntiAir</li>
 			</beaconBuildingDefs>
 			<options>	<!-- this apparently doesn't respect MaxPerGroup? -->
-				<xgSWMaldrood_NavyTrooperBeaconGuard>100</xgSWMaldrood_NavyTrooperBeaconGuard>
+				<xgSWZsinj_ArmyTrooperBeaconGuard>100</xgSWZsinj_ArmyTrooperBeaconGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -308,29 +308,33 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_BigCommandPostGuards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>8~10</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_big</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_NavyGuardBaseGuard>75</xgSWMaldrood_NavyGuardBaseGuard>
-				<xgSWMaldrood_NavyTrooperBeaconGuard>50</xgSWMaldrood_NavyTrooperBeaconGuard>
-				<SWRebel_DoubleAgentMaldroodOfficer>1</SWRebel_DoubleAgentMaldroodOfficer>
+				<xgSWZsinj_JKRodianBaseGuard>100</xgSWZsinj_JKRodianBaseGuard>
+				<xgSWZsinj_JKHumanMercBaseGuard>75</xgSWZsinj_JKHumanMercBaseGuard>
+				<xgSWZsinj_JKWeequayBaseGuard>50</xgSWZsinj_JKWeequayBaseGuard>
+				<xgSWZsinj_JKTrandoBaseGuard>50</xgSWZsinj_JKTrandoBaseGuard>
+				<xgSWZsinj_JKRocketTrandoBaseGuard>25</xgSWZsinj_JKRocketTrandoBaseGuard>
+				<xgSWZsinj_JKSniperRodianBaseGuard>1</xgSWZsinj_JKSniperRodianBaseGuard>
+				<SWRebel_DoubleAgentZsinjOfficer>1</SWRebel_DoubleAgentZsinjOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_TIEFightersDefendingAVTurret</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>30</defendRadius>
 			<pawnsPerBeacon>1~2</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -343,10 +347,10 @@
 	</GenStepDef>
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_ATPTsDefendingAATurret</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>30</defendRadius>
 			<pawnsPerBeacon>1~2</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -368,42 +372,42 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_basecommaders</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>5</defendRadius>
 			<pawnsPerBeacon>3~4</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_UniformArmyLtBaseGuard>100</xgSWMaldrood_UniformArmyLtBaseGuard>
-				<xgSWMaldrood_NavyLtBaseGuard>75</xgSWMaldrood_NavyLtBaseGuard>
-				<xgSWMaldrood_UniformArmyMajorBaseGuard>50</xgSWMaldrood_UniformArmyMajorBaseGuard>
-				<xgSWMaldrood_NavyCaptainBaseGuard>25</xgSWMaldrood_NavyCaptainBaseGuard>
-				<xgSWMaldrood_ISBLtBaseGuard>25</xgSWMaldrood_ISBLtBaseGuard>
+				<xgSWZsinj_UniformArmyLtBaseGuard>100</xgSWZsinj_UniformArmyLtBaseGuard>
+				<xgSWZsinj_NavyLtBaseGuard>75</xgSWZsinj_NavyLtBaseGuard>
+				<xgSWZsinj_UniformArmyMajorBaseGuard>50</xgSWZsinj_UniformArmyMajorBaseGuard>
+				<xgSWZsinj_NavyCaptainBaseGuard>25</xgSWZsinj_NavyCaptainBaseGuard>
+				<xgSWZsinj_DefilerBaseGuard>25</xgSWZsinj_DefilerBaseGuard>
 			<!-- rare pulls -->
-				<xgSWMaldrood_ArmyGeneralBaseGuard>10</xgSWMaldrood_ArmyGeneralBaseGuard>
-				<xgSWMaldrood_NavyAdmiralBaseGuard>5</xgSWMaldrood_NavyAdmiralBaseGuard>
+				<xgSWZsinj_ArmyGeneralBaseGuard>10</xgSWZsinj_ArmyGeneralBaseGuard>
+				<xgSWZsinj_NavyAdmiralBaseGuard>5</xgSWZsinj_NavyAdmiralBaseGuard>
 				<!-- <xgSWImpRemnant_ViceroyBaseGuard>1</xgSWImpRemnant_ViceroyBaseGuard> -->
 			</options>
 		</genStep>
 	</GenStepDef>
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_controlroomguards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>4~5</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_NavyCommandoBaseGuard>100</xgSWMaldrood_NavyCommandoBaseGuard>
-				<SWRebel_DoubleAgentMaldroodOfficer>1</SWRebel_DoubleAgentMaldroodOfficer>
+				<xgSWZsinj_RaptorBaseGuard>100</xgSWZsinj_RaptorBaseGuard>
+				<SWRebel_DoubleAgentZsinjOfficer>1</SWRebel_DoubleAgentZsinjOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -411,17 +415,17 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_rebeldoubleagents</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_ZsinjDominion_rebeldoubleagents</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
 			<defendRadius>100</defendRadius>
 			<pawnsPerBeacon>1</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCPBuilding_LargeCrateForHidingIn</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWRebel_DoubleAgentMaldroodOfficer>100</SWRebel_DoubleAgentMaldroodOfficer>
+				<SWRebel_DoubleAgentZsinjOfficer>100</SWRebel_DoubleAgentZsinjOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -437,7 +441,7 @@
 	
 	
 	<StructureLayoutDef>
-		<defName>SWCPImperialStructure_FactionFortress_GreaterMaldrood</defName>
+		<defName>SWCPImperialStructure_FactionFortress_ZsinjDominion</defName>
 		<workerClass>LayoutWorker_AncientRuins</workerClass>
 		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
 		<minRoomWidth>8</minRoomWidth>
@@ -508,22 +512,22 @@
 			  <minSpacing>80</minSpacing>
 			  <maxDistFromStructure>250</maxDistFromStructure>
 			  <prefabs>
-				<SWCPTurretPrefab_BP4AntiVehicle_GreaterMaldrood>
+				<SWCPTurretPrefab_BP4AntiVehicle_ZsinjDominion>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_BP4AntiVehicle_GreaterMaldrood>
-				<SWCPTurretPrefab_FPC67AntiAir_GreaterMaldrood>
+				</SWCPTurretPrefab_BP4AntiVehicle_ZsinjDominion>
+				<SWCPTurretPrefab_FPC67AntiAir_ZsinjDominion>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_FPC67AntiAir_GreaterMaldrood>
+				</SWCPTurretPrefab_FPC67AntiAir_ZsinjDominion>
 				
-				<SWCPPrefabBigCommandPost_GreaterMaldrood>
+				<SWCPPrefabBigCommandPost_ZsinjDominion>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPPrefabBigCommandPost_GreaterMaldrood>
+				</SWCPPrefabBigCommandPost_ZsinjDominion>
 			  </prefabs>
 			</li>
 			

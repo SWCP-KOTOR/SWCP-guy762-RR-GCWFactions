@@ -79,24 +79,24 @@
 	
 	
 	<TileMutatorDef ParentName="AncientStructureMutBase">
-		<defName>SWCPTileMutator_FactionFortress_GreaterMaldrood</defName>
-		<label>Greater Maldrood garrison</label>
-		<description>warning: navy commando crossing</description>
+		<defName>SWCPTileMutator_FactionFortress_EriaduAuthority</defName>
+		<label>Eriadu Authority garrison</label>
+		<description>warning: army commando crossing</description>
 		<workerClass>TileMutatorWorker_AncientStructure</workerClass>
 		
-		<requiresFactionOfDef>guy762_SWWarlordsFaction_GreaterMaldrood</requiresFactionOfDef>
+		<requiresFactionOfDef>guy762_SWWarlordsFaction_EriaduAuthority</requiresFactionOfDef>
 		<extraGenSteps>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</li>
+			<li>SWCPMapGenStep_ImperialStructure_EriaduAuthorityBasePawns</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_WanderingPersonnel</li>
 
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</li> -->
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</li>
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_turretguards</li> -->
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_BigCommandPostGuards</li>
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_ATPTsDefendingAATurret</li> -->
 
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_controlroomguards</li>
 		</extraGenSteps>
 		<categories Inherit="False" /> <!-- Remove the AncientStructure category so this isn't chosen for ancient mercenaries quest -->
 		<!-- <biomeWhitelist Inherit="False"> -->
@@ -104,7 +104,7 @@
 		<!-- </biomeWhitelist> -->
 		
 		<structureGenParms>
-		  <structureLayoutDef>SWCPImperialStructure_FactionFortress_GreaterMaldrood</structureLayoutDef>
+		  <structureLayoutDef>SWCPImperialStructure_FactionFortress_EriaduAuthority</structureLayoutDef>
 		  <structureSizeRange>75~100</structureSizeRange>
 		  <scatteredPrefabs>
 			<li>
@@ -209,37 +209,37 @@
 	<!-- HOW IT WORKS: a Harmony patch replaces each individually patched faction's settlement MapGenerator with a hardcoded DefOf (SWCPMapGenerator_x) -->
 	
 	<MapGeneratorDef ParentName="MapCommonBase">
-		<defName>SWCPMapGenerator_FortressGreaterMaldrood</defName>
+		<defName>SWCPMapGenerator_FortressEriaduAuthority</defName>
 		<genSteps>
 			<li>RocksFromGrid</li>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBase</li>
-			<li>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</li>
+			<li>SWCPMapGenStep_ImperialStructure_EriaduAuthorityBase</li>
+			<li>SWCPMapGenStep_ImperialStructure_EriaduAuthorityBasePawns</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_WanderingPersonnel</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_BigCommandPostGuards</li>
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</li>
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_controlroomguards</li>
 			
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_InquisitorBoss</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_InquisitorGuards</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_InquisitorBoss</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_InquisitorGuards</li> -->
 			
-			<li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_rebeldoubleagents</li>
+			<li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_rebeldoubleagents</li>
 			
 			
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</li> -->
-			<!-- <li>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_turretguards</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_TIEFightersDefendingAVTurret</li> -->
+			<!-- <li>SWCPGenStep_FactionFortressGuards_EriaduAuthority_ATPTsDefendingAATurret</li> -->
 		</genSteps>
 	</MapGeneratorDef>
 	
 	
 	<GenStepDef>
-		<defName>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBase</defName>
+		<defName>SWCPMapGenStep_ImperialStructure_EriaduAuthorityBase</defName>
 		<order>400</order>
 		<!-- <genStep Class="GenStep_AncientRuins"> -->
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortress">
-			<layoutDef>SWCPImperialStructure_FactionFortress_GreaterMaldrood</layoutDef>
+			<layoutDef>SWCPImperialStructure_FactionFortress_EriaduAuthority</layoutDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -253,10 +253,10 @@
 	
 	
 	<GenStepDef><!-- this one is still needed to spawn in the base Settlement pawngroup, the other pawn GenSteps are supplemental	-->
-		<defName>SWCPMapGenStep_ImperialStructure_GreaterMaldroodBasePawns</defName>
+		<defName>SWCPMapGenStep_ImperialStructure_EriaduAuthorityBasePawns</defName>
 		<order>700</order>
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
-		  <factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+		  <factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -264,17 +264,17 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_WanderingPersonnel</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_WanderingPersonnel</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
-		  <factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+		  <factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 		  <initialCivilianCount>25~30</initialCivilianCount>
 		  <keepPopulationReplenished>false</keepPopulationReplenished>
 		  <maxPopulation>30</maxPopulation>
 		  <options>
-			<xgSWMaldrood_WorkerBaseGuard>10</xgSWMaldrood_WorkerBaseGuard>
+			<xgSWEriadu_WorkerBaseGuard>10</xgSWEriadu_WorkerBaseGuard>
 			<!-- <xgSWImpRemnant_ArmyConscriptBaseGuard>7.5</xgSWImpRemnant_ArmyConscriptBaseGuard> -->
-			<xgSWMaldrood_EngineerBaseGuard>5</xgSWMaldrood_EngineerBaseGuard>
+			<xgSWEriadu_EngineerBaseGuard>5</xgSWEriadu_EngineerBaseGuard>
 			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
 			
@@ -289,10 +289,10 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_turretguards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_turretguards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>8~10</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -300,7 +300,7 @@
 				<li>guy762_SWTurret_FPC67AntiAir</li>
 			</beaconBuildingDefs>
 			<options>	<!-- this apparently doesn't respect MaxPerGroup? -->
-				<xgSWMaldrood_NavyTrooperBeaconGuard>100</xgSWMaldrood_NavyTrooperBeaconGuard>
+				<xgSWEriadu_ArmyTrooperBeaconGuard>100</xgSWEriadu_ArmyTrooperBeaconGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -308,29 +308,29 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_BigCommandPostGuards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_BigCommandPostGuards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>8~10</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_big</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_NavyGuardBaseGuard>75</xgSWMaldrood_NavyGuardBaseGuard>
-				<xgSWMaldrood_NavyTrooperBeaconGuard>50</xgSWMaldrood_NavyTrooperBeaconGuard>
-				<SWRebel_DoubleAgentMaldroodOfficer>1</SWRebel_DoubleAgentMaldroodOfficer>
+				<xgSWEriadu_ArmyConscriptBaseGuard>75</xgSWEriadu_ArmyConscriptBaseGuard>
+				<xgSWEriadu_ArmyTrooperBeaconGuard>50</xgSWEriadu_ArmyTrooperBeaconGuard>
+				<SWRebel_DoubleAgentEriaduOfficer>1</SWRebel_DoubleAgentEriaduOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_TIEFightersDefendingAVTurret</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_TIEFightersDefendingAVTurret</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>30</defendRadius>
 			<pawnsPerBeacon>1~2</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -343,10 +343,10 @@
 	</GenStepDef>
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_ATPTsDefendingAATurret</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_ATPTsDefendingAATurret</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>30</defendRadius>
 			<pawnsPerBeacon>1~2</pawnsPerBeacon>
 			<beaconBuildingDefs>
@@ -368,42 +368,42 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_basecommaders</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_basecommaders</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>5</defendRadius>
 			<pawnsPerBeacon>3~4</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_UniformArmyLtBaseGuard>100</xgSWMaldrood_UniformArmyLtBaseGuard>
-				<xgSWMaldrood_NavyLtBaseGuard>75</xgSWMaldrood_NavyLtBaseGuard>
-				<xgSWMaldrood_UniformArmyMajorBaseGuard>50</xgSWMaldrood_UniformArmyMajorBaseGuard>
-				<xgSWMaldrood_NavyCaptainBaseGuard>25</xgSWMaldrood_NavyCaptainBaseGuard>
-				<xgSWMaldrood_ISBLtBaseGuard>25</xgSWMaldrood_ISBLtBaseGuard>
+				<xgSWEriadu_UniformArmyLtBaseGuard>100</xgSWEriadu_UniformArmyLtBaseGuard>
+				<!-- <xgSWEriadu_NavyLtBaseGuard>75</xgSWEriadu_NavyLtBaseGuard> -->
+				<xgSWEriadu_UniformArmyMajorBaseGuard>50</xgSWEriadu_UniformArmyMajorBaseGuard>
+				<!-- <xgSWEriadu_NavyCaptainBaseGuard>25</xgSWEriadu_NavyCaptainBaseGuard> -->
+				<xgSWEriadu_ISBLtBaseGuard>25</xgSWEriadu_ISBLtBaseGuard>
 			<!-- rare pulls -->
-				<xgSWMaldrood_ArmyGeneralBaseGuard>10</xgSWMaldrood_ArmyGeneralBaseGuard>
-				<xgSWMaldrood_NavyAdmiralBaseGuard>5</xgSWMaldrood_NavyAdmiralBaseGuard>
+				<xgSWEriadu_ArmyGeneralBaseGuard>10</xgSWEriadu_ArmyGeneralBaseGuard>
+				<!-- <xgSWEriadu_NavyAdmiralBaseGuard>5</xgSWEriadu_NavyAdmiralBaseGuard> -->
 				<!-- <xgSWImpRemnant_ViceroyBaseGuard>1</xgSWImpRemnant_ViceroyBaseGuard> -->
 			</options>
 		</genStep>
 	</GenStepDef>
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_controlroomguards</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_controlroomguards</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>4~5</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xgSWMaldrood_NavyCommandoBaseGuard>100</xgSWMaldrood_NavyCommandoBaseGuard>
-				<SWRebel_DoubleAgentMaldroodOfficer>1</SWRebel_DoubleAgentMaldroodOfficer>
+				<xgSWEriadu_ArmyCommandoBaseGuard>100</xgSWEriadu_ArmyCommandoBaseGuard>
+				<SWRebel_DoubleAgentEriaduOfficer>1</SWRebel_DoubleAgentEriaduOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -411,17 +411,17 @@
 	
 	
 	<GenStepDef>
-		<defName>SWCPGenStep_FactionFortressGuards_GreaterMaldrood_rebeldoubleagents</defName>
+		<defName>SWCPGenStep_FactionFortressGuards_EriaduAuthority_rebeldoubleagents</defName>
 		<order>960</order>
 		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-			<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+			<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
 			<defendRadius>100</defendRadius>
 			<pawnsPerBeacon>1</pawnsPerBeacon>
 			<beaconBuildingDefs>
 				<li>SWCPBuilding_LargeCrateForHidingIn</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWRebel_DoubleAgentMaldroodOfficer>100</SWRebel_DoubleAgentMaldroodOfficer>
+				<SWRebel_DoubleAgentEriaduOfficer>100</SWRebel_DoubleAgentEriaduOfficer>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -437,7 +437,7 @@
 	
 	
 	<StructureLayoutDef>
-		<defName>SWCPImperialStructure_FactionFortress_GreaterMaldrood</defName>
+		<defName>SWCPImperialStructure_FactionFortress_EriaduAuthority</defName>
 		<workerClass>LayoutWorker_AncientRuins</workerClass>
 		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
 		<minRoomWidth>8</minRoomWidth>
@@ -508,22 +508,22 @@
 			  <minSpacing>80</minSpacing>
 			  <maxDistFromStructure>250</maxDistFromStructure>
 			  <prefabs>
-				<SWCPTurretPrefab_BP4AntiVehicle_GreaterMaldrood>
+				<SWCPTurretPrefab_BP4AntiVehicle_EriaduAuthority>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_BP4AntiVehicle_GreaterMaldrood>
-				<SWCPTurretPrefab_FPC67AntiAir_GreaterMaldrood>
+				</SWCPTurretPrefab_BP4AntiVehicle_EriaduAuthority>
+				<SWCPTurretPrefab_FPC67AntiAir_EriaduAuthority>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPTurretPrefab_FPC67AntiAir_GreaterMaldrood>
+				</SWCPTurretPrefab_FPC67AntiAir_EriaduAuthority>
 				
-				<SWCPPrefabBigCommandPost_GreaterMaldrood>
+				<SWCPPrefabBigCommandPost_EriaduAuthority>
 					<weight>100</weight>
 					<indoorRuin>false</indoorRuin>
 					<max>1</max>
-				</SWCPPrefabBigCommandPost_GreaterMaldrood>
+				</SWCPPrefabBigCommandPost_EriaduAuthority>
 			  </prefabs>
 			</li>
 			

@@ -4,8 +4,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyRifleman_35x" ParentName="SWMaldrood_ArmyTrooper">
-		<defName>xgSWMaldrood_ArmyRifleman_35x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyRifleman_35x" ParentName="SWEriadu_ArmyTrooper">
+		<defName>xgSWEriadu_ArmyRifleman_35x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>35</maxPerGroup>
@@ -24,8 +24,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyRepeater_4x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyRepeater_4x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyRepeater_4x" ParentName="SWEriadu_ArmyHeavy">
+		<defName>xgSWEriadu_ArmyRepeater_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -43,8 +43,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyIon_2x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyIon_2x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyIon_2x" ParentName="SWEriadu_ArmyHeavy">
+		<defName>xgSWEriadu_ArmyIon_2x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
@@ -62,8 +62,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyMissile_4x" ParentName="SWMaldrood_ArmyHeavy">
-		<defName>xgSWMaldrood_ArmyMissile_4x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyMissile_4x" ParentName="SWEriadu_ArmyHeavy">
+		<defName>xgSWEriadu_ArmyMissile_4x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
@@ -81,10 +81,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
-		<defName>xgSWMaldrood_ArmyMedicBaseGuard_2x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyMedicBaseGuard_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xgSWEriadu_ArmyMedicBaseGuard_2x</defName>
 		<!-- <label>DEBUG</label> -->
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<combatPower>1</combatPower>
 		<maxPerGroup>2</maxPerGroup>
 		
@@ -104,8 +104,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyCommandoBaseGuard_4x" ParentName="SWMaldrood_NavyCommando">
-		<defName>xgSWMaldrood_NavyCommandoBaseGuard_4x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyCommandoBaseGuard_4x" ParentName="SWEriadu_ArmyCommando">
+		<defName>xgSWEriadu_ArmyCommandoBaseGuard_4x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		
@@ -122,8 +122,8 @@
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard one-offs -->
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyLieutenant_1x" ParentName="SWMaldrood_ArmyLieutenant">
-		<defName>xgSWMaldrood_ArmyLieutenant_1x</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyLieutenant_1x" ParentName="SWEriadu_ArmyLieutenant">
+		<defName>xgSWEriadu_ArmyLieutenant_1x</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<maxPerGroup>1</maxPerGroup>
@@ -136,8 +136,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyTrooperBeaconGuard" ParentName="SWMaldrood_ArmyTrooper">
-		<defName>xgSWMaldrood_ArmyTrooperBeaconGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyTrooperBeaconGuard" ParentName="SWEriadu_ArmyTrooper">
+		<defName>xgSWEriadu_ArmyTrooperBeaconGuard</defName>
 		<!-- <label>DEBUG</label> -->
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>35</maxPerGroup> -->
@@ -155,8 +155,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyConscriptBaseGuard" ParentName="SWMaldrood_ArmyConscript">
-		<defName>xgSWMaldrood_ArmyConscriptBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyConscriptBaseGuard" ParentName="SWEriadu_ArmyConscript">
+		<defName>xgSWEriadu_ArmyConscriptBaseGuard</defName>
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>56</maxPerGroup> -->
 		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
@@ -179,13 +179,21 @@
 	
 	
 	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ naval troopers -->
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyTrooperBeaconGuard" ParentName="xSWMaldrood_NavyTrooper_26x">
-		<defName>xgSWMaldrood_NavyTrooperBeaconGuard</defName>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWEriadu_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
+		<defName>xgSWEriadu_WorkerBaseGuard</defName>
 		<combatPower>1</combatPower>
-		
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
@@ -194,43 +202,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyGuardBaseGuard" ParentName="SWImpRemnant_NavyGuard">
-		<defName>xgSWMaldrood_NavyGuardBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
+		<defName>xgSWEriadu_EngineerBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xgSWMaldrood_WorkerBaseGuard" ParentName="SWImpRemnant_Worker">
-		<defName>xgSWMaldrood_WorkerBaseGuard</defName>
-		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWMaldrood_EngineerBaseGuard" ParentName="SWImpRemnant_Engineer">
-		<defName>xgSWMaldrood_EngineerBaseGuard</defName>
-		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
@@ -248,8 +223,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyCommandoBaseGuard" ParentName="SWMaldrood_NavyCommando">
-		<defName>xgSWMaldrood_NavyCommandoBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyCommandoBaseGuard" ParentName="SWEriadu_ArmyCommando">
+		<defName>xgSWEriadu_ArmyCommandoBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -287,8 +262,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_UniformArmyLtBaseGuard" ParentName="SWMaldrood_ArmyLt_onBase">
-		<defName>xgSWMaldrood_UniformArmyLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_UniformArmyLtBaseGuard" ParentName="SWEriadu_ArmyLt_onBase">
+		<defName>xgSWEriadu_UniformArmyLtBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -299,8 +274,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_UniformArmyMajorBaseGuard" ParentName="SWMaldrood_ArmyMajor_onBase">
-		<defName>xgSWMaldrood_UniformArmyMajorBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_UniformArmyMajorBaseGuard" ParentName="SWEriadu_ArmyMajor_onBase">
+		<defName>xgSWEriadu_UniformArmyMajorBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -311,8 +286,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xgSWMaldrood_ArmyGeneralBaseGuard" ParentName="SWMaldrood_ArmyGeneral">
-		<defName>xgSWMaldrood_ArmyGeneralBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_ArmyGeneralBaseGuard" ParentName="SWEriadu_ArmyGeneral">
+		<defName>xgSWEriadu_ArmyGeneralBaseGuard</defName>
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
@@ -336,10 +311,10 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
-		<defName>xgSWMaldrood_ISBLtBaseGuard</defName>
+	<PawnKindDef Name="xgSWEriadu_ISBLtBaseGuard" ParentName="SWImpRemnant_ISBLt">
+		<defName>xgSWEriadu_ISBLtBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<defaultFactionType>guy762_SWWarlordsFaction_GreaterMaldrood</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
@@ -380,53 +355,8 @@
 	
 	
 	
-	<PawnKindDef Name="xgSWMaldrood_NavyLtBaseGuard" ParentName="SWMaldrood_NavyLt">
-		<defName>xgSWMaldrood_NavyLtBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWMaldrood_NavyCaptainBaseGuard" ParentName="SWMaldrood_NavyCaptain">
-		<defName>xgSWMaldrood_NavyCaptainBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xgSWMaldrood_NavyAdmiralBaseGuard" ParentName="SWMaldrood_NavyAdmiral">
-		<defName>xgSWMaldrood_NavyAdmiralBaseGuard</defName>
-		<combatPower>1</combatPower>
-		
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- <PawnKindDef Name="xgSWMaldrood_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt"> -->
-		<!-- <defName>xgSWMaldrood_OpsLtBaseGuard</defName> -->
+	<!-- <PawnKindDef Name="xgSWEriadu_NavyLtBaseGuard" ParentName="SWEriadu_NavyLt"> -->
+		<!-- <defName>xgSWEriadu_NavyLtBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
@@ -437,8 +367,20 @@
 		<!-- </modExtensions> -->
 	<!-- </PawnKindDef> -->
 	
-	<!-- <PawnKindDef Name="xgSWMaldrood_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral"> -->
-		<!-- <defName>xgSWMaldrood_OpsGeneralBaseGuard</defName> -->
+	<!-- <PawnKindDef Name="xgSWEriadu_NavyCaptainBaseGuard" ParentName="SWEriadu_NavyCaptain"> -->
+		<!-- <defName>xgSWEriadu_NavyCaptainBaseGuard</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+	<!-- <PawnKindDef Name="xgSWEriadu_NavyAdmiralBaseGuard" ParentName="SWEriadu_NavyAdmiral"> -->
+		<!-- <defName>xgSWEriadu_NavyAdmiralBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
@@ -455,8 +397,41 @@
 	
 	
 	
-	<!-- <PawnKindDef Name="xgSWMaldrood_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy"> -->
-		<!-- <defName>xgSWMaldrood_ViceroyBaseGuard</defName> -->
+	
+	
+	
+	<!-- <PawnKindDef Name="xgSWEriadu_OpsLtBaseGuard" ParentName="SWImpRemnant_OpsLt"> -->
+		<!-- <defName>xgSWEriadu_OpsLtBaseGuard</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+	<!-- <PawnKindDef Name="xgSWEriadu_OpsGeneralBaseGuard" ParentName="SWImpRemnant_OpsGeneral"> -->
+		<!-- <defName>xgSWEriadu_OpsGeneralBaseGuard</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+	
+	
+	
+	
+	
+	
+	<!-- <PawnKindDef Name="xgSWEriadu_ViceroyBaseGuard" ParentName="SWImpRemnant_Viceroy"> -->
+		<!-- <defName>xgSWEriadu_ViceroyBaseGuard</defName> -->
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->

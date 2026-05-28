@@ -275,9 +275,9 @@
 		  <keepPopulationReplenished>false</keepPopulationReplenished>
 		  <maxPopulation>30</maxPopulation>
 		  <options>
-			<xSWImpRemnant_WorkerBaseGuard>10</xSWImpRemnant_WorkerBaseGuard>
-			<!-- <xSWImpRemnant_ArmyConscriptBaseGuard>7.5</xSWImpRemnant_ArmyConscriptBaseGuard> -->
-			<xSWImpRemnant_EngineerBaseGuard>5</xSWImpRemnant_EngineerBaseGuard>
+			<xgSWImpRemnant_WorkerBaseGuard>10</xgSWImpRemnant_WorkerBaseGuard>
+			<!-- <xgSWImpRemnant_ArmyConscriptBaseGuard>7.5</xgSWImpRemnant_ArmyConscriptBaseGuard> -->
+			<xgSWImpRemnant_EngineerBaseGuard>5</xgSWImpRemnant_EngineerBaseGuard>
 			<!-- <SWImpRemnant_EngiCombat>1</SWImpRemnant_EngiCombat> -->
 			<!-- <SWImpRemnant_OpsLt>1</SWImpRemnant_OpsLt> -->
 			
@@ -303,8 +303,8 @@
 				<li>guy762_SWTurret_FPC67AntiAir</li>
 			</beaconBuildingDefs>
 			<options>	<!-- this apparently doesn't respect MaxPerGroup? -->
-				<!-- <xSWImpRemnant_ArmyLieutenant_1x>100</xSWImpRemnant_ArmyLieutenant_1x>  -->
-				<xSWImpRemnant_ArmyTrooperBeaconGuard>100</xSWImpRemnant_ArmyTrooperBeaconGuard>
+				<!-- <xgSWImpRemnant_ArmyLieutenant_1x>100</xgSWImpRemnant_ArmyLieutenant_1x>  -->
+				<xgSWImpRemnant_ArmyTrooperBeaconGuard>100</xgSWImpRemnant_ArmyTrooperBeaconGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -322,8 +322,8 @@
 				<li>SWCP_CommandPost_big</li>
 			</beaconBuildingDefs>
 			<options>
-				<xSWImpRemnant_ArmyConscriptBaseGuard>75</xSWImpRemnant_ArmyConscriptBaseGuard>
-				<xSWImpRemnant_ArmyTrooperBeaconGuard>50</xSWImpRemnant_ArmyTrooperBeaconGuard>
+				<xgSWImpRemnant_ArmyConscriptBaseGuard>75</xgSWImpRemnant_ArmyConscriptBaseGuard>
+				<xgSWImpRemnant_ArmyTrooperBeaconGuard>50</xgSWImpRemnant_ArmyTrooperBeaconGuard>
 				<SWRebel_DoubleAgentImpOfficer>1</SWRebel_DoubleAgentImpOfficer>
 			</options>
 		</genStep>
@@ -382,14 +382,14 @@
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xSWImpRemnant_OpsLtBaseGuard>100</xSWImpRemnant_OpsLtBaseGuard>
-				<xSWImpRemnant_UniformArmyLtBaseGuard>75</xSWImpRemnant_UniformArmyLtBaseGuard>
-				<xSWImpRemnant_UniformArmyMajorBaseGuard>50</xSWImpRemnant_UniformArmyMajorBaseGuard>
-				<xSWImpRemnant_IMILtBaseGuard>25</xSWImpRemnant_IMILtBaseGuard>
+				<xgSWImpRemnant_OpsLtBaseGuard>100</xgSWImpRemnant_OpsLtBaseGuard>
+				<xgSWImpRemnant_UniformArmyLtBaseGuard>75</xgSWImpRemnant_UniformArmyLtBaseGuard>
+				<xgSWImpRemnant_UniformArmyMajorBaseGuard>50</xgSWImpRemnant_UniformArmyMajorBaseGuard>
+				<xgSWImpRemnant_IMILtBaseGuard>25</xgSWImpRemnant_IMILtBaseGuard>
 			<!-- rare pulls -->
-				<xSWImpRemnant_UniformArmyGeneralBaseGuard>10</xSWImpRemnant_UniformArmyGeneralBaseGuard>
-				<xSWImpRemnant_OpsGeneralBaseGuard>5</xSWImpRemnant_OpsGeneralBaseGuard>
-				<xSWImpRemnant_ViceroyBaseGuard>1</xSWImpRemnant_ViceroyBaseGuard>
+				<xgSWImpRemnant_UniformArmyGeneralBaseGuard>10</xgSWImpRemnant_UniformArmyGeneralBaseGuard>
+				<xgSWImpRemnant_OpsGeneralBaseGuard>5</xgSWImpRemnant_OpsGeneralBaseGuard>
+				<xgSWImpRemnant_ViceroyBaseGuard>1</xgSWImpRemnant_ViceroyBaseGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -405,7 +405,7 @@
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<xSWImpRemnant_StormtrooperBaseGuard>100</xSWImpRemnant_StormtrooperBaseGuard>
+				<xgSWImpRemnant_StormtrooperBaseGuard>100</xgSWImpRemnant_StormtrooperBaseGuard>
 				<SWRebel_DoubleAgentImpOfficer>1</SWRebel_DoubleAgentImpOfficer>
 			</options>
 		</genStep>
@@ -444,7 +444,7 @@
 				<li>Force_Darkside_MeditationSpot</li>
 			</beaconBuildingDefs>
 			<options>
-				<xSWWarlords_Inquisitor_TFS_BaseGuard MayRequire="lee.theforce.standalone">100</xSWWarlords_Inquisitor_TFS_BaseGuard>
+				<xgSWWarlords_Inquisitor_TFS_BaseGuard MayRequire="lee.theforce.standalone">100</xgSWWarlords_Inquisitor_TFS_BaseGuard>
 			</options>
 		</genStep>
 	</GenStepDef>
@@ -460,7 +460,7 @@
 				<li>Force_Darkside_MeditationSpot</li>
 			</beaconBuildingDefs>
 			<options>
-				<xSWWarlords_ShadowStormieBaseGuard>100</xSWWarlords_ShadowStormieBaseGuard> <!-- replace with purge troopers eventually -->
+				<xgSWWarlords_ShadowStormieBaseGuard>100</xgSWWarlords_ShadowStormieBaseGuard> <!-- replace with purge troopers eventually -->
 			</options>
 		</genStep>
 	</GenStepDef>

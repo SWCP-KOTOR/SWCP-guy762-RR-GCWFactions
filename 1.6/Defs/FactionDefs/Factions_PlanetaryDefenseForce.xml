@@ -45,44 +45,44 @@
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to. even if a faction is not set to spawn on both layers, everything in the system should be included here -->
 			<!-- <li>Surface</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Onderon</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Dxun</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 		
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -157,8 +157,8 @@
 			
 			<li Class="SWCP.FactionExtension_SettlementWeightOverrides">
 				<layerWeights>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantell</key><value>7</value></li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy"><key>SWCPPlanetLayer_OrdMantellOrbit</key><value>4</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp"><key>SWCPPlanetLayer_OrdMantell</key><value>7</value></li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp"><key>SWCPPlanetLayer_OrdMantellOrbit</key><value>4</value></li>
 				</layerWeights>
 			</li>
 		</modExtensions>
@@ -315,7 +315,7 @@
 			<!-- cop patrol -->
 			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
 				<allowedBiomes>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellUrban</li>
 				</allowedBiomes>
 				
 				<kindDef>Combat</kindDef>
@@ -339,14 +339,14 @@
 			<!-- platoon assault -->
 			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
 				<allowedBiomes>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkyard</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkSwamp</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellGrasslands</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellScrubland</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellDesert</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellTundra</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellLavaField</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellUrban</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellJunkyard</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellJunkSwamp</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellGrasslands</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellScrubland</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellDesert</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellTundra</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellLavaField</li>
 				</allowedBiomes>
 				
 				<kindDef>Combat</kindDef>
@@ -373,14 +373,14 @@
 			<!-- settlement -->
 			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
 				<allowedBiomes>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellUrban</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkyard</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellJunkSwamp</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellGrasslands</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellScrubland</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellDesert</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellTundra</li>
-					<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBiome_OrdMantellLavaField</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellUrban</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellJunkyard</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellJunkSwamp</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellGrasslands</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellScrubland</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellDesert</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellTundra</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellLavaField</li>
 				</allowedBiomes>
 				
 				<kindDef>Settlement</kindDef>

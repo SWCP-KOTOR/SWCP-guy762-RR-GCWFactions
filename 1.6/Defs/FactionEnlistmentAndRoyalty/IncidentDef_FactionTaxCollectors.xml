@@ -22,12 +22,12 @@
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
 
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OnderonOrbit</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerBlacklist>
     </IncidentDef>
 	
@@ -83,14 +83,14 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
 			
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
-			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li>
-			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li>
-			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMaldrood</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalZsinj</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalPentastar</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMaldrood</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyEriadu</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li> -->
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li> -->
-			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalPartisans</tag></li>
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMilitia</tag></li> -->
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
 			
@@ -401,6 +401,156 @@
 			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li> -->
 								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMaldrood</tag></li>
 								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalEriadu</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMilitia</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="FCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Greater Maldrood -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_GreaterMaldrood</defName>
+        <label>Maldrood tax collector caravan arrival</label>
+        <letterLabel>Maldrood Tax Collectors</letterLabel>
+
+        <letterText>.</letterText>
+		
+		<!-- <letterText>A tax collector from the Pentastar Alignment is approaching.\n\nThey will accept tax in credits or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to the Alignment.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with the Pentastar Alignment.</letterText> -->
+		
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
+                <factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_GreaterMaldrood</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef Name="SWCPTrader_TaxCollector_GreaterMaldrood">
+        <defName>SWCPTrader_TaxCollector_GreaterMaldrood</defName>
+        <label>Maldrood tax collector</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+			
+			<!-- <li Class="StockGenerator_BuySlaves" /> -->
+			
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>guy762_KotORcredits</thingDef> -->
+            <!-- </li> -->
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Silver</thingDef> -->
+            <!-- </li> -->
+			<!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Gold</thingDef> -->
+            <!-- </li> -->
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
+			
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalPentastar</tag></li>
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyMaldrood</tag></li> -->
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalEriadu</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalNewRepublic</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPartisans</tag></li>
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMilitia</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZann</tag></li>
+        </stockGenerators>
+        <modExtensions>
+            <!-- Just so NCR dollars show up -->
+            <li Class="FCP.Currencies.CurrencyReplacement">
+                <currency>WoodLog</currency>
+            </li>
+        </modExtensions>
+    </TraderKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Eriadu Authority -->
+	
+	<IncidentDef ParentName="SWCPIncident_TaxCollectorBASE">
+        <defName>SWCPIncident_TaxCollector_EriaduAuthority</defName>
+        <label>Eriadu tax collector caravan arrival</label>
+        <letterLabel>Eriadu Tax Collectors</letterLabel>
+
+        <letterText>.</letterText>
+		
+		<!-- <letterText>A tax collector from the Pentastar Alignment is approaching.\n\nThey will accept tax in credits or precious metals like silver; you can also hand in prisoners. The one who gives over the tax will receive Commendations for doing their civic duty to the Alignment.\n\nYou can expect a tax collector to arrive roughly twice per year as long as you are not enemies with the Pentastar Alignment.</letterText> -->
+		
+        <!-- <letterText>\n\n&lt;color="#808080"&gt;"In order to for a better tomorrow to be built, we must pave the way. Defense, labor and projection is not cheap however, taxes shall be needed in order to pay for this great road into the future!"&lt;/color&gt; ~ President Kimball</letterText> -->
+        <modExtensions>
+            <li Class="FCP.Factions.FactionExtension_TaxCollector">
+                <factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
+                <traderKindDef>SWCPTrader_TaxCollector_EriaduAuthority</traderKindDef>
+            </li>
+        </modExtensions>
+    </IncidentDef>
+
+    <TraderKindDef Name="SWCPTrader_TaxCollector_EriaduAuthority">
+        <defName>SWCPTrader_TaxCollector_EriaduAuthority</defName>
+        <label>Eriadu tax collector</label>
+        <requestable>False</requestable>
+        <commonality>1</commonality>
+        <category>SWCPTributeCollector</category>
+        <tradeCurrency>Favor</tradeCurrency>
+        <faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+        <hideThingsNotWillingToTrade>False</hideThingsNotWillingToTrade>
+        <stockGenerators>
+            <!-- Buying -->
+			
+			<!-- <li Class="StockGenerator_BuySlaves" /> -->
+			
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>guy762_KotORcredits</thingDef> -->
+            <!-- </li> -->
+            <!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Silver</thingDef> -->
+            <!-- </li> -->
+			<!-- <li Class="StockGenerator_BuySingleDef"> -->
+                <!-- <thingDef>Gold</thingDef> -->
+            <!-- </li> -->
+			
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedGroundVehicles_any</tag></li>
+			<li MayRequire="SWCP.GCWVehicles" Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_ItemizedStarfighters_any</tag></li>
+			
+			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyImpRemnant</tag></li>
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyZsinj</tag></li> -->
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyPentastar</tag></li> -->
+								<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_criticalMaldrood</tag></li>
+			<!-- <li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyEriadu</tag></li> -->
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyThrawn</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyNewRepublic</tag></li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>SWCPTT_FactionIntelDatapads_anyRebelCell</tag></li>
