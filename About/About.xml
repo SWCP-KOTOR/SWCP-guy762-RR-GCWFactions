@@ -9,7 +9,7 @@
   </supportedVersions>
   <packageId>SWCP.guy762.WarlordEmpire</packageId>
   <description>SWCP Galactic Civil War project - Alpha I build. This mod is a work-in-progress.\n\nAdds factions, weapons, and apparel from the Galactic Civil War.\n\nNOTE: For your convenience, a default modlist file for the entire project modlist is included in this mod's About folder!</description>
-  <url>https://github.com/SWCP-KOTOR/SWCP-guy762-Taran-StarWarsGalaxy</url>
+  <url>https://github.com/SWCP-KOTOR/SWCP-guy762-RR-GCWFactions</url>
   
   <modDependencies>
 	<li>
