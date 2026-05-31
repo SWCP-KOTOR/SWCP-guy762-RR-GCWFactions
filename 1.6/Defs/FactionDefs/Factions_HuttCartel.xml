@@ -39,6 +39,7 @@
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<leaderTitle>kajidii</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<fixedLeaderKinds>
 			<li>SWHutts_HuttLord</li>
 		</fixedLeaderKinds>
@@ -185,6 +186,32 @@
 					<!-- <li>guy762_KotORFaction_Exchange</li> -->
 				<!-- </hostileFactionDefs> -->
 			<!-- </li> -->
+			
+			<li Class="FCP.Factions.FactionExtension_SettlementControl">
+                <maxSettlements>1</maxSettlements>
+                <searchRadius>500</searchRadius>
+                <namedSettlements>
+                    <li>
+                        <name>Mos Eisley</name>
+                        <!-- <prefab>FCP_Prefab_NCRCF_Facility</prefab> -->
+                        <forcedMapSize>(400, 400)</forcedMapSize>
+                        <traders>
+                            <li><traderName>Chalmun's Cantina</traderName><traderKind>guy762_BaseTraderKind_spicerunner</traderKind></li>
+							
+                            <li><traderName>Kayson's Weapons Shop</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumGunrunner</traderKind></li>
+                            <li><traderName>Masse Goskey's Famous Arms Emporium</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumGunrunner</traderKind></li>
+							
+                            <li><traderName>Bargoon Tatooni</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumStarfighterDealer</traderKind></li>
+                        </traders>
+                        <preferredHilliness>
+                            <li>Flat</li>
+                        </preferredHilliness>
+                        <allowedBiomes>
+                            <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_TatooineHighland</li>
+                        </allowedBiomes>
+                    </li>
+                </namedSettlements>
+            </li>
 			
 			<li Class="FCP.Factions.FactionExtension_FixedIdeo">
 				<ideoIconDef>guy762_IdeoIcon_huttsA</ideoIconDef>

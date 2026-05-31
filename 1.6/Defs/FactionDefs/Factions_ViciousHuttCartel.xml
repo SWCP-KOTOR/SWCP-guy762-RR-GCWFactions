@@ -36,6 +36,7 @@
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<leaderTitle>kajidii</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<fixedLeaderKinds>
 			<li>SWViciousHutts_HuttLord</li>
 		</fixedLeaderKinds>

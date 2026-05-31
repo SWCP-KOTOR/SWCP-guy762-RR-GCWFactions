@@ -251,6 +251,7 @@
 			<li>SWRanged_DXR6DisruptorSniper</li>
 		</weaponTags>
 		
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<techHediffsChance>20</techHediffsChance>
 		<techHediffsMoney>10000~25000</techHediffsMoney>
 		<techHediffsTags>
@@ -260,6 +261,7 @@
 		<techHediffsRequired>
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		
 		<inventoryOptions>
 			<skipChance>0</skipChance>
@@ -336,6 +338,13 @@
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWZannCon_DefilerFactionLeaderTest" ParentName="SWZannCon_Defiler">
+		<defName>SWZannCon_DefilerFactionLeaderTest</defName>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
+		<techHediffsRequired Inherit="False" />
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 	</PawnKindDef>
 	
 	

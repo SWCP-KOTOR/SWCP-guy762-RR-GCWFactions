@@ -36,9 +36,11 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>	
 		<leaderTitle>governor</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<fixedLeaderKinds>
 			<li>SWOrdMantell_commandant</li>
 		</fixedLeaderKinds>
+		
 		
 		<layerWhitelist><!-- Surface + Orbit creates two separate factions split between the surface and orbit UNLESS LAO is enabled -->
 			<!-- <li>Surface</li> -->

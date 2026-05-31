@@ -169,6 +169,7 @@
 	<PawnKindDef Name="SWCharPawnNR_CrixMadine"  ParentName="SWWEPlayableHero_CrixMadine">
 		<defName>SWCharPawnNR_CrixMadine</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<techHediffsRequired Inherit="False" /><!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 	</PawnKindDef>
 	  
 	<RulePackDef>

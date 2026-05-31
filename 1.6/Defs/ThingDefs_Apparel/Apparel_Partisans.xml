@@ -493,7 +493,7 @@
 		<graphicData>
 			<texPath>SWApparel/Rebel/noshoulder/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- partisan rust brown -->
 			<!-- <colorTwo>(125,75,40)</colorTwo> -->
 		</graphicData>
@@ -516,20 +516,20 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-		  <wornGraphicPath>SWApparel/Rebel/noshoulder/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <layers Inherit="False">
-			<li>Middle</li>
-		  </layers>
-		  <bodyPartGroups Inherit="False">
-			<li>Torso</li>
-			<li>Neck</li>
-			<!-- <li>Shoulders</li> -->
-			<!-- <li>Arms</li> -->
-			<!-- <li>Hands</li> -->
-			<!-- <li>Legs</li> -->
-			<!-- <li>Feet</li> -->
-		  </bodyPartGroups>
+			<wornGraphicPath>SWApparel/Rebel/noshoulder/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+				<li>Neck</li>
+				<!-- <li>Shoulders</li> -->
+				<!-- <li>Arms</li> -->
+				<!-- <li>Hands</li> -->
+				<!-- <li>Legs</li> -->
+				<!-- <li>Feet</li> -->
+			</bodyPartGroups>
 		  
 			<renderNodeProperties>
 				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
@@ -604,6 +604,138 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_PartisanLightBattleArmor</defName>
+		<label>Outer Rim militiant armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/PartisanMilitiantArmor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(40,40,40)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>10</Mass>
+			<MarketValue>4500</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints> <!-- medium armor hitpoints -->
+      		<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+
+			<Insulation_Heat>5</Insulation_Heat>
+			
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+		</equippedStatOffsets>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/PartisanMilitiantArmor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<!-- <li>Arms</li> -->
+				<!-- <li>Hands</li> -->
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+						<texturePaths><li>SWApparel/PartisanMilitiantArmor/Apparel</li></texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+						</colorA>
+						<colorB>
+							<color>(185,180,175)</color> <!-- warm grey -->
+							<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+						</colorB>
+						<colorC>
+							<color>(90,75,60)</color>       <!-- patchleather -->
+							<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
+						</colorC>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWGCWSpecificApparelItem_PartisanMilitiantArmor</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PartisanSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(175,150,120)</only>	<!-- bespin beige -->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<colorC>true</colorC>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_PartisanRangerDuster</defName>
 		<label>partisan ranger overcoat</label>
@@ -612,7 +744,7 @@
 			<texPath>SWApparel/RebelArmyDuster/ranger/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<!-- <shaderType>CutoutMultiMask</shaderType> -->
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- partisan rust brown -->
 			<!-- <colorTwo>(125,75,40)</colorTwo> -->
 		</graphicData>
@@ -754,7 +886,7 @@
 		<graphicData>
 			<texPath>SWApparel/PartisanWarlord/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(30,65,125)</colorTwo> -->
 		</graphicData>
 		<statBases>

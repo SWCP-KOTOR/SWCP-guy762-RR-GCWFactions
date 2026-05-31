@@ -1739,7 +1739,7 @@
 		<graphicData>
 			<texPath>SWApparel/RebelCloneArmor/bighelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(235,210,180)</colorTwo> -->
 		</graphicData>
 		<thingCategories>

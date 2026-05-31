@@ -119,7 +119,7 @@
 			<Mass>4</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
