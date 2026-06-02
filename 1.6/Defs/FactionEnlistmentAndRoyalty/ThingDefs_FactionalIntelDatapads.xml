@@ -4,7 +4,7 @@
 
 	<ThingDef Name="SWCP_FactionIntelDatapadBASE_basic" ParentName="guy762_NoCraft_upgradebase" Abstract="True">
 
-		<description>A datapad containing some sensitive information regarding a faction's ongoing military operations. This datapad only has mundane information such as temporary access codes, ledgers, orders for low-ranking personnel, and reports. While not terribly exciting on the surface, the loss of this datapad can prove very disruptive if it falls into the hands of an enemy faction.</description>
+		<description>A datapad containing some sensitive information regarding a faction's ongoing military operations. This datapad only has mundane information such as temporary access codes, ledgers, orders for low-ranking personnel, and reports. While not terribly exciting on the surface, the loss of this datapad can prove very disruptive if it falls into the hands of an enemy faction.\n\nTurn this in to an allied Enlistment faction to gain rank commendations with that faction. Factions will only accept intel belonging to their enemies.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -225,7 +225,7 @@
 	
 	<ThingDef Name="SWCP_FactionIntelDatapadBASE_adv" ParentName="guy762_NoCraft_upgradebase" Abstract="True">
 
-		<description>A datapad containing critical information regarding a faction's ongoing military operations. This datapad could contain major battle plans, high-level memos, secret communiques, schematics for advanced technology, and more. The loss of this datapad is guaranteed to be a devastating blow to the faction it belongs to, and a major advantage to any faction that gets its hands on it.</description>
+		<description>A datapad containing critical information regarding a faction's ongoing military operations. This datapad could contain major battle plans, high-level memos, secret communiques, schematics for advanced technology, and more. The loss of this datapad is guaranteed to be a devastating blow to the faction it belongs to, and a major advantage to any faction that gets its hands on it.\n\nTurn this in to an allied Enlistment faction to gain rank commendations with that faction. Factions will only accept intel belonging to their enemies.</description>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>

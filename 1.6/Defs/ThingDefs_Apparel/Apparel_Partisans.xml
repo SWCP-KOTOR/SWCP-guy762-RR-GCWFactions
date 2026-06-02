@@ -611,11 +611,11 @@
 	
 	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
 		<defName>guy762_PartisanLightBattleArmor</defName>
-		<label>Outer Rim militiant armor</label>
+		<label>Outer Rim militant armor</label>
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>SWApparel/PartisanMilitiantArmor/Apparel</texPath>
+			<texPath>SWApparel/PartisanMilitantArmor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(40,40,40)</colorTwo> -->
@@ -641,7 +641,7 @@
 		</equippedStatOffsets>
 		
 		<apparel>
-			<wornGraphicPath>SWApparel/PartisanMilitiantArmor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/PartisanMilitantArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -667,7 +667,7 @@
 					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-						<texturePaths><li>SWApparel/PartisanMilitiantArmor/Apparel</li></texturePaths>
+						<texturePaths><li>SWApparel/PartisanMilitantArmor/Apparel</li></texturePaths>
 						<colorA>
 							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
