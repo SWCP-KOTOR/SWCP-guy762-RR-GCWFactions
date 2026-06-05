@@ -156,7 +156,7 @@
         </rulePack>
     </RulePackDef>
 	
-		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun] [PAWN_objective]-->
 	
 	
 	<BackstoryDef>

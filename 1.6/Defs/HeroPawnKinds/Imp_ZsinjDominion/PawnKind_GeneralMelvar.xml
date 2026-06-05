@@ -105,7 +105,7 @@
 		  </li>
 		</backstoryFiltersOverride>
 		<abilities>
-			<li>guy762_Ability_CommandTierV</li>
+			<li>guy762_Ability_CommandTierIV</li>
 			
 			<li>SWPotF_TacticAbility_Charge</li>
 			<li>SWPotF_TacticDelegationAbility_charge</li>
@@ -186,7 +186,7 @@
         </rulePack>
     </RulePackDef>
 	
-		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun] [PAWN_objective]-->
 	
 	
 	<BackstoryDef>

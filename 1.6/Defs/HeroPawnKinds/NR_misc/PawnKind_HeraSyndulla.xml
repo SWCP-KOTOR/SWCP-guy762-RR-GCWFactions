@@ -89,7 +89,7 @@
 		</backstoryFiltersOverride>
 		
 		<abilities>
-			<li>guy762_Ability_CommandTierIII</li>
+			<li>guy762_Ability_CommandTierIV</li>
 			
 			<li>SWPotF_TacticAbility_Ambush</li>
 			<li>SWPotF_TacticDelegationAbility_ambush</li>
@@ -184,7 +184,7 @@
         </rulePack>
     </RulePackDef>
 	
-		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun] [PAWN_objective]-->
 	
 	
 	<BackstoryDef>

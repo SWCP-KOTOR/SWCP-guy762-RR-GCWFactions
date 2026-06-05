@@ -103,8 +103,13 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierV</li>
 			
-			<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<li>SWPotF_TacticAbility_Barrage</li>
+			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_ZealousRage</li>
+			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
+			
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
@@ -195,7 +200,7 @@
         </rulePack>
     </RulePackDef>
 	
-		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun] [PAWN_objective]-->
 	
 	
 	<BackstoryDef>

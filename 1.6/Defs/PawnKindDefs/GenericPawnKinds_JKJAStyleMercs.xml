@@ -5,14 +5,23 @@
 	
 	
 	
-	
-	
-	
+	<PawnKindDef Name="SWScum_JKMercBASE" ParentName="SWMercBase" Abstract="True">
+		<initialWillRange>0.2~1.6</initialWillRange>
+		<initialResistanceRange>3~7</initialResistanceRange>
+		<startingHediffs>
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
 	
   
 	<!-- jedi outcast/academy-style goons -->
 			
-	<PawnKindDef Name="SWScum_JKRodian" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_JKRodian" ParentName="SWScum_JKMercBASE">
 		<defName>SWScum_JKRodian</defName>
 		<label>underworld thug</label>
 		<combatPower>40</combatPower>
@@ -48,8 +57,6 @@
 		</weaponTags>
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
 		
-		<initialWillRange>0.2~1.6</initialWillRange>
-		<initialResistanceRange>3~7</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
@@ -74,7 +81,7 @@
   
   
   
-	<PawnKindDef Name="SWScum_JKWeequay" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_JKWeequay" ParentName="SWScum_JKMercBASE">
 		<defName>SWScum_JKWeequay</defName>
 		<label>underworld shooter</label>
 		<combatPower>75</combatPower>
@@ -106,8 +113,7 @@
 		</weaponTags>
 		<biocodeWeaponChance>0.25</biocodeWeaponChance>
 		
-		<initialWillRange>0.2~1.6</initialWillRange>
-		<initialResistanceRange>3~7</initialResistanceRange>
+		
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
@@ -131,7 +137,7 @@
   
   
   
-	<PawnKindDef Name="SWScum_JKTrando" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_JKTrando" ParentName="SWScum_JKMercBASE">
 		<defName>SWScum_JKTrando</defName>
 		<label>underworld gunner</label>
 		<combatPower>75</combatPower>
@@ -177,8 +183,6 @@
 			<!-- <li>guy762_ImplantDock_I</li> -->
 		<!-- </techHediffsRequired> -->
 		
-		<initialWillRange>0.2~1.6</initialWillRange>
-		<initialResistanceRange>3~7</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
@@ -251,7 +255,7 @@
   
   
   
-	<PawnKindDef Name="SWScum_JKSniperRodian" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_JKSniperRodian" ParentName="SWScum_JKMercBASE">
 		<defName>SWScum_JKSniperRodian</defName>
 		<label>underworld sniper</label>
 		<combatPower>75</combatPower>
@@ -298,8 +302,6 @@
 		  <li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 
-		<initialWillRange>0.2~1.6</initialWillRange>
-		<initialResistanceRange>3~7</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
@@ -319,7 +321,7 @@
   
   
   
-	<PawnKindDef Name="SWScum_JKHumanMerc" ParentName="SWMercBase">
+	<PawnKindDef Name="SWScum_JKHumanMerc" ParentName="SWScum_JKMercBASE">
 		<defName>SWScum_JKHumanMerc</defName>
 		<label>underworld mercenary</label>
 		<combatPower>100</combatPower>
@@ -372,10 +374,8 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		<disallowedTraits>
-		  <li>Brawler</li>
+			<li>Brawler</li>
 		</disallowedTraits>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		

@@ -117,11 +117,13 @@
 		<forcedTraits>
 			<Bloodlust>0</Bloodlust>
 			<Psychopath>0</Psychopath>
+			<SWCPTrait_Loyal MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_Loyal>
 		</forcedTraits>
 
 		<disallowedTraits>
 			<li>Wimp</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWCPTrait_Cowardly</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	

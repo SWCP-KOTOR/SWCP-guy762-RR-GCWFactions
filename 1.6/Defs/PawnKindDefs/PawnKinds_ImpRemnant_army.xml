@@ -68,6 +68,16 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>0~0.5</initialResistanceRange>
+		
+		
+		<startingHediffs>
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	
