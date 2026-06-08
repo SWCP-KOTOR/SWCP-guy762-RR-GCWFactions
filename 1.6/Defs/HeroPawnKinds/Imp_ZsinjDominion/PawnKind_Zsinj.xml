@@ -40,28 +40,25 @@
 		<weaponTags>
 			<li>SWRanged_RK3pistol</li>
 		</weaponTags>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>50000~100000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>100000~250000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>250000~500000</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
 		<forcedTraits>
 			<Greedy>0</Greedy>
 			<Psychopath>0</Psychopath>
@@ -78,6 +75,9 @@
 		</backstoryFiltersOverride>
 		<abilities>
 			<li>guy762_Ability_CommandTierII</li>
+			
+			<li>SWPotF_TacticAbility_Bribery</li>
+			<li>SWPotF_TacticDelegationAbility_Bribery</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
@@ -129,7 +129,7 @@
 					</li>
 					<li>
 						<skill>Social</skill>
-						<range>16~18</range>
+						<range>18~20</range>
 					</li>
 					<li>
 						<skill>Intellectual</skill>

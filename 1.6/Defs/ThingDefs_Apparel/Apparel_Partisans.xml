@@ -763,6 +763,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.3</SocialImpact>
+			<NegotiationAbility>0.3</NegotiationAbility>
 			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		<apparel>
@@ -907,6 +908,7 @@
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			
 			<SocialImpact>0.7</SocialImpact>
+			<NegotiationAbility>0.7</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<apparel>

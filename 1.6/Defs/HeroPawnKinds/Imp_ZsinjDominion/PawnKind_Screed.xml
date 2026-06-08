@@ -123,7 +123,7 @@
 		<abilities>
 			<li>guy762_Ability_CommandTierIII</li>
 			
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->
 		</abilities>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">

@@ -1203,6 +1203,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.3</SocialImpact>
+			<NegotiationAbility>0.3</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<apparel>

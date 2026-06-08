@@ -28,7 +28,8 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -204,8 +205,9 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.8</SocialImpact>
-		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5</VEF_MassCarryCapacity>
+			<SocialImpact>0.8</SocialImpact>
+			<NegotiationAbility>0.8</NegotiationAbility>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 		<apparel>
 			<drawData>

@@ -49,6 +49,26 @@
 			<li>SWMelee_Vibrosword</li>
 		</weaponTags>
 		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>10000~25000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>25000~35000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>35000~55000</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		
+		
 		<forcedTraits>
 			<Beauty>2</Beauty>
 			<Psychopath>0</Psychopath>
@@ -67,6 +87,8 @@
 			
 			<li>SWPotF_TacticAbility_Barrage</li>
 			<li>SWPotF_TacticDelegationAbility_barrage</li>
+			<li>SWPotF_TacticAbility_Bribery</li>
+			<li>SWPotF_TacticDelegationAbility_Bribery</li>
 			<li>SWPotF_TacticAbility_Harass</li>
 			<li>SWPotF_TacticDelegationAbility_harass</li>
 			

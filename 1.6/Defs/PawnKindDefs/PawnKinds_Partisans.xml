@@ -67,9 +67,9 @@
 
 
 	
-	<PawnKindDef Name="SWPartisan_soldier" ParentName="SWPartisanBase">
-		<defName>SWPartisan_soldier</defName>
-		<label>partisan soldier</label>
+	<PawnKindDef Name="SWPartisan_insurgent" ParentName="SWPartisanBase">
+		<defName>SWPartisan_insurgent</defName>
+		<label>partisan insurgent</label>
 		<combatPower>55</combatPower>
 		<minGenerationAge>17</minGenerationAge>
 		<maxGenerationAge>55</maxGenerationAge>
@@ -129,20 +129,9 @@
 			<li>SWRanged_E5rifle</li>
 			<li>SWRanged_E10rifle</li>
 			<li>SWRanged_E11carbine</li>
-			<li>SWRanged_DLT18rifle</li>
-			<li>SWRanged_BK43repeater</li>
+			<!-- <li>SWRanged_DLT18rifle</li> -->
+			<!-- <li>SWRanged_BK43repeater</li> -->
 		</weaponTags>
-		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>6~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
@@ -279,7 +268,63 @@
 	
 	
 	
-	
+	<PawnKindDef Name="SWPartisan_soldier" ParentName="SWPartisanBase">
+		<defName>SWPartisan_soldier</defName>
+		<label>partisan militant</label>
+		<combatPower>75</combatPower>
+		<minGenerationAge>17</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Poor</itemQuality>
+
+		<apparelMoney>2000~5500</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORHeadband_bandana</li>
+			<li>PartisanAlliance_trooperheadwear</li>
+			<!-- <li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li> -->
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			
+			<li>SWGCWSpecificApparelItem_PartisanMilitiantArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_PartisanLightBattleArmor</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(125,100,75)</color>       <!--K2 padawan-->
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>600~2100</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_DH17carbine</li>
+			<li>SWRanged_DLT18rifle</li>
+			<li>SWRanged_BK43repeater</li>
+		</weaponTags>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	

@@ -184,6 +184,7 @@
 
 			<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
 			<SocialImpact>0.5</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -311,6 +312,7 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 			
 			<SocialImpact>0.5</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
 
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>

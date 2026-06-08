@@ -798,6 +798,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<!-- <randomStyleChance>1</randomStyleChance> -->
@@ -1079,6 +1080,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.4</SocialImpact>
+			<NegotiationAbility>0.4</NegotiationAbility>
 		</equippedStatOffsets>
 
 		<apparel>
@@ -1139,6 +1141,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
 		</equippedStatOffsets>
 
 		<apparel>
@@ -1246,109 +1249,7 @@
 	
 	
 	
-	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
-		<defName>guy762_RebelKotaMilitiaArmor</defName>
-		<label>Rebel light battle armor</label>
-		<techLevel>Spacer</techLevel>
-		<description>.</description>
-		<graphicData>
-			<texPath>SWApparel/RebelKotaMilitiaArmor/Apparel</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<!-- <colorTwo>(170,160,135)</colorTwo> -->
-		</graphicData>
-		<statBases>
-			<Mass>8</Mass>
-			<MarketValue>750</MarketValue>
-			
-			<MaxHitPoints>350</MaxHitPoints>
-      		<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.75</ArmorRating_Heat>
-			<EquipDelay>10</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
-			<MoveSpeed>-1.25</MoveSpeed>
-			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
-		</equippedStatOffsets>
-		
-		<apparel>
-			<wornGraphicPath>SWApparel/RebelKotaMilitiaArmor/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<!-- <li>Neck</li> -->
-				<li>Arms</li>
-				<li>Hands</li>
-				<li>Legs</li>
-				<li>Feet</li>
-			</bodyPartGroups>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-			
-			<renderNodeProperties>
-				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
-					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
-					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
-					<parentTagDef>ApparelBody</parentTagDef>
-					<shader>BS_CutoutThreeColor</shader>
-					<baseLayer>22</baseLayer> <!-- MIDDLE -->
-					<autoBodyTypePaths>true</autoBodyTypePaths>
-					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/RebelKotaMilitiaArmor/Apparel</li></texturePaths>
-					  <colorA>
-						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
-						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
-					  </colorA>
-					  <colorB>
-						<color>(185,180,175)</color> <!-- warm grey -->
-						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
-					  </colorB>
-					  <colorC>
-						<color>(190,110,0)</color> <!-- rebel pilot orange -->
-						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
-					  </colorC>
-					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
-				</li>
-			</renderNodeProperties>
-			
-			<tags>
-				<li>SWGCWSpecificApparelItem_RebelKotaMilitiaArmor</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
-			</defaultOutfitTags>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_GCWApparel</li>
-			<li>guy762TT_GCWArmor_RebelSurplus</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(190,185,155)</only>  <!-- sandstone -->
-				</li>
-			</options>
-		</colorGenerator>
-
-		<modExtensions>
-		  <li Class="BigAndSmall.HasCustomizableGraphics">
-			<!-- Tag is not needed for apparel. -->
-			<colorA>true</colorA>
-			<colorB>true</colorB>
-			<colorC>true</colorC>
-		  </li>
-		</modExtensions>
-	</ThingDef>
+	
 	
 	
 	
@@ -1395,6 +1296,7 @@
 			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			
 			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -1520,6 +1422,7 @@
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			
 			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -1749,7 +1652,7 @@
 			<Mass>5</Mass>
 			<MarketValue>2500</MarketValue>
 			
-			<MaxHitPoints>175</MaxHitPoints>
+			<MaxHitPoints>235</MaxHitPoints>
       		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
@@ -1793,7 +1696,8 @@
 						<!-- warm grey -->
 						<!-- <color>(185,180,175)</color> -->
 						
-						<color>(225,225,220)</color> <!-- corellian white -->
+						<!-- corellian white -->
+						<color>(225,225,220)</color>
 						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
 					  </colorC>
 					</conditionalGraphics>
@@ -1832,6 +1736,58 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

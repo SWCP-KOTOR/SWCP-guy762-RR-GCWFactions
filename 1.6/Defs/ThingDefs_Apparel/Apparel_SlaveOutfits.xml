@@ -114,6 +114,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.2</SocialImpact>
+			<NegotiationAbility>0.2</NegotiationAbility>
 			<PawnBeauty>2</PawnBeauty>
 		</equippedStatOffsets>
 		
@@ -215,6 +216,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<apparel>

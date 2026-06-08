@@ -250,7 +250,7 @@
 		<graphicData>
 			<texPath>SWApparel/JAWeequay/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<!-- <colorTwo>(220,175,80)</colorTwo> -->
 		</graphicData>
 		<statBases>
@@ -260,7 +260,7 @@
       		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
-			<EquipDelay>6</EquipDelay>
+			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
@@ -299,7 +299,7 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>220,175,80</color>	<!-- bronzium -->
+						<color>(220,175,80)</color>	<!-- bronzium -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
@@ -764,6 +764,224 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_SwoopGangerHelmet" ParentName="SWCPArmorMakeableNoQuality_hard">
+		<defName>guy762_SwoopGangerHelmet</defName>
+		<label>swoop ganger helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ZannLightMerc/helmet_upgoggles/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(175,150,120)</colorTwo> -->
+		</graphicData>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>150</MarketValue>
+			
+			<MaxHitPoints>115</MaxHitPoints>
+      		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt> <!-- +2 -->
+			<ArmorRating_Heat>0.45</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		
+		<apparel>
+			<wornGraphicPath>NullTex</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties Inherit="False">
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+						<texturePaths>
+							<li>SWApparel/ZannLightMerc/helmet_upgoggles/helmet</li>
+							<li>SWApparel/ZannLightMerc/helmet_downgoggles/helmet</li>
+							<!-- <li>NullTex</li> -->
+						</texturePaths>
+						<colorA>
+							<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+							<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+						</colorA>
+					  
+						<!-- <altDefs> -->
+							<!-- <li>guy762_RebelEndorHelmetGogglesCustomization_Default</li> -->
+							<!-- <li>guy762_RebelEndorHelmetGogglesCustomization_Infiltrator</li> -->
+						<!-- </altDefs> -->
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWGCWSpecificApparelItem_SwoopGangerHelmet</li>
+			</tags>
+			<defaultOutfitTags>	
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<!-- <colorB>true</colorB> -->
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_ZannMercJacket</defName>
+		<label>swoop ganger armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>.</description>
+		<graphicData>
+			<texPath>SWApparel/ZannLightMerc/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(220,175,80)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+      		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light>
+			<MoveSpeed>-0.5</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
+		</equippedStatOffsets>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/ZannLightMerc/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<!-- <li>Neck</li> -->
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/ZannLightMerc/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(185,180,175)</color> <!-- warm grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>SWGCWSpecificApparelItem_ZannMercJacket</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	
 	
 	

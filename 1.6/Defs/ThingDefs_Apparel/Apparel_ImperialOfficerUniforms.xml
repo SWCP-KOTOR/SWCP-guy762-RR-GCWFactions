@@ -222,6 +222,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -307,7 +308,8 @@
 			<WorkToMake>5000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.3</SocialImpact>
+			<SocialImpact>0.3</SocialImpact>
+			<NegotiationAbility>0.3</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -386,6 +388,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -663,7 +666,8 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.5</SocialImpact>
+			<SocialImpact>0.5</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -935,7 +939,8 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.7</SocialImpact>
+			<SocialImpact>0.7</SocialImpact>
+			<NegotiationAbility>0.7</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -1252,7 +1257,8 @@
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>1</SocialImpact>
+			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<recipeMaker>

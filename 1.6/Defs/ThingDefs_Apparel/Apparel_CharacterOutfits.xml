@@ -199,6 +199,7 @@
 		
 		<equippedStatOffsets>
 			<SocialImpact>0.5</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 		</equippedStatOffsets>
 		<apparel>
@@ -387,6 +388,7 @@
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			
 			<SocialImpact>0.4</SocialImpact>
+			<NegotiationAbility>0.4</NegotiationAbility>
 			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
 		</equippedStatOffsets>
 		
@@ -874,6 +876,7 @@
 		</statBases>
 		<equippedStatOffsets>
 		  <SocialImpact>1</SocialImpact>
+		  <NegotiationAbility>1</NegotiationAbility>
 		  <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 		  
 		  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
@@ -1306,6 +1309,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			
 			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
 			
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
@@ -1432,6 +1436,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>1</SocialImpact>
+			<NegotiationAbility>1</NegotiationAbility>
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
 		</equippedStatOffsets>
 		
@@ -1651,6 +1656,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.5</SocialImpact>
+			<NegotiationAbility>0.5</NegotiationAbility>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.5</PilotingAbility>
@@ -1777,6 +1783,7 @@
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			
 			<SocialImpact>0.6</SocialImpact>
+			<NegotiationAbility>0.6</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->

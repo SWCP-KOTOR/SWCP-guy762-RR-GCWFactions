@@ -225,7 +225,8 @@
 			<WorkToMake>5500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -306,7 +307,8 @@
 			<!-- <WorkToMake>5500</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.3</SocialImpact>
+			<SocialImpact>0.3</SocialImpact>
+			<NegotiationAbility>0.3</NegotiationAbility>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
