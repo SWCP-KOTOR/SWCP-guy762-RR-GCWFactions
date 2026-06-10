@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Star Wars Collaboration Project Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/HediffDef[defName="SWCPWorkTypeDisablerHediff_Social"]</xpath>
+					<value>
+						<li Class="LoveyDoveySexWithEuterpe.IntimacyModExtension">
+							<preventsSocialActivity>false</preventsSocialActivity>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

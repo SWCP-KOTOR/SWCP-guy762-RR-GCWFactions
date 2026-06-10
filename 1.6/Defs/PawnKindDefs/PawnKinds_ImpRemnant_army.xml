@@ -69,15 +69,6 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>0~0.5</initialResistanceRange>
 		
-		
-		<startingHediffs>
-			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
-			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -384,83 +375,6 @@
 	
 	
 	
-	
-	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->
-	
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyConscript_56x" ParentName="SWImpRemnant_ArmyConscript">
-		<defName>xSWImpRemnant_ArmyConscript_56x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>56</maxPerGroup>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyTrooper_40x" ParentName="SWImpRemnant_ArmyTrooper">
-		<defName>xSWImpRemnant_ArmyTrooper_40x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>40</maxPerGroup>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyGrenadier_4x" ParentName="SWImpRemnant_ArmyHeavy">
-		<defName>xSWImpRemnant_ArmyGrenadier_4x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>4</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyIon_1x" ParentName="SWImpRemnant_ArmyHeavy">
-		<defName>xSWImpRemnant_ArmyIon_1x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>1</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_T7IonDisruptor</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyLieutenant_2x" ParentName="SWImpRemnant_ArmyLieutenant">
-		<defName>xSWImpRemnant_ArmyLieutenant_2x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
-		<defName>xSWImpRemnant_ArmyMedic_2x</defName>
-		<!-- <label>DEBUG</label> -->
-		<defaultFactionType>guy762_SWWarlordsFaction_ImpRemnant</defaultFactionType>
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperRifle_4x" ParentName="SWImpRemnant_stormtrooper">
-		<defName>xSWImpRemnant_StormtrooperRifle_4x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>4</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_E22rifle</li>
-		</weaponTags>
-	</PawnKindDef>
-	<PawnKindDef Name="xSWImpRemnant_ArmyMajor_1x" ParentName="SWImpRemnant_ArmyMajor">
-		<defName>xSWImpRemnant_ArmyMajor_1x</defName>
-		<!-- <label>DEBUG</label> -->
-		<combatPower>1</combatPower>
-		<maxPerGroup>1</maxPerGroup>
-	</PawnKindDef>
-
 	
 	
 	

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+		
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+	
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li> -->
+			
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	
+	
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
@@ -14,8 +30,6 @@
 			<!-- <li>SWRanged_E22rifle</li> -->
 			<li>SWRanged_E10rifle</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
-		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
 		</startingHediffs>
@@ -33,8 +47,6 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_RT97Crepeater</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
-		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
 		</startingHediffs>
@@ -52,7 +64,6 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_T7IonDisruptor</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
@@ -71,7 +82,6 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_MMPTLMissieLauncher</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
@@ -124,10 +134,9 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_E10rifle</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
-		
+
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -138,10 +147,9 @@
 		<defName>xgSWImpRemnant_ArmyConscriptBaseGuard</defName>
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>56</maxPerGroup> -->
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -157,7 +165,7 @@
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -222,7 +230,7 @@
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_liteneeddisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -236,7 +244,7 @@
 		<combatPower>1</combatPower>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+		
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ army platoon -->
+	
+	
+	
+	<PawnKindDef Name="xSWPentastar_ArmyTrooper_40x" ParentName="SWPentastar_ArmyTrooper">
+		<defName>xSWPentastar_ArmyTrooper_40x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>40</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyGrenadier_4x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xSWPentastar_ArmyGrenadier_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyIon_1x" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xSWPentastar_ArmyIon_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyLieutenant_2x" ParentName="SWPentastar_ArmyLieutenant">
+		<defName>xSWPentastar_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyMedic_2x" ParentName="SWWarlords_ArmyMedic">
+		<defName>xSWPentastar_ArmyMedic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="xSWPentastar_GuardianProtector_2x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianProtector_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_ArmyMajor_1x" ParentName="SWPentastar_ArmyMajor">
+		<defName>xSWPentastar_ArmyMajor_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ enforcer platoon -->
+	
+	
+	<PawnKindDef Name="xSWPentastar_EnforcerTrooper_48x" ParentName="SWPentastar_EnforcerTrooper">
+		<defName>xSWPentastar_EnforcerTrooper_48x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>48</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWPentastar_EnforcerHeavy_6x" ParentName="SWPentastar_EnforcerHeavy">
+		<defName>xSWPentastar_EnforcerHeavy_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ guardian protector squad -->	
+	
+	
+	<PawnKindDef Name="xSWPentastar_GuardianProtector_3x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianProtector_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- <PawnKindDef Name="xSWPentastar_GuardianRepeater_2x" ParentName="SWPentastar_GuardianProtector"> -->
+		<!-- <defName>xSWPentastar_GuardianRepeater_2x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>2</maxPerGroup> -->
+		<!-- <weaponMoney>99999</weaponMoney> -->
+		<!-- <weaponTags Inherit="False"> -->
+			<!-- <li></li> -->
+		<!-- </weaponTags> -->
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> needs BF2 chaingun -->
+	
+	<PawnKindDef Name="xSWPentastar_GuardianFlamethrower_1x" ParentName="SWPentastar_GuardianProtector">
+		<defName>xSWPentastar_GuardianFlamethrower_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

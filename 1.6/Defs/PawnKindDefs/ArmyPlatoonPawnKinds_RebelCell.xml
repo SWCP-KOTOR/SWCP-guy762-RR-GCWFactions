@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+		
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ rebel army platoon -->	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_ArmyTrooper_30x" ParentName="SWRebel_trooper">
+		<defName>xSWRebel_ArmyTrooper_30x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>30</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmySniper_6x" ParentName="SWRebel_sniper">
+		<defName>xSWRebel_ArmySniper_6x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmyMissile_6x" ParentName="SWRebel_heavy">
+		<defName>xSWRebel_ArmyMissile_6x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_ArmyLieutenant_2x" ParentName="SWRebel_ArmyLt">
+		<defName>xSWRebel_ArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_Medic_2x" ParentName="SWRebel_medic">
+		<defName>xSWRebel_Medic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_VanguardBowcaster_4x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardBowcaster_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Bowcaster</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- <PawnKindDef Name="xSWRebel_ArmyMajor_1x" ParentName="SWRebel_ArmyMajor"> -->
+		<!-- <defName>xSWRebel_ArmyMajor_1x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>1</maxPerGroup> -->
+	<!-- </PawnKindDef> needs officer jackets -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ rebel vanguard platoon -->	
+	
+	
+	
+	<PawnKindDef Name="xSWRebel_Vanguard_20x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_Vanguard_20x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>20</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardShotgun_4x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardShotgun_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_CR1BlastCannon</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardRepeater_6x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardRepeater_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWRebel_VanguardMissile_8x" ParentName="SWRebel_vanguard">
+		<defName>xSWRebel_VanguardMissile_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_PLX4LRocketRifle</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+
+</Defs>

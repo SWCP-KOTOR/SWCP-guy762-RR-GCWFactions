@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ army platoon -->	
+	
+	
+	
+	<PawnKindDef Name="xSWNewRepub_ArmyTrooper_16x" ParentName="SWNewRepub_trooper">
+		<defName>xSWNewRepub_ArmyTrooper_16x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>16</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DH17carbine</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>guy762_RebelHelmet_fleet</li>
+		</apparelRequired>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWNewRepub_ArmyRifle_14x" ParentName="SWNewRepub_trooper">
+		<defName>xSWNewRepub_ArmyRifle_14x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_A280Crifle</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>guy762_RebelHelmet_AWingTrooper</li>
+		</apparelRequired>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWNewRepub_ArmyLightMissile_4x" ParentName="SWRebel_heavy">
+		<defName>xSWNewRepub_ArmyLightMissile_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_PLX4LRocketRifle</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWNewRepub_ArmyHeavyMissile_4x" ParentName="SWRebel_heavy">
+		<defName>xSWNewRepub_ArmyHeavyMissile_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH15MissieLauncher</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWNewRepub_ArmyLieutenant_4x" ParentName="SWNewRepub_ArmyLt">
+		<defName>xSWNewRepub_ArmyLieutenant_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWNewRepub_Medic_2x" ParentName="SWRebel_medic">
+		<defName>xSWNewRepub_Medic_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_CR1BlastCannon</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- <PawnKindDef Name="xSWRebel_Vanguard_4x" ParentName="SWRebel_vanguard"> -->
+		<!-- <defName>xSWRebel_Vanguard_4x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>4</maxPerGroup> -->
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+	<!-- <PawnKindDef Name="xSWRebel_ArmyMajor_1x" ParentName="SWRebel_ArmyMajor"> -->
+		<!-- <defName>xSWRebel_ArmyMajor_1x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>1</maxPerGroup> -->
+	<!-- </PawnKindDef> -->
+	
+	
+	
+	
+	
+	
+	
+
+</Defs>

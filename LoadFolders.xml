@@ -13,5 +13,7 @@
 		<li IfModActive="telefonmast.itempainter">1.6/AdditionalMods/ItemPainter</li>
 		<li IfModActive="Mlie.ShowMeYourHands">1.6/AdditionalMods/ShowMeYourHands</li>
 		<!-- <li IfModActive="zal.mef">1.6/AdditionalMods/MusicExpanded</li> -->
+		
+		<li IfModActive="LovelyDovey.Sex.WithEuterpe">1.6/AdditionalMods/Initimacy</li>
     </v1.6>
 </loadFolders>

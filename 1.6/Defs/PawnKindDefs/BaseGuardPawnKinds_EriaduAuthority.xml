@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+
+
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+	
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li> -->
+			
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+
+
+
 	
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
@@ -131,9 +150,9 @@
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xgSWEriadu_ArmyTrooperBeaconGuard" ParentName="SWEriadu_ArmyTrooper">
@@ -145,10 +164,9 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_E10rifle</li>
 		</weaponTags>
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -159,10 +177,9 @@
 		<defName>xgSWEriadu_ArmyConscriptBaseGuard</defName>
 		<combatPower>1</combatPower>
 		<!-- <maxPerGroup>56</maxPerGroup> -->
-		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -195,7 +212,7 @@
 		<combatPower>1</combatPower>
 		<defaultFactionType>guy762_SWWarlordsFaction_EriaduAuthority</defaultFactionType>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -360,7 +377,7 @@
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
-			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
 		<!-- </startingHediffs> -->
 		<!-- <modExtensions> -->
 			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
@@ -372,7 +389,7 @@
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
-			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
 		<!-- </startingHediffs> -->
 		<!-- <modExtensions> -->
 			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
@@ -384,7 +401,7 @@
 		<!-- <combatPower>1</combatPower> -->
 		
 		<!-- <startingHediffs> -->
-			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
 		<!-- </startingHediffs> -->
 		<!-- <modExtensions> -->
 			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->

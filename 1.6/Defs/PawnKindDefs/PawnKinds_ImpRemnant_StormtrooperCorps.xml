@@ -536,78 +536,6 @@
 	
 	
 	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
-	
-	
-	<PawnKindDef Name="xSWImpRemnant_Stormtrooper_24x" ParentName="SWImpRemnant_stormtrooper">
-		<defName>xSWImpRemnant_Stormtrooper_24x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>24</maxPerGroup>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperSniper_4x" ParentName="SWImpRemnant_stormierifle">
-		<defName>xSWImpRemnant_StormtrooperSniper_4x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>4</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DLT20Asniper</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperLightRepeater_6x" ParentName="SWImpRemnant_stormierifle">
-		<defName>xSWImpRemnant_StormtrooperLightRepeater_6x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>6</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DLT19repeater</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperHeavyRepeater_2x" ParentName="SWImpRemnant_stormiehvy">
-		<defName>xSWImpRemnant_StormtrooperHeavyRepeater_2x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_T21repeater</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperMissile_8x" ParentName="SWImpRemnant_stormiehvy">
-		<defName>xSWImpRemnant_StormtrooperMissile_8x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>8</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_MMPTLMissieLauncher</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormtrooperOfficer_2x" ParentName="SWImpRemnant_stormieofficer">
-		<defName>xSWImpRemnant_StormtrooperOfficer_2x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -821,63 +749,7 @@
 	
 	
 	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
-	
-	
-	<PawnKindDef Name="xSWImpRemnant_Snowtrooper_24x" ParentName="SWImpRemnant_snowtrooper">
-		<defName>xSWImpRemnant_Snowtrooper_24x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>24</maxPerGroup>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_SnowtrooperSniper_4x" ParentName="SWImpRemnant_snowtrooperrifle">
-		<defName>xSWImpRemnant_SnowtrooperSniper_4x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>4</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DLT20Asniper</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_SnowtrooperLightRepeater_6x" ParentName="SWImpRemnant_snowtrooperrifle">
-		<defName>xSWImpRemnant_SnowtrooperLightRepeater_6x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>6</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DLT19repeater</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_SnowtrooperHeavyRepeater_2x" ParentName="SWImpRemnant_snowtrooperhvy">
-		<defName>xSWImpRemnant_SnowtrooperHeavyRepeater_2x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_T21repeater</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_SnowtrooperMissile_8x" ParentName="SWImpRemnant_snowtrooperhvy">
-		<defName>xSWImpRemnant_SnowtrooperMissile_8x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>8</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_MMPTLMissieLauncher</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_SnowtrooperOfficer_2x" ParentName="SWImpRemnant_snowtrooperofficer">
-		<defName>xSWImpRemnant_SnowtrooperOfficer_2x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>2</maxPerGroup>
-	</PawnKindDef>
-	
-	
-	
+
 	
 	
 	
@@ -1284,62 +1156,7 @@
 	
 	
 	
-	
-	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count platoons -->	
-	
-	
-	<PawnKindDef Name="xSWImpRemnant_StormCommando_6x" ParentName="SWImpRemnant_stormcommando">
-		<defName>xSWImpRemnant_StormCommando_6x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>6</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_EE3carbine</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormCommandoSniper_3x" ParentName="SWImpRemnant_stormcommando">
-		<defName>xSWImpRemnant_StormCommandoSniper_3x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DLT20Asniper</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormCommandoLightRepeater_3x" ParentName="SWImpRemnant_stormcommando">
-		<defName>xSWImpRemnant_StormCommandoLightRepeater_3x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_TL50blaster</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormCommandoFlamethrower_3x" ParentName="SWImpRemnant_stormcommando">
-		<defName>xSWImpRemnant_StormCommandoFlamethrower_3x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_Oppressorflamethrower</li>
-		</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef Name="xSWImpRemnant_StormCommandoOfficer_3x" ParentName="SWImpRemnant_stormcommandoofficer">
-		<defName>xSWImpRemnant_StormCommandoOfficer_3x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>3</maxPerGroup>
-	</PawnKindDef>
-	
-	
-	
-	
-	
-	
+
 	
 	
 	
