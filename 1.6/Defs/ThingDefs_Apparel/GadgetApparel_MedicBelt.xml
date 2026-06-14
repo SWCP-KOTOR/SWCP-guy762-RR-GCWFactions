@@ -299,6 +299,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
@@ -325,6 +326,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
@@ -351,6 +353,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
@@ -383,6 +386,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
@@ -416,6 +420,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
@@ -442,6 +447,7 @@
 				<casterCount>1</casterCount>
 				<casterBestEffort>False</casterBestEffort>
 				<disableGizmoIfCasterInvalid>True</disableGizmoIfCasterInvalid>
+				<hideGizmo>True</hideGizmo>
             </li>
         </comps>
     </AbilityDef>
