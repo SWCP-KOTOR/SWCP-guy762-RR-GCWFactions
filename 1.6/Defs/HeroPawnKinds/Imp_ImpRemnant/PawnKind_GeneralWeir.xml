@@ -21,13 +21,13 @@
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
-		  <li>KotORHeroAccessories_canderous</li>
-		  <li>SWDetpackCase</li>
-		  <li>SWGCWSpecificGadgetItem_JKBigEShield</li>
-		  <li>SWCPSpecificApparelItem_DoubleBandolier</li>
-		  <li>SWGCWSpecificApparelItem_ImperialStormCommandoHelmet</li>
-		  <li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
-		  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			<li>KotORHeroAccessories_canderous</li>
+			<!-- <li>SWDetpackCase</li> -->
+			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+			<li>SWCPSpecificApparelItem_DoubleBandolier</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormCommandoHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JKenergyshield_big</li>
@@ -53,10 +53,10 @@
 		
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_FC1flechette</li>
+			<li>SWRanged_FC1flechette</li>
 		</weaponTags>
 		<techHediffsRequired>
-		  <li>guy762_ImplantDock_I</li>
+			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
 		<!-- <skills> -->

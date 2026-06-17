@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="SWWEPlayableVillain_TyberZann"  ParentName="guy762_HeroPawnKindBase">
+		<defName>SWWEPlayableVillain_TyberZann</defName>
+		<nameMaker>guy762_HeroNamer_TyberZann</nameMaker>
+		<label>crime lord</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>38</minGenerationAge>
+		<maxGenerationAge>39</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Snazzy</forcedHair>
+		
+		<forcedHairColor>(250,250,250)</forcedHairColor>
+		<skinColorOverride>(249,219,165)</skinColorOverride>
+		<favoriteColor>guy762_FactionColor_ZannConsortiumYellow</favoriteColor>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+			<li>KotORHeroAccessories_canderous</li>
+			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+			<li>SWCPSpecificGadgetItem_StealthBeltDefault</li>
+			
+			<li>SWGCWSpecificApparelItem_TyberZannJacket</li>
+			<li>SWCPSpecificApparelItem_LightClothing</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>SWCP_stealthbelt_default</li>
+			<li>guy762_JKenergyshield_big</li>
+			<li>guy762_TyberZannJacket</li>
+			<li>guy762_Clothing_light</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(65,50,35)</color> <!-- coffee -->
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_ACParraygun</li>
+		</weaponTags>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>50000~100000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>100000~250000</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>250000~500000</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+			<Psychopath>0</Psychopath>
+			<Greedy>0</Greedy>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_TyberZann</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIV</li>
+			
+			<li>SWPotF_TacticAbility_Ambush</li>
+			<li>SWPotF_TacticDelegationAbility_ambush</li>
+			
+			<li>SWPotF_TacticAbility_Bribery</li>
+			<li>SWPotF_TacticDelegationAbility_Bribery</li>
+			
+			<li>SWPotF_TacticAbility_StealthAdvance</li>
+			<li>SWPotF_TacticDelegationAbility_stealthadvance</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_NarrowNormal</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_NarrowNormal</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>Stubble</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Hair_SnowWhite</li>
+					<li>Skin_Melanin5</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			
+			<!-- <li Class="BigAndSmall.Flagger"> -->
+				<!-- <flags> <guy762AltTag_TyberZann/></flags> -->
+			<!-- </li> -->
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCharPawnZC_TyberZann"  ParentName="SWWEPlayableVillain_TyberZann">
+		<defName>SWCharPawnZC_TyberZann</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+	</PawnKindDef>
+	  
+	<RulePackDef>
+        <defName>guy762_HeroNamer_TyberZann</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[tyber] '[zann]' [zann]</li>
+				<li>tyber->Tyber</li>
+				<li>zann->Zann</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun] [PAWN_objective]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_TyberZann</defName>
+		<title>Corrupt Cadet</title>
+		<titleShort>Cadet</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>10</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TyberZann</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TyberZann</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_TyberZann</defName>
+		<title>Consortium Crime Lord</title>
+		<titleShort>Crime Lord</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>PlantWork, Cooking, Mining, Caring</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_TyberZann</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_TyberZann</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

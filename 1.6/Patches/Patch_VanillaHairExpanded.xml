@@ -170,6 +170,12 @@
 			  <forcedHair>VHE_Farmboy</forcedHair>
 			</value>
 		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/PawnKindDef[@Name="SWWEPlayableVillain_TyberZann"]/forcedHair</xpath>
+			<value>
+			  <forcedHair>VHE_Unkept</forcedHair>
+			</value>
+		</li>
 	  </operations>
 	</match>
   
