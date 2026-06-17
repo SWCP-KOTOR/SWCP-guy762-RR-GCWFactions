@@ -1,199 +1,151 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
-  <ThingDef ParentName="guy762_SoftHelmetModMakeNoQuality">
-		<defName>guy762_HuttTantelHelmet</defName>
-		<label>Tantel Helmet</label>
-		<techLevel>Spacer</techLevel>
-		<description>This light helmet is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Helmets of this design have been in active use for well over ten thousand years.</description>
+	
+	
+	
+	<ThingDef ParentName="SWCPHelmetMakeableNoQuality_soft">
+		<defName>guy762_ScumLeatherHood</defName>
+		<label>hood, leather</label>
+		<description>This is a simple leather hood used by many Kajidic enforcers.</description>
 		<graphicData>
-			<texPath>SWApparel/Helmets/CombatHelmet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<!-- <colorTwo>(140,80,40)</colorTwo> -->
+		  <texPath>SWApparel/Undersuits/gamorrean/hat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<Mass>4</Mass>
-			<MarketValue>250</MarketValue>
-			
+			<MarketValue>75</MarketValue>
 			<MaxHitPoints>115</MaxHitPoints>
-      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
-			<EquipDelay>2</EquipDelay>
+			<Mass>0.5</Mass>
 			
-			<WorkToMake>9000</WorkToMake>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<EquipDelay>0.5</EquipDelay>
 		</statBases>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<Leather_Plain>10</Leather_Plain>
-			<Steel>30</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		
 		<apparel>
-			<wornGraphicPath>SWApparel/Helmets/CombatHelmet</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPath>SWApparel/Undersuits/gamorrean/hat</wornGraphicPath>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-				<li>Mouth</li>
-			</bodyPartGroups>
-			<useDeflectMetalEffect>false</useDeflectMetalEffect>
-			
-			<renderNodeProperties>
-				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
-					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
-					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
-					<parentTagDef>ApparelHead</parentTagDef>
-					<shader>BS_CutoutThreeColor</shader>
-					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
-					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/TantelArmor/helmet</li></texturePaths>
-					  <colorA>
-						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
-						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
-					  </colorA>
-					  <colorB>
-						<color>140,80,40</color> <!-- idk brown -->
-						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
-					  </colorB>
-					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
-				</li>
-			</renderNodeProperties>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 			
 			<tags>
-				<li>HuttKajidics_tantelarmor</li>
-				<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+				<li>SaV_outfit_gamorrean</li>
+				<li>SaV_apparel_huttgoon</li>
+				<li>SaV_apparel_leatherhood</li>
+				<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
 			</tags>
-			<defaultOutfitTags>
+			<defaultOutfitTags>	
 				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
-		
 		<tradeTags>
 			<li>guy762TT_GCWApparel</li>
 			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
-		
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
 				<li>
-					<weight>15</weight>
-					<only>(105,105,100)</only>  <!-- greenish steel -->
+					<weight>10</weight>
+					<only>(130,75,50)</only> <!-- copper -->
 				</li>
 			</options>
 		</colorGenerator>
-		<modExtensions>
-		  <li Class="BigAndSmall.HasCustomizableGraphics">
-			<!-- Tag is not needed for apparel. -->
-			<colorA>true</colorA>
-			<colorB>true</colorB>
-			<!-- <colorC>true</colorC> -->
-		  </li>
-		</modExtensions>
 	</ThingDef>
 	
 	
 	
 	
 	
-	<ThingDef ParentName="guy762_ModMakeNoQualityArmor_soft">
-		<defName>guy762_HuttTantelArmor</defName>
-		<label>Tantel Armor</label>
-		<description>This light armor is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Suits of this design have been in active use for well over ten thousand years.</description>
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_soft">
+		<defName>guy762_ScumGamorreanLeathers</defName>
+		<label>Gamorrean leathers</label>
+		<description>These simple garments do not protect the modesty of the wearer, but they do offer a reasonable level of protection.</description>
 		<graphicData>
-		  <texPath>SWApparel/TantelArmor/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <!-- <colorTwo>(160,115,80)</colorTwo> -->
+			<texPath>SWApparel/Undersuits/gamorrean/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(50,50,50)</colorTwo> -->
 		</graphicData>
 		<statBases>
-			<Mass>6</Mass>
-			<MarketValue>1000</MarketValue>
+			<Mass>4</Mass>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
 			
-			<MaxHitPoints>350</MaxHitPoints>
-			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.65</ArmorRating_Heat>
-			<EquipDelay>3</EquipDelay>
-			
-			<WorkToMake>16000</WorkToMake>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
-			<MoveSpeed>-1.25</MoveSpeed>
-			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
-			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
-			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
-			
+			<!-- <SWCPStat_InfantryArmorClass_light>1</SWCPStat_InfantryArmorClass_light> technically an undersuit -->
+			<!-- <MoveSpeed>-0.5</MoveSpeed> no movement penalty-->
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 		</equippedStatOffsets>
 		
-		<recipeMaker>
-			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-			<Leather_Plain>40</Leather_Plain>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		
 		<apparel>
+			<wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
-				<li>Middle</li>
+				<!-- <li>Middle</li> -->
+				<li>OnSkin</li>
 			</layers>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Hands</li>
+				<li>Feet</li>
 			</bodyPartGroups>
-			<wornGraphicPath>SWApparel/TantelArmor/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			
 			
 			<renderNodeProperties>
-				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
 					<parentTagDef>ApparelBody</parentTagDef>
 					<shader>BS_CutoutThreeColor</shader>
-					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
 					<autoBodyTypePaths>true</autoBodyTypePaths>
 					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/TantelArmor/Apparel</li></texturePaths>
+					  <texturePaths><li>SWApparel/Undersuits/gamorrean/Apparel</li></texturePaths>
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>160,115,80</color>	<!-- darker khaki -->
+						<color>(50,50,50)</color> <!-- black -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
 			
 			<tags Inherit="False">
-				<li>HuttKajidics_tantelarmor</li>
-				<li>SWGCWSpecificApparelItem_TantelArmor</li>
+				<li>SaV_outfit_gamorrean</li>
+				<li>SWGCWSpecificApparelItem_GamorreanLeathers</li>
 			</tags>
-			<defaultOutfitTags>
+			<defaultOutfitTags>	
 				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldLightInfantry</li>
 				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+				<li>SWCPOutfitTag_UnderworldHeavyInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -203,13 +155,13 @@
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
 				<li>
-					<weight>15</weight>
-					<only>(105,105,100)</only>  <!-- greenish steel -->
+					<weight>10</weight>
+					<only>(130,75,50)</only> <!-- copper -->
 				</li>
 			</options>
 		</colorGenerator>
 		<modExtensions>
-		  <li Class="BigAndSmall.HasCustomizableGraphics">
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
 			<!-- Tag is not needed for apparel. -->
 			<colorA>true</colorA>
 			<colorB>true</colorB>
@@ -217,6 +169,28 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+	
 	  
 	  
 	  
@@ -760,6 +734,253 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPHelmetMakeableNoQuality_hard">
+		<defName>guy762_HuttTantelHelmet</defName>
+		<label>Tantel Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>This light helmet is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Helmets of this design have been in active use for well over ten thousand years.</description>
+		<graphicData>
+			<texPath>SWApparel/Helmets/CombatHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <colorTwo>(140,80,40)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>250</MarketValue>
+			
+			<MaxHitPoints>115</MaxHitPoints>
+      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+			
+			<WorkToMake>9000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList Inherit="False">
+			<Leather_Plain>10</Leather_Plain>
+			<Steel>30</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Helmets/CombatHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Mouth</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/TantelArmor/helmet</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>140,80,40</color> <!-- idk brown -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags>
+				<li>HuttKajidics_tantelarmor</li>
+				<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(105,105,100)</only>  <!-- greenish steel -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
+		<defName>guy762_HuttTantelArmor</defName>
+		<label>Tantel Armor</label>
+		<description>This light armor is traditionally used by the foot-soldiers and underlings of the many Hutt cartels. Suits of this design have been in active use for well over ten thousand years.</description>
+		<graphicData>
+		  <texPath>SWApparel/TantelArmor/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <!-- <colorTwo>(160,115,80)</colorTwo> -->
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>1000</MarketValue>
+			
+			<MaxHitPoints>350</MaxHitPoints>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>16000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryArmorClass_medium>1</SWCPStat_InfantryArmorClass_medium>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+			
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+			<researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList Inherit="False">
+			<Leather_Plain>40</Leather_Plain>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		
+		<apparel>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>SWApparel/TantelArmor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer> <!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/TantelArmor/Apparel</li></texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>160,115,80</color>	<!-- darker khaki -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
+			
+			<tags Inherit="False">
+				<li>HuttKajidics_tantelarmor</li>
+				<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>SWCPOutfitTag_UnderworldMediumInfantry</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(105,105,100)</only>  <!-- greenish steel -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	
 	
 	

@@ -348,6 +348,28 @@
                  <li>guy762_DXR6DisruptorSniper</li> <!-- DXR-6 Disruptor Sniper -->
               </ThingTargets>
           </li>
+			
+			<li>
+				<MainHand>(-0.135, 0.100, -0.150)</MainHand>
+				<SecHand>(0.200, -0.100, -0.150)</SecHand>
+				<ThingTargets>
+					<li>guy762_ACPrepeater</li> <!-- ACP repeater -->
+				</ThingTargets>
+			</li>
+			<li>
+				<MainHand>(-0.412, 0.100, -0.155)</MainHand>
+				<SecHand>(0.225, 0.100, 0.150)</SecHand>
+				<ThingTargets>
+					<li>guy762_ACParraygun</li> <!-- ACP array gun -->
+				</ThingTargets>
+			</li>
+			<li>
+				<MainHand>(-0.205, 0.100, -0.050)</MainHand>
+				<SecHand>(0.050, -0.100, -0.050)</SecHand>
+				<ThingTargets>
+					<li>guy762_TuskenCycler</li> <!-- Tusken Cycler -->
+				</ThingTargets>
+			</li>
 		  
 		  
 		  

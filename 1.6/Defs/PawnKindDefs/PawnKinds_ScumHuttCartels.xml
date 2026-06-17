@@ -16,13 +16,16 @@
 		</apparelTags-->
 		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		
+		<isFighter>true</isFighter>
 		<requiredWorkTags>
-		  <li>Violent</li>
-		  <li>Hauling</li>
+			<li>Violent</li>
+			<li>Hauling</li>
 		</requiredWorkTags>
 		
 		<disallowedTraits>
-		  <li>Nudist</li>
+			<li>Nudist</li>
 		</disallowedTraits>
 		
 		<inventoryOptions>
@@ -100,18 +103,20 @@
 		
 		<gearHealthRange>0.75~1</gearHealthRange>
 		<itemQuality>Poor</itemQuality>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		
 		<apparelMoney>1000</apparelMoney>
-		<apparelTags Inherit="False">
-		  <li>KotORGloves_gamorrean</li>
-		  <li>SWCPSpecificApparelItem_GamorreanHood</li>
-		  <li>SWCPSpecificApparelItem_GamorreanLeathers</li>
+		<apparelTags>
+			<li>SWCPSpecificGadgetItem_GamorreanGloves</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeathers</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>guy762_Clothing_gamorrean</li>
-			<li>guy762_Hat_gamorrean</li>
+			<li>guy762_glove_gamorrean</li>
+			<li>guy762_ScumLeatherHood</li>
+			<li>guy762_ScumGamorreanLeathers</li>
 		</apparelRequired>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -127,16 +132,19 @@
 		
 		<weaponMoney>1500~3000</weaponMoney>
 		<weaponTags>
-		  <li>SWMelee_Vibroaxe</li>
-		  <li>SWMelee_GamorreanAxe</li>
+			<li>SWMelee_Vibroaxe</li>
+			<li>SWMelee_GamorreanAxe</li>
 		</weaponTags>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-		<isFighter>true</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
+	
+	
+	
+	
+	
 	
 	<PawnKindDef Name="SWHutts_gamorreanhvy" ParentName="SWHutts_Base">
 		<defName>SWHutts_gamorreanhvy</defName>
@@ -153,23 +161,22 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
 		<itemQuality>Good</itemQuality>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<apparelMoney>7500</apparelMoney>
-		<apparelTags Inherit="False">
-		  <li>KotORShield_mid</li>
-		  <li>KotORAccessory_lightdiagonalonly</li>
-		  <li>SWCPSpecificApparelItem_GamorreanHood</li>
-		  <li>SWCPSpecificApparelItem_GamorreanLeathers</li>
-		  <li>SWKotORSpecificApparelItem_GamorreanHeavyBattleArmor</li>
-		  <li>SWCPSpecificGadgetItem_GamorreanGloves</li>
+		<apparelTags>
+			<li>KotORAccessory_lightdiagonalonly</li>
+			<!-- <li>SWKotORSpecificApparelItem_GamorreanHeavyBattleArmor</li> -->
+			<li>SWCPSpecificGadgetItem_GamorreanGloves</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeathers</li>
 		</apparelTags>
 		<apparelRequired>
 			<!-- <li>guy762_HvyArmor_gamorrean</li> -->
 			<li>guy762_glove_gamorrean</li>
-			<li>guy762_Clothing_gamorrean</li>
-			<li>guy762_Hat_gamorrean</li>
+			<li>guy762_ScumLeatherHood</li>
+			<li>guy762_ScumGamorreanLeathers</li>
 		</apparelRequired>
-		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -186,21 +193,19 @@
 		<weaponMoney>300~1750</weaponMoney>
 		<biocodeWeaponChance>0.2</biocodeWeaponChance>
 		<weaponTags>
-		  <li>KotORRanged_blasterrifle</li>
-		  <li>KotORRanged_hvyrepeater</li>
+			<li>KotORRanged_blasterrifle</li>
+			<li>KotORRanged_hvyrepeater</li>
 		</weaponTags>
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-		<isFighter>true</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>5~20</range>
+						<range>5~10</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -210,6 +215,22 @@
 
 	
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -242,14 +263,16 @@
 		<apparelMoney>250~750</apparelMoney>
 		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotORUtility_weakgrenade</li>
-		  <li>SaV_apparel_thug</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>KotORHeadband_bandana</li>
-		  <li>SaV_apparel_leatherhood</li>
-		  <li>ScumAndVillainy_flakhat</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>ScumAndVillainy_flakhat</li>
 		</apparelTags>
 		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,55,40)</color>       <!--K2 jedi knight-->
+			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
 				<requiredTag>SaV_apparel_thug</requiredTag>
@@ -258,23 +281,15 @@
 		
 		<weaponMoney>250~1250</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_DL18pistol</li>
-		  <li>SWRanged_DL21pistol</li>
-		  <li>SWRanged_E5rifle</li>
-		  <li>SWRanged_DLT18rifle</li>
+			<li>SWRanged_DL18pistol</li>
+			<li>SWRanged_DL21pistol</li>
+			<li>SWRanged_E5rifle</li>
+			<li>SWRanged_DLT18rifle</li>
 		</weaponTags>
 		
-		<!-- <skills> -->
-		  <!-- <li> -->
-			<!-- <skill>Shooting</skill> -->
-			<!-- <range>6~14</range> -->
-		  <!-- </li> -->
-		<!-- </skills> -->
-		
 		<initialWillRange>0.2~1.6</initialWillRange>
-		<initialResistanceRange>3~7</initialResistanceRange>
-		<isFighter>true</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialResistanceRange>1~2</initialResistanceRange>
+		<fleeHealthThresholdRange>0.4~0.5</fleeHealthThresholdRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -295,7 +310,7 @@
 
 	<PawnKindDef Name="SWHutts_soldier" ParentName="SWHutts_Base">
 		<defName>SWHutts_soldier</defName>
-		<label>kajidic soldier</label>
+		<label>kajidic warrior</label>
 		<combatPower>65</combatPower>
 		<fixedGender>Male</fixedGender>
 		<minGenerationAge>18</minGenerationAge>
@@ -310,41 +325,40 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<gearHealthRange>0.7~1</gearHealthRange>
 		<itemQuality>Poor</itemQuality>
-		<apparelMoney>9999</apparelMoney>
-		<apparelTags Inherit="False">
-		  <li>HuttKajidics_tantelarmor</li>
-		  <li>SaV_apparel_leatherhood</li>
-		  <li>ScumAndVillainy_flakhat</li>
-		  <li>KotORHeadband_bandana</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>SWGCWSpecificApparelItem_TantelArmor</li>
-		  <li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
-		</apparelTags>
+		<gearHealthRange>0.7~1</gearHealthRange>
 		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			
+			<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+			<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+		</apparelTags>
+		
 		<apparelRequired>
-		   <li>guy762_HuttTantelArmor</li>
-		   <li>guy762_Clothing_scum</li>
+			<li>guy762_HuttTantelArmor</li>
+			<li>guy762_Clothing_scum</li>
 		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,55,40)</color>       <!--K2 jedi knight-->
+			</li>
+		</specificApparelRequirements>
 		
 		<weaponMoney>1500~2500</weaponMoney>
 		<weaponTags>
-		  <li>SWMelee_Vibroaxe</li>
-		  <li>SWMelee_Vibrosword</li>
+			<li>SWMelee_Vibroaxe</li>
+			<li>SWMelee_Vibrosword</li>
 		</weaponTags>
-		
-		<!-- <skills> -->
-		  <!-- <li> -->
-			<!-- <skill>Melee</skill> -->
-			<!-- <range>6~14</range> -->
-		  <!-- </li> -->
-		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-		<isFighter>true</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -391,49 +405,41 @@
 		<apparelMoney>10000~25000</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags Inherit="False">
-		  <li>KotORUtility_stronggrenade</li>
-		  <li>KotOREquipment_adv</li>
-		  <li>KotORHeadband_bandana</li>
-		  <li>SaV_apparel_leatherhood</li>
-		  <li>ScumAndVillainy_flakhat</li>
-		  <li>SWWarlordsAccessory_scumtrooper</li>
-		  <li>SaV_outfit_JKmerc</li>
-		  <li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotOREquipment_basic</li>
+			
+			<li>SWCPSpecificApparelItem_Bandana</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>ScumAndVillainy_flakhat</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>guy762_ScumMercArmor</li>
+			<li>guy762_ScumMercArmor</li>
 		</apparelRequired>
-		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
 		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,55,40)</color>       <!--K2 jedi knight-->
+			</li>
 			<li>
 				<apparelLayer>Middle</apparelLayer>
 				<color>(55,55,60)</color> <!-- armorweave -->
 			</li>
 		</specificApparelRequirements>
 		
-		<weaponMoney>5000~10000</weaponMoney>
+		<weaponMoney>1000~2000</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_E5Crifle</li>
-		  <li>SWRanged_CR1BlastCannon</li>
+			<li>SWRanged_E5Crifle</li>
+			<li>SWRanged_CR1BlastCannon</li>
+			<li>SWRanged_ACParraygun</li>
 		</weaponTags>
-		
-		<!-- <skills> -->
-		  <!-- <li> -->
-			<!-- <skill>Shooting</skill> -->
-			<!-- <range>14~18</range> -->
-		  <!-- </li> -->
-		  <!-- <li> -->
-			<!-- <skill>Melee</skill> -->
-			<!-- <range>8~14</range> -->
-		  <!-- </li> -->
-		<!-- </skills> -->
-		
+
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-		<isFighter>true</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
 		<abilities>
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		
 		<startingHediffs>
@@ -450,11 +456,11 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>14~18</range>
+						<range>10~12</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>8~14</range>
+						<range>8~10</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
@@ -500,7 +506,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>ScumAndVillainy_pilot</li>
-			<li>KotORHeadband_bandana</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
 			<li>SaV_outfit_JKWeequay</li>
 			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
 			<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
@@ -536,21 +542,6 @@
 			<li>SWRanged_DL18pistol</li>
 			<li>SWRanged_DL21pistol</li>
 		</weaponTags>
-
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>4~8</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>6~8</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -613,14 +604,16 @@
 				<stuff>Steel</stuff>
 			</li>
 		</specificApparelRequirements>
+		
+		<isFighter>false</isFighter>
 		<requiredWorkTags>
-		   <li>Firefighting</li>
-		   <li>ManualDumb</li>
-		   <li>Mining</li>
-		   <li>Hauling</li>
-		   <li>PlantWork</li>
+			<li>Firefighting</li>
+			<li>ManualDumb</li>
+			<li>Mining</li>
+			<li>Hauling</li>
+			<li>PlantWork</li>
 		</requiredWorkTags>
-	  </PawnKindDef>
+	</PawnKindDef>
 	
 	
 	
@@ -651,7 +644,7 @@
 	<PawnKindDef Name="SWHutts_smuggler" ParentName="SWCPCivilian_smuggler">
 		<defName>SWHutts_smuggler</defName>
 		<!-- <defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType> -->
-		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		<trader>true</trader>
 		<!-- <titleRequired>KotORTitleHutts_associate</titleRequired> -->
 	</PawnKindDef>
@@ -757,13 +750,13 @@
 		<techHediffsChance>4</techHediffsChance>
 		<techHediffsMoney>2000~4000</techHediffsMoney>
 		<techHediffsTags>
-		  <li>Spacer</li>
-		  <li>Advanced</li>
-		  <li>ImplantEmpireRoyal</li>
-		  <li>ImplantEmpireCommon</li>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireRoyal</li>
+			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 		<techHediffsDisallowTags>
-		  <li>PainCauser</li>
+			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		
 		<inventoryOptions  Inherit ="False">
@@ -787,17 +780,11 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>false</isFighter>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -880,24 +867,12 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>12~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		
-		<disallowedTraits>
-		  <li>Brawler</li>
-		</disallowedTraits>
-		<requiredWorkTags Inherit="False">
-		  <li>Violent</li>
-		</requiredWorkTags>
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>false</isFighter>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -996,19 +971,19 @@
 		
 		<weaponMoney>5000~99999</weaponMoney>
 		<weaponTags>
-		  <li>SaV_gangboss</li>
+			<li>SaV_gangboss</li>
 		</weaponTags>
 		
 		<techHediffsChance>4</techHediffsChance>
 		<techHediffsMoney>2000~4000</techHediffsMoney>
 		<techHediffsTags>
-		  <li>Spacer</li>
-		  <li>Advanced</li>
-		  <li>ImplantEmpireRoyal</li>
-		  <li>ImplantEmpireCommon</li>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireRoyal</li>
+			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 		<techHediffsDisallowTags>
-		  <li>PainCauser</li>
+			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		
 		<inventoryOptions>
@@ -1032,17 +1007,11 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>10~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>false</isFighter>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -1091,17 +1060,17 @@
 		<itemQuality>Masterwork</itemQuality>
 		<apparelMoney>999999</apparelMoney>
 		<apparelTags Inherit="False">
-		  <li>KotORShield_strong</li>
-		  <li>KotORShield_hapan</li>
-		  <li>KotOREquipment_rare</li>
-		  <li>KotOREquipment_HuttLegs</li>
-		  <li>guy762PatchedTag_RobesCapeSash</li>
+			<li>KotORShield_strong</li>
+			<li>KotORShield_hapan</li>
+			<li>KotOREquipment_rare</li>
+			<li>KotOREquipment_HuttLegs</li>
+			<li>guy762PatchedTag_RobesCapeSash</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		
 		<weaponMoney>12000~99999</weaponMoney>
 		<weaponTags>
-		  <li>SaV_crimelord</li>
+			<li>SaV_crimelord</li>
 		</weaponTags>
 		
 		<!-- <techHediffsChance>4</techHediffsChance> -->
@@ -1137,28 +1106,11 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>14~20</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>12~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
-		
-		<disallowedTraits>
-		  <li>Brawler</li>
-		</disallowedTraits>
-		<requiredWorkTags Inherit="False">
-		  <li>Violent</li>
-		</requiredWorkTags>
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>false</isFighter>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">

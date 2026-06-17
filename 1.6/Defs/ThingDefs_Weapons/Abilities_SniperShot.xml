@@ -151,6 +151,39 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	<AbilityDef Name="guy762_AbilityWeapon_advsnipershot_slug">
+		<defName>guy762_AbilityWeapon_advsnipershot_slug</defName>
+		<label>adv. sniper shot</label>
+		<description>Fire a single bolt with increased armor penetration, range, and perfect accuracy (unless the target successfully dodges).</description>
+		<iconPath>UI/Slug_Improved_Sniper_Shot</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>100</range>
+			<warmupTime>4</warmupTime>
+			<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
+			<!-- <targetParams> -->
+				<!-- <canTargetLocations>true</canTargetLocations> -->
+			<!-- </targetParams> -->
+			<bodypartTagTarget>ConsciousnessSource</bodypartTagTarget>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>SWProj_SlugBoltSniper_adv</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
 	<AbilityDef Name="guy762_AbilityWeapon_mstsnipershot_slug">
 		<defName>guy762_AbilityWeapon_mstsnipershot_slug</defName>
 		<label>master sniper shot</label>

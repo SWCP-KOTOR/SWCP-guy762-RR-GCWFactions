@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+		
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ thug rabble -->	
+	
+	<PawnKindDef Name="xSWHutts_ThugPistoleer_21x" ParentName="SWHutts_thug">
+		<defName>xSWHutts_ThugPistoleer_21x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>21</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DL18pistol</li>
+			<li>SWRanged_DL21pistol</li>
+			<li>SWRanged_E5rifle</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWCPSpecificApparelItem_Bandana</li>
+		</apparelTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWHutts_ThugRifleman_21x" ParentName="SWHutts_thug">
+		<defName>xSWHutts_ThugRifleman_21x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>21</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E5rifle</li>
+			<li>SWRanged_DLT18rifle</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>ScumAndVillainy_flakhat</li>
+			<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ScumWeequayArmor</li>
+		</apparelRequired>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- NEEDS: 3x light repeaters, 3x CIS rocket launchers -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ warrior platoon -->	
+	
+	<PawnKindDef Name="xSWHutts_WarriorPikeman_21x" ParentName="SWHutts_soldier">
+		<defName>xSWHutts_WarriorPikeman_21x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>21</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWMelee_Vibroaxe</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+			<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+		</apparelTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWHutts_WarriorSwordsman_14x" ParentName="SWHutts_soldier">
+		<defName>xSWHutts_WarriorSwordsman_14x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWMelee_Vibrosword</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
+			<li>SWGCWSpecificApparelItem_TantelHelmet</li>
+			<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+		</apparelTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWHutts_WarriorShotgun_4x" ParentName="SWHutts_soldier">
+		<defName>xSWHutts_WarriorShotgun_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_ACParraygun</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SWCPSpecificApparelItem_Bandana</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+		</apparelTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="xSWHutts_WarriorSniper_3x" ParentName="SWHutts_soldier">
+		<defName>xSWHutts_WarriorSniper_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_62Aug2CyclerRifle</li>
+		</weaponTags>
+		<apparelTags Inherit="False">
+			<li>SaV_apparel_headwrapmix</li>
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			<li>SWGCWSpecificApparelItem_TantelArmor</li>
+			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+		</apparelTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWHutts_Lieutenant_3x" ParentName="SWHutts_lieutenant">
+		<defName>xSWHutts_Lieutenant_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+
+</Defs>

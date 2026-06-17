@@ -7,7 +7,7 @@
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>45</maxGenerationAge>
 		
-		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
+		<!-- <fleeHealthThresholdRange>0.4~0.5</fleeHealthThresholdRange> -->
 		
 		<chemicalAddictionChance>0.35</chemicalAddictionChance>
 		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
@@ -113,11 +113,12 @@
 		</specificApparelRequirements>
 		
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>250~800</weaponMoney>
+		<weaponMoney>250~1100</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_DL18pistol</li>
 			<li>SWRanged_DL21pistol</li>
 			<li>SWRanged_Model57pistol</li>
+			<li>SWRanged_ACPrepeater</li>
 		</weaponTags>
 
 		
@@ -141,6 +142,7 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		<fleeHealthThresholdRange>0.4~0.5</fleeHealthThresholdRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -256,8 +258,10 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
+		<fleeHealthThresholdRange>0.4~0.5</fleeHealthThresholdRange>
+		
 		<disallowedTraits>
-		  <li>Brawler</li>
+			<li>Brawler</li>
 		</disallowedTraits>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		
