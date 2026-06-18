@@ -217,8 +217,8 @@
 			<li>Social</li>
 		</requiredWorkTags>
 		<workDisables>PlantWork, Cooking, Mining, Caring</workDisables>
-		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<nameMaker>guy762_HeroNamer_TyberZann</nameMaker>
 		<spawnCategories>
 			<li>guy762BSC_TyberZann</li>

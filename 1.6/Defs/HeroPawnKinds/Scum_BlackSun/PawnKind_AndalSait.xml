@@ -170,8 +170,8 @@
 		  <li>Intellectual</li>
 		</requiredWorkTags>
 		<workDisables>PlantWork, Mining, Caring</workDisables>
-		<bodyTypeMale>Hulk</bodyTypeMale>
-		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
 		<nameMaker>guy762_HeroNamer_AndalSait</nameMaker>
 		<spawnCategories>
 			<li>guy762BSC_andalsait</li>
