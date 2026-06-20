@@ -172,7 +172,7 @@
 
 					<guy762_KotORFaction_Civilians>0~75</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>0~50</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-50</guy762_SWCPFaction_TuskenClan> -->					
+					<guy762_SWCPFaction_TuskenTribe>-50</guy762_SWCPFaction_TuskenTribe>		
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>

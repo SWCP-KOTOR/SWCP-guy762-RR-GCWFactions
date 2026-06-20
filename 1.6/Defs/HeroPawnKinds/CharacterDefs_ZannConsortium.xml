@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	
+	
+	
+	
+	
+	
+	<!-- /////////////////////////////////// -->
+	
+	
+
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWZannConCharacter_TyberZann</defName>
+        <pawnKind>SWCharPawnZC_TyberZann</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<!-- 900: Jerid Sykes -->
+	<!-- 800: Urai Fenn -->
+	<!-- 700: Sliri -->
+	
+	
+	
+	
+	
+	<!-- generic leaders -->
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWZannConCharacter_FirstDefiler</defName>
+        <pawnKind>SWZannCon_DefilerFactionLeaderTest</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>200</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWZannConCharacter_SecondDefiler</defName>
+        <pawnKind>SWZannCon_DefilerFactionLeaderTest</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>100</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	<FCP.Core.CharacterDef>
+        <defName>SWZannConCharacter_ThirdDefiler</defName>
+        <pawnKind>SWZannCon_DefilerFactionLeaderTest</pawnKind>
+        <faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+        <xenotype>Baseliner</xenotype>
+		<roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>50</seniority>
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</Defs>

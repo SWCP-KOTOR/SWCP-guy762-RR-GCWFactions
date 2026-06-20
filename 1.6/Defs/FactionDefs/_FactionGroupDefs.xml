@@ -73,7 +73,7 @@
             <li>guy762_SWWarlordsFaction_PDF</li>
             <li>guy762_KotORFaction_Civilians</li>
             <!-- <li>guy762_SWCPFaction_JawaMerchants</li> -->
-            <!-- <li>guy762_SWCPFaction_TuskenClan</li> -->
+            <li>guy762_SWCPFaction_TuskenTribe</li>
 			
             <li>TribeCivil</li>
             <li>TribeRough</li>
@@ -105,7 +105,7 @@
 					
 					<!-- <guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians> -->
 					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+					<!-- <guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe> -->
 					<!-- <TribeCivil>-100</TribeCivil> -->
 					<!-- <TribeRough>-100</TribeRough> -->
 					<!-- <TribeSavage>-100</TribeSavage> -->

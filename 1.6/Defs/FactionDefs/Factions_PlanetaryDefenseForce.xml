@@ -11,7 +11,7 @@
 		<categoryTag>Outlander</categoryTag>
 		<factionIconPath>World/Khoonda</factionIconPath>
 		<colorSpectrum>
-			<li>(180,215,175)</li> <!-- PDF green -->
+			<li>(190,215,175)</li> <!-- PDF green -->
 		</colorSpectrum>
 		
 		<replacesFaction>OutlanderCivil</replacesFaction> <!-- replaces a faction in the default vanilla setup list -->
@@ -130,7 +130,7 @@
 					
 					<guy762_KotORFaction_Civilians>25~100</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>

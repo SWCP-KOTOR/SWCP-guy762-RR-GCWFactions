@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>guy762_SWCPFaction_TuskenTribe</defName>
+		<label>Tusken Raider tribes</label>
+		<fixedName>Tusken Raider Tribes</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker> -->
+		<description>.</description>
+		
+		<pawnSingular>tusken raider</pawnSingular>
+		<pawnsPlural>tusken raiders</pawnsPlural>
+		<categoryTag>Tribal</categoryTag>
+		<factionIconPath>World/TuskenRaiders</factionIconPath>
+		<colorSpectrum>
+		  <li>RGB(215,170,140)</li> <!-- tribal tan -->
+		</colorSpectrum>
+		
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<maxCountAtGameStart>2</maxCountAtGameStart>
+		<listOrderPriority>2778</listOrderPriority>
+		<configurationListOrderPriority>2778</configurationListOrderPriority>
+		<techLevel>Industrial</techLevel>
+		
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<canRequestTraders>false</canRequestTraders>
+		<canRequestMilitaryAid>false</canRequestMilitaryAid>
+		<canRequestOrbitalTrader>false</canRequestOrbitalTrader>
+		<canGenerateQuestSites>true</canGenerateQuestSites>
+
+		
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<leaderTitle>chieftan</leaderTitle>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
+		<fixedLeaderKinds>
+			<li>SWTribal_TuskenRaider</li>
+		</fixedLeaderKinds>
+		
+		<allowedArrivalTemperatureRange>0~100</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		
+		<naturalEnemy>true</naturalEnemy>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		
+		<layerWhitelist>
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</layerWhitelist>
+		<raidArrivalLayerWhitelist>  <!-- this is for what planet layers they can send raid groups to. even if a faction is not set to spawn on both layers, everything in the system should be included here -->
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</raidArrivalLayerWhitelist>
+		
+		
+		<modExtensions Inherit="False">
+			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
+                <newLabel>Hostile Local Tribals</newLabel>
+                <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
+            </li>
+			<li Class="FCP.Currencies.CurrencyReplacement">
+				<currency>Leather_Bantha</currency>
+			</li>
+			
+			<li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<guy762_SWWarlordsFaction_NewRepublic>-50</guy762_SWWarlordsFaction_NewRepublic>
+					<guy762_SWWarlordsFaction_RebelCell>-50</guy762_SWWarlordsFaction_RebelCell>
+					<guy762_SWWarlordsFaction_PartisanCell>-0~25</guy762_SWWarlordsFaction_PartisanCell>
+					
+					<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
+					<guy762_SWWarlordsFaction_ZsinjDominion>-100</guy762_SWWarlordsFaction_ZsinjDominion>
+					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+					
+					<guy762_SWWarlordsFaction_GreaterMaldrood>-100</guy762_SWWarlordsFaction_GreaterMaldrood>
+					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
+					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
+					
+					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
+					<guy762_SWWarlordsFaction_BlackSun>-100</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>-100</guy762_SWWarlordsFaction_HuttCartel>
+					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
+					<!-- . -->
+					
+					<guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan>
+					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
+					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
+					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
+		
+					<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
+					<guy762_SWCPFaction_TuskenTribe>0</guy762_SWCPFaction_TuskenTribe>
+				</startingGoodwillByFactionDefs>
+				<excludeFromCommConsole>true</excludeFromCommConsole>
+				<hasCities>false</hasCities>
+				
+				<!-- <allowedBiomes> -->
+					<!-- <li>Desert</li> -->
+					<!-- <li>ExtremeDesert</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Scarlands</li> -->
+					<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_TatooineHighland</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_TatooineExtremeDesert</li> -->
+					<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_OrdMantellUrban</li> -->
+				<!-- </allowedBiomes> -->
+			</li>
+			
+			<!-- <li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo"> -->
+				<!-- <hostileFactionDefs> -->
+					<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_KrathRaiders</li> -->
+					<!-- <li>guy762_KotORFaction_Militia</li> -->
+					<!-- <li>guy762_KotORFaction_HuttCartel</li> -->
+					<!-- <li>guy762_KotORFaction_ViciousHutts</li> -->
+					<!-- <li>guy762_KotORFaction_Czerka</li> -->
+					<!-- <li>guy762_KotORFaction_Exchange</li> -->
+				<!-- </hostileFactionDefs> -->
+			<!-- </li> -->
+			
+			<!-- <li Class="FCP.Factions.FactionExtension_SettlementControl"> -->
+                <!-- <maxSettlements>1</maxSettlements> -->
+                <!-- <searchRadius>500</searchRadius> -->
+                <!-- <namedSettlements> -->
+                    <!-- <li> -->
+                        <!-- <name>Mos Eisley</name> -->
+                        <!-- <prefab>FCP_Prefab_NCRCF_Facility</prefab> -->
+                        <!-- <forcedMapSize>(400, 1, 400)</forcedMapSize> -->
+                        <!-- <traders> -->
+                            <!-- <li><traderName>Chalmun's Cantina</traderName><traderKind>guy762_BaseTraderKind_spicerunner</traderKind></li> -->
+							
+                            <!-- <li><traderName>Kayson's Weapons Shop</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumGunrunner</traderKind></li> -->
+                            <!-- <li><traderName>Masse Goskey's Famous Arms Emporium</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumGunrunner</traderKind></li> -->
+							
+                            <!-- <li><traderName>Bargoon Tatooni</traderName><traderKind>SWCP_GCWBaseTraderKind_ScumStarfighterDealer</traderKind></li> -->
+                        <!-- </traders> -->
+                        <!-- <preferredHilliness> -->
+                            <!-- <li>Flat</li> -->
+                        <!-- </preferredHilliness> -->
+                        <!-- <allowedBiomes> -->
+                            <!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_TatooineHighland</li> -->
+                        <!-- </allowedBiomes> -->
+                    <!-- </li> -->
+                <!-- </namedSettlements> -->
+            <!-- </li> -->
+			
+
+		</modExtensions>
+		<settlementGenerationWeight>4</settlementGenerationWeight>
+		
+		
+		
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<!--styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+		</styles-->
+
+		
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<!-- <allowedMemes> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_CultOfPersonality</li> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li> -->
+		<!-- </allowedMemes> -->
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+		</disallowedPrecepts>
+		
+		<xenotypeSet>
+		  <xenotypeChances>
+			<guy762_xenotype_tusken MayRequire="guy762.StarWarsXenotypes">1</guy762_xenotype_tusken>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		
+		<apparelStuffFilter>
+		  <thingDefs> <!-- disabling all of the poor materials so it'll only generate nice ones on nobility pawns -->
+			<!-- <li>Synthread</li> -->
+			<!-- <li>KOTOR_FabricArmorweave</li> -->
+			<!-- <li>DevilstrandCloth</li> -->
+			<!-- <li>Leather_Thrumbo</li> -->
+			<li>Steel</li>
+			<!-- <li>Plasteel</li> -->
+			<!-- <li>KOTOR_AlloyDurasteel</li> -->
+			<!-- <li>KOTOR_AlloyBronzium</li> -->
+			<!-- <li>Silver</li> -->
+			<!-- <li>Gold</li> -->
+			<li>Leather_Patch</li>
+			<li>Leather_Plain</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		
+		
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,65)</li> <!-- cost of a kajidic soldier -->
+			<li>(250, 200)</li> <!-- cost of a heavy gamorrean -->
+			<li>(1000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		
+		
+		
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		
+		
+		
+		<pawnGroupMakers Inherit="False">
+			
+			<!-- skirmish -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1000</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<SWTribal_TuskenRaider>100</SWTribal_TuskenRaider>
+				</options>
+			</li>
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			
+			<!-- skirmish -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>975</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWTribal_TuskenRifleman_14x>100</xSWTribal_TuskenRifleman_14x>
+					<xSWTribal_TuskenBerserker_21x>100</xSWTribal_TuskenBerserker_21x>
+				</options>
+			</li>
+			
+
+			
+		
+			<li>
+				<kindDef>Settlement</kindDef> <!-- rural settlement -->
+				<commonality>1</commonality>
+				<options>
+					<SWHutts_slave>15</SWHutts_slave>
+					<SWTribal_TuskenRaider>25</SWTribal_TuskenRaider>
+				</options>
+			</li>
+
+		  
+		  
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+				  <SWHutts_slave>10</SWHutts_slave>
+				 
+				  <SWTribal_TuskenRaider>3</SWTribal_TuskenRaider>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+				  <SWTribal_TuskenRaider>10</SWTribal_TuskenRaider>
+				</options>
+			</li>
+		</pawnGroupMakers>
+
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+	</FactionDef>
+
+</Defs>

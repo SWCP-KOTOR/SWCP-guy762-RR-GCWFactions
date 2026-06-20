@@ -13,7 +13,7 @@
 		<categoryTag>Pirate</categoryTag>
 		<factionIconPath>World/BlackSun</factionIconPath>
 		<colorSpectrum>
-		  <li>(85,65,150)</li> <!-- black sun violet -->
+		  <li>(90,65,150)</li> <!-- black sun violet -->
 		</colorSpectrum>
 		
 		
@@ -152,7 +152,7 @@
 					
 					<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
-					<!-- <guy762_SWCPFaction_TuskenClan>-100</guy762_SWCPFaction_TuskenClan> -->
+					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>true</excludeFromCommConsole>
 				<hasCities>true</hasCities>

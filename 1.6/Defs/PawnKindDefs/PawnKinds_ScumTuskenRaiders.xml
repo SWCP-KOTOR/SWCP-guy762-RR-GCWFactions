@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWTuskenRaiderBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_SWCPFaction_TuskenTribe</defaultFactionType>
+		<minGenerationAge>15</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+		
+		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
+		
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+		</disallowedTraits>
+
+		<!-- <inventoryOptions> -->
+		  <!-- <skipChance>0.5</skipChance> -->
+		  <!-- <subOptionsTakeAll> -->
+			<!-- <li> -->
+			  <!-- <thingDef>KOTOR_Deathstick</thingDef> -->
+			  <!-- <countRange>2~3</countRange> -->
+			<!-- </li> -->
+		  <!-- </subOptionsTakeAll> -->
+		<!-- </inventoryOptions> -->
+		
+
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	  
+	  
+	  
+	<PawnKindDef Name="SWTribal_TuskenRaider" ParentName="SWTuskenRaiderBase">
+		<defName>SWTribal_TuskenRaider</defName>
+		<label>tusken raider</label>
+		<combatPower>65</combatPower>
+		<fixedGender>Male</fixedGender>
+		<!-- <minGenerationAge>16</minGenerationAge> -->
+		<!-- <maxGenerationAge>65</maxGenerationAge> -->
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>SWCPSpecificApparelItem_SimpleCloak</li>
+			<li>SWCPSpecificApparelItem_DoubleBandolier</li>
+			<li>SWCPSpecificApparelItem_TravelerBag</li>
+			
+			<li>SWCPSpecificApparelItem_SovereignTuskenMaskNonStuffable</li>
+			<li>SWCPSpecificApparelItem_TuskenRobes</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SovereignTuskenMask_NonStuffable</li>
+			<li>guy762_Robes_tusken</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+				  <options>
+					<li>
+						<weight>10</weight>
+						<only>(125,100,75)</only>       <!--K2 padawan-->
+					</li>
+					<li>
+						<weight>10</weight>
+						<only>(90,55,40)</only>         <!--K2 jedi knight-->
+					</li>
+				  </options>
+				</colorGenerator>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>   <!-- beige -->
+				<color>(190,155,120)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>250~2500</weaponMoney>
+		<weaponTags>
+			<li>SWMelee_GaffiStick</li>
+			<li>SWRanged_62Aug2CyclerRifle</li>
+			<li>SWRanged_TuskenCycler</li>
+		</weaponTags>
+
+
+
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Psychopath>0</Psychopath>
+			<SWCPTrait_Loyal MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_Loyal>
+		</forcedTraits>
+
+		<disallowedTraits>
+			<li>Kind</li>
+			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWCPTrait_Cowardly</li>
+		</disallowedTraits>
+		
+		<initialWillRange>100</initialWillRange>
+		<initialResistanceRange>100</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Plants</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Animals</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xSWTribal_TuskenRifleman_14x" ParentName="SWTribal_TuskenRaider">
+		<defName>xSWTribal_TuskenRifleman_14x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_62Aug2CyclerRifle</li>
+			<li>SWRanged_TuskenCycler</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWTribal_TuskenBerserker_21x" ParentName="SWTribal_TuskenRaider">
+		<defName>xSWTribal_TuskenBerserker_21x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>21</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWMelee_GaffiStick</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+
+</Defs>

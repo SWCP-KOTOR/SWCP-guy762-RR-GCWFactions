@@ -71,6 +71,7 @@
 			<Industriousness>1</Industriousness>
 			<Ascetic>0</Ascetic>
 			<Kind>0</Kind>
+			<SWCPTrait_Loyal>0</SWCPTrait_Loyal>
 		</forcedTraits>
 		
 		<backstoryFiltersOverride>
