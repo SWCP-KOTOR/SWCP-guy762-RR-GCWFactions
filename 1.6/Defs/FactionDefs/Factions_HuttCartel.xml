@@ -11,9 +11,9 @@
 		<pawnSingular>scum</pawnSingular>
 		<pawnsPlural>scum</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
-		<factionIconPath>World/HuttClans</factionIconPath>
+		<factionIconPath>World/HuttsDesilijic</factionIconPath>
 		<colorSpectrum>
-		  <li>RGB(155,190,35)</li> <!-- EaWX Hutt lime -->
+			<li>RGB(155,190,35)</li> <!-- EaWX Hutt lime -->
 		</colorSpectrum>
 		
 		<!-- replaces a faction in the default vanilla setup list -->

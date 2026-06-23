@@ -11,9 +11,9 @@
 		<pawnSingular>scum</pawnSingular>
 		<pawnsPlural>scum</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
-		<factionIconPath>World/ViciousHutts</factionIconPath>
+		<factionIconPath>World/HuttsBesadii</factionIconPath>
 		<colorSpectrum>
-		  <li>RGB(225,225,125)</li> <!-- EaWX sun yellow -->
+			<li>RGB(225,225,125)</li> <!-- EaWX sun yellow -->
 		</colorSpectrum>
 		
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
