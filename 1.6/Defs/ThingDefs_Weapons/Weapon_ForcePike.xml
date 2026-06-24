@@ -27,6 +27,8 @@
 			<!-- <WorkToMake>17000</WorkToMake> -->
 		</statBases>
 		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_melee>1</SWCPStat_InfantryWeaponClass_melee>
+
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		
@@ -91,6 +93,8 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_forcepike</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>

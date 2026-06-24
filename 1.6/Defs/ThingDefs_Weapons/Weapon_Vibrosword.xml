@@ -21,6 +21,9 @@
 			
 			<!-- <WorkToMake>6000</WorkToMake> -->
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_melee>1</SWCPStat_InfantryWeaponClass_melee>
+		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
 			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
@@ -35,14 +38,18 @@
 			<!-- <Steel>20</Steel> -->
 		<!-- </costList> -->
 		
-		<comps>
-		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
-			<compClass>CompExtraSounds.CompExtraSounds</compClass>
-			<soundMiss>kotorsound_blade_swing</soundMiss>
-			<soundHitPawn>kotorsound_blade_hitsoft</soundHitPawn>
-			<soundHitBuilding>kotorsound_blade_hithard</soundHitBuilding>
-		  </li>
-		</comps>
+		
+		<weaponTags Inherit="False">
+			<li>SWMelee_Vibrodagger</li>
+			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_CivLegal</li>
+		</tradeTags>
+		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -77,14 +84,15 @@
 				<cooldownTime>1.25</cooldownTime>
 			</li>
 		</tools>
-		<weaponTags Inherit="False">
-			<li>SWMelee_Vibrodagger</li>
-			<li>SWKotORWeaponCategoryTag_melee</li>
-		</weaponTags>
-		<tradeTags>
-			<li>guy762TT_GCWMelee</li>
-			<li>guy762TT_GCWWeapon_CivLegal</li>
-		</tradeTags>
+		
+		<comps>
+		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
+			<compClass>CompExtraSounds.CompExtraSounds</compClass>
+			<soundMiss>kotorsound_blade_swing</soundMiss>
+			<soundHitPawn>kotorsound_blade_hitsoft</soundHitPawn>
+			<soundHitBuilding>kotorsound_blade_hithard</soundHitBuilding>
+		  </li>
+		</comps>
 		<!-- <thingSetMakerTags> -->
 		  <!-- <li>RewardStandardLowFreq</li> -->
 		  <!-- <li>RewardStandardQualitySuper</li> -->
@@ -174,6 +182,8 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_Vibrosword</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>

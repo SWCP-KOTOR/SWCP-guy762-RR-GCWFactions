@@ -20,6 +20,9 @@
 			
 			<!-- <WorkToMake>8000</WorkToMake> -->
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_melee>1</SWCPStat_InfantryWeaponClass_melee>
+		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
 			<!-- <researchPrerequisite>SWCPResearch_PLACEHOLDER</researchPrerequisite> -->
@@ -88,14 +91,16 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_electrobaton</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>
 			<li>guy762TT_GCWWeapon_ExoticLegal</li>
 		</tradeTags>
 		<thingSetMakerTags>
-		  <li>RewardStandardLowFreq</li>
-		  <li>RewardStandardQualitySuper</li>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	

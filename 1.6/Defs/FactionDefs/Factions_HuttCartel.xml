@@ -430,6 +430,7 @@
 				<!-- <disallowedStrategies> -->
 					<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li> -->
 					<!-- <li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li> -->
+					<!-- <li>guy762_RaidStrategy_ShuttleAttack</li> -->
 				<!-- </disallowedStrategies> -->
 				<!-- <options> -->
 					<!-- <SWRebel_trooper>25</SWRebel_trooper> -->

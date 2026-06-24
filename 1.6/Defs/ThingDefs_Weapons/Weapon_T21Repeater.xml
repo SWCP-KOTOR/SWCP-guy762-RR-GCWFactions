@@ -40,6 +40,9 @@
 			<li>SWRanged_AnyAntiVehicleRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
+			
+			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
+			<li>SWCPWeaponCategoryTag_SquadRepeater</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -176,6 +179,8 @@
 			<li>SWRanged_AnyAntiVehicleRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
+			
+			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

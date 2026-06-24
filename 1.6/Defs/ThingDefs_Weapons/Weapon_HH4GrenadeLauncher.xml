@@ -35,6 +35,8 @@
 			<li>SWRanged_AnyOrdinance</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_uncommon</li>
+			
+			<li>SWCPWeaponCategoryTag_GrenadeLauncher</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged_destructive</li>

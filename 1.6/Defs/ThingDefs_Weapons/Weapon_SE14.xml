@@ -23,6 +23,9 @@
 			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_shortrange>1</SWCPStat_InfantryWeaponClass_shortrange>
+		</equippedStatOffsets>
 		
 		<weaponTags>
 			<li>SWRanged_SE14pistol</li>
@@ -31,6 +34,8 @@
 			<li>SWRanged_RebelAgentPistolMix</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_common</li>
+			
+			<li>SWCPWeaponCategoryTag_RepeaterPistol</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

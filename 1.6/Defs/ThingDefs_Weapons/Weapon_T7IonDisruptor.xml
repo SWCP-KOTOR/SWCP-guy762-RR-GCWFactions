@@ -33,6 +33,8 @@
 			<li>SWRanged_AnyOrdinance</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_veryrare</li>
+			
+			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

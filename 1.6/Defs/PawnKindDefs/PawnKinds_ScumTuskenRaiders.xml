@@ -191,10 +191,10 @@
 	
 	
 	
-	<PawnKindDef Name="xSWTribal_TuskenBerserker_21x" ParentName="SWTribal_TuskenRaider">
-		<defName>xSWTribal_TuskenBerserker_21x</defName>
+	<PawnKindDef Name="xSWTribal_TuskenBerserker_14x" ParentName="SWTribal_TuskenRaider">
+		<defName>xSWTribal_TuskenBerserker_14x</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>21</maxPerGroup>
+		<maxPerGroup>14</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags Inherit="False">
 			<li>SWMelee_GaffiStick</li>

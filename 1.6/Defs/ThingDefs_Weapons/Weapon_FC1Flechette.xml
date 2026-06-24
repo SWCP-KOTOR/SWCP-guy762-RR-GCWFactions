@@ -33,6 +33,8 @@
 			<li>SWRanged_AnyHeavyRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
+			
+			<li>SWCPWeaponCategoryTag_HeavyShotgun</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

@@ -510,7 +510,7 @@
 
 
 		<!-- objective rooms -->
-			<SWCPRoomLayout_ImpComputerRoom>0.5</SWCPRoomLayout_ImpComputerRoom>
+			<SWCPRoomLayout_ImpComputerRoom_PentastarAlignment>0.5</SWCPRoomLayout_ImpComputerRoom_PentastarAlignment>
 			<!-- <SWCPRoomLayout_ImpInquisitorBossRoom>0.1</SWCPRoomLayout_ImpInquisitorBossRoom> -->
 			<SWCPRoomLayout_ImpOrbitalUplink>0.1</SWCPRoomLayout_ImpOrbitalUplink>
 
@@ -625,6 +625,60 @@
 		</scatteredPrefabs>
 	</StructureLayoutDef>
 	
-
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ImpComputerRoom_PentastarAlignment</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+			<SWCPPrefabSmallCommandPost_PentastarAlignment>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabSmallCommandPost_PentastarAlignment>
+			
+			<SWCPPrefabInterior_BigGreenRebelScreen>
+				<countPerHundredCells>2</countPerHundredCells>
+				<minMaxRange>1~2</minMaxRange>
+			</SWCPPrefabInterior_BigGreenRebelScreen>
+			
+		  <AncientSystemRacks_Rows>
+			<countPerHundredCells>5</countPerHundredCells>
+			<minMaxRange>1~10</minMaxRange>
+		  </AncientSystemRacks_Rows>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  <AncientSystemRack>
+			<countPerHundredCells>4</countPerHundredCells>
+			<minMaxRange>1~10</minMaxRange>
+		  </AncientSystemRack>
+		  <AncientSecurityTerminal>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~2</minMaxRange>
+		  </AncientSecurityTerminal>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		</prefabs>
+		<floorTypes>
+		  <li>guy762_FloorTiles_DoomgiverRectangleTile_H</li>
+		  <li>guy762_FloorTiles_DoomgiverRectangleTile_V</li>
+		</floorTypes>
+	</LayoutRoomDef>
 	
 </Defs>

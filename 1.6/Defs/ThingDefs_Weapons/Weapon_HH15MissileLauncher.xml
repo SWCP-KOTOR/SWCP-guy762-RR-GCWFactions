@@ -33,6 +33,8 @@
 			<li>SWRanged_HH15MissieLauncher</li>
 			<li>SWRanged_AnyOrdinance</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
+			
+			<li>SWCPWeaponCategoryTag_RocketLauncher</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged_destructive</li>

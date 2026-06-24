@@ -21,6 +21,21 @@
 			<MarketValue>1283</MarketValue>
 			<Mass>7</Mass>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_melee>1</SWCPStat_InfantryWeaponClass_melee>
+		</equippedStatOffsets>
+		
+		<weaponTags Inherit="False">
+			<li>SWMelee_Vibroaxe</li>
+			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
+		</tradeTags>
+		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -50,14 +65,8 @@
 				<cooldownTime>4.5</cooldownTime>
 			</li>
 		</tools>
-		<weaponTags Inherit="False">
-			<li>SWMelee_Vibroaxe</li>
-			<li>SWKotORWeaponCategoryTag_melee</li>
-		</weaponTags>
-		<tradeTags>
-			<li>guy762TT_GCWMelee</li>
-			<li>guy762TT_GCWWeapon_ExoticLegal</li>
-		</tradeTags>
+		
+		
 		<comps>
 			<li Class="CompExtraSounds.CompProperties_ExtraSounds">
 				<compClass>CompExtraSounds.CompExtraSounds</compClass>

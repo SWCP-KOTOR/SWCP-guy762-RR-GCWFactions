@@ -32,8 +32,10 @@
 		  <WorkToMake>6000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <PsychicSensitivity>0.1</PsychicSensitivity>
-		  <MeditationFocusGain>0.25</MeditationFocusGain>
+			<SWCPStat_InfantryWeaponClass_lightsaber>1</SWCPStat_InfantryWeaponClass_lightsaber>
+
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<MeditationFocusGain>0.25</MeditationFocusGain>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -54,6 +56,8 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_LumiyaLightwhip</li>
 			<li>SWKotORWeaponCategoryTag_lightsaber</li>
+			
+			<li>SWCPWeaponCategoryTag_Special</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWCharacterItem</li>

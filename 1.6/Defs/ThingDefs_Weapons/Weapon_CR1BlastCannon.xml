@@ -32,6 +32,8 @@
 			<li>SWRanged_CR1BlastCannon</li>
 			<li>SWRanged_AnyHeavyRifle</li>
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
+			
+			<li>SWCPWeaponCategoryTag_HeavyShotgun</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

@@ -371,6 +371,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -393,6 +394,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -414,6 +416,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>

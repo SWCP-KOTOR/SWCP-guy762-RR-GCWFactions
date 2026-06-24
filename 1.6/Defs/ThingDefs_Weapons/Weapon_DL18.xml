@@ -23,11 +23,16 @@
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>0.7</RangedWeapon_DamageMultiplier>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_shortrange>1</SWCPStat_InfantryWeaponClass_shortrange>
+		</equippedStatOffsets>
 		
 		<weaponTags>
 			<li>SWRanged_DL18pistol</li>
 			<li>SWRanged_AnyCommonPistol</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
+			
+			<li>SWCPWeaponCategoryTag_LightPistol</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -121,11 +126,16 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<RangedWeapon_DamageMultiplier>0.7</RangedWeapon_DamageMultiplier>
 		</statBases>
+		<equippedStatOffsets>
+			<SWCPStat_InfantryWeaponClass_shortrange>1</SWCPStat_InfantryWeaponClass_shortrange>
+		</equippedStatOffsets>
 		
 		<weaponTags>
 			<li>SWRanged_DL21pistol</li>
 			<li>SWRanged_AnyRarePistol</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
+			
+			<li>SWCPWeaponCategoryTag_LightPistol</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

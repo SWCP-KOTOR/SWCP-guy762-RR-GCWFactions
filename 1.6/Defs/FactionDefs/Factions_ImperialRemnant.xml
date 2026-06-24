@@ -461,6 +461,7 @@
 				<disallowedStrategies>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
 					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<!-- <li>Siege</li> -->
 					<!-- <li>StageThenAttack</li> -->
 					<!-- <li>ImmediateAttack</li> -->
@@ -485,6 +486,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -507,6 +509,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
@@ -530,6 +533,7 @@
 			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
 				<kindDef>Combat</kindDef>
 				<disallowedStrategies>
+					<li>guy762_RaidStrategy_ShuttleAttack</li>
 					<li>EmergeFromWater</li>
 					<li>ImmediateAttack</li>
 					<li>ImmediateAttackSmart</li>
