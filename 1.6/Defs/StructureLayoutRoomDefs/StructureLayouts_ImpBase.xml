@@ -504,6 +504,12 @@
 			<SWCPRoomLayout_ImpWeaponsStorage>
 				<countRange>1</countRange>
 			</SWCPRoomLayout_ImpWeaponsStorage>
+			
+			<SWCPRoomLayout_ImpSupplyWarehouse_Meals><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Meals>
+			<SWCPRoomLayout_ImpSupplyWarehouse_RawFood><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_RawFood>
+			<SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds>
+			
+
 			<SWCPRoomLayout_ImpGarrisonShellStorageRoom>
 				<countRange>1</countRange>
 			</SWCPRoomLayout_ImpGarrisonShellStorageRoom>
@@ -1084,7 +1090,58 @@
 		<defName>SWCPRoomPart_ImpWeaponsStorage</defName>
 		<workerClass>SWCP_LevelDesignStuff.RoomPart_ImpWeaponsStorage</workerClass>
 	</RoomPartDef>
+
+
+
+
+
+
+
 	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ImpSupplyWarehouse_RawFood</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_RawFood</roomContentsWorkerType>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_ImpBaseTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_FoodMeds</roomContentsWorkerType>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_ImpBaseTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ImpSupplyWarehouse_Meals</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_Meals</roomContentsWorkerType>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_ImpBaseTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
 	
 	
 	

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Enlistments with Factions __________-->
+
+    <!--_____ NCR _____-->
+
+    <FCP.Enlist.FactionEnlistOptionsDef>
+        <defName>guy762_SWFactionEnlistment_Invids</defName>
+        <minGoodwillRequrementToEnlist>-100</minGoodwillRequrementToEnlist>
+        <enlistGoodwillGain>100</enlistGoodwillGain>
+		<currencyDef>guy762_KotORcredits</currencyDef>
+		<noSettlementProximityPenalty>True</noSettlementProximityPenalty>
+		
+		<settlementGiftingLockedBehindEnlist>False</settlementGiftingLockedBehindEnlist>
+		<!-- <settlementGiftingLockedBehindEnlistReasonKey></settlementGiftingLockedBehindEnlistReasonKey> -->
+		<settlementTradingLockedBehindEnlist>False</settlementTradingLockedBehindEnlist>
+		<!-- <settlementTradingLockedBehindEnlistReasonKey>SWCP_SettlementTradeReserved</settlementTradingLockedBehindEnlistReasonKey> -->
+
+    <!-- Enlistment Options -->
+
+        <enlistLetterTitleKey>SWCP_Enlist_Letter_Title</enlistLetterTitleKey>
+        <enlistLetterLabelKey>SWCP_Enlist_Letter_Label</enlistLetterLabelKey>
+        <enlistButtonLabelKey>SWCP_Enlist_Button_Label</enlistButtonLabelKey>
+        <enlistButtonDescKey>SWCP_Enlist_Button_Desc</enlistButtonDescKey>
+        <enlistRequrementsNotSatisfiedKey>SWCP_Enlist_Requrements_Not_Satisfied_easy</enlistRequrementsNotSatisfiedKey>
+        <enlistedToHostileFactionKey>SWCP_Enlisted_To_Hostile_Faction</enlistedToHostileFactionKey>
+        <enlistButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Enlist_Invids</enlistButtonIconTexPath>
+        <enlistedSoundDef>kotorsound_levelup_OnCamera</enlistedSoundDef>
+        <enlistedWithKey>SWCP_Enlisted_With_Key</enlistedWithKey>
+
+
+
+    <!-- Salary Options -->
+
+        <salaryIsEnabled>true</salaryIsEnabled>
+        <salaryDef>guy762_KotORcredits</salaryDef>
+        <salaryLabelKey>SWCP_Salary_Label</salaryLabelKey>
+        <salaryDescKey>SWCP_Salary_Desc_10days</salaryDescKey>
+        <salaryButtonIconTexPath>UI/Icons/KotORcredits_stack</salaryButtonIconTexPath>
+        <salaryRange>1000~2000</salaryRange>
+        <salaryPeriodDays>10</salaryPeriodDays>
+		
+		<!-- <titleWageBonuses> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_contact</title><multiplier>1</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_asset</title><multiplier>1.5</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_operative</title><multiplier>2</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateer</title><multiplier>5</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateerCaptain</title><multiplier>10</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_privateerCommodore</title><multiplier>100</multiplier></li> -->
+			<!-- <li><title>SWGCWTitle_ZsinjPrivateer_warlord</title><multiplier>1000</multiplier></li> -->
+		<!-- </titleWageBonuses> -->
+
+    <!-- Auto-Feed Options -->
+	
+		<autoFeedIsEnabled>True</autoFeedIsEnabled>
+		<autoFeedButtonIconTexPath>UI/Icons/autofeed</autoFeedButtonIconTexPath>
+		<autoFeedLabelKey>SWCP_AutoFeed_Label</autoFeedLabelKey>
+		<autoFeedDescKey>SWCP_AutoFeed_Desc</autoFeedDescKey>
+
+    <!-- Provision Options -->
+
+        <provisionOptions>
+            <li>
+                <provisionsLabelKey>SWCP_Provisions_Label</provisionsLabelKey>
+                <provisionsDescKey>SWCP_Provisions_Desc_6xSupplyContainer15days</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/Icons/SupplyContainer_SotEBlue</provisionsButtonIconTexPath>
+                <provisions>
+                    <li>
+                        <thing>SWCPItemLootBox_FoodMeds</thing>
+                        <amountRange>6</amountRange>
+                    </li>
+                </provisions>
+                <provisionsRestockInDays>15</provisionsRestockInDays>
+            </li>
+			<li>
+                <provisionsLabelKey>SWCP_ProvisionRecruit_Label_Pirate</provisionsLabelKey>
+                <provisionsDescKey>SWCP_ProvisionRecruit_Desc_Pirate5days</provisionsDescKey>
+                <provisionsButtonIconTexPath>UI/FactionIcons_Recruit/Recruit_InvidPirate</provisionsButtonIconTexPath>
+                <recruits>
+                    <li><pawnKind>SWInvids_pirate</pawnKind><count>1</count></li>
+                </recruits>
+                <provisionsRestockInDays>5</provisionsRestockInDays>
+            </li>
+			
+        </provisionOptions>
+		
+		
+	
+    <!-- Storage Options -->
+
+        <storageIsEnabled>true</storageIsEnabled>
+        <storageLabelKey>SWCP_Storage_Label</storageLabelKey>
+        <storageDescKey>SWCP_Storage_Desc</storageDescKey>
+        <storageButtonIconTexPath>UI/Icons/storage</storageButtonIconTexPath>
+
+    <!-- Work Options -->
+
+        <recreationGainPerTick>0.01</recreationGainPerTick>
+        <workOptions>
+            <li>
+                <workLabelKey>SWCP_Hospital_Label</workLabelKey>
+                <workDescKey>SWCP_Hospital_Desc</workDescKey>
+                <workButtonIconTexPath>UI/Icons/hospital</workButtonIconTexPath>
+                <additionalRestFall>0.25</additionalRestFall>
+                <tendCaravanMembersEveryTicks>1200</tendCaravanMembersEveryTicks>
+                <medicinesToTend>
+                    <li>KOTOR_SpacerMedKit</li>
+                </medicinesToTend>
+                <immunityGainSpeedMultiplier>1.25</immunityGainSpeedMultiplier>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Shooting_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Shooting_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Blaster_Pistol</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Shooting>500</Shooting>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.3</additionalRestFall>
+            </li>
+			<li>
+                <workLabelKey>SWCP_Melee_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Melee_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/Weapons/KotORII_Feat_Weapon_Proficiency_Melee_Weapons</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Melee>500</Melee>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.5</additionalRestFall>
+            </li>
+            <li>
+                <workLabelKey>SWCP_Command_Training_Label</workLabelKey>
+                <workDescKey>SWCP_Command_Training_Desc</workDescKey>
+                <workButtonIconTexPath>UI/FeatIcons/_KotOR_Feat_War_Veteran</workButtonIconTexPath>
+                <experienceGainsPerHour>
+                    <Social>350</Social>
+                    <Intellectual>250</Intellectual>
+                </experienceGainsPerHour>
+                <additionalRestFall>0.3</additionalRestFall>
+            </li>
+        </workOptions>
+		
+		
+		
+		
+		
+
+    <!-- Resign Options -->
+
+        <resignGoodwillGain>-75</resignGoodwillGain>
+        <resignMenuTextKey>SWCP_Resign_Menu_Text_harsh</resignMenuTextKey>
+        <resignLetterTitleKey>SWCP_Resign_Letter_Title</resignLetterTitleKey>
+        <resignLetterLabelKey>SWCP_Resign_Letter_Label_harsh</resignLetterLabelKey>
+        <resignButtonLabelKey>SWCP_Resign_Button_Label_harsh</resignButtonLabelKey>
+        <resignButtonDescKey>SWCP_Resign_Button_Desc</resignButtonDescKey>
+        <resignButtonIconTexPath>UI/FactionIcons_EnlistmentResignation/Resign_Invids</resignButtonIconTexPath>
+
+    <!-- Kicked Out Options -->
+
+        <kickOutLetterTitleKey>SWCP_Kick_Out_Letter_Title</kickOutLetterTitleKey>
+        <kickOutLetterLabelKey>SWCP_Kick_Out_Label_Title</kickOutLetterLabelKey>
+
+   
+
+    </FCP.Enlist.FactionEnlistOptionsDef>
+	
+	
+	
+
+</Defs>

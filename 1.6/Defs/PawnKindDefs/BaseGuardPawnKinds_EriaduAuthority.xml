@@ -343,11 +343,11 @@
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
-					<thingDef>SWCP_FactionIntelDatapad_Maldrood</thingDef>
+					<thingDef>SWCP_FactionIntelDatapad_Eriadu</thingDef>
 					<countRange>1~1</countRange>
 				</li>
 				<li>
-					<thingDef>SWCP_FactionIntelDatapadAdv_Maldrood</thingDef>
+					<thingDef>SWCP_FactionIntelDatapadAdv_Eriadu</thingDef>
 					<countRange>0~1</countRange>
 				</li>
 			</subOptionsChooseOne>

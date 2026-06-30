@@ -470,6 +470,12 @@
 			<SWCPRoomLayout_ImpWeaponsStorage>
 				<countRange>1</countRange>
 			</SWCPRoomLayout_ImpWeaponsStorage>
+			
+			<SWCPRoomLayout_ImpSupplyWarehouse_Meals><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Meals>
+			<SWCPRoomLayout_ImpSupplyWarehouse_RawFood><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_RawFood>
+			<SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds>
+			
+			
 			<SWCPRoomLayout_ImpGarrisonShellStorageRoom>
 				<countRange>1</countRange>
 			</SWCPRoomLayout_ImpGarrisonShellStorageRoom>

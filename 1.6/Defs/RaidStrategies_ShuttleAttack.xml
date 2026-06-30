@@ -114,6 +114,14 @@
 					</points>
 				</selectionWeightPerPointsCurve>
 			</li>
+			<li>
+				<faction>guy762_SWWarlordsFaction_SlaverGuild</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
 			<!-- //////////////////////////////////////////////////////////////////////////////////// -->
 			<li>
 				<faction>guy762_SWWarlordsFaction_PDF</faction>

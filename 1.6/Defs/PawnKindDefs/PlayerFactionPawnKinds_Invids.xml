@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWInvidsBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_GCWPlayerFaction_Invids</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+		</disallowedTraits>
+
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_aqualish>0.15</guy762_xenotype_aqualish>
+				<guy762_xenotype_iridonian>0.10</guy762_xenotype_iridonian>
+				<guy762_xenotype_klatoonian>0.10</guy762_xenotype_klatoonian>
+				<guy762_xenotype_nikto>0.10</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian>0.20</guy762_xenotype_rodian>
+				<guy762_xenotype_twilek>0.15</guy762_xenotype_twilek>
+				<guy762_xenotype_weequay>0.20</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+	</PawnKindDef>
+
+
+
+
+
+
+	<PawnKindDef Name="SWInvids_pirate" ParentName="SWInvidsBase">
+		<defName>SWInvids_pirate</defName>
+		<label>Invid pirate</label>
+		<combatPower>75</combatPower>
+		<minGenerationAge>17</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Poor</itemQuality>
+
+		<apparelMoney>2000~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<!-- <li>PartisanAlliance_trooperheadwear</li> -->
+			<!-- <li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li> -->
+			<li>SWWarlordsAccessory_scumtrooper</li>
+			
+			<li>SWCPSpecificApparelItem_Bandana</li>
+			<li>SWGCWSpecificApparelItem_PartisanMilitiantArmor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Headband_bandana</li>
+			<li>guy762_PartisanLightBattleArmor</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(190,45,110)</color>       <!-- Invid Pink -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color> <!-- dark grey -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(115,115,105)</color>  <!-- vague olive -->
+				<!-- sand purple -->
+				<!-- <color>(115,95,95)</color> -->
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+			<li>SWMelee_Vibrodagger</li>
+			<li>SWMelee_Vibrosword</li>
+			<li>SWRanged_ACPrepeater</li>
+			<li>SWRanged_ACParraygun</li>
+		</weaponTags>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+</Defs>

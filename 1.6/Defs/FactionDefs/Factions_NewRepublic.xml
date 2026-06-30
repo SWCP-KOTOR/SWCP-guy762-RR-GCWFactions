@@ -168,11 +168,16 @@
 					<guy762_SWWarlordsFaction_MandoClan>0~25</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>25</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-50~0</guy762_SWWarlordsFaction_LocalWarlord>
+					<guy762_SWWarlordsFaction_SlaverGuild>-100</guy762_SWWarlordsFaction_SlaverGuild>
+					<!-- <guy762_SWWarlordsFaction_LocalPirates>-100</guy762_SWWarlordsFaction_LocalPirates> -->
+					
 					<!-- <guy762_SWWarlordsFaction_CSA>0</guy762_SWWarlordsFaction_CSA> -->
 
 					<guy762_KotORFaction_Civilians>0~75</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>0~50</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-50</guy762_SWCPFaction_TuskenTribe>		
+					
+					<guy762_GCWPlayerFaction_Invids>-100</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>

@@ -10,8 +10,11 @@
 		<maxGenerationAge>18</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
 		<forcedHair>Cleopatra</forcedHair>
+		
 		<forcedHairColor>(50,50,50)</forcedHairColor>
 		<skinColorOverride>(255, 239, 213)</skinColorOverride>
+		<favoriteColor>guy762_FactionColor_InvidPink</favoriteColor>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<Baseliner>999</Baseliner>
@@ -33,7 +36,9 @@
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<apparelDef>guy762_Headband_bandana</apparelDef>
-				<color>(205,15,40)</color>       <!-- maldrood crimson -->
+				<color>(190,45,110)</color>       <!-- Invid Pink -->
+				<!-- maldrood crimson -->
+				<!-- <color>(205,15,40)</color> -->
 				<quality>Legendary</quality>
 			</li>
 			<li>

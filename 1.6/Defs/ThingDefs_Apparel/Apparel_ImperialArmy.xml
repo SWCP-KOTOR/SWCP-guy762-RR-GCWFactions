@@ -112,6 +112,7 @@
 			</layers>
 			<bodyPartGroups Inherit="False">
 				<li>Shoulders</li>
+				<li>Torso</li>
 				<li>Neck</li>
 				<li>Arms</li>
 				<li>Hands</li>

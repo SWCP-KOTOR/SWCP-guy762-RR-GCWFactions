@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- HOW IT WORKS: a Harmony patch replaces each individually patched faction's settlement MapGenerator with a hardcoded DefOf (SWCPMapGenerator_x) -->
+	
+	<MapGeneratorDef ParentName="MapCommonBase">
+		<defName>SWCPMapGenerator_FortressHuttCartel</defName>
+		<genSteps>
+			<li>RocksFromGrid</li>
+			<!-- <li>SWCPMapGenStep_UnderworldStructure_HuttCartelBase</li> -->
+			<li>SWCPMapGenStep_UnderworldStructure_HuttCartelPalace</li>
+			<li>SWCPMapGenStep_UnderworldStructure_HuttCartelBasePawns</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_WanderingPersonnel</li>
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_BigCommandPostGuards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_controlroomguards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_slavedancers</li>
+		</genSteps>
+	</MapGeneratorDef>
+	
+	
+	<!-- HOW IT WORKS: the GenStep references LayoutDefOf BOTH StructureLayoutDefs used! -->
+		<!-- SWCPUnderworldStructure_FactionPalace_HuttCartelExterior -->
+		<!-- SWCPUnderworldStructure_FactionPalace_HuttCartelInterior -->
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UnderworldStructure_HuttCartelPalace</defName>
+		<order>400</order>
+		
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionPalace_HuttCartel" />
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef><!-- this one is still needed to spawn in the base Settlement pawngroup, the other pawn GenSteps are supplemental	-->
+		<defName>SWCPMapGenStep_UnderworldStructure_HuttCartelBasePawns</defName>
+		<order>700</order>
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
+		  <factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_WanderingPersonnel</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
+		  <factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+		  <initialCivilianCount>25~30</initialCivilianCount>
+		  <keepPopulationReplenished>false</keepPopulationReplenished>
+		  <maxPopulation>30</maxPopulation>
+		  <options>
+			<xgSWHutts_Slave>10</xgSWHutts_Slave>
+			
+			<SWCPCivilian_villager>10</SWCPCivilian_villager>
+			<SWCPCivilian_poortraveler>5</SWCPCivilian_poortraveler>
+			<SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			<SWCPCivilian_shadydealer>1</SWCPCivilian_shadydealer>
+			<xgSWHutts_SmugglerBaseGuard>5</xgSWHutts_SmugglerBaseGuard>
+			<xgSWHutts_PilotBaseGuard>1</xgSWHutts_PilotBaseGuard>
+			
+			<SWCPDroidColonistBnS_ASP7LaborDroid>2</SWCPDroidColonistBnS_ASP7LaborDroid>
+			<SWCPDroidColonistBnS_RA7ProtocolDroid>1</SWCPDroidColonistBnS_RA7ProtocolDroid>
+			<SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>0.5</SWCPDroidColonistBnS_CLLM2BinaryLoadlifter>
+		</options>
+		</genStep>
+	</GenStepDef>
+	
+
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_BigCommandPostGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>8~10</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_big</li>
+			</beaconBuildingDefs>
+			<options>
+				<xgSWHutts_JKRodianBaseGuard>100</xgSWHutts_JKRodianBaseGuard>
+				<xgSWHutts_JKHumanMercBaseGuard>75</xgSWHutts_JKHumanMercBaseGuard>
+				<xgSWHutts_JKWeequayBaseGuard>50</xgSWHutts_JKWeequayBaseGuard>
+				<xgSWHutts_JKTrandoBaseGuard>50</xgSWHutts_JKTrandoBaseGuard>
+				<xgSWHutts_JKRocketTrandoBaseGuard>25</xgSWHutts_JKRocketTrandoBaseGuard>
+				<xgSWHutts_JKSniperRodianBaseGuard>1</xgSWHutts_JKSniperRodianBaseGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_basecommaders</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>3~4</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_small</li>
+			</beaconBuildingDefs>
+			<options>
+				<!-- <xgSWImpRemnant_OpsLtBaseGuard>100</xgSWImpRemnant_OpsLtBaseGuard> -->
+				<!-- <xgSWImpRemnant_UniformArmyLtBaseGuard>75</xgSWImpRemnant_UniformArmyLtBaseGuard> -->
+				<xgSWHutts_SmugglerBaseGuard>50</xgSWHutts_SmugglerBaseGuard>
+				
+				<SWHutts_roguetrader>25</SWHutts_roguetrader>
+			<!-- rare pulls -->
+				<SWHutts_HuttTrader>10</SWHutts_HuttTrader>
+				<SWHutts_majordomo>5</SWHutts_majordomo>
+				<SWHutts_HuttLord>1</SWHutts_HuttLord>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_controlroomguards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>4~5</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>SWCP_CommandPost_small</li>
+			</beaconBuildingDefs>
+			<options>
+				<SWHutts_gamorreanlgt>100</SWHutts_gamorreanlgt>
+				<xgSWHutts_MandoMercBaseGuard>10</xgSWHutts_MandoMercBaseGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_slavedancers</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>1</defendRadius>
+			<pawnsPerBeacon>1~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>AncientGravReactor</li>
+			</beaconBuildingDefs>
+			<options>
+				<xgSWHutts_SlaveEntertainer>100</xgSWHutts_SlaveEntertainer>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<StructureLayoutDef>
+		<defName>SWCPUnderworldStructure_FactionPalace_HuttCartelExterior</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallB</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		
+		<corridorDef>AncientRuinsShelfedCorridor</corridorDef>
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
+		<roomDefs>
+			<SWCPRoomLayout_ScumSupplyWarehouse_Meals><countRange>0~1</countRange></SWCPRoomLayout_ScumSupplyWarehouse_Meals>
+			<SWCPRoomLayout_ScumSupplyWarehouse_RawFood><countRange>0~1</countRange></SWCPRoomLayout_ScumSupplyWarehouse_RawFood>
+			<!-- <SWCPRoomLayout_ScumSupplyWarehouse_FoodMeds><countRange>0~1</countRange></SWCPRoomLayout_ScumSupplyWarehouse_FoodMeds> -->
+			
+
+			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
+			<SWCPRoomLayout_UrbanLivingArea>2</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
+
+
+		<!-- Decorative -->
+			<SWCPRoomLayout_ScumCanteen>2</SWCPRoomLayout_ScumCanteen>
+			<SWCPRoomLayout_ScumShelfRoom>1</SWCPRoomLayout_ScumShelfRoom>
+			<SWCPRoomLayout_ScumLockerRoom>1</SWCPRoomLayout_ScumLockerRoom>
+			<SWCPRoomLayout_ScumGarrisonBarracks>1</SWCPRoomLayout_ScumGarrisonBarracks>
+			<SWCPRoomLayout_ScumWorkshop>1</SWCPRoomLayout_ScumWorkshop>
+		</roomDefs>
+		
+		<scatteredPrefabs>
+			<li>
+			  <countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
+			  <minSpacing>80</minSpacing>
+			  <maxDistFromStructure>250</maxDistFromStructure>
+			  <prefabs>
+				<SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
+				<SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
+				
+				<SWCPPrefabBigCommandPost_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPPrefabBigCommandPost_HuttCartel>
+			  </prefabs>
+			</li>
+		</scatteredPrefabs>
+		
+		<junkScaterrers>
+		  <Filth_Trash>
+			<groupsPerHundredCells>0~3</groupsPerHundredCells>
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_Trash>
+		  <Filth_MachineBits>
+			<groupsPerHundredCells>-1~1</groupsPerHundredCells> <!-- ~50% to not appear -->
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>2~4</groupDistRange>
+		  </Filth_MachineBits>
+		</junkScaterrers>
+	</StructureLayoutDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumShelfRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>10~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <IndustrialShelf_Rows>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </IndustrialShelf_Rows>
+		  <WoodenCratesWithSomeLoot>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCratesWithSomeLoot>
+		  <WoodenCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCrate_Cluster>
+		  <AncientCratePallet_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratePallet_Cluster>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		  
+			<SWCPPrefab_LargeCrateForHidingIn>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefab_LargeCrateForHidingIn>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumOrbitalUplink</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<noRoof>true</noRoof>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <AncientUplink>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientUplink>
+		  <AncientSystemRack>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>5~10</minMaxRange>
+		  </AncientSystemRack>
+		  <AncientSecurityTerminal>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>5~10</minMaxRange>
+		  </AncientSecurityTerminal>
+		  <AncientBarrel_Cluster>
+			<countPerHundredCells>5</countPerHundredCells>
+			<minMaxRange>1~5</minMaxRange>
+		  </AncientBarrel_Cluster>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumGarrisonBarracks</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <AncientBed_Rows>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientBed_Rows>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <ShowerAndToilet_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </ShowerAndToilet_Edge>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumCanteen</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <TableWithStools_2x4>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </TableWithStools_2x4>
+		  <TableWithStools_2x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </TableWithStools_2x2>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~3</minMaxRange>
+		  </TableWithStools_1x2>
+		  
+		  <AncientTableStoveElectric_Edge>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientTableStoveElectric_Edge>
+		  <SurvivalMealPallet>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </SurvivalMealPallet>
+		  
+			<SWCPPrefabLootbox_FoodMeds>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_FoodMeds>
+			
+		  <AncientStove_Cluster>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientStove_Cluster>
+		</prefabs>
+		<!-- <parts> -->
+		  <!-- <SWCPRoomPart_PawnKind_ImpConscript>0.5</SWCPRoomPart_PawnKind_ImpConscript> -->
+		<!-- </parts> -->
+		<floorTypes>
+		  <li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumWorkshop</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>10~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <Shelves_Rows>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Shelves_Rows>
+		  <RustedEngine_Cluster>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </RustedEngine_Cluster>
+		  <AncientSafe>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientSafe>
+		  <AncientTableMachining_Edge>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientTableMachining_Edge>
+		  <AncientAmmoStack_Cluster>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>2~5</minMaxRange>
+		  </AncientAmmoStack_Cluster>
+		  <AncientMilitaryCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </AncientMilitaryCrate_Cluster>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		</prefabs>
+		<!-- <parts> -->
+		  <!-- <SWCPRoomPart_PawnKind_ImpWorker>1</SWCPRoomPart_PawnKind_ImpWorker> -->
+		<!-- </parts> -->
+		<floorTypes>
+		  <li>guy762_FloorTiles_ImpBaseTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumLockerRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <AncientLockerBank_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockerBank_Row>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~3</minMaxRange>
+		  </TableWithStools_1x2>
+		 
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  
+			<SWCPPrefabLootbox_ImpBaseCommon>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_ImpBaseCommon>
+			
+			<SWCPPrefabTechBuilding_JKShieldBank>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefabTechBuilding_JKShieldBank>
+
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_XGrate_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumTableRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Green>
+		</wallAttachments>
+		<prefabs>
+		  <TableWithStools_2x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </TableWithStools_2x2>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~3</minMaxRange>
+		  </TableWithStools_1x2>
+		  
+		</prefabs>
+		
+		<floorTypes>
+		  <li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumWeaponsStorage</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<parts>
+			<SWCPRoomPart_ScumWeaponsStorage />
+			<!-- <CornerArmoredTurret /> -->
+		</parts>
+		<floorTypes>
+			<li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<RoomPartDef>
+		<defName>SWCPRoomPart_ScumWeaponsStorage</defName>
+		<workerClass>SWCP_LevelDesignStuff.RoomPart_ScumWeaponsStorage</workerClass>
+	</RoomPartDef>
+
+
+
+
+
+
+
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumSupplyWarehouse_RawFood</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_RawFood</roomContentsWorkerType>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<!-- <LayoutRoomDef> -->
+		<!-- <defName>SWCPRoomLayout_ScumSupplyWarehouse_FoodMeds</defName> -->
+		<!-- <spawnJunk>false</spawnJunk> -->
+		<!-- <wallAttachments> -->
+			<!-- <AncientEmergencyLight_Blue> -->
+				<!-- <countRange>3~4</countRange> -->
+			<!-- </AncientEmergencyLight_Blue> -->
+		<!-- </wallAttachments> -->
+		<!-- <roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_FoodMeds</roomContentsWorkerType> -->
+		
+		<!-- <floorTypes> -->
+			<!-- <li>guy762_FloorTiles_DivotedTile_iron</li> -->
+		<!-- </floorTypes> -->
+	<!-- </LayoutRoomDef> -->
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumSupplyWarehouse_Meals</defName>
+		<spawnJunk>false</spawnJunk>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>3~4</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_SupplyWarehouse_Meals</roomContentsWorkerType>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumWarehousePalletRoom</defName>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<spawnJunk>false</spawnJunk>
+		<prefabs>
+		  <SurvivalMealPallet>
+			<countRange>0~1</countRange>
+		  </SurvivalMealPallet>
+		  <MedicinePallet>
+			<countRange>0~1</countRange>
+		  </MedicinePallet>
+		  <AncientCratePallet_Cluster>
+			<countPerHundredCells>2.5</countPerHundredCells>
+			<minMaxRange>1~3</minMaxRange>
+		  </AncientCratePallet_Cluster>
+		  <AncientChembarrelPallet_Cluster>
+			<countPerHundredCells>2.5</countPerHundredCells>
+			<minMaxRange>1~3</minMaxRange>
+		  </AncientChembarrelPallet_Cluster>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_ImpBaseTileDark</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumWarehouseStorageRoom</defName>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<prefabs>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>4~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_ImpBaseTileDark</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Main Ancient Reactor site building - only one -->
+	<StructureLayoutDef>
+		<defName>SWCPUnderworldStructure_FactionPalace_HuttCartelInterior</defName>
+		<workerClass>LayoutWorker_AncientRuins_Reactor</workerClass>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<clearRoomsEntirely>true</clearRoomsEntirely>
+		<minRoomWidth>8</minRoomWidth>
+		<minRoomHeight>8</minRoomHeight>
+		
+		<shouldDamage>false</shouldDamage>
+		
+		<!-- Structure -->
+		
+		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<corridorShapes>Cross, T</corridorShapes>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		
+		<exteriorDoorDef>AncientBlastDoor</exteriorDoorDef>
+		
+		<!-- <wallDef>guy762_PoweredWall_NarShaddaaCantinaA</wallDef> -->
+		<wallDef>guy762_PoweredWall_SandcrawlerHull</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_SandcrawlerA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_iron</terrainDef>
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		
+		
+		<importantRoomDef>SWCPRoomLayout_ScumThroneRoom</importantRoomDef>
+		<roomDefs>
+			<SWCPRoomLayout_ScumWeaponsStorage>
+				<countRange>1</countRange>
+			</SWCPRoomLayout_ScumWeaponsStorage>
+			
+			<SWCPRoomLayout_ScumComputerRoom_HuttCartel>
+				<countRange>1~2</countRange>
+			</SWCPRoomLayout_ScumComputerRoom_HuttCartel>
+			
+			<SWCPRoomLayout_ScumRecRoom>
+				<countRange>1</countRange>
+			</SWCPRoomLayout_ScumRecRoom>
+			
+			<!-- Special -->
+			<AncientRuinsReactorGravliteStoreRoom>
+				<countRange>1~1</countRange>
+			</AncientRuinsReactorGravliteStoreRoom>
+			<!-- <AncientOrbitalUplink> -->
+				<!-- <countRange>1~1</countRange> -->
+			<!-- </AncientOrbitalUplink> -->
+
+			<!-- Decorative -->
+			<AncientRuinsReactorToxicWaterRoom>0.15</AncientRuinsReactorToxicWaterRoom>
+			<AncientRuinsShelfRoom>1</AncientRuinsShelfRoom>
+			<SWCPRoomLayout_ScumCanteen>1</SWCPRoomLayout_ScumCanteen>
+
+			<!-- Smaller threats -->
+			<AncientRuinsChemfuelWorkshop>1</AncientRuinsChemfuelWorkshop>
+			<AncientComputerRoom>1</AncientComputerRoom>
+			<SWCPRoomLayout_ScumTreasureRoom>1</SWCPRoomLayout_ScumTreasureRoom>
+			
+			
+
+			<!-- <SWCPRoomLayout_ScumWarehousePalletRoom>1</SWCPRoomLayout_ScumWarehousePalletRoom> -->
+			<!-- <SWCPRoomLayout_ScumWarehouseStorageRoom>2</SWCPRoomLayout_ScumWarehouseStorageRoom> -->
+		</roomDefs>
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef>
+	  <defName>SWCPPrefab_PazaakTable</defName>
+	  <size>(3,2)</size>
+	  <things>
+		<KOTOR_PazaakTable>
+		  <position>(1, 0, 0)</position>
+		  <quality>Normal</quality>
+		</KOTOR_PazaakTable>
+	  </things>
+	</PrefabDef>
+	
+	
+	<PrefabDef>
+	  <defName>SWCPPrefab_HologramBandAndDancer</defName>
+	  <size>(5,2)</size>
+	  <edgeOnly>true</edgeOnly>
+	  <things>
+		<SWCPBuilding_NPCHologram_bith>
+		  <positions>
+			<li>(0, 0, 2)</li>
+			<li>(1, 0, 2)</li>
+			<li>(3, 0, 2)</li>
+			<li>(4, 0, 2)</li>
+		  </positions>
+		  <relativeRotation>Opposite</relativeRotation>
+		</SWCPBuilding_NPCHologram_bith>
+		<SWCPBuilding_NPCHologram_dancerF>
+		  <position>(2, 0, 1)</position>
+		  <relativeRotation>Opposite</relativeRotation>
+		</SWCPBuilding_NPCHologram_dancerF>
+	  </things>
+	</PrefabDef>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumThroneRoom</defName>
+		<roomContentsWorkerType>RoomContents_Reactor</roomContentsWorkerType>
+		<dontPlaceRandomly>true</dontPlaceRandomly>
+		<isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
+		<minSingleRectWidth>7</minSingleRectWidth>
+		<minSingleRectHeight>7</minSingleRectHeight>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+		<edgeTerrain>MetalTile</edgeTerrain>
+		
+		<prefabs>
+			<SWCPPrefab_HologramBandAndDancer>
+				<countRange>1</countRange>
+			</SWCPPrefab_HologramBandAndDancer>
+		</prefabs>
+		
+		<scatter>
+		  <!-- <AncientLargeCrate> -->
+			<!-- <groupsPerHundredCells>2~4</groupsPerHundredCells> -->
+			<!-- <itemsPerGroup>3~6</itemsPerGroup> -->
+			<!-- <groupDistRange>2~5</groupDistRange> -->
+		  <!-- </AncientLargeCrate> -->
+		</scatter>
+		
+		<!-- <scatterTerrain> -->
+		  <!-- <Soil> -->
+			<!-- <groupsPerHundredCells>2~3</groupsPerHundredCells> -->
+			<!-- <itemsPerGroup>4~6</itemsPerGroup> -->
+			<!-- <groupDistRange>2~3</groupDistRange> -->
+		  <!-- </Soil> -->
+		<!-- </scatterTerrain> -->
+		
+		<!-- <parts> -->
+		  <!-- <HunterDrone>0.5</HunterDrone> -->
+		  <!-- <WaspDrone>0.5</WaspDrone> -->
+		  <!-- <CornerArmoredTurret> -->
+			<!-- <countRange>4~4</countRange> -->
+		  <!-- </CornerArmoredTurret> -->
+		<!-- </parts> -->
+	</LayoutRoomDef>
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumComputerRoom_HuttCartel</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>8</minSingleRectWidth>
+		<minSingleRectHeight>8</minSingleRectHeight>
+		<wallAttachments>
+			<AncientEmergencyLight_Blue>
+				<countRange>2~3</countRange>
+			</AncientEmergencyLight_Blue>
+		</wallAttachments>
+		<prefabs>
+			<SWCPPrefabSmallCommandPost_HuttCartel>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabSmallCommandPost_HuttCartel>
+			
+			<SWCPPrefabInterior_BigGreenRebelScreen>
+				<countPerHundredCells>2</countPerHundredCells>
+				<minMaxRange>1~2</minMaxRange>
+			</SWCPPrefabInterior_BigGreenRebelScreen>
+			
+			
+			
+			
+			<AncientDestroyedConsole_VerySmall>
+				<countPerTenEdgeCells>2</countPerTenEdgeCells>
+				<minMaxRange>5~10</minMaxRange>
+			</AncientDestroyedConsole_VerySmall>
+			<AncientDestroyedConsole_Large>
+				<countPerTenEdgeCells>5</countPerTenEdgeCells>
+				<minMaxRange>1~2</minMaxRange>
+			</AncientDestroyedConsole_Large>
+			<AncientDestroyedConsole_Small>
+				<countPerTenEdgeCells>2</countPerTenEdgeCells>
+				<minMaxRange>1~5</minMaxRange>
+			</AncientDestroyedConsole_Small>
+			
+			<AncientSystemRacks_Rows>
+				<countPerHundredCells>5</countPerHundredCells>
+				<minMaxRange>1~10</minMaxRange>
+			</AncientSystemRacks_Rows>
+		  
+		  
+		  <AncientSystemRack>
+			<countPerHundredCells>4</countPerHundredCells>
+			<minMaxRange>1~10</minMaxRange>
+		  </AncientSystemRack>
+		  <AncientSecurityTerminal>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~2</minMaxRange>
+		  </AncientSecurityTerminal>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_DivotedTile_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumTreasureRoom</defName>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<prefabs>
+			<SWCPPrefabLootbox_FoodMeds>
+				<countPerHundredCells>10</countPerHundredCells>
+				<minMaxRange>0~5</minMaxRange>
+			</SWCPPrefabLootbox_FoodMeds>
+			
+		  <Subroom_SpacerCrates>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Subroom_SpacerCrates>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~5</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		  <AncientSpacerCrate_Cluster>
+			<countPerHundredCells>10</countPerHundredCells>
+			<minMaxRange>0~5</minMaxRange>
+		  </AncientSpacerCrate_Cluster>
+		  <AncientOpenContainer>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientOpenContainer>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		
+		<!-- <parts> -->
+		  <!-- <HunterDrone>0.2</HunterDrone> -->
+		  <!-- <WaspDrone>0.2</WaspDrone> -->
+		<!-- </parts> -->
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_XGrate_yellow</li>
+		</floorTypes>
+		<scatterTerrain>
+		  <guy762_FloorTiles_HuttOfficeTile>
+			<groupsPerHundredCells>5~8</groupsPerHundredCells>
+			<itemsPerGroup>10~15</itemsPerGroup>
+			<groupDistRange>1~5</groupDistRange>
+		  </guy762_FloorTiles_HuttOfficeTile>
+		</scatterTerrain>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumRecRoom</defName>
+		<minSingleRectWidth>7</minSingleRectWidth>
+		<minSingleRectHeight>7</minSingleRectHeight>
+		<prefabs>
+			<SWCPPrefab_PazaakTable>
+				<countRange>0~2</countRange>
+			</SWCPPrefab_PazaakTable>
+			<SWCPPrefab_HologramBandAndDancer>
+				<countRange>1</countRange>
+			</SWCPPrefab_HologramBandAndDancer>
+			
+		  <!-- <PokerTable> -->
+			<!-- <countRange>0~2</countRange> -->
+		  <!-- </PokerTable> -->
+		  <FlatscreenTelevision>
+			<countPerTenEdgeCells>1</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </FlatscreenTelevision>
+		  <!-- <ChessTable> -->
+			<!-- <countPerHundredCells>3</countPerHundredCells> -->
+			<!-- <minMaxRange>0~2</minMaxRange> -->
+		  <!-- </ChessTable> -->
+		  <Couch_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Couch_Edge>
+		  <Armchairs_Edge>
+			<countPerTenEdgeCells>5</countPerTenEdgeCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </Armchairs_Edge>
+		  
+		   <TVWithArmchairs>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TVWithArmchairs>
+		  
+		  
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+			<!-- <li>CarpetBrownLight</li> -->
+			<!-- <li>CarpetGranite</li> -->
+		</floorTypes>
+		<edgeTerrain>AncientTile</edgeTerrain>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

@@ -68,6 +68,21 @@
 	
 	
 	
+	<PrefabDef ParentName="SWCPTurretPrefab_FPC67AntiAirBASE">
+		<defName>SWCPTurretPrefab_FPC67AntiAir_HuttCartel</defName>
+		
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
 	
 	<PrefabDef ParentName="SWCPTurretPrefab_FPC67AntiAirBASE">
 		<defName>SWCPTurretPrefab_FPC67AntiAir_Militia</defName>
@@ -165,6 +180,22 @@
 		<modExtensions>
 			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
 				<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
+			</li>
+		</modExtensions>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	<PrefabDef ParentName="SWCPTurretPrefab_BP4AntiVehicleBASE">
+		<defName>SWCPTurretPrefab_BP4AntiVehicle_HuttCartel</defName>
+
+		<modExtensions>
+			<li Class="SWCP_Misc.PrefabDefExtension_Faction">
+				<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
 			</li>
 		</modExtensions>
 	</PrefabDef>

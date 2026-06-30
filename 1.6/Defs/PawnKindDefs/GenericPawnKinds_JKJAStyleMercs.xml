@@ -110,6 +110,7 @@
 		<weaponMoney>1000~4500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_CR1BlastCannon</li> <!-- needs merc bowcaster -->
+			<li>SWRanged_ACParraygun</li>
 		</weaponTags>
 		<biocodeWeaponChance>0.25</biocodeWeaponChance>
 		

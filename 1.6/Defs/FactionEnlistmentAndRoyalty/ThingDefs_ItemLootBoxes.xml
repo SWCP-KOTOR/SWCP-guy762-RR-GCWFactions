@@ -1,28 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-    <ThingDef ParentName="ResourceBase">
-        <defName>SWCPItemLootBox_FoodMeds</defName>
-        <label>supplies shipment</label>
-        <description>A supply container containing a random assortment of food and medical supplies. Each crate should be enough to last a squad one week.</description>
-        <graphicData>
-            <texPath>Buildings/SotE_singlecrate_blue</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.5</drawSize>
-        </graphicData>
-        <size>(1,1)</size>
+	
+	<ThingDef Name="SWCPItemLootBoxBASE" ParentName="ResourceBase" Abstract="True">
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Metal_Drop</soundDrop>
-        <stackLimit>1</stackLimit>
+		<stackLimit>1</stackLimit>
         <useHitPoints>true</useHitPoints>
-        <statBases>
-            <MarketValue>1000</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>10</Mass>
-            <Flammability>0.2</Flammability>
-        </statBases>
         <thingCategories>
             <li>ItemsMisc</li>
         </thingCategories>
@@ -31,10 +15,41 @@
         <tradeability>All</tradeability>
         <techLevel>Spacer</techLevel>
         <comps>
-            <li Class="CompProperties_Usable">
+			<li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
                 <useLabel>Open {0}</useLabel>
             </li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+		
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+			<li>SWCPSetMakerTag_SupplyWarehouseLoot</li>
+		</thingSetMakerTags>
+    </ThingDef>
+	
+	
+	
+	
+
+    <ThingDef ParentName="SWCPItemLootBoxBASE">
+        <defName>SWCPItemLootBox_FoodMeds</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
+        <label>supplies shipment</label>
+        <description>A supply container containing a random assortment of food and medical supplies. Each crate should be enough to last a squad one week.</description>
+        <graphicData>
+            <texPath>Buildings/SotE_singlecrate_blue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <comps>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>2</numWeightedDrops>
                 <guaranteedDrops>
@@ -78,12 +93,7 @@
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
 			</li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
-			<li Class="CompProperties_Forbiddable"/>
         </comps>
-		<thingSetMakerTags>
-		  <li>RewardStandardCore</li>
-		</thingSetMakerTags>
     </ThingDef>
 	
 	
@@ -93,7 +103,7 @@
 	
 	
 	
-	<ThingDef ParentName="ResourceBase">
+	<ThingDef ParentName="SWCPItemLootBoxBASE">
         <defName>SWCPItemLootBox_DrugsAlcohol</defName>
         <label>party crate</label>
         <description>A supply container containing a random assortment of luxury foodstuffs, drugs, and alcohol.</description>
@@ -103,29 +113,13 @@
             <drawSize>1.5</drawSize>
         </graphicData>
         <size>(1,1)</size>
-        <resourceReadoutPriority>Middle</resourceReadoutPriority>
-        <soundInteract>Metal_Drop</soundInteract>
-        <soundDrop>Metal_Drop</soundDrop>
-        <stackLimit>1</stackLimit>
-        <useHitPoints>true</useHitPoints>
         <statBases>
             <MarketValue>2500</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
-        <thingCategories>
-            <li>ItemsMisc</li>
-        </thingCategories>
-        <drawGUIOverlay>false</drawGUIOverlay>
-        <!-- <tradeability>Sellable</tradeability> -->
-        <tradeability>All</tradeability>
-        <techLevel>Spacer</techLevel>
         <comps>
-            <li Class="CompProperties_Usable">
-                <useJob>UseItem</useJob>
-                <useLabel>Open {0}</useLabel>
-            </li>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>2</numWeightedDrops>
                 <guaranteedDrops>
@@ -185,12 +179,7 @@
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
 			</li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
-			<li Class="CompProperties_Forbiddable"/>
         </comps>
-		<thingSetMakerTags>
-			<li>RewardStandardCore</li>
-		</thingSetMakerTags>
 		<tradeTags>
 			<li>guy762TT_GCWItemLootBoxes_any</li>
 			<li>guy762TT_GCWItemLootBoxes_illegal</li>
@@ -199,39 +188,23 @@
 	
 	
 	
-	<ThingDef ParentName="ResourceBase">
-        <defName>SWCPItemLootBox_RawFood</defName>
+	<ThingDef ParentName="SWCPItemLootBoxBASE">
+        <defName>SWCPItemLootBox_RawFood</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
         <label>foodstuff shipment</label>
         <description>A shipment of bulk grains, animal products, and more.</description>
         <graphicData>
-            <texPath>Buildings/SotE_singlecrate_red</texPath>
+            <texPath>Buildings/SotE_singlecrate_green</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.5</drawSize>
         </graphicData>
         <size>(1,1)</size>
-        <resourceReadoutPriority>Middle</resourceReadoutPriority>
-        <soundInteract>Metal_Drop</soundInteract>
-        <soundDrop>Metal_Drop</soundDrop>
-        <stackLimit>1</stackLimit>
-        <useHitPoints>true</useHitPoints>
         <statBases>
             <MarketValue>1750</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
-        <thingCategories>
-            <li>ItemsMisc</li>
-        </thingCategories>
-        <drawGUIOverlay>false</drawGUIOverlay>
-        <!-- <tradeability>Sellable</tradeability> -->
-        <tradeability>All</tradeability>
-        <techLevel>Spacer</techLevel>
         <comps>
-            <li Class="CompProperties_Usable">
-                <useJob>UseItem</useJob>
-                <useLabel>Open {0}</useLabel>
-            </li>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>1</numWeightedDrops>
                 <weightedDrops>
@@ -349,12 +322,7 @@
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
 			</li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
-			<li Class="CompProperties_Forbiddable"/>
         </comps>
-		<thingSetMakerTags>
-			<li>RewardStandardCore</li>
-		</thingSetMakerTags>
 		<tradeTags>
 			<li>guy762TT_GCWItemLootBoxes_any</li>
 			<li>guy762TT_GCWItemLootBoxes_food</li>
@@ -371,39 +339,23 @@
 	
 	
 	
-	<ThingDef ParentName="ResourceBase">
-        <defName>SWCPItemLootBox_Meals</defName>
+	<ThingDef ParentName="SWCPItemLootBoxBASE">
+        <defName>SWCPItemLootBox_Meals</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
         <label>meal shipment</label>
         <description>A shipment of pre-cooked, ready-to-eat meals.</description>
         <graphicData>
-            <texPath>Buildings/SotE_singlecrate_red</texPath>
+            <texPath>Buildings/SotE_singlecrate_yellow</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.5</drawSize>
         </graphicData>
         <size>(1,1)</size>
-        <resourceReadoutPriority>Middle</resourceReadoutPriority>
-        <soundInteract>Metal_Drop</soundInteract>
-        <soundDrop>Metal_Drop</soundDrop>
-        <stackLimit>1</stackLimit>
-        <useHitPoints>true</useHitPoints>
         <statBases>
             <MarketValue>1750</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
-        <thingCategories>
-            <li>ItemsMisc</li>
-        </thingCategories>
-        <drawGUIOverlay>false</drawGUIOverlay>
-        <!-- <tradeability>Sellable</tradeability> -->
-        <tradeability>All</tradeability>
-        <techLevel>Spacer</techLevel>
         <comps>
-            <li Class="CompProperties_Usable">
-                <useJob>UseItem</useJob>
-                <useLabel>Open {0}</useLabel>
-            </li>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>1</numWeightedDrops>
                 <weightedDrops>
@@ -477,12 +429,7 @@
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_scrappile_open</soundOnUsed>
 			</li>
-            <li Class="CompProperties_UseEffectDestroySelf"/>
-			<li Class="CompProperties_Forbiddable"/>
         </comps>
-		<thingSetMakerTags>
-			<li>RewardStandardCore</li>
-		</thingSetMakerTags>
 		<tradeTags>
 			<li>guy762TT_GCWItemLootBoxes_any</li>
 			<li>guy762TT_GCWItemLootBoxes_food</li>

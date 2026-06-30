@@ -37,6 +37,10 @@
 	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_HoverTransportTC9">
         <defName>guy762_SWShuttleTransportShip_HoverTransportTC9_PDF</defName>
     </TransportShipDef>
+	
+	<TransportShipDef ParentName="guy762_SWShuttleTransportShip_HoverTransportTC9">
+        <defName>guy762_SWShuttleTransportShip_HoverTransportTC9_slaverguild</defName>
+    </TransportShipDef>
 
     <!--_____ Building ThingDefs _____-->
 

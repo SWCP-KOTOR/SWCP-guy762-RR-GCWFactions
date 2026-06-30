@@ -153,11 +153,16 @@
 					<guy762_SWWarlordsFaction_MandoClan>25~50</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
 					<guy762_SWWarlordsFaction_LocalWarlord>-50~0</guy762_SWWarlordsFaction_LocalWarlord>
+					<guy762_SWWarlordsFaction_SlaverGuild>100</guy762_SWWarlordsFaction_SlaverGuild>
+					<!-- <guy762_SWWarlordsFaction_LocalPirates>-100</guy762_SWWarlordsFaction_LocalPirates> -->
+					
 					<!-- <guy762_SWWarlordsFaction_CSA>100</guy762_SWWarlordsFaction_CSA> -->
 
 					<guy762_KotORFaction_Civilians>-50</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
+					
+					<guy762_GCWPlayerFaction_Invids>0~25</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>
@@ -433,6 +438,30 @@
 					<xSWZsinj_ArmyIon_1x>100</xSWZsinj_ArmyIon_1x>
 					<!-- <xSWZsinj_ArmyMedic_2x>100</xSWZsinj_ArmyMedic_2x> -->
 					<xSWZsinj_ArmyLieutenant_2x>100</xSWZsinj_ArmyLieutenant_2x>
+				</options>
+			</li>
+			
+			<li>
+				<!-- jedi outcast merc skirmish -->
+				<kindDef>Combat</kindDef>
+				<commonality>950</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_JKRodian_24x>100</xSWZsinj_JKRodian_24x>
+					<xSWZsinj_JKHumanMerc_16x>100</xSWZsinj_JKHumanMerc_16x>
+					<xSWZsinj_JKWeequay_8x>100</xSWZsinj_JKWeequay_8x>
+					<xSWZsinj_JKTrando_8x>100</xSWZsinj_JKTrando_8x>
+					<xSWZsinj_JKRocketTrando_4x>100</xSWZsinj_JKRocketTrando_4x>
+					<xSWZsinj_JKSniperRodian_1x>100</xSWZsinj_JKSniperRodian_1x>
 				</options>
 			</li>
 			

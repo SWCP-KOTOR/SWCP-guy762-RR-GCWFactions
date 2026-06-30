@@ -117,19 +117,6 @@
 			<li>guy762_ScumGamorreanLeathers</li>
 		</apparelRequired>
 		
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<stuff>Leather_Plain</stuff>
-				<color>(130,75,50)</color> <!-- copper -->
-			</li>
-			<li>
-				<apparelLayer>OnSkin</apparelLayer>
-				<stuff>Leather_Plain</stuff>
-				<color>(130,75,50)</color> <!-- copper -->
-			</li>
-		</specificApparelRequirements>
-		
 		<weaponMoney>1500~3000</weaponMoney>
 		<weaponTags>
 			<li>SWMelee_Vibroaxe</li>
@@ -581,6 +568,8 @@
 		<label>slave</label>
 		<combatPower>20</combatPower>
 		<itemQuality>Awful</itemQuality>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
+		
 		<gearHealthRange>0.2~0.8</gearHealthRange>
 		<apparelMoney>0~0</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -589,16 +578,16 @@
 			<li>SWCPSpecificApparelItem_RusticClothing</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>Apparel_BodyStrap</li>	
+		   <!-- <li>Apparel_BodyStrap</li> -->
 		   <li>Apparel_Collar</li>
 		   <li>guy762_Clothing_scumII</li>
 		</apparelRequired>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
 		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Shell</apparelLayer>
-				<stuff>Leather_Plain</stuff>
-			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Shell</apparelLayer> -->
+				<!-- <stuff>Leather_Plain</stuff> -->
+			<!-- </li> -->
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>Steel</stuff>
@@ -607,11 +596,11 @@
 		
 		<isFighter>false</isFighter>
 		<requiredWorkTags>
-			<li>Firefighting</li>
-			<li>ManualDumb</li>
-			<li>Mining</li>
-			<li>Hauling</li>
-			<li>PlantWork</li>
+		   <li>Firefighting</li>
+		   <li>ManualDumb</li>
+		   <li>Mining</li>
+		   <li>Hauling</li>
+		   <li>PlantWork</li>
 		</requiredWorkTags>
 	</PawnKindDef>
 	
@@ -627,10 +616,18 @@
 	<PawnKindDef Name="SWHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
 		<defName>SWHutts_SlaveEntertainer</defName>
 		<label>slave</label>
-		<!-- <defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType> -->
-		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
+		<!-- <defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType> -->
 		
 		<!--fixedGender>Female</fixedGender-->
+		
+		<isFighter>false</isFighter>
+		<requiredWorkTags>
+			<li>Firefighting</li>
+			<li>ManualDumb</li>
+			<li>Social</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
 	</PawnKindDef>
 	
 	

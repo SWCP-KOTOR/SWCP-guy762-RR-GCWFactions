@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>guy762_GCWScenario_Invids</defName>
+		<label>[DEBUG] Invids</label>
+		<description>.</description>
+		<scenario>
+			<summary>.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>guy762_GCWPlayerFaction_Invids</factionDef>
+			</playerFaction>
+			
+			<parts>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+				  <def>GameStartDialog</def>
+				  <text>.</text>
+				  <closeSound>GameStartSting</closeSound>
+				</li>
+				
+				<li Class="ScenPart_ForcedMap">
+					<def>ForcedMap</def>
+					<mapGenerator>OrbitalRelay</mapGenerator>
+					<layerDef>SWCPPlanetLayer_NevarroOrbit</layerDef>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Gravship</method>
+				</li>
+			
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+				  <def>ConfigurePawnsKindDefs</def>
+				  <pawnChoiceCount>2</pawnChoiceCount>
+				  <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+				  <kindCounts>
+
+					<li>
+						<kindDef>SWWEPlayableVillain_LeoniaTavira</kindDef>
+						<count>1</count>
+						<requiredAtStart>true</requiredAtStart>
+					</li>
+					
+					<li>
+						<kindDef>SWWEPlayableVillain_MiltinTakel</kindDef>
+						<count>1</count>
+						<requiredAtStart>true</requiredAtStart>
+					</li>
+					
+					<!-- <li> -->
+						<!-- <kindDef>SWInvids_pirate</kindDef> -->
+						<!-- <count>3</count> -->
+						<!-- <requiredAtStart>true</requiredAtStart> -->
+					<!-- </li> -->
+					
+				  </kindCounts>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>MicroelectronicsBasics</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Fabrication</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>AdvancedFabrication</project>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>SWCPResearch_PLACEHOLDER</project>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Batteries</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ColoredLights</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Pemmican</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>WatermillGenerator</project>
+				</li>
+
+				
+				
+				
+				
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<count>250000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>SWCPItemLootBox_FoodMeds</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>SWCPItemLootBox_RawFood</thingDef>
+					<count>6</count>
+				</li>
+
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+				</li>  
+				
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsAnywhere</def>
+				  <thingDef>MealSurvivalPack</thingDef>
+				  <count>7</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsAnywhere</def>
+				  <thingDef>guy762_medpac_life</thingDef>
+				  <count>10</count>
+				</li>
+				
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				
+				
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk_durasteel</thingDef>
+					<count>10</count>
+				</li>
+				
+				
+				
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ChunkSlagSteel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>KotORChunk_plasteel</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>KotORChunk_durasteel</thingDef>
+					<count>25</count>
+				</li>
+
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+
+
+
+
+
+
+
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>guy762_GCWPlayerFaction_Invids</defName>
+		<label>Invids</label>
+		<description>The pirate gang of the former Imperial Moff, Leonia Tavira. Named after her flagship, the ISD Invidious.</description>
+		<factionIconPath>World/Invids</factionIconPath>
+		<colorSpectrum Inherit="False">
+			<li>RGB(190,45,110)</li> <!-- Invid Pink -->
+		</colorSpectrum>
+		
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>SWInvids_pirate</basicMemberKind>
+		<pawnSingular>Invid</pawnSingular>
+		<pawnsPlural>Invids</pawnsPlural>
+		<techLevel>Spacer</techLevel>
+		
+		<fixedName>Invids</fixedName>
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+
+		<modExtensions>
+			<li Class="FCP.Enlist.FactionEnlistOptions">
+				<enlistOptionsDefs>
+					<li>guy762_SWFactionEnlistment_Invids</li>
+				</enlistOptionsDefs>
+				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+			</li>
+		</modExtensions>
+		
+
+		<allowedCultures>
+			<li>guy762_culture_outerrim</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienRaces_Abhorrent</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienRaces_Horrible</li>
+			
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_Acceptable</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_Preferred</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_RequiredStrong</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			
+			<!--<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Required</li>-->
+		</disallowedPrecepts>
+		
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		
+		
+		<startingResearchTags>
+		  <li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

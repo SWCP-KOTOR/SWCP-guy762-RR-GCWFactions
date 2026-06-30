@@ -2,25 +2,25 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>guy762_SWWarlordsFaction_ViciousHutts</defName>
-		<label>vicious Hutt cartel</label>
+		<defName>guy762_SWWarlordsFaction_SlaverGuild</defName>
+		<label>slaver guild</label>
 		<!-- <fixedName></fixedName> -->
-		<factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
-		<description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile some Hutt Kajidics maintain cordial relations with outside groups, others believe it is the Hutt's divine right to rule the galaxy and strike out openly at the lesser non-Hutt groups, raiding and pillaging as they see fit.</description>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker>
+		<description>.</description>
 		
-		<pawnSingular>scum</pawnSingular>
-		<pawnsPlural>scum</pawnsPlural>
+		<pawnSingular>slaver</pawnSingular>
+		<pawnsPlural>slavers</pawnsPlural>
 		<categoryTag>Pirate</categoryTag>
-		<factionIconPath>World/HuttsBesadii</factionIconPath>
+		<factionIconPath>World/Trandoshan</factionIconPath>
 		<colorSpectrum>
 			<li>RGB(225,225,125)</li> <!-- EaWX sun yellow -->
 		</colorSpectrum>
 		
-		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<maxCountAtGameStart>8</maxCountAtGameStart>
-		<listOrderPriority>1774</listOrderPriority>
-		<configurationListOrderPriority>1774</configurationListOrderPriority>
+		<listOrderPriority>1778</listOrderPriority>
+		<configurationListOrderPriority>1778</configurationListOrderPriority>
 		<techLevel>Spacer</techLevel>
 		
 		<canMakeRandomly>true</canMakeRandomly>
@@ -34,7 +34,7 @@
 
 		
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
-		<leaderTitle>kajidii</leaderTitle>
+		<leaderTitle>slavelord</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<fixedLeaderKinds>
@@ -52,7 +52,7 @@
 			
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
@@ -60,7 +60,7 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 			
@@ -74,17 +74,17 @@
 			
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li>
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
@@ -100,7 +100,7 @@
 				<currency>Silver</currency>
 			</li>
 			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
-				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_vicioushutts</transportShipDef>
+				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_slaverguild</transportShipDef>
 				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
 			</li>
@@ -112,28 +112,33 @@
 					<guy762_SWWarlordsFaction_RebelCell>-100</guy762_SWWarlordsFaction_RebelCell>
 					<guy762_SWWarlordsFaction_PartisanCell>-100</guy762_SWWarlordsFaction_PartisanCell>
 					
-					<guy762_SWWarlordsFaction_ImpRemnant>-100</guy762_SWWarlordsFaction_ImpRemnant>
-					<guy762_SWWarlordsFaction_ZsinjDominion>0</guy762_SWWarlordsFaction_ZsinjDominion>
-					<guy762_SWWarlordsFaction_Pentastar>-100</guy762_SWWarlordsFaction_Pentastar>
+					<guy762_SWWarlordsFaction_ImpRemnant>0</guy762_SWWarlordsFaction_ImpRemnant>
+					<guy762_SWWarlordsFaction_ZsinjDominion>100</guy762_SWWarlordsFaction_ZsinjDominion>
+					<guy762_SWWarlordsFaction_Pentastar>100</guy762_SWWarlordsFaction_Pentastar>
 					
-					<guy762_SWWarlordsFaction_GreaterMaldrood>-100</guy762_SWWarlordsFaction_GreaterMaldrood>
-					<guy762_SWWarlordsFaction_EriaduAuthority>-100</guy762_SWWarlordsFaction_EriaduAuthority>
-					<!-- <guy762_SWWarlordsFaction_ImpMandalore>-100</guy762_SWWarlordsFaction_ImpMandalore> -->
+					<guy762_SWWarlordsFaction_GreaterMaldrood>100</guy762_SWWarlordsFaction_GreaterMaldrood>
+					<guy762_SWWarlordsFaction_EriaduAuthority>100</guy762_SWWarlordsFaction_EriaduAuthority>
+					<!-- <guy762_SWWarlordsFaction_ImpMandalore>100</guy762_SWWarlordsFaction_ImpMandalore> -->
 					
-					<guy762_SWWarlordsFaction_ZannConsortium>-100</guy762_SWWarlordsFaction_ZannConsortium>
-					<guy762_SWWarlordsFaction_BlackSun>-100</guy762_SWWarlordsFaction_BlackSun>
-					<guy762_SWWarlordsFaction_HuttCartel>-100</guy762_SWWarlordsFaction_HuttCartel>
-					<guy762_SWWarlordsFaction_ViciousHutts>-100</guy762_SWWarlordsFaction_ViciousHutts>
+					<guy762_SWWarlordsFaction_ZannConsortium>0</guy762_SWWarlordsFaction_ZannConsortium>
+					<guy762_SWWarlordsFaction_BlackSun>0</guy762_SWWarlordsFaction_BlackSun>
+					<guy762_SWWarlordsFaction_HuttCartel>100</guy762_SWWarlordsFaction_HuttCartel>
+					<guy762_SWWarlordsFaction_ViciousHutts>100</guy762_SWWarlordsFaction_ViciousHutts>
 					<!-- . -->
 					
 					<guy762_SWWarlordsFaction_MandoClan>-100</guy762_SWWarlordsFaction_MandoClan>
 					<guy762_SWWarlordsFaction_PDF>-100</guy762_SWWarlordsFaction_PDF>
-					<guy762_SWWarlordsFaction_LocalWarlord>-100</guy762_SWWarlordsFaction_LocalWarlord>
+					<guy762_SWWarlordsFaction_LocalWarlord>0</guy762_SWWarlordsFaction_LocalWarlord>
+					<guy762_SWWarlordsFaction_SlaverGuild>0</guy762_SWWarlordsFaction_SlaverGuild>
+					<!-- <guy762_SWWarlordsFaction_LocalPirates>-100</guy762_SWWarlordsFaction_LocalPirates> -->
+					
 					<!-- <guy762_SWWarlordsFaction_CSA>-100</guy762_SWWarlordsFaction_CSA> -->
 		
 					<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
+					
+					<guy762_GCWPlayerFaction_Invids>-100</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>
@@ -187,40 +192,8 @@
                     <!-- </li> -->
                 <!-- </namedSettlements> -->
             <!-- </li> -->
-			
-			<li Class="FCP.Factions.FactionExtension_FixedIdeo">
-				<ideoIconDef>guy762_IdeoIcon_huttsB</ideoIconDef>
-				<ideoColorDef>guy762_IdeoFactionColor_SunYellow</ideoColorDef>
-				<!--memberName>Citizen</memberName>
-				<adjective>NCR Republican</adjective-->
-				<roleOverrides>
-					<li>
-						<preceptDef>IdeoRole_Leader</preceptDef>
-						<newName>Kajidii</newName>
-						<disableApparelRequirements>true</disableApparelRequirements>
-					</li>
-					<li>
-						<preceptDef>IdeoRole_Moralist</preceptDef>
-						<newName>Vizier</newName>
-						<disableApparelRequirements>true</disableApparelRequirements>
-						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-					</li>
-					<li>
-						<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
-						<newName>Enforcer</newName>
-						<disableApparelRequirements>true</disableApparelRequirements>
-						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-					</li>
-					<li>
-						<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
-						<newName>Executioner</newName>
-						<disableApparelRequirements>true</disableApparelRequirements>
-						<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-					</li>
-				</roleOverrides>
-			</li>
 		</modExtensions>
-		<settlementGenerationWeight>3</settlementGenerationWeight>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
 		
 		
 		<!-- <royalTitleTags> -->
@@ -249,28 +222,22 @@
 		
 		
 		<allowedCultures>
-			<li>Kriminul</li>
+			<li>guy762_culture_exchange</li>
 		</allowedCultures>
-		<!--styles>
+		<styles>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
-		</styles-->
-		
-		<fixedIdeo>true</fixedIdeo>
-		<ideoName>Kajidic Feudalism</ideoName>
-		<ideoDescription>.</ideoDescription>
+		</styles>
 		
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_hutt</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li>guy762_MemeDef_exchange</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 		</requiredMemes>
 		<allowedMemes>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_CultOfPersonality</li>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 		</allowedMemes>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
@@ -297,6 +264,8 @@
 			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
 			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
 		</disallowedPrecepts>
+		
+		
 		
 		<xenotypeSet>
 		  <xenotypeChances> <!-- these are basically just for civilians -->
@@ -339,21 +308,9 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-			  <li>Outlander</li>
-			</categories>
-			<commonality>0.2</commonality>
-		  </li>
-		  <li>
-			<categories>
-			  <li>Offworld</li>
-			</categories>
-			<commonality>0.4</commonality>
-		  </li>
-		  <li>
-			<categories>
 			  <li>Pirate</li>
 			</categories>
-			<commonality>0.4</commonality>
+			<commonality>1</commonality>
 		  </li>
 		</backstoryFilters>
 		
@@ -411,19 +368,19 @@
 			
 			
 			<!-- bombers and interceptor escort -->
-			<li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid">
-				<kindDef>Combat</kindDef>
-				<commonality>900</commonality>
-				<minPoints>2000</minPoints>
-				<minAircraftCount>3</minAircraftCount>
-				<maxAircraftCount>5</maxAircraftCount>
-				<options>
-					<guy762_SWVehicle_Scyk_bot_PawnKind>5</guy762_SWVehicle_Scyk_bot_PawnKind>
-					<guy762_SWVehicle_Z95Hutts_bot_PawnKind>3</guy762_SWVehicle_Z95Hutts_bot_PawnKind>
+			<!-- <li MayRequire="SWCP.GCWVehicles" Class="taranchuk_flightcombat.PawnGroupMaker_FlightRaid"> -->
+				<!-- <kindDef>Combat</kindDef> -->
+				<!-- <commonality>900</commonality> -->
+				<!-- <minPoints>2000</minPoints> -->
+				<!-- <minAircraftCount>3</minAircraftCount> -->
+				<!-- <maxAircraftCount>5</maxAircraftCount> -->
+				<!-- <options> -->
+					<!-- <guy762_SWVehicle_Scyk_bot_PawnKind>5</guy762_SWVehicle_Scyk_bot_PawnKind> -->
+					<!-- <guy762_SWVehicle_Z95Hutts_bot_PawnKind>3</guy762_SWVehicle_Z95Hutts_bot_PawnKind> -->
 					
-					<guy762_SWVehicle_Kimogila_bot_PawnKind>2</guy762_SWVehicle_Kimogila_bot_PawnKind>
-				</options>
-			</li>
+					<!-- <guy762_SWVehicle_Kimogila_bot_PawnKind>2</guy762_SWVehicle_Kimogila_bot_PawnKind> -->
+				<!-- </options> -->
+			<!-- </li> -->
 
 			
 			
@@ -447,140 +404,19 @@
 					<li>ImmediateAttackBreachingSmart</li>
 				</disallowedStrategies>
 				<options>
-					<xSWHutts_ThugPistoleer_21x>100</xSWHutts_ThugPistoleer_21x>
-					<xSWHutts_ThugRifleman_21x>100</xSWHutts_ThugRifleman_21x>
-					<!-- <xSWHutts_ThugRepeater_3x>100</xSWHutts_ThugRepeater_3x> -->
-					<!-- <xSWHutts_ThugRocketeer_3x>100</xSWHutts_ThugRocketeer_3x> -->
-					
-					<xSWHutts_Lieutenant_3x>100</xSWHutts_Lieutenant_3x>
-				</options>
-			</li>
-			
-			<!-- warrior blitz -->
-			<li>
-				<kindDef>Combat</kindDef>
-				<commonality>950</commonality>
-				<disallowedStrategies>
-					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-					<li>Siege</li>
-					<li>EmergeFromWater</li>
-					<li>StageThenAttack</li>
-					<li>ImmediateAttackSappers</li>
-					<li>ImmediateAttackBreaching</li>
-					<li>ImmediateAttackBreachingSmart</li>
-				</disallowedStrategies>
-				<options>
-					<xSWHutts_WarriorPikeman_21x>100</xSWHutts_WarriorPikeman_21x>
-					<xSWHutts_WarriorSwordsman_14x>100</xSWHutts_WarriorSwordsman_14x>
-					<xSWHutts_WarriorShotgun_4x>100</xSWHutts_WarriorShotgun_4x>
-					<xSWHutts_WarriorSniper_3x>100</xSWHutts_WarriorSniper_3x>
-					
-					<xSWHutts_Lieutenant_3x>100</xSWHutts_Lieutenant_3x>
+					<xSWZsinj_JKRodian_24x>100</xSWZsinj_JKRodian_24x>
+					<xSWZsinj_JKHumanMerc_16x>100</xSWZsinj_JKHumanMerc_16x>
+					<xSWZsinj_JKWeequay_8x>100</xSWZsinj_JKWeequay_8x>
+					<xSWZsinj_JKTrando_8x>100</xSWZsinj_JKTrando_8x>
+					<xSWZsinj_JKRocketTrando_4x>100</xSWZsinj_JKRocketTrando_4x>
+
+					<xSWZsinj_JKSniperRodian_1x>100</xSWZsinj_JKSniperRodian_1x>
 				</options>
 			</li>
 			
 			
-
-
-		<li>
-			<!-- gamorrean blitz -->
-			<kindDef>Combat</kindDef>
-			<commonality>100</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>StageThenAttack</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWHutts_thug>50</SWHutts_thug>
-			  <SWHutts_gamorreanlgt>100</SWHutts_gamorreanlgt>
-			</options>
-		  </li>
-		  
-		  
-		  <li>
-			<!-- skirmish -->
-			<kindDef>Combat</kindDef>
-			<commonality>75</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>ImmediateAttackSmart</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWHutts_soldier>100</SWHutts_soldier>
-			  <SWHutts_thug>50</SWHutts_thug>
-			  
-			  <SWHutts_gamorreanlgt>25</SWHutts_gamorreanlgt>
-			  
-			  <SWHutts_lieutenant>10</SWHutts_lieutenant>
-			</options>
-		  </li>
-		  <li>
-			<!-- jedi outcast-style skirmish -->
-			<kindDef>Combat</kindDef>
-			<commonality>10</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>ImmediateAttackSmart</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-				<SWScum_JKRodian>100</SWScum_JKRodian>
-				<SWScum_JKHumanMerc>75</SWScum_JKHumanMerc>
-				<SWScum_JKWeequay>50</SWScum_JKWeequay>
-				<SWScum_JKTrando>25</SWScum_JKTrando>
-				<SWScum_JKSniperRodian>10</SWScum_JKSniperRodian>
-
-				<SWScum_JKRocketTrando>100</SWScum_JKRocketTrando>
-			</options>
-		  </li>
-		  
-		  
-		  <li>
-			<kindDef>Combat</kindDef> <!-- assault -->
-			<commonality>50</commonality>
-			<disallowedStrategies>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
-				<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
-				<li>Siege</li>
-				<li>EmergeFromWater</li>
-				<li>StageThenAttack</li>
-				<li>ImmediateAttackSappers</li>
-				<li>ImmediateAttackBreaching</li>
-				<li>ImmediateAttackBreachingSmart</li>
-			</disallowedStrategies>
-			<options>
-			  <SWHutts_soldier>75</SWHutts_soldier>
-			  <SWHutts_thug>50</SWHutts_thug>
-			  
-			  <SWHutts_gamorreanlgt>50</SWHutts_gamorreanlgt>
-			  <SWHutts_gamorreanhvy>25</SWHutts_gamorreanhvy>
-			  
-			  <!-- <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">75</KotORDroidBad_DevWD_weak> -->
-			  
-			  <SWHutts_lieutenant>25</SWHutts_lieutenant>
-			</options>
-		  </li>
-		  
-		  
-		  
+			
+			
 		  <!-- trandoshan slaver raid -->
 		  <!-- <li> -->
 			<!-- <kindDef>Combat</kindDef> -->

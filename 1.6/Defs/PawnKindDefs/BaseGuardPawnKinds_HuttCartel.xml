@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+	
 		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li> -->
+			
 			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
 			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
 			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
@@ -10,86 +15,13 @@
 		<!-- <modExtensions> -->
 			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
 		<!-- </modExtensions> -->
-		
 	
 	
 	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ fortress guard platoon -->
 	
-	
-	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ thug rabble -->	
-	
-	<PawnKindDef Name="xSWHutts_ThugPistoleer_21x" ParentName="SWHutts_thug">
-		<defName>xSWHutts_ThugPistoleer_21x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>21</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_DL18pistol</li>
-			<li>SWRanged_DL21pistol</li>
-			<li>SWRanged_E5rifle</li>
-		</weaponTags>
-		<apparelTags Inherit="False">
-			<li>SWWarlordsAccessory_scumtrooper</li>
-			<li>SWCPSpecificApparelItem_Bandana</li>
-		</apparelTags>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	
-	
-	<PawnKindDef Name="xSWHutts_ThugRifleman_21x" ParentName="SWHutts_thug">
-		<defName>xSWHutts_ThugRifleman_21x</defName>
-		<combatPower>1</combatPower>
-		<maxPerGroup>21</maxPerGroup>
-		<weaponMoney>99999</weaponMoney>
-		<weaponTags Inherit="False">
-			<li>SWRanged_E5rifle</li>
-			<li>SWRanged_DLT18rifle</li>
-		</weaponTags>
-		<apparelTags Inherit="False">
-			<li>SWWarlordsAccessory_scumtrooper</li>
-			<li>SWGCWSpecificApparelItem_GamorreanLeatherHood</li>
-			<li>ScumAndVillainy_flakhat</li>
-			<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
-		</apparelTags>
-		<apparelRequired>
-			<li>guy762_ScumWeequayArmor</li>
-		</apparelRequired>
-		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
-		</startingHediffs>
-		<modExtensions>
-			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
-		</modExtensions>
-	</PawnKindDef>
-	
-	<!-- NEEDS: 3x light repeaters, 3x CIS rocket launchers -->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ warrior platoon -->	
-	
-	<PawnKindDef Name="xSWHutts_WarriorPikeman_21x" ParentName="SWHutts_soldier">
-		<defName>xSWHutts_WarriorPikeman_21x</defName>
+	<PawnKindDef Name="xgSWHutts_WarriorPikeman_21x" ParentName="SWHutts_soldier">
+		<defName>xgSWHutts_WarriorPikeman_21x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>21</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
@@ -103,15 +35,15 @@
 			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		</apparelTags>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_WarriorSwordsman_14x" ParentName="SWHutts_soldier">
-		<defName>xSWHutts_WarriorSwordsman_14x</defName>
+	<PawnKindDef Name="xgSWHutts_WarriorSwordsman_14x" ParentName="SWHutts_soldier">
+		<defName>xgSWHutts_WarriorSwordsman_14x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>14</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
@@ -125,7 +57,7 @@
 			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		</apparelTags>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -134,8 +66,8 @@
 	
 	
 	
-	<PawnKindDef Name="xSWHutts_WarriorShotgun_4x" ParentName="SWHutts_soldier">
-		<defName>xSWHutts_WarriorShotgun_4x</defName>
+	<PawnKindDef Name="xgSWHutts_WarriorShotgun_4x" ParentName="SWHutts_soldier">
+		<defName>xgSWHutts_WarriorShotgun_4x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
@@ -149,7 +81,7 @@
 			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		</apparelTags>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -160,8 +92,8 @@
 	</PawnKindDef>
 	
 	
-	<PawnKindDef Name="xSWHutts_WarriorSniper_3x" ParentName="SWHutts_soldier">
-		<defName>xSWHutts_WarriorSniper_3x</defName>
+	<PawnKindDef Name="xgSWHutts_WarriorSniper_3x" ParentName="SWHutts_soldier">
+		<defName>xgSWHutts_WarriorSniper_3x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 		<weaponMoney>99999</weaponMoney>
@@ -175,7 +107,7 @@
 			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		</apparelTags>
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -186,23 +118,19 @@
 	</PawnKindDef>
 	
 	
+	<!-- NEEDS: 3x light repeaters, 3x CIS rocket launchers -->
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	<PawnKindDef Name="xSWHutts_Lieutenant_3x" ParentName="SWHutts_lieutenant">
-		<defName>xSWHutts_Lieutenant_3x</defName>
+	<PawnKindDef Name="xgSWHutts_Lieutenant_3x" ParentName="SWHutts_lieutenant">
+		<defName>xgSWHutts_Lieutenant_3x</defName>
 		<combatPower>1</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
@@ -214,86 +142,87 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+
 	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ JK underworld goons -->
 	
-	<PawnKindDef Name="xSWHutts_JKRodian_24x" ParentName="SWScum_JKRodian">
-		<defName>xSWHutts_JKRodian_24x</defName>
+	<PawnKindDef Name="xgSWHutts_JKRodianBaseGuard" ParentName="SWScum_JKRodian">
+		<defName>xgSWHutts_JKRodianBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>24</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_JKHumanMerc_16x" ParentName="SWScum_JKHumanMerc">
-		<defName>xSWHutts_JKHumanMerc_16x</defName>
+	<PawnKindDef Name="xgSWHutts_JKHumanMercBaseGuard" ParentName="SWScum_JKHumanMerc">
+		<defName>xgSWHutts_JKHumanMercBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>16</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_JKWeequay_8x" ParentName="SWScum_JKWeequay">
-		<defName>xSWHutts_JKWeequay_8x</defName>
+	<PawnKindDef Name="xgSWHutts_JKWeequayBaseGuard" ParentName="SWScum_JKWeequay">
+		<defName>xgSWHutts_JKWeequayBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>8</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_JKTrando_8x" ParentName="SWScum_JKTrando">
-		<defName>xSWHutts_JKTrando_8x</defName>
+	<PawnKindDef Name="xgSWHutts_JKTrandoBaseGuard" ParentName="SWScum_JKTrando">
+		<defName>xgSWHutts_JKTrandoBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>8</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_JKRocketTrando_4x" ParentName="SWScum_JKRocketTrando">
-		<defName>xSWHutts_JKRocketTrando_4x</defName>
+	<PawnKindDef Name="xgSWHutts_JKRocketTrandoBaseGuard" ParentName="SWScum_JKRocketTrando">
+		<defName>xgSWHutts_JKRocketTrandoBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWHutts_JKSniperRodian_1x" ParentName="SWScum_JKSniperRodian">
-		<defName>xSWHutts_JKSniperRodian_1x</defName>
+	<PawnKindDef Name="xgSWHutts_JKSniperRodianBaseGuard" ParentName="SWScum_JKSniperRodian">
+		<defName>xgSWHutts_JKSniperRodianBaseGuard</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>1</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		
 		<startingHediffs>
-			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
@@ -302,4 +231,93 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWHutts_PilotBaseGuard" ParentName="SWHutts_pilot">
+		<defName>xgSWHutts_PilotBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWHutts_SmugglerBaseGuard" ParentName="SWHutts_smuggler">
+		<defName>xgSWHutts_SmugglerBaseGuard</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="xgSWHutts_MandoMercBaseGuard" ParentName="SWMando_merc">
+		<defName>xgSWHutts_MandoMercBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWHutts_Slave" ParentName="SWHutts_slave">
+		<defName>xgSWHutts_Slave</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWHutts_SlaveEntertainer" ParentName="SWHutts_SlaveEntertainer">
+		<defName>xgSWHutts_SlaveEntertainer</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+
 </Defs>

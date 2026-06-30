@@ -205,6 +205,12 @@
 			<!-- <SWCPRoomLayout_MilitiaWeaponsStorage> -->
 				<!-- <countRange>1</countRange> -->
 			<!-- </SWCPRoomLayout_MilitiaWeaponsStorage> -->
+			
+			<SWCPRoomLayout_ImpSupplyWarehouse_Meals><countRange>1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Meals>
+			<SWCPRoomLayout_ImpSupplyWarehouse_RawFood><countRange>0~2</countRange></SWCPRoomLayout_ImpSupplyWarehouse_RawFood>
+			<SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds>
+			
+			
 			<SWCPRoomLayout_MilitiaGarrisonShellStorageRoom>
 				<countRange>1</countRange>
 			</SWCPRoomLayout_MilitiaGarrisonShellStorageRoom>
