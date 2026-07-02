@@ -73,7 +73,8 @@
 			<DrugDesire>2</DrugDesire>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<Polyamorous MayRequire="Mlie.RationalRomance">0</Polyamorous>
-			<HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</HAR_Xenophobia>
+			<!-- <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</HAR_Xenophobia> -->
+			<SWCPTrait_XenotypeAttitude>1</SWCPTrait_XenotypeAttitude>
 		</forcedTraits>
 		
 		<backstoryFiltersOverride>
@@ -184,7 +185,8 @@
 		<forcedTraits>
 		  <DrugDesire>2</DrugDesire>
 		  <Polyamorous MayRequire="Mlie.RationalRomance">0</Polyamorous>
-		  <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</HAR_Xenophobia>
+		  <!-- <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</HAR_Xenophobia> -->
+		  <SWCPTrait_XenotypeAttitude>1</SWCPTrait_XenotypeAttitude>
 		</forcedTraits>
 		<workDisables>ManualDumb, Constructing, Crafting, Mining</workDisables>
 		<bodyTypeMale>Thin</bodyTypeMale>

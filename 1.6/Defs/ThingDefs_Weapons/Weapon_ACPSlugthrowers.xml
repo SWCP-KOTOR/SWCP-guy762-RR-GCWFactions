@@ -30,6 +30,7 @@
 		<weaponTags>
 			<li>SWRanged_ACPrepeater</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_RepeaterCarbine</li>
 		</weaponTags>
@@ -107,6 +108,7 @@
 		<weaponTags>
 			<li>SWRanged_ACParraygun</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<!-- <li>SWCPWeaponCategoryTag_LightShotgun</li> -->
 			<li>SWCPWeaponCategoryTag_HeavyRifle</li>

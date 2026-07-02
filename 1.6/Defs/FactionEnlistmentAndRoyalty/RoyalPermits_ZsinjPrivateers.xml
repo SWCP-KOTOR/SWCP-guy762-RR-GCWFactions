@@ -808,28 +808,32 @@
   </RoyalTitlePermitDef>
   
 
-  <RoyalTitlePermitDef>
-    <defName>SWGCWPermit_ZsinjPrivateer_orbitalsalvo</defName>
-    <label>call orbital salvo</label>
-    <description>Contact a squadron of Zsinj's warships in low-orbit to fire a salvo of space-to-ground strikes around a target position.</description>
-    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
-    <minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
-    <faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
-    <permitPointCost>1</permitPointCost>
-	
-    <!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_orbitalstrike</prerequisite> -->
-    <cooldownDays>60</cooldownDays>
-    <uiPosition>(2,6)</uiPosition>
-    <royalAid>
-      <favorCost>8</favorCost>
-      <targetingRange>44.9</targetingRange>
-      <radius>7.9</radius>
-      <explosionRadiusRange>5.9</explosionRadiusRange>
-      <explosionCount>6</explosionCount>
-      <intervalTicks>60</intervalTicks>
-      <warmupTicks>120</warmupTicks>
-    </royalAid>
-  </RoyalTitlePermitDef>
+	<RoyalTitlePermitDef>
+		<defName>SWGCWPermit_ZsinjPrivateer_orbitalsalvo</defName>
+		<label>call orbital salvo</label>
+		<description>Contact a squadron of Zsinj's warships in low-orbit to fire a salvo of space-to-ground strikes around a target position.</description>
+		<workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+		<minTitle>SWGCWTitle_ZsinjPrivateer_privateerCaptain</minTitle>
+		<faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+		<permitPointCost>1</permitPointCost>
+		
+		<!-- <prerequisite>SWGCWPermit_ZsinjPrivateer_orbitalstrike</prerequisite> -->
+		<cooldownDays>60</cooldownDays>
+		<uiPosition>(2,6)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<targetingRange>44.9</targetingRange>
+			<radius>7.9</radius>
+			<explosionRadiusRange>5.9</explosionRadiusRange>
+			<explosionCount>6</explosionCount>
+			<intervalTicks>60</intervalTicks>
+			<warmupTicks>120</warmupTicks>
+		</royalAid>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li> -->
+		<!-- </modExtensions> -->
+	</RoyalTitlePermitDef>
 
 
     <RoyalTitlePermitDef ParentName="SWGCWPermit_ZsinjPrivateer_ResourceDropBase">

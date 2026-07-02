@@ -30,6 +30,7 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_62Aug2CyclerRifle</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_SniperRifle</li>
 		</weaponTags>

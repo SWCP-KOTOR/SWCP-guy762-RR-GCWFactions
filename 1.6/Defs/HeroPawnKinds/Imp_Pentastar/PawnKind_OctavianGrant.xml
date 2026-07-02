@@ -56,7 +56,8 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
-			<HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia>
+			<!-- <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia> -->
+			<SWCPTrait_XenotypeAttitude>-1</SWCPTrait_XenotypeAttitude>
 			<Jealous>0</Jealous>
 			<TooSmart>0</TooSmart>
 			<NaturalMood>1</NaturalMood>
@@ -164,7 +165,8 @@
 			<Intellectual>5</Intellectual>
 		</skillGains>
 		<forcedTraits>
-		  <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia>
+		  <!-- <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia> -->
+		  <SWCPTrait_XenotypeAttitude>-1</SWCPTrait_XenotypeAttitude>
 		  <Jealous>0</Jealous>
 		</forcedTraits>
 		<requiredWorkTags>

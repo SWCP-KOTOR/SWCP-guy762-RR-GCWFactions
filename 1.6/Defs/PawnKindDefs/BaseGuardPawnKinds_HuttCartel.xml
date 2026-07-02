@@ -275,7 +275,7 @@
 	</PawnKindDef>
 	
 	
-	<PawnKindDef Name="xgSWHutts_MandoMercBaseGuard" ParentName="SWMando_merc">
+	<PawnKindDef Name="xgSWHutts_MandoMercBaseGuard" ParentName="SWScum_mandomerc">
 		<defName>xgSWHutts_MandoMercBaseGuard</defName>
 		<combatPower>1</combatPower>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
@@ -312,6 +312,76 @@
 		
 		<startingHediffs>
 			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xgSWHutts_SmugglerDisloyal" ParentName="SWHutts_smuggler">
+		<defName>xgSWHutts_SmugglerDisloyal</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xgSWHutts_RogueTrader" ParentName="SWHutts_roguetrader">
+		<defName>xgSWHutts_RogueTrader</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWHutts_HuttTrader" ParentName="SWHutts_HuttTrader">
+		<defName>xgSWHutts_HuttTrader</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWHutts_Majordomo" ParentName="SWHutts_majordomo">
+		<defName>xgSWHutts_Majordomo</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xgSWHutts_HuttLord" ParentName="SWHutts_HuttLord">
+		<defName>xgSWHutts_HuttLord</defName>
+		<combatPower>1</combatPower>
+		<factionLeader>false</factionLeader>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
 		</startingHediffs>
 		<modExtensions>
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />

@@ -478,6 +478,8 @@
 			<SWCPRoomLayout_ImpSupplyWarehouse_Meals><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Meals>
 			<SWCPRoomLayout_ImpSupplyWarehouse_RawFood><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_RawFood>
 			<SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_FoodMeds>
+			<SWCPRoomLayout_ImpSupplyWarehouse_Rhydo><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Rhydo>
+			<SWCPRoomLayout_ImpSupplyWarehouse_Tibanna><countRange>0~1</countRange></SWCPRoomLayout_ImpSupplyWarehouse_Tibanna>
 			
 			
 			<SWCPRoomLayout_ImpGarrisonShellStorageRoom>
@@ -630,14 +632,28 @@
 				<minMaxRange>1~2</minMaxRange>
 			</SWCPPrefabInterior_BigGreenRebelScreen>
 			
-		  <AncientSystemRacks_Rows>
-			<countPerHundredCells>5</countPerHundredCells>
-			<minMaxRange>1~10</minMaxRange>
-		  </AncientSystemRacks_Rows>
-		  <AncientCratesWithComponents>
-			<countPerHundredCells>1</countPerHundredCells>
-			<minMaxRange>1~1</minMaxRange>
-		  </AncientCratesWithComponents>
+			
+			
+			
+			<AncientDestroyedConsole_VerySmall>
+				<countPerTenEdgeCells>2</countPerTenEdgeCells>
+				<minMaxRange>5~10</minMaxRange>
+			</AncientDestroyedConsole_VerySmall>
+			<AncientDestroyedConsole_Large>
+				<countPerTenEdgeCells>5</countPerTenEdgeCells>
+				<minMaxRange>1~2</minMaxRange>
+			</AncientDestroyedConsole_Large>
+			<AncientDestroyedConsole_Small>
+				<countPerTenEdgeCells>2</countPerTenEdgeCells>
+				<minMaxRange>1~5</minMaxRange>
+			</AncientDestroyedConsole_Small>
+			
+			<AncientSystemRacks_Rows>
+				<countPerHundredCells>5</countPerHundredCells>
+				<minMaxRange>1~10</minMaxRange>
+			</AncientSystemRacks_Rows>
+		  
+		  
 		  <AncientSystemRack>
 			<countPerHundredCells>4</countPerHundredCells>
 			<minMaxRange>1~10</minMaxRange>
@@ -646,10 +662,6 @@
 			<countPerHundredCells>2</countPerHundredCells>
 			<minMaxRange>0~2</minMaxRange>
 		  </AncientSecurityTerminal>
-		  <AncientLockers_Row>
-			<countPerTenEdgeCells>3</countPerTenEdgeCells>
-			<minMaxRange>5~15</minMaxRange>
-		  </AncientLockers_Row>
 		  <AncientFortifiedWall_Pillar3x3>
 			<countPerHundredCells>1</countPerHundredCells>
 			<minMaxRange>0~1</minMaxRange>

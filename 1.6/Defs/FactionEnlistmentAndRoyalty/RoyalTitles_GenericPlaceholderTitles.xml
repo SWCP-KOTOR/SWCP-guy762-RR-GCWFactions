@@ -117,6 +117,181 @@
 
 
 
+	<!-- <SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
+		<!-- <defName>SWCP_TEST_EmpireLabels</defName> -->
+		<!-- <factionDef>Empire</factionDef> -->
+		<!-- <titleLabels> -->
+			<!-- <li><title>Freeholder</title><label>citizen</label></li> -->
+			<!-- <li><title>Yeoman</title><label>initiate</label></li> -->
+			<!-- <li><title>Knight</title><label>blademaster</label><labelFemale>blademistress</labelFemale></li> -->
+		<!-- </titleLabels> -->
+	<!-- </SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
+	
+	
+	
+	
+	
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!--  -->
+		<defName>SWCPFactionTitleLabelSet_NewRepublic</defName>
+		<factionDef>guy762_SWWarlordsFaction_NewRepublic</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!--  -->
+		<defName>SWCPFactionTitleLabelSet_RebelCell</defName>
+		<factionDef>guy762_SWWarlordsFaction_RebelCell</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- army theming -->
+		<defName>SWCPFactionTitleLabelSet_ImpRemnant</defName>
+		<factionDef>guy762_SWWarlordsFaction_ImpRemnant</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	
+	
+	<!-- <SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
+		<!-- <defName>SWCPFactionTitleLabelSet_ZsinjDominion</defName> -->
+		<!-- <factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef> -->
+		<!-- <titleLabels> -->
+			<!-- <li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li> -->
+			<!-- <li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li> -->
+			
+			<!-- <li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li> -->
+			<!-- <li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li> -->
+			
+			<!-- <li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> -->
+			<!-- <li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li> -->
+			
+			<!-- <li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> -->
+			<!-- <li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> -->
+		<!-- </titleLabels> -->
+	<!-- </SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
+	
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- ops theming -->
+		<defName>SWCPFactionTitleLabelSet_PentastarAlignment</defName>
+		<factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>subaltern</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>commodore</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- navy theming -->
+		<defName>SWCPFactionTitleLabelSet_GreaterMaldrood</defName>
+		<factionDef>guy762_SWWarlordsFaction_GreaterMaldrood</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>cadet</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>ensign</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>lt. commander</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>commander</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>vice admiral</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>admiral</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- army theming again -->
+		<defName>SWCPFactionTitleLabelSet_EriaduAuthority</defName>
+		<factionDef>guy762_SWWarlordsFaction_EriaduAuthority</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li>
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<RoyalTitleDef Abstract="True" Name="SWGCWTitle_generic_base">
 		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
 		<tags>

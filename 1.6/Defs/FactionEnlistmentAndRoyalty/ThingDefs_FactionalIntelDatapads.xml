@@ -179,6 +179,10 @@
 	
 	
 	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
 		<defName>SWCP_FactionIntelDatapad_Militia</defName>
 		<label>intel datapad, Planetary Defense Force</label>
@@ -192,7 +196,52 @@
 		</tradeTags>
 	</ThingDef>
 	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_CSA</defName>
+		<label>intel datapad, Corporate Sector Authority</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_CSA</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyCSA</li>
+			<li>SWCPTT_FactionIntelDatapads_basicCSA</li>
+			<li>SWCPTT_FactionIntelDatapads_anyneutral</li>
+		</tradeTags>
+	</ThingDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_HuttCartels</defName>
+		<label>intel datapad, Hutt Cartels</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_HuttCartels</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyHutts</li>
+			<li>SWCPTT_FactionIntelDatapads_basicHutts</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_BlackSun</defName>
+		<label>intel datapad, Black Sun</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_BlackSun</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyBlackSun</li>
+			<li>SWCPTT_FactionIntelDatapads_basicBlackSun</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
 	
 	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
 		<defName>SWCP_FactionIntelDatapad_Zann</defName>
@@ -203,6 +252,19 @@
 		<tradeTags>
 			<li>SWCPTT_FactionIntelDatapads_anyZann</li>
 			<li>SWCPTT_FactionIntelDatapads_basicZann</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_basic">
+		<defName>SWCP_FactionIntelDatapad_Slavers</defName>
+		<label>intel datapad, Slaver Guilds</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/BasicIntel_Slavers</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anySlavers</li>
+			<li>SWCPTT_FactionIntelDatapads_basicSlavers</li>
 			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
 		</tradeTags>
 	</ThingDef>
@@ -398,6 +460,15 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
 		<defName>SWCP_FactionIntelDatapadAdv_Militia</defName>
 		<label>critical intel datapad, Planetary Defense Force</label>
@@ -411,7 +482,54 @@
 		</tradeTags>
 	</ThingDef>
 	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_CSA</defName>
+		<label>critical intel datapad, Corporate Sector Authority</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_CSA</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyCSA</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalCSA</li>
+			<li>SWCPTT_FactionIntelDatapads_anyneutral</li>
+		</tradeTags>
+	</ThingDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_HuttCartels</defName>
+		<label>critical intel datapad, Hutt Cartels</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_HuttCartels</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyHutts</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalHutts</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_BlackSun</defName>
+		<label>critical intel datapad, Black Sun</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_BlackSun</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anyBlackSun</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalBlackSun</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
 	
 	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
 		<defName>SWCP_FactionIntelDatapadAdv_Zann</defName>
@@ -422,6 +540,20 @@
 		<tradeTags>
 			<li>SWCPTT_FactionIntelDatapads_anyZann</li>
 			<li>SWCPTT_FactionIntelDatapads_criticalZann</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="SWCP_FactionIntelDatapadBASE_adv">
+		<defName>SWCP_FactionIntelDatapadAdv_Slavers</defName>
+		<label>critical intel datapad, Slaver Guilds</label>
+		<graphicData>
+		  <texPath>Items/datapads_FactionIntel/AdvIntel_Slavers</texPath>
+		</graphicData>
+		<tradeTags>
+			<li>SWCPTT_FactionIntelDatapads_anySlavers</li>
+			<li>SWCPTT_FactionIntelDatapads_criticalSlavers</li>
+			<li>SWCPTT_FactionIntelDatapads_anyscum</li>
 		</tradeTags>
 	</ThingDef>
 	

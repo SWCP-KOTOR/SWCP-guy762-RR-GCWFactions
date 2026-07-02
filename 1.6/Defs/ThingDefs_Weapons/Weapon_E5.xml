@@ -32,6 +32,7 @@
 			<li>SWRanged_E5rifle</li>
 			<li>SWRanged_AnyCommonCarbine</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ScumWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_PrecisionCarbine</li>
 		</weaponTags>
@@ -121,6 +122,7 @@
 			<li>SWRanged_E5Crifle</li>
 			<li>SWRanged_AnyRareRifle</li>
 			<li>SWKotORWeaponCategoryTag_rifle</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyRifle</li>
 		</weaponTags>

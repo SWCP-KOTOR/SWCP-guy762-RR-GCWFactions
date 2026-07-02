@@ -28,6 +28,7 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_Vibroaxe</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
 		</weaponTags>

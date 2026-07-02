@@ -618,16 +618,7 @@
 		<label>slave</label>
 		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
 		<!-- <defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType> -->
-		
-		<!--fixedGender>Female</fixedGender-->
-		
-		<isFighter>false</isFighter>
-		<requiredWorkTags>
-			<li>Firefighting</li>
-			<li>ManualDumb</li>
-			<li>Social</li>
-			<li>Hauling</li>
-		</requiredWorkTags>
+		<!-- <fixedGender>Female</fixedGender> -->
 	</PawnKindDef>
 	
 	

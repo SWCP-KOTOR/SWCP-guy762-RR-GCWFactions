@@ -104,7 +104,7 @@
 	
 	
 	<ThingDef ParentName="SWCPItemLootBoxBASE">
-        <defName>SWCPItemLootBox_DrugsAlcohol</defName>
+        <defName>SWCPItemLootBox_DrugsAlcohol</defName> <!-- THIS DEFNAME REFERENCED BY SWCP_LevelDesignStuff.dll -->
         <label>party crate</label>
         <description>A supply container containing a random assortment of luxury foodstuffs, drugs, and alcohol.</description>
         <graphicData>

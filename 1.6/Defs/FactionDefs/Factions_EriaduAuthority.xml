@@ -124,6 +124,11 @@
 				</enlistOptionsDefs>
 				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="SWCP_FlyingSloth_Misc.ModExtension_FactionXenotypeRestriction">
+				<allowedXenotypes>
+					<li>Baseliner</li>
+				</allowedXenotypes>
+			</li>
 			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
 				<arrivalModes>
 					<li>CenterDrop</li>

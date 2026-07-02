@@ -102,12 +102,29 @@
 			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>Silver</currency>
 			</li>
+			<!-- <li Class="FCP.Enlist.FactionEnlistOptions"> -->
+				<!-- <enlistOptionsDefs> -->
+					<!-- <li>guy762_SWFactionEnlistment_EriaduAuthority</li> -->
+				<!-- </enlistOptionsDefs> -->
+				<!-- <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Biotech" Class="SWCP_FlyingSloth_Misc.ModExtension_FactionXenotypeRestriction"> -->
+				<!-- <allowedXenotypes> -->
+					<!-- <li>guy762_xenotype_hutt</li> -->
+				<!-- </allowedXenotypes> -->
+			<!-- </li> -->
+			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
+				<arrivalModes>
+					<li>CenterDrop</li>
+					<li>RandomDrop</li>
+					<li MayRequire="SmashPhil.VehicleFramework">ParatrooperDrop</li>
+				</arrivalModes>
+			</li>
 			<li Class="FCP.Core.Shuttles.FactionModExtension"> <!-- MUST BE ADDED TO RaidStrategies_ShuttleAttack.xml IN ORDER TO WORK!!! -->
 				<transportShipDef>guy762_SWShuttleTransportShip_HoverTransportTC9_hutts</transportShipDef>
 				<minDistanceBetweenShuttles>15</minDistanceBetweenShuttles>
 				<maxPawnCountInOneShuttle>8</maxPawnCountInOneShuttle>
 			</li>
-			
 			<li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>

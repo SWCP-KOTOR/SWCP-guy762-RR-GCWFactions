@@ -31,6 +31,7 @@
 			<li>SWRanged_DL18pistol</li>
 			<li>SWRanged_AnyCommonPistol</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
+			<li>SWGCWBaseLoot_ScumWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_LightPistol</li>
 		</weaponTags>
@@ -134,6 +135,7 @@
 			<li>SWRanged_DL21pistol</li>
 			<li>SWRanged_AnyRarePistol</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
+			<li>SWGCWBaseLoot_ScumWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_LightPistol</li>
 		</weaponTags>

@@ -42,6 +42,7 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_Vibrodagger</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			<li>SWGCWBaseLoot_ScumWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_LightMelee</li>
 		</weaponTags>
@@ -182,6 +183,7 @@
 		<weaponTags Inherit="False">
 			<li>SWMelee_Vibrosword</li>
 			<li>SWKotORWeaponCategoryTag_melee</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_LightMelee</li>
 		</weaponTags>

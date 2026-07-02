@@ -30,6 +30,7 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_DXP2DisruptorPistol</li>
 			<li>SWKotORWeaponCategoryTag_pistol</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyPistol</li>
 		</weaponTags>
