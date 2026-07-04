@@ -1856,6 +1856,274 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ArmyTrooperHelmet">
+		<defName>guy762_ArmySnowTrooperHelmet</defName>
+		<label>army snowtrooper helmet</label>
+		<graphicData>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/snow_visor_up/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(130,125,105)</colorTwo> -->
+		</graphicData>
+		
+		<statBases>
+			<Insulation_Cold>25</Insulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+
+		<randomStyleChance Inherit="False"/>
+		<randomStyle Inherit="False"/>
+
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_ImperialArmySnowHelmet</li>
+			</tags>
+			<!-- <wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/snow_visor_up/helmet</wornGraphicPath> -->
+			<wornGraphicPath Inherit="False"/>
+			<layers Inherit="False">
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>FullHead</li>
+			</bodyPartGroups>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					<texturePaths>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/snow_visor_up/helmet</li>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/snow_visor_down/helmet</li>
+					</texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(190,190,200)</color> <!-- ice white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,130,140)</only>  <!-- frozen stone grey -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ArmyTrooperHelmet_ClassicGoggles">
+		<defName>guy762_ArmySnowTrooperHelmet_ClassicGoggles</defName>
+		<label>army snowtrooper helmet</label>
+		<graphicData>
+			<texPath>SWApparel/ArmyTrooper_RemnantKitbashes/snow_classicgoggles_up/helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<!-- <colorTwo>(130,125,105)</colorTwo> -->
+		</graphicData>
+		
+		<statBases>
+			<Insulation_Cold>25</Insulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		
+		<randomStyleChance Inherit="False"/>
+		<randomStyle Inherit="False"/>
+
+		
+		<apparel>
+			<tags Inherit="False">
+				<li>SWGCWSpecificApparelItem_ImperialArmySnowHelmetClassicGoggles</li>
+			</tags>
+			<wornGraphicPath Inherit="False"/>
+			<!-- <wornGraphicPath>SWApparel/ArmyTrooper_RemnantKitbashes/snow_classicgoggles_up/helmet</wornGraphicPath> -->
+			<layers Inherit="False">
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups Inherit="False">
+				<li>FullHead</li>
+			</bodyPartGroups>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					<texturePaths>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/snow_classicgoggles_up/helmet</li>
+						<li>SWApparel/ArmyTrooper_RemnantKitbashes/snow_classicgoggles_down/helmet</li>
+					</texturePaths>
+					  <colorA>
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>(190,190,200)</color> <!-- ice white -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(130,130,140)</only>  <!-- frozen stone grey -->
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+		  <li Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCPArmorMakeableNoQuality_hard">
 		<defName>guy762_ArmyTrooperHelmet_rusty</defName>
 		<label>army trooper helmet, rusty</label>

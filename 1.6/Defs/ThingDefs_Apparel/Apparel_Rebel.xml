@@ -1656,8 +1656,13 @@
       		<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			
+			<Insulation_Cold>25</Insulation_Cold>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
 		
 		<apparel>
 			<wornGraphicPath>SWApparel/RebelCloneArmor/bighelmet</wornGraphicPath>
