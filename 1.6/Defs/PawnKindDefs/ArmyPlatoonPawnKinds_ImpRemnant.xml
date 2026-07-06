@@ -441,6 +441,82 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ army snowtrooper platoon -->	
+	
+	<PawnKindDef Name="xSWImpRemnant_SnowArmyTrooper_40x" ParentName="SWImpRemnant_SnowArmyTrooper">
+		<defName>xSWImpRemnant_SnowArmyTrooper_40x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>40</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_SnowArmyGrenadier_4x" ParentName="SWImpRemnant_SnowArmyHeavy">
+		<defName>xSWImpRemnant_SnowArmyGrenadier_4x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_SnowArmyIon_1x" ParentName="SWImpRemnant_SnowArmyHeavy">
+		<defName>xSWImpRemnant_SnowArmyIon_1x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T7IonDisruptor</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWImpRemnant_SnowArmyLieutenant_2x" ParentName="SWImpRemnant_SnowArmyLieutenant">
+		<defName>xSWImpRemnant_SnowArmyLieutenant_2x</defName>
+		<!-- <label>DEBUG</label> -->
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+	
+	
+	
+	
+	
 
 
 </Defs>

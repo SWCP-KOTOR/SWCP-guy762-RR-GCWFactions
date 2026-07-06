@@ -834,13 +834,18 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>225,220,75</color> <!-- banana yellow -->
+						<color>(225,220,75)</color> <!-- banana yellow -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					  <colorC>
-						<color>90,90,90</color> <!-- dark grey -->
-						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+						<color>(90,90,90)</color> <!-- dark grey -->
+						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
 					  </colorC>
+					  
+						<altDefs>
+							<li>guy762_RaptorHelmetCustomization_Default</li>
+							<li>guy762_RaptorHelmetCustomization_Snow</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
@@ -867,6 +872,65 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RaptorHelmetCustomization_Default</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_RaptorDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Stormtrooper/raptor/raptorhelmet</li></texturePaths>
+			<colorA>
+				<color>(200,50,70)</color> <!-- raptor's red -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,220,75)</color>  <!-- banana yellow -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(90,90,90)</color> <!-- dark grey -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_RaptorHelmetCustomization_Snow</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_SnowRaptor/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Stormtrooper/raptor/raptorhelmet</li></texturePaths>
+			<colorA>
+				<color>(130,130,140)</color>  <!-- frozen stone grey -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(225,220,75)</color>  <!-- banana yellow -->
+				<altDefs><li>BS_CustomGlobalB</li></altDefs>
+			</colorB>
+			<colorC>
+				<color>(250,250,250)</color> <!-- white -->
+				<altDefs><li>BS_CustomGlobalC</li></altDefs>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

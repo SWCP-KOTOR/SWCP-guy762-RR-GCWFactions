@@ -411,6 +411,31 @@
 			</li>
 			
 			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
+			
+			<!-- army snowtrooper assault -->
+			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
+				<temperatureRange>-200~0</temperatureRange>
+				
+				<kindDef>Combat</kindDef>
+				<commonality>10000</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_SnowArmyTrooper_40x>100</xSWImpRemnant_SnowArmyTrooper_40x>
+					<xSWImpRemnant_SnowArmyGrenadier_4x>100</xSWImpRemnant_SnowArmyGrenadier_4x>
+					<xSWImpRemnant_SnowArmyIon_1x>100</xSWImpRemnant_SnowArmyIon_1x>
+					<xSWImpRemnant_SnowArmyLieutenant_2x>100</xSWImpRemnant_SnowArmyLieutenant_2x>
+				</options>
+			</li>
+			
+			
+			
+			
 			<li>
 				<!-- conscript blitz -->
 				<kindDef>Combat</kindDef>

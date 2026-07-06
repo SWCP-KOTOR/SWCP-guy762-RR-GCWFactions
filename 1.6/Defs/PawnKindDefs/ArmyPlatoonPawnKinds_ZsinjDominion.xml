@@ -376,6 +376,100 @@
 	
 	
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ snow raptor platoon -->	
+	
+	
+	<PawnKindDef Name="xSWZsinj_SnowRaptor_24x" ParentName="SWZsinj_SnowRaptor">
+		<defName>xSWZsinj_SnowRaptor_24x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>24</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZsinj_SnowRaptorRepeater_4x" ParentName="SWZsinj_SnowRaptorHvy">
+		<defName>xSWZsinj_SnowRaptorRepeater_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZsinj_SnowRaptorFlamethrower_2x" ParentName="SWZsinj_SnowRaptorHvy">
+		<defName>xSWZsinj_SnowRaptorFlamethrower_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZsinj_SnowRaptorMissile_8x" ParentName="SWZsinj_SnowRaptorHvy">
+		<defName>xSWZsinj_SnowRaptorMissile_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZsinj_SnowRaptorOfficer_2x" ParentName="SWZsinj_SnowRaptorOfficer">
+		<defName>xSWZsinj_SnowRaptorOfficer_2x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
 	
 	
 	

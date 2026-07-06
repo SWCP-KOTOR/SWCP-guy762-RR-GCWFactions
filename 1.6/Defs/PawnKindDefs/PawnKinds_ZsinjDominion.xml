@@ -1387,4 +1387,202 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<PawnKindDef Name="SWZsinj_SnowRaptor" ParentName="SWZsinj_Raptor">
+		<defName>SWZsinj_SnowRaptor</defName>
+		<label>snow Raptor</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_RaptorHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <color>(250,250,250)</color> -->
+			<!-- </li> -->
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(190,190,200)</color> <!-- ice white -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,140)</color>  <!-- frozen stone grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_SnowRaptor/></flags>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWZsinj_SnowRaptorHvy" ParentName="SWZsinj_RaptorHvy">
+		<defName>SWZsinj_SnowRaptorHvy</defName>
+		<label>snow Raptor heavy</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_basic</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_suspendersA</li>
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_RaptorHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(40,40,40)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <color>(250,250,250)</color> -->
+			<!-- </li> -->
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(190,190,200)</color> <!-- ice white -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,140)</color>  <!-- frozen stone grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_SnowRaptor/></flags>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWZsinj_SnowRaptorOfficer" ParentName="SWZsinj_RaptorOfficer">
+		<defName>SWZsinj_SnowRaptorOfficer</defName>
+		<label>snow Raptor field officer</label>
+
+		<apparelTags Inherit="False">
+			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ZsinjRaptorHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperBackpack</li>
+			<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+			<li>SWGCWSpecificApparelItem_ImperialTIEPilotBodysuit</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_stormiepauldron</li>
+			<li>guy762_RaptorHelmet</li>
+			<li>guy762_ImpSnowtrooperBackpack</li>
+			<li>guy762_ImpSnowtrooperArmor</li>
+			<li>guy762_Bodysuit_TIEpilot</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(190,105,0)</color>         <!-- pumpkin orange (officer) -->
+			</li>
+			<!-- <li> -->
+				<!-- <apparelLayer>Overhead</apparelLayer> -->
+				<!-- <color>(250,250,250)</color> -->
+			<!-- </li> -->
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(190,190,200)</color> <!-- ice white -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(130,130,140)</color>  <!-- frozen stone grey -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_SnowRaptor/></flags>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
 </Defs>

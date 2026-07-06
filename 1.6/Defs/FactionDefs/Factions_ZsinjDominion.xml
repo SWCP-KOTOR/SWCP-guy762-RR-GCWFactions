@@ -418,6 +418,63 @@
 			
 		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids -->
 			
+			<!-- army snowtrooper assault -->
+			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
+				<temperatureRange>-200~0</temperatureRange>
+				
+				<kindDef>Combat</kindDef>
+				<commonality>10000</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWImpRemnant_SnowArmyTrooper_40x>100</xSWImpRemnant_SnowArmyTrooper_40x>
+					<xSWImpRemnant_SnowArmyGrenadier_4x>100</xSWImpRemnant_SnowArmyGrenadier_4x>
+					<xSWImpRemnant_SnowArmyIon_1x>100</xSWImpRemnant_SnowArmyIon_1x>
+					<xSWImpRemnant_SnowArmyLieutenant_2x>100</xSWImpRemnant_SnowArmyLieutenant_2x>
+				</options>
+			</li>
+			
+			
+			
+			<!-- snow Raptor assault -->
+			<li Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
+				<allowedBiomes>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_RhenVarGlacialPeaks</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_RhenVarGlacialHighland</li>
+					<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPBiome_RhenVarGlacialWastes</li>
+				</allowedBiomes>
+				
+				<kindDef>Combat</kindDef>
+				<commonality>10000</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttack</li>
+				</disallowedStrategies>
+				<options>
+					<xSWZsinj_SnowRaptor_24x>100</xSWZsinj_SnowRaptor_24x>
+					<xSWZsinj_SnowRaptorRepeater_4x>100</xSWZsinj_SnowRaptorRepeater_4x>
+					<xSWZsinj_SnowRaptorFlamethrower_2x>100</xSWZsinj_SnowRaptorFlamethrower_2x>
+					<xSWZsinj_SnowRaptorMissile_8x>100</xSWZsinj_SnowRaptorMissile_8x>
+					<xSWZsinj_SnowRaptorOfficer_2x>100</xSWZsinj_SnowRaptorOfficer_2x>
+				</options>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<!-- army skirmish -->
 			<li>
 				<kindDef>Combat</kindDef>
