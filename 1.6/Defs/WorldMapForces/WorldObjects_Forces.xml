@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<WorldObjectDef>
+		<defName>GUY_Force</defName>
+		<label>force</label>
+		<description>A deployed force.</description>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<texture>World/Forces/GUY_GroundForces</texture>
+		<nameMaker>GUY_ForcesTesting</nameMaker>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>8</abilityRange>
+				<forceNameString>GUY_GroundForces</forceNameString>
+				<movementSpeedPerDay>12</movementSpeedPerDay>
+				<abilities>
+					<li>GUY_DestroySettlement</li>
+					<li>GUY_SummonRaid</li>
+					<li>GUY_Bombardment</li>
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	<RulePackDef>
+		<defName>GUY_ForcesTesting</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name-&gt;force 1</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

@@ -75,6 +75,8 @@
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
@@ -95,6 +97,8 @@
 			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+			
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>

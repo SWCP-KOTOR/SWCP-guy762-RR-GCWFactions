@@ -154,6 +154,7 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech" Class="SWCP_FlyingSloth_Misc.ModExtension_FactionXenotypeRestriction">
 				<allowedXenotypes>
 					<li>Baseliner</li>
+					<li>guy762_xenotype_chiss</li>
 				</allowedXenotypes>
 			</li>
 			<li Class="FCP.Factions.FactionExtension_BannedArrivalModes">
@@ -687,7 +688,7 @@
 					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
 					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
 					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
-					<!-- <xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> -->
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x>
 
 					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
 					
@@ -740,7 +741,7 @@
 					<xSWImpRemnant_ArmyTrooper_40x>100</xSWImpRemnant_ArmyTrooper_40x>
 					<xSWImpRemnant_ArmyGrenadier_4x>100</xSWImpRemnant_ArmyGrenadier_4x>
 					<xSWImpRemnant_ArmyIon_1x>100</xSWImpRemnant_ArmyIon_1x>
-					<!-- <xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x> -->
+					<xSWImpRemnant_ArmyMedic_2x>100</xSWImpRemnant_ArmyMedic_2x>
 					<xSWImpRemnant_ArmyLieutenant_2x>100</xSWImpRemnant_ArmyLieutenant_2x>
 					
 					<xSWImpRemnant_Stormtrooper_24x>100</xSWImpRemnant_Stormtrooper_24x>

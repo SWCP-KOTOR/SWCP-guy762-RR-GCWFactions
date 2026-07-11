@@ -37,6 +37,7 @@
 			<li>Nudist</li>
 			<li>Wimp</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWCPTrait_Cowardly</li>
 		</disallowedTraits>
 
 		<inventoryOptions>

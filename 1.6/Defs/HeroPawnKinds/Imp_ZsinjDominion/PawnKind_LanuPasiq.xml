@@ -86,7 +86,7 @@
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
-			<Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity>
+			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity> -->
 			<Brawler>0</Brawler>
 			<Beauty>1</Beauty>
 			<Psychopath>0</Psychopath>
@@ -300,7 +300,7 @@
 					<min>15</min>
 					<max>15</max>
 				</forceLevelRange>
-				<darkSideRange>35 ~ 55</darkSideRange>
+				<!-- <darkSideRange>35 ~ 55</darkSideRange> -->
 				<grantRandomAbilities>false</grantRandomAbilities>
 				
 				<!-- <minRandomAbilities>3</minRandomAbilities> -->

@@ -4,8 +4,8 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_LocalWarlord</defName>
 		<label>local warlord fiefdom</label>
-		<!-- <fixedName></fixedName> -->
-		<factionNameMaker>NamerFactionPirate</factionNameMaker>
+		<fixedName>Local Warlords</fixedName>
+		<!-- <factionNameMaker>NamerFactionPirate</factionNameMaker> -->
 		<description>.</description>
 		
 		<pawnSingular>imperial</pawnSingular>

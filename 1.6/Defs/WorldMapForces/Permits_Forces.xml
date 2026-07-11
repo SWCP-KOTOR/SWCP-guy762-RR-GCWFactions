@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RoyalTitlePermitDef>
+		<defName>GUY_CallForces</defName>
+		<label>call forces</label>
+		<description>Call forces.</description>
+		<workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass>
+		<minTitle>Knight</minTitle>
+		<faction>Empire</faction>
+		<permitPointCost>1</permitPointCost>
+		<cooldownDays>40</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(0,9)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<layerBlacklist>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		</layerBlacklist>
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<permitSpawnsWorldObject>GUY_Force</permitSpawnsWorldObject>
+			</li>
+		</modExtensions>
+	</RoyalTitlePermitDef>
+	
+</Defs>

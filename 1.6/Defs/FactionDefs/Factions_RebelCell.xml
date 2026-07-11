@@ -4,8 +4,8 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_RebelCell</defName>
 		<label>rebel cell</label>
-		<!-- <fixedName></fixedName> -->
-		<factionNameMaker>guy762_NamerFaction_RebelCell</factionNameMaker>
+		<fixedName>Rebel Cells</fixedName>
+		<!-- <factionNameMaker>guy762_NamerFaction_RebelCell</factionNameMaker> -->
 		<description>A local armed resistance movement against Imperial rule. Emboldened after the death of the Emperor at Endor, these rebel movements have begun to crop up all over the galaxy in nearly every civilized star system. While rebel cells like this one have existed since long before the Emperor's death, the oldest and largest cells banded together to form the massive fleet that attacked the second Death Star at Endor, and declared itself to be the New Republic after their decisive victory. Howver, not every rebel cell in the galaxy was able to contribute forces to the Endor campaign, as many were isolated or kept on the run from the fierce pursuit of Imperial forces. As more cells continue to form far away from the New Republic's supply lines, they remain unintegrated from the New Republic command structure and are largely self-sufficient, only occasionally receiving intel and loaned personnel from them.</description>
 		
 		<pawnSingular>rebel</pawnSingular>

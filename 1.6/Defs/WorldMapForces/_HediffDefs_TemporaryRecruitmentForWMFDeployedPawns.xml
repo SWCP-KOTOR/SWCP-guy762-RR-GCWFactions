@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ temporary recruitment -->	
+	
+	
+	<HediffDef>
+        <defName>SWCPHediff_WMFTemporaryDeployment</defName>
+        <label>temporary deployment</label>
+        <description>This pawn has joined your faction temporarily. They can be dismissed without upsetting your other colonists by casting the "Dismiss" ability while un-drafted.</description>
+        <everCurableByItem>false</everCurableByItem>
+        <initialSeverity>0.001</initialSeverity>
+        <stages />
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>SWCP_Ability_DismissFromTemporaryDeployment</abilityDef>
+			</li>
+        </comps>
+    </HediffDef>
+	
+	
+	
+	<AbilityDef>
+		<defName>SWCP_Ability_DismissFromTemporaryDeployment</defName>
+		<label>dismiss</label>
+		<description>Dismiss this pawn from their temporary assignment to your faction. This pawn will immediately enter the "panic fleeing" mental state and leave the map.</description>
+		<iconPath>UI/Icons/DismissFromPlayerFaction</iconPath>
+		<uiOrder>999</uiOrder>
+		<!--hotKey>Misc12</hotKey-->
+		<writeCombatLog>True</writeCombatLog>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>false</aiCanUse>
+		
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>false</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>-1</range>
+			<drawAimPie>false</drawAimPie>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
+				<compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
+				<hediffs>
+					<li>SWCPHediff_WMFTemporaryDeployment</li>
+				</hediffs>
+				<recursiveChecks>3</recursiveChecks> <!--No reason to have this, but maybe I'm paranoid-->
+			</li>
+			<li Class = "CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>PanicFlee</stateDef>
+				<canTargetBosses>false</canTargetBosses>
+				<psychic>False</psychic>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityChangeFaction">
+                <useStatic>True</useStatic>
+                <staticFaction>guy762_KotORFaction_Civilians</staticFaction>
+            </li>
+		</comps>
+		<!-- <modExtensions> -->
+			<!-- <li Class="CastableInUnconscious.ModExtension_CastableInUnconscious"> -->
+				<!-- <castableInUnconscious>true</castableInUnconscious> -->
+				<!-- <castableInMentalbreak>true</castableInMentalbreak> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</AbilityDef>
+	
+	
+	
+	
+	
+</Defs>

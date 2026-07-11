@@ -27,7 +27,16 @@
 					<mapGenerator>OrbitalRelay</mapGenerator>
 					<layerDef>SWCPPlanetLayer_NevarroOrbit</layerDef>
 				</li>
-
+				
+				
+				<!-- <li Class="RWM_BTD_Remix_GravshipBlueprints.BTD_ScenPart_GravshipCustomStart"> -->
+					<!-- <def>BTD_GravshipCustomStart</def> -->
+					<!-- <selectedCategory>YOURFOLDER</selectedCategory> -->
+					<!-- <selectedDesignLabel>YOURSHIP</selectedDesignLabel> -->
+					<!-- <spawnMode>FullDesign</spawnMode> -->
+				<!-- </li> -->
+				
+				
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>

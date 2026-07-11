@@ -304,30 +304,30 @@
 
     <!-- Reinforcements Options -->
 
-        <reinforcementsAreEnabled>true</reinforcementsAreEnabled>
-        <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey>
-        <reinforcementsButtonDescKey>SWCP_Reinforcements_Button_Desc</reinforcementsButtonDescKey>
-        <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_RebelCell</reinforcementsButtonIconTexPath>
-        <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost>
-        <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks>
-        <reinforcementOptions>
-            <li>
-                <relationsRange>75~100</relationsRange>
-                <pointsRange>800~1800</pointsRange>
-            </li>
-            <li>
-                <relationsRange>50~74</relationsRange>
-                <pointsRange>600~850</pointsRange>
-            </li>
-            <li>
-                <relationsRange>26~49</relationsRange>
-                <pointsRange>400~600</pointsRange>
-            </li>
-            <li>
-                <relationsRange>-100~25</relationsRange>
-                <pointsRange>100~200</pointsRange>
-            </li>
-        </reinforcementOptions>
+        <!-- <reinforcementsAreEnabled>true</reinforcementsAreEnabled> -->
+        <!-- <reinforcementsButtonLabelKey>SWCP_Reinforcements_Button_Label</reinforcementsButtonLabelKey> -->
+        <!-- <reinforcementsButtonDescKey>SWCP_Reinforcements_Button_Desc</reinforcementsButtonDescKey> -->
+        <!-- <reinforcementsButtonIconTexPath>UI/ReinforcementIcons/Reinforcements_RebelCell</reinforcementsButtonIconTexPath> -->
+        <!-- <reinforcementCallGoodwillCost>-5</reinforcementCallGoodwillCost> -->
+        <!-- <reinforcementCallCooldownTicks>50000</reinforcementCallCooldownTicks> -->
+        <!-- <reinforcementOptions> -->
+            <!-- <li> -->
+                <!-- <relationsRange>75~100</relationsRange> -->
+                <!-- <pointsRange>800~1800</pointsRange> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <relationsRange>50~74</relationsRange> -->
+                <!-- <pointsRange>600~850</pointsRange> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <relationsRange>26~49</relationsRange> -->
+                <!-- <pointsRange>400~600</pointsRange> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <relationsRange>-100~25</relationsRange> -->
+                <!-- <pointsRange>100~200</pointsRange> -->
+            <!-- </li> -->
+        <!-- </reinforcementOptions> -->
 
     </FCP.Enlist.FactionEnlistOptionsDef>
 	

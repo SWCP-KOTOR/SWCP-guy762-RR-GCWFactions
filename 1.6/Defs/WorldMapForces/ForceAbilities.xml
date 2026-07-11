@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>GUY_DestroySettlement</defName>
+		<label>destroy settlement</label>
+		<description>Order a settlement be destroyed.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_DestroySettlement</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
+		<cooldownTicks>180000</cooldownTicks>
+		<requiresTarget>true</requiresTarget>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>GUY_SummonRaid</defName>
+		<label>summon raid</label>
+		<description>Summon a raid on a map.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_SummonRaid</iconPath>
+		<cooldownTicks>180000</cooldownTicks>
+		<requiresTarget>true</requiresTarget>
+		<faction>Empire</faction>
+		<relevantPawnKinds>
+			<Empire_Fighter_Trooper>6</Empire_Fighter_Trooper>
+			<Empire_Fighter_Janissary>2</Empire_Fighter_Janissary>
+			<Empire_Fighter_Cataphract>1</Empire_Fighter_Cataphract>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>GUY_Bombardment</defName>
+		<label>bombardment</label>
+		<description>Summon a bombardment a map.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_Bombardment</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_Bombardment</iconPath>
+		<cooldownTicks>180000</cooldownTicks>
+		<requiresTarget>true</requiresTarget>
+		<bombardmentShellAmount>27</bombardmentShellAmount>
+		<bombardmentRadius>30</bombardmentRadius>
+		<bombardmentDamage>24</bombardmentDamage>
+		<bombardmentDamageType>EMP</bombardmentDamageType>
+		<bombardmentExplosionRadius>3</bombardmentExplosionRadius>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_DestroySettlement</defName>
+		<label>destroy settlement</label>
+		<description>Order a settlement to be destroyed.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_DestroySettlement</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 1,200,000 = 20 in-game days -->
+		<cooldownTicks>1200000</cooldownTicks>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</defName>
+		<label>artillery bombardment</label>
+		<description>Order attached artillery pieces to begin firing on a targeted position.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_Bombardment</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_Bombardment</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 18,000 = 3 in-game days -->
+		<cooldownTicks>180000</cooldownTicks>
+		
+		<bombardmentShellAmount>27</bombardmentShellAmount>
+		<bombardmentRadius>30</bombardmentRadius>
+		<bombardmentDamage>100</bombardmentDamage>
+		<bombardmentDamageType>guy762_ExplosiveDamage_AntiVehicleEnergy</bombardmentDamageType>
+		<bombardmentExplosionRadius>5</bombardmentExplosionRadius>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+</Defs>

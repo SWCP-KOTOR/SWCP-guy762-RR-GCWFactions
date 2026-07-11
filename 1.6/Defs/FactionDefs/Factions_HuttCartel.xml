@@ -3,7 +3,7 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_HuttCartel</defName>
-		<label>cunning Hutt cartel</label>
+		<label>Hutt Cartels</label>
 		<!-- <fixedName></fixedName> -->
 		<factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
 		<description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile Hutt Kajidics often find themselves in fierce economic conflict with the Republic and many Republic-backed organizations like Czerka, many cunning Hutts are open to doing business with outsiders and strive to maintain cordial relations with their planet's populace.</description>
@@ -246,25 +246,25 @@
 		
 		
 		
-		<!-- <royalTitleTags> -->
-			<!-- <li>KotORTitleTag_Hutts</li> -->
-		<!-- </royalTitleTags> -->
-		<!-- <royalFavorLabel>prestige</royalFavorLabel> -->
-		<!-- <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath> -->
+		<royalTitleTags>
+			<li>SWGCWTitleTag_HuttCartels</li>
+		</royalTitleTags>
+		<royalFavorLabel>prestige</royalFavorLabel>
+		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
 		
-		<!-- <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass> -->
-		<!-- <royalTitleInheritanceRelations> -->
-		  <!-- <li>Spouse</li> -->
-		  <!-- <li>Child</li> -->
-		  <!-- <li>NephewOrNiece</li> -->
-		  <!-- <li>Grandchild</li> -->
-		  <!-- <li>GreatGrandchild</li> -->
-		  <!-- <li>Sibling</li> -->
-		  <!-- <li>HalfSibling</li> -->
-		  <!-- <li>Cousin</li> -->
-		  <!-- <li>Parent</li> -->
-		  <!-- <li>UncleOrAunt</li> -->
-		<!-- </royalTitleInheritanceRelations> -->
+		<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations>
+			<!-- <li>Spouse</li> -->
+			<!-- <li>Child</li> -->
+			<!-- <li>NephewOrNiece</li> -->
+			<!-- <li>Grandchild</li> -->
+			<!-- <li>GreatGrandchild</li> -->
+			<!-- <li>Sibling</li> -->
+			<!-- <li>HalfSibling</li> -->
+			<!-- <li>Cousin</li> -->
+			<!-- <li>Parent</li> -->
+			<!-- <li>UncleOrAunt</li> -->
+		</royalTitleInheritanceRelations>
 		
 		
 		

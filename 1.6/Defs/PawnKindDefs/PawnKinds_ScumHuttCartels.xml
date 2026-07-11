@@ -669,10 +669,10 @@
 		<combatPower>50</combatPower>
 		<minGenerationAge>30</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
 		
 		<trader>true</trader>
 		<maxPerGroup>3</maxPerGroup>
-		<invFoodDef>MealFine</invFoodDef>
 		<!-- <minTitleRequired>KotORTitleHutts_lowtrader</minTitleRequired> -->
 		<!-- <royalTitleChance>1</royalTitleChance> -->
 		<!-- <titleSelectOne> -->
@@ -705,7 +705,12 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<itemQuality>Excellent</itemQuality>
+		<weaponMoney>5000~14999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DXP2DisruptorPistol</li>
+			<li>SWRanged_DL44pistol</li>
+		</weaponTags>
+		
 		<apparelMoney>5000~15000</apparelMoney>
 		<apparelTags>
 		  <li>KotOREquipment_adv</li>
@@ -730,11 +735,6 @@
 		  </li>
 		</specificApparelRequirements>
 		
-		<weaponMoney>5000~14999</weaponMoney>
-		<weaponTags>
-		  <li>SaV_roguetrader</li>
-		</weaponTags>
-		
 		<techHediffsChance>4</techHediffsChance>
 		<techHediffsMoney>2000~4000</techHediffsMoney>
 		<techHediffsTags>
@@ -747,27 +747,38 @@
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		
-		<inventoryOptions  Inherit ="False">
-		  <skipChance>0.05</skipChance>
-		  <subOptionsChooseOne>
-			<li>
-			  <thingDef>KOTOR_Spice</thingDef>
-			  <countRange>3~5</countRange>
-			</li>
-			<li>
-			  <thingDef>KOTOR_Deathstick</thingDef>
-			  <countRange>2~3</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_medpac_life</thingDef>
-				<countRange>2~4</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_KotORcredits</thingDef>
-				<countRange>3600~8200</countRange>
-			</li>
-		  </subOptionsChooseOne>
+		
+		
+		<invNutrition>2</invNutrition><invFoodDef>MealLavish</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_HuttCartels</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>5000~10000</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>KOTOR_Spice</thingDef>
+					<countRange>4~8</countRange>
+				</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">
+					<thingDef>TarisianAle</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
+		
+		
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
@@ -786,8 +797,24 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	  
-	  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="SWHutts_HuttTrader" ParentName="SWHutts_Base">
 		<defName>SWHutts_HuttTrader</defName>
 		<label>kajidic associate</label>
@@ -798,10 +825,10 @@
 		<minGenerationAge>40</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge> <!-- should probably be higher but things start to break when these are set over 100 -->
 		<chronologicalAgeRange>300~750</chronologicalAgeRange>
+		<itemQuality>Excellent</itemQuality>
 		
 		<trader>true</trader>
 		<maxPerGroup>3</maxPerGroup>
-		<invFoodDef>MealFine</invFoodDef>
 		<!-- <minTitleRequired>KotORTitleHutts_lowtrader</minTitleRequired> -->
 		<!-- <royalTitleChance>1</royalTitleChance> -->
 		<!-- <titleSelectOne> -->
@@ -817,43 +844,77 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<itemQuality>Excellent</itemQuality>
-		<apparelMoney>5000~15000</apparelMoney>
+		<apparelMoney>999999</apparelMoney>
 		<apparelTags Inherit="False">
-		  <li>KotORShield_strong</li>
-		  <li>KotOREquipment_rare</li>
-		  <li>guy762PatchedTag_Sash</li>
-		  <li>KotORAccessory_richcivilian</li>
-		  <li>KotORAccessory_trader</li>
-		  <li>KotOREquipment_HuttLegs</li>
+			<!-- <li>SWGCWSpecificGadgetItem_MandoGauntletFettFlamethrowerRocket</li> -->
+			<!-- <li>SWGCWSpecificGadgetItem_MandoGauntletShysaBlasterMissile</li> -->
+			<li>SWGCWSpecificGadgetItem_JKSmallEShield</li>
+			
+			<li>KotOREquipment_rare</li>
+			<li>guy762PatchedTag_RobesCapeSash</li>
+			<!-- <li>guy762PatchedTag_Sash</li> -->
+			<li>KotORAccessory_richcivilian</li>
+			<li>KotORAccessory_trader</li>
+			<li>KotOREquipment_HuttLegs</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
 		
 		<weaponMoney>12000~99999</weaponMoney>
 		<weaponTags>
-		  <li>SaV_gangboss</li>
+			<li>SWRanged_Bowcaster</li>
+			<li>SWRanged_ArcCaster</li>
+			<li>SWRanged_DXR6DisruptorSniper</li>
+			<li>SWRanged_FC1flechette</li>
+			<li>SWRanged_PLX4LRocketRifle</li>
 		</weaponTags>
 		
 		<techHediffsChance>4</techHediffsChance>
 		<techHediffsMoney>2000~4000</techHediffsMoney>
 		<techHediffsTags>
-		  <li>Spacer</li>
-		  <li>Advanced</li>
-		  <li>ImplantEmpireRoyal</li>
-		  <li>ImplantEmpireCommon</li>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireRoyal</li>
+			<li>ImplantEmpireCommon</li>
 		</techHediffsTags>
 		<techHediffsDisallowTags>
-		  <li>PainCauser</li>
+			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		
+		<invNutrition>6</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
-		  <skipChance>0.05</skipChance>
-		  <subOptionsChooseOne>
-			<li>
-				<thingDef>guy762_medpac_life</thingDef>
-				<countRange>1~3</countRange>
-			</li>
-		  </subOptionsChooseOne>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_HuttCartels</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_HuttCartels</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_HuttCartels</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>10000~50000</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>KOTOR_Spice</thingDef>
+					<countRange>4~8</countRange>
+				</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">
+					<thingDef>TarisianAle</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 		
 		
@@ -866,6 +927,10 @@
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>
+						<skill>Shooting</skill>
+						<range>6~10</range>
+					</li>
+					<li>
 						<skill>Social</skill>
 						<range>12~18</range>
 					</li>
@@ -876,6 +941,28 @@
 	</PawnKindDef>
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="SWHutts_majordomo" ParentName="SWHutts_Base">
 		<defName>SWHutts_majordomo</defName>
 		<label>majordomo</label>
@@ -883,43 +970,50 @@
 		<fixedGender>Male</fixedGender>
 		<minGenerationAge>40</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
 		
 		<maxPerGroup>1</maxPerGroup>
 		<trader>true</trader>
-		<invFoodDef>MealLavish</invFoodDef>
 		<!-- <titleRequired>KotORTitleHutts_lowtrader</titleRequired> -->
 		
 		<xenotypeSet>
-		  <xenotypeChances>
-			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bith>
-			<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bothan>
-			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_devaronian>
-			<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_ithorian>
-			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_kubaz>
-			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_lasat>
-			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
-			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
-			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_togruta>
-			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_twilek>
-			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_weequay>
-		  </xenotypeChances>
+			<xenotypeChances>
+				<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bith>
+				<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bothan>
+				<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_devaronian>
+				<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_ithorian>
+				<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_kubaz>
+				<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_lasat>
+				<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+				<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_togruta>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_twilek>
+				<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_weequay>
+			</xenotypeChances>
 		</xenotypeSet>
 		
-		<itemQuality>Excellent</itemQuality>
+		
+		<weaponMoney>5000~99999</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DXP2DisruptorPistol</li>
+			<li>SWRanged_DL44pistol</li>
+		</weaponTags>
+		
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<apparelMoney>5000~15000</apparelMoney>
 		<apparelTags>
-		  <li>KotOREquipment_rare</li>
-		  <li>SaV_apparel_crimelord</li>
-		  <li>KotORShield_strong</li>
-		  <li>guy762PatchedTag_PrestigeRobe</li>
-		  <li>KotORClothing_simplecloak</li>
-		  <li>KotORHeadband_regalvisor</li>
-		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
+			<li>KotOREquipment_rare</li>
+			<li>SaV_apparel_crimelord</li>
+			<li>KotORShield_strong</li>
+			<li>guy762PatchedTag_PrestigeRobe</li>
+			<li>KotORClothing_simplecloak</li>
+			<li>KotORHeadband_regalvisor</li>
+			<li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Robes_onderon</li>
 		</apparelRequired>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
@@ -957,11 +1051,6 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<weaponMoney>5000~99999</weaponMoney>
-		<weaponTags>
-			<li>SaV_gangboss</li>
-		</weaponTags>
-		
 		<techHediffsChance>4</techHediffsChance>
 		<techHediffsMoney>2000~4000</techHediffsMoney>
 		<techHediffsTags>
@@ -974,26 +1063,29 @@
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
 		
+		<invNutrition>2</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
-		  <skipChance>0.05</skipChance>
-		  <subOptionsChooseOne>
-			<li>
-			  <thingDef>KOTOR_Spice</thingDef>
-			  <countRange>3~4</countRange>
-			</li>
-			<li>
-			  <thingDef>KOTOR_Deathstick</thingDef>
-			  <countRange>2~3</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_medpac_life</thingDef>
-				<countRange>1~2</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_KotORcredits</thingDef>
-				<countRange>5000~10000</countRange>
-			</li>
-		  </subOptionsChooseOne>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_HuttCartels</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapad_HuttCartels</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_HuttCartels</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
 		
 		<initialWillRange>0.5~2</initialWillRange>
@@ -1020,6 +1112,21 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="SWHutts_HuttLord" ParentName="SWHutts_Base">
 		<defName>SWHutts_HuttLord</defName>
 		<label>kajidic lord</label>
@@ -1030,10 +1137,10 @@
 		<minGenerationAge>40</minGenerationAge>
 		<maxGenerationAge>75</maxGenerationAge> <!-- should probably be higher but things start to break when these are set over 100 -->
 		<chronologicalAgeRange>300~750</chronologicalAgeRange>
+		<itemQuality>Masterwork</itemQuality>
 		
 		<factionLeader>true</factionLeader>
 		<maxPerGroup>1</maxPerGroup>
-		<invFoodDef>MealLavish</invFoodDef>
 		
 		<!-- <titleRequired>KotORTitleHutts_hutt</titleRequired> -->
 		
@@ -1044,15 +1151,14 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
-		<gearHealthRange>10</gearHealthRange>
-		<itemQuality>Masterwork</itemQuality>
+		
 		<apparelMoney>999999</apparelMoney>
 		<apparelTags Inherit="False">
-			<li>KotORShield_strong</li>
-			<li>KotORShield_hapan</li>
+			<li>SWGCWSpecificGadgetItem_JKBigEShield</li>
+			
 			<li>KotOREquipment_rare</li>
-			<li>KotOREquipment_HuttLegs</li>
-			<li>guy762PatchedTag_RobesCapeSash</li>
+			<!-- <li>KotOREquipment_HuttLegs</li> -->
+			<!-- <li>guy762PatchedTag_RobesCapeSash</li> -->
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		
@@ -1073,27 +1179,35 @@
 		  <!-- <li>PainCauser</li> -->
 		<!-- </techHediffsDisallowTags> -->
 		
+		<invNutrition>8</invNutrition><invFoodDef>MealLavish</invFoodDef>
 		<inventoryOptions>
-		  <skipChance>0.05</skipChance>
-		  <subOptionsChooseOne>
-			<li>
-			  <thingDef>KOTOR_Spice</thingDef>
-			  <countRange>4~8</countRange>
-			</li>
-			<li>
-			  <thingDef>KOTOR_Deathstick</thingDef>
-			  <countRange>4~8</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_medpac_life</thingDef>
-				<countRange>3~4</countRange>
-			</li>
-			<li>
-				<thingDef>guy762_KotORcredits</thingDef>
-				<countRange>10000~25000</countRange>
-			</li>
-		  </subOptionsChooseOne>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>SWCP_FactionIntelDatapadAdv_HuttCartels</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>25000~100000</countRange>
+				</li>
+			</subOptionsChooseOne>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>KOTOR_Spice</thingDef>
+					<countRange>4~8</countRange>
+				</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">
+					<thingDef>TarisianAle</thingDef>
+					<countRange>3~4</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>3~4</countRange>
+				</li>
+			</subOptionsTakeAll>
 		</inventoryOptions>
+		
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>

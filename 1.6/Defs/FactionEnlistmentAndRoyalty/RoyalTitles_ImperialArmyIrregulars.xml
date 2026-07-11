@@ -140,8 +140,9 @@
 	
 	<RoyalTitleDef Abstract="True" Name="SWGCWTitle_ImpArmyIrregularBase_HUMANONLY" ParentName="SWGCWTitle_ImpArmyIrregular_base">
 		<modExtensions>
-			<li Class="XenoTitle.ModExtension_XenoTitle">
-				<xenotypeDefs>
+			<!-- "One thing to know: a cap is a ceiling, it bars that title AND everything above it, so you only tag the single lowest title you want to block. Cap Knight and the pawn stops at Acolyte, with Praetor/etc. barred automatically. No ceremony is offered that would cross the cap, and the offered ceremony/letter always names the title they'll actually get, not the one they banked toward." -->
+			<li Class="SWCP_FlyingSloth_Misc.ModExtension_TitleXenotypeRestriction">
+				<disallowedXenotypes>
 					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li> -->
 					
 					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
@@ -213,9 +214,7 @@
 					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zabrakDathomiri</li>
 					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zeltron</li>
 					<li MayRequire="guy762.StarWarsXenotypes">guy762_xenotype_zygerrian</li>
-				</xenotypeDefs>
-				<isDenylist>true</isDenylist>
-				<noFurtherTitles>false</noFurtherTitles>
+				</disallowedXenotypes>
 			</li>
 		</modExtensions>
 	</RoyalTitleDef>

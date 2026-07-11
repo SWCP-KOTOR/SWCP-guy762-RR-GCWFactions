@@ -851,7 +851,8 @@
 	<!-- Main Ancient Reactor site building - only one -->
 	<StructureLayoutDef>
 		<defName>SWCPUnderworldStructure_FactionPalace_HuttCartelInterior</defName>
-		<workerClass>LayoutWorker_AncientRuins_Reactor</workerClass>
+		<!-- <workerClass>LayoutWorker_AncientRuins_Reactor</workerClass> -->
+		<workerClass>SWCP_LevelDesignStuff.LayoutWorker_AncientReactorNoBlastDoors</workerClass>
 		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
 		<clearRoomsEntirely>true</clearRoomsEntirely>
 		<minRoomWidth>8</minRoomWidth>

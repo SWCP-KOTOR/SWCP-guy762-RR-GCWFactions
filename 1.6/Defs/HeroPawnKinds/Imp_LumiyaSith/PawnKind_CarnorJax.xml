@@ -231,7 +231,7 @@
 					<min>3</min>
 					<max>3</max>
 				</forceLevelRange>
-				<darkSideRange>25 ~ 45</darkSideRange>
+				<!-- <darkSideRange>25 ~ 45</darkSideRange> -->
 				<grantRandomAbilities>false</grantRandomAbilities>
 				
 				<!-- <minRandomAbilities>3</minRandomAbilities> -->
