@@ -23,6 +23,8 @@
 		<maxGenerationAge>65</maxGenerationAge>
 		<itemQuality>Awful</itemQuality>
 		
+		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
+		
 		<xenotypeSet Inherit="False">
 		  <xenotypeChances>
 			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>

@@ -109,16 +109,6 @@
 			<max>2400</max>
 		</techHediffsMoney>
 
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>8~13</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>5~7</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -142,11 +132,11 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>8~13</range>
+						<range>10~12</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>5~7</range>
+						<range>6~8</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>

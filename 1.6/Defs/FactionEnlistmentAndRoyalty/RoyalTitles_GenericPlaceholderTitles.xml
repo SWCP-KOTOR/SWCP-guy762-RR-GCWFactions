@@ -222,8 +222,9 @@
 	<!-- </SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
 	
 	
-	
-	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- ops theming -->
+	<!-- ops theming -->
+	<!-- 
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 		<defName>SWCPFactionTitleLabelSet_PentastarAlignment</defName>
 		<factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
 		<titleLabels>
@@ -238,6 +239,27 @@
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>commodore</label></li>
 			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
+	-->
+	
+	
+	
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- politiburo theming -->
+		<defName>SWCPFactionTitleLabelSet_PentastarAlignment</defName>
+		<factionDef>guy762_SWWarlordsFaction_Pentastar</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>observer</label></li> <!-- no plaque -->
+			<li><title>SWGCWTitle_generic_NCO</title><label>representative</label></li> <!-- no plaque -->
+			
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>inspector</label></li> <!-- 3x1 (1 blue 1 red 1 yellow) -->
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>prefect</label></li> <!-- 4x1 (2 blue 1 red 1 yellow) -->
+			
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>administrator</label></li> <!-- 2x2 -->
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>minister</label></li> <!-- 3x2 (2 red 1 yellow) -->
+			
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>viceroy</label></li> <!-- 4x2 -->
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>moff</label></li> <!-- 5x2 -->
 		</titleLabels>
 	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	

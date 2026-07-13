@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RoyalTitlePermitDef>
+		<defName>SWGCWPermit_HuttCartels_SummonJKMercForce</defName>
+		<label>establish mercenary gang</label>
+		<description>Establish a gang of cheap mercenaries on the world map.</description>
+		<workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass>
+		
+		<faction>guy762_SWWarlordsFaction_HuttCartels</faction>
+		<minTitle>SWGCWTitle_HuttCartels_lowtrader</minTitle>
+		
+		<permitPointCost>10</permitPointCost>
+		<cooldownDays>40</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(9,7)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<!-- orbitals and other planets don't work *yet* -->
+		<layerBlacklist>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li>
+		</layerBlacklist>
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<permitSpawnsWorldObject>SWCPArmyForce_HuttCartels_JKMercs</permitSpawnsWorldObject>
+			</li>
+			<li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li>
+		</modExtensions>
+	</RoyalTitlePermitDef>
+	
+	
+	
+	
+	
+	
+	
+	<WorldObjectDef>
+		<defName>SWCPArmyForce_HuttCartels_JKMercs</defName>
+		<label>mercenary gang</label>
+		<description>A mobilized gang of cheap mercenaries.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.</description>
+		
+		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_JKMerc</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_JKMerc</expandingIconTexture>
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<nameMaker>NamerFactionPirate</nameMaker>
+		
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>8</abilityRange>
+				<forceNameString>SWCPWorldMapForceNameString_MercPlatoon</forceNameString>
+				<movementSpeedPerDay>36</movementSpeedPerDay>
+				<abilities>
+					<li>SWCPWMFAbility_HuttCartels_SummonNPCRaid_JKMercs_full</li> <!-- eventually replace with imperial bandits? -->
+					<li>SWCPWMFAbility_SummonPlayerUnits_JKMercs_small</li>
+					<li>SWCPWMFAbility_SummonPlayerUnits_JKMercs_big</li>
+					
+					<!-- <li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li> -->
+					<!-- <li>SWCPWMFAbility_DestroySettlement</li> -->
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_HuttCartels_SummonNPCRaid_JKMercs_full</defName>
+		<label>deploy full gang (NPC)</label>
+		<description>Deploy the full gang as friendly NPCs.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/HuttCartels_JKMercs_NPC</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 600,000 = 10 in-game days -->
+		<cooldownTicks>600000</cooldownTicks>
+		
+		<faction>guy762_SWWarlordsFaction_HuttCartels</faction>
+		<relevantPawnKinds>
+			<xSWHutts_JKRodian_24x>24</xSWHutts_JKRodian_24x>
+			<xSWHutts_JKHumanMerc_16x>16</xSWHutts_JKHumanMerc_16x>
+			<xSWHutts_JKWeequay_8x>8</xSWHutts_JKWeequay_8x>
+			<xSWHutts_JKTrando_8x>8</xSWHutts_JKTrando_8x>
+			<xSWHutts_JKRocketTrando_4x>4</xSWHutts_JKRocketTrando_4x>
+			<xSWHutts_JKSniperRodian_1x>1</xSWHutts_JKSniperRodian_1x>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SummonPlayerUnits_JKMercs_small</defName>
+		<label>deploy reinforcement squad (Player)</label>
+		<description>Deploy a player-controlled 6-man reinforcement squad.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/JKMercs_PlayerSmall</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 60,000 = 1 in-game day -->
+		<cooldownTicks>60000</cooldownTicks>
+		
+		<faction>PlayerColony</faction>
+		<relevantPawnKinds>
+			<xpSWScum_JKHumanMerc_playable>6</xpSWScum_JKHumanMerc_playable>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SummonPlayerUnits_JKMercs_big</defName>
+		<label>deploy strike team (Player)</label>
+		<description>Deploy a player-controlled 12-man strike team.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/JKMercs_PlayerLarge</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 180,000 = 3 in-game days -->
+		<cooldownTicks>180000</cooldownTicks>
+		
+		<faction>PlayerColony</faction>
+		<relevantPawnKinds>
+			<xpSWScum_JKHumanMerc_playable>12</xpSWScum_JKHumanMerc_playable>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+
+	
+</Defs>

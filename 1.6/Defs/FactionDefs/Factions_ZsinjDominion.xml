@@ -94,11 +94,14 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 
-		<naturalEnemy>true</naturalEnemy>
+
+
+
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+		<!-- <naturalEnemy>true</naturalEnemy> -->
 		
 		
 		<modExtensions Inherit="False">
@@ -215,7 +218,8 @@
 		
 		
 		<royalTitleTags>
-			<li>SWGCWTitleTag_ZsinjPrivateer</li>
+			<!-- <li>SWGCWTitleTag_ZsinjPrivateer</li> -->
+			<li>SWGCWTitleTag_generic</li>
 		</royalTitleTags>
 		<royalFavorLabel>commendations</royalFavorLabel>
 		<royalFavorIconPath>World/ZsinjDominion</royalFavorIconPath>

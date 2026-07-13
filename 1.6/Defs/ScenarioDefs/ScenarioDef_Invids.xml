@@ -209,7 +209,7 @@
 		</colorSpectrum>
 		
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>SWInvids_pirate</basicMemberKind>
+		<basicMemberKind>SWInvids_pirate</basicMemberKind> <!-- maybe don't have this set because this resets the outfit of every pawn purchased from slave traders -->
 		<pawnSingular>Invid</pawnSingular>
 		<pawnsPlural>Invids</pawnsPlural>
 		<techLevel>Spacer</techLevel>

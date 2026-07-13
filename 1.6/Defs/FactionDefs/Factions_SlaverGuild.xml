@@ -41,9 +41,14 @@
 			<li>SWViciousHutts_HuttLord</li>
 		</fixedLeaderKinds>
 		
+		
+		
+		
 		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<naturalEnemy>true</naturalEnemy>
+		
+		
 		
 		<layerWhitelist>
 			<!-- <li>Surface</li> -->

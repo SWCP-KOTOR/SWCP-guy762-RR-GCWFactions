@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	
+	<SWCPWorldMapForceNameString_ImpArmyPlatoon>Imperial Army platoon</SWCPWorldMapForceNameString_ImpArmyPlatoon>
+	<SWCPWorldMapForceNameString_ImpNavyPlatoon>Imperial Navy trooper detachment</SWCPWorldMapForceNameString_ImpNavyPlatoon>
+	
+	<SWCPWorldMapForceNameString_StormtrooperPlatoon>Stormtrooper platoon</SWCPWorldMapForceNameString_StormtrooperPlatoon>
+	<SWCPWorldMapForceNameString_RaptorPlatoon>Raptor platoon</SWCPWorldMapForceNameString_RaptorPlatoon>
+	<SWCPWorldMapForceNameString_NavyCommandoPlatoon>Navy Commando platoon</SWCPWorldMapForceNameString_NavyCommandoPlatoon>
+	
+	<SWCPWorldMapForceNameString_MercPlatoon>mercenary gang</SWCPWorldMapForceNameString_MercPlatoon>
+	
+	<SWCPWorldMapForceNameString_InvidPlatoon>Invid pirate gang</SWCPWorldMapForceNameString_InvidPlatoon>
+	
+</LanguageData>

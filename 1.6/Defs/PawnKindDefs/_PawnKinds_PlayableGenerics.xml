@@ -159,9 +159,57 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	<PawnKindDef Name="xpSWMaldrood_NavyCommando_playable" ParentName="SWMaldrood_NavyCommando">
+		<defName>xpSWMaldrood_NavyCommando_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
+	
+	
+	
+	<PawnKindDef Name="xpSWEriadu_ArmyConscript_playable" ParentName="SWEriadu_ArmyConscript">
+		<defName>xpSWEriadu_ArmyConscript_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWEriadu_ArmyTrooper_playable" ParentName="SWEriadu_ArmyTrooper">
+		<defName>xpSWEriadu_ArmyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWScum_JKHumanMerc_playable" ParentName="SWScum_JKHumanMerc">
+		<defName>xpSWScum_JKHumanMerc_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+	</PawnKindDef>
 	
 	
 	

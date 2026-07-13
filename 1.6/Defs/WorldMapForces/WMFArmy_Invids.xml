@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <RoyalTitlePermitDef> -->
+		<!-- <defName>SWGCWPermit_GreaterMaldrood_SummonInvidForce</defName> -->
+		<!-- <label>establish Invid gang</label> -->
+		<!-- <description>Establish a gang of Invid pirates on the world map.</description> -->
+		<!-- <workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass> -->
+		
+		<!-- <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction> -->
+		<!-- <minTitle>SWGCWTitle_generic_highflagofficer</minTitle> -->
+		
+		<!-- <permitPointCost>10</permitPointCost> -->
+		<!-- <cooldownDays>40</cooldownDays> -->
+		<!-- <usableOnWorldMap>true</usableOnWorldMap> -->
+		<!-- <uiPosition>(8,8)</uiPosition> -->
+		<!-- <royalAid> -->
+			<!-- <favorCost>8</favorCost> -->
+			<!-- <targetingRequireLOS>false</targetingRequireLOS> -->
+		<!-- </royalAid> -->
+		<!-- orbitals and other planets don't work *yet* -->
+		<!-- <layerBlacklist> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+		<!-- </layerBlacklist> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="ForcesMod.ForceAbilitiesModExtension"> -->
+				<!-- <permitSpawnsWorldObject>SWCPArmyForce_GreaterMaldrood_Invids</permitSpawnsWorldObject> -->
+			<!-- </li> -->
+			<!-- <li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li> -->
+		<!-- </modExtensions> -->
+	<!-- </RoyalTitlePermitDef> -->
+	
+	
+	
+	
+	
+	
+	
+	<WorldObjectDef>
+		<defName>SWCPArmyForce_Invids</defName>
+		<label>Invid pirate gang</label>
+		<description>A mobilized gang of Invid pirates.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.\n\nThe Invids are Leonia Tavira's infamous pirate gang, named for her flagship, the ISD Invidious. Though primarily a nomadic spacefaring gang, the Invids are still capable of deploying armed infantry units to the surface of planets in a limited capacity, mostly to carry out raids against 'dirtside' targets. The most skilled Invid fighters are given medium armor, and prefer to use slugthrowers and lighter vibroweapons in combat. Fighters of this prime level of skill aren't particularly numerous amongst the rabble of the galactic underworld, and as a result they are kept for Tavira's direct control.\n\nFor larger assaults, gangs of elite Invids are usually supplemented with cheap mercenaries hired with the help of Tavira's allies in the Greater Maldrood. These cheap mercenaries have decent anti-infantry firepower, but their specialist pawns posses no armor, and their standard carabineers only wear light armor. These low-grade mercs are rather cowardly, and will retreat from the battlefield if enough damage is taken. These mercenaries are therefore best deployed as a diversionary attack while elite Invids carry out mission objectives, and shouldn't be relied upon as an assault vanguard.</description>
+		
+		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_Invids</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_Invids</expandingIconTexture>
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<nameMaker>NamerFactionPirate</nameMaker>
+		
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>8</abilityRange>
+				<forceNameString>SWCPWorldMapForceNameString_InvidPlatoon</forceNameString>
+				<movementSpeedPerDay>36</movementSpeedPerDay>
+				<abilities>
+					<li>SWCPWMFAbility_GreaterMaldrood_SummonNPCRaid_JKMercs_full</li> <!-- eventually replace with imperial bandits? -->
+					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_small</li>
+					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_big</li>
+					
+					<!-- <li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li> -->
+					<!-- <li>SWCPWMFAbility_DestroySettlement</li> -->
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_GreaterMaldrood_SummonNPCRaid_JKMercs_full</defName>
+		<label>deploy full gang (NPC)</label>
+		<description>Deploy the full gang as friendly NPCs.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/GreaterMaldrood_JKMercs_NPC</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 600,000 = 10 in-game days -->
+		<cooldownTicks>600000</cooldownTicks>
+		
+		<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+		<relevantPawnKinds>
+			<xSWZsinj_JKRodian_24x>24</xSWZsinj_JKRodian_24x>
+			<xSWZsinj_JKHumanMerc_16x>16</xSWZsinj_JKHumanMerc_16x>
+			<xSWZsinj_JKWeequay_8x>8</xSWZsinj_JKWeequay_8x>
+			<xSWZsinj_JKTrando_8x>8</xSWZsinj_JKTrando_8x>
+			<xSWZsinj_JKRocketTrando_4x>4</xSWZsinj_JKRocketTrando_4x>
+			<xSWZsinj_JKSniperRodian_1x>1</xSWZsinj_JKSniperRodian_1x>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_small</defName>
+		<label>deploy reinforcement squad (Player)</label>
+		<description>Deploy a player-controlled 6-man reinforcement squad.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/Invids_InvidPirates_PlayerSmall</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 60,000 = 1 in-game day -->
+		<cooldownTicks>60000</cooldownTicks>
+		
+		<faction>guy762_GCWPlayerFaction_Invids</faction>
+		<relevantPawnKinds>
+			<SWInvids_pirate>6</SWInvids_pirate>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_big</defName>
+		<label>deploy strike team (Player)</label>
+		<description>Deploy a player-controlled 12-man strike team.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/Invids_InvidPirates_PlayerLarge</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 180,000 = 3 in-game days -->
+		<cooldownTicks>180000</cooldownTicks>
+		
+		<faction>guy762_GCWPlayerFaction_Invids</faction>
+		<relevantPawnKinds>
+			<SWInvids_pirate>12</SWInvids_pirate>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+
+
+
+
+
+
+	
+	
+	
+	<!-- <RulePackDef> -->
+		<!-- <defName>SWCPNameMaker_WorldMapForce_NavyCommando_GreaterMaldrood</defName> -->
+		<!-- <include> -->
+			<!-- <li>guy762_NamerFactionFiles_GenericFleetName</li> -->
+			<!-- <li>guy762_NamerFactionFiles_MaldroodPlanets</li> -->
+		<!-- </include> -->
+		<!-- <rulePack> -->
+		  <!-- <rulesStrings> -->
+			<!-- <li>r_name(p=12)->[SWFN_SmallFleetNumber] [SWGMFN_AnyPlanet] [detachment]</li> -->
+			
+			<!-- <li>detachment->Detachment</li> -->
+		  <!-- </rulesStrings> -->
+		<!-- </rulePack> -->
+	<!-- </RulePackDef> -->
+
+	
+</Defs>

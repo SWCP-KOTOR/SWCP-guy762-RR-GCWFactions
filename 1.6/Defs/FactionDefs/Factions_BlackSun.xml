@@ -56,7 +56,7 @@
 		<!-- <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath> -->
 			<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
-		<!--<naturalEnemy>true</naturalEnemy>-->
+		<!-- <naturalEnemy>true</naturalEnemy> -->
 		
 		<layerWhitelist>
 			<!-- <li>Surface</li> -->

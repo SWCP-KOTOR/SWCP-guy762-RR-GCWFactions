@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RoyalTitlePermitDef>
+		<defName>SWGCWPermit_GreaterMaldrood_SummonNavyCommandoForce</defName>
+		<label>establish Navy Commando detachment</label>
+		<description>Establish a detachment of Imperial Navy Commandos on the world map.</description>
+		<workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass>
+		
+		<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+		<minTitle>SWGCWTitle_generic_highflagofficer</minTitle>
+		
+		<permitPointCost>10</permitPointCost>
+		<cooldownDays>40</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(9,9)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<layerBlacklist> <!-- orbitals and other planets don't work *yet* -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li>
+		</layerBlacklist>
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<permitSpawnsWorldObject>SWCPArmyForce_GreaterMaldrood_NavyCommandos</permitSpawnsWorldObject>
+			</li>
+			<li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li>
+		</modExtensions>
+	</RoyalTitlePermitDef>
+	
+	
+	
+	
+	
+	
+	
+	<WorldObjectDef>
+		<defName>SWCPArmyForce_GreaterMaldrood_NavyCommandos</defName>
+		<label>Imperial Navy Commando detachment</label>
+		<description>A mobilized detachment of Imperial Navy Commandos.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.</description>
+		
+		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_NavyCommando</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_NavyCommando</expandingIconTexture>
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<nameMaker>SWCPNameMaker_WorldMapForce_NavyCommando_GreaterMaldrood</nameMaker>
+		
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>8</abilityRange>
+				<forceNameString>SWCPWorldMapForceNameString_NavyCommandoPlatoon</forceNameString>
+				<movementSpeedPerDay>24</movementSpeedPerDay>
+				<abilities>
+					<li>SWCPWMFAbility_GreaterMaldrood_SummonNPCRaid_NavyCommandos_full</li>
+					<li>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_NavyCommandos_small</li>
+					<li>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_NavyCommandos_big</li>
+					
+					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
+					<li>SWCPWMFAbility_DestroySettlement</li>
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_GreaterMaldrood_SummonNPCRaid_NavyCommandos_full</defName>
+		<label>deploy full detachment (NPC)</label>
+		<description>Deploy the full detachment as friendly NPCs.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/GreaterMaldrood_NavyCommando_NPC</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 600,000 = 10 in-game days -->
+		<cooldownTicks>600000</cooldownTicks>
+		
+		<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+		<relevantPawnKinds>
+			<xSWMaldrood_NavyCommando_28x>28</xSWMaldrood_NavyCommando_28x>
+			<xSWMaldrood_NavyCommandoMissile_4x>4</xSWMaldrood_NavyCommandoMissile_4x>
+			<!-- <xSWMaldrood_NavyCommandoRailgun_4x>4</xSWMaldrood_NavyCommandoRailgun_4x> -->
+			<xSWMaldrood_NavyCommandoOfficer_2x>2</xSWMaldrood_NavyCommandoOfficer_2x>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_NavyCommandos_small</defName>
+		<label>deploy reinforcement squad (Player)</label>
+		<description>Deploy a player-controlled 6-man reinforcement squad.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/GreaterMaldrood_NavyCommando_PlayerSmall</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 60,000 = 1 in-game day -->
+		<cooldownTicks>60000</cooldownTicks>
+		
+		<faction>PlayerColony</faction>
+		<relevantPawnKinds>
+			<xpSWMaldrood_NavyCommando_playable>6</xpSWMaldrood_NavyCommando_playable>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_NavyCommandos_big</defName>
+		<label>deploy strike team (Player)</label>
+		<description>Deploy a player-controlled 12-man strike team.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/GreaterMaldrood_NavyCommando_PlayerLarge</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 180,000 = 3 in-game days -->
+		<cooldownTicks>180000</cooldownTicks>
+		
+		<faction>PlayerColony</faction>
+		<relevantPawnKinds>
+			<xpSWMaldrood_NavyCommando_playable>12</xpSWMaldrood_NavyCommando_playable>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+
+
+
+
+
+
+	
+	
+	
+	<RulePackDef>
+		<defName>SWCPNameMaker_WorldMapForce_NavyCommando_GreaterMaldrood</defName>
+		<!-- <rulePack> -->
+			<!-- <rulesStrings> -->
+				<!-- <li>r_name-&gt;force 1</li> -->
+			<!-- </rulesStrings> -->
+		<!-- </rulePack> -->
+		<include>
+			<li>guy762_NamerFactionFiles_GenericFleetName</li>
+			<li>guy762_NamerFactionFiles_MaldroodPlanets</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=12)->[SWFN_SmallFleetNumber] [SWGMFN_AnyPlanet] [detachment]</li>
+			
+			<li>detachment->Detachment</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	
+</Defs>

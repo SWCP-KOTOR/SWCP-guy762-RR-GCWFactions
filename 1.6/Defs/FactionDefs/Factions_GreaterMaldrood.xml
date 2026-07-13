@@ -107,11 +107,16 @@
 		</raidArrivalLayerWhitelist>
 		
 
-		<naturalEnemy>true</naturalEnemy>
+
+
+
+
+
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+		<!-- <naturalEnemy>true</naturalEnemy> -->
 		
 		
 		<modExtensions Inherit="False">
@@ -180,7 +185,7 @@
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
 					
-					<guy762_GCWPlayerFaction_Invids>0~50</guy762_GCWPlayerFaction_Invids>
+					<guy762_GCWPlayerFaction_Invids>50~100</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>
 				<hasCities>true</hasCities>
@@ -474,7 +479,7 @@
 				</disallowedStrategies>
 				<options>
 					<xSWMaldrood_NavyTrooper_26x>100</xSWMaldrood_NavyTrooper_26x>
-					<!-- <xSWMaldrood_ArmyMedic_2x>100</xSWMaldrood_ArmyMedic_2x> -->
+					<xSWMaldrood_ArmyMedic_2x>100</xSWMaldrood_ArmyMedic_2x>
 					<xSWMaldrood_ArmyLieutenant_2x>100</xSWMaldrood_ArmyLieutenant_2x>
 					
 					<xSWMaldrood_NavyCommando_4x>100</xSWMaldrood_NavyCommando_4x>

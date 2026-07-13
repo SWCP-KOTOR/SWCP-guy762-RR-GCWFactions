@@ -94,6 +94,7 @@
 		</raidArrivalLayerWhitelist>
 		
 		
+		
 		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>

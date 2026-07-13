@@ -576,11 +576,11 @@
 				<skillRange>
 					<li>
 						<skill>Shooting</skill>
-						<range>10~14</range>
+						<range>10~12</range>
 					</li>
 					<li>
 						<skill>Melee</skill>
-						<range>8~12</range>
+						<range>10~12</range>
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>

@@ -97,12 +97,15 @@
 		</raidArrivalLayerWhitelist>
 		
 		
+		
+		
+		
 		<hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<!-- <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath> -->
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<naturalEnemy>true</naturalEnemy>
+		<!-- <naturalEnemy>true</naturalEnemy> -->
 		
 		
 		<modExtensions Inherit="False">

@@ -10,20 +10,35 @@
 		<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
 		<minTitle>SWGCWTitle_generic_lowflagofficer</minTitle>
 		
-		<permitPointCost>1</permitPointCost>
+		<permitPointCost>10</permitPointCost>
 		<cooldownDays>40</cooldownDays>
 		<usableOnWorldMap>true</usableOnWorldMap>
-		<uiPosition>(9,9)</uiPosition>
+		<uiPosition>(9,8)</uiPosition>
 		<royalAid>
 			<favorCost>8</favorCost>
 			<targetingRequireLOS>false</targetingRequireLOS>
 		</royalAid>
-		<layerBlacklist>
+		<layerBlacklist> <!-- orbitals and other planets don't work *yet* -->
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li>
 		</layerBlacklist>
 		<modExtensions>
 			<li Class="ForcesMod.ForceAbilitiesModExtension">
-				<permitSpawnsWorldObject>SWCPWorldMapForce_ImpArmyTroopers_ImpRemnant</permitSpawnsWorldObject>
+				<permitSpawnsWorldObject>SWCPArmyForce_ImpRemnant_ImpArmyTroopers</permitSpawnsWorldObject>
 			</li>
 			<li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li>
 		</modExtensions>
@@ -36,25 +51,34 @@
 	
 	
 	<WorldObjectDef>
-		<defName>SWCPWorldMapForce_ImpArmyTroopers_ImpRemnant</defName>
+		<defName>SWCPArmyForce_ImpRemnant_ImpArmyTroopers</defName>
 		<label>Imperial Army Platoon</label>
-		<description>A deployed platoon of Imperial Army troopers.</description>
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
-		<texture>UI/WorldMapForceIcons_Armies/WMFIcon_ImpArmyTrooper</texture>
-		<nameMaker>SWCPNameMaker_WorldMapForce_ImpArmyPlatoon</nameMaker>
+		<description>A mobilized platoon of Imperial Army troopers.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.\n\nImperial Army Troopers are the core vanguard unit of the Empire's ground armies, and are used primarily to take and hold ground. Their objective is to be difficult for the enemy to dislodge, buying time for elite forces, mechanized units, and expert commanders to arrive on the field. To achieve this, they are equipped with bulky, durable armor and an assortment of BlasTech rifles and carbines. However, what these platoons make up for in numbers and armor, they lack in heavy firepower. A typical deployment only includes four anti-armor grenadiers and one ion gunner, and as a result these units will struggle against armored targets like turrets and vehicles. Additionally, their heavy body armor is quite restrictive to movement, and these troopers will have difficulty maneuvering with haste in most situations.</description>
+		
+		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_ImpArmyTrooper</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_ImpArmyTrooper</expandingIconTexture>
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
 		<useDynamicDrawer>true</useDynamicDrawer>
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<nameMaker>SWCPNameMaker_WorldMapForce_ImpArmyPlatoon_ImpRemnant</nameMaker>
+		
 		<modExtensions>
 			<li Class="ForcesMod.ForceAbilitiesModExtension">
 				<abilityRange>8</abilityRange>
 				<forceNameString>SWCPWorldMapForceNameString_ImpArmyPlatoon</forceNameString>
-				<movementSpeedPerDay>12</movementSpeedPerDay>
+				<movementSpeedPerDay>16</movementSpeedPerDay>
 				<abilities>
-					<li>SWCPWorldMapForceAbility_SummonNPCRaid_ImpArmyTroopers_full</li>
-					<li>SWCPWorldMapForceAbility_SummonPlayerUnits_ImpArmyTroopers_small</li>
-					<li>SWCPWorldMapForceAbility_SummonPlayerUnits_ImpArmyTroopers_big</li>
+					<li>SWCPWMFAbility_ImpRemnant_SummonNPCRaid_ImpArmyTroopers_full</li>
+					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_small</li>
+					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_big</li>
 					
-					<li>GUY_Bombardment</li>
-					<li>GUY_DestroySettlement</li>
+					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
+					<li>SWCPWMFAbility_DestroySettlement</li>
 				</abilities>
 			</li>
 		</modExtensions>
@@ -66,7 +90,7 @@
 	
 	
 	<ForcesMod.ForceAbilityDef>
-		<defName>SWCPWorldMapForceAbility_SummonNPCRaid_ImpArmyTroopers_full</defName>
+		<defName>SWCPWMFAbility_ImpRemnant_SummonNPCRaid_ImpArmyTroopers_full</defName>
 		<label>deploy full platoon (NPC)</label>
 		<description>Deploy the full platoon as friendly NPCs.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
@@ -88,7 +112,7 @@
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
-		<defName>SWCPWorldMapForceAbility_SummonPlayerUnits_ImpArmyTroopers_small</defName>
+		<defName>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_small</defName>
 		<label>deploy reinforcement squad (Player)</label>
 		<description>Deploy a player-controlled 6-man reinforcement squad.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
@@ -96,7 +120,7 @@
 		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_ImpArmyTrooper_PlayerSmall</iconPath>
 		<requiresTarget>true</requiresTarget>
 		
-		<!-- 60,000 = 1 in-game day? -->
+		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
 		<faction>PlayerColony</faction>
@@ -106,7 +130,7 @@
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
-		<defName>SWCPWorldMapForceAbility_SummonPlayerUnits_ImpArmyTroopers_big</defName>
+		<defName>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_big</defName>
 		<label>deploy strike team (Player)</label>
 		<description>Deploy a player-controlled 12-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
@@ -114,7 +138,7 @@
 		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_ImpArmyTrooper_PlayerLarge</iconPath>
 		<requiresTarget>true</requiresTarget>
 		
-		<!-- 180,000 = 3 in-game days? -->
+		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
 		<faction>PlayerColony</faction>
@@ -137,7 +161,7 @@
 	
 	
 	<RulePackDef>
-		<defName>SWCPNameMaker_WorldMapForce_ImpArmyPlatoon</defName>
+		<defName>SWCPNameMaker_WorldMapForce_ImpArmyPlatoon_ImpRemnant</defName>
 		<!-- <rulePack> -->
 			<!-- <rulesStrings> -->
 				<!-- <li>r_name-&gt;force 1</li> -->
@@ -149,9 +173,9 @@
 		</include>
 		<rulePack>
 		  <rulesStrings>
-			<li>r_name(p=12)->[SWFN_BigFleetNumber] [SWIRFN_AnyPlanet] [army]</li>
+			<li>r_name(p=12)->[SWFN_BigFleetNumber] [SWIRFN_AnyPlanet] [division]</li>
 			
-			<li>army->Army</li>
+			<li>division->Division</li>
 		  </rulesStrings>
 		</rulePack>
 	</RulePackDef>

@@ -99,9 +99,12 @@
 			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</raidArrivalLayerWhitelist>
 
+
+
+
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
-		
+		<!-- <naturalEnemy>true</naturalEnemy> -->
 		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
