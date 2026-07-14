@@ -227,6 +227,51 @@
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- <PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_MaarekStele_TFS"  ParentName="SWWarlordsHeroBase_MaarekStele"> -->
 		<!-- <defName>SWWEPlayableVillain_MaarekStele_TFS</defName> -->
 		<!-- <modExtensions> -->
@@ -240,39 +285,7 @@
 		<!-- </modExtensions> -->
 	<!-- </PawnKindDef> -->
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	<!-- <PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_MaarekStele_VPE"  ParentName="SWWarlordsHeroBase_MaarekStele"> -->
 		<!-- <defName>SWWEPlayableVillain_MaarekStele_VPE</defName> -->
 		<!-- <modExtensions> -->

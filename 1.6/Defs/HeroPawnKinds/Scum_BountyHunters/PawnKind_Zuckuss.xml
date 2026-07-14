@@ -85,12 +85,12 @@
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceBody</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_stun</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_focus</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cure</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_energyres</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_stun</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_focus</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cure</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_energyres</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -245,6 +245,32 @@
 		</spawnCategories>
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

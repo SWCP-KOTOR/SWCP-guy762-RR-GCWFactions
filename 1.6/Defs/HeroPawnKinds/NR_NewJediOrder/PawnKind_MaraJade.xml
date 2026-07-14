@@ -107,16 +107,16 @@
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Leap</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Precognition</li> -->
-			
-			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
 			<!-- <li MayRequire="lee.theforce.standalone">Force_LightningB</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ThrowItem</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_disarm</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_disarm</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -263,6 +263,46 @@
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_MaraJade_TFS"  ParentName="SWWarlordsHeroBase_MaraJade">
 		<defName>SWWEPlayableHero_MaraJade_TFS</defName>
 		<modExtensions>
@@ -283,25 +323,6 @@
 			</li>      
 		</modExtensions>
 	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableHero_MaraJade_VPE"  ParentName="SWWarlordsHeroBase_MaraJade">
 		<defName>SWWEPlayableHero_MaraJade_VPE</defName>

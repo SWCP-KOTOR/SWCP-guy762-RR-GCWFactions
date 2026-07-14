@@ -76,28 +76,6 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
@@ -119,7 +97,6 @@
 			
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Fear</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Insanity</li> -->
-			<li MayRequire="lee.theforce.standalone">Force_MindControl</li>
 			<!-- <li MayRequire="lee.theforce.standalone">Force_DrainVitality</li> -->
 			
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceCloak</li> -->
@@ -127,15 +104,17 @@
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceChoke</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li>
-			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li>
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fear</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_horror</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li>
+			<li MayRequire="lee.theforce.standalone">Force_MindControl</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_blasterstorm</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li> -->
+			
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fear</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_horror</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -294,6 +273,39 @@
 
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_Lumiya_TFS"  ParentName="SWWarlordsHeroBase_Lumiya">
 		<defName>SWWEPlayableVillain_Lumiya_TFS</defName>
 		<modExtensions>
@@ -314,23 +326,6 @@
 			</li>      
 		</modExtensions>
 	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_Lumiya_VPE"  ParentName="SWWarlordsHeroBase_Lumiya">
 		<defName>SWWEPlayableVillain_Lumiya_VPE</defName>

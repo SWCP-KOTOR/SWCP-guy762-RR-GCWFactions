@@ -73,16 +73,6 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>16~18</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Social</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
@@ -117,24 +107,24 @@
 
 
 			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightspeed</li> -->
 			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li> -->
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightjump</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightjump</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cloak</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_suppression</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_breathcontrol</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cloak</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_forcebody</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_suppression</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_breathcontrol</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_rend</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fury</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_rend</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_fury</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cope</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_seethe</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_affliction</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_affliction</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li> -->
 		</abilities>
 		
 		
@@ -292,6 +282,40 @@
 	</BackstoryDef>
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_LanuPasiq_TFS"  ParentName="SWWarlordsHeroBase_LanuPasiq">
 		<defName>SWWEPlayableVillain_LanuPasiq_TFS</defName>
 		<modExtensions>
@@ -312,29 +336,6 @@
 			</li>      
 		</modExtensions>
 	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_LanuPasiq_VPE"  ParentName="SWWarlordsHeroBase_LanuPasiq">
 		<defName>SWWEPlayableVillain_LanuPasiq_VPE</defName>

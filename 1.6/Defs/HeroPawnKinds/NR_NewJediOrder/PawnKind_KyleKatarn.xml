@@ -120,9 +120,9 @@
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ForceHealing</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_aura</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_shock</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_aura</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -263,6 +263,38 @@
 		<!--shuffleable>False</shuffleable-->
 	</BackstoryDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_KyleKatarn_TFS"  ParentName="SWWarlordsHeroBase_KyleKatarn">
 		<defName>SWWEPlayableHero_KyleKatarn_TFS</defName>
 		<modExtensions>
@@ -283,39 +315,6 @@
 			</li>      
 		</modExtensions>
 	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableHero_KyleKatarn_VPE" ParentName="SWWarlordsHeroBase_KyleKatarn">
       <defName>SWWEPlayableHero_KyleKatarn_VPE</defName>

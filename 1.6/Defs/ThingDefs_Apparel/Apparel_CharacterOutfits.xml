@@ -3,7 +3,7 @@
 
 
 	  
-	  <ThingDef ParentName="guy762_HeadbandBase">
+	<ThingDef ParentName="guy762_HeadbandBase">
 		<defName>guy762_LumiyaHeaddress</defName>
 		<label>Lumiya's headdress</label>
 		<description>.</description>
@@ -30,7 +30,7 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>0.3</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
-			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.325</Force_FPMaxOffset>
+			<SWPotF_ForcePoints_Max MayRequire="guy762.Lee.KotORPotF">0.325</SWPotF_ForcePoints_Max>
 		</equippedStatOffsets>
 	
 	
@@ -95,7 +95,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -1224,7 +1224,7 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>0.3</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
-			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.325</Force_FPMaxOffset>
+			<SWPotF_ForcePoints_Max MayRequire="guy762.Lee.KotORPotF">0.325</SWPotF_ForcePoints_Max>
 		</equippedStatOffsets>
 		
 		
@@ -1313,7 +1313,7 @@
 			
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-			<Force_FPMaxOffset MayRequire="guy762.Lee.KotORPotF">0.125</Force_FPMaxOffset>
+			<SWPotF_ForcePoints_Max MayRequire="guy762.Lee.KotORPotF">0.125</SWPotF_ForcePoints_Max>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->

@@ -111,15 +111,15 @@
 			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
 			
 			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_energyres</li> -->
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_advenergyres</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_advenergyres</li> -->
 			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_valor</li> -->
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightvalor</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_knightvalor</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_barrier</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cure</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_barrier</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_cure</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_choke</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -292,6 +292,24 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableHero_LukeSkywalker_TFS"  ParentName="SWWarlordsHeroBase_LukeSkywalker">
 		<defName>SWWEPlayableHero_LukeSkywalker_TFS</defName>
 		<modExtensions>
@@ -314,7 +332,7 @@
 	
 	
 	
-	<PawnKindDef Name="SWCharPawnNR_LukeSkywalker_TFS"  ParentName="SWWEPlayableHero_LukeSkywalker_TFS">
+	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWCharPawnNR_LukeSkywalker_TFS"  ParentName="SWWEPlayableHero_LukeSkywalker_TFS">
 		<defName>SWCharPawnNR_LukeSkywalker_TFS</defName>
 		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
 	</PawnKindDef>

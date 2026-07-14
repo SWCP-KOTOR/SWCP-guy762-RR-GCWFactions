@@ -16,6 +16,7 @@
 			<li>RGB(225,225,125)</li> <!-- EaWX sun yellow -->
 		</colorSpectrum>
 		
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<maxCountAtGameStart>8</maxCountAtGameStart>

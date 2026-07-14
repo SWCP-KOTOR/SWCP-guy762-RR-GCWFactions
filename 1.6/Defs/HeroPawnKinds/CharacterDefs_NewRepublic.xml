@@ -47,7 +47,7 @@
         </roles>
     </FCP.Core.CharacterDef>
 	
-	<FCP.Core.CharacterDef>
+	<FCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
         <defName>SWNewRepublicCharacter_Luke</defName>
         <pawnKind>SWCharPawnNR_LukeSkywalker_TFS</pawnKind>
         <faction>guy762_SWWarlordsFaction_NewRepublic</faction>

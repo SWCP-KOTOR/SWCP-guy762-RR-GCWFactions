@@ -55,7 +55,7 @@
 		
 		<forcedTraits>
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
-			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
+			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity> -->
 			<Neurotic>2</Neurotic>
 			<Industriousness>2</Industriousness>
 			<Brawler>0</Brawler>
@@ -75,9 +75,9 @@
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Rage</li> -->
 			<!-- <li MayRequire="lee.theforce.standalone">Force_Speed</li> -->
 			
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li>
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_speed</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_jump</li> -->
+			<!-- <li MayRequire="guy762.Lee.KotORPotF">SWPotF_forcepower_pull</li> -->
 		</abilities>
 		
 		<modExtensions>
@@ -223,6 +223,41 @@
 	</BackstoryDef>
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="lee.theforce.standalone" Name="SWWEPlayableVillain_CarnorJax_TFS"  ParentName="SWWarlordsHeroBase_CarnorJax">
 		<defName>SWWEPlayableVillain_CarnorJax_TFS</defName>
 		<modExtensions>
@@ -243,31 +278,6 @@
 			</li>      
 		</modExtensions>
 	</PawnKindDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<PawnKindDef MayRequire="lee.theforce.psycast" Name="SWWEPlayableVillain_CarnorJax_VPE"  ParentName="SWWarlordsHeroBase_CarnorJax">
 		<defName>SWWEPlayableVillain_CarnorJax_VPE</defName>

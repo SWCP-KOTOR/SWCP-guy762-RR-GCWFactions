@@ -23,12 +23,6 @@
 
 			<WorkToMake>6000</WorkToMake>
 		</statBases>
-		<equippedStatOffsets>
-			<!-- <PsychicSensitivity>0.1</PsychicSensitivity> -->
-			<!-- <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate> -->
-			<!-- <Force_FPMaxOffset MayRequire="lee.theforce.standalone">1.125</Force_FPMaxOffset> -->
-			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.125</SWPotF_ForcePoints_Recovery> -->
-		</equippedStatOffsets>
 		
 		<costList Inherit="False">
 			<DevilstrandCloth>40</DevilstrandCloth>
