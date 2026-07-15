@@ -64,6 +64,8 @@
 		
 		<forcedTraits>
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			
+			<SWPotF_Trait_ForceSensitive_mid MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_mid>
 			<TorturedArtist>0</TorturedArtist>
 			<ShootingAccuracy>1</ShootingAccuracy>
 			<DrugDesire>1</DrugDesire>

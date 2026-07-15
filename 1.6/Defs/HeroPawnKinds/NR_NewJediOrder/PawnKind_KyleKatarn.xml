@@ -72,31 +72,11 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Crafting</skill> -->
-				<!-- <range>4~6</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			
+			<SWPotF_Trait_ForceSensitive_strong MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_strong>
 			<Tough>0</Tough>
 			<ShootingAccuracy>-1</ShootingAccuracy>
 		</forcedTraits>

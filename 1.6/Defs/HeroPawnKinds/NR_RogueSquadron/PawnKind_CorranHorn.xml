@@ -62,6 +62,8 @@
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			
+			<SWPotF_Trait_ForceSensitive_mid MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_mid>
 			<Nerves>2</Nerves>
 			<Industriousness>2</Industriousness>
 		</forcedTraits>

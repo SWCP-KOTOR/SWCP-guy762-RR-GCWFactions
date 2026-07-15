@@ -92,6 +92,8 @@
 		<forcedTraits>
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
 			<!-- <Force_LightAffinity MayRequire="lee.theforce.standalone">1</Force_LightAffinity> -->
+			
+			<SWPotF_Trait_ForceSensitive_ultra MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_ultra>
 			<Kind>0</Kind>
 			<NaturalMood>2</NaturalMood>
 			<Ascetic>0</Ascetic>

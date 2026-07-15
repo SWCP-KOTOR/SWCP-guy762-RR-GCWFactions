@@ -7,6 +7,7 @@
 		  
 		<!-- <forcedTraits> -->
 			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity> -->
+			<!-- <SWPotF_Trait_ForceSensitive_weak MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_weak> -->
 		<!-- </forcedTraits> -->
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
@@ -34,6 +35,7 @@
 		  
 		<!-- <forcedTraits> -->
 			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity> -->
+			<!-- <SWPotF_Trait_ForceSensitive_weak MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_weak> -->
 		<!-- </forcedTraits> -->
 		<modExtensions>
 			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">

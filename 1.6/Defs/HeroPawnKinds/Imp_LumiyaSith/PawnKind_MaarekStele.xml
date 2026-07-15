@@ -53,6 +53,8 @@
 		<forcedTraits>
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
+			
+			<SWPotF_Trait_ForceSensitive_weak MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_weak>
 			<FastLearner>0</FastLearner>
 			<Recluse>1</Recluse>
 		</forcedTraits>

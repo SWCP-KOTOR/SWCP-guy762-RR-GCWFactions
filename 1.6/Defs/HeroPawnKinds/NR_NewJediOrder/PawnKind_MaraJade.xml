@@ -90,6 +90,8 @@
 		<forcedTraits>
 			<!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			
+			<SWPotF_Trait_ForceSensitive_strong MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_strong>
 			<Nerves>2</Nerves>
 			<Nimble>0</Nimble>
 		</forcedTraits>

@@ -77,6 +77,8 @@
 			<!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1</Force_NeutralSensitivity>
 			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity> -->
+			
+			<SWPotF_Trait_ForceSensitive_weak MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_weak>
 			<Brawler>0</Brawler>
 			<Beauty>1</Beauty>
 			<Psychopath>0</Psychopath>
