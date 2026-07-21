@@ -798,7 +798,8 @@
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
 			
 			<PainShockThreshold>0.1</PainShockThreshold>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.4</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -969,7 +970,8 @@
 			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.2</PilotingAbility>
 			
 			<PainShockThreshold>0.1</PainShockThreshold>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.4</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -1581,7 +1583,9 @@
 		</statBases>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.3</PainShockThreshold>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.8</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.8</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -1688,9 +1692,6 @@
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
-			
-			<PainShockThreshold>0.3</PainShockThreshold>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
 		</equippedStatOffsets>
 		
 		<apparel>

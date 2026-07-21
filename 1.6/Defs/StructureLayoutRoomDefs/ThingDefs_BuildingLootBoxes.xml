@@ -8,6 +8,11 @@
 		<pathCost>50</pathCost>
 		<noRightClickDraftAttack>true</noRightClickDraftAttack>
 		<rotatable>false</rotatable>
+		
+		<techLevel>Spacer</techLevel>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -39,22 +44,18 @@
 			<drawOffset>(0,0,0.1)</drawOffset>
         </graphicData>
         <size>(1,1)</size>
-        <soundInteract>Metal_Drop</soundInteract>
-        <soundDrop>Metal_Drop</soundDrop>
-        <useHitPoints>true</useHitPoints>
         <statBases>
             <MarketValue>1000</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>10</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
-        <techLevel>Spacer</techLevel>
 		
 		<killedLeavings>
             <KotORChunk_plasteel>1</KotORChunk_plasteel>
         </killedLeavings>
         <comps>
-            <li Class="CompProperties_Usable">
+			<li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
                 <useLabel>Open {0}</useLabel>
             </li>
@@ -98,12 +99,18 @@
                         <countRange>1~3</countRange>
                         <weight>0.1</weight>
                     </li>
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
                 </weightedDrops>
             </li>
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_plasteelcylinder_open</soundOnUsed>
 			</li>
-            <!-- <li Class="CompProperties_UseEffectDestroySelf"/> -->
+            <li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="CompProperties_Forbiddable"/>
         </comps>
     </ThingDef>
@@ -121,6 +128,266 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_Spice</defName>
+        <label>spice container</label>
+        <description>A supply container containing some spice and other valuable drugs.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_PlasteelCylinder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
+		<killedLeavings>
+            <KotORChunk_plasteel>1</KotORChunk_plasteel>
+        </killedLeavings>
+        <comps>
+			<li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>KOTOR_Spice</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_Spice</thingDef>
+                        <countRange>25~50</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_Spice</thingDef>
+                        <countRange>50~100</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					
+					
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>TarisianAle</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>Glitterstim</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>JiRikknit</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>RikknitOvum</thingDef>
+                        <countRange>4~6</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>KOTOR_Deathstick</thingDef>
+                        <countRange>10~25</countRange>
+						<weight>0.25</weight>
+                    </li>
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_red20xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_plasteelcylinder_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_Spice</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_Spice>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_Spice>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_Cash</defName>
+        <label>cash container</label>
+        <description>A supply container containing money, in the form of either credits or metal coinage.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_PlasteelCylinder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
+		<killedLeavings>
+            <KotORChunk_plasteel>1</KotORChunk_plasteel>
+        </killedLeavings>
+        <comps>
+			<li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>100~500</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>500~1000</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>1000~5000</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>5000~10000</countRange>
+                        <weight>0.01</weight>
+                    </li>
+					
+					
+					
+					<li>
+                        <thingDef>Silver</thingDef>
+                        <countRange>50~100</countRange>
+                        <weight>1</weight>
+                    </li>
+					<li>
+                        <thingDef>Silver</thingDef>
+                        <countRange>100~500</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>Silver</thingDef>
+                        <countRange>500~1000</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					
+					
+					
+					<li>
+                        <thingDef>Gold</thingDef>
+                        <countRange>50~100</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>Gold</thingDef>
+                        <countRange>100~500</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>Gold</thingDef>
+                        <countRange>500~1000</countRange>
+                        <weight>0.01</weight>
+                    </li>
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_red20xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_plasteelcylinder_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_Cash</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_Cash>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_Cash>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
         <defName>SWCPBuildingLootBox_ImpBaseCommon</defName>
         <label>equipment container</label>
@@ -132,16 +399,12 @@
 			<drawOffset>(0,0,0.1)</drawOffset>
         </graphicData>
         <size>(1,1)</size>
-        <soundInteract>Metal_Drop</soundInteract>
-        <soundDrop>Metal_Drop</soundDrop>
-        <useHitPoints>true</useHitPoints>
         <statBases>
             <MarketValue>1000</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>10</Mass>
             <Flammability>0.2</Flammability>
         </statBases>
-        <techLevel>Spacer</techLevel>
 		
 		<killedLeavings>
             <ChunkSlagSteel>1</ChunkSlagSteel>
@@ -247,12 +510,18 @@
                         <countRange>5</countRange>
                         <weight>0.47</weight>
                     </li>
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
                 </weightedDrops>
             </li>
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>kotorsound_metalbox_open</soundOnUsed>
 			</li>
-            <!-- <li Class="CompProperties_UseEffectDestroySelf"/> -->
+            <li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="CompProperties_Forbiddable"/>
         </comps>
     </ThingDef>
@@ -266,6 +535,131 @@
 			</SWCPBuildingLootBox_ImpBaseCommon>
 		</things>
 	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_ScumBaseCommon</defName>
+        <label>equipment container</label>
+        <description>An equipment container for security and combat personnel.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_MetalBox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
+		<killedLeavings>
+            <ChunkSlagSteel>1</ChunkSlagSteel>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>3</numWeightedDrops>
+				<guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+				
+					<li><thingDef>SWCPItem_BF2AmmoSupplyPickup</thingDef><countRange>1~2</countRange><weight>1</weight></li>
+					
+					<li><thingDef>guy762_KotORcredits</thingDef><countRange>10~250</countRange><weight>0.5</weight></li>
+					<li><thingDef>Silver</thingDef><countRange>10~250</countRange><weight>0.5</weight></li>
+
+						<!-- weapons -->
+					<li><thingDef>guy762_DL18pistol</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					<li><thingDef>guy762_Model57pistol</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					<li><thingDef>guy762_DXP2DisruptorPistol</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					<li><thingDef>guy762_E5rifle</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					<li><thingDef>guy762_BH4DoubleBlaster</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_Vibrodagger</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+						
+						<!-- armor -->
+					<li><thingDef>guy762_ScumWeequayArmor</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_ScumLeatherHood</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					
+					<li><thingDef>guy762_ScumMercArmor</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					<li><thingDef>guy762_ScumMercHelmet</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					<li><thingDef>guy762_RebelGasMask</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					
+					
+					
+						<!-- consumables -->
+					<li><thingDef>guy762_grenadebelt_frag</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_grenadebelt_stun</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					
+					<li><thingDef>guy762_stim_battle</thingDef><countRange>5</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_stim_con</thingDef><countRange>5</countRange><weight>0.49</weight></li>
+					<li><thingDef>guy762_stim_dex</thingDef><countRange>5</countRange><weight>0.48</weight></li>
+					<li><thingDef>guy762_stim_str</thingDef><countRange>5</countRange><weight>0.47</weight></li>
+					<!-- <li><thingDef>guy762_stim_hyperbattle</thingDef><countRange>5</countRange><weight>0.5</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hypercon</thingDef><countRange>5</countRange><weight>0.49</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hyperdex</thingDef><countRange>5</countRange><weight>0.48</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hyperstr</thingDef><countRange>5</countRange><weight>0.47</weight></li> -->
+					
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_metalbox_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_ScumBaseCommon</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_ScumBaseCommon>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_ScumBaseCommon>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     
 
 </Defs>

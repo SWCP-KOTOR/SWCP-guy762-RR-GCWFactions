@@ -203,23 +203,23 @@
 	
 	
 	
-	<!-- <SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
-		<!-- <defName>SWCPFactionTitleLabelSet_ZsinjDominion</defName> -->
-		<!-- <factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef> -->
-		<!-- <titleLabels> -->
-			<!-- <li><title>SWGCWTitle_generic_initial</title><label>recruit</label></li> -->
-			<!-- <li><title>SWGCWTitle_generic_NCO</title><label>corporal</label></li> -->
+	<SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> <!-- special theming -->
+		<defName>SWCPFactionTitleLabelSet_ZsinjDominion</defName>
+		<factionDef>guy762_SWWarlordsFaction_ZsinjDominion</factionDef>
+		<titleLabels>
+			<li><title>SWGCWTitle_generic_initial</title><label>asset</label></li>
+			<li><title>SWGCWTitle_generic_NCO</title><label>operative</label></li>
 			
-			<!-- <li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li> -->
-			<!-- <li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li> -->
+			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>privateer</label></li>
+			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>Privateer Lieutenant</label></li>
 			
-			<!-- <li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> -->
-			<!-- <li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li> -->
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>Privateer Commander</label></li>
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>Privateer Captain</label></li>
 			
-			<!-- <li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> -->
-			<!-- <li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> -->
-		<!-- </titleLabels> -->
-	<!-- </SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef> -->
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>Commodore of Corsairs</label></li>
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>Warlord</label></li>
+		</titleLabels>
+	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	
 	
 	<!-- ops theming -->

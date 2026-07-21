@@ -44,7 +44,7 @@
         </graphicData>
         <size>(1,1)</size>
         <statBases>
-            <MarketValue>1000</MarketValue>
+            <MarketValue>750</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>10</Mass>
             <Flammability>0.2</Flammability>
@@ -114,7 +114,7 @@
         </graphicData>
         <size>(1,1)</size>
         <statBases>
-            <MarketValue>2500</MarketValue>
+            <MarketValue>1500</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>
@@ -143,7 +143,12 @@
                         <countRange>10~15</countRange>
                         <weight>1</weight>
                     </li>
-                    <li>
+                    <li MayRequire="Mlie.StarWarsAnimalCollection">
+                        <thingDef>TarisianAle</thingDef>
+                        <countRange>10~15</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
                         <thingDef>InsectJelly</thingDef>
                         <countRange>10~15</countRange>
                         <weight>0.75</weight>
@@ -199,7 +204,7 @@
         </graphicData>
         <size>(1,1)</size>
         <statBases>
-            <MarketValue>1750</MarketValue>
+            <MarketValue>1250</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>
@@ -350,7 +355,7 @@
         </graphicData>
         <size>(1,1)</size>
         <statBases>
-            <MarketValue>1750</MarketValue>
+            <MarketValue>1500</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>20</Mass>
             <Flammability>0.2</Flammability>

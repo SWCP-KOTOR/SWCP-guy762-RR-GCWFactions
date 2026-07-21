@@ -195,7 +195,7 @@
 				<li>SWCP_CommandPost_small</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWHutts_gamorreanlgt>100</SWHutts_gamorreanlgt>
+				<xgSWHutts_LightGamorreanBaseGuard>100</xgSWHutts_LightGamorreanBaseGuard>
 				<xgSWHutts_MandoMercBaseGuard>10</xgSWHutts_MandoMercBaseGuard>
 			</options>
 		</genStep>
@@ -214,7 +214,8 @@
 			<defendRadius>1</defendRadius>
 			<pawnsPerBeacon>1</pawnsPerBeacon>
 			<beaconBuildingDefs>
-				<li>AncientGravReactor</li>
+				<!-- <li>AncientGravReactor</li> -->
+				<li>KOTORInstrument_Nalargon</li>
 			</beaconBuildingDefs>
 			<options>
 				<xgSWHutts_HuttLord>100</xgSWHutts_HuttLord>
@@ -230,7 +231,8 @@
 			<defendRadius>1</defendRadius>
 			<pawnsPerBeacon>1~3</pawnsPerBeacon>
 			<beaconBuildingDefs>
-				<li>AncientGravReactor</li>
+				<!-- <li>AncientGravReactor</li> -->
+				<li>KOTORInstrument_Nalargon</li>
 			</beaconBuildingDefs>
 			<options>
 				<xgSWHutts_SlaveEntertainer>100</xgSWHutts_SlaveEntertainer>
@@ -246,10 +248,11 @@
 			<defendRadius>15</defendRadius>
 			<pawnsPerBeacon>4~5</pawnsPerBeacon>
 			<beaconBuildingDefs>
-				<li>AncientGravReactor</li>
+				<!-- <li>AncientGravReactor</li> -->
+				<li>KOTORInstrument_Nalargon</li>
 			</beaconBuildingDefs>
 			<options>
-				<SWHutts_gamorreanlgt>100</SWHutts_gamorreanlgt>
+				<xgSWHutts_LightGamorreanBaseGuard>100</xgSWHutts_LightGamorreanBaseGuard>
 				<xgSWHutts_MandoMercBaseGuard>10</xgSWHutts_MandoMercBaseGuard>
 			</options>
 		</genStep>
@@ -614,10 +617,10 @@
 			<minMaxRange>0~1</minMaxRange>
 		  </AncientCratesWithComponents>
 		  
-			<SWCPPrefabLootbox_ImpBaseCommon>
+			<SWCPPrefabLootbox_ScumBaseCommon>
 				<countPerHundredCells>1</countPerHundredCells>
 				<minMaxRange>1~1</minMaxRange>
-			</SWCPPrefabLootbox_ImpBaseCommon>
+			</SWCPPrefabLootbox_ScumBaseCommon>
 			
 			<SWCPPrefabTechBuilding_JKShieldBank>
 				<countPerHundredCells>1</countPerHundredCells>
@@ -790,6 +793,11 @@
 				<countPerHundredCells>1</countPerHundredCells>
 				<countRange>0~1</countRange>
 			</SWCPPrefab_LargeCrateForHidingIn>
+			
+			<SWCPPrefabLootbox_ScumBaseCommon>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_ScumBaseCommon>
 		</prefabs>
 		<floorTypes>
 			<li>guy762_FloorTiles_DoomgiverFoorMetal_dark</li>
@@ -824,6 +832,11 @@
 				<countPerHundredCells>1</countPerHundredCells>
 				<countRange>0~1</countRange>
 			</SWCPPrefab_LargeCrateForHidingIn>
+			
+			<SWCPPrefabLootbox_ScumBaseCommon>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>1~1</minMaxRange>
+			</SWCPPrefabLootbox_ScumBaseCommon>
 		</prefabs>
 		<floorTypes>
 			<li>guy762_FloorTiles_DoomgiverFoorMetal_dark</li>
@@ -1029,7 +1042,8 @@
 	
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ScumThroneRoom</defName>
-		<roomContentsWorkerType>RoomContents_Reactor</roomContentsWorkerType>
+		<!-- <roomContentsWorkerType>RoomContents_Reactor</roomContentsWorkerType> -->
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_ThroneRoom</roomContentsWorkerType>
 		<dontPlaceRandomly>true</dontPlaceRandomly>
 		<isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
 		<minSingleRectWidth>7</minSingleRectWidth>
@@ -1043,6 +1057,10 @@
 			<SWCPPrefab_HologramBandAndDancer>
 				<countRange>1</countRange>
 			</SWCPPrefab_HologramBandAndDancer>
+			
+			<!-- <SWCPPrefab_Nalargon> -->
+				<!-- <countRange>1</countRange> -->
+			<!-- </SWCPPrefab_Nalargon> -->
 		</prefabs>
 		
 		<scatter>
@@ -1141,15 +1159,20 @@
 		<defName>SWCPRoomLayout_ScumTreasureRoom</defName>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<prefabs>
-			<SWCPPrefabLootbox_FoodMeds>
+			<SWCPPrefabLootbox_Spice>
 				<countPerHundredCells>10</countPerHundredCells>
 				<minMaxRange>0~5</minMaxRange>
-			</SWCPPrefabLootbox_FoodMeds>
+			</SWCPPrefabLootbox_Spice>
+			<SWCPPrefabLootbox_ScumBaseCommon>
+				<countPerHundredCells>10</countPerHundredCells>
+				<minMaxRange>0~2</minMaxRange>
+			</SWCPPrefabLootbox_ScumBaseCommon>
 			
-		  <Subroom_SpacerCrates>
-			<countPerHundredCells>1</countPerHundredCells>
-			<minMaxRange>0~1</minMaxRange>
-		  </Subroom_SpacerCrates>
+			<SWCPRoomLayout_Subroom_SpiceAndCashLoot>
+				<countPerHundredCells>1</countPerHundredCells>
+				<minMaxRange>0~1</minMaxRange>
+			</SWCPRoomLayout_Subroom_SpiceAndCashLoot>
+			
 		  <IndustrialShelf_Edge>
 			<countPerTenEdgeCells>2</countPerTenEdgeCells>
 			<minMaxRange>1~5</minMaxRange>
@@ -1189,7 +1212,55 @@
 		</scatterTerrain>
 	</LayoutRoomDef>
 	
-	
+	<PrefabDef>
+		<defName>SWCPRoomLayout_Subroom_SpiceAndCashLoot</defName>
+		<size>(7,7)</size>
+		<things>
+			<AncientFortifiedWall>
+				<positions>
+				  <li>(1, 0, 1)</li>
+				  <li>(2, 0, 1)</li>
+				  <li>(4, 0, 1)</li>
+				  <li>(5, 0, 1)</li>
+				  <li>(1, 0, 2)</li>
+				  <li>(5, 0, 2)</li>
+				  <li>(1, 0, 3)</li>
+				  <li>(5, 0, 3)</li>
+				  <li>(1, 0, 4)</li>
+				  <li>(5, 0, 4)</li>
+				  <li>(1, 0, 5)</li>
+				  <li>(2, 0, 5)</li>
+				  <li>(3, 0, 5)</li>
+				  <li>(4, 0, 5)</li>
+				  <li>(5, 0, 5)</li>
+				</positions>
+			</AncientFortifiedWall>
+			<SWCPBuildingLootBox_Spice>
+				<chance>0.6</chance>
+				<rects>
+				  <li>(1,0,1,0)</li>
+				  <li>(0,2,0,2)</li>
+				  <li>(2,2,2,2)</li>
+				  <li>(4,2,4,4)</li>
+				  <li>(3,3,3,3)</li>
+				  <li>(6,3,6,3)</li>
+				  <li>(0,4,0,4)</li>
+				  <li>(6,5,6,5)</li>
+				  <li>(1,6,3,6)</li>
+				</rects>
+			</SWCPBuildingLootBox_Spice>
+			<SWCPBuildingLootBox_Cash>
+				<chance>0.75</chance>
+				<position>(2,0,4)</position>
+			</SWCPBuildingLootBox_Cash>
+			
+			<AncientBlastDoor>
+				<chance>0.6</chance>
+				<position>(3,0,1)</position>
+				<canOverrideData>false</canOverrideData>
+			</AncientBlastDoor>
+		</things>
+	</PrefabDef>
 	
 	
 	
@@ -1262,6 +1333,11 @@
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
 		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
 		<prefabs>
+			<SWCPPrefabTechBuilding_JKShieldANDAmmoBank>
+				<countPerHundredCells>1</countPerHundredCells>
+				<countRange>0~1</countRange>
+			</SWCPPrefabTechBuilding_JKShieldANDAmmoBank>
+			
 		  <ChemfuelWorkstation>
 			<countPerTenEdgeCells>1</countPerTenEdgeCells>
 			<minMaxRange>1~3</minMaxRange>
@@ -1384,6 +1460,20 @@
 	
 	
 	
+	
+	
+	
+	<PrefabDef>
+		<defName>SWCPPrefab_Nalargon</defName>
+		<size>(2,2)</size>
+		<things>
+			<KOTORInstrument_Nalargon>
+				<position>(0, 0, 0)</position>
+				<quality>Excellent</quality>
+			</KOTORInstrument_Nalargon>
+		</things>
+	</PrefabDef>
+
 	
 	
 	

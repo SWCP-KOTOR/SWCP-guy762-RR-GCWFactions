@@ -32,7 +32,7 @@
 		  <subOptionsChooseOne>
 			<li>
 				<thingDef>Silver</thingDef>
-				<countRange>0~300</countRange>
+				<countRange>0~50</countRange>
 			</li>
 			<li>
 			  <thingDef>KOTOR_Spice</thingDef>
@@ -750,7 +750,7 @@
 		
 		
 		<invNutrition>2</invNutrition><invFoodDef>MealLavish</invFoodDef>
-		<inventoryOptions>
+		<inventoryOptions Inherit="False">
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
@@ -881,7 +881,7 @@
 		</techHediffsDisallowTags>
 		
 		<invNutrition>6</invNutrition><invFoodDef>MealLavish</invFoodDef>
-		<inventoryOptions>
+		<inventoryOptions Inherit="False">
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
@@ -1064,7 +1064,7 @@
 		</techHediffsDisallowTags>
 		
 		<invNutrition>2</invNutrition><invFoodDef>MealLavish</invFoodDef>
-		<inventoryOptions>
+		<inventoryOptions Inherit="False">
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>
@@ -1180,7 +1180,7 @@
 		<!-- </techHediffsDisallowTags> -->
 		
 		<invNutrition>8</invNutrition><invFoodDef>MealLavish</invFoodDef>
-		<inventoryOptions>
+		<inventoryOptions Inherit="False">
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
 				<li>

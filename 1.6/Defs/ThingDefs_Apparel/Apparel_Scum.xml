@@ -1417,6 +1417,9 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.3</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.3</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>

@@ -287,6 +287,18 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	<PawnKindDef Name="xgSWHutts_LightGamorreanBaseGuard" ParentName="SWHutts_gamorreanlgt">
+		<defName>xgSWHutts_LightGamorreanBaseGuard</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_SWWarlordsFaction_HuttCartel</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
 	
 	
 	

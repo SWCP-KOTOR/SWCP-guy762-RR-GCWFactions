@@ -36,6 +36,9 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.4</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
@@ -262,6 +265,9 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.4</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<recipeMaker>

@@ -29,7 +29,7 @@
     </statBases>
 	<equippedStatOffsets>
 		<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
-		<MedicalTendQualityOffset>0.4</MedicalTendQualityOffset>
+		<MedicalTendQuality>0.4</MedicalTendQuality>
 		<MedicalTendSpeed>0.4</MedicalTendSpeed>
 	</equippedStatOffsets>
 	

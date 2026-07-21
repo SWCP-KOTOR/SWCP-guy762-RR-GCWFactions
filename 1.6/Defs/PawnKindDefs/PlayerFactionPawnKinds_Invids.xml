@@ -127,7 +127,11 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
 		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 			<li Class="BigAndSmall.PawnKindExtension">
 				<skillRange>
 					<li>

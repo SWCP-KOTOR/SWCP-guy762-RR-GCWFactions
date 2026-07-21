@@ -47,7 +47,8 @@
 		
 		
 		<royalTitleTags>
-			<li>SWGCWTitleTag_ImperialArmyIrregulars</li>
+			<li>SWGCWTitleTag_generic</li>
+			<!-- <li>SWGCWTitleTag_ImperialArmyIrregulars</li> -->
 		</royalTitleTags>
 		<royalFavorLabel>commendations</royalFavorLabel>
 		<royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>

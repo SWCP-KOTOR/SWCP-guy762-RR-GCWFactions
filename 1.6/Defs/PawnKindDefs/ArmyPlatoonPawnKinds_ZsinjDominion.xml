@@ -329,10 +329,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="xSWZsinj_JKTrando_8x" ParentName="SWScum_JKTrando">
-		<defName>xSWZsinj_JKTrando_8x</defName>
+	<PawnKindDef Name="xSWZsinj_JKTrando_4x" ParentName="SWScum_JKTrando">
+		<defName>xSWZsinj_JKTrando_4x</defName>
 		<combatPower>1</combatPower>
-		<maxPerGroup>8</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>guy762_SWWarlordsFaction_ZsinjDominion</defaultFactionType>
 		
 		<startingHediffs>

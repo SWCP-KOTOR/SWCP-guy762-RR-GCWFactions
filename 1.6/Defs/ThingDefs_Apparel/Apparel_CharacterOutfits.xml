@@ -198,9 +198,10 @@
 		</statBases>
 		
 		<equippedStatOffsets>
-			<SocialImpact>0.5</SocialImpact>
-			<NegotiationAbility>0.5</NegotiationAbility>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.5</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		<apparel>
 			<tags Inherit="False">
@@ -299,6 +300,8 @@
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.5</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>
@@ -386,10 +389,6 @@
 			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
-			
-			<SocialImpact>0.4</SocialImpact>
-			<NegotiationAbility>0.4</NegotiationAbility>
-			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
@@ -528,6 +527,9 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.5</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
@@ -660,6 +662,9 @@
 		<equippedStatOffsets>
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.1</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<!-- <costList> -->
@@ -1310,6 +1315,7 @@
 			
 			<SocialImpact>1</SocialImpact>
 			<NegotiationAbility>1</NegotiationAbility>
+			<SWCPStat_IntimidationPower>1</SWCPStat_IntimidationPower>
 			
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
@@ -1781,9 +1787,6 @@
 			<MeleeDodgeChance>-0.5</MeleeDodgeChance>
 			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.5</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
-			
-			<SocialImpact>0.6</SocialImpact>
-			<NegotiationAbility>0.6</NegotiationAbility>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
@@ -1913,6 +1916,10 @@
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+			
+			<SocialImpact>0.6</SocialImpact>
+			<NegotiationAbility>0.6</NegotiationAbility>
+			<SWCPStat_IntimidationPower>0.3</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<!-- <recipeMaker> -->
@@ -2049,6 +2056,9 @@
 			
 			<SocialImpact>0.5</SocialImpact>
 			<NegotiationAbility>0.5</NegotiationAbility>
+			
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+			<SWCPStat_IntimidationPower>0.5</SWCPStat_IntimidationPower>
 		</equippedStatOffsets>
 		
 		<apparel>
