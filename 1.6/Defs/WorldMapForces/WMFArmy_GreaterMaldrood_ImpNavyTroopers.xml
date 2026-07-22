@@ -121,7 +121,8 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<!-- <faction>PlayerColony</faction> -->
+		<faction>guy762_GCWPlayerFaction_Invids</faction>
 		<relevantPawnKinds>
 			<xpSWMaldrood_NavyTrooper_playable>6</xpSWMaldrood_NavyTrooper_playable>
 		</relevantPawnKinds>
@@ -139,7 +140,8 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<!-- <faction>PlayerColony</faction> -->
+		<faction>guy762_GCWPlayerFaction_Invids</faction>
 		<relevantPawnKinds>
 			<xpSWMaldrood_NavyTrooper_playable>12</xpSWMaldrood_NavyTrooper_playable>
 		</relevantPawnKinds>

@@ -467,7 +467,110 @@
 	
 	
 	
-	
+	<PawnKindDef Name="SWOnderon_cop" ParentName="SWMilitia_Base">
+		<defName>SWOnderon_cop</defName>
+		<label>Onderonian police officer</label>
+		<combatPower>50</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		
+		<!-- <backstoryFiltersOverride Inherit="False"> -->
+			<!-- <li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_RebelArmyTrooper</li></categories></li> -->
+		<!-- </backstoryFiltersOverride> -->
+		
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>SWCPSpecificGadgetItem_StunGrenadeBelt</li>
+			<li>SWCPSpecificApparelItem_KotOROnderonRebelHat</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
+			<li>SWCPSpecificApparelItem_ColdWeatherRobes</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Hat_onderon</li>
+			<li>guy762_Accessory_suspendersA</li>
+			<li>guy762_ScumWeequayArmor</li>
+			<li>guy762_Robes_coldweather</li>
+		</apparelRequired>
+		
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(100,65,70)</color> <!-- Onderonian Militia Maroon -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,55,40)</color>       <!--K2 jedi knight-->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,65,70)</color> <!-- Onderonian Militia Maroon -->
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>550~1300</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_DL18pistol</li>
+			<li>SWRanged_E5rifle</li>
+			<li>SWRanged_DC15cCarbine</li>
+			<li>SWMelee_electrobaton</li>
+		</weaponTags>
+		
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_battle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_str</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_dex</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>4~6</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	

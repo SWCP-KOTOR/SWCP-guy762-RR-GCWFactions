@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+		<!-- <invNutrition>4</invNutrition><invFoodDef>MealSurvivalPack</invFoodDef> -->
+	
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_vigilantguard</def><chance>1</chance></li> -->
+			
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	
+	
+	<PawnKindDef Name="xwSWCivilian_Villager" ParentName="SWCPCivilian_villager">
+		<defName>xwSWCivilian_Villager</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Prole" ParentName="SWCPCivilian_prole">
+		<defName>xwSWCivilian_Prole</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_PoorTraveler" ParentName="SWCPCivilian_poortraveler">
+		<defName>xwSWCivilian_PoorTraveler</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Mid" ParentName="SWCPCivilian_mid">
+		<defName>xwSWCivilian_Mid</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Bougie" ParentName="SWCPCivilian_bougie">
+		<defName>xwSWCivilian_Bougie</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_ExoticTraveler" ParentName="SWCPCivilian_exotictraveler">
+		<defName>xwSWCivilian_ExoticTraveler</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Hooded" ParentName="SWCPCivilian_hooded">
+		<defName>xwSWCivilian_Hooded</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Spacer" ParentName="SWCPCivilian_spacer">
+		<defName>xwSWCivilian_Spacer</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xwSWCivilian_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
+		<defName>xwSWCivilian_SlaveEntertainer</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xwSWCivilian_JawaOffworld" ParentName="SWCPCivilian_jawa_offworld">
+		<defName>xwSWCivilian_JawaOffworld</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_JawaTatooine" ParentName="SWCPCivilian_jawa">
+		<defName>xwSWCivilian_JawaTatooine</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef Name="xwSWCivilian_Ugnaught" ParentName="SWCPCivilian_ugnaught">
+		<defName>xwSWCivilian_Ugnaught</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xwSWCivilian_ShadyDealer" ParentName="SWCPCivilian_shadydealer">
+		<defName>xwSWCivilian_ShadyDealer</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_WanderingTrader" ParentName="SWCPCivilian_wanderingtrader">
+		<defName>xwSWCivilian_WanderingTrader</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_OffworldDoctor" ParentName="SWCPCivilian_doctormid">
+		<defName>xwSWCivilian_OffworldDoctor</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_Smuggler" ParentName="SWCPCivilian_smuggler">
+		<defName>xwSWCivilian_Smuggler</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xwSWCivilian_JawaTraderOffworld" ParentName="SWCPCivilian_jawatrader_offworld">
+		<defName>xwSWCivilian_JawaTraderOffworld</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xwSWCivilian_JawaTraderTatooine" ParentName="SWCPCivilian_jawatrader">
+		<defName>xwSWCivilian_JawaTraderTatooine</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xwSWCivilian_HuttTrader" ParentName="SWHutts_HuttTrader">
+		<defName>xwSWCivilian_HuttTrader</defName>
+		<combatPower>1</combatPower>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		
+		<!-- <minTitleRequired>KotORTitleHutts_lowtrader</minTitleRequired> -->
+		<!-- <royalTitleChance>1</royalTitleChance> -->
+		<!-- <titleSelectOne> -->
+			<!-- <li>KotORTitleHutts_hightrader</li> -->
+			<!-- <li>KotORTitleHutts_lowtrader</li> -->
+	    <!-- </titleSelectOne> -->
+		
+		<apparelTags Inherit="False">
+			<li>KotORAccessory_trader</li>
+		</apparelTags>
+		<weaponMoney>0</weaponMoney>
+		<weaponTags Inherit="False" />
+		
+		<invNutrition>4</invNutrition><invFoodDef>MealFine</invFoodDef>
+		<inventoryOptions Inherit="False">
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<countRange>1000~5000</countRange>
+				</li>
+				<li>
+					<thingDef>KOTOR_Spice</thingDef>
+					<countRange>4~8</countRange>
+				</li>
+				<li MayRequire="Mlie.StarWarsAnimalCollection">
+					<thingDef>TarisianAle</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+
+</Defs>

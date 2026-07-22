@@ -33,8 +33,12 @@
 			<li>SWCPMapGenStep_UnderworldStructure_HuttCartelPalace</li>
 			<li>SWCPMapGenStep_UnderworldStructure_HuttCartelBasePawns</li>
 			
+			<li>SWCPMapGenStep_ExteriorCommandPosts_HuttCartel</li>
+			<li>SWCPMapGenStep_ExteriorTurrets_HuttCartel</li>
+			
 			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_WanderingPersonnel</li>
 			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_BigCommandPostGuards</li>
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_PazaakTableGuards</li>
 			
 			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_rebeldoubleagents</li>
 			
@@ -55,9 +59,62 @@
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionPalace">
 			<layoutDef>SWCPUnderworldStructure_FactionPalace_HuttCartelInterior</layoutDef>
 		</genStep>
+		<preventsGenSteps>
+			<li>SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</li>
+			<li>SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</li>
+		</preventsGenSteps>
 	</GenStepDef>
 	
 	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_ExteriorCommandPosts_HuttCartel</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterGroupPrefabs">
+			<count>2</count>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>85</minSpacing>
+			<countPer10kCellsRange>0.6~0.8</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<groups>
+				<SWCPPrefabBigCommandPost_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPPrefabBigCommandPost_HuttCartel>
+			</groups>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_ExteriorTurrets_HuttCartel</defName>
+		<order>950</order>
+		<genStep Class="GenStep_ScatterGroupPrefabs">
+			<count>2</count>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>85</minSpacing>
+			<countPer10kCellsRange>0.4~0.6</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<groups>
+				<SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
+				<SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
+					<weight>100</weight>
+					<indoorRuin>false</indoorRuin>
+					<max>1</max>
+				</SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
+			</groups>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -128,6 +185,28 @@
 
 	
 	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_FactionFortressGuards_HuttCartel_PazaakTableGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_SWWarlordsFaction_HuttCartel</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>2~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTOR_PazaakTable</li>
+			</beaconBuildingDefs>
+			<options>
+				<xgSWHutts_JKRodianBaseGuard>100</xgSWHutts_JKRodianBaseGuard>
+				<xgSWHutts_JKHumanMercBaseGuard>75</xgSWHutts_JKHumanMercBaseGuard>
+				<xgSWHutts_JKWeequayBaseGuard>50</xgSWHutts_JKWeequayBaseGuard>
+				<xgSWHutts_JKTrandoBaseGuard>50</xgSWHutts_JKTrandoBaseGuard>
+				<xgSWHutts_JKRocketTrandoBaseGuard>25</xgSWHutts_JKRocketTrandoBaseGuard>
+				<xgSWHutts_JKSniperRodianBaseGuard>1</xgSWHutts_JKSniperRodianBaseGuard>
+			</options>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -489,6 +568,13 @@
 		<spawnJunk>false</spawnJunk>
 		<minSingleRectWidth>6</minSingleRectWidth>
 		<minSingleRectHeight>6</minSingleRectHeight>
+		
+		<canRemoveBorderDoors>true</canRemoveBorderDoors>
+		<!-- <canRemoveBorderWalls>true</canRemoveBorderWalls> -->
+		<canBeInMixedRoom>true</canBeInMixedRoom>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minAdjRooms>2</minAdjRooms>
+		
 		<wallAttachments>
 			<AncientEmergencyLight_Green>
 				<countRange>3~4</countRange>
@@ -534,6 +620,25 @@
 		  <li>guy762_FloorTiles_HuttOfficeTile</li>
 		</floorTypes>
 	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ScumKitchen</defName>
+		<spawnJunk>false</spawnJunk>
+		<roomContentsWorkerType>RoomContents_Kitchen</roomContentsWorkerType>
+		<prefabs>
+		  <AncientTableStoveElectric_Edge>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientTableStoveElectric_Edge>
+		  <SurvivalMealPallet>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </SurvivalMealPallet>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	
 
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_ScumWorkshop</defName>
@@ -645,6 +750,12 @@
 		<defName>SWCPRoomLayout_ScumTableRoom</defName>
 		<spawnJunk>false</spawnJunk>
 		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<minSingleRectWidth>10</minSingleRectWidth>
+		<minSingleRectHeight>10</minSingleRectHeight>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minAdjRooms>2</minAdjRooms>
+		<minConnectedRooms>2</minConnectedRooms>
+		
 		<wallAttachments>
 			<AncientEmergencyLight_Green>
 				<countRange>3~4</countRange>
@@ -877,7 +988,7 @@
 		
 		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
 		<corridorDef>AncientRuinsCorridor</corridorDef>
-		<corridorShapes>Cross, T</corridorShapes>
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
 		
 		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
 		<wallLampChancePerPosition>1</wallLampChancePerPosition>
@@ -913,7 +1024,7 @@
 			<SWCPRoomLayout_ScumSupplyWarehouse_RawFood><countRange>1~2</countRange></SWCPRoomLayout_ScumSupplyWarehouse_RawFood>
 			
 			<SWCPRoomLayout_ScumComputerRoom_HuttCartel>
-				<countRange>1~2</countRange>
+				<countRange>2~4</countRange>
 			</SWCPRoomLayout_ScumComputerRoom_HuttCartel>
 			
 			<SWCPRoomLayout_ScumRecRoom>
@@ -931,8 +1042,8 @@
 
 			<!-- Decorative -->
 			<SWCPRoomLayout_PoolRoom>0.15</SWCPRoomLayout_PoolRoom>
-			<SWCPRoomLayout_ScumCanteen>0.5</SWCPRoomLayout_ScumCanteen>
-			<SWCPRoomLayout_UrbanKitchen>0.5</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_ScumTableRoom>0.5</SWCPRoomLayout_ScumTableRoom>
+			<SWCPRoomLayout_ScumKitchen>0.5</SWCPRoomLayout_ScumKitchen>
 
 			<SWCPRoomLayout_ScumGarrisonBarracks>0.5</SWCPRoomLayout_ScumGarrisonBarracks>
 			<SWCPRoomLayout_ScumWarehousePalletRoom>0.5</SWCPRoomLayout_ScumWarehousePalletRoom>
@@ -946,31 +1057,31 @@
 			<!-- <SWCPRoomLayout_ScumWarehouseStorageRoom>2</SWCPRoomLayout_ScumWarehouseStorageRoom> -->
 		</roomDefs>
 		
-		<scatteredPrefabs>
-			<li>
-			  <countPer10kCellsRange>0.3~0.5</countPer10kCellsRange>
-			  <minSpacing>80</minSpacing>
-			  <maxDistFromStructure>250</maxDistFromStructure>
-			  <prefabs>
-				<SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
-					<weight>100</weight>
-					<indoorRuin>false</indoorRuin>
-					<max>2</max>
-				</SWCPTurretPrefab_BP4AntiVehicle_HuttCartel>
-				<SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
-					<weight>100</weight>
-					<indoorRuin>false</indoorRuin>
-					<max>2</max>
-				</SWCPTurretPrefab_FPC67AntiAir_HuttCartel>
+		<!-- <scatteredPrefabs> -->
+			<!-- <li> -->
+			  <!-- <countPer10kCellsRange>0.3~0.5</countPer10kCellsRange> -->
+			  <!-- <minSpacing>80</minSpacing> -->
+			  <!-- <maxDistFromStructure>250</maxDistFromStructure> -->
+			  <!-- <prefabs> -->
+				<!-- <SWCPTurretPrefab_BP4AntiVehicle_HuttCartel> -->
+					<!-- <weight>100</weight> -->
+					<!-- <indoorRuin>false</indoorRuin> -->
+					<!-- <max>2</max> -->
+				<!-- </SWCPTurretPrefab_BP4AntiVehicle_HuttCartel> -->
+				<!-- <SWCPTurretPrefab_FPC67AntiAir_HuttCartel> -->
+					<!-- <weight>100</weight> -->
+					<!-- <indoorRuin>false</indoorRuin> -->
+					<!-- <max>2</max> -->
+				<!-- </SWCPTurretPrefab_FPC67AntiAir_HuttCartel> -->
 				
-				<SWCPPrefabBigCommandPost_HuttCartel>
-					<weight>100</weight>
-					<indoorRuin>false</indoorRuin>
-					<max>2</max>
-				</SWCPPrefabBigCommandPost_HuttCartel>
-			  </prefabs>
-			</li>
-		</scatteredPrefabs>
+				<!-- <SWCPPrefabBigCommandPost_HuttCartel> -->
+					<!-- <weight>100</weight> -->
+					<!-- <indoorRuin>false</indoorRuin> -->
+					<!-- <max>2</max> -->
+				<!-- </SWCPPrefabBigCommandPost_HuttCartel> -->
+			  <!-- </prefabs> -->
+			<!-- </li> -->
+		<!-- </scatteredPrefabs> -->
 		
 		
 	</StructureLayoutDef>
@@ -994,38 +1105,7 @@
 	
 	
 	
-	<PrefabDef>
-	  <defName>SWCPPrefab_PazaakTable</defName>
-	  <size>(3,2)</size>
-	  <things>
-		<KOTOR_PazaakTable>
-		  <position>(1, 0, 0)</position>
-		  <quality>Normal</quality>
-		</KOTOR_PazaakTable>
-	  </things>
-	</PrefabDef>
 	
-	
-	<PrefabDef>
-	  <defName>SWCPPrefab_HologramBandAndDancer</defName>
-	  <size>(5,2)</size>
-	  <!-- <edgeOnly>true</edgeOnly> -->
-	  <things>
-		<SWCPBuilding_NPCHologram_bith>
-		  <positions>
-			<li>(0, 0, 2)</li>
-			<li>(1, 0, 2)</li>
-			<li>(3, 0, 2)</li>
-			<li>(4, 0, 2)</li>
-		  </positions>
-		  <relativeRotation>Opposite</relativeRotation>
-		</SWCPBuilding_NPCHologram_bith>
-		<SWCPBuilding_NPCHologram_dancerF>
-		  <position>(2, 0, 1)</position>
-		  <relativeRotation>Opposite</relativeRotation>
-		</SWCPBuilding_NPCHologram_dancerF>
-	  </things>
-	</PrefabDef>
 
 
 	
@@ -1211,60 +1291,6 @@
 		  </guy762_FloorTiles_DivotedTile_iron>
 		</scatterTerrain>
 	</LayoutRoomDef>
-	
-	<PrefabDef>
-		<defName>SWCPRoomLayout_Subroom_SpiceAndCashLoot</defName>
-		<size>(7,7)</size>
-		<things>
-			<AncientFortifiedWall>
-				<positions>
-				  <li>(1, 0, 1)</li>
-				  <li>(2, 0, 1)</li>
-				  <li>(4, 0, 1)</li>
-				  <li>(5, 0, 1)</li>
-				  <li>(1, 0, 2)</li>
-				  <li>(5, 0, 2)</li>
-				  <li>(1, 0, 3)</li>
-				  <li>(5, 0, 3)</li>
-				  <li>(1, 0, 4)</li>
-				  <li>(5, 0, 4)</li>
-				  <li>(1, 0, 5)</li>
-				  <li>(2, 0, 5)</li>
-				  <li>(3, 0, 5)</li>
-				  <li>(4, 0, 5)</li>
-				  <li>(5, 0, 5)</li>
-				</positions>
-			</AncientFortifiedWall>
-			<SWCPBuildingLootBox_Spice>
-				<chance>0.6</chance>
-				<rects>
-				  <li>(1,0,1,0)</li>
-				  <li>(0,2,0,2)</li>
-				  <li>(2,2,2,2)</li>
-				  <li>(4,2,4,4)</li>
-				  <li>(3,3,3,3)</li>
-				  <li>(6,3,6,3)</li>
-				  <li>(0,4,0,4)</li>
-				  <li>(6,5,6,5)</li>
-				  <li>(1,6,3,6)</li>
-				</rects>
-			</SWCPBuildingLootBox_Spice>
-			<SWCPBuildingLootBox_Cash>
-				<chance>0.75</chance>
-				<position>(2,0,4)</position>
-			</SWCPBuildingLootBox_Cash>
-			
-			<AncientBlastDoor>
-				<chance>0.6</chance>
-				<position>(3,0,1)</position>
-				<canOverrideData>false</canOverrideData>
-			</AncientBlastDoor>
-		</things>
-	</PrefabDef>
-	
-	
-	
-	
 	
 	
 	
@@ -1463,16 +1489,9 @@
 	
 	
 	
-	<PrefabDef>
-		<defName>SWCPPrefab_Nalargon</defName>
-		<size>(2,2)</size>
-		<things>
-			<KOTORInstrument_Nalargon>
-				<position>(0, 0, 0)</position>
-				<quality>Excellent</quality>
-			</KOTORInstrument_Nalargon>
-		</things>
-	</PrefabDef>
+	
+	
+	
 
 	
 	

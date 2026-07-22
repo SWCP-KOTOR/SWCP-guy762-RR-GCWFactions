@@ -63,12 +63,12 @@
                 <staticFaction>guy762_KotORFaction_Civilians</staticFaction>
             </li>
 		</comps>
-		<!-- <modExtensions> -->
-			<!-- <li Class="CastableInUnconscious.ModExtension_CastableInUnconscious"> -->
-				<!-- <castableInUnconscious>true</castableInUnconscious> -->
+		<modExtensions>
+			<li Class="CastableInUnconscious.ModExtension_CastableInUnconscious">
+				<castableInUnconscious>true</castableInUnconscious>
 				<!-- <castableInMentalbreak>true</castableInMentalbreak> -->
-			<!-- </li> -->
-		<!-- </modExtensions> -->
+			</li>
+		</modExtensions>
 	</AbilityDef>
 	
 	

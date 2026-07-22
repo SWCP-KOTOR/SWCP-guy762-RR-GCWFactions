@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_ImpBaseCommon</defName>
+        <label>equipment container</label>
+        <description>An equipment container for security and combat personnel.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_MetalBox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
+		<killedLeavings>
+            <ChunkSlagSteel>1</ChunkSlagSteel>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>3</numWeightedDrops>
+				<guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+				
+					<li>
+                        <thingDef>SWCPItem_BF2AmmoSupplyPickup</thingDef>
+                        <countRange>1~2</countRange>
+                        <weight>1</weight>
+                    </li>
+					
+					<li>
+                        <thingDef>guy762_KotORcredits</thingDef>
+                        <countRange>10~250</countRange>
+                        <weight>0.5</weight>
+                    </li>
+
+					<!-- weapons -->
+					<li>
+                        <thingDef>guy762_RK3pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_SE14pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_EC17pistol</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_E10rifle</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_E11carbine</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_ElectroBatonGCW</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+						<!-- armor -->
+					<li>
+                        <thingDef>guy762_ImpLightCombatArmor</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_NavyTrooperHelmet</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_ArmyTrooperGasMask</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.25</weight>
+                    </li>
+						<!-- consumables -->
+					<li>
+                        <thingDef>guy762_grenadebelt_frag</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_grenadebelt_stun</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.75</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_battle</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.5</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_con</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.49</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_dex</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.48</weight>
+                    </li>
+					<li>
+                        <thingDef>guy762_stim_str</thingDef>
+                        <countRange>5</countRange>
+                        <weight>0.47</weight>
+                    </li>
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_metalbox_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_ImpBaseCommon</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_ImpBaseCommon>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_ImpBaseCommon>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCPBuildingLootBoxBASE">
+        <defName>SWCPBuildingLootBox_ScumBaseCommon</defName>
+        <label>equipment container</label>
+        <description>An equipment container for security and combat personnel.</description>
+        <graphicData>
+            <texPath>Buildings/KotOR_MetalBox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
+		<killedLeavings>
+            <ChunkSlagSteel>1</ChunkSlagSteel>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>3</numWeightedDrops>
+				<guaranteedDrops>
+                </guaranteedDrops>
+                <weightedDrops>
+				
+					<li><thingDef>SWCPItem_BF2AmmoSupplyPickup</thingDef><countRange>1~2</countRange><weight>1</weight></li>
+					
+					<li><thingDef>guy762_KotORcredits</thingDef><countRange>10~250</countRange><weight>0.5</weight></li>
+					<li><thingDef>Silver</thingDef><countRange>10~250</countRange><weight>0.5</weight></li>
+
+						<!-- weapons -->
+					<li><thingDef>guy762_DL18pistol</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					<li><thingDef>guy762_Model57pistol</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					<li><thingDef>guy762_DXP2DisruptorPistol</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					<li><thingDef>guy762_E5rifle</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					<li><thingDef>guy762_BH4DoubleBlaster</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_Vibrodagger</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+						
+						<!-- armor -->
+					<li><thingDef>guy762_ScumWeequayArmor</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_ScumLeatherHood</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					
+					<li><thingDef>guy762_ScumMercArmor</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					<li><thingDef>guy762_ScumMercHelmet</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					<li><thingDef>guy762_RebelGasMask</thingDef><countRange>1</countRange><weight>0.25</weight></li>
+					
+					
+					
+					
+						<!-- consumables -->
+					<li><thingDef>guy762_grenadebelt_frag</thingDef><countRange>1</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_grenadebelt_stun</thingDef><countRange>1</countRange><weight>0.75</weight></li>
+					
+					<li><thingDef>guy762_stim_battle</thingDef><countRange>5</countRange><weight>0.5</weight></li>
+					<li><thingDef>guy762_stim_con</thingDef><countRange>5</countRange><weight>0.49</weight></li>
+					<li><thingDef>guy762_stim_dex</thingDef><countRange>5</countRange><weight>0.48</weight></li>
+					<li><thingDef>guy762_stim_str</thingDef><countRange>5</countRange><weight>0.47</weight></li>
+					<!-- <li><thingDef>guy762_stim_hyperbattle</thingDef><countRange>5</countRange><weight>0.5</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hypercon</thingDef><countRange>5</countRange><weight>0.49</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hyperdex</thingDef><countRange>5</countRange><weight>0.48</weight></li> -->
+					<!-- <li><thingDef>guy762_stim_hyperstr</thingDef><countRange>5</countRange><weight>0.47</weight></li> -->
+					
+					<!-- ///////////////////////////////////////////////////////////// -->
+					<li>
+                        <thingDef>SWCPItem_OddityXP_datapad_purple10xp</thingDef>
+                        <countRange>1</countRange>
+                        <weight>0.05</weight>
+                    </li>
+                </weightedDrops>
+            </li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>kotorsound_metalbox_open</soundOnUsed>
+			</li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+	
+	<PrefabDef>
+		<defName>SWCPPrefabLootbox_ScumBaseCommon</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCPBuildingLootBox_ScumBaseCommon>
+				<chance>0.75</chance>
+			</SWCPBuildingLootBox_ScumBaseCommon>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+
+</Defs>

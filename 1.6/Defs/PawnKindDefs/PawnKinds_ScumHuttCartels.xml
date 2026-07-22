@@ -918,7 +918,7 @@
 		</inventoryOptions>
 		
 		
-		<initialWillRange>0.5~2</initialWillRange>
+		<initialWillRange>50~80</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<isFighter>false</isFighter>
@@ -1209,8 +1209,8 @@
 		</inventoryOptions>
 		
 		
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>100~200</initialWillRange>
+		<initialResistanceRange>8~14</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<isFighter>false</isFighter>
 		

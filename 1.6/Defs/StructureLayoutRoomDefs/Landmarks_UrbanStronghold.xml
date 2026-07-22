@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<LandmarkDef Name="SWCPLandmark_UrbanStronghold">
+		<defName>SWCPLandmark_UrbanStronghold</defName>
+		<label>urban stronghold</label>
+		<!-- <iconTexturePath>World/WorldObjects/DefaultSettlement</iconTexturePath> -->
+		<iconTexturePath>World/LandmarkIcons/ScumAndVillainy</iconTexturePath>
+		<atlasSize>(2, 2)</atlasSize>
+		<commonality>0.5</commonality>
+		<nameMaker>NamerSettlementPirate</nameMaker>
+		<category>structure</category>
+		<drawAboveRoads>true</drawAboveRoads>
+		<mutatorChances>
+			<SWCPTileMutator_UrbanStronghold Required="True"/>
+			
+			<FoggyMutator>0.05</FoggyMutator>
+			<SunnyMutator>0.05</SunnyMutator>
+			<WetClimate>0.05</WetClimate>
+			<WindyMutator>0.05</WindyMutator>
+			<AncientUplink>0.15</AncientUplink>
+			<Stockpile>0.05</Stockpile>
+			<Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.1</Junkyard>
+			<DryGround>0.05</DryGround>
+		</mutatorChances>
+		
+		<comboLandmarkMutators>
+			<Bay>0.1</Bay>
+			<AncientSmokeVent>0.02</AncientSmokeVent>
+			<AncientToxVent>0.02</AncientToxVent>
+			<AncientHeatVent>0.02</AncientHeatVent>
+		</comboLandmarkMutators>
+	</LandmarkDef>
+	
+	<TileMutatorDef>
+		<defName>SWCPTileMutator_UrbanStronghold</defName>
+		<label>urban stronghold</label>
+		<description>The remains of an ancient settlement. These ruins may contain a wide variety of possible threats.</description>
+		<workerClass>SWCP_LevelDesignStuff.TileMutatorWorker_UrbanStronghold</workerClass> <!-- HOW IT WORKS: this class is hardcoded to target the GenStepDef below -->
+		<biomeWhitelist>
+			<li>Scarlands</li>
+			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OnderonUrban</li>
+			<!-- <li>SWCPBiome_OnderonIziz</li> -->
+		</biomeWhitelist>
+		<preventGenSteps>
+			<li>SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</li>
+			<li>SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</li>
+			
+			<li>SWCPGenStep_ExtraCommonScatterRuinsSimple</li>
+			<li>SWCPGenStep_ExtraCommonScatterShrines</li>
+			
+			<!-- <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li> -->
+			<!-- <li>SWCPMapGenStep_UrbanBiome_Dormitories</li> -->
+			<!-- <li>SWCPMapGenStep_UrbanBiome_OnderonMunicipalBuildings</li> -->
+			<!-- <li>SWCPMapGenStep_UrbanBiome_OnderonDormitories</li> -->
+		</preventGenSteps>
+		
+		<extraGenSteps>
+			<li>SWCPGenStep_UrbanStrongholdGuards_CivilianPatrons</li>
+			<li>SWCPGenStep_UrbanStrongholdGuards_SlaveDancers</li>
+			<li>SWCPGenStep_UrbanStrongholdGuards_Traders</li>
+			<li>SWCPGenStep_UrbanStrongholdGuards_PazaakTableGuards</li>
+			
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_basecommaders</li>
+			<li>SWCPGenStep_FactionFortressGuards_HuttCartel_controlroomguards</li>
+		</extraGenSteps>
+		
+	</TileMutatorDef>
+
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanStronghold</defName>
+		<!-- <order>400</order> -->
+		<order>741</order>
+		
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_UrbanStronghold">
+			<layoutDef>SWCPUnderworldStructure_UrbanStronghold</layoutDef>
+		</genStep>
+		<!-- <preventsGenSteps> -->
+			<!-- <li>SWCPGenStep_UrbanBiomeOrdMantell_BlackSun_PazaakTableGuards</li> -->
+			<!-- <li>SWCPGenStep_UrbanBiomeOnderon_HuttCartel_PazaakTableGuards</li> -->
+		<!-- </preventsGenSteps> -->
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_UrbanStrongholdGuards_CivilianPatrons</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+			<defendRadius>50</defendRadius>
+			<pawnsPerBeacon>5~10</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTORInstrument_Nalargon</li>
+			</beaconBuildingDefs>
+			<options>
+				<xwSWCivilian_Prole>10</xwSWCivilian_Prole>
+				<xwSWCivilian_PoorTraveler>5</xwSWCivilian_PoorTraveler>
+				<xwSWCivilian_Hooded>5</xwSWCivilian_Hooded>
+				<xwSWCivilian_Mid>2.5</xwSWCivilian_Mid>
+				<!-- <xwSWCivilian_ShadyDealer>1</xwSWCivilian_ShadyDealer> -->
+				<xwSWCivilian_Bougie>1</xwSWCivilian_Bougie>
+				<xwSWCivilian_ExoticTraveler>1</xwSWCivilian_ExoticTraveler>
+				<!-- <xwSWCivilian_Smuggler>5</xwSWCivilian_Smuggler> -->
+				
+				<xwSWCivilian_JawaOffworld>1</xwSWCivilian_JawaOffworld>
+				<xwSWCivilian_Spacer>1</xwSWCivilian_Spacer>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_UrbanStrongholdGuards_SlaveDancers</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+			<defendRadius>1</defendRadius>
+			<pawnsPerBeacon>0~1</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<!-- <li>AncientGravReactor</li> -->
+				<li>KOTORInstrument_Nalargon</li>
+			</beaconBuildingDefs>
+			<options>
+				<xwSWCivilian_SlaveEntertainer>100</xwSWCivilian_SlaveEntertainer>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_UrbanStrongholdGuards_Traders</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+			<defendRadius>5</defendRadius>
+			<pawnsPerBeacon>3~5</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTORInstrument_Nalargon</li>
+			</beaconBuildingDefs>
+			<options>
+				<xwSWCivilian_Mid>75</xwSWCivilian_Mid>
+				<xwSWCivilian_Bougie>50</xwSWCivilian_Bougie>
+				<xwSWCivilian_ExoticTraveler>25</xwSWCivilian_ExoticTraveler>
+				
+				<xwSWCivilian_ShadyDealer>50</xwSWCivilian_ShadyDealer>
+				<xwSWCivilian_WanderingTrader>50</xwSWCivilian_WanderingTrader>
+				<xwSWCivilian_Smuggler>50</xwSWCivilian_Smuggler>
+				<xwSWCivilian_JawaTraderOffworld>25</xwSWCivilian_JawaTraderOffworld>
+				<xwSWCivilian_HuttTrader>10</xwSWCivilian_HuttTrader>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>SWCPGenStep_UrbanStrongholdGuards_PazaakTableGuards</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_DefendingPawns">
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
+			<defendRadius>15</defendRadius>
+			<pawnsPerBeacon>2~3</pawnsPerBeacon>
+			<beaconBuildingDefs>
+				<li>KOTOR_PazaakTable</li>
+			</beaconBuildingDefs>
+			<options>
+				<xcSWCivilian_Thug_8x>100</xcSWCivilian_Thug_8x>
+			</options>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<StructureLayoutDef>
+		<defName>SWCPUnderworldStructure_UrbanStronghold</defName>
+		<workerClass>SWCP_LevelDesignStuff.LayoutWorker_AncientReactorNoBlastDoors</workerClass>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<clearRoomsEntirely>true</clearRoomsEntirely>
+		<minRoomWidth>8</minRoomWidth>
+		<minRoomHeight>8</minRoomHeight>
+		
+		<shouldDamage>false</shouldDamage>
+		
+		<!-- Structure -->
+		
+		<!-- <corridorDef>AncientCorridorDefense</corridorDef> -->
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<corridorShapes>Cross, T</corridorShapes>
+		
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		
+		<!-- <exteriorDoorDef>AncientBlastDoor</exteriorDoorDef> -->
+		
+		<wallDef>guy762_PoweredWall_NarShaddaaCantinaA</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_SandcrawlerA</doorDef>
+		<!-- <terrainDef>guy762_FloorTiles_ImpBaseTileDark</terrainDef> -->
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>SWCPTerrain_Flagstone_OnderonMarble</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<wallAttachments>
+			<AncientEmergencyLight_Green>
+				<countRange>1~2</countRange>
+			</AncientEmergencyLight_Green>
+			<SWCPBuilding_NPCLifeSupportUnit>
+				<countRange>1~1</countRange>
+			</SWCPBuilding_NPCLifeSupportUnit>
+		</wallAttachments>
+		
+		
+		
+		<importantRoomDef>SWCPRoomLayout_ScumTreasureRoom</importantRoomDef>
+		<roomDefs>
+			<SWCPRoomLayout_ScumSupplyWarehouse_DrugsAlcohol><countRange>0~1</countRange></SWCPRoomLayout_ScumSupplyWarehouse_DrugsAlcohol>
+			<SWCPRoomLayout_ScumSupplyWarehouse_Meals><countRange>1~2</countRange></SWCPRoomLayout_ScumSupplyWarehouse_Meals>
+			<SWCPRoomLayout_ScumSupplyWarehouse_RawFood><countRange>0~1</countRange></SWCPRoomLayout_ScumSupplyWarehouse_RawFood>
+			
+			<SWCPRoomLayout_ScumComputerRoom_HuttCartel>
+				<countRange>1~2</countRange>
+			</SWCPRoomLayout_ScumComputerRoom_HuttCartel>
+			
+			<SWCPRoomLayout_UrbanStrongholdRecRoom> <!-- these are bigger -->
+				<countRange>3~5</countRange>
+			</SWCPRoomLayout_UrbanStrongholdRecRoom>
+			
+			<SWCPRoomLayout_UrbanPartyRoom>
+				<countRange>1~2</countRange>
+			</SWCPRoomLayout_UrbanPartyRoom>
+
+			<!-- Decorative -->
+			<SWCPRoomLayout_ConnectablePoolRoom>0.25</SWCPRoomLayout_ConnectablePoolRoom>
+			<SWCPRoomLayout_ScumTableRoom>0.5</SWCPRoomLayout_ScumTableRoom>
+			<SWCPRoomLayout_ScumKitchen>0.5</SWCPRoomLayout_ScumKitchen>
+			<!-- <SWCPRoomLayout_UrbanKitchen>0.5</SWCPRoomLayout_UrbanKitchen> -->
+
+			<SWCPRoomLayout_ScumGarrisonBarracks>0.5</SWCPRoomLayout_ScumGarrisonBarracks>
+			<SWCPRoomLayout_ScumWarehousePalletRoom>0.5</SWCPRoomLayout_ScumWarehousePalletRoom>
+			<SWCPRoomLayout_ScumWarehouseStorageRoom>0.5</SWCPRoomLayout_ScumWarehouseStorageRoom>
+		</roomDefs>
+		
+		
+		
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanPartyRoom</defName>
+		<!-- <roomContentsWorkerType>RoomContents_Reactor</roomContentsWorkerType> -->
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_ThroneRoom</roomContentsWorkerType>
+		<minSingleRectWidth>10</minSingleRectWidth>
+		<minSingleRectHeight>10</minSingleRectHeight>
+		
+		<!-- <canRemoveBorderDoors>true</canRemoveBorderDoors> -->
+		<!-- <canRemoveBorderWalls>true</canRemoveBorderWalls> -->
+		<!-- <canBeInMixedRoom>true</canBeInMixedRoom> -->
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minAdjRooms>2</minAdjRooms>
+		<minConnectedRooms>2</minConnectedRooms>
+		
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+		</floorTypes>
+		<edgeTerrain>MetalTile</edgeTerrain>
+		
+		<prefabs>
+			<SWCPPrefab_HologramBandAndDancer>
+				<countRange>1</countRange>
+			</SWCPPrefab_HologramBandAndDancer>
+			
+			<!-- <SWCPPrefab_Nalargon> -->
+				<!-- <countRange>1</countRange> -->
+			<!-- </SWCPPrefab_Nalargon> -->
+		</prefabs>
+		
+		<scatter>
+		  <!-- <AncientLargeCrate> -->
+			<!-- <groupsPerHundredCells>2~4</groupsPerHundredCells> -->
+			<!-- <itemsPerGroup>3~6</itemsPerGroup> -->
+			<!-- <groupDistRange>2~5</groupDistRange> -->
+		  <!-- </AncientLargeCrate> -->
+		</scatter>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanStrongholdRecRoom</defName>
+		<minSingleRectWidth>10</minSingleRectWidth>
+		<minSingleRectHeight>10</minSingleRectHeight>
+		
+		<!-- <canRemoveBorderDoors>true</canRemoveBorderDoors> -->
+		<!-- <canRemoveBorderWalls>true</canRemoveBorderWalls> -->
+		<!-- <canBeInMixedRoom>true</canBeInMixedRoom> -->
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minAdjRooms>2</minAdjRooms>
+		<minConnectedRooms>2</minConnectedRooms>
+		
+		<prefabs>
+			<SWCPPrefab_PazaakTable>
+				<countRange>2~2</countRange>
+			</SWCPPrefab_PazaakTable>
+			<!-- <SWCPPrefab_HologramBandAndDancer> -->
+				<!-- <countRange>1</countRange> -->
+			<!-- </SWCPPrefab_HologramBandAndDancer> -->
+			
+		  <!-- <PokerTable> -->
+			<!-- <countRange>0~2</countRange> -->
+		  <!-- </PokerTable> -->
+		  <FlatscreenTelevision>
+			<countPerTenEdgeCells>1</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </FlatscreenTelevision>
+		  <!-- <ChessTable> -->
+			<!-- <countPerHundredCells>3</countPerHundredCells> -->
+			<!-- <minMaxRange>0~2</minMaxRange> -->
+		  <!-- </ChessTable> -->
+		  <Couch_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Couch_Edge>
+		  
+		  <Armchairs_Edge>
+			<countPerTenEdgeCells>5</countPerTenEdgeCells>
+			<minMaxRange>3~5</minMaxRange>
+		  </Armchairs_Edge>
+		  
+		   <TVWithArmchairs>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TVWithArmchairs>
+		  
+		  
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_HuttOfficeTile</li>
+			<!-- <li>CarpetBrownLight</li> -->
+			<!-- <li>CarpetGranite</li> -->
+		</floorTypes>
+		<edgeTerrain>AncientTile</edgeTerrain>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_ConnectablePoolRoom</defName>
+		<roomContentsWorkerType>SWCP_LevelDesignStuff.RoomContents_PoolRoom</roomContentsWorkerType>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minAdjRooms>2</minAdjRooms>
+		<minConnectedRooms>2</minConnectedRooms>
+	</LayoutRoomDef>
+	
+	
+	
+
+
+
+</Defs>
