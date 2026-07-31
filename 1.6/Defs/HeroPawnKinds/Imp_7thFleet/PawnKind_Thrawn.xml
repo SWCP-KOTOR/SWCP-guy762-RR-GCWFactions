@@ -58,6 +58,7 @@
 		
 		<forcedTraits>
 			<SWCPTrait_ArtLover MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_ArtLover>
+			<SWCPTrait_Arrogant>0</SWCPTrait_Arrogant>
 			<Psychopath>0</Psychopath>
 			<Industriousness>2</Industriousness>
 			<Nerves>2</Nerves>

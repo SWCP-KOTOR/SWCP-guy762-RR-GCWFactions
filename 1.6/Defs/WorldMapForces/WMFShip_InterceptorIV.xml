@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <RoyalTitlePermitDef> -->
+		<!-- <defName>SWGCWPermit_GreaterMaldrood_SummonInvidForce</defName> -->
+		<!-- <label>establish Invid gang</label> -->
+		<!-- <description>Establish a gang of Invid pirates on the world map.</description> -->
+		<!-- <workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass> -->
+		
+		<!-- <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction> -->
+		<!-- <minTitle>SWGCWTitle_generic_highflagofficer</minTitle> -->
+		
+		<!-- <permitPointCost>10</permitPointCost> -->
+		<!-- <cooldownDays>40</cooldownDays> -->
+		<!-- <usableOnWorldMap>true</usableOnWorldMap> -->
+		<!-- <uiPosition>(8,8)</uiPosition> -->
+		<!-- <royalAid> -->
+			<!-- <favorCost>8</favorCost> -->
+			<!-- <targetingRequireLOS>false</targetingRequireLOS> -->
+		<!-- </royalAid> -->
+		<!-- orbitals and other planets don't work *yet* -->
+		<!-- <layerBlacklist> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+		<!-- </layerBlacklist> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="ForcesMod.ForceAbilitiesModExtension"> -->
+				<!-- <permitSpawnsWorldObject>SWCPArmyForce_GreaterMaldrood_Invids</permitSpawnsWorldObject> -->
+			<!-- </li> -->
+			<!-- <li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li> -->
+		<!-- </modExtensions> -->
+	<!-- </RoyalTitlePermitDef> -->
+	
+	
+	
+	
+	
+	
+	
+	<WorldObjectDef>
+		<defName>SWCPShipForce_InterceptorIV</defName>
+		<label>Interceptor-IV Frigate</label>
+		<description>.</description>
+		
+		<texture>UI/WorldMapForceIcons_Ships/RotatedForSomeAnnoyingReason/WMFIcon_InterceptorIV</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Ships/WMFIcon_InterceptorIV</expandingIconTexture>
+		<expandingIconDrawSize>1.5</expandingIconDrawSize>
+		
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
+		<useDynamicDrawer>true</useDynamicDrawer>
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<nameMaker>NamerFactionPirate</nameMaker>
+		
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>4</abilityRange>
+				<forceNameString>SWCPWorldMapForceNameString_InterceptorIV</forceNameString>
+				<movementSpeedPerDay>36</movementSpeedPerDay>
+				<abilities>
+					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_small</li>
+					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_big</li>
+					
+					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
+					<li>SWCPWMFAbility_DestroySettlement</li>
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- <RulePackDef> -->
+		<!-- <defName>SWCPNameMaker_WorldMapForce_NavyCommando_GreaterMaldrood</defName> -->
+		<!-- <include> -->
+			<!-- <li>guy762_NamerFactionFiles_GenericFleetName</li> -->
+			<!-- <li>guy762_NamerFactionFiles_MaldroodPlanets</li> -->
+		<!-- </include> -->
+		<!-- <rulePack> -->
+		  <!-- <rulesStrings> -->
+			<!-- <li>r_name(p=12)->[SWFN_SmallFleetNumber] [SWGMFN_AnyPlanet] [detachment]</li> -->
+			
+			<!-- <li>detachment->Detachment</li> -->
+		  <!-- </rulesStrings> -->
+		<!-- </rulePack> -->
+	<!-- </RulePackDef> -->
+
+	
+</Defs>

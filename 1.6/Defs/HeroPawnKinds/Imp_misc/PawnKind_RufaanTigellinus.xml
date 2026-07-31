@@ -66,6 +66,7 @@
 		<forcedTraits>
 			<!-- <HAR_Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</HAR_Xenophobia> -->
 			<SWCPTrait_XenotypeAttitude>-1</SWCPTrait_XenotypeAttitude>
+			<SWCPTrait_Arrogant>0</SWCPTrait_Arrogant>
 			<Jealous>0</Jealous>
 			<Industriousness>2</Industriousness>
 			<Beauty>2</Beauty>

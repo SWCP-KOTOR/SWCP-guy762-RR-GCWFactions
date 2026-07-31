@@ -505,7 +505,7 @@
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
-				<color>(100,65,70)</color> <!-- Onderonian Militia Maroon -->
+				<color>(100,65,70)</color> <!-- Onderonian Maroon -->
 			</li>
 			<li>
 				<apparelLayer>Shell</apparelLayer>
@@ -513,7 +513,7 @@
 			</li>
 			<li>
 				<apparelLayer>OnSkin</apparelLayer>
-				<color>(100,65,70)</color> <!-- Onderonian Militia Maroon -->
+				<color>(100,65,70)</color> <!-- Onderonian Maroon -->
 			</li>
 		</specificApparelRequirements>
 		
@@ -568,6 +568,35 @@
 					</li>
 				</skillRange>
 				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+				<geneSets>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkSaturatedReddish</li>
+							<li>Skin_Melanin7</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_MidBlack</li>
+							<li>Skin_Melanin8</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkBlack</li>
+							<li>Skin_Melanin9</li>
+						</geneDefs>
+					</li>
+				</geneSets>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

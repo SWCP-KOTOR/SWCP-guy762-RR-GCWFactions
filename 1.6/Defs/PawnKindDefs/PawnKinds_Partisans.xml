@@ -333,6 +333,79 @@
 	
 	
 	
+	<PawnKindDef Name="SWPartisan_OnderonSoldier" ParentName="SWPartisan_soldier">
+		<defName>SWPartisan_OnderonSoldier</defName>
+		
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<apparelTags Inherit="False">
+			<li>KotORUtility_weakgrenade</li>
+			
+			<li>SWCPSpecificApparelItem_PlainPoncho</li>
+			<li>SWGCWSpecificApparelItem_PartisanEndorTrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_PartisanMilitiantArmor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_Accessory_poncho</li>
+			<li>guy762_PartisanHelmet_endor</li>
+			<li>guy762_PartisanLightBattleArmor</li>
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(220,170,95)</color>       <!-- Czerka Yellow -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(95,100,70)</color>       <!-- Forest Green -->
+			</li>
+		</specificApparelRequirements>
+		<modExtensions>
+			<li Class="BigAndSmall.Flagger">
+				<flags> <guy762AltTag_OnderonPartisans/></flags>
+			</li>
+			
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+				<geneSets>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkSaturatedReddish</li>
+							<li>Skin_Melanin7</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_MidBlack</li>
+							<li>Skin_Melanin8</li>
+						</geneDefs>
+					</li>
+					<li>
+						<isXenogene>false</isXenogene>
+						<chance>0.33</chance>
+						<geneDefs>
+							<li>Hair_DarkBlack</li>
+							<li>Skin_Melanin9</li>
+						</geneDefs>
+					</li>
+				</geneSets>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
 	
 	
 	

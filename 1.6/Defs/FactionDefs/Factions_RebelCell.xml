@@ -126,7 +126,7 @@
 		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
-                <!-- <newLabel>Rebel Coalition</newLabel> -->
+                <newLabel>Local Rebellion</newLabel>
                 <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
             </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">

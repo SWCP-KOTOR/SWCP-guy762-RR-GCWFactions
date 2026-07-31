@@ -432,6 +432,11 @@
 						<color>(30,65,125)</color>	<!-- garm bel iblis blue -->
 						<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
 					  </colorC>
+						
+						<altDefs>
+							<li>guy762_PartisanEndorHelmetCustomization_Default</li>
+							<li>guy762_PartisanEndorHelmetCustomization_Onderon</li>
+						</altDefs>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
 				</li>
@@ -474,6 +479,65 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_PartisanEndorHelmetCustomization_Default</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_PartisanEndorHelmetDefault/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Rebel/PartisanHelmets/PartisanEndorHelmet</li></texturePaths>
+			<colorA>
+				<apparelColorA>true</apparelColorA>
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(110,105,100)</color> <!-- maldrood army grey -->
+				<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+			</colorB>
+			<colorC>
+				<color>(30,65,125)</color>	<!-- garm bel iblis blue -->
+				<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	<BigAndSmall.GraphicSetDef>
+		<defName>guy762_PartisanEndorHelmetCustomization_Onderon</defName>
+		<conditionalGraphics>
+			<triggerFlags><whitelist><guy762AltTag_OnderonPartisans/></whitelist></triggerFlags>
+			<texturePaths><li>SWApparel/Rebel/PartisanHelmets/PartisanEndorHelmet</li></texturePaths>
+			<colorA>
+				<color>(100,65,70)</color> <!-- Onderonian Maroon -->
+				<altDefs><li>BS_CustomGlobalA</li></altDefs>
+			</colorA>
+			<colorB>
+				<color>(110,105,100)</color> <!-- maldrood army grey -->
+				<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+			</colorB>
+			<colorC>
+				<color>(220,170,95)</color> <!-- Czerka Yellow -->
+				<alts><li><triggers><li>CustomColorCIsSet</li></triggers><customColorC>(1,1,1)</customColorC> </li></alts>
+			</colorC>
+		</conditionalGraphics>
+	</BigAndSmall.GraphicSetDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

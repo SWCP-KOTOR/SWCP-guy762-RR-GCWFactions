@@ -28,8 +28,8 @@
 						<points>5</points-->
 						
 						<requiredNodes>
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li> -->
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li> -->
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
 						  
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
@@ -68,68 +68,267 @@
 	
 	
 	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWWEPlayableHero_LukeSkywalker_PotF"  ParentName="SWWarlordsHeroBase_LukeSkywalker">
+		<defName>SWWEPlayableHero_LukeSkywalker_PotF</defName>
+		<modExtensions>
+			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+					<li>
+						<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+							<li>
+								<schema>SWPotF_HeroModeSchema</schema>
+								<weight>1</weight>
+								
+								<forceLevel>True</forceLevel>
+								<level>5</level>
+								<baseClassDef>SWPotFClassProgressTracker_Heroic_levelone</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>SWPotFClassProgressTracker_HeroicStarter_scavenger</classDef>
+										<levelReset>True</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>True</removePostClassChange>
+									</li>
+								</classChanges>
+								
+								<!--forcePoints>True</forcePoints>
+								<points>5</points-->
+								
+								<requiredNodes>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_ScavengerI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_ScavengerII</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_ScavengerIII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeSkillFeats_Scavenger_constructionI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeSkillFeats_Scavenger_constructionII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Scavenger_gearheadI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Scavenger_gearheadII</nodeDef><forceLevel>True</forceLevel></li>
+									<!-- ~3 remaining points -->
+								</requiredNodes>
+							</li>
+						</schemaMappings>
+					</li>
+					<li>
+						<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+							<li>
+								<schema>SWPotF_ForceSchema</schema>
+								<weight>1</weight>
+								
+								<forceLevel>True</forceLevel>
+								<level>15</level>
+								<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+										<levelReset>False</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>True</removePostClassChange>
+									</li>
+								</classChanges>
+								
+								<!--forcePoints>True</forcePoints>
+								<points>5</points-->
+								
+								<requiredNodes>
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakI</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_valorI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_valorII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_ForceTreeNodeLS_barrierII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+								</requiredNodes>
+							</li>
+						</schemaMappings>
+					</li>
+				</schemaSets>
+			</li>
+      </modExtensions>
+	</PawnKindDef>
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWCharPawnNR_LukeSkywalker_PotF"  ParentName="SWWEPlayableHero_LukeSkywalker_PotF">
+		<defName>SWCharPawnNR_LukeSkywalker_PotF</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_NewRepublic</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="SWWEPlayableHero_KyleKatarn_PotF"  ParentName="SWWarlordsHeroBase_KyleKatarn">
 		<defName>SWWEPlayableHero_KyleKatarn_PotF</defName>
 		<modExtensions>
-         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+			<li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
 				<schemaSets>
-				  <li>
-					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
-					  <li>
-						<schema>SWPotF_ForceSchema</schema>
-						<weight>1</weight>
-						
-						<forceLevel>True</forceLevel>
-						<level>15</level>
-						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
-						<classChanges>
+					<li>
+						<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
 							<li>
-								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
-								<levelReset>False</levelReset>
-								<benefitReset>False</benefitReset>
-								<removePostClassChange>True</removePostClassChange>
+								<schema>SWPotF_HeroModeSchema</schema>
+								<weight>1</weight>
+								
+								<forceLevel>True</forceLevel>
+								<level>10</level>
+								<baseClassDef>SWPotFClassProgressTracker_Heroic_levelone</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>SWPotFClassProgressTracker_HeroicStarter_soldier</classDef>
+										<levelReset>True</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>False</removePostClassChange>
+									</li>
+									<!-- <li> -->
+										<!-- <classDef>SWPotFClassProgressTracker_HeroicStarter_goon</classDef> -->
+										<!-- <levelReset>True</levelReset> -->
+										<!-- <benefitReset>False</benefitReset> -->
+										<!-- <removePostClassChange>False</removePostClassChange> -->
+									<!-- </li> -->
+								</classChanges>
+								
+								<!--forcePoints>True</forcePoints>
+								<points>5</points-->
+								
+								<requiredNodes>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_SoldierI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_SoldierII</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeClassProgression_SoldierIII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeEquipmentFeats_Soldier_LongRangeFocus</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeEquipmentFeats_Soldier_HeavyArmor</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeEquipmentFeats_Soldier_HeavyWeaponFocus</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_secondwindI</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_toughnessI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_toughnessII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_conditioningI</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_preciseshotI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_Soldier_preciseshotII</nodeDef><forceLevel>True</forceLevel></li>
+									
+
+
+
+									<li><nodeDef>SWPotF_HeroModeTreeNodeEquipmentFeats_goon_MeleeFocus</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeEquipmentFeats_goon_ShortRangeFocus</nodeDef><forceLevel>True</forceLevel></li>
+
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_goon_uncannydodgeI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_goon_uncannydodgeII</nodeDef><forceLevel>True</forceLevel></li>
+									
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_goon_closecombatI</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_goon_closecombatII</nodeDef><forceLevel>True</forceLevel></li>
+									<li><nodeDef>SWPotF_HeroModeTreeNodeFeats_goon_closecombatIII</nodeDef><forceLevel>True</forceLevel></li>
+
+								</requiredNodes>
 							</li>
-						</classChanges>
-						
-						<!--forcePoints>True</forcePoints>
-						<points>5</points-->
-						
-						<requiredNodes>
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li> -->
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li> -->
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_confusion</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BlasterStormI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
-						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeDS_shock</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
-						  
-						  
-						</requiredNodes>
-					  </li>
-					</schemaMappings>
-				  </li>
+						</schemaMappings>
+					</li>
+					<li>
+						<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+							<li>
+								<schema>SWPotF_ForceSchema</schema>
+								<weight>1</weight>
+								
+								<forceLevel>True</forceLevel>
+								<level>4</level>
+								<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+								<!-- <classChanges> -->
+									<!-- <li> -->
+										<!-- <classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef> -->
+										<!-- <levelReset>False</levelReset> -->
+										<!-- <benefitReset>False</benefitReset> -->
+										<!-- <removePostClassChange>True</removePostClassChange> -->
+									<!-- </li> -->
+								<!-- </classChanges> -->
+								
+								<requiredNodes>
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+
+									<li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+								</requiredNodes>
+							</li>
+							<!-- original lvl15 build
+							<li>
+								<schema>SWPotF_ForceSchema</schema>
+								<weight>1</weight>
+								
+								<forceLevel>True</forceLevel>
+								<level>15</level>
+								<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+								<classChanges>
+									<li>
+										<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+										<levelReset>False</levelReset>
+										<benefitReset>False</benefitReset>
+										<removePostClassChange>True</removePostClassChange>
+									</li>
+								</classChanges>
+								
+								<requiredNodes>
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_confusion</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BlasterStormI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+								  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeDS_shock</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
+								  
+								  
+								</requiredNodes>
+							</li>
+							-->
+						</schemaMappings>
+					</li>
 				</schemaSets>
-		  </li>
+			</li>
       </modExtensions>
 	</PawnKindDef>
 	
@@ -171,9 +370,9 @@
 						<points>5</points-->
 						
 						<requiredNodes>
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li> -->
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li> -->
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li> -->
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
 						  
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
@@ -298,8 +497,8 @@
 						<points>5</points-->
 						
 						<requiredNodes>
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li> -->
-						  <!-- <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li> -->
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
 						  
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
 						  

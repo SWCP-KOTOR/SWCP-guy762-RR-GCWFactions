@@ -19,6 +19,44 @@
 		<!-- </modExtensions> -->
 	
 	
+	<PawnKindDef Name="xwSWCivilian_OnderonVillager" ParentName="SWCPCivilian_Onderonian">
+		<defName>xwSWCivilian_OnderonVillager</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="xwSWCivilian_OnderonRobed" ParentName="SWCPCivilian_OnderonianRobed">
+		<defName>xwSWCivilian_OnderonRobed</defName>
+		<combatPower>1</combatPower>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_NonViolentCivilian</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="xwSWCivilian_Villager" ParentName="SWCPCivilian_villager">
 		<defName>xwSWCivilian_Villager</defName>
 		<combatPower>1</combatPower>

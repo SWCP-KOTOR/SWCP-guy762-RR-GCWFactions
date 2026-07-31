@@ -47,6 +47,20 @@
         </roles>
     </FCP.Core.CharacterDef>
 	
+	
+	
+	
+	<FCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
+        <defName>SWNewRepublicCharacter_Luke</defName>
+        <pawnKind>SWCharPawnNR_LukeSkywalker_PotF</pawnKind>
+        <faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+        <xenotype>Baseliner</xenotype>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>300</seniority> <!-- general -->
+            </li>
+        </roles>
+    </FCP.Core.CharacterDef>
 	<FCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
         <defName>SWNewRepublicCharacter_Luke</defName>
         <pawnKind>SWCharPawnNR_LukeSkywalker_TFS</pawnKind>

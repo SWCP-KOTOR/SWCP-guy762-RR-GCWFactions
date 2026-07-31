@@ -4,6 +4,19 @@
 
   
 	<PrefabDef>
+		<defName>SWCPPrefabSmallCommandPost_Factionless</defName>
+		<size>(1,1)</size>
+		<things>
+			<SWCP_CommandPost_small>
+				<chance>1</chance>
+			</SWCP_CommandPost_small>
+		</things>
+	</PrefabDef>
+	
+	
+	
+	
+	<PrefabDef>
 		<defName>SWCPPrefabSmallCommandPost_NewRepublic</defName>
 		<size>(1,1)</size>
 		<things>

@@ -152,5 +152,37 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	<PawnKindDef Name="xcSWCivilian_ThugChallengeGroup_8x" ParentName="SWCPCivilian_thug">
+		<defName>xcSWCivilian_ThugChallengeGroup_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPHediff_ThugChallengerGroup</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xcSWCivilian_ThugLeader_1x" ParentName="SWCPCivilian_ThugLeader">
+		<defName>xcSWCivilian_ThugLeader_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_boredguard</def><chance>1</chance></li>
+			<li><def>SWCPHediff_ThugLeaderChallengeAbilityGiver</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
 
 </Defs>

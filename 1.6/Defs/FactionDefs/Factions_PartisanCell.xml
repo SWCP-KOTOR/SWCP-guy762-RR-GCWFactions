@@ -116,7 +116,7 @@
 		
 		<modExtensions Inherit="False">
 			<li Class="FCP.Factions.FactionExtension_FlavorOverride">
-                <!-- <newLabel>Rebel Coalition</newLabel> -->
+                <newLabel>Local Rebellion</newLabel>
                 <preferFactionLeaderTitle>true</preferFactionLeaderTitle>
             </li>
 			<li Class="FCP.Currencies.CurrencyReplacement">
@@ -383,6 +383,58 @@
 		<!-- <earliestRaidDays>20</earliestRaidDays> -->
 		
 		<pawnGroupMakers Inherit="False">
+			
+			
+			
+			<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ specific head-count raids: Onderonian Partisans -->
+			
+			
+			<!-- skirmish -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp" Class="SWCP_Misc.PawnGroupMaker_BiomeAndTemp">
+				<allowedBiomes>
+					<li>SWCPBiome_OnderonUrban</li>
+					<li>SWCPBiome_OnderonIziz</li>
+					<li>SWCPBiome_OnderonJungle</li>
+					<li>SWCPBiome_OnderonSwampyJungle</li>
+					<li>SWCPBiome_OnderonSavannah</li>
+					<li>SWCPBiome_OnderonVeldt</li>
+					<li>SWCPBiome_OnderonHighland</li>
+					
+					<li>SWCPBiome_DxunJungle</li>
+					<li>SWCPBiome_DxunSwamp</li>
+				</allowedBiomes>
+				
+				<kindDef>Combat</kindDef>
+				<commonality>1100</commonality>
+				<disallowedStrategies>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_AirRaid</li>
+					<li MayRequire="SWCP.GCWVehicles">SWCPRaidStrategy_FriendlyAirRaid</li>
+					<li>Siege</li>
+					<li>EmergeFromWater</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+				</disallowedStrategies>
+				<options>
+					<SWPartisan_OnderonSoldier>100</SWPartisan_OnderonSoldier>
+				</options>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		  <li>
 			<!-- berserker blitz -->
 			<kindDef>Combat</kindDef>

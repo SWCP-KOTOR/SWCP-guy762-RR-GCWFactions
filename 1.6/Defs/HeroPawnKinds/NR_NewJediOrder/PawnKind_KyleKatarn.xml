@@ -77,6 +77,7 @@
 			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
 			
 			<SWPotF_Trait_ForceSensitive_strong MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_ForceSensitive_strong>
+			<SWCP_Jovial>0</SWCP_Jovial>
 			<Tough>0</Tough>
 			<ShootingAccuracy>-1</ShootingAccuracy>
 		</forcedTraits>

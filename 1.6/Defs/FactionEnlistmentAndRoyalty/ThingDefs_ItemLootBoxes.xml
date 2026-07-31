@@ -14,6 +14,13 @@
         <!-- <tradeability>Sellable</tradeability> -->
         <tradeability>All</tradeability>
         <techLevel>Spacer</techLevel>
+		
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>40</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+		
         <comps>
 			<li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
@@ -45,9 +52,6 @@
         <size>(1,1)</size>
         <statBases>
             <MarketValue>750</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>10</Mass>
-            <Flammability>0.2</Flammability>
         </statBases>
         <comps>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
@@ -115,9 +119,6 @@
         <size>(1,1)</size>
         <statBases>
             <MarketValue>1500</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>20</Mass>
-            <Flammability>0.2</Flammability>
         </statBases>
         <comps>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
@@ -205,9 +206,6 @@
         <size>(1,1)</size>
         <statBases>
             <MarketValue>1250</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>20</Mass>
-            <Flammability>0.2</Flammability>
         </statBases>
         <comps>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">
@@ -356,9 +354,6 @@
         <size>(1,1)</size>
         <statBases>
             <MarketValue>1500</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>20</Mass>
-            <Flammability>0.2</Flammability>
         </statBases>
         <comps>
             <li Class="FCP.Core.CompProperties_UseEffectItemBox">

@@ -78,6 +78,7 @@
 			<Beauty>2</Beauty>
 			<Psychopath>0</Psychopath>
 			<Greedy>0</Greedy>
+			<SWCPTrait_Charismatic>0</SWCPTrait_Charismatic>
 		</forcedTraits>
 		
 		<backstoryFiltersOverride>
