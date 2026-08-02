@@ -43,6 +43,8 @@
 			
 			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
 			<li>SWCPWeaponCategoryTag_SquadRepeater</li>
+			<li>SWCPWeaponClassTag_HeavyOrdnance</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -181,6 +183,8 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 			
 			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
+			<li>SWCPWeaponClassTag_HeavyOrdnance</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

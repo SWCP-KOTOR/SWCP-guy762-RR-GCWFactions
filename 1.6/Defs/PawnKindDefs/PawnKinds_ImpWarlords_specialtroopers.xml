@@ -721,25 +721,7 @@
 		<techHediffsRequired>
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
-
-		<!-- <skills> -->
-			<!-- <li> -->
-				<!-- <skill>Shooting</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Melee</skill> -->
-				<!-- <range>10~12</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Construction</skill> -->
-				<!-- <range>12~14</range> -->
-			<!-- </li> -->
-			<!-- <li> -->
-				<!-- <skill>Intellectual</skill> -->
-				<!-- <range>14~16</range> -->
-			<!-- </li> -->
-		<!-- </skills> -->
+		
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -755,14 +737,16 @@
 		</inventoryOptions>
 		
 		<forcedTraits>
+			<Psychopath>0</Psychopath>
 			<Tough>0</Tough>
+			<SWCPTrait_Unyielding>0</SWCPTrait_Unyielding>
 		</forcedTraits>
 
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>50~100</initialWillRange>
+		<initialResistanceRange>100~200</initialResistanceRange>
 		
 		
 		<modExtensions>
@@ -915,13 +899,14 @@
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 			<Tough>0</Tough>
+			<SWCPTrait_Unyielding>0</SWCPTrait_Unyielding>
 		</forcedTraits>
 
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>50~100</initialWillRange>
+		<initialResistanceRange>100~200</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">
@@ -1017,11 +1002,12 @@
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 			<Tough>0</Tough>
+			<SWCPTrait_Unyielding>0</SWCPTrait_Unyielding>
 			<Brawler>0</Brawler>
 		</forcedTraits>
 
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
+		<initialWillRange>50~100</initialWillRange>
+		<initialResistanceRange>100~200</initialResistanceRange>
 		
 		<modExtensions Inherit="False">
 			<li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->

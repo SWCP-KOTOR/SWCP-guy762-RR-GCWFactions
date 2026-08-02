@@ -45,6 +45,7 @@
 			<li>SWGCWBaseLoot_ScumWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_LightMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>
@@ -138,6 +139,15 @@
 			<!-- <Steel>50</Steel> -->
 		<!-- </costList> -->
 		
+		<weaponTags Inherit="False">
+			<li>SWMelee_Vibrosword</li>
+			<li>SWKotORWeaponCategoryTag_melee</li>
+			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
+		</weaponTags>
+		
 		<comps>
 		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
 			<compClass>CompExtraSounds.CompExtraSounds</compClass>
@@ -180,13 +190,7 @@
 				<cooldownTime>2.4</cooldownTime>
 			</li>
 		</tools>
-		<weaponTags Inherit="False">
-			<li>SWMelee_Vibrosword</li>
-			<li>SWKotORWeaponCategoryTag_melee</li>
-			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
-			
-			<li>SWCPWeaponCategoryTag_LightMelee</li>
-		</weaponTags>
+		
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>
 			<li>guy762TT_GCWWeapon_ExoticLegal</li>

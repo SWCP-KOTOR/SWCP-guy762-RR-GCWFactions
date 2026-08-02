@@ -58,6 +58,7 @@
 			<li>SWKotORWeaponCategoryTag_lightsaber</li>
 			
 			<li>SWCPWeaponCategoryTag_Special</li>
+			<li>SWCPWeaponClassTag_Lightsaber</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWCharacterItem</li>

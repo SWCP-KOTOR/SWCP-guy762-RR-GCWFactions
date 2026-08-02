@@ -33,6 +33,7 @@
 			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyPistol</li>
+			<li>SWCPWeaponClassTag_ShortRange</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -122,6 +123,7 @@
 			<li>SWGCWBaseLoot_ImperialWeapons_rare</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyRifle</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -239,6 +241,7 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			
 			<li>SWCPWeaponCategoryTag_SniperRifle</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

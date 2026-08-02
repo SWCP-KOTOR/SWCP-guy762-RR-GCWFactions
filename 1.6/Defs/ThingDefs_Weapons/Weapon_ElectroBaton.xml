@@ -36,6 +36,14 @@
 			<!-- <KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel> -->
 		<!-- </costList> -->
 		
+		<weaponTags Inherit="False">
+			<li>SWMelee_electrobaton</li>
+			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_LightMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
+		</weaponTags>
+		
 		<comps>
 		  <li Class="CompExtraSounds.CompProperties_ExtraSounds">
 			<compClass>CompExtraSounds.CompExtraSounds</compClass>
@@ -88,12 +96,7 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
-		<weaponTags Inherit="False">
-			<li>SWMelee_electrobaton</li>
-			<li>SWKotORWeaponCategoryTag_melee</li>
-			
-			<li>SWCPWeaponCategoryTag_LightMelee</li>
-		</weaponTags>
+		
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>
 			<li>guy762TT_GCWWeapon_ExoticLegal</li>

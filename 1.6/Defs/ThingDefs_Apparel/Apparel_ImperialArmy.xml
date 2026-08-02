@@ -104,6 +104,7 @@
 				<li>RemnantEmpire_armycommando</li>
 				<li>SWGCWSpecificApparelItem_EmpireTankTrooperArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialTankTrooper/Apparel</wornGraphicPath>
 			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
@@ -283,6 +284,7 @@
 				<li>RemnantEmpire_armylieutenant</li>
 				<li>SWGCWSpecificApparelItem_LowRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyOfficer/detachmentCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -459,6 +461,7 @@
 				<li>RemnantEmpire_armymajor</li>
 				<li>SWGCWSpecificApparelItem_MidRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyOfficer/tasksquadCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -665,6 +668,7 @@
 				<li>SWGCWSpecificApparelItem_HighRankImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyOfficer/taskforceCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -861,6 +865,7 @@
 				<li>SWGCWSpecificApparelItem_TopBrassImperialArmyArmor</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHighRankingImpOfficerUniform</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyOfficer/grandgeneral/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1109,6 +1114,7 @@
 			<tags>
 				<li>RemnantEmpire_armyconscript</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
@@ -1184,6 +1190,7 @@
 			<tags>
 				<li>RemnantEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/fullplate/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
@@ -1253,6 +1260,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_ImperialArmyHeavyArmor_NCO</li>
 				<li>SWGCWRoyaltyTag_AnyImpOfficerArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/NCO/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1364,6 +1372,7 @@
 			<tags>
 				<li>ZsinjEmpire_armytrooper</li>
 				<li>SWGCWSpecificApparelItem_RustyImperialArmyArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImperialArmyTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

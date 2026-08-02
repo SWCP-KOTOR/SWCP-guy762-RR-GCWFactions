@@ -35,6 +35,8 @@
 			<li>SWKotORWeaponCategoryTag_pistol</li>
 			
 			<li>SWCPWeaponCategoryTag_RepeaterPistol</li>
+			<li>SWCPWeaponClassTag_ShortRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -140,6 +142,8 @@
 			<li>SWGCWBaseLoot_RebelWeapons_common</li>
 			
 			<li>SWCPWeaponCategoryTag_RepeaterCarbine</li>
+			<li>SWCPWeaponClassTag_ShortRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
@@ -220,6 +224,8 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			
 			<li>SWCPWeaponCategoryTag_InfantryRifle</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

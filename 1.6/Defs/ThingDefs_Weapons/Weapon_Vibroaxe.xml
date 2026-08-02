@@ -31,6 +31,7 @@
 			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>

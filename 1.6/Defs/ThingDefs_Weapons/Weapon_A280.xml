@@ -36,6 +36,8 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			
 			<li>SWCPWeaponCategoryTag_InfantryRifle</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

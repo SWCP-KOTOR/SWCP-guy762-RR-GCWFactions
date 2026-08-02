@@ -44,6 +44,7 @@
 			<li>RemnantEmpire_navytrooper</li>
 			<li>RemnantEmpire_lgtcombatarmor</li>
 			<li>SWGCWSpecificApparelItem_ImperialLightCombatArmor</li>
+			<li>SWCPArmorClassTag_LightInfantry</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
 		  <layers Inherit="False">
@@ -108,6 +109,7 @@
 			<li>IndependentWarlord_lgtcombatarmor</li>
 			<li>NewRepublic_rebeltrooper</li>
 			<li>SWGCWSpecificApparelItem_RustyImperialLightCombatArmor</li>
+			<li>SWCPArmorClassTag_LightInfantry</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/ImperialNavyTrooper/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -323,6 +325,7 @@
 				<li>GreaterMaldrood_navycommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialNavyCommandoArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ImpNavyCommando/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -515,6 +518,7 @@
 		  <tags Inherit="False">
 			<li>RemnantEmpire_TIEpilot</li>
 			<li>SWGCWSpecificApparelItem_ImperialTIEPilotArmor</li>
+			<li>SWCPArmorClassTag_LightInfantry</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/TIEPilot/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>

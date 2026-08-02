@@ -53,6 +53,7 @@
 				<li>SWGCWSpecificApparelItem_ImpDarkTrooperP0Armor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/DarkTrooperPhase0/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -392,6 +393,7 @@
 				<li>SWGCWSpecificApparelItem_PentastarGuardianProtectorArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/PAGuardianProtector/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -670,6 +672,7 @@
 				<li>ZsinjEmpire_raptorarmor</li>
 				<li>SWGCWSpecificApparelItem_ZsinjRaptorArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Stormtrooper/raptor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1371,6 +1374,7 @@
 			<li>PentastarAlignment_InQuestor</li>
 			<li>SWGCWSpecificApparelItem_ImperialInquisitorArmor</li>
 			<li>SWGCWRoyaltyTag_AnySithApparel</li>
+			<li>SWCPArmorClassTag_LightInfantry</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Inquisitor/Armor/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -1701,6 +1705,7 @@
 				<li>SWGCWRoyaltyTag_AnyEliteImpArmor</li>
 				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
 				<li>SWGCWRoyaltyTag_AnySithApparel</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/RoyalGuard/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

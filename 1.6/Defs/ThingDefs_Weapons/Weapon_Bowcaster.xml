@@ -34,6 +34,7 @@
 			<li>SWGCWBaseLoot_RebelWeapons_veryrare</li>
 			
 			<li>SWCPWeaponCategoryTag_AntiVehicleRifle</li>
+			<li>SWCPWeaponClassTag_HeavyOrdnance</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

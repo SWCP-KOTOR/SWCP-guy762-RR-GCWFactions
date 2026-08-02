@@ -35,6 +35,8 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			
 			<li>SWCPWeaponCategoryTag_PrecisionCarbine</li>
+			<li>SWCPWeaponClassTag_ShortRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

@@ -513,6 +513,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_MandoArmor</li>
 				<li>SWGCWRoyaltyTag_AnyMandoArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Mandalorian/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

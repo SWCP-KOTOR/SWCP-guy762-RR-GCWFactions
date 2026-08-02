@@ -488,6 +488,7 @@
 			<tags Inherit="False">
 				<li>NewRepublic_marine</li>
 				<li>SWGCWSpecificApparelItem_NewRepublicMarineArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<defaultOutfitTags>	
 				<li>Soldier</li>
@@ -624,6 +625,7 @@
 			
 			<tags>
 				<li>SWGCWSpecificApparelItem_NewRepublicInfiltratorArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -797,6 +799,7 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 				<li>SWCPOutfitTagGCW_RebelMediumInfantry</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
@@ -926,6 +929,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_NewRepublicVanguardArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

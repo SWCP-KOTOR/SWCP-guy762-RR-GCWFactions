@@ -37,6 +37,8 @@
 			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_LightRepeater</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags Inherit="False">
 			<li>guy762TT_GCWRanged</li>
@@ -124,6 +126,9 @@
 			
 			<li>SWCPWeaponCategoryTag_InfantryRifle</li>
 			<li>SWCPWeaponCategoryTag_LightMelee</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
+			<li>SWCPWeaponClassTag_Melee</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags Inherit="False">
 			<li>guy762TT_GCWRanged</li>
@@ -204,6 +209,7 @@
 			<li>SWKotORWeaponCategoryTag_rifle</li>
 			
 			<li>SWCPWeaponCategoryTag_LightRepeater</li>
+			<li>SWCPWeaponClassTag_LongRange</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWLegendary</li>

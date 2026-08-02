@@ -151,6 +151,7 @@
 			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_LumiyaArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Lumiya/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -308,6 +309,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_DengarArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/CharacterOutfits/Dengar/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -408,6 +410,7 @@
 				<li>SaV_JodoKast</li>
 				<li>SWGCWSpecificApparelItem_JodoKastMandoArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			
 			<gender>Male</gender>
@@ -1337,6 +1340,7 @@
 			<tags Inherit="False">
 				<li>SWGCWSpecificApparelItem_LukeGeneralArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<layers Inherit="False">
 				<li>Middle</li>
@@ -1805,6 +1809,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_FennShysaMandoArmor</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			
 			<gender>Male</gender>
@@ -2104,6 +2109,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_TyberZannJacket</li>
 				<li>SWGCWRoyaltyTag_AnyHeroApparel</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

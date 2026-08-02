@@ -32,6 +32,7 @@
 			<tags>
 				<li>RemnantEmpire_stormiearmor</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Stormtrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
@@ -507,6 +508,7 @@
 			<tags>
 				<li>RemnantEmpire_shadowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ShadowImperialStormtrooperArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Stormtrooper/shadowstormie/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -837,6 +839,7 @@
 			<tags>
 				<li>RemnantEmpire_scouttrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialScoutTrooperArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ScoutTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1097,6 +1100,7 @@
 			<tags>
 				<li>RemnantEmpire_stormcommando</li>
 				<li>SWGCWSpecificApparelItem_ImperialStormCommandoArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/ScoutTrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -1361,6 +1365,7 @@
 			<tags>
 				<li>RemnantEmpire_snowtrooper</li>
 				<li>SWGCWSpecificApparelItem_ImperialSnowtrooperArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Snowtrooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

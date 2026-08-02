@@ -621,6 +621,7 @@
 			<tags Inherit="False">
 				<li>PartisanAlliance_trooperarmor</li>
 				<li>SWGCWSpecificApparelItem_PartisanCombatSuit</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>	
 				<li>Soldier</li>
@@ -751,6 +752,7 @@
 			
 			<tags>
 				<li>SWGCWSpecificApparelItem_PartisanMilitiantArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<defaultOutfitTags>	
 				<li>Soldier</li>
@@ -1017,6 +1019,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_PartisanWarlordArmor</li>
 				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<defaultOutfitTags>	
 				<li>Soldier</li>

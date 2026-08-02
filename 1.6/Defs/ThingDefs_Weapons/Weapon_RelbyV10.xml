@@ -36,6 +36,8 @@
 			<li>SWGCWBaseLoot_ScumWeapons_uncommon</li>
 			
 			<li>SWCPWeaponCategoryTag_GrenadeLauncher</li>
+			<li>SWCPWeaponClassTag_HeavyOrdnance</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>

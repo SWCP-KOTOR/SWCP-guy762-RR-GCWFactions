@@ -285,6 +285,7 @@
 				<li>SaV_outfit_JKWeequay</li>
 				<li>SaV_outfit_weakmerc</li>
 				<li>SWGCWSpecificApparelItem_WeequayCombatSuit</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -503,6 +504,7 @@
 				<li>PartisanAlliance_trooperOnSkin</li>
 				<li>PartisanAlliance_trooperarmor</li>
 				<li>SWGCWSpecificApparelItem_JKJAMercArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -606,6 +608,7 @@
 			<tags>
 				<li>BlackSun_FalleenSoldier</li>
 				<li>SWGCWSpecificApparelItem_BlackSunSoldierArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -954,6 +957,7 @@
 			<tags Inherit="False">
 				<li>HuttKajidics_tantelarmor</li>
 				<li>SWGCWSpecificApparelItem_TantelArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1176,6 +1180,7 @@
 			
 			<tags>
 				<li>SWGCWSpecificApparelItem_ZannMercJacket</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1348,6 +1353,7 @@
 				<li>ZannConsortium_DisruptorMerc</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumMercArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteScumArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1528,6 +1534,7 @@
 				<li>ZannConsortium_defiler</li>
 				<li>SWGCWSpecificApparelItem_ZannConsortiumDefilerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyRareArmor</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

@@ -638,6 +638,7 @@
 			<tags Inherit="False">
 				<li>NewRepublic_rebeltrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelCombatSuit</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -741,6 +742,7 @@
 			<tags Inherit="False">
 				<li>NewRepublic_rebelmedic</li>
 				<li>SWGCWSpecificApparelItem_MedicRebelCombatSuit</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -853,6 +855,7 @@
 				<li>NewRepublic_rebeltrooper</li>
 				<li>SWGCWSpecificApparelItem_LowRankOfficerRebelCombatSuit</li>
 				<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1002,6 +1005,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_RebelInfiltratorArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWCPArmorClassTag_LightInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1345,6 +1349,7 @@
 				<li>SWGCWRoyaltyTag_AnyRebelOfficerArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
 				<li>SWGCWRoyaltyTag_AnyCloneWarsApparel</li>
+				<li>SWCPArmorClassTag_MediumInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1468,6 +1473,7 @@
 			<tags>
 				<li>SWGCWSpecificApparelItem_ShinyCloneTrooperArmor</li>
 				<li>SWGCWRoyaltyTag_AnyCloneWarsApparel</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -1602,6 +1608,7 @@
 				<li>RebelCell_heavytrooper</li>
 				<li>SWGCWSpecificApparelItem_RebelCloneTrooperArmor</li>
 				<li>SWGCWRoyaltyTag_AnyEliteRebelArmor</li>
+				<li>SWCPArmorClassTag_HeavyInfantry</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

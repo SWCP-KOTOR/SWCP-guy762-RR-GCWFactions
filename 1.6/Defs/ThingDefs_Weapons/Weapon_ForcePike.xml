@@ -45,6 +45,14 @@
 			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
 		<!-- </costList> -->
 		
+		<weaponTags Inherit="False">
+			<li>SWMelee_forcepike</li>
+			<li>SWKotORWeaponCategoryTag_melee</li>
+			
+			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
+			<li>SWCPWeaponClassTag_Melee</li>
+		</weaponTags>
+		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -90,12 +98,7 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
-		<weaponTags Inherit="False">
-			<li>SWMelee_forcepike</li>
-			<li>SWKotORWeaponCategoryTag_melee</li>
-			
-			<li>SWCPWeaponCategoryTag_HeavyMelee</li>
-		</weaponTags>
+		
 		<tradeTags>
 			<li>guy762TT_GCWMelee</li>
 			<li>guy762TT_GCWWeapon_ExoticIllegal</li>

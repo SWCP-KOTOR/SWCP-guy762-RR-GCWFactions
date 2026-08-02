@@ -34,6 +34,8 @@
 			<li>SWKotORWeaponCategoryTag_heavyranged</li>
 			
 			<li>SWCPWeaponCategoryTag_HeavyShotgun</li>
+			<li>SWCPWeaponClassTag_HeavyOrdnance</li>
+			<li>SWCPWeaponCategoryTag_Blasters</li>
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_GCWRanged</li>
