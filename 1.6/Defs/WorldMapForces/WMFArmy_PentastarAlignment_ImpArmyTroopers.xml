@@ -78,7 +78,8 @@
 					<li>SWCPWMFAbility_PentastarAlignment_SummonPlayerUnits_ImpArmyTroopers_big</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
-					<li>SWCPWMFAbility_DestroySettlement</li>
+					<li>SWCPWMFAbility_SiegeSettlement_ImpArmyTroopers</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_PentastarAlignment</li>
 				</abilities>
 			</li>
 		</modExtensions>
@@ -123,7 +124,7 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWPentastar_ArmyTrooper_playable>6</xpSWPentastar_ArmyTrooper_playable>
 		</relevantPawnKinds>
@@ -132,7 +133,7 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_PentastarAlignment_SummonPlayerUnits_ImpArmyTroopers_big</defName>
 		<label>deploy strike team (Player)</label>
-		<description>Deploy a player-controlled 12-man strike team.</description>
+		<description>Deploy a player-controlled 16-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
 		
 		<iconPath>UI/WorldMapForceIcons_Deployments/PentastarAlignment_ImpArmyTrooper_PlayerLarge</iconPath>
@@ -141,9 +142,12 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWPentastar_ArmyTrooper_playable>12</xpSWPentastar_ArmyTrooper_playable>
+			<xpSWPentastar_ArmyGrenadier_playable>2</xpSWPentastar_ArmyGrenadier_playable>
+			<xpSWWarlords_ArmyMedic_playable>1</xpSWWarlords_ArmyMedic_playable>
+			<xpSWPentastar_ArmyLieutenant_playable>1</xpSWPentastar_ArmyLieutenant_playable>
 		</relevantPawnKinds>
 	</ForcesMod.ForceAbilityDef>
 	

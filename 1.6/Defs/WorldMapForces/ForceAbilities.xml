@@ -9,6 +9,9 @@
 		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
 		<cooldownTicks>180000</cooldownTicks>
 		<requiresTarget>true</requiresTarget>
+		
+		<successChance>1</successChance>
+		<criticalFailureChance>0</criticalFailureChance>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
@@ -57,6 +60,9 @@
 		
 		<!-- 1,200,000 = 20 in-game days -->
 		<cooldownTicks>1200000</cooldownTicks>
+		
+		<successChance>1</successChance>
+		<criticalFailureChance>0</criticalFailureChance>
 	</ForcesMod.ForceAbilityDef>
 	
 	
@@ -76,6 +82,124 @@
 		<bombardmentDamage>100</bombardmentDamage>
 		<bombardmentDamageType>guy762_ExplosiveDamage_AntiVehicleEnergy</bombardmentDamageType>
 		<bombardmentExplosionRadius>5</bombardmentExplosionRadius>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_NewRepublic</defName>
+		<label>reclaim settlement (New Republic)</label>
+		<description>Reclaim a destroyed settlement for the New Republic.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_NewRepublic</iconPath>
+		
+		<cooldownTicks>180000</cooldownTicks>
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_ImperialRemnant</defName>
+		<label>reclaim settlement (Imperial Remnant)</label>
+		<description>Reclaim a destroyed settlement for the Imperial Remnant.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_ImperialRemnant</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+	</ForcesMod.ForceAbilityDef>
+
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_ZsinjDominion</defName>
+		<label>reclaim settlement (Zsinj's Dominion)</label>
+		<description>Reclaim a destroyed settlement for Zsinj's Dominion.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_ZsinjDominion</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_PentastarAlignment</defName>
+		<label>reclaim settlement (Pentastar Alignment)</label>
+		<description>Reclaim a destroyed settlement for the Pentastar Alignment.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_PentastarAlignment</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_Pentastar</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_GreaterMaldrood</defName>
+		<label>reclaim settlement (Greater Maldrood)</label>
+		<description>Reclaim a destroyed settlement for the Greater Maldrood.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_GreaterMaldrood</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_EriaduAuthority</defName>
+		<label>reclaim settlement (Eriadu Authority)</label>
+		<description>Reclaim a destroyed settlement for the Eriadu Authority.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_EriaduAuthority</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_HuttCartel</defName>
+		<label>reclaim settlement (Hutt Cartels)</label>
+		<description>Reclaim a destroyed settlement for the Hutt Cartels.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_HuttKajidics</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_HuttCartel</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_Invids</defName>
+		<label>reclaim settlement (Invids)</label>
+		<description>Reclaim a destroyed settlement for the Invids.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_Invids</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_GCWPlayerFaction_Invids</faction>
 	</ForcesMod.ForceAbilityDef>
 	
 	

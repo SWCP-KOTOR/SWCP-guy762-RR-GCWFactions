@@ -122,7 +122,7 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWMaldrood_NavyCommando_playable>6</xpSWMaldrood_NavyCommando_playable>
 		</relevantPawnKinds>
@@ -140,7 +140,7 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWMaldrood_NavyCommando_playable>12</xpSWMaldrood_NavyCommando_playable>
 		</relevantPawnKinds>

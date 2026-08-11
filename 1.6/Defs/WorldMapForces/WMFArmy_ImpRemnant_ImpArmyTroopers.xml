@@ -78,11 +78,25 @@
 					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_big</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
-					<li>SWCPWMFAbility_DestroySettlement</li>
+					<li>SWCPWMFAbility_SiegeSettlement_ImpArmyTroopers</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_ImperialRemnant</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SiegeSettlement_ImpArmyTroopers</defName>
+		<label>seige settlement</label>
+		<description>Order an assault on an enemy settlement, which may or may not succeed.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_DestroySettlement</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 900,000 = 15 in-game days -->
+		<cooldownTicks>900000</cooldownTicks>
+		<successChance>0.6</successChance>
+		<criticalFailureChance>0.2</criticalFailureChance>
+	</ForcesMod.ForceAbilityDef>
 	
 	
 	
@@ -123,7 +137,7 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWImpRemnant_ArmyTrooper_playable>6</xpSWImpRemnant_ArmyTrooper_playable>
 		</relevantPawnKinds>
@@ -132,7 +146,7 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ImpArmyTroopers_big</defName>
 		<label>deploy strike team (Player)</label>
-		<description>Deploy a player-controlled 12-man strike team.</description>
+		<description>Deploy a player-controlled 16-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
 		
 		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_ImpArmyTrooper_PlayerLarge</iconPath>
@@ -141,9 +155,12 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWImpRemnant_ArmyTrooper_playable>12</xpSWImpRemnant_ArmyTrooper_playable>
+			<xpSWImpRemnant_ArmyGrenadier_playable>2</xpSWImpRemnant_ArmyGrenadier_playable>
+			<xpSWWarlords_ArmyMedic_playable>1</xpSWWarlords_ArmyMedic_playable>
+			<xpSWImpRemnant_ArmyLieutenant_playable>1</xpSWImpRemnant_ArmyLieutenant_playable>
 		</relevantPawnKinds>
 	</ForcesMod.ForceAbilityDef>
 	

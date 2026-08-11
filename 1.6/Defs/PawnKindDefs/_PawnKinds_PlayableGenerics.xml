@@ -41,6 +41,29 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWWarlords_ArmyMedic_playable" ParentName="SWWarlords_ArmyMedic">
+		<defName>xpSWWarlords_ArmyMedic_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWImpRemnant_ArmyConscript_playable" ParentName="SWImpRemnant_ArmyConscript">
 		<defName>xpSWImpRemnant_ArmyConscript_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -53,6 +76,10 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWImpRemnant_ArmyTrooper_playable" ParentName="SWImpRemnant_ArmyTrooper">
 		<defName>xpSWImpRemnant_ArmyTrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -64,6 +91,37 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_ArmyGrenadier_playable" ParentName="SWImpRemnant_ArmyHeavy">
+		<defName>xpSWImpRemnant_ArmyGrenadier_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_ArmyLieutenant_playable" ParentName="SWImpRemnant_ArmyLieutenant">
+		<defName>xpSWImpRemnant_ArmyLieutenant_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
 	
 	<PawnKindDef Name="xpSWImpRemnant_Stormtrooper_playable" ParentName="SWImpRemnant_stormtrooper">
 		<defName>xpSWImpRemnant_Stormtrooper_playable</defName>
@@ -79,6 +137,13 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWZsinj_ArmyTrooper_playable" ParentName="SWZsinj_ArmyTrooper">
 		<defName>xpSWZsinj_ArmyTrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -90,6 +155,35 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_ArmyGrenadier_playable" ParentName="SWZsinj_ArmyHeavy">
+		<defName>xpSWZsinj_ArmyGrenadier_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_ArmyLieutenant_playable" ParentName="SWZsinj_ArmyLieutenant">
+		<defName>xpSWZsinj_ArmyLieutenant_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
 	
 	<PawnKindDef Name="xpSWZsinj_Raptor_playable" ParentName="SWZsinj_Raptor">
 		<defName>xpSWZsinj_Raptor_playable</defName>
@@ -101,6 +195,14 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -117,6 +219,8 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
 	<PawnKindDef Name="xpSWPentastar_ArmyTrooper_playable" ParentName="SWPentastar_ArmyTrooper">
 		<defName>xpSWPentastar_ArmyTrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -128,7 +232,32 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
-	
+	<PawnKindDef Name="xpSWPentastar_ArmyGrenadier_playable" ParentName="SWPentastar_ArmyHeavy">
+		<defName>xpSWPentastar_ArmyGrenadier_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWPentastar_ArmyLieutenant_playable" ParentName="SWPentastar_ArmyLieutenant">
+		<defName>xpSWPentastar_ArmyLieutenant_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -147,6 +276,9 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
 	<PawnKindDef Name="xpSWMaldrood_ArmyTrooper_playable" ParentName="SWMaldrood_ArmyTrooper">
 		<defName>xpSWMaldrood_ArmyTrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -158,6 +290,36 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef Name="xpSWMaldrood_ArmyGrenadier_playable" ParentName="SWMaldrood_ArmyHeavy">
+		<defName>xpSWMaldrood_ArmyGrenadier_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWMaldrood_ArmyLieutenant_playable" ParentName="SWMaldrood_ArmyLieutenant">
+		<defName>xpSWMaldrood_ArmyLieutenant_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
 	
 	<PawnKindDef Name="xpSWMaldrood_NavyCommando_playable" ParentName="SWMaldrood_NavyCommando">
 		<defName>xpSWMaldrood_NavyCommando_playable</defName>
@@ -188,8 +350,37 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
 	<PawnKindDef Name="xpSWEriadu_ArmyTrooper_playable" ParentName="SWEriadu_ArmyTrooper">
 		<defName>xpSWEriadu_ArmyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWEriadu_ArmyGrenadier_playable" ParentName="SWEriadu_ArmyHeavy">
+		<defName>xpSWEriadu_ArmyGrenadier_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
+		</weaponTags>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWEriadu_ArmyLieutenant_playable" ParentName="SWEriadu_ArmyLieutenant">
+		<defName>xpSWEriadu_ArmyLieutenant_playable</defName>
 		<!-- <label>DEBUG</label> -->
 		<defaultFactionType>PlayerColony</defaultFactionType>
 		<startingHediffs>

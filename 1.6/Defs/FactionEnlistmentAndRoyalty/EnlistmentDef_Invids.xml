@@ -7,7 +7,7 @@
 
     <FCP.Enlist.FactionEnlistOptionsDef>
         <defName>guy762_SWFactionEnlistment_Invids</defName>
-        <minGoodwillRequrementToEnlist>-100</minGoodwillRequrementToEnlist>
+        <minGoodwillRequrementToEnlist>0</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>100</enlistGoodwillGain>
 		<currencyDef>guy762_KotORcredits</currencyDef>
 		<noSettlementProximityPenalty>True</noSettlementProximityPenalty>
@@ -146,7 +146,7 @@
 
     <!-- Resign Options -->
 
-        <resignGoodwillGain>-75</resignGoodwillGain>
+        <resignGoodwillGain>0</resignGoodwillGain>
         <resignMenuTextKey>SWCP_Resign_Menu_Text_harsh</resignMenuTextKey>
         <resignLetterTitleKey>SWCP_Resign_Letter_Title</resignLetterTitleKey>
         <resignLetterLabelKey>SWCP_Resign_Letter_Label_harsh</resignLetterLabelKey>

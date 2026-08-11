@@ -43,30 +43,35 @@
 			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
 		</tradeTags>
 		<verbs>
-		  <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
-			<label>activate shield</label>
-			
-			<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
-			<hediffDef>guy762_EShield_JKshield</hediffDef>
-			<inDanger>true</inDanger>
-			<hasStandardCommand>true</hasStandardCommand>
-			<targetable>false</targetable>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<onlyManualCast>True</onlyManualCast>
-			<soundCast>kotorsound_shieldpowerup</soundCast>
-			<violent>false</violent>
-		  </li>
+			<li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+				<label>activate shield</label>
+				
+				<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+				<hediffDef>guy762_EShield_JKshield</hediffDef>
+				<inDanger>true</inDanger>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>
+				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+				<onlyManualCast>True</onlyManualCast>
+				<soundCast>kotorsound_shieldpowerup</soundCast>
+				<violent>false</violent>
+			</li>
 		</verbs>
 		<comps>
-			<!-- <li Class="CompProperties_ApparelReloadable"> -->
-				<!-- <maxCharges>2</maxCharges> -->
-				<!-- <destroyOnEmpty>false</destroyOnEmpty> -->
-				<!-- <hotKey>Misc4</hotKey> -->
-				<!-- <chargeNoun>usage</chargeNoun> -->
-				<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
-			<!-- </li> -->
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>2</maxCharges>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>usage</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				
+				<!-- <ammoDef>KOTOR_PlasmaCartridge</ammoDef> -->
+				<!-- <ammoCountPerCharge>1</ammoCountPerCharge> -->
+				<!-- <baseReloadTicks>450</baseReloadTicks> -->
+				<!-- <soundReload>kotorsound_JKshieldbank_done</soundReload> -->
+			</li>
 			<li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
-				<ticksCooldown>14400</ticksCooldown>
+				<ticksCooldown>3000</ticksCooldown>
 			</li>
 		</comps>
 	</ThingDef>
@@ -243,25 +248,25 @@
     </comps>
   </HediffDef>
   
-  <RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
-		<defName>SWWERecipe_ShieldRecharge_JKeshield</defName>
-		<label>recharge personal shield</label>
-		<description>Recharge a used personal shield.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
-		<jobString>recharging personal shield.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-				<thingDefs>
-					<li>guy762_JKenergyshield</li>
-				</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<products>
-			<guy762_JKenergyshield>1</guy762_JKenergyshield>
-		</products>
-	</RecipeDef>
+	<!-- <RecipeDef ParentName="KotORRecipe_ShieldRecharge_base"> -->
+		<!-- <defName>SWWERecipe_ShieldRecharge_JKeshield</defName> -->
+		<!-- <label>recharge personal shield</label> -->
+		<!-- <description>Recharge a used personal shield.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description> -->
+		<!-- <jobString>recharging personal shield.</jobString> -->
+		<!-- <ingredients> -->
+			<!-- <li> -->
+				<!-- <filter> -->
+				<!-- <thingDefs> -->
+					<!-- <li>guy762_JKenergyshield</li> -->
+				<!-- </thingDefs> -->
+				<!-- </filter> -->
+				<!-- <count>1</count> -->
+			<!-- </li> -->
+		<!-- </ingredients> -->
+		<!-- <products> -->
+			<!-- <guy762_JKenergyshield>1</guy762_JKenergyshield> -->
+		<!-- </products> -->
+	<!-- </RecipeDef> -->
 	
 	
 	
@@ -321,30 +326,37 @@
 			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
 		</tradeTags>
 		<verbs>
-		  <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
-			<label>activate shield</label>
-			
-			<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
-			<hediffDef>guy762_EShield_JKheavy</hediffDef>
-			<inDanger>true</inDanger>
-			<hasStandardCommand>true</hasStandardCommand>
-			<targetable>false</targetable>
-			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-			<onlyManualCast>True</onlyManualCast>
-			<soundCast>kotorsound_shieldpowerup</soundCast>
-			<violent>false</violent>
-		  </li>
+			<li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+				<label>activate shield</label>
+				
+				<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+				<hediffDef>guy762_EShield_JKheavy</hediffDef>
+				<inDanger>true</inDanger>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>false</targetable>
+				<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+				<onlyManualCast>True</onlyManualCast>
+				<soundCast>kotorsound_shieldpowerup</soundCast>
+				<violent>false</violent>
+			</li>
 		</verbs>
 		<comps>
-			<!-- <li Class="CompProperties_ApparelReloadable"> -->
-				<!-- <maxCharges>4</maxCharges> -->
-				<!-- <destroyOnEmpty>false</destroyOnEmpty> -->
-				<!-- <hotKey>Misc4</hotKey> -->
-				<!-- <chargeNoun>usage</chargeNoun> -->
-				<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
-			<!-- </li> -->
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>4</maxCharges>
+				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<baseReloadTicks>900</baseReloadTicks>
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>usage</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+				
+				<!-- <ammoDef>KOTOR_PlasmaCartridge</ammoDef> -->
+				<!-- <ammoCountPerCharge>1</ammoCountPerCharge> -->
+				<!-- <baseReloadTicks>450</baseReloadTicks> -->
+				<!-- <soundReload>kotorsound_JKshieldbank_done</soundReload> -->
+			</li>
 			<li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
-				<ticksCooldown>14400</ticksCooldown>
+				<ticksCooldown>3000</ticksCooldown>
 			</li>
 			<li Class="FCP.Core.CompProperties_LabelColored">
 				<rarity>Rare</rarity>
@@ -524,25 +536,25 @@
     </comps>
   </HediffDef>
   
-  <RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
-		<defName>SWWERecipe_ShieldRecharge_JKeshield_big</defName>
-		<label>recharge heavy personal shield</label>
-		<description>Recharge a used heavy personal shield.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
-		<jobString>recharging heavy personal shield.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-				<thingDefs>
-					<li>guy762_JKenergyshield_big</li>
-				</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<products>
-			<guy762_JKenergyshield_big>1</guy762_JKenergyshield_big>
-		</products>
-	</RecipeDef>
+	<!-- <RecipeDef ParentName="KotORRecipe_ShieldRecharge_base"> -->
+		<!-- <defName>SWWERecipe_ShieldRecharge_JKeshield_big</defName> -->
+		<!-- <label>recharge heavy personal shield</label> -->
+		<!-- <description>Recharge a used heavy personal shield.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description> -->
+		<!-- <jobString>recharging heavy personal shield.</jobString> -->
+		<!-- <ingredients> -->
+			<!-- <li> -->
+				<!-- <filter> -->
+				<!-- <thingDefs> -->
+					<!-- <li>guy762_JKenergyshield_big</li> -->
+				<!-- </thingDefs> -->
+				<!-- </filter> -->
+				<!-- <count>1</count> -->
+			<!-- </li> -->
+		<!-- </ingredients> -->
+		<!-- <products> -->
+			<!-- <guy762_JKenergyshield_big>1</guy762_JKenergyshield_big> -->
+		<!-- </products> -->
+	<!-- </RecipeDef> -->
   
   
   

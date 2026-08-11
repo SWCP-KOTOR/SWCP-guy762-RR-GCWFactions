@@ -125,7 +125,7 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWScum_JKHumanMerc_playable>6</xpSWScum_JKHumanMerc_playable>
 		</relevantPawnKinds>
@@ -143,7 +143,7 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWScum_JKHumanMerc_playable>12</xpSWScum_JKHumanMerc_playable>
 		</relevantPawnKinds>

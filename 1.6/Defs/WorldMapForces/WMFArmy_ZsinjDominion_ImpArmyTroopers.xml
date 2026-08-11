@@ -78,12 +78,12 @@
 					<li>SWCPWMFAbility_ZsinjDominion_SummonPlayerUnits_ImpArmyTroopers_big</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
-					<li>SWCPWMFAbility_DestroySettlement</li>
+					<li>SWCPWMFAbility_SiegeSettlement_ImpArmyTroopers</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_ZsinjDominion</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
-	
 	
 	
 	
@@ -124,7 +124,7 @@
 		<cooldownTicks>60000</cooldownTicks>
 		
 		<!-- <faction>guy762_GCWPlayerFaction_Invids</faction> -->
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWZsinj_ArmyTrooper_playable>6</xpSWZsinj_ArmyTrooper_playable>
 		</relevantPawnKinds>
@@ -133,7 +133,7 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ZsinjDominion_SummonPlayerUnits_ImpArmyTroopers_big</defName>
 		<label>deploy strike team (Player)</label>
-		<description>Deploy a player-controlled 12-man strike team.</description>
+		<description>Deploy a player-controlled 16-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
 		
 		<iconPath>UI/WorldMapForceIcons_Deployments/ZsinjDominion_ImpArmyTrooper_PlayerLarge</iconPath>
@@ -143,9 +143,12 @@
 		<cooldownTicks>180000</cooldownTicks>
 		
 		<!-- <faction>guy762_GCWPlayerFaction_Invids</faction> -->
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWZsinj_ArmyTrooper_playable>12</xpSWZsinj_ArmyTrooper_playable>
+			<xpSWZsinj_ArmyGrenadier_playable>2</xpSWZsinj_ArmyGrenadier_playable>
+			<xpSWWarlords_ArmyMedic_playable>1</xpSWWarlords_ArmyMedic_playable>
+			<xpSWZsinj_ArmyLieutenant_playable>1</xpSWZsinj_ArmyLieutenant_playable>
 		</relevantPawnKinds>
 	</ForcesMod.ForceAbilityDef>
 	

@@ -78,12 +78,25 @@
 					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_Stormtroopers_big</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
-					<li>SWCPWMFAbility_DestroySettlement</li>
+					<li>SWCPWMFAbility_SiegeSettlement_ImpRemnant_Stormtroopers</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_ImperialRemnant</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
-	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SiegeSettlement_ImpRemnant_Stormtroopers</defName>
+		<label>seige settlement</label>
+		<description>Order an assault on an enemy settlement, which may or may not succeed.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_DestroySettlement</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 900,000 = 15 in-game days -->
+		<cooldownTicks>900000</cooldownTicks>
+		<successChance>0.8</successChance>
+		<criticalFailureChance>0.2</criticalFailureChance>
+	</ForcesMod.ForceAbilityDef>
 	
 	
 	
@@ -124,7 +137,7 @@
 		<!-- 60,000 = 1 in-game day -->
 		<cooldownTicks>60000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWImpRemnant_Stormtrooper_playable>6</xpSWImpRemnant_Stormtrooper_playable>
 		</relevantPawnKinds>
@@ -142,7 +155,7 @@
 		<!-- 180,000 = 3 in-game days -->
 		<cooldownTicks>180000</cooldownTicks>
 		
-		<faction>PlayerColony</faction>
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWImpRemnant_Stormtrooper_playable>12</xpSWImpRemnant_Stormtrooper_playable>
 		</relevantPawnKinds>
