@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ light merc platoon -->	
+	
+	<PawnKindDef Name="xSWZannCon_LightMercPistoleer_14x" ParentName="SWZannCon_LightMerc">
+		<defName>xSWZannCon_LightMercPistoleer_14x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DL18pistol</li>
+			<li>SWRanged_DL21pistol</li>
+			<li>SWRanged_Model57pistol</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="xSWZannCon_LightMercRepeater_7x" ParentName="SWZannCon_LightMerc">
+		<defName>xSWZannCon_LightMercRepeater_7x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>7</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_ACPrepeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- <PawnKindDef Name="xSWZannCon_LightMercGrenadier_7x" ParentName="SWZannCon_LightMerc"> -->
+		<!-- <defName>xSWZannCon_LightMercGrenadier_7x</defName> -->
+		<!-- <combatPower>1</combatPower> -->
+		<!-- <maxPerGroup>7</maxPerGroup> -->
+		<!-- <weaponMoney>99999</weaponMoney> -->
+		<!-- <weaponTags Inherit="False"> -->
+			<!-- <li></li> -->
+		<!-- </weaponTags> -->
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	<!-- </PawnKindDef> -->
+	
+
+
+
+
+	
+	<PawnKindDef Name="xSWZannCon_DefilerLightLieutenant_1x" ParentName="SWZannCon_DefilerLightLieutenant">
+		<defName>xSWZannCon_DefilerLightLieutenant_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ heavy disruptor merc platoon -->	
+	
+	<PawnKindDef Name="xSWZannCon_DisruptorMerc_21x" ParentName="SWZannCon_DisruptorMerc">
+		<defName>xSWZannCon_DisruptorMerc_21x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>21</maxPerGroup>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="xSWZannCon_DefilerHeavyLieutenant_1x" ParentName="SWZannCon_DefilerHeavyLieutenant">
+		<defName>xSWZannCon_DefilerHeavyLieutenant_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Defiler tactical team -->	
+	
+	<PawnKindDef Name="xSWZannCon_DefilerSMG_9x" ParentName="SWZannCon_Defiler">
+		<defName>xSWZannCon_DefilerSMG_9x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>9</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E11tac</li> <!-- replace with WESTAR-M5? -->
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="xSWZannCon_DefilerGrenadier_6x" ParentName="SWZannCon_Defiler">
+		<defName>xSWZannCon_DefilerGrenadier_6x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RelbyMortar</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_DefilerEliteLieutenant_3x" ParentName="SWZannCon_Defiler">
+		<defName>xSWZannCon_DefilerEliteLieutenant_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DXR6DisruptorSniper</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_ambush</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_stealthadvance</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_zealousrage</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ JK underworld goons -->
+	
+	<PawnKindDef Name="xSWZannCon_JKRodian_24x" ParentName="SWScum_JKRodian">
+		<defName>xSWZannCon_JKRodian_24x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>24</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_JKHumanMerc_16x" ParentName="SWScum_JKHumanMerc">
+		<defName>xSWZannCon_JKHumanMerc_16x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>16</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_JKWeequay_8x" ParentName="SWScum_JKWeequay">
+		<defName>xSWZannCon_JKWeequay_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_JKTrando_4x" ParentName="SWScum_JKTrando">
+		<defName>xSWZannCon_JKTrando_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_JKRocketTrando_4x" ParentName="SWScum_JKRocketTrando">
+		<defName>xSWZannCon_JKRocketTrando_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWZannCon_JKSniperRodian_1x" ParentName="SWScum_JKSniperRodian">
+		<defName>xSWZannCon_JKSniperRodian_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_ZannConsortium</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+</Defs>

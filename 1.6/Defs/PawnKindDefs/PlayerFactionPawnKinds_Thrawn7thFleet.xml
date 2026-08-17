@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="SWThrawn7thBase" Abstract="True">
+		<defaultFactionType>guy762_GCWPlayerFaction_Thrawn7th</defaultFactionType>
+		<race>Human</race>
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+		<!-- <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality> -->
+		<!-- <backstoryFiltersOverride> -->
+			<!-- <li> -->
+				<!-- <categories> -->
+					<!-- <li>Pirate</li> -->
+					<!-- <li>Offworld</li> -->
+					<!-- <li>Outlander</li> -->
+					<!-- <li>ImperialFighter</li> -->
+					<!-- <li>Madman</li> -->
+				<!-- </categories> -->
+			<!-- </li> -->
+		<!-- </backstoryFiltersOverride> -->
+
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invNutrition>2</invNutrition>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+
+		<apparelMoney>4000~5000</apparelMoney>
+
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+
+		<disallowedTraits>
+			<li MayRequire="lee.theforce.standalone">Force_NeutralSensitivity</li>
+			<li MayRequire="lee.theforce.standalone">Force_LightAffinity</li>
+			<li MayRequire="lee.theforce.standalone">Force_DarkAffinity</li>
+			
+			<li>BodyPurist</li>
+			<li>Nudist</li>
+			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
+		</disallowedTraits>
+
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Hulk</li>
+					<li>Thin</li>
+				</whitelist>
+				<blacklist>
+					<!-- <li>Fat</li> -->
+					<!-- <li>Baby</li> -->
+					<!-- <li>Child</li> -->
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+
+	<PawnKindDef Name="SWThrawn7th_StormtrooperCorpsBase" ParentName="SWImpRemnant_StormtrooperCorpsBase" Abstract="True">
+		<defaultFactionType>guy762_GCWPlayerFaction_Thrawn7th</defaultFactionType>
+		
+		<xenotypeSet Inherit="False">						<!-- total 0.99 -->
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.90</Baseliner>
+				<!-- <guy762_xenotype_arkanian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_arkanian> -->
+				<guy762_xenotype_chiss MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_chiss>
+				<!-- <guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_echani> -->
+				<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_iridonian>
+				<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
+				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
+				<!-- <guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran> -->
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zabrak>
+				<!-- <guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron> -->
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	</PawnKindDef>
+
+
+
+
+
+
+
+
+	<PawnKindDef Name="SWThrawn7th_EliteStormtrooper" ParentName="SWThrawn7th_StormtrooperCorpsBase">
+		<defName>SWThrawn7th_EliteStormtrooper</defName>
+		<label>7th Fleet Stormtrooper</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		
+		<backstoryFiltersOverride Inherit="False">
+			<li><categories><li>SWCPBSC_NonFactionSpecificChildhoods</li><li>SWCPBSC_7thFleetStormtrooper</li></categories></li>
+		</backstoryFiltersOverride>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RemnantEmpire_stormiearmor</li>
+			<li>KotOREquipment_adv</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperBackpack</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>SWGCWSpecificApparelItem_ThrawnImperialStormtrooperPauldron</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperHelmet</li>
+			<li>SWGCWSpecificApparelItem_ImperialStormtrooperArmor</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_ImpStormtrooperBackpack</li>
+			<li>guy762_StormieHelmet</li>
+			<li>guy762_Accessory_stormie7thpauldron</li>
+			<li>guy762_Accessory_suspendersA</li>
+			<li>guy762_StormieArmor</li>
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(40,40,40)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>625~4500</weaponMoney>
+		<weaponTags>
+			<li>SWRanged_E11tac</li>
+			<li>SWRanged_E22rifle</li>
+			<li>SWRanged_DXR4DisruptorRifle</li>
+			<!-- <li>SWRanged_DLT19repeater</li> -->
+		</weaponTags>
+
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>2~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_battle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+		
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWThrawn7th_EliteHeavyStormtrooperBASE" ParentName="SWThrawn7th_EliteStormtrooper" Abstract="True">
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(250,250,250)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Hulk</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Hulk</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+			
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperSMG" ParentName="SWThrawn7th_EliteStormtrooper">
+		<defName>xpSWThrawn7th_StormtrooperSMG</defName>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E11tac</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperRifle" ParentName="SWThrawn7th_EliteStormtrooper">
+		<defName>xpSWThrawn7th_StormtrooperRifle</defName>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperDisruptor" ParentName="SWThrawn7th_EliteStormtrooper">
+		<defName>xpSWThrawn7th_StormtrooperDisruptor</defName>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DXR4DisruptorRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperLightRepeater" ParentName="SWThrawn7th_EliteHeavyStormtrooperBASE">
+		<defName>xpSWThrawn7th_StormtrooperLightRepeater</defName>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19repeater</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperAntiArmorRifle" ParentName="SWThrawn7th_EliteHeavyStormtrooperBASE">
+		<defName>xpSWThrawn7th_StormtrooperAntiArmorRifle</defName>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T21Bheavy</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperMissile" ParentName="SWThrawn7th_EliteHeavyStormtrooperBASE">
+		<defName>xpSWThrawn7th_StormtrooperMissile</defName>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li> <!-- replace with the big PLEX -->
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance><subOptionsTakeAll><li><thingDef>guy762_SE14pistol</thingDef><countRange>1</countRange></li></subOptionsTakeAll>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWThrawn7th_StormtrooperOfficer" ParentName="SWThrawn7th_EliteStormtrooper">
+		<defName>xpSWThrawn7th_StormtrooperOfficer</defName>
+		
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_FC1flechette</li>
+		</weaponTags>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(190,105,0)</color>         <!-- pumpkin orange (officer) -->
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<startingHediffs>
+			<li><def>SWPotF_DelegatedTacticHediff_takecover</def><durationTicksRange>60000</durationTicksRange><chance>1</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_ambush</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_sprint</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+			<li><def>SWPotF_DelegatedTacticHediff_barrage</def><durationTicksRange>60000</durationTicksRange><chance>0.3</chance></li>
+		</startingHediffs>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- used just for the Thrawn Stormtrooper WMF -->
+	
+	<PawnKindDef Name="xSWPentastar_ScoutTrooperSniper_6x" ParentName="SWImpRemnant_scouttrooper">
+		<defName>xSWPentastar_ScoutTrooperSniper_6x</defName>
+		<defaultFactionType>guy762_SWWarlordsFaction_Pentastar</defaultFactionType>
+		<combatPower>1</combatPower>
+		<maxPerGroup>6</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19Xsniper</li>
+		</weaponTags>
+		
+		<fleeHealthThresholdRange>0.8~0.9</fleeHealthThresholdRange>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+</Defs>

@@ -209,7 +209,12 @@
 		</colorSpectrum>
 		
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>SWInvids_pirate</basicMemberKind> <!-- maybe don't have this set because this resets the outfit of every pawn purchased from slave traders -->
+		
+		<!-- maybe don't have this set because this resets the outfit of every pawn purchased from slave traders -->
+		<!-- actually this node is required or else worldgen breaks and you can't get past the ideology selection screen -->
+		<basicMemberKind>xpSWColonist_ImpWorker</basicMemberKind>
+		<!-- <basicMemberKind>SWInvids_pirate</basicMemberKind> -->
+		
 		<pawnSingular>Invid</pawnSingular>
 		<pawnsPlural>Invids</pawnsPlural>
 		<techLevel>Spacer</techLevel>
@@ -223,6 +228,44 @@
 					<li>guy762_SWFactionEnlistment_Invids</li>
 				</enlistOptionsDefs>
 				<ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+			</li>
+			
+			<li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+				<hostileFactionDefs>
+					<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_KrathRaiders</li> -->
+					<!-- <li>guy762_KotORFaction_Militia</li> -->
+					<!-- <li>guy762_KotORFaction_HuttCartel</li> -->
+					<!-- <li>guy762_KotORFaction_ViciousHutts</li> -->
+					<!-- <li>guy762_KotORFaction_Czerka</li> -->
+					<!-- <li>guy762_KotORFaction_Exchange</li> -->
+					
+					<li>guy762_SWWarlordsFaction_NewRepublic</li>
+					<li>guy762_SWWarlordsFaction_RebelCell</li>
+					<!-- <li>guy762_SWWarlordsFaction_PartisanCell</li> -->
+					
+					<!-- <li>guy762_SWWarlordsFaction_ImpRemnant</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_Pentastar</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_GreaterMaldrood</li> -->
+					<li>guy762_SWWarlordsFaction_EriaduAuthority</li>
+					<!-- <li>guy762_SWWarlordsFaction_ImpMandalore</li> -->
+					<li>guy762_SWWarlordsFaction_LocalWarlord</li>
+					
+					<li>guy762_SWWarlordsFaction_HuttCartel</li>
+					<!-- <li>guy762_SWWarlordsFaction_ViciousHutts</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_BlackSun</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					
+					<li>guy762_SWWarlordsFaction_SlaverGuild</li>
+					<!-- <li>guy762_SWWarlordsFaction_MandoClan</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_CSA</li> -->
+					<li>guy762_SWWarlordsFaction_PDF</li>
+					<!-- <li>guy762_KotORFaction_Civilians</li> -->
+					<!-- <li>guy762_SWCPFaction_JawaMerchants</li> -->
+					<li>guy762_SWCPFaction_TuskenTribe</li>
+				</hostileFactionDefs>
 			</li>
 		</modExtensions>
 		

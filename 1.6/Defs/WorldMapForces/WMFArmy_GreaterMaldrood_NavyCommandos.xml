@@ -78,11 +78,26 @@
 					<li>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_NavyCommandos_big</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
-					<li>SWCPWMFAbility_DestroySettlement</li>
+					
+					<li>SWCPWMFAbility_SiegeSettlement_GreaterMaldrood_NavyCommandos</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_GreaterMaldrood</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SiegeSettlement_GreaterMaldrood_NavyCommandos</defName>
+		<label>seige settlement</label>
+		<description>Order an assault on an enemy settlement, which may or may not succeed.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_DestroySettlement</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_DestroySettlement</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 900,000 = 15 in-game days -->
+		<cooldownTicks>900000</cooldownTicks>
+		<successChance>0.6</successChance>
+		<criticalFailureChance>0.1</criticalFailureChance>
+	</ForcesMod.ForceAbilityDef>
 	
 	
 	

@@ -397,8 +397,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<forcedTraits>
 			<Tough>0</Tough>
@@ -507,9 +505,6 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
-		
-		<initialWillRange>0.5~2</initialWillRange>
-		<initialResistanceRange>5~10</initialResistanceRange>
 		
 		<modExtensions>
 			<li Class="BigAndSmall.PawnKindExtension">

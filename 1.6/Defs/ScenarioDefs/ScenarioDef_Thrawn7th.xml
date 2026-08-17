@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>guy762_GCWScenario_Thrawn7th</defName>
+		<label>[DEBUG] Thrawn's 7th Fleet Confederation</label>
+		<description>.</description>
+		<scenario>
+			<summary>.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>guy762_GCWPlayerFaction_Thrawn7th</factionDef>
+			</playerFaction>
+			
+			<parts>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+				  <def>GameStartDialog</def>
+				  <text>.</text>
+				  <closeSound>GameStartSting</closeSound>
+				</li>
+				
+				<li Class="ScenPart_ForcedMap">
+					<def>ForcedMap</def>
+					<mapGenerator>OrbitalRelay</mapGenerator>
+					<layerDef>Orbit</layerDef>
+				</li>
+				
+				
+				<!-- <li Class="RWM_BTD_Remix_GravshipBlueprints.BTD_ScenPart_GravshipCustomStart"> -->
+					<!-- <def>BTD_GravshipCustomStart</def> -->
+					<!-- <selectedCategory>YOURFOLDER</selectedCategory> -->
+					<!-- <selectedDesignLabel>YOURSHIP</selectedDesignLabel> -->
+					<!-- <spawnMode>FullDesign</spawnMode> -->
+				<!-- </li> -->
+				
+				
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Gravship</method>
+				</li>
+			
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+				  <def>ConfigurePawnsKindDefs</def>
+				  <pawnChoiceCount>2</pawnChoiceCount>
+				  <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+				  <kindCounts>
+
+					<li>
+						<kindDef>SWWEPlayableVillain_Thrawn</kindDef>
+						<count>1</count>
+						<requiredAtStart>true</requiredAtStart>
+					</li>
+					
+					<li>
+						<kindDef>SWWEPlayableVillain_Pellaeon</kindDef>
+						<count>1</count>
+						<requiredAtStart>true</requiredAtStart>
+					</li>
+					
+					<!-- <li> -->
+						<!-- <kindDef>SWInvids_pirate</kindDef> -->
+						<!-- <count>3</count> -->
+						<!-- <requiredAtStart>true</requiredAtStart> -->
+					<!-- </li> -->
+					
+				  </kindCounts>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>MicroelectronicsBasics</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Fabrication</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>AdvancedFabrication</project>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>SWCPResearch_PLACEHOLDER</project>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Batteries</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ColoredLights</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>PackagedSurvivalMeal</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>WatermillGenerator</project>
+				</li>
+
+				
+				
+				
+				
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>guy762_KotORcredits</thingDef>
+					<count>100000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>SWCPItemLootBox_FoodMeds</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>SWCPItemLootBox_RawFood</thingDef>
+					<count>6</count>
+				</li>
+
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>250</count>
+				</li>  
+				
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsAnywhere</def>
+				  <thingDef>MealSurvivalPack</thingDef>
+				  <count>7</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsAnywhere</def>
+				  <thingDef>guy762_medpac_life</thingDef>
+				  <count>10</count>
+				</li>
+				
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				
+				
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk_durasteel</thingDef>
+					<count>10</count>
+				</li>
+				
+				
+				
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ChunkSlagSteel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>KotORChunk_plasteel</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>KotORChunk_durasteel</thingDef>
+					<count>25</count>
+				</li>
+
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+
+
+
+
+
+
+
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>guy762_GCWPlayerFaction_Thrawn7th</defName>
+		<label>7th Fleet Confederation</label>
+		<description>The fleet under the command of Grand Admiral Thrawn, operating deep within the Unknown Regions...</description>
+		<factionIconPath>World/Thrawn7th</factionIconPath>
+		<colorSpectrum Inherit="False">
+			<li>RGB(120,140,205)</li> <!-- Ascendency Blue -->
+		</colorSpectrum>
+		
+		<isPlayer>true</isPlayer>
+		
+		<!-- maybe don't have this set because this resets the outfit of every pawn purchased from slave traders -->
+		<!-- actually this node is required or else worldgen breaks and you can't get past the ideology selection screen -->
+		<basicMemberKind>xpSWColonist_ImpWorker</basicMemberKind>
+		
+		<pawnSingular>Imperial</pawnSingular>
+		<pawnsPlural>Imperials</pawnsPlural>
+		<techLevel>Spacer</techLevel>
+		
+		<fixedName>7th Fleet Confederation</fixedName>
+		<settlementNameMaker>guy762_NamerSettlement_Thrawn7th</settlementNameMaker>
+
+		<modExtensions>
+			<!-- <li Class="FCP.Enlist.FactionEnlistOptions"> -->
+				<!-- <enlistOptionsDefs> -->
+					<!-- <li>guy762_SWFactionEnlistment_Invids</li> -->
+				<!-- </enlistOptionsDefs> -->
+				<!-- <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs> -->
+			<!-- </li> -->
+			<li Class="FCP.Factions.FactionExtension_PermanentlyHostileTo">
+				<hostileFactionDefs>
+					<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
+					<!-- <li>guy762_KotORFaction_KrathRaiders</li> -->
+					<!-- <li>guy762_KotORFaction_Militia</li> -->
+					<!-- <li>guy762_KotORFaction_HuttCartel</li> -->
+					<!-- <li>guy762_KotORFaction_ViciousHutts</li> -->
+					<!-- <li>guy762_KotORFaction_Czerka</li> -->
+					<!-- <li>guy762_KotORFaction_Exchange</li> -->
+					
+					<li>guy762_SWWarlordsFaction_NewRepublic</li>
+					<li>guy762_SWWarlordsFaction_RebelCell</li>
+					<li>guy762_SWWarlordsFaction_PartisanCell</li>
+					
+					<!-- <li>guy762_SWWarlordsFaction_ImpRemnant</li> -->
+					<li>guy762_SWWarlordsFaction_ZsinjDominion</li>
+					<!-- <li>guy762_SWWarlordsFaction_Pentastar</li> -->
+					<li>guy762_SWWarlordsFaction_GreaterMaldrood</li>
+					<!-- <li>guy762_SWWarlordsFaction_EriaduAuthority</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_ImpMandalore</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_LocalWarlord</li> -->
+					
+					<!-- <li>guy762_SWWarlordsFaction_HuttCartel</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_ViciousHutts</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_BlackSun</li> -->
+					<li>guy762_SWWarlordsFaction_ZannConsortium</li>
+					
+					<!-- <li>guy762_SWWarlordsFaction_SlaverGuild</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_MandoClan</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_CSA</li> -->
+					<!-- <li>guy762_SWWarlordsFaction_PDF</li> -->
+					<!-- <li>guy762_KotORFaction_Civilians</li> -->
+					<!-- <li>guy762_SWCPFaction_JawaMerchants</li> -->
+					<li>guy762_SWCPFaction_TuskenTribe</li>
+				</hostileFactionDefs>
+			</li>
+		</modExtensions>
+		
+
+		<allowedCultures>
+			<li>guy762_culture_coreworlds</li>
+		</allowedCultures>
+		<styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+		</styles>
+		
+		<requiredMemes>
+			<li>guy762_MemeDef_empire</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_CityBuilders</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+			
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienRaces_Abhorrent</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienRaces_Horrible</li>
+			
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_Acceptable</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_Preferred</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_EatingAliens_RequiredStrong</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+		</disallowedPrecepts>
+		
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>ImperialCommon</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		
+		
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+
+
+
+
+	<!-- <RulePackDef> -->
+		<!-- <defName>guy762_NamerFactionFiles_ChissPlanets</defName> -->
+		<!-- <rulePack> -->
+		  <!-- <rulesFiles> -->
+			<!-- <li>SWPAFN_AnyPlanet->Names/SWfactionnames_PentastarPlanets</li> -->
+		  <!-- </rulesFiles> -->
+		<!-- </rulePack> -->
+	<!-- </RulePackDef> -->
+	  
+	<!-- <RulePackDef> -->
+		<!-- <defName>guy762_NamerFaction_Thrawn7thStarfleet</defName> -->
+		<!-- <include> -->
+			<!-- <li>guy762_NamerFactionFiles_GenericFleetName</li> -->
+			<!-- <li>guy762_NamerFactionFiles_ChissPlanets</li> -->
+		<!-- </include> -->
+		<!-- <rulePack> -->
+		  <!-- <rulesStrings> -->
+			<!-- <li>r_name(p=6)->[SWFN_SmallFleetNumber] [SWPAFN_AnyPlanet] [taskforce]</li> -->
+			
+			<!-- <li>taskforce->Task Force</li> -->
+		  <!-- </rulesStrings> -->
+		<!-- </rulePack> -->
+	<!-- </RulePackDef> -->
+	  
+	  
+	  
+	  
+	<RulePackDef>
+		<defName>guy762_NamerSettlement_Thrawn7th</defName>
+		<include>
+			<li>guy762_NamerFactionFiles_GenericFleetName</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name(p=12)->[checkpoint] [SWSN_Aurebesh]-T[SWSN_Digit]</li>
+			<li>r_name(p=9)->[outpost] [SWSN_Aurebesh]-T[SWSN_Digit]</li>
+			<li>r_name(p=6)->[camp] [SWSN_Aurebesh]-T[SWSN_Digit]</li>
+			<li>r_name(p=3)->[depot] [SWSN_Aurebesh]-T[SWSN_Digit]</li>
+			
+			<li>checkpoint->Checkpoint</li>
+			<li>outpost->Outpost</li>
+			<li>camp->Camp</li>
+			<li>depot->Depot</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+
+
+
+</Defs>

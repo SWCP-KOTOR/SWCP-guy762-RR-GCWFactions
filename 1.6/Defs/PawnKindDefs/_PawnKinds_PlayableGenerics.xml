@@ -40,9 +40,14 @@
 	
 	
 	
+	<!-- NOTE: make sure ALL squad weapons are set to not be biocoded with <biocodeWeaponChance>0</biocodeWeaponChance> !!!!!!  -->
+	<!-- NOTE: all rocket, flamethrower, and other splash damage units should get a sidearm with:
 	
+		<inventoryOptions>
+			<skipChance>0</skipChance><subOptionsTakeAll><li><thingDef>guy762_SE14pistol</thingDef><countRange>1</countRange></li></subOptionsTakeAll>
+		</inventoryOptions>
 	
-	
+	-->
 	
 	
 	
@@ -94,7 +99,7 @@
 	<PawnKindDef Name="xpSWImpRemnant_ArmyGrenadier_playable" ParentName="SWImpRemnant_ArmyHeavy">
 		<defName>xpSWImpRemnant_ArmyGrenadier_playable</defName>
 		<!-- <label>DEBUG</label> -->
-		<weaponMoney>99999</weaponMoney>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
 		</weaponTags>
@@ -123,6 +128,10 @@
 	
 	
 	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWImpRemnant_Stormtrooper_playable" ParentName="SWImpRemnant_stormtrooper">
 		<defName>xpSWImpRemnant_Stormtrooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -134,7 +143,108 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_StormtrooperSniper_playable" ParentName="SWImpRemnant_stormierifle">
+		<defName>xpSWImpRemnant_StormtrooperSniper_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT20Asniper</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_StormtrooperLightRepeater_playable" ParentName="SWImpRemnant_stormierifle">
+		<defName>xpSWImpRemnant_StormtrooperLightRepeater_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19repeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_StormtrooperHeavyRepeater_playable" ParentName="SWImpRemnant_stormiehvy">
+		<defName>xpSWImpRemnant_StormtrooperHeavyRepeater_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T21repeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_StormtrooperMissile_playable" ParentName="SWImpRemnant_stormiehvy">
+		<defName>xpSWImpRemnant_StormtrooperMissile_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance><subOptionsTakeAll><li><thingDef>guy762_SE14pistol</thingDef><countRange>1</countRange></li></subOptionsTakeAll>
+		</inventoryOptions>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_StormtrooperOfficer_playable" ParentName="SWImpRemnant_stormieofficer">
+		<defName>xpSWImpRemnant_StormtrooperOfficer_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
 	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWImpRemnant_ScoutTrooperSniper_playable" ParentName="SWImpRemnant_scouttrooper">
+		<defName>xpSWImpRemnant_ScoutTrooperSniper_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19Xsniper</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWImpRemnant_ScoutTrooperPistoleer_playable" ParentName="SWImpRemnant_scouttrooper">
+		<defName>xpSWImpRemnant_ScoutTrooperPistoleer_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_EC17pistol</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -158,7 +268,7 @@
 	<PawnKindDef Name="xpSWZsinj_ArmyGrenadier_playable" ParentName="SWZsinj_ArmyHeavy">
 		<defName>xpSWZsinj_ArmyGrenadier_playable</defName>
 		<!-- <label>DEBUG</label> -->
-		<weaponMoney>99999</weaponMoney>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
 		</weaponTags>
@@ -185,6 +295,13 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWZsinj_Raptor_playable" ParentName="SWZsinj_Raptor">
 		<defName>xpSWZsinj_Raptor_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
@@ -195,6 +312,69 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_RaptorRepeater_playable" ParentName="SWZsinj_RaptorHvy">
+		<defName>xpSWZsinj_RaptorRepeater_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_RT97Crepeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_RaptorFlamethrower_playable" ParentName="SWZsinj_RaptorHvy">
+		<defName>xpSWZsinj_RaptorFlamethrower_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_Oppressorflamethrower</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance><subOptionsTakeAll><li><thingDef>guy762_SE14pistol</thingDef><countRange>1</countRange></li></subOptionsTakeAll>
+		</inventoryOptions>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_RaptorMissile_playable" ParentName="SWZsinj_RaptorHvy">
+		<defName>xpSWZsinj_RaptorMissile_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0</skipChance><subOptionsTakeAll><li><thingDef>guy762_SE14pistol</thingDef><countRange>1</countRange></li></subOptionsTakeAll>
+		</inventoryOptions>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWZsinj_RaptorOfficer_playable" ParentName="SWZsinj_RaptorOfficer">
+		<defName>xpSWZsinj_RaptorOfficer_playable</defName>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+	</PawnKindDef>
+	
+	
+	
+	
+	
 	
 	
 	
@@ -235,7 +415,7 @@
 	<PawnKindDef Name="xpSWPentastar_ArmyGrenadier_playable" ParentName="SWPentastar_ArmyHeavy">
 		<defName>xpSWPentastar_ArmyGrenadier_playable</defName>
 		<!-- <label>DEBUG</label> -->
-		<weaponMoney>99999</weaponMoney>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
 		</weaponTags>
@@ -293,7 +473,7 @@
 	<PawnKindDef Name="xpSWMaldrood_ArmyGrenadier_playable" ParentName="SWMaldrood_ArmyHeavy">
 		<defName>xpSWMaldrood_ArmyGrenadier_playable</defName>
 		<!-- <label>DEBUG</label> -->
-		<weaponMoney>99999</weaponMoney>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
 		</weaponTags>
@@ -367,7 +547,7 @@
 	<PawnKindDef Name="xpSWEriadu_ArmyGrenadier_playable" ParentName="SWEriadu_ArmyHeavy">
 		<defName>xpSWEriadu_ArmyGrenadier_playable</defName>
 		<!-- <label>DEBUG</label> -->
-		<weaponMoney>99999</weaponMoney>
+		<weaponMoney>99999</weaponMoney><biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponTags Inherit="False">
 			<li>SWRanged_HH4ProtonGrenadeLauncher</li>
 		</weaponTags>

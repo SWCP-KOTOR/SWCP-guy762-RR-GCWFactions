@@ -145,7 +145,7 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ZsinjDominion_SummonPlayerUnits_Raptors_big</defName>
 		<label>deploy strike team (Player)</label>
-		<description>Deploy a player-controlled 12-man strike team.</description>
+		<description>Deploy a player-controlled 16-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
 		
 		<iconPath>UI/WorldMapForceIcons_Deployments/ZsinjDominion_Raptor_PlayerLarge</iconPath>
@@ -157,6 +157,10 @@
 		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWZsinj_Raptor_playable>12</xpSWZsinj_Raptor_playable>
+			<xpSWZsinj_RaptorRepeater_playable>1</xpSWZsinj_RaptorRepeater_playable>
+			<xpSWZsinj_RaptorFlamethrower_playable>1</xpSWZsinj_RaptorFlamethrower_playable>
+			<xpSWZsinj_RaptorMissile_playable>1</xpSWZsinj_RaptorMissile_playable>
+			<xpSWZsinj_RaptorOfficer_playable>1</xpSWZsinj_RaptorOfficer_playable>
 		</relevantPawnKinds>
 	</ForcesMod.ForceAbilityDef>
 	

@@ -155,6 +155,9 @@
 					<guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians>
 					<!-- <guy762_SWCPFaction_JawaMerchants>-25~0</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
+					
+					<guy762_GCWPlayerFaction_Thrawn7th>-100</guy762_GCWPlayerFaction_Thrawn7th>
+					<guy762_GCWPlayerFaction_Invids>-25~0</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>true</excludeFromCommConsole>
 				<hasCities>true</hasCities>

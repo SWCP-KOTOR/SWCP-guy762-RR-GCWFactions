@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+		<!-- <startingHediffs> -->
+			<!-- <li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus25percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li> -->
+			<!-- <li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li> -->
+		<!-- </startingHediffs> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		<!-- </modExtensions> -->
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Falleen guard platoon -->	
+	
+	<PawnKindDef Name="xSWBlackSun_FalleenSoldier_14x" ParentName="SWBlackSun_FalleenSoldier">
+		<defName>xSWBlackSun_FalleenSoldier_14x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>14</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_BH4DoubleBlaster</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_FalleenShotgun_7x" ParentName="SWBlackSun_FalleenSoldier">
+		<defName>xSWBlackSun_FalleenShotgun_7x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>7</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_ACParraygun</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_FalleenMelee_7x" ParentName="SWBlackSun_FalleenMeleeSoldier">
+		<defName>xSWBlackSun_FalleenMelee_7x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>7</maxPerGroup>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWMelee_electrobaton</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_Lieutenant_3x" ParentName="SWHutts_lieutenant">
+		<defName>xSWBlackSun_Lieutenant_3x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>3</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_needdisabler</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ JK underworld goons -->
+	
+	<PawnKindDef Name="xSWBlackSun_JKRodian_24x" ParentName="SWScum_JKRodian">
+		<defName>xSWBlackSun_JKRodian_24x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>24</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_JKHumanMerc_16x" ParentName="SWScum_JKHumanMerc">
+		<defName>xSWBlackSun_JKHumanMerc_16x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>16</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_JKWeequay_8x" ParentName="SWScum_JKWeequay">
+		<defName>xSWBlackSun_JKWeequay_8x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>8</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_JKTrando_4x" ParentName="SWScum_JKTrando">
+		<defName>xSWBlackSun_JKTrando_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_JKRocketTrando_4x" ParentName="SWScum_JKRocketTrando">
+		<defName>xSWBlackSun_JKRocketTrando_4x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="xSWBlackSun_JKSniperRodian_1x" ParentName="SWScum_JKSniperRodian">
+		<defName>xSWBlackSun_JKSniperRodian_1x</defName>
+		<combatPower>1</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<defaultFactionType>guy762_SWWarlordsFaction_BlackSun</defaultFactionType>
+		
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus75percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+</Defs>

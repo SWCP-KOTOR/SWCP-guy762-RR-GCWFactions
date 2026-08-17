@@ -98,7 +98,7 @@
 		<label>reclaim settlement (New Republic)</label>
 		<description>Reclaim a destroyed settlement for the New Republic.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_NewRepublic</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_NewRepublic</iconPath>
 		
 		<cooldownTicks>180000</cooldownTicks>
 		<requiresTarget>true</requiresTarget>
@@ -115,7 +115,7 @@
 		<label>reclaim settlement (Imperial Remnant)</label>
 		<description>Reclaim a destroyed settlement for the Imperial Remnant.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_ImperialRemnant</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ImperialRemnant</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
@@ -127,7 +127,7 @@
 		<label>reclaim settlement (Zsinj's Dominion)</label>
 		<description>Reclaim a destroyed settlement for Zsinj's Dominion.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_ZsinjDominion</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ZsinjDominion</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
@@ -139,7 +139,7 @@
 		<label>reclaim settlement (Pentastar Alignment)</label>
 		<description>Reclaim a destroyed settlement for the Pentastar Alignment.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_PentastarAlignment</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_PentastarAlignment</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
@@ -151,7 +151,7 @@
 		<label>reclaim settlement (Greater Maldrood)</label>
 		<description>Reclaim a destroyed settlement for the Greater Maldrood.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_GreaterMaldrood</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_GreaterMaldrood</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
@@ -163,7 +163,7 @@
 		<label>reclaim settlement (Eriadu Authority)</label>
 		<description>Reclaim a destroyed settlement for the Eriadu Authority.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_EriaduAuthority</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_EriaduAuthority</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
@@ -179,23 +179,61 @@
 		<label>reclaim settlement (Hutt Cartels)</label>
 		<description>Reclaim a destroyed settlement for the Hutt Cartels.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_HuttKajidics</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_HuttKajidics</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_HuttCartel</faction>
 	</ForcesMod.ForceAbilityDef>
 	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_BlackSun</defName>
+		<label>reclaim settlement (Black Sun)</label>
+		<description>Reclaim a destroyed settlement for the Black Sun.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_BlackSun</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_BlackSun</faction>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_ZannConsortium</defName>
+		<label>reclaim settlement (Zann Consortium)</label>
+		<description>Reclaim a destroyed settlement for the Zann Consortium.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ZannConsortium</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+	</ForcesMod.ForceAbilityDef>
 	
 	
 	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ReclaimSettlement_Thrawn7th</defName>
+		<label>reclaim settlement (7th Fleet)</label>
+		<description>Reclaim a destroyed settlement for Thrawn's 7th Fleet Confederation.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_Thrawn7th</iconPath>
+		
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTarget>true</requiresTarget>
+		<faction>guy762_GCWPlayerFaction_Thrawn7th</faction>
+	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_Invids</defName>
 		<label>reclaim settlement (Invids)</label>
 		<description>Reclaim a destroyed settlement for the Invids.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
-		<iconPath>UI/FactionIcons_EnlistmentResignation/Enlist_Invids</iconPath>
+		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_Invids</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>

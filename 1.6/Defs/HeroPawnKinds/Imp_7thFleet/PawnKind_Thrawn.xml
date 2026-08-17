@@ -58,7 +58,7 @@
 		
 		<forcedTraits>
 			<SWCPTrait_ArtLover MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_ArtLover>
-			<SWCPTrait_Arrogant>0</SWCPTrait_Arrogant>
+			<SWCPTrait_Arrogant MayRequire="guy762.Lee.KotORPotF">0</SWCPTrait_Arrogant>
 			<Psychopath>0</Psychopath>
 			<Industriousness>2</Industriousness>
 			<Nerves>2</Nerves>
@@ -72,24 +72,24 @@
 		  </li>
 		</backstoryFiltersOverride>
 		<abilities>
-			<li>guy762_Ability_CommandTierI</li>
+			<li MayRequire="guy762.Lee.KotORPotF">guy762_Ability_CommandTierI</li>
 			
-			<li>SWPotF_TacticAbility_Ambush</li>
-			<li>SWPotF_TacticDelegationAbility_ambush</li>
-			<li>SWPotF_TacticAbility_Barrage</li>
-			<li>SWPotF_TacticDelegationAbility_barrage</li>
-			<li>SWPotF_TacticAbility_Charge</li>
-			<li>SWPotF_TacticDelegationAbility_charge</li>
-			<li>SWPotF_TacticAbility_Harass</li>
-			<li>SWPotF_TacticDelegationAbility_harass</li>
-			<li>SWPotF_TacticAbility_TakeCover</li>
-			<li>SWPotF_TacticDelegationAbility_takecover</li>
-			<li>SWPotF_TacticAbility_Sprint</li>
-			<li>SWPotF_TacticDelegationAbility_sprint</li>
-			<li>SWPotF_TacticAbility_StealthAdvance</li>
-			<li>SWPotF_TacticDelegationAbility_stealthadvance</li>
-			<li>SWPotF_TacticAbility_ZealousRage</li>
-			<li>SWPotF_TacticDelegationAbility_zealousrage</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Ambush</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_ambush</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Barrage</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_barrage</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Charge</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_charge</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Harass</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_harass</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_TakeCover</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_takecover</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_Sprint</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_sprint</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_StealthAdvance</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_stealthadvance</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbility_ZealousRage</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticDelegationAbility_zealousrage</li>
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li> -->

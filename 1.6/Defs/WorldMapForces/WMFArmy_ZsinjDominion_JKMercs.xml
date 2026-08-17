@@ -78,12 +78,14 @@
 					<li>SWCPWMFAbility_SummonPlayerUnits_JKMercs_small</li>
 					<li>SWCPWMFAbility_SummonPlayerUnits_JKMercs_big</li>
 					
-					<!-- <li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li> -->
-					<!-- <li>SWCPWMFAbility_DestroySettlement</li> -->
+					
+					<li>SWCPWMFAbility_SiegeSettlement_JKMercs</li>
+					<li>SWCPWMFAbility_ReclaimSettlement_ZsinjDominion</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
+	
 	
 	
 	

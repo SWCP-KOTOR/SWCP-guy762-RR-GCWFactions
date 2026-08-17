@@ -482,7 +482,7 @@
 		</disallowedTraits>
 		
 		<abilities>
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		<startingHediffs>
 			<li>

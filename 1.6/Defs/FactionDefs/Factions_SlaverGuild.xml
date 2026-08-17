@@ -3,7 +3,7 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>guy762_SWWarlordsFaction_SlaverGuild</defName>
-		<label>slaver guild</label>
+		<label>slaver guilds</label>
 		<!-- <fixedName></fixedName> -->
 		<factionNameMaker>NamerFactionPirate</factionNameMaker>
 		<description>.</description>
@@ -143,6 +143,7 @@
 					<!-- <guy762_SWCPFaction_JawaMerchants>0</guy762_SWCPFaction_JawaMerchants> -->
 					<guy762_SWCPFaction_TuskenTribe>-100</guy762_SWCPFaction_TuskenTribe>
 					
+					<guy762_GCWPlayerFaction_Thrawn7th>0</guy762_GCWPlayerFaction_Thrawn7th>
 					<guy762_GCWPlayerFaction_Invids>-100</guy762_GCWPlayerFaction_Invids>
 				</startingGoodwillByFactionDefs>
 				<excludeFromCommConsole>false</excludeFromCommConsole>

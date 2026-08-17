@@ -471,6 +471,53 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	<PawnKindDef Name="SWZannCon_DefilerLightLieutenant" ParentName="SWZannCon_Defiler">
+		<defName>SWZannCon_DefilerLightLieutenant</defName>
+		
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_EE3carbine</li>
+		</weaponTags>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_zealousrage</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWZannCon_DefilerHeavyLieutenant" ParentName="SWZannCon_Defiler">
+		<defName>SWZannCon_DefilerHeavyLieutenant</defName>
+		
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DXR6DisruptorSniper</li>
+		</weaponTags>
+		<startingHediffs>
+			<li>
+				<def>SWPotF_DelegatedTacticHediff_takecover</def>
+				<durationTicksRange>60000</durationTicksRange>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="SWZannCon_DefilerFactionLeaderTest" ParentName="SWZannCon_Defiler">
 		<defName>SWZannCon_DefilerFactionLeaderTest</defName>
 		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->

@@ -77,7 +77,10 @@
 					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_Stormtroopers_small</li>
 					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_Stormtroopers_big</li>
 					
-					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
+					<li>SWCPWMFAbility_ImpRemnant_SummonNPCRaid_ScoutTroopers</li>
+					<li>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ScoutTroopers</li>
+					
+					<!-- <li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li> -->
 					<li>SWCPWMFAbility_SiegeSettlement_ImpRemnant_Stormtroopers</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_ImperialRemnant</li>
 				</abilities>
@@ -146,7 +149,7 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_Stormtroopers_big</defName>
 		<label>deploy strike team (Player)</label>
-		<description>Deploy a player-controlled 12-man strike team.</description>
+		<description>Deploy a player-controlled 16-man strike team.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
 		
 		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_Stormtrooper_PlayerLarge</iconPath>
@@ -158,6 +161,52 @@
 		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
 		<relevantPawnKinds>
 			<xpSWImpRemnant_Stormtrooper_playable>12</xpSWImpRemnant_Stormtrooper_playable>
+			<xpSWImpRemnant_StormtrooperLightRepeater_playable>1</xpSWImpRemnant_StormtrooperLightRepeater_playable>
+			<xpSWImpRemnant_StormtrooperHeavyRepeater_playable>1</xpSWImpRemnant_StormtrooperHeavyRepeater_playable>
+			<xpSWImpRemnant_StormtrooperMissile_playable>1</xpSWImpRemnant_StormtrooperMissile_playable>
+			<xpSWImpRemnant_StormtrooperOfficer_playable>1</xpSWImpRemnant_StormtrooperOfficer_playable>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ImpRemnant_SummonNPCRaid_ScoutTroopers</defName>
+		<label>deploy scout squad (NPC)</label>
+		<description>Deploy a small scouting squad as friendly NPCs.\n\nNOTE: Scout units will harass the enemy with long-range weapons, but will flee once they take damage to prevent a drawn-out engagement!</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_ScoutTrooper_NPC</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 60,000 = 1 in-game day -->
+		<cooldownTicks>60000</cooldownTicks>
+		
+		<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+		<relevantPawnKinds>
+			<xSWImpRemnant_ScoutTrooperSniper_6x>6</xSWImpRemnant_ScoutTrooperSniper_6x>
+		</relevantPawnKinds>
+	</ForcesMod.ForceAbilityDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_ImpRemnant_SummonPlayerUnits_ScoutTroopers</defName>
+		<label>deploy scout squad (Player)</label>
+		<description>Deploy a player-controlled 6-man scouting squad.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_SpawnRaid</workerClass>
+		
+		<iconPath>UI/WorldMapForceIcons_Deployments/ImpRemnant_ScoutTrooper_Player</iconPath>
+		<requiresTarget>true</requiresTarget>
+		
+		<!-- 180,000 = 3 in-game days -->
+		<cooldownTicks>180000</cooldownTicks>
+		
+		<usesPlayerFaction>True</usesPlayerFaction><noStrategy>True</noStrategy>
+		<relevantPawnKinds>
+			<xpSWImpRemnant_ScoutTrooperSniper_playable>4</xpSWImpRemnant_ScoutTrooperSniper_playable>
+			<xpSWImpRemnant_ScoutTrooperPistoleer_playable>2</xpSWImpRemnant_ScoutTrooperPistoleer_playable>
 		</relevantPawnKinds>
 	</ForcesMod.ForceAbilityDef>
 	
