@@ -52,12 +52,12 @@
 	
 	
 	<WorldObjectDef>
-		<defName>SWCPShipForce_InterceptorIV</defName>
-		<label>Interceptor-IV Frigate</label>
+		<defName>SWCPShipForce_RaiderCorvette</defName>
+		<label>Raider-class Corvette</label>
 		<description>.</description>
 		
-		<texture>UI/WorldMapForceIcons_Ships/WMFIcon_InterceptorIV</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
-		<expandingIconTexture>UI/WorldMapForceIcons_Ships/WMFIcon_InterceptorIV</expandingIconTexture>
+		<texture>UI/WorldMapForceIcons_Ships/WMFIcon_RaiderCorvette</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Ships/WMFIcon_RaiderCorvette</expandingIconTexture>
 		<expandingIconDrawSize>1</expandingIconDrawSize>
 		<!-- <expandingIconDrawSize>10</expandingIconDrawSize> like SSD-sized -->
 		
@@ -69,35 +69,34 @@
 		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
 		
 		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
-		<nameMaker>NamerFactionPirate</nameMaker>
+		<nameMaker>SWCPNameMaker_WorldMapForce_Ship_TartanPatrolCruiser</nameMaker>
 		
 		<modExtensions>
 			<li Class="ForcesMod.ForceAbilitiesModExtension">
 				<abilityRange>4</abilityRange>
-				<forceNameString>SWCPWorldMapForceNameString_InterceptorIV</forceNameString>
+				<forceNameString>SWCPWorldMapForceNameString_Raider</forceNameString>
 				<movementSpeedPerDay>36</movementSpeedPerDay>
 				<abilities>
-					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_small</li>
-					<li>SWCPWMFAbility_Invids_SummonPlayerUnits_InvidPirates_big</li>
+					<li>SWCPWMFAbility_GreaterMaldrood_SummonPlayerUnits_ImpNavyTroopers_small</li>
 					
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
 					<li>SWCPWMFAbility_DestroySettlement</li>
 					
-					<li>SWCPWMFAbility_Launch_InterceptorIV</li>
+					<li>SWCPWMFAbility_Launch_RaiderCorvette</li>
 				</abilities>
 			</li>
 		</modExtensions>
 	</WorldObjectDef>
 	
 	<ForcesMod.ForceAbilityDef>
-		<defName>SWCPWMFAbility_Launch_InterceptorIV</defName>
+		<defName>SWCPWMFAbility_Launch_RaiderCorvette</defName>
 		<label>launch</label>
 		<description>Launch this force to any tile.</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_Launch</workerClass>
 		<iconPath>UI/WorldMapForces_Abilities/GUY_LaunchForce</iconPath>
 		<launchTilesPerDay>240</launchTilesPerDay>
 		<ignoresAbilityRange>true</ignoresAbilityRange>
-		<cooldownTicks>180000</cooldownTicks> <!-- 3 days -->
+		<cooldownTicks>60000</cooldownTicks> <!-- 1 day -->
 		<requiresTargetTile>true</requiresTargetTile>
 	</ForcesMod.ForceAbilityDef>
 	

@@ -27,6 +27,20 @@
 	
 	
 	
+	<SWCPWorldMapForceNameString_GR75Transport>GR-75 Medium Transport</SWCPWorldMapForceNameString_GR75Transport>
+	
+	<SWCPWorldMapForceNameString_CR90Corvette>CR90 Corellian Corvette</SWCPWorldMapForceNameString_CR90Corvette>
+	<SWCPWorldMapForceNameString_CR90Super>CR90 Frigate</SWCPWorldMapForceNameString_CR90Super>
+	<SWCPWorldMapForceNameString_Raider>Raider-class Corvette</SWCPWorldMapForceNameString_Raider>
 	<SWCPWorldMapForceNameString_InterceptorIV>Interceptor-IV Frigate</SWCPWorldMapForceNameString_InterceptorIV>
+	<SWCPWorldMapForceNameString_IPV>IPV-1 System Patrol Craft</SWCPWorldMapForceNameString_IPV>
+	
+	<SWCPWorldMapForceNameString_Pelta>Pelta-class Frigate</SWCPWorldMapForceNameString_Pelta>
+	<SWCPWorldMapForceNameString_Arquitens>Arquitens-class Light Cruiser</SWCPWorldMapForceNameString_Arquitens>
+	
+	<SWCPWorldMapForceNameString_Dreadnaught>Dreadnaught-class Heavy Cruiser</SWCPWorldMapForceNameString_Dreadnaught>
+	<SWCPWorldMapForceNameString_Acclamator>Acclamator-class Assault Ship</SWCPWorldMapForceNameString_Acclamator>
+	
+	<SWCPWorldMapForceNameString_Venator>Venator-class Star Destroyer</SWCPWorldMapForceNameString_Venator>
 	
 </LanguageData>

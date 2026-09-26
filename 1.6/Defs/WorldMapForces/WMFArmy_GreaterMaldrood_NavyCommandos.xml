@@ -55,7 +55,7 @@
 		<label>Imperial Navy Commando detachment</label>
 		<description>A mobilized detachment of Imperial Navy Commandos.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.</description>
 		
-		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_NavyCommando</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<texture>UI/WorldMapForceIcons_Armies/WMFIcon_NavyCommando</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
 		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_NavyCommando</expandingIconTexture>
 		<fullyExpandedInSpace>true</fullyExpandedInSpace>
 		<expandingIcon>true</expandingIcon>
@@ -64,7 +64,7 @@
 		<useDynamicDrawer>true</useDynamicDrawer>
 		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
 		
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
 		<nameMaker>SWCPNameMaker_WorldMapForce_NavyCommando_GreaterMaldrood</nameMaker>
 		
 		<modExtensions>

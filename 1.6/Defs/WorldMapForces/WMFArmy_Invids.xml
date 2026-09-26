@@ -56,7 +56,7 @@
 		<label>Invid pirate gang</label>
 		<description>A mobilized gang of Invid pirates.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.\n\nThe Invids are Leonia Tavira's infamous pirate gang, named for her flagship, the ISD Invidious. Though primarily a nomadic spacefaring gang, the Invids are still capable of deploying armed infantry units to the surface of planets in a limited capacity, mostly to carry out raids against 'dirtside' targets. The most skilled Invid fighters are given medium armor, and prefer to use slugthrowers and lighter vibroweapons in combat. Fighters of this prime level of skill aren't particularly numerous amongst the rabble of the galactic underworld, and as a result they are kept for Tavira's direct control.\n\nFor larger assaults, gangs of elite Invids are usually supplemented with cheap mercenaries hired with the help of Tavira's allies in the Greater Maldrood. These cheap mercenaries have decent anti-infantry firepower, but their specialist pawns posses no armor, and their standard carabineers only wear light armor. These low-grade mercs are rather cowardly, and will retreat from the battlefield if enough damage is taken. These mercenaries are therefore best deployed as a diversionary attack while elite Invids carry out mission objectives, and shouldn't be relied upon as an assault vanguard.</description>
 		
-		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_Invids</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<texture>UI/WorldMapForceIcons_Armies/WMFIcon_Invids</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
 		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_Invids</expandingIconTexture>
 		<fullyExpandedInSpace>true</fullyExpandedInSpace>
 		<expandingIcon>true</expandingIcon>
@@ -65,7 +65,7 @@
 		<useDynamicDrawer>true</useDynamicDrawer>
 		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
 		
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
 		<nameMaker>NamerFactionPirate</nameMaker>
 		
 		<modExtensions>

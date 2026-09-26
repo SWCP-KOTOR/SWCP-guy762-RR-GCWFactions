@@ -38,7 +38,11 @@
 	
 	
 	
-	
+	<li>
+		<packageId>Exploriters.siiftun1857.LaunchIntoEmptySpace</packageId>
+		<displayName>Launch into empty space</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/3532333408</steamWorkshopUrl>
+	</li>
 	
 	
 	<li>
@@ -86,6 +90,7 @@
 		<li>smartkar.athenaframework</li>
 		<li>SmashPhil.VehicleFramework</li>
 		<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
+		<li>Exploriters.siiftun1857.LaunchIntoEmptySpace</li>
 		
 		<li>lee.theforce.lightsaber</li>
 		<li>lee.theforce.standalone</li>

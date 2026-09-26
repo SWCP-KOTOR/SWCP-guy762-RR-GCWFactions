@@ -5,7 +5,7 @@
 		<defName>GUY_Force</defName>
 		<label>force</label>
 		<description>A deployed force.</description>
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
 		<texture>World/Forces/GUY_GroundForces</texture>
 		<nameMaker>GUY_ForcesTesting</nameMaker>
 		<useDynamicDrawer>true</useDynamicDrawer>

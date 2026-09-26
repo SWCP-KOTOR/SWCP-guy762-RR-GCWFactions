@@ -55,7 +55,7 @@
 		<label>Imperial Navy trooper detachment</label>
 		<description>A mobilized detachment of Imperial Navy troopers.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.\n\nImperial Navy troopers are an auxiliary fighting force meant to guard key naval installations and provide assistance to Imperial Army or Stormtrooper deployments only if absolutely necessary. These are not units trained for front-line deployment, though with the fracturing of the Empire after the Battle of Endor, they have been pressed into such service by the Greater Maldrood in order to make up for their shortage of Imperial Army personnel. Imperial Navy troopers are armed with light infantry armor and E-11 carbines, making them adequate at slowing down infantry assaults and pursuing minor objectives. However, their lack of heavy weapons leaves them utterly useless against any kind of armored target. These units are therefore best utilized as a defensive force that is positioned to be able to react to enemy assaults, or left as a supplemental force sent to clean up the aftermath of large sieges.</description>
 		
-		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_ImpNavyTrooper</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<texture>UI/WorldMapForceIcons_Armies/WMFIcon_ImpNavyTrooper</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
 		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_ImpNavyTrooper</expandingIconTexture>
 		<fullyExpandedInSpace>true</fullyExpandedInSpace>
 		<expandingIcon>true</expandingIcon>
@@ -64,7 +64,7 @@
 		<useDynamicDrawer>true</useDynamicDrawer>
 		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
 		
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
 		<nameMaker>SWCPNameMaker_WorldMapForce_ImpNavyPlatoon_GreaterMaldrood</nameMaker>
 		
 		<modExtensions>

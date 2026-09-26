@@ -55,7 +55,7 @@
 		<label>Elite Stormtrooper Platoon</label>
 		<description>A deployed platoon of elite Imperial Stormtroopers from the 7th Fleet.\n\nThis gathering of armed forces is fully self-sufficient and requires no input from the player to support itself. This unit has its own supply officers and recruiters capable of keeping its supplies stocked and its number of battle-ready soldiers high. It can send forth a full deployment of NPC troops to assist you in battle every 10 days, and can also contribute small reinforcement squads and strike teams for your direct control every 1-3 days.\n\nStormtroopers are the Empire's infamous elite infantry unit. Originally intended as a second-wave infantry force that can destroy key components of an enemy's defense, the skill and reputation of the Stormtrooper Corps has caused their duties on the battlefield to swell and replace most traditional Imperial Army units. Stormtroopers are now also employed as a first-wave vanguard, third-wave objective-pursuing commandos, and even as general security units, much to the chagrin of the other branches of Imperial government. Stormtroopers themselves are rigorously brainwashed to have complete unflinching loyalty to the Emperor, and as a result are usually a local Moff's priority choice for leading ground assaults that will gain favor from the Emperor when the after-action report is sent to Imperial Center. Equipped with a wide variety of heavy anti-infantry and anti-vehicle weapons, Stormtroopers are a versatile force that can efficiently deal with any threat. Their hyper-specialized blaster-resistant Plastoid medium armor offers them high protection against heat-based weapons equivalent to that of many heavy armors, though as a substantial drawback the armor is left quite vulnerable to blunt and piercing attacks. Thus, Stormtroopers are a prime general-purpose infantry unit, though special care should be taken when deploying them against opponents armed with slugthrowers or primatives with kinetic-based weapons.</description>
 		
-		<texture>UI/WorldMapForceIcons_Armies/RotatedForSomeAnnoyingReason/WMFIcon_StormtrooperThrawn</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<texture>UI/WorldMapForceIcons_Armies/WMFIcon_StormtrooperThrawn</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
 		<expandingIconTexture>UI/WorldMapForceIcons_Armies/WMFIcon_StormtrooperThrawn</expandingIconTexture>
 		<fullyExpandedInSpace>true</fullyExpandedInSpace>
 		<expandingIcon>true</expandingIcon>
@@ -64,7 +64,7 @@
 		<useDynamicDrawer>true</useDynamicDrawer>
 		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
 		
-		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass>
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
 		<nameMaker>SWCPNameMaker_WorldMapForce_StormtrooperPlatoon_ImpRemnant</nameMaker>
 		
 		<modExtensions>

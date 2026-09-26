@@ -96,13 +96,14 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_NewRepublic</defName>
 		<label>reclaim settlement (New Republic)</label>
-		<description>Reclaim a destroyed settlement for the New Republic.</description>
+		<description>Reclaim a destroyed settlement for the New Republic. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_NewRepublic</iconPath>
 		
 		<cooldownTicks>180000</cooldownTicks>
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	
@@ -113,61 +114,66 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_ImperialRemnant</defName>
 		<label>reclaim settlement (Imperial Remnant)</label>
-		<description>Reclaim a destroyed settlement for the Imperial Remnant.</description>
+		<description>Reclaim a destroyed settlement for the Imperial Remnant. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ImperialRemnant</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_ImpRemnant</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_ZsinjDominion</defName>
 		<label>reclaim settlement (Zsinj's Dominion)</label>
-		<description>Reclaim a destroyed settlement for Zsinj's Dominion.</description>
+		<description>Reclaim a destroyed settlement for Zsinj's Dominion. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ZsinjDominion</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_ZsinjDominion</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_PentastarAlignment</defName>
 		<label>reclaim settlement (Pentastar Alignment)</label>
-		<description>Reclaim a destroyed settlement for the Pentastar Alignment.</description>
+		<description>Reclaim a destroyed settlement for the Pentastar Alignment. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_PentastarAlignment</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_Pentastar</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_GreaterMaldrood</defName>
 		<label>reclaim settlement (Greater Maldrood)</label>
-		<description>Reclaim a destroyed settlement for the Greater Maldrood.</description>
+		<description>Reclaim a destroyed settlement for the Greater Maldrood. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_GreaterMaldrood</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_EriaduAuthority</defName>
 		<label>reclaim settlement (Eriadu Authority)</label>
-		<description>Reclaim a destroyed settlement for the Eriadu Authority.</description>
+		<description>Reclaim a destroyed settlement for the Eriadu Authority. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_EriaduAuthority</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	
@@ -177,37 +183,40 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_HuttCartel</defName>
 		<label>reclaim settlement (Hutt Cartels)</label>
-		<description>Reclaim a destroyed settlement for the Hutt Cartels.</description>
+		<description>Reclaim a destroyed settlement for the Hutt Cartels. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_HuttKajidics</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_HuttCartel</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_BlackSun</defName>
 		<label>reclaim settlement (Black Sun)</label>
-		<description>Reclaim a destroyed settlement for the Black Sun.</description>
+		<description>Reclaim a destroyed settlement for the Black Sun. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_BlackSun</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_BlackSun</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_ZannConsortium</defName>
 		<label>reclaim settlement (Zann Consortium)</label>
-		<description>Reclaim a destroyed settlement for the Zann Consortium.</description>
+		<description>Reclaim a destroyed settlement for the Zann Consortium. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_ZannConsortium</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_SWWarlordsFaction_ZannConsortium</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	
@@ -219,25 +228,27 @@
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_Thrawn7th</defName>
 		<label>reclaim settlement (7th Fleet)</label>
-		<description>Reclaim a destroyed settlement for Thrawn's 7th Fleet Confederation.</description>
+		<description>Reclaim a destroyed settlement for Thrawn's 7th Fleet Confederation. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_Thrawn7th</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_GCWPlayerFaction_Thrawn7th</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	<ForcesMod.ForceAbilityDef>
 		<defName>SWCPWMFAbility_ReclaimSettlement_Invids</defName>
 		<label>reclaim settlement (Invids)</label>
-		<description>Reclaim a destroyed settlement for the Invids.</description>
+		<description>Reclaim a destroyed settlement for the Invids. NOTE: Using this ability will delete this force from the world map!</description>
 		<workerClass>ForcesMod.ForceAbilityWorker_ReclaimSettlement</workerClass>
 		<iconPath>UI/WorldMapForceIcons_Reclaim/Reclaim_Invids</iconPath>
 		
 		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
 		<requiresTarget>true</requiresTarget>
 		<faction>guy762_GCWPlayerFaction_Invids</faction>
+		<consumedOnReclaim>true</consumedOnReclaim>
 	</ForcesMod.ForceAbilityDef>
 	
 	
