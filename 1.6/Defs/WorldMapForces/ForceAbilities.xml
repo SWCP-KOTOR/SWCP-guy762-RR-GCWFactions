@@ -87,7 +87,17 @@
 	
 	
 	
-	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_SlowLaunchForGroundForces</defName>
+		<label>launch</label>
+		<description>Launch this force to any tile.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_Launch</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_LaunchForce</iconPath>
+		<launchTilesPerDay>24</launchTilesPerDay>
+		<ignoresAbilityRange>true</ignoresAbilityRange>
+		<cooldownTicks>900000</cooldownTicks><!-- 900,000 = 15 in-game days -->
+		<requiresTargetTile>true</requiresTargetTile>
+	</ForcesMod.ForceAbilityDef>
 	
 	
 	

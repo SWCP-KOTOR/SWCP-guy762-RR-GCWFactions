@@ -4,11 +4,11 @@
 	<RoyalTitlePermitDef>
 		<defName>SWGCWPermit_EriaduAuthority_SummonImpArmyForce</defName>
 		<label>establish Imperial Army platoon</label>
-		<description>Establish a platoon of Imperial Army troopers on the world map.</description>
+		<description>Establish a platoon of Imperial Army troopers on the world map.\n\nNOTE: Because of technical reasons, the spawned object will be placed on a tile on the vanilla Rimworld planet. Use their "launch" ability after it spawns to bring it to the tile you want.</description>
 		<workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass>
 		
 		<faction>guy762_SWWarlordsFaction_EriaduAuthority</faction>
-		<minTitle>SWGCWTitle_generic_lowflagofficer</minTitle>
+		<minTitle>SWGCWTitle_generic_highseniorofficer</minTitle>
 		
 		<permitPointCost>10</permitPointCost>
 		<cooldownDays>40</cooldownDays>
@@ -18,23 +18,24 @@
 			<favorCost>8</favorCost>
 			<targetingRequireLOS>false</targetingRequireLOS>
 		</royalAid>
-		<layerBlacklist> <!-- orbitals and other planets don't work *yet* -->
+		<!-- orbitals and other planets don't work *yet* -->
+		<layerBlacklist>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
-			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
 			
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
 			
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
 			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
-			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
 		</layerBlacklist>
 		<modExtensions>
 			<li Class="ForcesMod.ForceAbilitiesModExtension">
@@ -80,6 +81,7 @@
 					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
 					<li>SWCPWMFAbility_SiegeSettlement_ImpArmyTroopers</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_EriaduAuthority</li>
+					<li>SWCPWMFAbility_SlowLaunchForGroundForces</li>
 				</abilities>
 			</li>
 		</modExtensions>

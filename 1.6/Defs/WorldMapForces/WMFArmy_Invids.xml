@@ -4,7 +4,7 @@
 	<!-- <RoyalTitlePermitDef> -->
 		<!-- <defName>SWGCWPermit_GreaterMaldrood_SummonInvidForce</defName> -->
 		<!-- <label>establish Invid gang</label> -->
-		<!-- <description>Establish a gang of Invid pirates on the world map.</description> -->
+		<!-- <description>Establish a gang of Invid pirates on the world map.\n\nNOTE: Because of technical reasons, the spawned object will be placed on a tile on the vanilla Rimworld planet. Use their "launch" ability after it spawns to bring it to the tile you want.</description> -->
 		<!-- <workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass> -->
 		
 		<!-- <faction>guy762_SWWarlordsFaction_GreaterMaldrood</faction> -->
@@ -82,6 +82,7 @@
 					<li>SWCPWMFAbility_SiegeSettlement_Invids</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_GreaterMaldrood</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_Invids</li>
+					<li>SWCPWMFAbility_SlowLaunchForGroundForces</li>
 				</abilities>
 			</li>
 		</modExtensions>

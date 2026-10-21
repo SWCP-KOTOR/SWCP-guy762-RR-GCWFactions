@@ -84,6 +84,7 @@
 					<li>SWCPWMFAbility_SiegeSettlement_Thrawn7th_Stormtroopers</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_Thrawn7th</li>
 					<li>SWCPWMFAbility_ReclaimSettlement_PentastarAlignment</li>
+					<li>SWCPWMFAbility_SlowLaunchForGroundForces</li>
 				</abilities>
 			</li>
 		</modExtensions>
