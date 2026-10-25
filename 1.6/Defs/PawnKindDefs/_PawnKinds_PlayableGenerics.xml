@@ -576,6 +576,73 @@
 	
 	
 	
+	<PawnKindDef Name="xpSWEriadu_ArmySpecOps_playable" ParentName="SWEriadu_ArmySpecOps">
+		<defName>xpSWEriadu_ArmySpecOps_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_E22rifle</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWEriadu_ArmySpecOpsLightRepeater_playable" ParentName="SWEriadu_ArmySpecOps">
+		<defName>xpSWEriadu_ArmySpecOpsLightRepeater_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_DLT19repeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWEriadu_ArmySpecOpsHeavyRepeater_playable" ParentName="SWEriadu_ArmySpecOpsHvy">
+		<defName>xpSWEriadu_ArmySpecOpsHeavyRepeater_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_T21repeater</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWEriadu_ArmySpecOpsMissile_playable" ParentName="SWEriadu_ArmySpecOpsHvy">
+		<defName>xpSWEriadu_ArmySpecOpsMissile_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_MMPTLMissieLauncher</li>
+		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
 	
 	<PawnKindDef Name="xpSWScum_JKHumanMerc_playable" ParentName="SWScum_JKHumanMerc">
 		<defName>xpSWScum_JKHumanMerc_playable</defName>

@@ -197,7 +197,7 @@
 			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li> 										<!-- WMF UNLOCKS: Imperial Army Troopers, Arquitens Cruiser, -->
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: Stormtroopers, Dreadnaught, -->
-			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: -->
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: ISD, -->
 		</titleLabels>
 	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	
@@ -217,7 +217,7 @@
 			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>Privateer Captain</label></li> 								<!-- WMF UNLOCKS: Imperial Army Troopers, -->
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>Commodore of Corsairs</label></li> 								<!-- WMF UNLOCKS: Dreadnaught, Acclamator, -->
-			<li><title>SWGCWTitle_generic_highflagofficer</title><label>Warlord</label></li> 											<!-- WMF UNLOCKS: Raptors, -->
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>Warlord</label></li> 											<!-- WMF UNLOCKS: Raptors, ISD, -->
 		</titleLabels>
 	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	
@@ -297,8 +297,8 @@
 			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> 											<!-- WMF UNLOCKS: -->
 			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commandant</label></li> 										<!-- WMF UNLOCKS: Imperial Army Troopers, Arquitens Cruiser, -->
 			
-			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: Dreadnaught, -->
-			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: -->
+			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: Dreadnaught, Imperial Army SpecOps, -->
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: ISD, -->
 		</titleLabels>
 	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	

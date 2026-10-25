@@ -8,6 +8,7 @@
 	<SWCPWorldMapForceNameString_Thrawn7thStormtrooperPlatoon>Elite Stormtrooper platoon</SWCPWorldMapForceNameString_Thrawn7thStormtrooperPlatoon>
 	<SWCPWorldMapForceNameString_RaptorPlatoon>Raptor platoon</SWCPWorldMapForceNameString_RaptorPlatoon>
 	<SWCPWorldMapForceNameString_NavyCommandoPlatoon>Navy Commando platoon</SWCPWorldMapForceNameString_NavyCommandoPlatoon>
+	<SWCPWorldMapForceNameString_ImpArmySpecOpsPlatoon>Imperial Army Special Missions platoon</SWCPWorldMapForceNameString_ImpArmySpecOpsPlatoon>
 	
 	<SWCPWorldMapForceNameString_MercPlatoon>mercenary gang</SWCPWorldMapForceNameString_MercPlatoon>
 	
@@ -42,5 +43,6 @@
 	<SWCPWorldMapForceNameString_Acclamator>Acclamator-class Assault Ship</SWCPWorldMapForceNameString_Acclamator>
 	
 	<SWCPWorldMapForceNameString_Venator>Venator-class Star Destroyer</SWCPWorldMapForceNameString_Venator>
+	<SWCPWorldMapForceNameString_ISD>Imperial-class Star Destroyer</SWCPWorldMapForceNameString_ISD>
 	
 </LanguageData>
