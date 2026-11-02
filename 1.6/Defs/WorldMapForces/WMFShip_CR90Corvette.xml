@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RoyalTitlePermitDef Name="SWGCWPermit_SummonForce_CR90CorvetteBASE" Abstract="True">
+		<label>deploy CR90 Corvette</label>
+		<description>Deploy a CR90 Corvette on the world map.\n\nNOTE: Because of technical reasons, the spawned object will be placed on a tile on the vanilla Rimworld planet. Use their "launch" ability after it spawns to bring it to the tile you want.</description>
+		<workerClass>ForcesMod.RoyalTitlePermitWorker_SpawnWorldObject</workerClass>
+		
+		<minTitle>SWGCWTitle_generic_lowseniorofficer</minTitle>
+		
+		<permitPointCost>10</permitPointCost>
+		<cooldownDays>40</cooldownDays>
+		<usableOnWorldMap>true</usableOnWorldMap>
+		<uiPosition>(10,5)</uiPosition>
+		<royalAid>
+			<favorCost>8</favorCost>
+			<targetingRequireLOS>false</targetingRequireLOS>
+		</royalAid>
+		<!-- orbitals and other planets don't work *yet* -->
+		<layerBlacklist>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li>
+			
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Onderon</li> -->
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OnderonOrbit</li>
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Dxun</li> -->
+		</layerBlacklist>
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<permitSpawnsWorldObject>SWCPShipForce_CR90Corvette</permitSpawnsWorldObject>
+			</li>
+			<li Class="SWCP_FlyingSloth_Misc.PermitExtension_SingleUse"><singleUse>true</singleUse></li>
+		</modExtensions>
+	</RoyalTitlePermitDef>
+	
+	
+	
+	
+	
+	<RoyalTitlePermitDef ParentName="SWGCWPermit_SummonForce_CR90CorvetteBASE">
+		<defName>SWGCWPermit_NewRepublic_SummonForce_CR90Corvette</defName>
+		<faction>guy762_SWWarlordsFaction_NewRepublic</faction>
+	</RoyalTitlePermitDef>
+	
+	
+	
+	
+	
+	
+	
+	<WorldObjectDef>
+		<defName>SWCPShipForce_CR90Corvette</defName>
+		<label>CR90 Corvette</label>
+		<description>.</description>
+		
+		<texture>UI/WorldMapForceIcons_Ships/WMFIcon_CR90Corvette</texture><!--  for some dumbass reason the game rotates this texture 90 degrees clockwise -->
+		<expandingIconTexture>UI/WorldMapForceIcons_Ships/WMFIcon_CR90Corvette</expandingIconTexture>
+		<expandingIconDrawSize>1</expandingIconDrawSize>
+		<!-- <expandingIconDrawSize>10</expandingIconDrawSize> like SSD-sized -->
+		
+		<fullyExpandedInSpace>true</fullyExpandedInSpace>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconPriority>10</expandingIconPriority>
+		<expandMore>true</expandMore>
+		<!-- <useDynamicDrawer>true</useDynamicDrawer> -->
+		<rotateGraphicWhenTraveling>false</rotateGraphicWhenTraveling>
+		
+		<worldObjectClass>ForcesMod.WorldObject_Force</worldObjectClass><validLaunchTarget>false</validLaunchTarget>
+		<nameMaker>SWCPNameMaker_WorldMapForce_Ship_CR90Corvette</nameMaker>
+		
+		<modExtensions>
+			<li Class="ForcesMod.ForceAbilitiesModExtension">
+				<abilityRange>4</abilityRange>
+				<forceNameString>SWCPWorldMapForceNameString_CR90Corvette</forceNameString>
+				<movementSpeedPerDay>36</movementSpeedPerDay>
+				<abilities>
+					<li>SWCPWMFAbility_RebelCell_SummonPlayerUnits_RebelNavyTroopers_small</li>
+					
+					<li>SWCPWMFAbility_ArtilleryBombardment_antiVehicle</li>
+					<li>SWCPWMFAbility_DestroySettlement</li>
+					
+					<li>SWCPWMFAbility_Launch_CR90Corvette</li>
+				</abilities>
+			</li>
+		</modExtensions>
+	</WorldObjectDef>
+	
+	<ForcesMod.ForceAbilityDef>
+		<defName>SWCPWMFAbility_Launch_CR90Corvette</defName>
+		<label>launch</label>
+		<description>Launch this force to any tile.</description>
+		<workerClass>ForcesMod.ForceAbilityWorker_Launch</workerClass>
+		<iconPath>UI/WorldMapForces_Abilities/GUY_LaunchForce</iconPath>
+		<launchTilesPerDay>240</launchTilesPerDay>
+		<ignoresAbilityRange>true</ignoresAbilityRange>
+		<cooldownTicks>15000</cooldownTicks> <!-- quarter day -->
+		<requiresTargetTile>true</requiresTargetTile>
+	</ForcesMod.ForceAbilityDef>
+	
+	
+	
+	
+	
+	<RulePackDef>
+		<defName>SWCPNameMaker_WorldMapForce_Ship_CR90Corvette</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>SWSN_CR90Corvette->EaWShipNames/corellian_corvette</li>
+			</rulesFiles>
+			
+			<rulesStrings>
+				<li>r_name(p=12)->[SWSN_CR90Corvette]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	
+</Defs>

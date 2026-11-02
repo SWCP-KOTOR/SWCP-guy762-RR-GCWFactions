@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 	
+	<SWCPWorldMapForceNameString_NRArmyPlatoon>New Republic Army platoon</SWCPWorldMapForceNameString_NRArmyPlatoon>
+	<SWCPWorldMapForceNameString_RebelArmyPlatoon>Rebel Army platoon</SWCPWorldMapForceNameString_RebelArmyPlatoon>
+	<SWCPWorldMapForceNameString_RebelNavyPlatoon>Rebel Navy trooper detachment</SWCPWorldMapForceNameString_RebelNavyPlatoon>
+	
 	<SWCPWorldMapForceNameString_ImpArmyPlatoon>Imperial Army platoon</SWCPWorldMapForceNameString_ImpArmyPlatoon>
 	<SWCPWorldMapForceNameString_ImpNavyPlatoon>Imperial Navy trooper detachment</SWCPWorldMapForceNameString_ImpNavyPlatoon>
 	

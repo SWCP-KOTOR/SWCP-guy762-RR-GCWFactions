@@ -143,8 +143,8 @@
 			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
 			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
 			
-			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> 											<!-- WMF UNLOCKS: -->
-			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li> 										<!-- WMF UNLOCKS: -->
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> 											<!-- WMF UNLOCKS: New Republic Army Troopers, CR90 Corvette, -->
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li> 										<!-- WMF UNLOCKS: Pelta Frigate, -->
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: -->
 			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: -->
@@ -161,8 +161,8 @@
 			<li><title>SWGCWTitle_generic_lowjuniorofficer</title><label>lieutenant</label></li>
 			<li><title>SWGCWTitle_generic_highjuniorofficer</title><label>captain</label></li>
 			
-			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> 											<!-- WMF UNLOCKS: CR90 Corvette, -->
-			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li> 										<!-- WMF UNLOCKS: Pelta Frigate, -->
+			<li><title>SWGCWTitle_generic_lowseniorofficer</title><label>major</label></li> 											<!-- WMF UNLOCKS: -->
+			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li> 										<!-- WMF UNLOCKS: -->
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: -->
 			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: -->

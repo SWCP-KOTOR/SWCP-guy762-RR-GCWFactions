@@ -114,6 +114,12 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_DH17pistol</li>
 		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xSWRebel_FleetTrooperRifle_14x" ParentName="SWRebel_AlderaanGuard">
@@ -125,6 +131,12 @@
 		<weaponTags Inherit="False">
 			<li>SWRanged_DH17rifle</li>
 		</weaponTags>
+		<startingHediffs>
+			<li><def>SWCPNPCPackageHediff_minus50percentloyalty</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	

@@ -14,6 +14,30 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="xpSWRebel_NavyTrooper_playable" ParentName="SWRebel_AlderaanGuard">
+		<defName>xpSWRebel_NavyTrooper_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
 	<PawnKindDef Name="xpSWNewRepub_trooper_playable" ParentName="SWNewRepub_trooper">
 		<defName>xpSWNewRepub_trooper_playable</defName>
 		<!-- <label>DEBUG</label> -->
@@ -25,6 +49,53 @@
 			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
 		</modExtensions>
 	</PawnKindDef>
+	
+	<PawnKindDef Name="xpSWNewRepub_ArmyHeavyMissile_playable" ParentName="SWRebel_heavy">
+		<defName>xpSWNewRepub_ArmyHeavyMissile_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_HH15MissieLauncher</li>
+		</weaponTags>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWNewRepub_Medic_playable" ParentName="SWRebel_medic">
+		<defName>xpSWNewRepub_Medic_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
+		
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>SWRanged_CR1BlastCannon</li>
+		</weaponTags>
+	</PawnKindDef>
+	<PawnKindDef Name="xpSWNewRepub_ArmyLieutenant_playable" ParentName="SWNewRepub_ArmyLt">
+		<defName>xpSWNewRepub_ArmyLieutenant_playable</defName>
+		<!-- <label>DEBUG</label> -->
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<!-- <li Class="EBSGFramework.ForceStartingHediffsExtension" /> -->
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
 	
 	
 	
@@ -647,6 +718,12 @@
 	<PawnKindDef Name="xpSWScum_JKHumanMerc_playable" ParentName="SWScum_JKHumanMerc">
 		<defName>xpSWScum_JKHumanMerc_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -655,16 +732,34 @@
 	<PawnKindDef Name="xpSWMando_merc_playable" ParentName="SWMando_merc">
 		<defName>xpSWMando_merc_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xpSWMando_protector_playable" ParentName="SWMando_protector">
 		<defName>xpSWMando_protector_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="xpSWMando_commando_playable" ParentName="SWMando_commando">
 		<defName>xpSWMando_commando_playable</defName>
 		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	
