@@ -104,6 +104,12 @@
 		<defName>xpSWRebel_infiltrator_playable</defName>
 		<!-- <label>DEBUG</label> -->
 		<defaultFactionType>PlayerColony</defaultFactionType>
+		<startingHediffs>
+			<li><def>SWCPHediff_WMFTemporaryDeployment</def><chance>1</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="EBSGFramework.ForceStartingHediffsExtension" />
+		</modExtensions>
 	</PawnKindDef>
 	
 	

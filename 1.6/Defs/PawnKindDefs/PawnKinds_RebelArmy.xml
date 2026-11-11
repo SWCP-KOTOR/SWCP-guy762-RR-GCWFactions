@@ -276,6 +276,7 @@
 			<li>SWRanged_E11carbine</li>
 			<li>SWRanged_DH17carbine</li>
 			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_A280rifle</li>
 		</weaponTags>
 		
 		<inventoryOptions>
@@ -738,7 +739,7 @@
 		<abilities>
 			<!-- <li>WorkDrive</li> -->
 			<!-- <li>ProductionCommand</li> -->
-			<li>MarksmanCommand</li>
+			<!-- <li>MarksmanCommand</li> -->
 		</abilities>
 		<startingHediffs>
 			<li>

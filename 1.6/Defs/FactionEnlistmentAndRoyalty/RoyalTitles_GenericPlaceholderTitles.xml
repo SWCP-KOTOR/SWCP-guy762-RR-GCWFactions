@@ -147,7 +147,7 @@
 			<li><title>SWGCWTitle_generic_highseniorofficer</title><label>commander</label></li> 										<!-- WMF UNLOCKS: Pelta Frigate, -->
 			
 			<li><title>SWGCWTitle_generic_lowflagofficer</title><label>colonel</label></li> 											<!-- WMF UNLOCKS: -->
-			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: -->
+			<li><title>SWGCWTitle_generic_highflagofficer</title><label>general</label></li> 											<!-- WMF UNLOCKS: MC80 Liberty, -->
 		</titleLabels>
 	</SWCP_FlyingSloth_Misc.FactionTitleLabelSetDef>
 	

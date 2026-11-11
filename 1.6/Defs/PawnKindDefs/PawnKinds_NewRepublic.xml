@@ -841,6 +841,7 @@
 			<li>SWRanged_DH17carbine</li>	
 			<li>SWRanged_DH17rifle</li>
 			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_A280rifle</li>
 		</weaponTags>
 		
 		<!-- <skills> -->
@@ -1095,6 +1096,7 @@
 		<weaponTags>
 			<li>SWRanged_DC15aRifle</li>
 			<li>SWRanged_A280Crifle</li>
+			<li>SWRanged_A280rifle</li>
 			<li>SWRanged_BK43repeater</li>
 		</weaponTags>
 		
@@ -1299,6 +1301,7 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags>
+			<li>SWRanged_A280rifle</li>
 			<li>SWRanged_CR1BlastCannon</li>
 			<li>SWRanged_RT97Crepeater</li>
 			<li>SWRanged_Bowcaster</li>

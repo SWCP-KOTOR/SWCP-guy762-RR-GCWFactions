@@ -43,6 +43,14 @@
 									<soundCast>kotorsound_DL18pistol_snipe</soundCast>
 								</verbProperties>
 							</AbilityDef>
+							
+							<AbilityDef ParentName="guy762_AbilityWeapon_snipershot">
+								<defName>guy762_AbilityWeapon_snipershot_A280</defName>
+								<verbProperties>
+									<range>40</range>
+									<soundCast>kotorsound_RebelBlaster_heavy</soundCast>
+								</verbProperties>
+							</AbilityDef>
 	
 	
 	

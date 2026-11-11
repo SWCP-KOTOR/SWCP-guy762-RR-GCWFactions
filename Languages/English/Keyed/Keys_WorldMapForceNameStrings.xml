@@ -48,5 +48,7 @@
 	
 	<SWCPWorldMapForceNameString_Venator>Venator-class Star Destroyer</SWCPWorldMapForceNameString_Venator>
 	<SWCPWorldMapForceNameString_ISD>Imperial-class Star Destroyer</SWCPWorldMapForceNameString_ISD>
+	<SWCPWorldMapForceNameString_MC80Liberty>MC80 Liberty-type Star Cruiser</SWCPWorldMapForceNameString_MC80Liberty>
+	<SWCPWorldMapForceNameString_MC80HomeOne>MC80 Home One-type Star Cruiser</SWCPWorldMapForceNameString_MC80HomeOne>
 	
 </LanguageData>
