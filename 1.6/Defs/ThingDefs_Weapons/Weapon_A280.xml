@@ -132,8 +132,8 @@
 	
 	
 	<ThingDef ParentName="SWCPRangedMakeableNoQuality_TwoHand">
-		<defName>guy762_A280</defName>
-		<label>A280 blaster rifle</label>
+		<defName>guy762_A280dmr</defName>
+		<label>A280 marksman rifle</label>
 		<description>.</description>
 		<techLevel>Spacer</techLevel>
 		<thingClass>ThingWithComps</thingClass>
@@ -182,7 +182,7 @@
 				<range>30</range>
 				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>kotorsound_RebelBlaster</soundCast>
+				<soundCast>kotorsound_rebelsniper</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -213,7 +213,7 @@
                 <HeldDrawOffset>(0.125, -0.125)</HeldDrawOffset>
             </li>
 			<li Class="CompProperties_EquippableAbility">
-				<abilityDef>guy762_AbilityWeapon_snipershot_A280</abilityDef>
+				<abilityDef>guy762_AbilityWeapon_snipershot_A280dmr</abilityDef>
 			</li>
         </comps>
 	</ThingDef>

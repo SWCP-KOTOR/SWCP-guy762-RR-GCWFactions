@@ -60,7 +60,8 @@
 		
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
-		  <li>SWRanged_DLT19repeater</li>
+		  <!-- <li>SWRanged_DLT19repeater</li> -->
+		  <li>SWRanged_Valken38X</li>
 		</weaponTags>
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_II</li>
@@ -74,8 +75,12 @@
 		  <skipChance>0</skipChance>
 		  <subOptionsTakeAll>
 			<li>
-			  <thingDef>guy762_DL21pistol</thingDef>
-			  <countRange>1</countRange>
+				<thingDef>guy762_DLT19repeater</thingDef>
+				<countRange>1</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_DL21pistol</thingDef>
+				<countRange>1</countRange>
 			</li>
 		  </subOptionsTakeAll>
 		  <subOptionsChooseOne>

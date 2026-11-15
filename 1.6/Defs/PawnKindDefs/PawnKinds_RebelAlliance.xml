@@ -408,13 +408,14 @@
 		</specificApparelRequirements>
 
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<weaponMoney>750~3000</weaponMoney>
+		<weaponMoney>750~3500</weaponMoney>
 		<weaponTags>
 			<li>SWRanged_A180pistol</li>
 			<li>SWRanged_DL44pistol</li>
 			<li>SWRanged_DH17carbine</li>
 			<li>SWRanged_A280Crifle</li>
 			<li>SWRanged_A280rifle</li>
+			<li>SWRanged_Valken38X</li>
 		</weaponTags>
 
 		<inventoryOptions>

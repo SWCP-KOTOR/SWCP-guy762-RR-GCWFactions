@@ -12,7 +12,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>40</range>
-			<warmupTime>4</warmupTime>
+			<warmupTime>3</warmupTime>
 			<soundCast>kotorsound_impsniper</soundCast>
 			<!-- <targetParams> -->
 				<!-- <canTargetLocations>true</canTargetLocations> -->
@@ -45,7 +45,7 @@
 							</AbilityDef>
 							
 							<AbilityDef ParentName="guy762_AbilityWeapon_snipershot">
-								<defName>guy762_AbilityWeapon_snipershot_A280</defName>
+								<defName>guy762_AbilityWeapon_snipershot_A280dmr</defName>
 								<verbProperties>
 									<range>40</range>
 									<soundCast>kotorsound_RebelBlaster_heavy</soundCast>
@@ -68,7 +68,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>50</range>
-			<warmupTime>3.5</warmupTime>
+			<warmupTime>3</warmupTime>
 			<soundCast>kotorsound_impsniper</soundCast>
 			<!-- <targetParams> -->
 				<!-- <canTargetLocations>true</canTargetLocations> -->
@@ -88,6 +88,14 @@
 								<verbProperties>
 									<range>40</range>
 									<soundCast>kotorsound_EE3carbine_alt</soundCast>
+								</verbProperties>
+							</AbilityDef>
+							
+							<AbilityDef ParentName="guy762_AbilityWeapon_advsnipershot">
+								<defName>guy762_AbilityWeapon_advsnipershot_Valken38x</defName>
+								<verbProperties>
+									<range>40</range>
+									<soundCast>kotorsound_smallrocket</soundCast>
 								</verbProperties>
 							</AbilityDef>
 							
@@ -177,7 +185,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>100</range>
-			<warmupTime>4</warmupTime>
+			<warmupTime>3</warmupTime>
 			<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
 			<!-- <targetParams> -->
 				<!-- <canTargetLocations>true</canTargetLocations> -->
@@ -203,7 +211,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>150</range>
-			<warmupTime>4</warmupTime>
+			<warmupTime>3</warmupTime>
 			<soundCast>kotorsound_TuskenCycler_extraecho</soundCast>
 			<!-- <targetParams> -->
 				<!-- <canTargetLocations>true</canTargetLocations> -->
